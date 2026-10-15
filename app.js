@@ -5,6 +5,7 @@ const $ = selector => document.querySelector(selector);
 const gallery = $('#gallery');
 const dialog = $('#prompt-dialog');
 const aboutDialog = $('#about-dialog');
+const imageDialog = $('#image-dialog');
 const search = $('#search');
 const view = createViewState();
 const filters = () => view.filters[view.active];
@@ -23,6 +24,8 @@ let toastTimer;
 let toastTrigger = null;
 let feedbackTimer;
 let loading = false;
+let imageViewerTrigger = null;
+let imageViewerSource = null;
 const copyTimers = new WeakMap();
 
 function element(tag, className, text) {
@@ -340,7 +343,41 @@ function loadDetailImage(prompt) {
   image.src = new URL(prompt.image, document.baseURI).href;
 }
 
+function loadViewerImage() {
+  if (!imageDialog.open || !imageViewerSource) return;
+  $('#image-viewer-content').setAttribute('aria-busy', 'true');
+  $('#image-viewer-error').hidden = true;
+  $('#image-viewer-loading').hidden = false;
+  const image = $('#image-viewer-image');
+  image.hidden = true;
+  image.src = imageViewerSource;
+}
+
+function openImageViewer(src, label, trigger) {
+  imageViewerTrigger = trigger;
+  imageViewerSource = new URL(src, document.baseURI).href;
+  $('#image-viewer-title').textContent = label;
+  $('#image-viewer-image').alt = `${currentPrompt?.title || ''} · ${label}`;
+  $('#image-download').href = imageViewerSource;
+  $('#image-download').download = new URL(imageViewerSource).pathname.split('/').at(-1);
+  if (!imageDialog.open) imageDialog.showModal();
+  $('#close-image-viewer').focus({ preventScroll: true });
+  loadViewerImage();
+}
+
+function closeImageViewer(restoreFocus = true) {
+  if (!imageDialog.open) return;
+  imageDialog.close();
+  $('#image-viewer-image').removeAttribute('src');
+  $('#image-viewer-image').hidden = true;
+  $('#image-viewer-content').setAttribute('aria-busy', 'false');
+  imageViewerSource = null;
+  if (restoreFocus && imageViewerTrigger?.isConnected) imageViewerTrigger.focus({ preventScroll: true });
+  imageViewerTrigger = null;
+}
+
 function openPrompt(prompt, trigger = null, writeHistory = true) {
+  closeImageViewer(false);
   const wasOpen = dialog.open;
   if (!wasOpen) {
     modalIds = (visiblePrompts.some(p => p.id === prompt.id) ? visiblePrompts : prompts).map(p => p.id);
@@ -350,7 +387,6 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   currentPrompt = prompt;
   $('#detail-title').textContent = prompt.title;
   $('#detail-category').textContent = prompt.category;
-  $('#original-image').href = new URL(prompt.image, document.baseURI).href;
   $('#detail-tags').replaceChildren(...prompt.tags.map(tag => element('span', 'detail-tag', tag)));
   $('#detail-usage').textContent = prompt.usage;
   $('#input-guide').classList.toggle('is-text', !prompt.inputRequirement);
@@ -363,15 +399,13 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   $('#detail-save').dataset.saveId = prompt.id;
   const refs = $('#reference-images');
   refs.replaceChildren(...prompt.referenceImages.map((path, index) => {
-    const link = element('a');
+    const open = button('reference-open', `첨부 예시 ${index + 1} 크게 보기`);
     const image = new Image();
     image.src = new URL(path, document.baseURI).href;
-    image.alt = `레퍼런스 ${index + 1} 원본 보기 (새 탭)`;
-    link.href = image.src;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.append(image);
-    return link;
+    image.alt = '';
+    open.append(image);
+    open.addEventListener('click', () => openImageViewer(path, `첨부 예시 ${index + 1}`, open));
+    return open;
   }));
   $('#reference-section').hidden = !prompt.referenceImages.length;
   setCopyButton($('#detail-copy'), 'default');
@@ -392,6 +426,7 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
 }
 
 function closePrompt(writeHistory = true) {
+  closeImageViewer(false);
   const returnIndex = Math.max(0, modalIds.indexOf(openerId));
   if (dialog.open) dialog.close();
   currentPrompt = null;
@@ -488,6 +523,27 @@ $('#share-prompt').addEventListener('click', event => copyText(location.href, ev
 $('#previous-prompt').addEventListener('click', () => navigatePrompt(-1));
 $('#next-prompt').addEventListener('click', () => navigatePrompt(1));
 $('#close-dialog').addEventListener('click', () => closePrompt());
+$('#original-image').addEventListener('click', event => {
+  if (currentPrompt) openImageViewer(currentPrompt.image, '생성 결과 원본', event.currentTarget);
+});
+$('#close-image-viewer').addEventListener('click', () => closeImageViewer());
+$('#retry-viewer-image').addEventListener('click', () => { loadViewerImage(); $('#close-image-viewer').focus({ preventScroll: true }); });
+$('#image-viewer-image').addEventListener('load', () => {
+  if (!imageDialog.open) return;
+  $('#image-viewer-content').setAttribute('aria-busy', 'false');
+  $('#image-viewer-loading').hidden = true;
+  $('#image-viewer-error').hidden = true;
+  $('#image-viewer-image').hidden = false;
+});
+$('#image-viewer-image').addEventListener('error', () => {
+  if (!imageDialog.open) return;
+  $('#image-viewer-content').setAttribute('aria-busy', 'false');
+  $('#image-viewer-loading').hidden = true;
+  $('#image-viewer-image').hidden = true;
+  $('#image-viewer-error').hidden = false;
+});
+imageDialog.addEventListener('cancel', event => { event.preventDefault(); event.stopPropagation(); closeImageViewer(); });
+imageDialog.addEventListener('click', event => backdropClick(event, imageDialog, closeImageViewer));
 $('#expand-prompt').addEventListener('click', () => expandPrompt($('#expand-prompt').getAttribute('aria-expanded') !== 'true'));
 $('#detail-image').addEventListener('load', () => {
   $('#detail-image-frame').setAttribute('aria-busy', 'false');
@@ -528,6 +584,7 @@ window.addEventListener('storage', event => {
   if (view.active === 'saved') renderGallery(); else updateSavedUI();
 });
 document.addEventListener('keydown', event => {
+  if (imageDialog.open) return;
   if (event.metaKey || event.ctrlKey || event.altKey || event.shiftKey || event.isComposing) return;
   const active = document.activeElement;
   if (active.isContentEditable || active.matches('input, textarea, select')) return;
