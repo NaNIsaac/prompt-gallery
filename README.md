@@ -4,6 +4,8 @@
 
 HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 런타임 서버, API 키, 데이터베이스, 외부 이미지 호스팅이 필요하지 않습니다.
 
+개발 절차는 [개발 문서 목차](docs/README.md)와 [기여 안내](CONTRIBUTING.md)를 참고하세요. [개발 흐름](docs/development.md), [테스트·CI·배포](docs/testing-and-deployment.md), [프롬프트 등록 원칙](docs/prompt-publishing.md)을 나누어 관리합니다.
+
 ## 로컬 실행
 
 Node.js 22 이상에서 다음 명령을 사용합니다. 빌드 시 결과 이미지를 공유용 JPEG로 변환하기 위해 Sharp를 사용합니다.
@@ -21,6 +23,15 @@ npm run build
 npm run preview
 ```
 
+전체 자동 검증은 Chromium을 한 번 설치한 뒤 실행합니다.
+
+```sh
+npx playwright install chromium
+npm run check
+```
+
+`check`는 단위·데이터 검사, 빌드, 데스크톱·모바일 Chromium 브라우저 테스트를 실행합니다. 브라우저 테스트는 전용 4180번 포트의 `/prompt-gallery/` 경로에서 빌드 결과를 검사합니다.
+
 GitHub Pages와 같은 하위 경로에서도 확인할 수 있습니다.
 
 ```sh
@@ -30,8 +41,9 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 ## GitHub Pages 배포
 
 1. GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다.
-2. `main` 브랜치에 푸시하면 `.github/workflows/pages.yml`이 테스트, 정적 파일 빌드, Pages 배포를 순서대로 수행합니다.
-3. Actions의 배포 작업에 표시된 URL에서 확인합니다. 이 저장소의 기본 주소는 `https://q07k.github.io/prompt-gallery/`입니다.
+2. 작업 브랜치에서 `main` 대상 PR을 만듭니다. `.github/workflows/pages.yml`의 필수 `CI` 검사(테스트·빌드·브라우저 검증)가 성공한 뒤 병합합니다.
+3. `main`에 병합되면 같은 CI를 다시 실행하고, 성공한 빌드 결과를 Pages에 배포합니다. PR과 다른 브랜치의 수동 실행에서는 배포하지 않습니다.
+4. Actions의 배포 작업에 표시된 URL에서 확인합니다. 이 저장소의 기본 주소는 `https://q07k.github.io/prompt-gallery/`입니다.
 
 상세 공유 링크는 `prompts/handcrafted-diorama/`처럼 프롬프트별 정적 페이지를 사용합니다. 빌드가 각 페이지의 Open Graph 메타태그와 실제 결과 이미지로 만든 1200×600 JPEG를 생성하므로, 카카오톡에서도 제목과 결과 이미지를 읽을 수 있습니다. 세로 이미지는 잘리지 않도록 여백을 넣습니다. 이미지 파일명에 원본 해시를 넣어 결과 교체 시 이미지 캐시도 갱신됩니다. 기존 `#prompt=...` 링크도 계속 열리며, 상세의 링크 복사 버튼은 새 공유 주소를 복사합니다. PR에서는 테스트와 빌드만 실행합니다.
 
@@ -43,7 +55,7 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 
 1. `assets/images/`에 첨부 예시, 결과 이미지, 가벼운 썸네일을 넣습니다. WebP 형식을 권장합니다.
 2. `data/prompts.json` 배열에 아래 구조의 항목을 추가합니다.
-3. `npm test`와 `npm run build`로 데이터와 파일 경로를 확인합니다.
+3. [등록 원칙](docs/prompt-publishing.md)에 따라 원본과 결과를 검토하고 `npm run check`로 데이터·파일 경로·실제 브라우저 동작을 확인합니다.
 
 ```json
 {

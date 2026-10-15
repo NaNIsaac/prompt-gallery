@@ -9,12 +9,15 @@
     "start": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "check": "npm test && npm run build && npm run test:e2e",
     "preview": "node scripts/serve.mjs --dist"
   },
   "engines": {
     "node": ">=22"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "sharp": "^0.35.5"
   }
 }
