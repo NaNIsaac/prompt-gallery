@@ -72,6 +72,10 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 
 ## 샘플과 출처
 
+직접 등록한 `handcrafted-diorama`는 사용자가 제공한 한국어 프롬프트를 원문 그대로 보관합니다. 내장 이미지 생성 도구로 제주 감성의 가상 돌집·귤나무 레퍼런스를 먼저 만들고, 그 이미지를 첨부해 등록된 프롬프트만으로 미니어처 결과를 생성했습니다. 레퍼런스는 실제 장소를 촬영한 사진이 아니며, 결과 속 지명과 표지판도 생성된 표현입니다. 상세 화면에서 예시 레퍼런스를 열어 저장하거나 본인의 풍경·건물·사물 사진으로 바꿔 사용할 수 있습니다.
+
+결과는 `assets/images/handcrafted-diorama.webp`, 레퍼런스는 `assets/images/handcrafted-diorama.reference.webp`, 카드용 썸네일은 `assets/images/handcrafted-diorama.thumb.webp`에 보관합니다.
+
 초기 16개 항목은 [EvoLinkAI의 공개 프롬프트 컬렉션](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts)에서 선별한 커뮤니티 샘플입니다. 원문 프롬프트, 작성자, 원본 게시물 링크를 각 항목에 보관했습니다. 한국어 제목과 탐색용 태그는 이 갤러리를 위해 추가했습니다. 이 프로젝트에서 직접 생성하거나 재검증한 결과로 표시하지 않습니다.
 
 원본 컬렉션의 CC0 라이선스는 `licenses/sample-collection-CC0.txt`에 보관합니다. 일부 원본에는 브랜드나 서명이 포함되어 있으며 이미지는 해당 공개 예시 그대로입니다. 샘플은 본인의 결과와 프롬프트로 교체할 수 있습니다.
