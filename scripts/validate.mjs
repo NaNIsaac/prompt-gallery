@@ -17,12 +17,12 @@ export async function readCatalog(root = projectRoot) {
     }
     if (!categories.slice(1).includes(item.category)) throw new Error(`${item.id}: unsupported category`);
     if (!Array.isArray(item.tags) || !item.tags.every(tag => typeof tag === 'string')) throw new Error(`${item.id}: tags must be strings`);
-    if (!Array.isArray(item.referenceImages)) throw new Error(`${item.id}: referenceImages must be an array`);
-    if (![null, 'image', 'portrait'].includes(item.inputRequirement)) throw new Error(`${item.id}: invalid inputRequirement`);
+    if (!Array.isArray(item.referenceImages) || !item.referenceImages.length) throw new Error(`${item.id}: at least one reference image is required`);
+    if (!['image', 'portrait'].includes(item.inputRequirement)) throw new Error(`${item.id}: a photo input is required`);
     if (![item.width, item.height].every(n => Number.isFinite(n) && n > 0)) throw new Error(`${item.id}: invalid image dimensions`);
     if (!Number.isFinite(item.order)) throw new Error(`${item.id}: invalid order`);
     if (!/^#[0-9a-f]{6}$/i.test(item.color)) throw new Error(`${item.id}: invalid placeholder color`);
-    for (const field of ['sourceUrl', 'collectionUrl']) {
+    for (const field of ['sourceUrl', 'collectionUrl', 'inspirationUrl']) {
       if (item[field] && new URL(item[field]).protocol !== 'https:') throw new Error(`${item.id}: ${field} must use HTTPS`);
     }
     for (const asset of [item.image, item.thumbnail, ...item.referenceImages]) {

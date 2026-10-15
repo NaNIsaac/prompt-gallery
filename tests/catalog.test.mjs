@@ -2,20 +2,43 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { filterPrompts, normalizeSearch, parseSavedIds, readPromptHash } from '../src/catalog.mjs';
 import { readCatalog } from '../scripts/validate.mjs';
+import { readFile, readdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const prompts = await readCatalog();
 
 test('published catalog has complete records and local full-size, thumbnail and reference assets', () => {
   assert.ok(prompts.length > 0);
-  assert.ok(prompts.some(item => item.inputRequirement));
+  assert.ok(prompts.every(item => item.inputRequirement && item.referenceImages.length));
 });
 
 test('search normalizes unicode and case, matches all words across tags and body', () => {
   assert.equal(normalizeSearch(' Ｇｌａｓｓ '), 'glass');
-  const items = filterPrompts(prompts, { query: 'SERUM 제품' });
-  assert.ok(items.length > 0);
-  assert.ok(items.every(item => item.category === '제품' && item.prompt.toLowerCase().includes('serum')));
+  const fixture = [
+    { ...prompts[0], id: 'serum', title: 'SERUM', category: '제품', prompt: 'a clear GLASS bottle' },
+    { ...prompts[0], id: 'other', title: 'SERUM', category: '인물', prompt: 'portrait' },
+  ];
+  const items = filterPrompts(fixture, { query: 'ｓｅｒｕｍ 제품 glass' });
+  assert.deepEqual(items.map(item => item.id), ['serum']);
   assert.deepEqual(filterPrompts(prompts, { query: 'no-such-prompt-anywhere-000' }), []);
+});
+
+test('reference examples are distinct, results are separate, and removed catalog images are not published', async () => {
+  const references = new Set();
+  const expectedAssets = new Set();
+  const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+  for (const prompt of prompts) {
+    const result = hash(await readFile(new URL(`../${prompt.image}`, import.meta.url)));
+    for (const reference of prompt.referenceImages) {
+      const input = hash(await readFile(new URL(`../${reference}`, import.meta.url)));
+      assert.notEqual(input, result, `${prompt.id}: result must not be the input file`);
+      assert.ok(!references.has(input), `${prompt.id}: use a distinct reference example`);
+      references.add(input);
+    }
+    for (const asset of [prompt.image, prompt.thumbnail, ...prompt.referenceImages]) expectedAssets.add(asset.split('/').at(-1));
+  }
+  const actualAssets = await readdir(new URL('../assets/images/', import.meta.url));
+  assert.deepEqual(actualAssets.sort(), [...expectedAssets].sort());
 });
 
 test('category, photo requirement and saved filters intersect without changing source order', () => {

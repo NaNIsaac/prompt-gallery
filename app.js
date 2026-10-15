@@ -10,7 +10,7 @@ const view = createViewState();
 const filters = () => view.filters[view.active];
 const storageKey = 'prompt-gallery:saved:v1';
 const defaultTitle = document.title;
-const defaultFeedback = '복사한 프롬프트를 ChatGPT에 붙여넣으세요.';
+const defaultFeedback = 'ChatGPT에 사진 1장과 복사한 프롬프트를 함께 보내세요.';
 let prompts = [];
 let visiblePrompts = [];
 let savedIds = new Set();
@@ -188,7 +188,7 @@ async function copyText(text, trigger, recoveryPrompt = null, isLink = false) {
     const primary = navigator.clipboard?.writeText && window.isSecureContext ? value => navigator.clipboard.writeText(value) : null;
     await writeClipboard(text, primary, legacyCopy);
     setCopyButton(trigger, 'success');
-    notify(isLink ? '프롬프트 링크를 복사했어요.' : '프롬프트를 복사했어요. ChatGPT에 붙여넣으세요.');
+    notify(isLink ? '프롬프트 링크를 복사했어요.' : '프롬프트를 복사했어요. ChatGPT에 사진과 함께 보내세요.');
   } catch {
     setCopyButton(trigger, 'default');
     if (!isLink) {
@@ -229,6 +229,18 @@ function createCard(prompt, index) {
   const meta = element('div', 'card-meta');
   meta.append(element('span', '', prompt.category), element('span', 'tag-dot'), element('span', 'secondary-tag', prompt.tags[0]));
   summary.append(title, meta);
+  if (prompt.referenceImages[0]) {
+    const reference = element('div', 'card-reference');
+    const referenceImage = new Image();
+    referenceImage.src = new URL(prompt.referenceImages[0], document.baseURI).href;
+    referenceImage.alt = '';
+    referenceImage.width = 60;
+    referenceImage.height = 44;
+    referenceImage.loading = index < 8 ? 'eager' : 'lazy';
+    referenceImage.addEventListener('error', () => { reference.hidden = true; layoutGallery(); }, { once: true });
+    reference.append(referenceImage, element('span', '', '첨부 예시'));
+    summary.prepend(reference);
+  }
   open.append(preview, summary);
   open.addEventListener('click', event => {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -271,8 +283,8 @@ function syncControls() {
     $(`#${id}`).classList.toggle('is-active', selected);
     $(`#${id}`).setAttribute('aria-pressed', String(selected));
   }
-  $('#page-title').replaceChildren(document.createTextNode(saved ? '저장한 프롬프트' : '마음에 드는 이미지, 바로 쓰는 프롬프트'), element('span', 'accent-dot', '.'));
-  $('#page-subtitle').textContent = saved ? '이 브라우저에 저장한 프롬프트를 다시 찾아 복사하세요.' : '결과를 둘러보고 프롬프트를 복사해 나만의 이미지를 만들어보세요.';
+  $('#page-title').replaceChildren(document.createTextNode(saved ? '저장한 프롬프트' : '사진 한 장, 새로운 모습으로'), element('span', 'accent-dot', '.'));
+  $('#page-subtitle').textContent = saved ? '이 브라우저에 저장한 프롬프트를 다시 찾아 복사하세요.' : '원본과 결과를 보고, 내 사진에 써볼 프롬프트를 골라보세요.';
 }
 
 function renderGallery() {
@@ -430,7 +442,8 @@ async function loadCatalog() {
     prompts = await response.json();
     if (!Array.isArray(prompts)) throw new Error('Invalid catalog');
     try { savedIds = parseSavedIds(localStorage.getItem(storageKey), new Set(prompts.map(p => p.id))); } catch { savedIds = new Set(); }
-    $('#categories').replaceChildren(...categories.map(category => {
+    $('.reference-toggle').hidden = prompts.every(prompt => prompt.inputRequirement);
+    $('#categories').replaceChildren(...categories.filter(category => category === '전체' || prompts.some(prompt => prompt.category === category)).map(category => {
       const btn = button('category-button', category);
       btn.textContent = category;
       btn.dataset.category = category;
