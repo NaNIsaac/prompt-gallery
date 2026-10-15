@@ -1,19 +1,36 @@
 import { categories, filterPrompts, parseSavedIds, readPromptHash } from './src/catalog.mjs';
+import { createViewState, resetActiveFilters, navigationState, writeClipboard } from './src/ui-state.mjs';
 
 const $ = selector => document.querySelector(selector);
 const gallery = $('#gallery');
 const dialog = $('#prompt-dialog');
 const aboutDialog = $('#about-dialog');
 const search = $('#search');
+const view = createViewState();
+const filters = () => view.filters[view.active];
 const storageKey = 'prompt-gallery:saved:v1';
+const defaultTitle = document.title;
+const defaultFeedback = '복사한 프롬프트를 ChatGPT에 붙여넣으세요.';
 let prompts = [];
 let visiblePrompts = [];
 let savedIds = new Set();
 let currentPrompt = null;
+let modalIds = [];
+let openerId = null;
 let lastTrigger = null;
-let toastTimer;
 let layoutFrame;
-const state = { query: '', category: '전체', referenceOnly: false, savedOnly: false, sort: 'curated' };
+let toastTimer;
+let toastTrigger = null;
+let feedbackTimer;
+let loading = false;
+const copyTimers = new WeakMap();
+
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
 
 function icon(name) {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -25,13 +42,6 @@ function icon(name) {
   return svg;
 }
 
-function element(tag, className, text) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text !== undefined) node.textContent = text;
-  return node;
-}
-
 function button(className, label, iconName) {
   const node = element('button', className);
   node.type = 'button';
@@ -40,12 +50,46 @@ function button(className, label, iconName) {
   return node;
 }
 
-function notify(message) {
-  const toast = $('#toast');
+function dismissToast() {
   clearTimeout(toastTimer);
-  toast.textContent = message;
-  toast.classList.add('is-visible');
-  toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2600);
+  const toast = $('#toast');
+  if (toast.contains(document.activeElement)) {
+    if (toastTrigger?.isConnected) toastTrigger.focus({ preventScroll: true });
+    else focusCard(openerId);
+  }
+  toast.classList.remove('is-visible');
+  $('#toast-action').hidden = true;
+}
+
+function resetFeedback() {
+  clearTimeout(feedbackTimer);
+  if (document.activeElement === $('#detail-undo')) $('#detail-save').focus({ preventScroll: true });
+  $('#detail-feedback').textContent = defaultFeedback;
+  $('#detail-feedback').removeAttribute('data-tone');
+  $('#detail-undo').hidden = true;
+  $('#detail-undo').onclick = null;
+}
+
+function notify(message, { undo, error = false } = {}) {
+  if (dialog.open) {
+    clearTimeout(feedbackTimer);
+    $('#detail-feedback').textContent = message;
+    $('#detail-feedback').dataset.tone = error ? 'error' : 'success';
+    if (!undo && document.activeElement === $('#detail-undo')) $('#detail-save').focus({ preventScroll: true });
+    $('#detail-undo').hidden = !undo;
+    $('#detail-undo').onclick = undo || null;
+    if (!undo && !error) feedbackTimer = setTimeout(resetFeedback, 4500);
+    return;
+  }
+  clearTimeout(toastTimer);
+  if (!$('#toast').contains(document.activeElement)) toastTrigger = document.activeElement;
+  $('#toast-message').textContent = message;
+  $('#toast-message').dataset.tone = error ? 'error' : 'success';
+  if (!undo && document.activeElement === $('#toast-action')) focusCard(openerId);
+  $('#toast-action').hidden = !undo;
+  $('#toast-action').onclick = undo || null;
+  $('#toast').classList.add('is-visible');
+  toastTimer = setTimeout(dismissToast, undo || error ? 10000 : 4500);
 }
 
 function layoutGallery() {
@@ -54,24 +98,22 @@ function layoutGallery() {
     gallery.querySelectorAll('.prompt-card').forEach(card => {
       card.style.gridRowEnd = `span ${Math.ceil(card.firstElementChild.getBoundingClientRect().height + 20)}`;
     });
+    if ($('#expand-prompt').getAttribute('aria-expanded') === 'true') expandPrompt(true);
   });
 }
-
-const resizeObserver = new ResizeObserver(layoutGallery);
-resizeObserver.observe(gallery);
+new ResizeObserver(layoutGallery).observe(gallery);
 
 function skeletons() {
   gallery.replaceChildren();
   for (let i = 0; i < 8; i++) {
-    const item = element('article', 'prompt-card skeleton');
-    item.setAttribute('aria-hidden', 'true');
+    const card = element('article', 'prompt-card skeleton');
+    card.setAttribute('aria-hidden', 'true');
     const inner = element('div', 'card-inner');
-    inner.append(element('div', 'image-placeholder'));
-    const info = element('div', 'card-info');
-    info.append(element('div', 'skeleton-line'), element('div', 'skeleton-line short'));
-    inner.append(info);
-    item.append(inner);
-    gallery.append(item);
+    const summary = element('div', 'card-summary');
+    summary.append(element('div', 'skeleton-line'), element('div', 'skeleton-line short'));
+    inner.append(element('div', 'image-placeholder'), summary);
+    card.append(inner);
+    gallery.append(card);
   }
   layoutGallery();
 }
@@ -80,50 +122,80 @@ function updateSavedUI() {
   $('#saved-count').textContent = savedIds.size;
   document.querySelectorAll('[data-save-id]').forEach(btn => {
     const saved = savedIds.has(btn.dataset.saveId);
+    const title = prompts.find(p => p.id === btn.dataset.saveId)?.title || '프롬프트';
     btn.setAttribute('aria-pressed', String(saved));
-    btn.setAttribute('aria-label', saved ? '저장 취소' : '프롬프트 저장');
+    btn.setAttribute('aria-label', `${title} ${saved ? '저장 취소' : '저장'}`);
+    btn.title = saved ? '저장 취소' : '프롬프트 저장';
+    const label = btn.querySelector('span');
+    if (label) label.textContent = saved ? '저장됨' : '저장';
   });
 }
 
-function toggleSaved(id) {
-  if (savedIds.has(id)) savedIds.delete(id); else savedIds.add(id);
-  try {
-    localStorage.setItem(storageKey, JSON.stringify([...savedIds]));
-    notify(savedIds.has(id) ? '이 브라우저에 프롬프트를 저장했어요.' : '저장한 프롬프트에서 지웠어요.');
-  } catch { notify('브라우저 저장 공간을 사용할 수 없어 이번 방문 동안만 저장됩니다.'); }
-  if (state.savedOnly) renderGallery();
-  updateSavedUI();
+function focusCard(id, fallbackIndex = 0) {
+  const cards = [...gallery.querySelectorAll('.prompt-card')];
+  const card = cards.find(item => item.dataset.id === id) || cards[Math.min(fallbackIndex, cards.length - 1)];
+  (card?.querySelector('.card-open') || $('#saved-tab')).focus({ preventScroll: true });
 }
 
-async function copyText(text, trigger, success = '프롬프트를 복사했어요. ChatGPT에 붙여넣어 보세요.') {
+function setSaved(id, saved, allowUndo = true) {
+  const index = visiblePrompts.findIndex(p => p.id === id);
+  const restoreFocus = !dialog.open && document.activeElement.closest?.('.prompt-card')?.dataset.id === id;
+  if (saved) savedIds.add(id); else savedIds.delete(id);
+  let persisted = true;
+  try { localStorage.setItem(storageKey, JSON.stringify([...savedIds])); } catch { persisted = false; }
+  if (view.active === 'saved') {
+    renderGallery();
+    if (restoreFocus) focusCard(id, Math.max(0, index));
+  } else updateSavedUI();
+  const undo = !saved && allowUndo ? () => {
+    setSaved(id, true, false);
+    if (!dialog.open) focusCard(id);
+  } : null;
+  notify(persisted ? (saved ? '이 브라우저에 저장했어요.' : '저장을 취소했어요.') : '브라우저 저장이 제한되어 이번 방문 동안만 유지돼요.', { undo, error: !persisted });
+}
+
+function setCopyButton(btn, phase) {
+  if (!btn) return;
+  if (!btn.dataset.defaultLabel) btn.dataset.defaultLabel = btn.getAttribute('aria-label') || btn.textContent.trim();
+  if (!btn.dataset.defaultText) btn.dataset.defaultText = btn.querySelector('span')?.textContent || '';
+  clearTimeout(copyTimers.get(btn));
+  const isLink = btn.id === 'share-prompt';
+  const text = phase === 'busy' ? '복사 중…' : phase === 'success' ? '복사 완료' : btn.dataset.defaultText;
+  btn.replaceChildren(icon(phase === 'success' ? 'check' : isLink ? 'link' : 'copy'));
+  if (btn.dataset.defaultText) btn.append(element('span', '', text));
+  btn.dataset.copying = String(phase === 'busy');
+  btn.setAttribute('aria-disabled', String(phase === 'busy'));
+  btn.setAttribute('aria-label', phase === 'default' ? btn.dataset.defaultLabel : `${isLink ? '링크' : '프롬프트'} ${text}`);
+  btn.classList.toggle('is-copied', phase === 'success');
+  if (phase === 'success') copyTimers.set(btn, setTimeout(() => setCopyButton(btn, 'default'), 3000));
+}
+
+function legacyCopy(text) {
+  const active = document.activeElement;
+  const field = element('textarea', 'sr-only');
+  field.value = text;
+  (dialog.open ? dialog : document.body).append(field);
+  field.focus({ preventScroll: true });
+  field.select();
+  try { return document.execCommand('copy'); }
+  finally { field.remove(); active?.focus({ preventScroll: true }); }
+}
+
+async function copyText(text, trigger, recoveryPrompt = null, isLink = false) {
+  if (trigger?.dataset.copying === 'true') return;
+  setCopyButton(trigger, 'busy');
   try {
-    if (navigator.clipboard?.writeText && window.isSecureContext) {
-      await navigator.clipboard.writeText(text);
-    } else {
-      const field = element('textarea', 'sr-only');
-      field.value = text;
-      (dialog.open ? dialog : document.body).append(field);
-      field.focus();
-      field.select();
-      let copied;
-      try { copied = document.execCommand('copy'); } finally { field.remove(); }
-      trigger?.focus({ preventScroll: true });
-      if (!copied) throw new Error('Clipboard unavailable');
-    }
-    if (trigger) {
-      const previous = [...trigger.childNodes].map(node => node.cloneNode(true));
-      trigger.replaceChildren(icon('check'), element('span', '', '복사 완료'));
-      trigger.classList.add('is-copied');
-      trigger.disabled = true;
-      setTimeout(() => { trigger.replaceChildren(...previous); trigger.classList.remove('is-copied'); trigger.disabled = false; }, 1700);
-    }
-    notify(success);
+    const primary = navigator.clipboard?.writeText && window.isSecureContext ? value => navigator.clipboard.writeText(value) : null;
+    await writeClipboard(text, primary, legacyCopy);
+    setCopyButton(trigger, 'success');
+    notify(isLink ? '프롬프트 링크를 복사했어요.' : '프롬프트를 복사했어요. ChatGPT에 붙여넣으세요.');
   } catch {
-    if (currentPrompt && dialog.open) {
-      $('#detail-prompt').focus();
-      $('#detail-prompt').select();
+    setCopyButton(trigger, 'default');
+    if (!isLink) {
+      if (!dialog.open && recoveryPrompt) openPrompt(recoveryPrompt, trigger);
+      if (dialog.open) { $('#detail-prompt').focus({ preventScroll: true }); $('#detail-prompt').select(); }
     }
-    notify('자동 복사가 차단됐어요. 상세의 프롬프트를 선택해 직접 복사해 주세요.');
+    notify(isLink ? '복사가 제한되어 있어요. 주소창의 링크를 복사해 주세요.' : '자동 복사가 제한되어 원문을 선택했어요. Ctrl+C 또는 복사 메뉴를 사용하세요.', { error: true });
   }
 }
 
@@ -131,150 +203,224 @@ function createCard(prompt, index) {
   const card = element('article', 'prompt-card');
   card.dataset.id = prompt.id;
   const inner = element('div', 'card-inner');
-  const imageButton = button('image-button', `${prompt.title} 자세히 보기`);
-  imageButton.style.setProperty('--image-ratio', Math.max(.72, Math.min(1.28, prompt.width / prompt.height)));
-  imageButton.style.setProperty('--image-color', prompt.color);
+  const open = element('a', 'card-open');
+  open.href = `#prompt=${encodeURIComponent(prompt.id)}`;
+  open.setAttribute('aria-labelledby', `card-title-${prompt.id}`);
+  const preview = element('div', 'image-preview');
+  preview.style.setProperty('--image-ratio', Math.max(.72, Math.min(1.28, prompt.width / prompt.height)));
+  preview.style.setProperty('--image-color', prompt.color);
   const img = new Image();
   img.src = new URL(prompt.thumbnail, document.baseURI).href;
-  img.alt = prompt.title;
+  img.alt = '';
   img.width = prompt.width;
   img.height = prompt.height;
   img.loading = index < 8 ? 'eager' : 'lazy';
   img.decoding = 'async';
-  img.addEventListener('load', layoutGallery, { once: true });
-  img.addEventListener('error', () => { img.alt = `${prompt.title} — 이미지를 불러오지 못했어요`; });
-  imageButton.append(img);
+  img.addEventListener('error', () => {
+    img.hidden = true;
+    const error = element('div', 'preview-error');
+    error.append(icon('photo'), element('span', '', '미리보기를 불러오지 못했어요.'), element('small', '', '눌러서 원본을 확인하세요.'));
+    preview.append(error);
+  }, { once: true });
+  preview.append(img);
+  const summary = element('div', 'card-summary');
+  const title = element('h2', 'card-title', prompt.title);
+  title.id = `card-title-${prompt.id}`;
+  const meta = element('div', 'card-meta');
+  meta.append(element('span', '', prompt.category), element('span', 'tag-dot'), element('span', 'secondary-tag', prompt.tags[0]));
+  summary.append(title, meta);
+  open.append(preview, summary);
+  open.addEventListener('click', event => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    openPrompt(prompt, open);
+  });
+  const actions = element('div', 'card-actions');
   if (prompt.inputRequirement) {
     const badge = element('span', 'input-badge');
-    badge.append(icon('photo'), document.createTextNode(prompt.inputRequirement === 'portrait' ? '내 사진 활용' : '사진 활용'));
-    imageButton.append(badge);
+    badge.append(icon('photo'), document.createTextNode(prompt.inputRequirement === 'portrait' ? '인물 사진 1장 필요' : '사진 1장 필요'));
+    actions.append(badge);
   }
-  imageButton.addEventListener('click', () => openPrompt(prompt, imageButton));
-  const save = button('icon-button save-button card-save', '프롬프트 저장', 'bookmark');
-  save.dataset.saveId = prompt.id;
-  save.setAttribute('aria-pressed', String(savedIds.has(prompt.id)));
-  save.addEventListener('click', () => toggleSaved(prompt.id));
-  const info = element('div', 'card-info');
-  const heading = element('h2');
-  const title = button('card-title', `${prompt.title} 자세히 보기`);
-  title.textContent = prompt.title;
-  title.title = prompt.title;
-  title.addEventListener('click', () => openPrompt(prompt, title));
-  heading.append(title);
-  const bottom = element('div', 'card-bottom');
-  const tags = element('div', 'card-tags');
-  tags.append(element('span', '', prompt.category), element('span', 'tag-dot'), element('span', 'secondary-tag', prompt.tags[0]));
   const copy = button('copy-button', `${prompt.title} 프롬프트 복사`, 'copy');
-  copy.append(element('span', '', '복사'));
-  copy.addEventListener('click', () => copyText(prompt.prompt, copy));
-  bottom.append(tags, copy);
-  info.append(heading, bottom);
-  inner.append(imageButton, info);
+  copy.append(element('span', '', '프롬프트 복사'));
+  copy.addEventListener('click', () => copyText(prompt.prompt, copy, prompt));
+  actions.append(copy);
+  const save = button('icon-button save-button card-save', `${prompt.title} 저장`, 'bookmark');
+  save.dataset.saveId = prompt.id;
+  save.addEventListener('click', () => setSaved(prompt.id, !savedIds.has(prompt.id)));
+  inner.append(open, actions);
   card.append(inner, save);
   return card;
 }
 
+function hasFilters() {
+  const { query, category, referenceOnly } = filters();
+  return Boolean(query.trim() || category !== '전체' || referenceOnly);
+}
+
+function syncControls() {
+  const active = filters();
+  search.value = active.query;
+  $('#reference-only').checked = active.referenceOnly;
+  $('#sort').value = active.sort;
+  $('#clear-search').hidden = !active.query;
+  $('#clear-filters').hidden = !hasFilters();
+  $('#categories').querySelectorAll('button').forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.category === active.category)));
+  const saved = view.active === 'saved';
+  for (const [id, selected] of [['explore-tab', !saved], ['saved-tab', saved]]) {
+    $(`#${id}`).classList.toggle('is-active', selected);
+    $(`#${id}`).setAttribute('aria-pressed', String(selected));
+  }
+  $('#page-title').replaceChildren(document.createTextNode(saved ? '저장한 프롬프트' : '마음에 드는 이미지, 바로 쓰는 프롬프트'), element('span', 'accent-dot', '.'));
+  $('#page-subtitle').textContent = saved ? '이 브라우저에 저장한 프롬프트를 다시 찾아 복사하세요.' : '결과를 둘러보고 프롬프트를 복사해 나만의 이미지를 만들어보세요.';
+}
+
 function renderGallery() {
-  visiblePrompts = filterPrompts(prompts, { ...state, savedIds });
+  visiblePrompts = filterPrompts(prompts, { ...filters(), savedOnly: view.active === 'saved', savedIds });
   gallery.replaceChildren(...visiblePrompts.map(createCard));
   gallery.hidden = visiblePrompts.length === 0;
-  const empty = $('#empty-state');
-  empty.hidden = visiblePrompts.length !== 0;
-  const savedEmpty = state.savedOnly && savedIds.size === 0;
-  $('#empty-title').textContent = savedEmpty ? '다음에 또 쓰고 싶은 프롬프트를 모아보세요.' : '아직 일치하는 프롬프트가 없어요.';
-  $('#empty-message').textContent = savedEmpty ? '이미지 오른쪽 위의 북마크를 누르면 여기에 모입니다.' : '다른 검색어나 카테고리로 새로운 이미지를 찾아보세요.';
-  $('#results-status').replaceChildren(element('strong', '', visiblePrompts.length), document.createTextNode(state.savedOnly ? '개의 저장한 프롬프트' : '개의 프롬프트'));
-  $('#clear-search').hidden = !state.query;
-  $('#categories').querySelectorAll('button').forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.category === state.category)));
-  $('#explore-tab').classList.toggle('is-active', !state.savedOnly);
-  $('#saved-tab').classList.toggle('is-active', state.savedOnly);
-  $('#explore-tab').setAttribute('aria-pressed', String(!state.savedOnly));
-  $('#saved-tab').setAttribute('aria-pressed', String(state.savedOnly));
-  $('#page-title').replaceChildren(document.createTextNode(state.savedOnly ? '다음에도 꺼내 쓰고 싶은 아이디어' : '발견하고, 복사하고, 만들어보세요'), element('span', 'accent-dot', '.'));
-  $('#page-subtitle').textContent = state.savedOnly ? '마음에 들어 저장해 둔 프롬프트를 다시 만나보세요.' : '마음에 드는 이미지에서 시작하는, 나만의 다음 아이디어.';
+  $('#empty-state').hidden = visiblePrompts.length !== 0;
+  const savedEmpty = view.active === 'saved' && savedIds.size === 0;
+  $('#empty-title').textContent = savedEmpty ? '아직 저장한 프롬프트가 없어요.' : view.active === 'saved' ? '조건에 맞는 저장한 프롬프트가 없어요.' : '검색 결과가 없어요.';
+  $('#empty-message').textContent = savedEmpty ? '이미지의 북마크 버튼을 누르면 여기에 모입니다.' : '검색어나 필터를 바꿔 다시 찾아보세요.';
+  $('#reset-filters').textContent = savedEmpty ? '프롬프트 둘러보기' : '필터 초기화';
+  $('#empty-icon use').setAttribute('href', `#i-${savedEmpty ? 'bookmark' : 'search'}`);
+  const query = filters().query.trim();
+  const context = query ? ` · “${query.length > 40 ? query.slice(0, 40) + '…' : query}” 검색` : filters().category !== '전체' ? ` · ${filters().category}` : '';
+  $('#results-status').replaceChildren(element('strong', '', visiblePrompts.length), document.createTextNode(`개의 ${view.active === 'saved' ? '저장한 ' : ''}프롬프트${context}`));
+  syncControls();
   updateSavedUI();
   layoutGallery();
 }
 
-function openPrompt(prompt, trigger = null, writeHash = true) {
-  if (trigger) lastTrigger = trigger;
+function switchView(name) {
+  if (loading || !prompts.length || view.active === name) return;
+  view.active = name;
+  dismissToast();
+  renderGallery();
+}
+
+function expandPrompt(expanded) {
+  const field = $('#detail-prompt');
+  const control = $('#expand-prompt');
+  control.setAttribute('aria-expanded', String(expanded));
+  control.textContent = expanded ? '접기' : '전체 보기';
+  field.classList.toggle('is-expanded', expanded);
+  field.style.height = '';
+  if (expanded) field.style.height = `${field.scrollHeight + 2}px`;
+}
+
+function updateModalNavigation() {
+  if (!currentPrompt) return;
+  const nav = navigationState(modalIds, currentPrompt.id);
+  $('#previous-prompt').disabled = !nav.previous;
+  $('#next-prompt').disabled = !nav.next;
+  $('#detail-position').textContent = `${nav.index + 1} / ${nav.count}`;
+}
+
+function loadDetailImage(prompt) {
+  const image = $('#detail-image');
+  $('#detail-image-frame').setAttribute('aria-busy', 'true');
+  $('#detail-image-error').hidden = true;
+  $('#detail-image-loading').hidden = false;
+  image.hidden = true;
+  image.alt = prompt.title;
+  image.src = new URL(prompt.image, document.baseURI).href;
+}
+
+function openPrompt(prompt, trigger = null, writeHistory = true) {
+  const wasOpen = dialog.open;
+  if (!wasOpen) {
+    modalIds = (visiblePrompts.some(p => p.id === prompt.id) ? visiblePrompts : prompts).map(p => p.id);
+    openerId = prompt.id;
+    lastTrigger = trigger;
+  }
   currentPrompt = prompt;
   $('#detail-title').textContent = prompt.title;
   $('#detail-category').textContent = prompt.category;
-  $('#detail-image').src = new URL(prompt.image, document.baseURI).href;
-  $('#detail-image').alt = prompt.title;
   $('#original-image').href = new URL(prompt.image, document.baseURI).href;
   $('#detail-tags').replaceChildren(...prompt.tags.map(tag => element('span', 'detail-tag', tag)));
   $('#detail-usage').textContent = prompt.usage;
   $('#input-guide').classList.toggle('is-text', !prompt.inputRequirement);
-  $('#input-guide').querySelector('use').setAttribute('href', `#i-${prompt.inputRequirement ? 'photo' : 'spark'}`);
+  $('#input-guide use').setAttribute('href', `#i-${prompt.inputRequirement ? 'photo' : 'spark'}`);
   $('#detail-prompt').value = prompt.prompt;
+  expandPrompt(false);
   $('#detail-prompt').scrollTop = 0;
-  $('#detail-author').textContent = prompt.author;
+  $('#detail-credit-label').replaceChildren(document.createTextNode(prompt.sample ? '커뮤니티 샘플 · ' : '작성 · '), element('span', '', prompt.author));
   $('#detail-source').href = prompt.sourceUrl;
-  const credit = $('.detail-credit');
-  credit.firstElementChild.firstChild.nodeValue = prompt.sample ? '커뮤니티 샘플 · ' : '작성 · ';
   $('#detail-save').dataset.saveId = prompt.id;
   const refs = $('#reference-images');
-  refs.replaceChildren(...prompt.referenceImages.map(path => {
+  refs.replaceChildren(...prompt.referenceImages.map((path, index) => {
     const link = element('a');
-    const img = new Image();
-    img.src = new URL(path, document.baseURI).href;
-    img.alt = '이 프롬프트의 레퍼런스 이미지';
-    link.href = img.src;
+    const image = new Image();
+    image.src = new URL(path, document.baseURI).href;
+    image.alt = `레퍼런스 ${index + 1} 원본 보기 (새 탭)`;
+    link.href = image.src;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-    link.append(img);
+    link.append(image);
     return link;
   }));
-  refs.hidden = !prompt.referenceImages.length;
-  const currentList = visiblePrompts.some(p => p.id === prompt.id) ? visiblePrompts : prompts;
-  const position = currentList.findIndex(p => p.id === prompt.id);
-  $('#previous-prompt').disabled = position <= 0;
-  $('#next-prompt').disabled = position >= currentList.length - 1;
+  $('#reference-section').hidden = !prompt.referenceImages.length;
+  setCopyButton($('#detail-copy'), 'default');
+  setCopyButton($('#share-prompt'), 'default');
+  resetFeedback();
+  dismissToast();
   updateSavedUI();
-  if (!dialog.open) dialog.showModal();
-  dialog.scrollTop = 0;
-  if (writeHash) history.pushState(null, '', `#prompt=${encodeURIComponent(prompt.id)}`);
+  updateModalNavigation();
+  loadDetailImage(prompt);
+  if (!wasOpen) { dialog.showModal(); $('#close-dialog').focus({ preventScroll: true }); }
+  $('.detail-body').scrollTop = 0;
+  if (writeHistory) {
+    const url = `#prompt=${encodeURIComponent(prompt.id)}`;
+    if (wasOpen) history.replaceState(history.state, '', url);
+    else history.pushState({ ...history.state, promptGallery: true }, '', url);
+  }
   document.title = `${prompt.title} — Prompt Gallery`;
 }
 
-function closePrompt(writeHash = true) {
+function closePrompt(writeHistory = true) {
+  const returnIndex = Math.max(0, modalIds.indexOf(openerId));
   if (dialog.open) dialog.close();
   currentPrompt = null;
-  document.title = 'Prompt Gallery — 발견하고, 복사하고, 만들어보세요.';
-  if (writeHash && location.hash.startsWith('#prompt=')) history.replaceState(null, '', location.pathname + location.search);
+  resetFeedback();
+  document.title = defaultTitle;
+  if (writeHistory && location.hash.startsWith('#prompt=')) {
+    if (history.state?.promptGallery) history.back();
+    else history.replaceState(null, '', location.pathname + location.search);
+  }
   if (lastTrigger?.isConnected) lastTrigger.focus({ preventScroll: true });
+  else focusCard(openerId, returnIndex);
 }
 
 function syncHash() {
   const id = readPromptHash(location.hash);
-  const match = prompts.find(prompt => prompt.id === id);
-  if (match) openPrompt(match, null, false);
-  else if (dialog.open) closePrompt(false);
+  const prompt = prompts.find(item => item.id === id);
+  if (prompt && currentPrompt?.id !== id) openPrompt(prompt, null, false);
+  else if (!prompt && dialog.open) closePrompt(false);
+  else if (id && !prompt && !loading) notify('이 프롬프트를 찾을 수 없어요. 갤러리에서 다른 이미지를 찾아보세요.', { error: true });
 }
 
 function navigatePrompt(direction) {
   if (!currentPrompt) return;
-  const list = visiblePrompts.some(p => p.id === currentPrompt.id) ? visiblePrompts : prompts;
-  const index = list.findIndex(p => p.id === currentPrompt.id);
-  const next = list[index + direction];
-  if (next) {
-    history.replaceState(null, '', `#prompt=${encodeURIComponent(next.id)}`);
-    openPrompt(next, null, false);
-  }
-}
-
-function resetFilters() {
-  Object.assign(state, { query: '', category: '전체', referenceOnly: false, savedOnly: false, sort: 'curated' });
-  search.value = '';
-  $('#reference-only').checked = false;
-  $('#sort').value = 'curated';
-  renderGallery();
+  const nav = navigationState(modalIds, currentPrompt.id);
+  const id = direction < 0 ? nav.previous : nav.next;
+  const prompt = prompts.find(item => item.id === id);
+  if (prompt) openPrompt(prompt);
 }
 
 async function loadCatalog() {
+  if (loading) return;
+  const retrying = document.activeElement === $('#retry-load');
+  loading = true;
+  $('#explore-tab').disabled = true;
+  $('#saved-tab').disabled = true;
+  $('#explore-controls').disabled = true;
   $('#error-state').hidden = true;
+  $('#empty-state').hidden = true;
+  $('#clear-filters').hidden = true;
+  $('#results-status').textContent = '프롬프트를 불러오는 중…';
+  $('#retry-load').disabled = true;
   gallery.hidden = false;
   gallery.setAttribute('aria-busy', 'true');
   skeletons();
@@ -282,58 +428,100 @@ async function loadCatalog() {
     const response = await fetch(new URL('./data/prompts.json', import.meta.url));
     if (!response.ok) throw new Error(`Catalog: ${response.status}`);
     prompts = await response.json();
-    const validIds = new Set(prompts.map(prompt => prompt.id));
-    try { savedIds = parseSavedIds(localStorage.getItem(storageKey), validIds); } catch { savedIds = new Set(); }
+    if (!Array.isArray(prompts)) throw new Error('Invalid catalog');
+    try { savedIds = parseSavedIds(localStorage.getItem(storageKey), new Set(prompts.map(p => p.id))); } catch { savedIds = new Set(); }
     $('#categories').replaceChildren(...categories.map(category => {
       const btn = button('category-button', category);
       btn.textContent = category;
       btn.dataset.category = category;
-      btn.setAttribute('aria-pressed', String(category === state.category));
-      btn.addEventListener('click', () => { state.category = category; renderGallery(); });
+      btn.setAttribute('aria-controls', 'gallery');
+      btn.addEventListener('click', () => { filters().category = category; renderGallery(); });
       return btn;
     }));
+    $('#explore-controls').disabled = false;
+    $('#explore-tab').disabled = false;
+    $('#saved-tab').disabled = false;
     renderGallery();
-    syncHash();
+    if (retrying) search.focus({ preventScroll: true });
   } catch (error) {
     console.error('Unable to load the prompt catalog.', error);
     gallery.replaceChildren();
     gallery.hidden = true;
-    $('#results-status').textContent = '잠시 후 다시 시도해 주세요.';
+    $('#results-status').textContent = '프롬프트를 불러오지 못했어요.';
     $('#error-state').hidden = false;
-  } finally { gallery.setAttribute('aria-busy', 'false'); }
+  } finally {
+    loading = false;
+    gallery.setAttribute('aria-busy', 'false');
+    $('#retry-load').disabled = false;
+  }
+  if (!$('#error-state').hidden) return;
+  syncHash();
 }
 
-search.addEventListener('input', () => { state.query = search.value; renderGallery(); });
-$('#clear-search').addEventListener('click', () => { search.value = ''; state.query = ''; renderGallery(); search.focus(); });
-$('#reference-only').addEventListener('change', event => { state.referenceOnly = event.target.checked; renderGallery(); });
-$('#sort').addEventListener('change', event => { state.sort = event.target.value; renderGallery(); });
-$('#reset-filters').addEventListener('click', resetFilters);
-$('#explore-tab').addEventListener('click', resetFilters);
-$('#saved-tab').addEventListener('click', () => { state.savedOnly = true; state.query = ''; state.category = '전체'; state.referenceOnly = false; search.value = ''; $('#reference-only').checked = false; renderGallery(); });
-$('#detail-save').addEventListener('click', () => { if (currentPrompt) toggleSaved(currentPrompt.id); });
-$('#detail-copy').addEventListener('click', event => { if (currentPrompt) copyText(currentPrompt.prompt, event.currentTarget); });
-$('#mobile-detail-copy').addEventListener('click', event => { if (currentPrompt) copyText(currentPrompt.prompt, event.currentTarget); });
-$('#share-prompt').addEventListener('click', () => { if (currentPrompt) copyText(location.href, null, '이 프롬프트의 링크를 복사했어요.'); });
+search.addEventListener('input', () => { filters().query = search.value; renderGallery(); });
+$('#clear-search').addEventListener('click', () => { filters().query = ''; renderGallery(); search.focus(); });
+$('#reference-only').addEventListener('change', event => { filters().referenceOnly = event.target.checked; renderGallery(); });
+$('#sort').addEventListener('change', event => { filters().sort = event.target.value; renderGallery(); });
+$('#clear-filters').addEventListener('click', () => { resetActiveFilters(view); renderGallery(); search.focus(); });
+$('#reset-filters').addEventListener('click', () => {
+  if (view.active === 'saved' && !savedIds.size) switchView('explore');
+  else { resetActiveFilters(view); renderGallery(); search.focus(); }
+});
+$('#explore-tab').addEventListener('click', () => switchView('explore'));
+$('#saved-tab').addEventListener('click', () => switchView('saved'));
+$('#detail-save').addEventListener('click', () => { if (currentPrompt) setSaved(currentPrompt.id, !savedIds.has(currentPrompt.id)); });
+$('#detail-copy').addEventListener('click', event => { if (currentPrompt) copyText(currentPrompt.prompt, event.currentTarget, currentPrompt); });
+$('#share-prompt').addEventListener('click', event => copyText(location.href, event.currentTarget, null, true));
 $('#previous-prompt').addEventListener('click', () => navigatePrompt(-1));
 $('#next-prompt').addEventListener('click', () => navigatePrompt(1));
 $('#close-dialog').addEventListener('click', () => closePrompt());
+$('#expand-prompt').addEventListener('click', () => expandPrompt($('#expand-prompt').getAttribute('aria-expanded') !== 'true'));
+$('#detail-image').addEventListener('load', () => {
+  $('#detail-image-frame').setAttribute('aria-busy', 'false');
+  $('#detail-image-loading').hidden = true;
+  $('#detail-image').hidden = false;
+});
+$('#detail-image').addEventListener('error', () => {
+  $('#detail-image-frame').setAttribute('aria-busy', 'false');
+  $('#detail-image-loading').hidden = true;
+  $('#detail-image').hidden = true;
+  $('#detail-image-error').hidden = false;
+});
+$('#retry-image').addEventListener('click', () => {
+  if (!currentPrompt) return;
+  loadDetailImage(currentPrompt);
+  $('#original-image').focus({ preventScroll: true });
+});
 dialog.addEventListener('cancel', event => { event.preventDefault(); closePrompt(); });
-dialog.addEventListener('click', event => { if (event.target === dialog) { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closePrompt(); } });
-$('#about-button').addEventListener('click', () => aboutDialog.showModal());
+function backdropClick(event, target, close) {
+  if (event.target !== target) return;
+  const box = target.getBoundingClientRect();
+  if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) close();
+}
+dialog.addEventListener('click', event => backdropClick(event, dialog, closePrompt));
+$('#about-button').addEventListener('click', () => { dismissToast(); aboutDialog.showModal(); $('#close-about').focus(); });
 $('#close-about').addEventListener('click', () => aboutDialog.close());
+aboutDialog.addEventListener('click', event => backdropClick(event, aboutDialog, () => aboutDialog.close()));
 $('#retry-load').addEventListener('click', loadCatalog);
+$('#toast-dismiss').addEventListener('click', dismissToast);
+$('#toast').addEventListener('mouseenter', () => clearTimeout(toastTimer));
+$('#toast').addEventListener('focusin', () => clearTimeout(toastTimer));
+$('#toast').addEventListener('mouseleave', () => { toastTimer = setTimeout(dismissToast, 10000); });
 window.addEventListener('popstate', syncHash);
 window.addEventListener('hashchange', syncHash);
 window.addEventListener('storage', event => {
   if (event.key !== storageKey) return;
   savedIds = parseSavedIds(event.newValue, new Set(prompts.map(prompt => prompt.id)));
-  if (state.savedOnly) renderGallery(); else updateSavedUI();
+  if (view.active === 'saved') renderGallery(); else updateSavedUI();
 });
 document.addEventListener('keydown', event => {
-  if (event.key === '/' && !dialog.open && !aboutDialog.open && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName) && !event.metaKey && !event.ctrlKey && !event.altKey) { event.preventDefault(); search.focus(); }
-  if (dialog.open && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
-    if (event.key === 'ArrowLeft') navigatePrompt(-1);
-    if (event.key === 'ArrowRight') navigatePrompt(1);
+  if (event.metaKey || event.ctrlKey || event.altKey || event.shiftKey || event.isComposing) return;
+  const active = document.activeElement;
+  if (active.isContentEditable || active.matches('input, textarea, select')) return;
+  if (event.key === '/' && !dialog.open && !aboutDialog.open && !loading) { event.preventDefault(); search.focus(); }
+  if (dialog.open && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+    event.preventDefault();
+    navigatePrompt(event.key === 'ArrowLeft' ? -1 : 1);
   }
 });
 loadCatalog();

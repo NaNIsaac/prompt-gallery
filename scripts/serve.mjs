@@ -19,7 +19,7 @@ const server = createServer(async (request, response) => {
     }
     if (!path.startsWith(base)) throw new Error('Not found');
     const local = path.slice(base.length) || 'index.html';
-    if (!/^(index\.html|styles\.css|app\.js|src\/catalog\.mjs|data\/prompts\.json|assets\/.+|licenses\/.+)$/.test(local)) throw new Error('Not found');
+    if (!/^(index\.html|styles\.css|app\.js|src\/[a-z-]+\.mjs|data\/prompts\.json|assets\/.+|licenses\/.+)$/.test(local)) throw new Error('Not found');
     const absolute = resolve(root, local);
     const rel = relative(root, absolute);
     if (rel.startsWith('..') || isAbsolute(rel) || !(await stat(absolute)).isFile()) throw new Error('Not found');
