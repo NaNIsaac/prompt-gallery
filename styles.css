@@ -185,6 +185,7 @@ dialog::backdrop { background: #000b; }
 .input-guide.is-text .icon { color: var(--muted); }
 .reference-section { margin-top: 20px; }
 .reference-section h3 { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.example-note { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.65; }
 .reference-images { display: flex; gap: 8px; flex-wrap: wrap; }
 .reference-images img { width: 104px; height: 104px; object-fit: cover; border-radius: 6px; }
 .reference-open { padding: 0; border: 1px solid var(--border); border-radius: 6px; background: none; cursor: zoom-in; }

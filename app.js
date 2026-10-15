@@ -256,7 +256,7 @@ function createCard(prompt, index) {
   const actions = element('div', 'card-actions');
   if (prompt.inputRequirement) {
     const badge = element('span', 'input-badge');
-    badge.append(icon('photo'), document.createTextNode(prompt.inputRequirement === 'portrait' ? '인물 사진 1장 필요' : '사진 1장 필요'));
+    badge.append(icon('photo'), document.createTextNode(prompt.inputLabel));
     actions.append(badge);
   }
   const copy = button('copy-button', `${prompt.title} 프롬프트 복사`, 'copy');
@@ -392,6 +392,7 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   $('#detail-category').textContent = prompt.category;
   $('#detail-tags').replaceChildren(...prompt.tags.map(tag => element('span', 'detail-tag', tag)));
   $('#detail-usage').textContent = prompt.usage;
+  $('#example-note').textContent = prompt.exampleNote || 'AI로 만든 첨부 예시와 변환 결과입니다.';
   $('#input-guide').classList.toggle('is-text', !prompt.inputRequirement);
   $('#input-guide use').setAttribute('href', `#i-${prompt.inputRequirement ? 'photo' : 'spark'}`);
   $('#detail-prompt').value = prompt.prompt;

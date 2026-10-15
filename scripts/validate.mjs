@@ -12,9 +12,10 @@ export async function readCatalog(root = projectRoot) {
   for (const item of items) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) || ids.has(item.id)) throw new Error(`Invalid or duplicate id: ${item.id}`);
     ids.add(item.id);
-    for (const field of ['title', 'prompt', 'usage', 'author']) {
+    for (const field of ['title', 'prompt', 'usage', 'inputLabel', 'author']) {
       if (typeof item[field] !== 'string' || !item[field].trim()) throw new Error(`${item.id}: missing ${field}`);
     }
+    if (item.exampleNote !== undefined && (typeof item.exampleNote !== 'string' || !item.exampleNote.trim())) throw new Error(`${item.id}: exampleNote must be non-empty text`);
     if (!categories.slice(1).includes(item.category)) throw new Error(`${item.id}: unsupported category`);
     if (!Array.isArray(item.tags) || !item.tags.every(tag => typeof tag === 'string')) throw new Error(`${item.id}: tags must be strings`);
     if (!Array.isArray(item.referenceImages) || !item.referenceImages.length) throw new Error(`${item.id}: at least one reference image is required`);

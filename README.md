@@ -58,6 +58,7 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
   "color": "#a2b3c4",
   "prompt": "첨부한 사진의 인물을 3D 피규어로 만들어 주세요...",
   "inputRequirement": "portrait",
+  "inputLabel": "인물 사진 1장 필요",
   "usage": "인물 사진 1장을 첨부하고 프롬프트를 붙여넣으세요.",
   "referenceImages": ["assets/images/my-first-reference.webp"],
   "author": "@Q07K",
@@ -69,6 +70,8 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 
 - 카테고리: `인물`, `캐릭터`, `일러스트`, `제품`, `포스터`, `아트·밈`.
 - `inputRequirement`: 인물 사진은 `"portrait"`, 일반 사진은 `"image"`. 모든 항목에 사진 첨부가 필요합니다.
+- `inputLabel`: 카드 복사 버튼 위에 표시할 구체적인 첨부 조건. 예: `음식 사진 1장 필요`, `풍경·건물 사진 1장 필요`.
+- `exampleNote`: 선택 항목. 결과 이미지를 만든 뒤 프롬프트를 수정했다면 이전 프롬프트로 만든 예시임을 표시합니다.
 - `referenceImages`: 공개할 첨부 예시 이미지의 로컬 경로 배열. 최소 1개가 필요합니다.
 - `order`: 작은 숫자가 먼저 보입니다. 기존 항목을 수정하면 Git에 변경 이력이 남습니다.
 - `sample: false`: 직접 작성한 게시물은 상세의 커뮤니티 샘플 표시가 없어집니다.
@@ -79,7 +82,7 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 
 결과는 `assets/images/handcrafted-diorama.webp`, 레퍼런스는 `assets/images/handcrafted-diorama.reference.webp`, 카드용 썸네일은 `assets/images/handcrafted-diorama.thumb.webp`에 보관합니다.
 
-현재 공개 항목은 기존 디오라마와 새로 만든 사진 변환 프롬프트 6개, 총 7개입니다. 새 항목의 첨부 예시와 결과는 내장 이미지 생성 도구로 직접 생성했습니다. 각 변환에는 갤러리에 표시된 1~2문장의 프롬프트를 그대로 사용했습니다.
+현재 공개 항목은 기존 디오라마와 사진 변환 프롬프트 6개, 총 7개입니다. 첨부 예시와 결과는 내장 이미지 생성 도구로 직접 생성했습니다. 입력 대상의 누락·복수 대상 처리를 보완한 6개 항목은 기존 원본 사진에 현재 공개 프롬프트를 그대로 적용해 결과와 썸네일을 재생성했습니다. 별도의 스타일 지시는 추가하지 않았습니다. [생성 기록](docs/image-generation-2026-10-15.json)에 도구 입력 문구와 원본·결과 파일의 해시를 보관합니다. 디오라마의 사용자 제공 원문은 유지하고 첨부 안내를 보완했습니다.
 
 [전체 프롬프트·예시·스타일 참고 출처](docs/photo-transform-prompts.md)를 확인할 수 있습니다. 이전 커뮤니티 샘플과 사용하지 않는 이미지 파일은 공개 목록에서 제거했습니다. 초기 참고 컬렉션의 CC0 문서는 `licenses/sample-collection-CC0.txt`에 보관합니다.
 
