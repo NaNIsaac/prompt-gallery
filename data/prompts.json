@@ -194,5 +194,149 @@
     "inspirationUrl": "https://x.com/iamsofiaijaz/status/2047882171336253928",
     "sample": false,
     "order": 5
+  },
+  {
+    "id": "scribble-portrait",
+    "title": "내 사진을 삐뚤빼뚤 손그림 낙서로",
+    "category": "캐릭터",
+    "tags": [
+      "손그림",
+      "낙서",
+      "SD",
+      "전신",
+      "인물 변환"
+    ],
+    "image": "assets/images/scribble-portrait.webp",
+    "thumbnail": "assets/images/scribble-portrait.thumb.webp",
+    "width": 1122,
+    "height": 1402,
+    "color": "#d4cabd",
+    "prompt": "업로드한 사진 1장을 인물 기준 이미지로 사용한다.\n\n사진 속 인물의 얼굴형, 헤어스타일, 머리 길이, 눈매, 표정과 전체적인 특징을 알아볼 수 있도록 유지하면서 귀엽고 엉성한 손그림 낙서 캐릭터로 재해석한다.\n\n그림 스타일\n\n흰 종이에 검은 펜으로 직접 슥슥 그린 듯한 손그림\n\n일부러 서툴고 삐뚤빼뚤한 낙서 느낌\n\n가늘고 불규칙한 검은 선과 자연스러운 손떨림\n\n머리카락은 자유롭게 휘갈겨 그린 선으로 표현\n\n눈은 작은 점이나 짧은 선으로 단순하게 표현\n\n간단한 코와 입\n\n양 볼에는 연한 핑크색 동그란 볼터치\n\n귀엽고 무심한 듯한 표정\n\n캐릭터 비율\n\n머리는 크고 몸은 작은 귀여운 SD 비율\n\n얼굴과 머리를 가장 크게 강조\n\n목과 팔다리는 가늘고 단순하게 표현\n\n손과 발도 어린아이가 그린 것처럼 간략하게 표현\n\n의상\n\n사진 속 실제 의상의 형태와 대표 색상은 유지하되, 세밀하게 묘사하지 않고 색연필로 가볍게 칠한 듯한 옅고 불균일한 채색으로 표현한다.\n\n배경\n\n사진 속 실제 배경도 함께 반영한다.\n\n건물, 나무, 가구, 길, 하늘, 소품 등을 인물과 동일한 엉성한 손그림 낙서 스타일로 간단하게 표현한다.\n\n배경은 인물보다 복잡하거나 화려하게 만들지 않고, 원본 사진의 장소 분위기만 느껴질 정도로 표현한다.\n\n구도\n\n캐릭터는 화면 중앙 또는 약간 아래쪽에 배치\n\n머리부터 발끝까지 보이는 전신\n\n배경을 자연스럽게 함께 구성\n\n전체적으로 스케치북 한 장에 직접 그린 낙서처럼 표현\n\n가장 중요한 조건\n\n사진처럼 사실적으로 표현하지 않는다.\n\n매끈한 디지털 일러스트, 애니메이션, 3D 캐릭터, 정교한 카툰 스타일이 아니라 검은 펜으로 몇 분 만에 슥슥 그린 것 같은 삐뚤빼뚤하고 사랑스러운 아날로그 낙서 스타일로 완성한다.\n\n원본 인물의 특징은 유지하지만 결과물은 단순하고 엉성해서 오히려 귀여워 보이게 만든다.\n\n텍스트, 이름, 로고, 과한 장식은 넣지 않는다.",
+    "inputRequirement": "portrait",
+    "inputLabel": "배경과 전신이 보이는 인물 사진 1장 필요",
+    "usage": "머리부터 발끝까지 보이고 장소의 분위기가 드러나는 인물 사진 1장을 첨부하세요. 예시는 AI로 생성한 가상의 인물입니다.",
+    "exampleNote": "AI 생성 원본·결과 · 프롬프트 원문 적용. 배경과 선이 요구한 단순한 낙서보다 세밀하게 표현된 예시입니다.",
+    "referenceImages": [
+      "assets/images/scribble-portrait.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -6
+  },
+  {
+    "id": "pastel-line-drawing",
+    "title": "내 사진을 포근한 파스텔 라인드로잉으로",
+    "category": "일러스트",
+    "tags": [
+      "라인드로잉",
+      "파스텔",
+      "감성",
+      "손그림",
+      "인물 변환"
+    ],
+    "image": "assets/images/pastel-line-drawing.webp",
+    "thumbnail": "assets/images/pastel-line-drawing.thumb.webp",
+    "width": 1122,
+    "height": 1402,
+    "color": "#d1bea5",
+    "prompt": "<챗지피티-라인드로잉 프롬프트>\n업로드한 이미지를 기반으로,\n심플하고 감성적인 “일러스트 라인드로잉” 스타일로 변환.\n전체 분위기는:\n미니멀한 한국 감성 일러스트\n깔끔한 라인드로잉 스타일\n부드럽고 따뜻한 느낌의 업로드된 사진과 어울리는 파스텔톤 배경\n여백이 많은 감성적인 구성\n인스타그램 감성 드로잉 느낌\n심플하지만 사랑스러운 분위기\n자연스럽고 은은한 색감\n손그림 느낌의 부드러운 선 표현\n따뜻한 분위기 강조\n인물 표현:\n업로드한 사진 속 인물의 헤어스타일과 분위기 유지하면서 의상, 포즈 동일하게 표현\n얼굴은 캐릭터화된 귀엽고 단순화한 일러스트 스타일\n부드러운 검정 라인으로 표현\n사랑스러운 분위기\n과하지 않은 채색 + 라인 중심 표현\n구도:\n업로드된 이미지와 동일한 구도로 해줘\n스타일 키워드:\nminimal line drawing, korean illustration, drawing, clean line art, cozy aesthetic, romantic mood, instagram illustration style, hand drawing feeling, pastel mood, minimalist art",
+    "inputRequirement": "portrait",
+    "inputLabel": "포즈와 의상이 잘 보이는 인물 사진 1장 필요",
+    "usage": "헤어스타일·의상·포즈가 잘 보이는 인물 사진 1장을 첨부하세요. 원본의 구도를 유지하는 변환입니다. 예시는 AI로 생성한 가상의 인물입니다.",
+    "exampleNote": "AI 생성 원본·결과 · 프롬프트 원문 적용. 구도와 색감은 유지됐으나 미니멀한 라인드로잉보다 세부 묘사가 많은 예시입니다.",
+    "referenceImages": [
+      "assets/images/pastel-line-drawing.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -5
+  },
+  {
+    "id": "candy-chibi",
+    "title": "내 얼굴로 만드는 캔디빛 치비 캐릭터",
+    "category": "캐릭터",
+    "tags": [
+      "치비",
+      "chibi",
+      "카와이",
+      "파스텔",
+      "스티커"
+    ],
+    "image": "assets/images/candy-chibi.webp",
+    "thumbnail": "assets/images/candy-chibi.thumb.webp",
+    "width": 1254,
+    "height": 1254,
+    "color": "#cbbad8",
+    "prompt": "Use the attached reference image as the character reference.Chibi character illustration, super-deformed proportions with oversized head (3:1 head-to-body ratio), simplified cute facial features, blush marks on cheeks, sparkle effects, pastel candy color palette, flat simple background with pattern, sticker-design quality, extremely clean linework, kawaii aesthetic",
+    "inputRequirement": "portrait",
+    "inputLabel": "얼굴과 의상 특징이 잘 보이는 인물 사진 1장 필요",
+    "usage": "얼굴·머리·의상과 액세서리가 선명한 인물 사진 1장을 첨부하세요. 원본의 특징을 큰 머리와 작은 몸의 치비 캐릭터로 바꿉니다. 예시는 AI로 만든 인물입니다.",
+    "exampleNote": "AI 생성 원본·결과 · 프롬프트 원문 적용. 치비 스타일과 액세서리는 반영됐으나 지정한 머리·몸 3:1 비율은 엄밀히 구현되지 않았습니다.",
+    "referenceImages": [
+      "assets/images/candy-chibi.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -4
+  },
+  {
+    "id": "childlike-crayon",
+    "title": "내 사진을 동심 가득 크레파스 그림으로",
+    "category": "일러스트",
+    "tags": [
+      "크레파스",
+      "어린이 그림",
+      "동심",
+      "사진 변환"
+    ],
+    "image": "assets/images/childlike-crayon.webp",
+    "thumbnail": "assets/images/childlike-crayon.thumb.webp",
+    "width": 1254,
+    "height": 1254,
+    "color": "#cbccb6",
+    "prompt": "크레파스 그림 스타일로 전체 이미지를 하나의 그림처럼 만들어줘.\n디테일은 단순하게 줄이고, 10살 아이가 그린 것처럼 보이게 해줘.\n원래 이미지의 색상은 사용하지 말아줘.\n전체적으로 하얀 종이 위에 그린 느낌이 나게 해줘.\n아주 귀엽고 사랑스러운 분위기로, 꽃, 사탕, 별, 구름 같은 아기자기한 요소들을 추가해서 동심 가득한 느낌으로 만들어줘.",
+    "inputRequirement": "image",
+    "inputLabel": "변환할 사진 1장 필요",
+    "usage": "인물·동물·사물·풍경 등 그림으로 바꿀 사진 1장을 첨부하세요. 원본과 다른 색상, 꽃·사탕·별·구름 장식을 요청하는 프롬프트입니다. 예시는 AI로 만든 강아지 사진입니다.",
+    "exampleNote": "AI 생성 원본·결과 · 프롬프트 원문 적용. 크레파스 질감과 장식은 반영됐으나 원본 색상을 사용하지 말라는 조건은 충분히 반영되지 않았습니다.",
+    "referenceImages": [
+      "assets/images/childlike-crayon.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -3
+  },
+  {
+    "id": "monthly-magazine",
+    "title": "내 사진으로 완성하는 월간 패션 매거진",
+    "category": "포스터",
+    "tags": [
+      "잡지 표지",
+      "매거진",
+      "패션",
+      "에디토리얼",
+      "인물 변환"
+    ],
+    "image": "assets/images/monthly-magazine.webp",
+    "thumbnail": "assets/images/monthly-magazine.thumb.webp",
+    "width": 1122,
+    "height": 1402,
+    "color": "#909491",
+    "prompt": "Use the attached reference image as the character reference.\n\nAnalyze and extract the person’s main visual features: hairstyle, hair length, hair color, bangs, eye shape, eye color, facial impression, outfit style, accessories, body proportions, and overall vibe.\n\nKeep the person recognizable, but redraw them as the main model of a stylish monthly magazine cover.\n\nhigh quality monthly magazine cover, trendy editorial design, polished fashion magazine aesthetic, clean and eye-catching layout, stylish cover composition, visually appealing typography, elegant but cute mood, glossy magazine feeling, professional cover design, modern Korean magazine vibe, fashionable and charming, cover-photo energy, studio-quality illustration, attractive and polished presentation\n\nsingle main character centered on the cover, upper body or three-quarter body composition, confident and charming pose, cute and stylish facial expression, direct eye contact with the viewer, magazine model aura, natural and appealing posture, fashion cover layout, strong focal point, well-balanced composition\n\nconvert the reference person into a cute anime-style illustrated magazine cover model, keep their distinctive features and fashion identity, expressive eyes, soft blush, charming smile or confident expression, slightly idealized proportions, stylish pose, attractive silhouette, clean outfit rendering, elegant folds, refined but lively character illustration\n\nmake the cover look like a real monthly magazine, include a large magazine title at the top, a featured monthly issue theme, several smaller cover lines around the character, eye-catching headlines, stylish subtitle placement, barcode in one corner, issue date, volume number, and decorative editorial text elements\n\nscribbled handwritten text should be replaced with polished editorial magazine text\n\nexample text elements to include:\n\nmain magazine title: “[MAGAZINE TITLE]”\n\nissue month: “[MONTH] Issue”\n\nmain cover headline: “[MAIN FEATURE TITLE]”\n\nsub headline 1: “[SUBTITLE 1]”\n\nsub headline 2: “[SUBTITLE 2]”\n\nsub headline 3: “[SUBTITLE 3]”\n\nspecial feature text: “[SPECIAL FEATURE]”\n\nsmall editorial teaser text: “[SHORT TEASER TEXT]”\n\nbarcode and issue information near the bottom corner\n\ndesign details around the character: sparkles, elegant shapes, subtle graphic accents, stylish borders, small icons, fashionable layout decorations, modern text blocks, layered typography, balanced negative space, clean background graphics, trendy magazine styling\n\ncolor palette based on the reference image, coordinated with the outfit and character vibe, limited to 3–5 main colors, harmonious and stylish tones, clean background, readable text contrast, polished shading, elegant highlights, glossy printed magazine atmosphere\n\nwhite or softly colored background with editorial graphic elements, make the overall cover feel fashionable, premium, cute, modern, and visually striking, as if it were the front cover of a real monthly magazine sold in st,ores",
+    "inputRequirement": "portrait",
+    "inputLabel": "얼굴과 스타일이 잘 보이는 성인 인물 사진 1장 필요",
+    "usage": "성인 인물 사진 1장을 첨부하세요. [MAGAZINE TITLE], [MONTH], [MAIN FEATURE TITLE], [SUBTITLE 1] 등 대괄호 안 문구를 원하는 잡지명·발행 월·기사 제목으로 바꿔 사용할 수 있습니다. 예시는 자리표시자를 유지한 원문에 성인·단정한 정장 조건을 덧붙여 생성했으며 표지 문구와 날짜는 AI가 임의로 만든 예시입니다.",
+    "exampleNote": "AI 생성 원본·결과 · 첫 시도 차단 후 원문에 성인·단정한 의상 조건을 추가했습니다. 애니 스타일보다 사실적인 표지이며 문구·발행일은 임의 생성됐습니다.",
+    "referenceImages": [
+      "assets/images/monthly-magazine.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -2
   }
 ]
