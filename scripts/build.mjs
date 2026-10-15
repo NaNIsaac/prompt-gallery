@@ -1,6 +1,8 @@
-import { cp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { cp, mkdir, writeFile, rm, readFile } from 'node:fs/promises';
 import { resolve, relative } from 'node:path';
 import { readCatalog, projectRoot } from './validate.mjs';
+import { createSocialImage, socialTags, escapeHtml } from './social.mjs';
+import { promptUrl } from '../src/sharing.mjs';
 
 const prompts = await readCatalog();
 const output = resolve(projectRoot, 'dist');
@@ -11,4 +13,30 @@ for (const file of ['index.html', 'styles.css', 'app.js', 'src', 'data', 'assets
   await cp(resolve(projectRoot, file), resolve(output, file), { recursive: true });
 }
 await writeFile(resolve(output, '.nojekyll'), '');
-console.log(`Built ${prompts.length} prompts into dist/. All site assets are local and use relative paths.`);
+const siteUrl = new URL(process.env.SITE_URL || 'https://q07k.github.io/prompt-gallery/');
+if (siteUrl.protocol !== 'https:' || siteUrl.search || siteUrl.hash) throw new Error('SITE_URL must be an HTTPS site root without a query or hash.');
+if (!siteUrl.pathname.endsWith('/')) siteUrl.pathname += '/';
+const template = await readFile(resolve(projectRoot, 'index.html'), 'utf8');
+const images = new Map();
+for (const prompt of prompts) images.set(prompt.id, await createSocialImage(prompt, projectRoot, output));
+const featured = [...prompts].sort((a, b) => a.order - b.order)[0];
+const tagsFor = (prompt, url, title, description) => socialTags({
+  title, description, url, image: new URL(images.get(prompt.id), siteUrl).href,
+  imageAlt: `${prompt.title} — AI 생성 결과 예시`,
+});
+const homeTitle = /<title>(.*?)<\/title>/.exec(template)[1];
+const homeDescription = /<meta name="description" content="(.*?)">/.exec(template)[1];
+await writeFile(resolve(output, 'index.html'), template.replace('</head>', `  ${tagsFor(featured, siteUrl.href, homeTitle, homeDescription)}\n</head>`));
+for (const prompt of prompts) {
+  const title = `${prompt.title} — Prompt Gallery`;
+  const description = `${prompt.inputLabel || '사진 1장 필요'}. ${prompt.usage}`;
+  const page = template
+    .replace(/(href|src)="\.\//g, '$1="../../')
+    .replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
+    .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="${escapeHtml(description)}">`)
+    .replace('</head>', `  ${tagsFor(prompt, promptUrl(prompt.id, siteUrl), title, description)}\n</head>`);
+  const directory = resolve(output, 'prompts', prompt.id);
+  await mkdir(directory, { recursive: true });
+  await writeFile(resolve(directory, 'index.html'), page);
+}
+console.log(`Built ${prompts.length} prompts with individual sharing pages and JPEG previews into dist/.`);

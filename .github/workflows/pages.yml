@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
+      - name: Install build dependencies
+        run: npm ci
       - name: Test catalog and filtering
         run: npm test
       - name: Build static site

@@ -1,4 +1,5 @@
-import { categories, filterPrompts, parseSavedIds, readPromptHash } from './src/catalog.mjs';
+import { categories, filterPrompts, parseSavedIds } from './src/catalog.mjs';
+import { promptUrl, readPromptLocation } from './src/sharing.mjs';
 import { createViewState, resetActiveFilters, navigationState, writeClipboard } from './src/ui-state.mjs';
 
 const $ = selector => document.querySelector(selector);
@@ -10,7 +11,9 @@ const search = $('#search');
 const view = createViewState();
 const filters = () => view.filters[view.active];
 const storageKey = 'prompt-gallery:saved:v1';
-const defaultTitle = document.title;
+const defaultTitle = 'Prompt Gallery — 내 사진으로 만드는 새로운 이미지';
+const siteRoot = new URL('./', import.meta.url);
+document.querySelectorAll('.wordmark, .footer-brand').forEach(link => { link.href = siteRoot.href; });
 const defaultFeedback = 'ChatGPT에 사진 1장과 복사한 프롬프트를 함께 보내세요.';
 let prompts = [];
 let visiblePrompts = [];
@@ -207,13 +210,13 @@ function createCard(prompt, index) {
   card.dataset.id = prompt.id;
   const inner = element('div', 'card-inner');
   const open = element('a', 'card-open');
-  open.href = `#prompt=${encodeURIComponent(prompt.id)}`;
+  open.href = promptUrl(prompt.id, siteRoot);
   open.setAttribute('aria-labelledby', `card-title-${prompt.id}`);
   const preview = element('div', 'image-preview');
   preview.style.setProperty('--image-ratio', Math.max(.72, Math.min(1.28, prompt.width / prompt.height)));
   preview.style.setProperty('--image-color', prompt.color);
   const img = new Image();
-  img.src = new URL(prompt.thumbnail, document.baseURI).href;
+  img.src = new URL(prompt.thumbnail, siteRoot).href;
   img.alt = '';
   img.width = prompt.width;
   img.height = prompt.height;
@@ -235,7 +238,7 @@ function createCard(prompt, index) {
   if (prompt.referenceImages[0]) {
     const reference = element('div', 'card-reference');
     const referenceImage = new Image();
-    referenceImage.src = new URL(prompt.referenceImages[0], document.baseURI).href;
+    referenceImage.src = new URL(prompt.referenceImages[0], siteRoot).href;
     referenceImage.alt = '';
     referenceImage.width = 60;
     referenceImage.height = 44;
@@ -340,7 +343,7 @@ function loadDetailImage(prompt) {
   $('#detail-image-loading').hidden = false;
   image.hidden = true;
   image.alt = prompt.title;
-  image.src = new URL(prompt.image, document.baseURI).href;
+  image.src = new URL(prompt.image, siteRoot).href;
 }
 
 function loadViewerImage() {
@@ -355,7 +358,7 @@ function loadViewerImage() {
 
 function openImageViewer(src, label, trigger) {
   imageViewerTrigger = trigger;
-  imageViewerSource = new URL(src, document.baseURI).href;
+  imageViewerSource = new URL(src, siteRoot).href;
   $('#image-viewer-title').textContent = label;
   $('#image-viewer-image').alt = `${currentPrompt?.title || ''} · ${label}`;
   $('#image-download').href = imageViewerSource;
@@ -401,7 +404,7 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   refs.replaceChildren(...prompt.referenceImages.map((path, index) => {
     const open = button('reference-open', `첨부 예시 ${index + 1} 크게 보기`);
     const image = new Image();
-    image.src = new URL(path, document.baseURI).href;
+    image.src = new URL(path, siteRoot).href;
     image.alt = '';
     open.append(image);
     open.addEventListener('click', () => openImageViewer(path, `첨부 예시 ${index + 1}`, open));
@@ -418,7 +421,7 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   if (!wasOpen) { dialog.showModal(); $('#close-dialog').focus({ preventScroll: true }); }
   $('.detail-body').scrollTop = 0;
   if (writeHistory) {
-    const url = `#prompt=${encodeURIComponent(prompt.id)}`;
+    const url = promptUrl(prompt.id, siteRoot);
     if (wasOpen) history.replaceState(history.state, '', url);
     else history.pushState({ ...history.state, promptGallery: true }, '', url);
   }
@@ -432,16 +435,16 @@ function closePrompt(writeHistory = true) {
   currentPrompt = null;
   resetFeedback();
   document.title = defaultTitle;
-  if (writeHistory && location.hash.startsWith('#prompt=')) {
+  if (writeHistory && readPromptLocation(location.href, siteRoot)) {
     if (history.state?.promptGallery) history.back();
-    else history.replaceState(null, '', location.pathname + location.search);
+    else history.replaceState(null, '', siteRoot.href);
   }
   if (lastTrigger?.isConnected) lastTrigger.focus({ preventScroll: true });
   else focusCard(openerId, returnIndex);
 }
 
 function syncHash() {
-  const id = readPromptHash(location.hash);
+  const id = readPromptLocation(location.href, siteRoot);
   const prompt = prompts.find(item => item.id === id);
   if (prompt && currentPrompt?.id !== id) openPrompt(prompt, null, false);
   else if (!prompt && dialog.open) closePrompt(false);
@@ -519,7 +522,9 @@ $('#explore-tab').addEventListener('click', () => switchView('explore'));
 $('#saved-tab').addEventListener('click', () => switchView('saved'));
 $('#detail-save').addEventListener('click', () => { if (currentPrompt) setSaved(currentPrompt.id, !savedIds.has(currentPrompt.id)); });
 $('#detail-copy').addEventListener('click', event => { if (currentPrompt) copyText(currentPrompt.prompt, event.currentTarget, currentPrompt); });
-$('#share-prompt').addEventListener('click', event => copyText(location.href, event.currentTarget, null, true));
+$('#share-prompt').addEventListener('click', event => {
+  if (currentPrompt) copyText(promptUrl(currentPrompt.id, siteRoot), event.currentTarget, null, true);
+});
 $('#previous-prompt').addEventListener('click', () => navigatePrompt(-1));
 $('#next-prompt').addEventListener('click', () => navigatePrompt(1));
 $('#close-dialog').addEventListener('click', () => closePrompt());

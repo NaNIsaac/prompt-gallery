@@ -11,5 +11,10 @@
     "test": "node --test tests/*.test.mjs",
     "preview": "node scripts/serve.mjs --dist"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
 }

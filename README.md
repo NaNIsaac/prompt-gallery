@@ -6,9 +6,10 @@ HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 런타임 서�
 
 ## 로컬 실행
 
-Node.js 22 이상에서 다음 명령을 사용합니다. 설치할 패키지는 없습니다.
+Node.js 22 이상에서 다음 명령을 사용합니다. 빌드 시 결과 이미지를 공유용 JPEG로 변환하기 위해 Sharp를 사용합니다.
 
 ```sh
+npm ci
 npm run dev
 ```
 
@@ -32,7 +33,9 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 2. `main` 브랜치에 푸시하면 `.github/workflows/pages.yml`이 테스트, 정적 파일 빌드, Pages 배포를 순서대로 수행합니다.
 3. Actions의 배포 작업에 표시된 URL에서 확인합니다. 이 저장소의 기본 주소는 `https://q07k.github.io/prompt-gallery/`입니다.
 
-이미지, 모듈, JSON은 모두 상대 경로를 사용합니다. 상세 공유 링크는 `#prompt=cozy-stickers`처럼 해시를 사용하므로 Pages에서 직접 열거나 새로고침해도 서버 라우팅이 필요하지 않습니다. PR에서는 테스트와 빌드만 실행합니다.
+상세 공유 링크는 `prompts/handcrafted-diorama/`처럼 프롬프트별 정적 페이지를 사용합니다. 빌드가 각 페이지의 Open Graph 메타태그와 실제 결과 이미지로 만든 1200×600 JPEG를 생성하므로, 카카오톡에서도 제목과 결과 이미지를 읽을 수 있습니다. 세로 이미지는 잘리지 않도록 여백을 넣습니다. 이미지 파일명에 원본 해시를 넣어 결과 교체 시 이미지 캐시도 갱신됩니다. 기존 `#prompt=...` 링크도 계속 열리며, 상세의 링크 복사 버튼은 새 공유 주소를 복사합니다. PR에서는 테스트와 빌드만 실행합니다.
+
+기본 공유 도메인은 `https://q07k.github.io/prompt-gallery/`이며, 다른 도메인에 배포한다면 `SITE_URL` 환경변수에 사이트 루트 주소를 지정하고 빌드하세요. 카카오톡에 예전 미리보기가 남아 있다면 [카카오 공유 디버거](https://developers.kakao.com/tool/debugger/sharing)에서 해당 URL의 캐시를 초기화한 뒤 새 메시지로 보내세요. 이미 보낸 메시지의 카드는 갱신되지 않을 수 있습니다.
 
 워크플로는 [GitHub의 공식 Pages 배포 안내](https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically)를 따릅니다.
 
