@@ -1,0 +1,75 @@
+{
+  "generatedOn": "2026-10-16",
+  "method": "Generate two distinct synthetic source photographs with built-in image_gen. Apply each public Korean prompt verbatim to its own source image only. No extra style instructions, follow-up edits, or retries. Convert full images to WebP without cropping, preserve alpha, and resize thumbnails proportionally.",
+  "records": [
+    {
+      "id": "warm-handdrawn-animation",
+      "generatedOn": "2026-10-16",
+      "tool": "built-in image_gen.imagegen",
+      "referenceOrigin": "AI-generated synthetic photograph, unique to this prompt",
+      "referenceGenerationPrompt": "Create one realistic natural travel photograph of a fictional adult Korean woman aged 34 with long wavy dark brown hair, no glasses, wearing a pale sky blue linen midi dress and white sneakers, a small woven straw shoulder bag, holding a closed plain red book. She is standing outside a quaint coastal bookshop with a mint green door and warm wooden window frames, terracotta pots with pink flowers, and a distant strip of blue sea visible along a narrow stone lane on the left. One person only, full body head to toe uncropped, her face clearly visible in a natural three-quarter view, relaxed smile looking toward camera. Gentle late afternoon natural light, authentic photographic skin, fabric, stone and wood, realistic color balance, not illustration, not watercolor, not CGI. Vertical 2:3 composition with the woman and bookshop both readable. No animals, no other people. No signs, text, logos or watermark.",
+      "referenceArtifact": "exec-5e2746bf-71be-4338-9d9d-e64dc4cd4e0e.png",
+      "referenceArtifactSha256": "ef577c2d5c480f393b6bab2aaa184f3aa8f4434236571807568a4c97bb2ad5d1",
+      "generatedArtifact": "exec-552a4afc-f6ca-473d-9d5b-09b364757e02.png",
+      "generatedArtifactSha256": "50d7cf527f862db836f44603e1be7196cc2448786af1bcd1f59a87c63b55d8f1",
+      "prompt": "첨부 사진을 따뜻한 손그림 애니메이션의 한 장면으로 바꿔줘. 사진 속 주요 피사체의 고유한 형태와 특징, 인물의 얼굴과 헤어스타일, 표정, 자세, 의상, 동물의 털 무늬와 인원수, 공간적 배치와 원본 구도를 최대한 유지해줘. 부드러운 선화, 수채화 같은 배경, 자연스러운 색감과 따뜻한 햇빛을 사용해줘. 소중한 추억을 담은 서정적인 장면으로 완성하고, 원본에 없는 인물이나 동물, 글자, 로고와 워터마크는 추가하지 마. 사진이 없으면 변환할 사진을 요청해줘.",
+      "toolPrompt": "첨부 사진을 따뜻한 손그림 애니메이션의 한 장면으로 바꿔줘. 사진 속 주요 피사체의 고유한 형태와 특징, 인물의 얼굴과 헤어스타일, 표정, 자세, 의상, 동물의 털 무늬와 인원수, 공간적 배치와 원본 구도를 최대한 유지해줘. 부드러운 선화, 수채화 같은 배경, 자연스러운 색감과 따뜻한 햇빛을 사용해줘. 소중한 추억을 담은 서정적인 장면으로 완성하고, 원본에 없는 인물이나 동물, 글자, 로고와 워터마크는 추가하지 마. 사진이 없으면 변환할 사진을 요청해줘.",
+      "additionalInstructions": "",
+      "toolTransparentBackground": false,
+      "reference": "assets/images/warm-handdrawn-animation.reference.webp",
+      "referenceSha256": "f23c3364f4dea28bb6fe8e47ab4dfdf792cc02150c33af6fa29cfd2bc7e8a2c2",
+      "result": "assets/images/warm-handdrawn-animation.webp",
+      "resultSha256": "7406ad5fd593bc13d6924228fc9cd614aa156ba4d567c518fa28f5ac8a004fbf",
+      "thumbnail": "assets/images/warm-handdrawn-animation.thumb.webp",
+      "thumbnailSha256": "49f2f80808abf0d6eb476838df81fd52d66b4c56622ebf93a7be4127c12fb7f9",
+      "width": 1024,
+      "height": 1536,
+      "referenceDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "thumbnailDimensions": {
+        "width": 560,
+        "height": 840
+      },
+      "reviewNote": "AI 생성 원본과 결과 · 표시된 프롬프트만 적용했습니다. 인물의 파란 원피스·빨간 책과 책방·해안 풍경의 주요 배치를 유지한 손그림 수채화풍 예시입니다. 얼굴과 배경의 작은 디테일은 일러스트로 재해석됐습니다."
+    },
+    {
+      "id": "pixel-ootd",
+      "generatedOn": "2026-10-16",
+      "tool": "built-in image_gen.imagegen",
+      "referenceOrigin": "AI-generated synthetic photograph, unique to this prompt",
+      "referenceGenerationPrompt": "Create one photorealistic natural editorial photograph for a photo-to-pixel outfit transformation example. One fictional adult Korean man aged 28 with short slightly wavy black hair, no glasses, gentle smile, teal blue lightweight bomber jacket over a plain grey T-shirt, black straight trousers, red canvas sneakers, orange messenger bag worn crossbody. He is standing on a riverside walkway beside low concrete steps in Seoul, a few green trees and calm water softly visible behind him. Full body head to toe, both shoes visible and uncropped, hands relaxed with one holding the bag strap, natural proportions and clear readable clothing details, eye-level portrait with breathing room around his silhouette, soft overcast daylight, realistic skin and fabric texture. Vertical 2:3 composition. One person only, no animals, no other people, no writing, no logos, no watermark. A real photograph, not illustration or CGI.",
+      "referenceArtifact": "exec-760f7352-c402-41ea-b0cc-83324b194696.png",
+      "referenceArtifactSha256": "9ced35e2dd36c3fad5f59703741454c9caac36959863a7f83f74596ff33c819d",
+      "generatedArtifact": "exec-41680f98-25df-450b-8aa7-b12ee4727931.png",
+      "generatedArtifactSha256": "4939d416e157c52acf6cbee82448a57d0fbbbc4f7417f7626f496bd3ce5de797",
+      "prompt": "첨부 사진 속 인물 한 명을 레트로 패션 게임의 픽셀 아바타로 만들어줘. 얼굴과 헤어스타일, 상의, 하의, 신발, 가방과 액세서리를 알아볼 수 있게 반영하고 머리부터 발끝까지 보이게 해줘. 제한된 색상과 또렷한 사각 픽셀로 표현해줘. 캐릭터는 한 명만 중앙에 배치하고 배경은 투명한 PNG로 만들어줘. 바닥, 그림자, 빛 번짐과 글자는 넣지 마. 인물 사진이 없으면 사진을 요청하고, 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 그릴지 먼저 물어봐줘.",
+      "toolPrompt": "첨부 사진 속 인물 한 명을 레트로 패션 게임의 픽셀 아바타로 만들어줘. 얼굴과 헤어스타일, 상의, 하의, 신발, 가방과 액세서리를 알아볼 수 있게 반영하고 머리부터 발끝까지 보이게 해줘. 제한된 색상과 또렷한 사각 픽셀로 표현해줘. 캐릭터는 한 명만 중앙에 배치하고 배경은 투명한 PNG로 만들어줘. 바닥, 그림자, 빛 번짐과 글자는 넣지 마. 인물 사진이 없으면 사진을 요청하고, 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 그릴지 먼저 물어봐줘.",
+      "additionalInstructions": "",
+      "toolTransparentBackground": true,
+      "reference": "assets/images/pixel-ootd.reference.webp",
+      "referenceSha256": "4060e8a164000ba4ae2d42a0c518a88909c37e239f9c46ec28c1a4233bb97604",
+      "result": "assets/images/pixel-ootd.webp",
+      "resultSha256": "729e18a196207cd103ccae7b5fb96dc8e287e2fe1c8e0395d641a2a759099da0",
+      "thumbnail": "assets/images/pixel-ootd.thumb.webp",
+      "thumbnailSha256": "32f8f3dec0b87cd8e3ad8e496787116caa62f26b8faacbb2f77eee18f5582f43",
+      "width": 1024,
+      "height": 1536,
+      "referenceDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "thumbnailDimensions": {
+        "width": 560,
+        "height": 840
+      },
+      "resultAlpha": {
+        "hasAlpha": true,
+        "min": 0,
+        "max": 254
+      },
+      "reviewNote": "AI 생성 원본과 결과 · 표시된 프롬프트만 적용했습니다. 원본의 청록색 재킷·주황 가방·빨간 신발을 반영한 픽셀풍 아바타이며, 배경의 투명도를 확인했습니다. 일부 가장자리에 부드러운 반투명 색 번짐이 남아 엄격한 제한 팔레트 게임 스프라이트와는 다릅니다."
+    }
+  ]
+}

@@ -1,5 +1,62 @@
 [
   {
+    "id": "warm-handdrawn-animation",
+    "title": "내 사진을 따뜻한 손그림 애니메이션으로",
+    "category": "일러스트",
+    "tags": [
+      "손그림",
+      "애니메이션",
+      "수채화",
+      "사진 변환"
+    ],
+    "image": "assets/images/warm-handdrawn-animation.webp",
+    "thumbnail": "assets/images/warm-handdrawn-animation.thumb.webp",
+    "width": 1024,
+    "height": 1536,
+    "color": "#e7c6a0",
+    "prompt": "첨부 사진을 따뜻한 손그림 애니메이션의 한 장면으로 바꿔줘. 사진 속 주요 피사체의 고유한 형태와 특징, 인물의 얼굴과 헤어스타일, 표정, 자세, 의상, 동물의 털 무늬와 인원수, 공간적 배치와 원본 구도를 최대한 유지해줘. 부드러운 선화, 수채화 같은 배경, 자연스러운 색감과 따뜻한 햇빛을 사용해줘. 소중한 추억을 담은 서정적인 장면으로 완성하고, 원본에 없는 인물이나 동물, 글자, 로고와 워터마크는 추가하지 마. 사진이 없으면 변환할 사진을 요청해줘.",
+    "inputRequirement": "image",
+    "inputLabel": "인물·풍경·사물 사진 1장 필요",
+    "usage": "따뜻한 손그림으로 바꿀 사진 1장을 첨부하세요. 사진 속 주요 피사체와 배경을 함께 변환합니다. 예시는 AI로 만든 해안가 책방 앞의 여성 사진입니다.",
+    "exampleNote": "AI 생성 원본과 결과 · 표시된 프롬프트만 적용했습니다. 인물의 파란 원피스·빨간 책과 책방·해안 풍경의 주요 배치를 유지한 손그림 수채화풍 예시입니다. 얼굴과 배경의 작은 디테일은 일러스트로 재해석됐습니다.",
+    "referenceImages": [
+      "assets/images/warm-handdrawn-animation.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -12
+  },
+  {
+    "id": "pixel-ootd",
+    "title": "오늘의 착장을 픽셀 아바타로",
+    "category": "캐릭터",
+    "tags": [
+      "픽셀 아트",
+      "OOTD",
+      "아바타",
+      "투명 배경"
+    ],
+    "image": "assets/images/pixel-ootd.webp",
+    "thumbnail": "assets/images/pixel-ootd.thumb.webp",
+    "width": 1024,
+    "height": 1536,
+    "color": "#dce5e5",
+    "prompt": "첨부 사진 속 인물 한 명을 레트로 패션 게임의 픽셀 아바타로 만들어줘. 얼굴과 헤어스타일, 상의, 하의, 신발, 가방과 액세서리를 알아볼 수 있게 반영하고 머리부터 발끝까지 보이게 해줘. 제한된 색상과 또렷한 사각 픽셀로 표현해줘. 캐릭터는 한 명만 중앙에 배치하고 배경은 투명한 PNG로 만들어줘. 바닥, 그림자, 빛 번짐과 글자는 넣지 마. 인물 사진이 없으면 사진을 요청하고, 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 그릴지 먼저 물어봐줘.",
+    "inputRequirement": "portrait",
+    "inputLabel": "착장이 잘 보이는 전신 사진 1장 필요",
+    "usage": "머리부터 신발까지 의상과 액세서리가 잘 보이는 인물 사진 1장을 첨부하세요. 여러 명이 있으면 변환할 사람을 지정하세요. 예시는 AI로 만든 청록색 재킷의 남성 사진입니다.",
+    "exampleNote": "AI 생성 원본과 결과 · 표시된 프롬프트만 적용했습니다. 원본의 청록색 재킷·주황 가방·빨간 신발을 반영한 픽셀풍 아바타이며, 배경의 투명도를 확인했습니다. 일부 가장자리에 부드러운 반투명 색 번짐이 남아 엄격한 제한 팔레트 게임 스프라이트와는 다릅니다.",
+    "referenceImages": [
+      "assets/images/pixel-ootd.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "inspirationUrl": "https://www.etoday.co.kr/news/view/2486631",
+    "sample": false,
+    "order": -11
+  },
+  {
     "id": "brick-built-toy-world",
     "title": "사진 속 세상을 조립식 블록 토이 월드로",
     "category": "아트·밈",
