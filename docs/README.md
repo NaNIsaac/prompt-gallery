@@ -10,6 +10,9 @@
 
 ## 생성 이력과 참고 자료
 
+- [2026-10-17 숲 이중노출·풍경 목판화 등록 검토](aesthetic-prompts-review-2026-10-17.md)
+- [숲 이중노출·풍경 목판화 실제 입력과 파일 해시](image-generation-2026-10-17-aesthetic.json)
+- [예쁘고 감각적인 사진 변환 후보 조사](prompt-research-aesthetic-2026-10-17.md)
 - [기존 사진 변환 프롬프트와 예시](photo-transform-prompts.md)
 - [2026-10-15 실제 생성 입력과 이미지 해시](image-generation-2026-10-15.json)
 - [2026-10-16 사용자 프롬프트 5종 검토](user-prompt-tests-2026-10-16.md)
