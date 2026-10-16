@@ -10,6 +10,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [병원 X선 필름 등록 검토](xray-film-review-2026-10-17.md)
+- [병원 X선 필름 실제 입력과 파일 해시](image-generation-2026-10-17-xray-film.json)
 - [발로란트 신규 요원 2차 결과 등록 검토](valorant-review-2026-10-17.md)
 - [발로란트 세 단계 실제 입력과 파일 해시](image-generation-2026-10-17-valorant.json)
 
