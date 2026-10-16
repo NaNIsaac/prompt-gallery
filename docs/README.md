@@ -12,6 +12,8 @@
 
 - [카트라이더 인게임 레이서 2차 결과 등록 검토](kartrider-review-2026-10-17.md)
 - [카트라이더 두 차례 실제 입력과 파일 해시](image-generation-2026-10-17-kartrider.json)
+- [병원 X선 필름 등록 검토](xray-film-review-2026-10-17.md)
+- [병원 X선 필름 실제 입력과 파일 해시](image-generation-2026-10-17-xray-film.json)
 - [발로란트 신규 요원 2차 결과 등록 검토](valorant-review-2026-10-17.md)
 - [발로란트 세 단계 실제 입력과 파일 해시](image-generation-2026-10-17-valorant.json)
 
