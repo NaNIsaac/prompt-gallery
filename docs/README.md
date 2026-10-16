@@ -21,5 +21,6 @@
 - [기존 UX 검토](ux-review.md)
 - [밝은 임파스토 유화 등록 검토](bright-impasto-review-2026-10-16.md)
 - [밝은 임파스토 유화 실제 입력·중간 단계·파일 해시](image-generation-2026-10-16-bright-impasto.json)
+- [밝은 유화 범용 사진 프롬프트 수정 기록](bright-impasto-prompt-revision-2026-10-16.json)
 
 과거 생성 기록은 당시의 사실을 보존한다. 현재 개발 절차는 위 운영 문서를 따른다. 기록에 있는 카탈로그 개수나 최초 프롬프트가 현재 상태와 다를 수 있다.
