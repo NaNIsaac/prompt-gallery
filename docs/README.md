@@ -10,6 +10,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [감성 여행 다이어리 등록 검토](travel-diary-review-2026-10-17.md)
+- [감성 여행 다이어리 실제 입력과 파일 해시](image-generation-2026-10-17-travel-diary.json)
 - [숲 이중노출 얼굴 그림체 수정 검토](forest-illustration-review-2026-10-17.md)
 - [숲 이중노출 그림체 수정 실제 입력과 파일 해시](image-generation-2026-10-17-forest-illustration.json)
 - [2026-10-17 숲 이중노출·풍경 목판화 등록 검토](aesthetic-prompts-review-2026-10-17.md)
