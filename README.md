@@ -94,7 +94,7 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 
 결과는 `assets/images/handcrafted-diorama.webp`, 레퍼런스는 `assets/images/handcrafted-diorama.reference.webp`, 카드용 썸네일은 `assets/images/handcrafted-diorama.thumb.webp`에 보관합니다.
 
-현재 공개 항목은 기존 7개, 사용자 제공 프롬프트 5개, 조사 후 선택한 신규 3개와 블록 토이 월드 1개를 합쳐 총 16개입니다. 첨부 예시와 결과는 내장 이미지 생성 도구로 직접 생성했습니다. 기존 항목 중 입력 대상의 누락·복수 대상 처리를 보완한 6개 항목은 기존 원본 사진에 현재 공개 프롬프트를 그대로 적용해 결과와 썸네일을 재생성했습니다. 별도의 스타일 지시는 추가하지 않았습니다. [기존 생성 기록](docs/image-generation-2026-10-15.json)에 도구 입력 문구와 원본·결과 파일의 해시를 보관합니다. 디오라마의 사용자 제공 원문은 유지하고 첨부 안내를 보완했습니다.
+현재 공개 항목은 기존 7개, 사용자 제공 프롬프트 5개, 조사 후 선택한 신규 3개, 블록 토이 월드 1개와 손그림 애니메이션·픽셀 OOTD 2개를 합쳐 총 18개입니다. 첨부 예시와 결과는 내장 이미지 생성 도구로 직접 생성했습니다. 기존 항목 중 입력 대상의 누락·복수 대상 처리를 보완한 6개 항목은 기존 원본 사진에 현재 공개 프롬프트를 그대로 적용해 결과와 썸네일을 재생성했습니다. 별도의 스타일 지시는 추가하지 않았습니다. [기존 생성 기록](docs/image-generation-2026-10-15.json)에 도구 입력 문구와 원본·결과 파일의 해시를 보관합니다. 디오라마의 사용자 제공 원문은 유지하고 첨부 안내를 보완했습니다.
 
 2026-10-16에 손그림 낙서, 파스텔 라인드로잉, 캔디빛 치비, 크레파스 그림, 월간 매거진 프롬프트를 원문 그대로 추가했습니다. 각각 서로 다른 AI 원본 사진과 결과, 썸네일을 함께 등록했습니다. 1–4번은 원문만 적용했고, 매거진은 첫 시도 차단 후 성인·단정한 의상 조건을 덧붙여 재시도했습니다. 요청과 다르게 표현된 부분도 상세 예시 설명에 표시했습니다. [5종 테스트 검토](docs/user-prompt-tests-2026-10-16.md)와 [실제 도구 입력·파일 해시](docs/image-generation-2026-10-16.json)를 확인할 수 있습니다. 신규 자산은 `assets/images/`의 `scribble-portrait`, `pastel-line-drawing`, `candy-chibi`, `childlike-crayon`, `monthly-magazine` 이름 아래 `.webp`, `.reference.webp`, `.thumb.webp`로 보관합니다.
 
@@ -105,3 +105,5 @@ node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 2026-10-16 조사 후 고무 키링·반려동물 민화와 6·8번 테스트를 합친 작은 조각가들의 석상을 선택해 상단에 추가했습니다. 통합 문구는 인물·반려동물 원본에 각각 적용해 검토했습니다. [3종 등록 검토](docs/selected-prompts-review-2026-10-16.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-16-selected.json)를 확인할 수 있습니다.
 
 2026-10-16 사용자 제공 블록 토이 월드 프롬프트를 원문 그대로 상단에 추가했습니다. AI로 가상 카페 원본을 만든 뒤 그 한 장과 제공된 문구만으로 장면 전체를 블록으로 변환했습니다. [원본·결과 검토](docs/brick-world-review-2026-10-16.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-16-brick-world.json)를 보관합니다. 공개 자산은 `assets/images/brick-built-toy-world.reference.webp`, `brick-built-toy-world.webp`, `brick-built-toy-world.thumb.webp`입니다.
+
+2026-10-16 비교 테스트에서 선택한 손그림 애니메이션과 픽셀 OOTD를 서로 다른 새 원본으로 상단에 추가했습니다. 손그림은 해안가 책방 앞의 여성, 픽셀은 강변 산책로의 남성 사진으로 각각 생성했습니다. 비교용 여성·고양이 공통 원본은 공개 예시로 재사용하지 않았습니다. 공개 프롬프트만 각 원본에 적용했으며, 픽셀의 투명 배경과 가장자리의 반투명 색 번짐을 함께 검토했습니다. [2종 등록 검토](docs/pixel-animation-review-2026-10-16.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-16-pixel-animation.json)를 보관합니다.
