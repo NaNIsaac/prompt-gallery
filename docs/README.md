@@ -19,5 +19,7 @@
 - [손그림 애니메이션·픽셀 OOTD 원본·결과 검토](pixel-animation-review-2026-10-16.md)
 - [손그림 애니메이션·픽셀 OOTD 실제 입력과 이미지 해시](image-generation-2026-10-16-pixel-animation.json)
 - [기존 UX 검토](ux-review.md)
+- [밝은 임파스토 유화 등록 검토](bright-impasto-review-2026-10-16.md)
+- [밝은 임파스토 유화 실제 입력·중간 단계·파일 해시](image-generation-2026-10-16-bright-impasto.json)
 
 과거 생성 기록은 당시의 사실을 보존한다. 현재 개발 절차는 위 운영 문서를 따른다. 기록에 있는 카탈로그 개수나 최초 프롬프트가 현재 상태와 다를 수 있다.
