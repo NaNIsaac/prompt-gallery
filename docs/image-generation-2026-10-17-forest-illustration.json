@@ -1,0 +1,45 @@
+{
+  "id": "forest-double-exposure",
+  "generatedOn": "2026-10-17",
+  "revision": "illustrated-face-v2",
+  "tool": "built-in image_gen.imagegen",
+  "method": "Regenerate from the same published front-facing reference WebP and the revised public Korean prompt only. No prior result or external style-reference image was attached, and no follow-up instructions or retries were used. Convert the full result to WebP without cropping, and resize the thumbnail proportionally.",
+  "request": "얼굴 더 그림처럼 보이게 해줘",
+  "previous": {
+    "gitRevision": "a81c8cfc9fcc37e06b797a0649fc9e8b3b317c20",
+    "prompt": "첨부한 인물 사진을 바탕으로, 옆모습 실루엣 안에 안개 낀 숲과 새벽 풍경이 펼쳐지는 서정적인 이중노출 일러스트를 만들어줘. 이마·코·입술·턱의 외곽선과 머리 모양으로 같은 인물을 알아볼 수 있게 해줘.\n머리와 어깨 안에서 나무와 능선이 겹치고, 가장자리에서는 가지가 밝은 바탕으로 부드럽게 흩어지게 해줘. 옅은 새벽 파랑·이끼 초록과 한 줄의 따뜻한 호박빛을 사용하고 넓은 흰 여백을 남겨줘.\n원본 얼굴 사진을 그대로 잘라 붙이지 말고 전체를 같은 섬세한 일러스트로 표현해줘. 글자·로고·워터마크 없이 2:3 세로 화면으로 만들어줘.\n\n사진이 없거나 인물이 보이지 않으면 얼굴 윤곽이 선명한 인물 사진을 요청해줘. 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 주인공으로 만들지 먼저 물어봐줘. 정면 사진을 입력으로 사용할 수 있게, 사진 속 얼굴의 고유한 특징을 바탕으로 자연스러운 옆모습 실루엣으로 재해석해줘. 측면 사진을 따로 요구하지 마.",
+    "result": "assets/images/forest-double-exposure.webp",
+    "resultSha256": "66cc67614b85aa5a8d9e5ae176559505bf42d8d01331c60bd23892af3a1c1295",
+    "thumbnail": "assets/images/forest-double-exposure.thumb.webp",
+    "thumbnailSha256": "4a434afc6bf9e16a695cdd8aaf30bf0d773a6d0c34576ddf51725457b157bc8f",
+    "generationRecord": "docs/image-generation-2026-10-17-aesthetic.json"
+  },
+  "referenceOrigin": "AI-generated synthetic photograph, unique to this prompt",
+  "referenceGenerationPrompt": "Create one photorealistic studio portrait photograph of one fictional adult Korean woman aged 32. Direct front-facing view, looking directly into the camera with both eyes, both cheeks and both ears symmetrically visible; head upright, absolutely not a side profile or three-quarter angle. Head and shoulders portrait of an everyday person, short straight dark chestnut bob tucked behind her ears, one tiny plain gold stud earring in each ear, wearing a simple warm ivory knit top. Relaxed natural neutral expression, authentic realistic skin texture and proportions. Plain pale warm gray background, soft diffuse frontal window daylight. The whole head, hair and shoulders fit comfortably inside the frame with generous breathing room around the face. Vertical 2:3 composition. Authentic natural portrait photograph, not illustration, no double exposure, no landscape, no text, no logos, no watermark. Only one adult person.",
+  "reference": "assets/images/forest-double-exposure.reference.webp",
+  "referenceSha256": "de8799c323d219ce4a6d82932c4de6ab8fb602f40ba2780b684e072254e63d97",
+  "toolReferencedImages": [
+    "assets/images/forest-double-exposure.reference.webp"
+  ],
+  "prompt": "첨부한 인물 사진을 바탕으로, 옆모습 실루엣 안에 안개 낀 숲과 새벽 풍경이 펼쳐지는 서정적인 이중노출 일러스트를 만들어줘. 이마·코·입술·턱의 외곽선과 머리 모양으로 같은 인물을 알아볼 수 있게 해줘.\n\n얼굴도 숲과 같은 손그림 매체로 처음부터 다시 그려줘. 피부는 넓고 부드러운 색면과 옅은 수채화 번짐, 종이 결로 표현하고, 코·입술·눈꺼풀과 눈썹은 간결하고 섬세한 색연필 선으로 정리해줘. 눈동자와 입술의 반짝이는 실사 광택, 모공·잔주름·피부의 사진 질감, 사실적인 속눈썹과 촘촘한 머리카락 묘사는 생략해줘. 얼굴만 사진처럼 남거나 원본 얼굴을 잘라 붙인 합성처럼 보이면 안 돼. 눈과 입을 지나치게 크게 만들지 말고, 성인의 차분한 얼굴 인상과 나이 느낌을 유지해줘.\n\n머리와 어깨 안에서 나무와 능선이 겹치고, 가장자리에서는 가지가 밝은 바탕으로 부드럽게 흩어지게 해줘. 옅은 새벽 파랑·이끼 초록과 한 줄의 따뜻한 호박빛을 사용하고 넓은 흰 여백을 남겨줘. 얼굴·머리카락·숲·산 모두가 한 장의 종이에 그린 일관된 수채화·색연필 일러스트로 이어지게 해줘. 글자·로고·워터마크 없이 2:3 세로 화면으로 만들어줘.\n\n사진이 없거나 인물이 보이지 않으면 얼굴 윤곽이 선명한 인물 사진을 요청해줘. 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 주인공으로 만들지 먼저 물어봐줘. 정면 사진을 입력으로 사용할 수 있게, 사진 속 얼굴의 고유한 특징을 바탕으로 자연스러운 옆모습 실루엣으로 재해석해줘. 측면 사진을 따로 요구하지 마.",
+  "toolPrompt": "첨부한 인물 사진을 바탕으로, 옆모습 실루엣 안에 안개 낀 숲과 새벽 풍경이 펼쳐지는 서정적인 이중노출 일러스트를 만들어줘. 이마·코·입술·턱의 외곽선과 머리 모양으로 같은 인물을 알아볼 수 있게 해줘.\n\n얼굴도 숲과 같은 손그림 매체로 처음부터 다시 그려줘. 피부는 넓고 부드러운 색면과 옅은 수채화 번짐, 종이 결로 표현하고, 코·입술·눈꺼풀과 눈썹은 간결하고 섬세한 색연필 선으로 정리해줘. 눈동자와 입술의 반짝이는 실사 광택, 모공·잔주름·피부의 사진 질감, 사실적인 속눈썹과 촘촘한 머리카락 묘사는 생략해줘. 얼굴만 사진처럼 남거나 원본 얼굴을 잘라 붙인 합성처럼 보이면 안 돼. 눈과 입을 지나치게 크게 만들지 말고, 성인의 차분한 얼굴 인상과 나이 느낌을 유지해줘.\n\n머리와 어깨 안에서 나무와 능선이 겹치고, 가장자리에서는 가지가 밝은 바탕으로 부드럽게 흩어지게 해줘. 옅은 새벽 파랑·이끼 초록과 한 줄의 따뜻한 호박빛을 사용하고 넓은 흰 여백을 남겨줘. 얼굴·머리카락·숲·산 모두가 한 장의 종이에 그린 일관된 수채화·색연필 일러스트로 이어지게 해줘. 글자·로고·워터마크 없이 2:3 세로 화면으로 만들어줘.\n\n사진이 없거나 인물이 보이지 않으면 얼굴 윤곽이 선명한 인물 사진을 요청해줘. 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 주인공으로 만들지 먼저 물어봐줘. 정면 사진을 입력으로 사용할 수 있게, 사진 속 얼굴의 고유한 특징을 바탕으로 자연스러운 옆모습 실루엣으로 재해석해줘. 측면 사진을 따로 요구하지 마.",
+  "additionalInstructions": "",
+  "toolTransparentBackground": false,
+  "generatedArtifact": "exec-fe06445e-321f-4c3a-b5e5-71714020ce0e.png",
+  "generatedArtifactSha256": "1c8b268589ea4b89c73852fe86386b0eb8768705d83569e27091e422851e6328",
+  "result": "assets/images/forest-double-exposure.webp",
+  "resultSha256": "fb365186f2de5b619abd2d1d9d269ed3d46d68afb738b5543f20d9936c467ed9",
+  "thumbnail": "assets/images/forest-double-exposure.thumb.webp",
+  "thumbnailSha256": "203c6d859feae4506166513947a937a7771eb9cb5ad84aacca9180f27f2f4804",
+  "width": 1024,
+  "height": 1536,
+  "referenceDimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "thumbnailDimensions": {
+    "width": 560,
+    "height": 840
+  },
+  "reviewNote": "AI 생성 정면 원본·결과 · 얼굴을 더 그림처럼 표현하도록 수정한 현재 공개 프롬프트만 같은 정면 원본에 적용했습니다. 얼굴에 수채화 색면·종이 결·색연필 선을 더하고 숲과 새벽을 같은 매체로 연결했습니다. 눈·머리카락의 세부는 일부 남아 있으며, 원본에서 보이지 않던 옆얼굴과 구도는 재해석됐습니다."
+}
