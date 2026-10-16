@@ -1,0 +1,51 @@
+{
+  "id": "minecraft-ingame-character",
+  "generatedOn": "2026-10-17",
+  "tool": "built-in image_gen.imagegen",
+  "method": "새 AI 원본 한 장과 테스트 프롬프트만으로 생성한 결과를 사용자의 배포 요청에 따라 등록했다. 원본과 결과를 자르거나 색 보정하지 않고 WebP로 변환했으며, 썸네일만 비율을 유지해 축소했다.",
+  "referenceGenerationPrompt": "Use case: photorealistic-natural\nAsset type: fictional reference photo for a photo-to-Minecraft-character prompt test.\nCreate one realistic full-body casual photograph of a fictional Korean adult man in his late twenties, standing facing the camera on a simple park path, arms resting naturally by his sides, both hands and shoes visible. Short black hair parted to one side, round black eyeglasses, mustard-yellow zip jacket worn open over a plain white T-shirt, charcoal straight trousers, white low-top sneakers. Friendly neutral expression. Natural everyday proportions, unretouched skin, soft daylight, understated park greenery in the background, smartphone snapshot aesthetic. The entire person is clearly visible and fills most of a portrait composition. No text, no logos, no other people. This is an invented person, not a portrait of the actual user.\n",
+  "prompt": "첨부한 사진 속 인물이 마인크래프트 세계에 접속해 직접 플레이어 캐릭터가 된 장면을 만들어 주세요.\n\n사진에서 알아볼 수 있는 헤어스타일, 머리색, 안경 유무, 피부색, 상의와 하의의 색·디자인, 신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 얼굴도 실사 얼굴을 붙이지 말고 픽셀로 단순화하세요. 머리는 정육면체, 몸통과 팔다리는 각진 직육면체인 기본 플레이어 모델 비율로 만들고, 인물 전체를 머리부터 발끝까지 마인크래프트 캐릭터로 변환하세요.\n\n장면은 실제 바닐라 마인크래프트 인게임 스크린샷처럼 표현해 주세요. 낮의 잔디 평원에 흙·잔디 블록, 참나무, 작은 강, 멀리 보이는 언덕이 있고, 인물은 철 곡괭이를 들고 서 있습니다. 카메라는 캐릭터를 정면에서 바라보는 3인칭 시점이며, 전신과 주변 게임 환경이 함께 보이는 가로 16:9 화면입니다. 캐릭터를 화면 중앙에 충분히 크게 배치해 사진 속 특징을 확인할 수 있게 해 주세요. 화면 하단에는 마인크래프트 스타일의 하트·허기·핫바 HUD를 자연스럽게 넣어 주세요.\n\n모든 물체는 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 인물, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.",
+  "toolPrompt": "첨부한 사진 속 인물이 마인크래프트 세계에 접속해 직접 플레이어 캐릭터가 된 장면을 만들어 주세요.\n\n사진에서 알아볼 수 있는 헤어스타일, 머리색, 안경 유무, 피부색, 상의와 하의의 색·디자인, 신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 얼굴도 실사 얼굴을 붙이지 말고 픽셀로 단순화하세요. 머리는 정육면체, 몸통과 팔다리는 각진 직육면체인 기본 플레이어 모델 비율로 만들고, 인물 전체를 머리부터 발끝까지 마인크래프트 캐릭터로 변환하세요.\n\n장면은 실제 바닐라 마인크래프트 인게임 스크린샷처럼 표현해 주세요. 낮의 잔디 평원에 흙·잔디 블록, 참나무, 작은 강, 멀리 보이는 언덕이 있고, 인물은 철 곡괭이를 들고 서 있습니다. 카메라는 캐릭터를 정면에서 바라보는 3인칭 시점이며, 전신과 주변 게임 환경이 함께 보이는 가로 16:9 화면입니다. 캐릭터를 화면 중앙에 충분히 크게 배치해 사진 속 특징을 확인할 수 있게 해 주세요. 화면 하단에는 마인크래프트 스타일의 하트·허기·핫바 HUD를 자연스럽게 넣어 주세요.\n\n모든 물체는 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 인물, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.\n",
+  "additionalInstructions": "",
+  "promptNormalization": "Public prompt omits only the trailing line break from the actual tool input.",
+  "toolTransparentBackground": false,
+  "referenceOrigin": "AI-generated fictional adult; not the actual user",
+  "referenceArtifact": "exec-a74c334a-aa64-4169-9dc3-02608314baf5.png",
+  "generatedArtifact": "exec-087cd884-0103-4719-af28-1bae33cb9f7e.png",
+  "originalArtifacts": [
+    {
+      "path": "output/imagegen/minecraft-ingame-test-2026-10-17/reference.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "64a4b1a0d5de74590ee3b696cdd3ee1a59b7d85afa7ee10e49497fb289a1c249"
+    },
+    {
+      "path": "output/imagegen/minecraft-ingame-test-2026-10-17/result.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b9997bb56d53ba930819ca3f6be4a97a964dec8b515017152260b80d39e434be"
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/minecraft-ingame-character.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0b52fc0c905e1b6bc69cd4489e42e9e03fb4b597568da884738253af808e73cc"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a23fcb086729e830f19a541be0e165797e161f5fbf41b09b60296409068bcd4d"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.thumb.webp",
+      "width": 560,
+      "height": 315,
+      "sha256": "31b750bc5e068726e2e9dbc3063b3533818a1c4b75232ed154e7870026128e61"
+    }
+  ],
+  "reviewNote": "AI 생성 원본·결과 · 가상의 성인 인물 사진 한 장에 표시된 프롬프트만 적용했습니다. 검은 머리·안경·노란 재킷·흰 티셔츠·어두운 바지·흰 신발을 픽셀 스킨으로 옮기고, 철 곡괭이와 하트·허기·핫바가 있는 3인칭 장면을 만들었습니다. 실제 게임 캡처가 아닌 생성 이미지이며, 기본 플레이어보다 머리가 크게 표현되고 머리카락·안경의 입체감과 표면 질감도 바닐라 모델과 차이가 있습니다.",
+  "validationScope": "One fictional adult full-body portrait; other subjects and multi-person inputs were not generated in this test."
+}
