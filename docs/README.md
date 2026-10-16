@@ -10,6 +10,9 @@
 
 ## 생성 이력과 참고 자료
 
+- [마인크래프트 범용 프롬프트 3종 예시 검토](minecraft-three-examples-review-2026-10-17.md)
+- [마인크래프트 3종 실제 입력과 파일 해시](image-generation-2026-10-17-minecraft-three-examples.json)
+
 - [메이플스토리 중단 작업 복원·3종 예시 게시 검토](maplestory-three-examples-review-2026-10-17.md)
 - [메이플스토리 인물·반려동물·풍경 3종 실제 입력·파일 해시](image-generation-2026-10-17-maplestory-three-examples.json)
 - [메이플스토리 인물·반려동물·풍경 범용 확장 검토](maplestory-universal-review-2026-10-17.md)
