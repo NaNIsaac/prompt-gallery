@@ -117,3 +117,38 @@ test('a direct sharing URL loads its assets and copies the Pages subpath URL', a
   await expect(page.locator('#prompt-dialog')).toBeVisible();
   await expect(page.locator('#detail-prompt')).toHaveValue(featured.prompt);
 });
+
+test('MapleStory examples pair each result with its own reference and keep one shared prompt', async ({ page }) => {
+  const item = catalog.find(p => p.id === 'maplestory-ingame-character');
+  expect(item.examples.map(example => example.label)).toEqual(['인물', '반려동물', '풍경']);
+  await page.goto(`prompts/${item.id}/`);
+  await ready(page);
+  for (const example of item.examples) {
+    const option = page.getByRole('button', { name: `${example.label} 예시 보기`, exact: true });
+    await option.click();
+    await expect(option).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('#example-options [aria-pressed="true"]')).toHaveCount(1);
+    await loaded(page.locator('#detail-image'));
+    await expect(page.locator('#detail-image')).toHaveAttribute('src', new RegExp(example.image.replaceAll('.', '\\.')));
+    await expect(page.locator('#example-note')).toHaveText(example.note);
+    await page.getByRole('button', { name: '첨부 예시 1 크게 보기', exact: true }).click();
+    await loaded(page.locator('#image-viewer-image'));
+    await expect(page.locator('#image-viewer-image')).toHaveAttribute('src', new RegExp(example.referenceImages[0].replaceAll('.', '\\.')));
+    await page.locator('#close-image-viewer').click();
+    await page.locator('#original-image').click();
+    await loaded(page.locator('#image-viewer-image'));
+    await expect(page.locator('#image-download')).toHaveAttribute('href', new RegExp(example.image.replaceAll('.', '\\.')));
+    await page.locator('#close-image-viewer').click();
+    await expect(page.locator('#detail-prompt')).toHaveValue(item.prompt);
+    await fitsViewport(page);
+  }
+  await page.locator('#detail-copy').click();
+  await expect(page.locator('#detail-copy')).toHaveAttribute('aria-label', '프롬프트 복사 완료');
+  expect((await page.evaluate(() => navigator.clipboard.readText())).replaceAll('\r\n', '\n')).toBe(item.prompt);
+  await page.reload();
+  await ready(page);
+  await expect(page.getByRole('button', { name: '인물 예시 보기', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await page.goto(`prompts/${catalog.find(p => !p.examples).id}/`);
+  await ready(page);
+  await expect(page.locator('#example-options')).toBeHidden();
+});

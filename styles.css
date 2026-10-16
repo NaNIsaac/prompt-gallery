@@ -166,6 +166,10 @@ dialog::backdrop { background: #000b; }
 .detail-layout { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); }
 .detail-visual { display: flex; flex-direction: column; align-items: center; justify-content: center; align-self: start; position: sticky; top: 0; gap: 8px; padding: 24px; min-width: 0; background: #141417; }
 .detail-image-frame { display: grid; place-items: center; width: 100%; min-height: 160px; }
+.example-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; margin-bottom: 8px; }
+.example-option { padding: 8px 16px; border: 1px solid #555560; border-radius: 20px; background: #24242b; color: #eeeef2; font: inherit; cursor: pointer; }
+.example-option[aria-pressed="true"] { background: #eeeeff; border-color: #eeeeff; color: #24242b; }
+.example-option:focus-visible { outline: 2px solid #d1c4ff; outline-offset: 3px; }
 .detail-image-frame[aria-busy="true"] { background: #24242b; }
 #detail-image-loading { padding: 40px 16px; color: var(--muted); font-size: 13px; }
 #detail-image { width: 100%; max-height: max(220px,calc(100dvh - 300px)); object-fit: contain; }

@@ -10,6 +10,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [메이플스토리 중단 작업 복원·3종 예시 게시 검토](maplestory-three-examples-review-2026-10-17.md)
+- [메이플스토리 인물·반려동물·풍경 3종 실제 입력·파일 해시](image-generation-2026-10-17-maplestory-three-examples.json)
 - [메이플스토리 인물·반려동물·풍경 범용 확장 검토](maplestory-universal-review-2026-10-17.md)
 - [메이플스토리 수정 전후 문구·범용 테스트·파일 해시](maplestory-prompt-revision-2026-10-17.json)
 - [병원 X선 필름 등록 검토](xray-film-review-2026-10-17.md)

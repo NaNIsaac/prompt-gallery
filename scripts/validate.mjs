@@ -26,7 +26,22 @@ export async function readCatalog(root = projectRoot) {
     for (const field of ['sourceUrl', 'collectionUrl', 'inspirationUrl']) {
       if (item[field] && new URL(item[field]).protocol !== 'https:') throw new Error(`${item.id}: ${field} must use HTTPS`);
     }
-    for (const asset of [item.image, item.thumbnail, ...item.referenceImages]) {
+    const exampleAssets = [];
+    if (item.examples !== undefined) {
+      if (!Array.isArray(item.examples) || item.examples.length < 2) throw new Error(`${item.id}: examples must contain at least two variants`);
+      const labels = new Set();
+      for (const example of item.examples) {
+        if (typeof example.label !== 'string' || !example.label.trim() || labels.has(example.label)) throw new Error(`${item.id}: invalid or duplicate example label`);
+        labels.add(example.label);
+        if (![example.width, example.height].every(n => Number.isFinite(n) && n > 0)) throw new Error(`${item.id}: invalid example dimensions`);
+        if (!Array.isArray(example.referenceImages) || !example.referenceImages.length) throw new Error(`${item.id}: each example needs its own reference`);
+        if (typeof example.note !== 'string' || !example.note.trim()) throw new Error(`${item.id}: each example needs a note`);
+        exampleAssets.push(example.image, ...example.referenceImages);
+      }
+      const first = item.examples[0];
+      if (first.image !== item.image || first.width !== item.width || first.height !== item.height || JSON.stringify(first.referenceImages) !== JSON.stringify(item.referenceImages)) throw new Error(`${item.id}: first example must match the card preview`);
+    }
+    for (const asset of [item.image, item.thumbnail, ...item.referenceImages, ...exampleAssets]) {
       if (typeof asset !== 'string' || !asset.startsWith('assets/')) throw new Error(`${item.id}: image paths must start with assets/`);
       const path = resolve(root, asset);
       const rel = relative(root, path);
