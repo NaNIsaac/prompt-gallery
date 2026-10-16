@@ -19,6 +19,7 @@ let prompts = [];
 let visiblePrompts = [];
 let savedIds = new Set();
 let currentPrompt = null;
+let currentExample = null;
 let modalIds = [];
 let openerId = null;
 let lastTrigger = null;
@@ -346,6 +347,24 @@ function loadDetailImage(prompt) {
   image.src = new URL(prompt.image, siteRoot).href;
 }
 
+function selectExample(example) {
+  currentExample = example;
+  $('#example-note').textContent = example.note || currentPrompt.exampleNote || 'AI로 만든 첨부 예시와 변환 결과입니다.';
+  const paths = example.referenceImages;
+  $('#reference-images').replaceChildren(...paths.map((path, index) => {
+    const open = button('reference-open', `첨부 예시 ${index + 1} 크게 보기`);
+    const image = new Image();
+    image.src = new URL(path, siteRoot).href;
+    image.alt = '';
+    open.append(image);
+    open.addEventListener('click', () => openImageViewer(path, `첨부 예시 ${index + 1}`, open));
+    return open;
+  }));
+  $('#reference-section').hidden = !paths.length;
+  [...$('#example-options').children].forEach(node => node.setAttribute('aria-pressed', String(node.dataset.example === example.label)));
+  loadDetailImage({ ...example, title: `${currentPrompt.title}${example.label ? ` · ${example.label}` : ''}` });
+}
+
 function loadViewerImage() {
   if (!imageDialog.open || !imageViewerSource) return;
   $('#image-viewer-content').setAttribute('aria-busy', 'true');
@@ -401,24 +420,22 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   $('#detail-credit-label').replaceChildren(document.createTextNode(prompt.sample ? '커뮤니티 샘플 · ' : '작성 · '), element('span', '', prompt.author));
   $('#detail-source').href = prompt.sourceUrl;
   $('#detail-save').dataset.saveId = prompt.id;
-  const refs = $('#reference-images');
-  refs.replaceChildren(...prompt.referenceImages.map((path, index) => {
-    const open = button('reference-open', `첨부 예시 ${index + 1} 크게 보기`);
-    const image = new Image();
-    image.src = new URL(path, siteRoot).href;
-    image.alt = '';
-    open.append(image);
-    open.addEventListener('click', () => openImageViewer(path, `첨부 예시 ${index + 1}`, open));
-    return open;
+  const examples = prompt.examples || [];
+  $('#example-options').replaceChildren(...examples.map(example => {
+    const option = button('example-option', `${example.label} 예시 보기`);
+    option.textContent = example.label;
+    option.dataset.example = example.label;
+    option.addEventListener('click', () => selectExample(example));
+    return option;
   }));
-  $('#reference-section').hidden = !prompt.referenceImages.length;
+  $('#example-options').hidden = examples.length < 2;
   setCopyButton($('#detail-copy'), 'default');
   setCopyButton($('#share-prompt'), 'default');
   resetFeedback();
   dismissToast();
   updateSavedUI();
   updateModalNavigation();
-  loadDetailImage(prompt);
+  selectExample(examples[0] || { image: prompt.image, referenceImages: prompt.referenceImages });
   if (!wasOpen) { dialog.showModal(); $('#close-dialog').focus({ preventScroll: true }); }
   $('.detail-body').scrollTop = 0;
   if (writeHistory) {
@@ -434,6 +451,7 @@ function closePrompt(writeHistory = true) {
   const returnIndex = Math.max(0, modalIds.indexOf(openerId));
   if (dialog.open) dialog.close();
   currentPrompt = null;
+  currentExample = null;
   resetFeedback();
   document.title = defaultTitle;
   if (writeHistory && readPromptLocation(location.href, siteRoot)) {
@@ -530,7 +548,7 @@ $('#previous-prompt').addEventListener('click', () => navigatePrompt(-1));
 $('#next-prompt').addEventListener('click', () => navigatePrompt(1));
 $('#close-dialog').addEventListener('click', () => closePrompt());
 $('#original-image').addEventListener('click', event => {
-  if (currentPrompt) openImageViewer(currentPrompt.image, '생성 결과 원본', event.currentTarget);
+  if (currentPrompt) openImageViewer(currentExample.image, '생성 결과 원본', event.currentTarget);
 });
 $('#close-image-viewer').addEventListener('click', () => closeImageViewer());
 $('#retry-viewer-image').addEventListener('click', () => { loadViewerImage(); $('#close-image-viewer').focus({ preventScroll: true }); });
@@ -564,7 +582,7 @@ $('#detail-image').addEventListener('error', () => {
 });
 $('#retry-image').addEventListener('click', () => {
   if (!currentPrompt) return;
-  loadDetailImage(currentPrompt);
+  loadDetailImage({ ...currentExample, title: currentPrompt.title });
   $('#original-image').focus({ preventScroll: true });
 });
 dialog.addEventListener('cancel', event => { event.preventDefault(); closePrompt(); });

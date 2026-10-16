@@ -1,0 +1,180 @@
+{
+  "id": "maplestory-ingame-character",
+  "date": "2026-10-17",
+  "timezone": "Asia/Seoul",
+  "tool": "built-in image_gen.imagegen",
+  "prompt": "첨부한 사진 전체를 메이플스토리의 2D 횡스크롤 게임에 들어온 듯한 장면으로 바꿔 주세요. 인물 사진뿐 아니라 반려동물·동물·풍경·건물·사물 사진 한 장으로도 만들 수 있습니다. 사진에 실제로 보이는 주요 대상과 장면을 기준으로, 아래에서 해당하는 조건만 적용하세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발의 특징을 살린 플레이어 캐릭터로 변환하세요. 큰 머리와 작은 몸, 짧은 팔다리의 약 2.5등신 SD 비율과 정면에서 약간 옆을 향한 대기 자세로 표현하고 얼굴까지 픽셀 스프라이트로 그리세요. 무기나 모자로 얼굴과 옷의 특징을 가리지 마세요.\n\n반려동물이나 동물이 있으면 종·귀 모양·얼굴·털색·무늬·꼬리·자세와 원래 착용한 목줄·하네스 등을 살린 메이플스토리풍 펫 또는 동물 캐릭터로 변환하세요. 네 발 동물은 네 발 체형을 유지하고, 사람의 몸·옷·손으로 바꾸지 마세요. 동물만 있는 사진에는 주인이나 플레이어 인물을 새로 넣지 마세요.\n\n풍경·건물 사진은 사진 속 지형·산·물·수목·길·다리·건물의 특징적인 형태와 대표 색, 주요 대상의 좌우 배치를 살린 탐험 가능한 게임 맵으로 변환하세요. 원래 장소를 알아볼 수 있게 유지하면서 길과 지형을 수평 발판·층진 지형·사다리로 자연스럽게 재해석하세요. 사진에 인물이나 동물이 없으면 캐릭터·주인공·몬스터를 추가하지 마세요. 모든 풍경을 같은 헤네시스 버섯마을로 바꾸지 마세요. 사물이 중심이면 그 사물의 형태·색·재질 특징을 살린 게임 속 오브젝트로 표현하고 얼굴이나 팔다리를 새로 붙이지 마세요.\n\n사진에 여러 대상이 함께 있으면 별도 지정이 없는 한 주요 대상 모두를 각각 해당하는 방식으로 변환하고 개수와 함께 있는 관계를 유지하세요. 배경이 실제 장소라면 그 장소를 게임 맵으로 살리세요. 단색·스튜디오 배경처럼 장소 정보가 없을 때만 헤네시스 느낌의 밝은 잔디 발판·나무·꽃·버섯집을 배경으로 사용할 수 있습니다. 주요 대상의 전신 또는 전체 형태가 발판 위에 자연스럽게 놓이고, 인물·동물·사물과 배경의 도트 크기가 어울리게 하세요.\n\n화면은 가로 16:9이며 카메라는 게임처럼 수평인 2D 횡스크롤 시점입니다. 원작 메이플스토리의 저해상도 게임 리소스를 정수 배율로 확대한 것처럼 캐릭터·지형·건물·수목 전체에 일정한 크기의 사각 픽셀, 얇고 또렷한 외곽선, 제한된 단계의 명암과 밝은 색감을 적용하세요. 주요 대상과 주변 맵이 함께 보이는 실제 플레이 화면 같은 구도로 구성하세요.\n\n왼쪽 위에는 현재 장면과 대응하는 작은 미니맵, 아래에는 작고 촘촘한 레트로 PC 게임 스타일의 HP·MP·경험치 바와 단축키 슬롯을 넣어 주세요. 인물이나 동물이 있을 때만 머리 위에 작은 닉네임 '나의모험가'를 표시하고, 아무도 없는 풍경에는 닉네임을 띄우지 마세요. 미니맵의 지역명은 실제 장소를 추정하지 말고 '나의메이플월드'로 표시하세요.\n\n실사 얼굴 붙이기, 실사 배경, 3D 렌더링, 입체 피규어, 부드러운 벡터 그림, 고해상도 붓질, 시네마틱한 조명, 흐려진 원경, 화면을 가득 채운 거대 캐릭터, 캐릭터 선택창·소개 카드·포스터는 피하세요. 게임 UI 외의 설명 문구, 사진 원본 삽입, 로고·워터마크는 넣지 마세요. 사진이 없으면 변환할 사진 한 장을 요청하세요.",
+  "method": "중단 이전 강아지·풍경 생성 파일의 SHA-256을 이전 기록과 대조해 재사용했다. 기존 인물 원본 한 장만 현재 범용 문구로 재생성했다. 세 결과 모두 같은 공개 프롬프트만 적용했으며 이미지별 추가 지시나 후속 편집은 없다.",
+  "tests": [
+    {
+      "role": "person",
+      "label": "인물",
+      "tool": "built-in image_gen.imagegen",
+      "toolPrompt": "첨부한 사진 전체를 메이플스토리의 2D 횡스크롤 게임에 들어온 듯한 장면으로 바꿔 주세요. 인물 사진뿐 아니라 반려동물·동물·풍경·건물·사물 사진 한 장으로도 만들 수 있습니다. 사진에 실제로 보이는 주요 대상과 장면을 기준으로, 아래에서 해당하는 조건만 적용하세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발의 특징을 살린 플레이어 캐릭터로 변환하세요. 큰 머리와 작은 몸, 짧은 팔다리의 약 2.5등신 SD 비율과 정면에서 약간 옆을 향한 대기 자세로 표현하고 얼굴까지 픽셀 스프라이트로 그리세요. 무기나 모자로 얼굴과 옷의 특징을 가리지 마세요.\n\n반려동물이나 동물이 있으면 종·귀 모양·얼굴·털색·무늬·꼬리·자세와 원래 착용한 목줄·하네스 등을 살린 메이플스토리풍 펫 또는 동물 캐릭터로 변환하세요. 네 발 동물은 네 발 체형을 유지하고, 사람의 몸·옷·손으로 바꾸지 마세요. 동물만 있는 사진에는 주인이나 플레이어 인물을 새로 넣지 마세요.\n\n풍경·건물 사진은 사진 속 지형·산·물·수목·길·다리·건물의 특징적인 형태와 대표 색, 주요 대상의 좌우 배치를 살린 탐험 가능한 게임 맵으로 변환하세요. 원래 장소를 알아볼 수 있게 유지하면서 길과 지형을 수평 발판·층진 지형·사다리로 자연스럽게 재해석하세요. 사진에 인물이나 동물이 없으면 캐릭터·주인공·몬스터를 추가하지 마세요. 모든 풍경을 같은 헤네시스 버섯마을로 바꾸지 마세요. 사물이 중심이면 그 사물의 형태·색·재질 특징을 살린 게임 속 오브젝트로 표현하고 얼굴이나 팔다리를 새로 붙이지 마세요.\n\n사진에 여러 대상이 함께 있으면 별도 지정이 없는 한 주요 대상 모두를 각각 해당하는 방식으로 변환하고 개수와 함께 있는 관계를 유지하세요. 배경이 실제 장소라면 그 장소를 게임 맵으로 살리세요. 단색·스튜디오 배경처럼 장소 정보가 없을 때만 헤네시스 느낌의 밝은 잔디 발판·나무·꽃·버섯집을 배경으로 사용할 수 있습니다. 주요 대상의 전신 또는 전체 형태가 발판 위에 자연스럽게 놓이고, 인물·동물·사물과 배경의 도트 크기가 어울리게 하세요.\n\n화면은 가로 16:9이며 카메라는 게임처럼 수평인 2D 횡스크롤 시점입니다. 원작 메이플스토리의 저해상도 게임 리소스를 정수 배율로 확대한 것처럼 캐릭터·지형·건물·수목 전체에 일정한 크기의 사각 픽셀, 얇고 또렷한 외곽선, 제한된 단계의 명암과 밝은 색감을 적용하세요. 주요 대상과 주변 맵이 함께 보이는 실제 플레이 화면 같은 구도로 구성하세요.\n\n왼쪽 위에는 현재 장면과 대응하는 작은 미니맵, 아래에는 작고 촘촘한 레트로 PC 게임 스타일의 HP·MP·경험치 바와 단축키 슬롯을 넣어 주세요. 인물이나 동물이 있을 때만 머리 위에 작은 닉네임 '나의모험가'를 표시하고, 아무도 없는 풍경에는 닉네임을 띄우지 마세요. 미니맵의 지역명은 실제 장소를 추정하지 말고 '나의메이플월드'로 표시하세요.\n\n실사 얼굴 붙이기, 실사 배경, 3D 렌더링, 입체 피규어, 부드러운 벡터 그림, 고해상도 붓질, 시네마틱한 조명, 흐려진 원경, 화면을 가득 채운 거대 캐릭터, 캐릭터 선택창·소개 카드·포스터는 피하세요. 게임 UI 외의 설명 문구, 사진 원본 삽입, 로고·워터마크는 넣지 마세요. 사진이 없으면 변환할 사진 한 장을 요청하세요.",
+      "inputImages": [
+        "output/imagegen/maplestory-ingame-test-2026-10-17/reference.png"
+      ],
+      "transparentBackground": false,
+      "referenceGenerationPrompt": "Use case: photorealistic-natural\nCreate a fictional adult person as an input photo for a photo-to-game-character prompt test. A Korean man in his mid-twenties, short dark brown hair with a slightly off-center part, thin round black glasses, a mustard yellow sweatshirt under an open blue denim jacket, cream straight trousers and red canvas sneakers. One person only, standing upright facing the camera, relaxed arms, both hands visible. Full body from hair to shoes with generous margins. A simple pale gray studio backdrop and soft natural light. Realistic everyday photograph, clear facial features and recognizable clothing, no text, no watermark. This must depict a newly invented person, not a public figure. Portrait orientation.",
+      "generatedArtifact": "exec-a8de1ec1-feeb-4bc7-8138-ae9496b2c9ae.png",
+      "sourceFiles": [
+        {
+          "path": "output/imagegen/maplestory-ingame-test-2026-10-17/reference.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "47fb33551e23d9e682252ed93d6b525b3ded19627ec027b1be673d845745a755"
+        },
+        {
+          "path": "output/imagegen/maplestory-universal-test-2026-10-17/person-result.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "e4ba5ffbfee79c71932af39559383d820e1a78ebbff8bf4d5d0b4ac4d841b56a"
+        }
+      ],
+      "publishedFiles": [
+        {
+          "path": "assets/images/maplestory-ingame-character.reference.webp",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "4c0c2655bc72a24bece7561c48b058a904418688dc663b52003f27ece0b0ec1d"
+        },
+        {
+          "path": "assets/images/maplestory-ingame-character.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "4ff4e43ec660f7e85d591c5e65718cc42c50ae0e46ffb133a86c1851333896d4"
+        }
+      ],
+      "review": "AI 생성 원본·결과 · 기존 가상 인물 원본 한 장을 현재 범용 프롬프트로 다시 변환했습니다. 갈색 머리·안경·청재킷·노란 상의·크림색 바지·빨간 운동화가 SD 캐릭터에 반영됐습니다. 배경에는 달팽이·버섯 캐릭터가 추가되고 원경이 흐려졌으며, 실제 게임 리소스·HUD와는 차이가 있습니다."
+    },
+    {
+      "role": "pet",
+      "label": "반려동물",
+      "tool": "built-in image_gen.imagegen",
+      "toolPrompt": "첨부한 사진 전체를 메이플스토리의 2D 횡스크롤 게임에 들어온 듯한 장면으로 바꿔 주세요. 인물 사진뿐 아니라 반려동물·동물·풍경·건물·사물 사진 한 장으로도 만들 수 있습니다. 사진에 실제로 보이는 주요 대상과 장면을 기준으로, 아래에서 해당하는 조건만 적용하세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발의 특징을 살린 플레이어 캐릭터로 변환하세요. 큰 머리와 작은 몸, 짧은 팔다리의 약 2.5등신 SD 비율과 정면에서 약간 옆을 향한 대기 자세로 표현하고 얼굴까지 픽셀 스프라이트로 그리세요. 무기나 모자로 얼굴과 옷의 특징을 가리지 마세요.\n\n반려동물이나 동물이 있으면 종·귀 모양·얼굴·털색·무늬·꼬리·자세와 원래 착용한 목줄·하네스 등을 살린 메이플스토리풍 펫 또는 동물 캐릭터로 변환하세요. 네 발 동물은 네 발 체형을 유지하고, 사람의 몸·옷·손으로 바꾸지 마세요. 동물만 있는 사진에는 주인이나 플레이어 인물을 새로 넣지 마세요.\n\n풍경·건물 사진은 사진 속 지형·산·물·수목·길·다리·건물의 특징적인 형태와 대표 색, 주요 대상의 좌우 배치를 살린 탐험 가능한 게임 맵으로 변환하세요. 원래 장소를 알아볼 수 있게 유지하면서 길과 지형을 수평 발판·층진 지형·사다리로 자연스럽게 재해석하세요. 사진에 인물이나 동물이 없으면 캐릭터·주인공·몬스터를 추가하지 마세요. 모든 풍경을 같은 헤네시스 버섯마을로 바꾸지 마세요. 사물이 중심이면 그 사물의 형태·색·재질 특징을 살린 게임 속 오브젝트로 표현하고 얼굴이나 팔다리를 새로 붙이지 마세요.\n\n사진에 여러 대상이 함께 있으면 별도 지정이 없는 한 주요 대상 모두를 각각 해당하는 방식으로 변환하고 개수와 함께 있는 관계를 유지하세요. 배경이 실제 장소라면 그 장소를 게임 맵으로 살리세요. 단색·스튜디오 배경처럼 장소 정보가 없을 때만 헤네시스 느낌의 밝은 잔디 발판·나무·꽃·버섯집을 배경으로 사용할 수 있습니다. 주요 대상의 전신 또는 전체 형태가 발판 위에 자연스럽게 놓이고, 인물·동물·사물과 배경의 도트 크기가 어울리게 하세요.\n\n화면은 가로 16:9이며 카메라는 게임처럼 수평인 2D 횡스크롤 시점입니다. 원작 메이플스토리의 저해상도 게임 리소스를 정수 배율로 확대한 것처럼 캐릭터·지형·건물·수목 전체에 일정한 크기의 사각 픽셀, 얇고 또렷한 외곽선, 제한된 단계의 명암과 밝은 색감을 적용하세요. 주요 대상과 주변 맵이 함께 보이는 실제 플레이 화면 같은 구도로 구성하세요.\n\n왼쪽 위에는 현재 장면과 대응하는 작은 미니맵, 아래에는 작고 촘촘한 레트로 PC 게임 스타일의 HP·MP·경험치 바와 단축키 슬롯을 넣어 주세요. 인물이나 동물이 있을 때만 머리 위에 작은 닉네임 '나의모험가'를 표시하고, 아무도 없는 풍경에는 닉네임을 띄우지 마세요. 미니맵의 지역명은 실제 장소를 추정하지 말고 '나의메이플월드'로 표시하세요.\n\n실사 얼굴 붙이기, 실사 배경, 3D 렌더링, 입체 피규어, 부드러운 벡터 그림, 고해상도 붓질, 시네마틱한 조명, 흐려진 원경, 화면을 가득 채운 거대 캐릭터, 캐릭터 선택창·소개 카드·포스터는 피하세요. 게임 UI 외의 설명 문구, 사진 원본 삽입, 로고·워터마크는 넣지 마세요. 사진이 없으면 변환할 사진 한 장을 요청하세요.",
+      "inputImages": [
+        "output/imagegen/maplestory-universal-test-2026-10-17/pet-reference.png"
+      ],
+      "transparentBackground": false,
+      "referenceGenerationPrompt": "Use case: photorealistic-natural. Create one ordinary smartphone photo of a fictional pet dog, a small tricolor corgi with upright ears, short legs, black saddle markings, tan cheeks and white muzzle, chest and paws. A plain teal harness, no other clothes. Sitting on a beige woven rug in an ordinary living room, low sofa behind, soft cloudy window daylight. Full animal, all paws and tail area visible, eye-level casual slightly imperfect framing, realistic fur and household details. Only one dog and no humans or other animals. No text, no logo, no watermark. Landscape 4:3 photo. This is a newly invented dog for an input-image test.",
+      "generatedArtifact": "exec-e6c58503-056d-4136-847c-ca99a0f323cc.png",
+      "sourceFiles": [
+        {
+          "path": "output/imagegen/maplestory-universal-test-2026-10-17/pet-reference.png",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "9454577f03b1853d246f132fa5a0d8039becbc465bf90c83433fafb7b69e8084"
+        },
+        {
+          "path": "output/imagegen/maplestory-universal-test-2026-10-17/pet-result.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "ebb9dc3a4ebeb104954c187f4b677aea8d5bbf2f8c1f36c325a32ccf856f49c0"
+        }
+      ],
+      "publishedFiles": [
+        {
+          "path": "assets/images/maplestory-ingame-character.pet.reference.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "d163456afa820cc08a9f5468ced6f4aea5ed1da94f738e771e7801c2d644dfbe"
+        },
+        {
+          "path": "assets/images/maplestory-ingame-character.pet.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "59360753d6106cb06f53fdd99465235a573536b7ce28194aafe72b47c0b02547"
+        }
+      ],
+      "review": "AI 생성 원본·결과 · 가상의 삼색 코기 사진 한 장에 현재 범용 프롬프트를 그대로 적용했습니다. 귀·털 무늬·짧은 다리·청록 하네스와 거실의 소파·러그를 펫과 실내 게임 맵으로 옮겼습니다. 사람이 추가되지 않았으며, 발판·사다리·공·방석·봉제 장난감 등 게임용 소품이 추가됐습니다."
+    },
+    {
+      "role": "landscape",
+      "label": "풍경",
+      "tool": "built-in image_gen.imagegen",
+      "toolPrompt": "첨부한 사진 전체를 메이플스토리의 2D 횡스크롤 게임에 들어온 듯한 장면으로 바꿔 주세요. 인물 사진뿐 아니라 반려동물·동물·풍경·건물·사물 사진 한 장으로도 만들 수 있습니다. 사진에 실제로 보이는 주요 대상과 장면을 기준으로, 아래에서 해당하는 조건만 적용하세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발의 특징을 살린 플레이어 캐릭터로 변환하세요. 큰 머리와 작은 몸, 짧은 팔다리의 약 2.5등신 SD 비율과 정면에서 약간 옆을 향한 대기 자세로 표현하고 얼굴까지 픽셀 스프라이트로 그리세요. 무기나 모자로 얼굴과 옷의 특징을 가리지 마세요.\n\n반려동물이나 동물이 있으면 종·귀 모양·얼굴·털색·무늬·꼬리·자세와 원래 착용한 목줄·하네스 등을 살린 메이플스토리풍 펫 또는 동물 캐릭터로 변환하세요. 네 발 동물은 네 발 체형을 유지하고, 사람의 몸·옷·손으로 바꾸지 마세요. 동물만 있는 사진에는 주인이나 플레이어 인물을 새로 넣지 마세요.\n\n풍경·건물 사진은 사진 속 지형·산·물·수목·길·다리·건물의 특징적인 형태와 대표 색, 주요 대상의 좌우 배치를 살린 탐험 가능한 게임 맵으로 변환하세요. 원래 장소를 알아볼 수 있게 유지하면서 길과 지형을 수평 발판·층진 지형·사다리로 자연스럽게 재해석하세요. 사진에 인물이나 동물이 없으면 캐릭터·주인공·몬스터를 추가하지 마세요. 모든 풍경을 같은 헤네시스 버섯마을로 바꾸지 마세요. 사물이 중심이면 그 사물의 형태·색·재질 특징을 살린 게임 속 오브젝트로 표현하고 얼굴이나 팔다리를 새로 붙이지 마세요.\n\n사진에 여러 대상이 함께 있으면 별도 지정이 없는 한 주요 대상 모두를 각각 해당하는 방식으로 변환하고 개수와 함께 있는 관계를 유지하세요. 배경이 실제 장소라면 그 장소를 게임 맵으로 살리세요. 단색·스튜디오 배경처럼 장소 정보가 없을 때만 헤네시스 느낌의 밝은 잔디 발판·나무·꽃·버섯집을 배경으로 사용할 수 있습니다. 주요 대상의 전신 또는 전체 형태가 발판 위에 자연스럽게 놓이고, 인물·동물·사물과 배경의 도트 크기가 어울리게 하세요.\n\n화면은 가로 16:9이며 카메라는 게임처럼 수평인 2D 횡스크롤 시점입니다. 원작 메이플스토리의 저해상도 게임 리소스를 정수 배율로 확대한 것처럼 캐릭터·지형·건물·수목 전체에 일정한 크기의 사각 픽셀, 얇고 또렷한 외곽선, 제한된 단계의 명암과 밝은 색감을 적용하세요. 주요 대상과 주변 맵이 함께 보이는 실제 플레이 화면 같은 구도로 구성하세요.\n\n왼쪽 위에는 현재 장면과 대응하는 작은 미니맵, 아래에는 작고 촘촘한 레트로 PC 게임 스타일의 HP·MP·경험치 바와 단축키 슬롯을 넣어 주세요. 인물이나 동물이 있을 때만 머리 위에 작은 닉네임 '나의모험가'를 표시하고, 아무도 없는 풍경에는 닉네임을 띄우지 마세요. 미니맵의 지역명은 실제 장소를 추정하지 말고 '나의메이플월드'로 표시하세요.\n\n실사 얼굴 붙이기, 실사 배경, 3D 렌더링, 입체 피규어, 부드러운 벡터 그림, 고해상도 붓질, 시네마틱한 조명, 흐려진 원경, 화면을 가득 채운 거대 캐릭터, 캐릭터 선택창·소개 카드·포스터는 피하세요. 게임 UI 외의 설명 문구, 사진 원본 삽입, 로고·워터마크는 넣지 마세요. 사진이 없으면 변환할 사진 한 장을 요청하세요.",
+      "inputImages": [
+        "output/imagegen/maplestory-universal-test-2026-10-17/landscape-reference.png"
+      ],
+      "transparentBackground": false,
+      "referenceGenerationPrompt": "Use case: photorealistic-natural. An ordinary smartphone travel snapshot of an invented Korean mountain stream in cloudy early autumn. A low gray stone arched footbridge on the left crosses the clear shallow stream, a small traditional red wooden pavilion with a dark gray tiled roof on the right bank, pine trees and a muted green mountain ridge in the distance. Smooth pale rocks along the water, a simple path beside the pavilion. Wide casual composition with bridge, stream, pavilion and mountains clearly recognizable, natural restrained color and realistic water, not a postcard or commercial photograph. No people, no animals, no vehicles, no text, no logos, no watermark. Landscape 16:9. A fictional place, not a real identifiable location.",
+      "generatedArtifact": "exec-55f24eb2-4a13-411a-9518-081b9fcf179c.png",
+      "sourceFiles": [
+        {
+          "path": "output/imagegen/maplestory-universal-test-2026-10-17/landscape-reference.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "318777b612d4bf7197a3e6b3c3f0dbeb216915e7803ce86452a2e0f5c620b8b7"
+        },
+        {
+          "path": "output/imagegen/maplestory-universal-test-2026-10-17/landscape-result.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "381c03d83f51001241fc1af748ce893ac04ccc0af666739a67ff1e1059a3837f"
+        }
+      ],
+      "publishedFiles": [
+        {
+          "path": "assets/images/maplestory-ingame-character.landscape.reference.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "ce9846702bb8741197c45985c8e2af39148fedd604d8e283d0a36f38e621c2ab"
+        },
+        {
+          "path": "assets/images/maplestory-ingame-character.landscape.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "df2ac40913f6a6a184081265f616c7402239794abfe7c2f76581e20c1ae25e54"
+        }
+      ],
+      "review": "AI 생성 원본·결과 · 가상의 계곡 풍경 사진 한 장에 현재 범용 프롬프트를 그대로 적용했습니다. 왼쪽 돌 아치교·오른쪽 정자·계곡·산·소나무를 횡스크롤 맵으로 옮겼습니다. 사람·동물·몬스터와 닉네임은 추가되지 않았습니다. 발판·사다리·폭포가 추가되고 색감과 지형은 일부 재해석됐습니다."
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/maplestory-ingame-character.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4ff4e43ec660f7e85d591c5e65718cc42c50ae0e46ffb133a86c1851333896d4"
+    },
+    {
+      "path": "assets/images/maplestory-ingame-character.thumb.webp",
+      "width": 560,
+      "height": 315,
+      "sha256": "d73e489b67f9a5c9c0aea4d80f855e12799e43214fc9153cc42a58834cc8d18e"
+    },
+    {
+      "path": "assets/images/maplestory-ingame-character.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4c0c2655bc72a24bece7561c48b058a904418688dc663b52003f27ece0b0ec1d"
+    },
+    {
+      "path": "assets/images/maplestory-ingame-character.pet.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "59360753d6106cb06f53fdd99465235a573536b7ce28194aafe72b47c0b02547"
+    },
+    {
+      "path": "assets/images/maplestory-ingame-character.pet.reference.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "d163456afa820cc08a9f5468ced6f4aea5ed1da94f738e771e7801c2d644dfbe"
+    },
+    {
+      "path": "assets/images/maplestory-ingame-character.landscape.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "df2ac40913f6a6a184081265f616c7402239794abfe7c2f76581e20c1ae25e54"
+    },
+    {
+      "path": "assets/images/maplestory-ingame-character.landscape.reference.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ce9846702bb8741197c45985c8e2af39148fedd604d8e283d0a36f38e621c2ab"
+    }
+  ],
+  "previousHumanExampleRecord": "image-generation-2026-10-17-maplestory.json",
+  "priorUniversalTestsRecord": "maplestory-prompt-revision-2026-10-17.json",
+  "conversion": "Result WebP files are lossless and were checked for decoded pixel equality. Pet and landscape references use WebP quality 92. Human reference is unchanged. Only the main thumbnail is resized."
+}

@@ -28,12 +28,18 @@ test('reference examples are distinct, results are separate, and removed catalog
   const expectedAssets = new Set();
   const hash = bytes => createHash('sha256').update(bytes).digest('hex');
   for (const prompt of prompts) {
-    const result = hash(await readFile(new URL(`../${prompt.image}`, import.meta.url)));
-    for (const reference of prompt.referenceImages) {
-      const input = hash(await readFile(new URL(`../${reference}`, import.meta.url)));
-      assert.notEqual(input, result, `${prompt.id}: result must not be the input file`);
-      assert.ok(!references.has(input), `${prompt.id}: use a distinct reference example`);
-      references.add(input);
+    const resultHashes = new Set();
+    for (const example of prompt.examples || [prompt]) {
+      const result = hash(await readFile(new URL(`../${example.image}`, import.meta.url)));
+      assert.ok(!resultHashes.has(result), `${prompt.id}: each example needs a different result`);
+      resultHashes.add(result);
+      for (const reference of example.referenceImages) {
+        const input = hash(await readFile(new URL(`../${reference}`, import.meta.url)));
+        assert.notEqual(input, result, `${prompt.id}: result must not be the input file`);
+        assert.ok(!references.has(input), `${prompt.id}: use a distinct reference example`);
+        references.add(input);
+      }
+      for (const asset of [example.image, ...example.referenceImages]) expectedAssets.add(asset.split('/').at(-1));
     }
     for (const asset of [prompt.image, prompt.thumbnail, ...prompt.referenceImages]) expectedAssets.add(asset.split('/').at(-1));
   }
