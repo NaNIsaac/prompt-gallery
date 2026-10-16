@@ -1,5 +1,92 @@
 [
   {
+    "id": "rubber-keychain",
+    "title": "내 사진으로 만드는 고무 키링",
+    "category": "제품",
+    "tags": [
+      "키링",
+      "고무 질감",
+      "굿즈",
+      "사진 변환"
+    ],
+    "image": "assets/images/rubber-keychain.webp",
+    "thumbnail": "assets/images/rubber-keychain.thumb.webp",
+    "width": 1122,
+    "height": 1402,
+    "color": "#e8e8e8",
+    "prompt": "첨부 사진의 주요 대상을 말랑한 고무 키링 제품 사진으로 만들어줘. 얼굴이나 형태, 헤어스타일·털 무늬·대표 색처럼 대상을 알아볼 수 있는 특징을 살리되 굵은 외곽선과 단순한 색면으로 정리해줘. 가장자리에 고무 두께가 보이고 위쪽에는 은색 연결 고리와 열쇠 링이 달려 있어. 크기를 가늠할 수 있도록 손가락으로 키링 고리만 잡고, 디자인을 가리지 않게 해줘. 밝은 무채색 배경, 부드러운 스튜디오 조명, 4:5 세로 구도. 글자와 로고는 넣지 마. 대상이 여러 개이고 지정하지 않았다면 무엇을 키링으로 만들지 먼저 물어봐줘. 사진이 없으면 사진을 요청해줘.",
+    "inputRequirement": "image",
+    "inputLabel": "인물·반려동물·물건 사진 1장 필요",
+    "usage": "대상 하나의 특징이 선명한 사진 1장을 첨부하세요. 여러 대상이 있으면 무엇을 키링으로 만들지 함께 알려주세요. 예시는 AI로 만든 인물 사진입니다.",
+    "exampleNote": "AI 생성 예시 · 표시된 프롬프트를 그대로 적용했습니다. 원본에 보이지 않던 무릎 아래와 신발은 새로 생성됐습니다.",
+    "referenceImages": [
+      "assets/images/rubber-keychain.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "inspirationUrl": "https://x.com/azed_ai/status/1916521742052503804",
+    "sample": false,
+    "order": -9
+  },
+  {
+    "id": "pet-minhwa",
+    "title": "우리 집 반려동물을 민화 속 주인공으로",
+    "category": "일러스트",
+    "tags": [
+      "반려동물",
+      "민화",
+      "한지",
+      "전통 회화"
+    ],
+    "image": "assets/images/pet-minhwa.webp",
+    "thumbnail": "assets/images/pet-minhwa.thumb.webp",
+    "width": 1122,
+    "height": 1402,
+    "color": "#e8c8a8",
+    "prompt": "첨부 사진의 반려동물을 한국 전통 민화에서 영감을 받은 그림으로 그려줘. 얼굴 형태, 귀 모양, 눈 색과 특징적인 털 무늬는 알아볼 수 있게 유지하고, 작은 꽃나무 옆에 앉아 있는 구도로 배치해줘. 한지의 섬유질, 먹으로 그린 윤곽, 은은한 광물 안료의 색, 평면적인 원근과 장식적인 식물을 사용해줘. 원본에 없는 다른 동물이나 사람은 추가하지 말고, 인장과 글씨도 넣지 마. 여백이 있는 4:5 세로 그림 한 장. 반려동물이 없거나 대상이 여러 마리이고 지정되지 않았다면 먼저 확인해줘.",
+    "inputRequirement": "image",
+    "inputLabel": "반려동물 사진 1장 필요",
+    "usage": "반려동물의 형태와 털 무늬가 잘 보이는 사진 1장을 첨부하세요. 여러 마리라면 대상을 함께 알려주세요. 예시는 AI로 만든 시바견 사진입니다.",
+    "exampleNote": "AI 생성 예시 · 표시된 프롬프트를 그대로 적용한 전통 민화에서 영감을 받은 그림입니다.",
+    "referenceImages": [
+      "assets/images/pet-minhwa.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "inspirationUrl": "https://golden-sally.tistory.com/255",
+    "sample": false,
+    "order": -8
+  },
+  {
+    "id": "stone-sculptors",
+    "title": "내 사진을 작은 조각가들의 석상으로",
+    "category": "아트·밈",
+    "tags": [
+      "석상",
+      "미니어처",
+      "조각가",
+      "인물·반려동물"
+    ],
+    "image": "assets/images/stone-sculptors.webp",
+    "thumbnail": "assets/images/stone-sculptors.thumb.webp",
+    "width": 1122,
+    "height": 1402,
+    "color": "#281818",
+    "prompt": "첨부 사진의 주요 대상인 인물 또는 반려동물을, 작은 조각가 세 명이 작업 중인 거대한 석회암 조각상으로 만들어줘. 얼굴과 머리 모양, 귀와 몸의 실루엣, 사진에 보이는 자세와 의상 등 대상을 알아볼 수 있는 특징을 유지해줘. 조각상의 모든 부분은 같은 회백색 돌 재질로 표현하고, 머리카락·옷·털 무늬는 원래 색을 칠하는 대신 새겨진 선과 얕은 부조, 자연스러운 명암으로 구분해줘. 얼굴과 몸의 대부분은 완성되어 있고, 어깨나 몸통 가장자리와 낮은 사각 받침 일부에만 깎는 중인 거친 돌을 남겨줘. 원본이 동물이라면 사람의 몸으로 바꾸지 마. 조각상보다 훨씬 작은 작업자 세 명이 발판과 사다리에서 서로 다른 부분을 다듬고, 바닥에는 돌 조각과 조각 도구가 조금 놓여 있어. 중심 조각상은 하나만 만들고, 작업자는 사진 속 대상과 별개의 작은 인물로 표현해줘. 돌의 입자와 조각칼 흔적이 느껴지는 사실적인 미니어처 장면, 어두운 단색 배경과 부드러운 스튜디오 조명, 조각상과 받침·작업자들이 잘리지 않고 보이는 4:5 세로 구도. 글자·로고·설명판은 넣지 마. 사진이 없거나 인물·반려동물이 보이지 않으면 알맞은 사진을 요청하고, 대상이 여러 명 또는 여러 마리이고 지정되지 않았다면 무엇을 조각상으로 만들지 먼저 물어봐줘.",
+    "inputRequirement": "image",
+    "inputLabel": "인물 또는 반려동물 사진 1장 필요",
+    "usage": "얼굴과 자세가 잘 보이는 인물 또는 반려동물 사진 1장을 첨부하세요. 여러 대상이 있으면 무엇을 석상으로 만들지 함께 알려주세요. 인물의 의상과 동물의 털 무늬도 돌의 조각 표현으로 바뀝니다. 예시는 AI로 만든 코기 사진입니다.",
+    "exampleNote": "AI 생성 예시 · 통합 프롬프트를 그대로 적용했습니다. 털 무늬는 돌의 명암과 조각결로 단순화되며 원래 색은 유지하지 않습니다. 인물 사진에도 같은 프롬프트로 별도 테스트했습니다.",
+    "referenceImages": [
+      "assets/images/stone-sculptors.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "inspirationUrl": "https://x.com/ZHO_ZHO_ZHO/status/1911433310666203311",
+    "sample": false,
+    "order": -7
+  },
+  {
     "id": "handcrafted-diorama",
     "title": "사진 속 풍경을 손바닥만 한 세상으로",
     "category": "아트·밈",
