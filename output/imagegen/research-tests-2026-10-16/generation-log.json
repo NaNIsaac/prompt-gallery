@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Seoul",
+  "tool": "image_gen.imagegen (built-in)",
+  "referenceOrigin": "AI-generated synthetic photos; no real user photographs.",
+  "scope": "8 draft prompts; 8 distinct references; 8 unmodified initial transformations; no retries or augmentation.",
+  "entries": [
+    {
+      "number": 1,
+      "id": "rubber-keychain",
+      "title": "내 사진으로 만드는 고무 키링 — O1",
+      "sourcePrompt": "테스트용 가상 인물의 자연스러운 실사 사진 한 장. 30대 동아시아 성인 여성 한 명이 밝은 베이지색 벽 앞에 서 있다. 턱 길이의 검은 단발머리, 둥근 빨간 안경, 노란색 티셔츠 위에 파란 데님 멜빵바지를 입고 있다. 정면을 보며 편안하게 웃는 모습. 머리부터 무릎까지 보이고 두 손은 몸 옆에 편안하게 내린다. 자연스러운 피부와 옷감 질감, 창문 자연광, 평범한 인물 스냅 사진, 4:5 세로 구도. 다른 사람과 글자·로고 없음.",
+      "transformPrompt": "첨부 사진의 주요 대상을 말랑한 고무 키링 제품 사진으로 만들어줘. 얼굴이나 형태, 헤어스타일·털 무늬·대표 색처럼 대상을 알아볼 수 있는 특징을 살리되 굵은 외곽선과 단순한 색면으로 정리해줘. 가장자리에 고무 두께가 보이고 위쪽에는 은색 연결 고리와 열쇠 링이 달려 있어. 크기를 가늠할 수 있도록 손가락으로 키링 고리만 잡고, 디자인을 가리지 않게 해줘. 밝은 무채색 배경, 부드러운 스튜디오 조명, 4:5 세로 구도. 글자와 로고는 넣지 마. 대상이 여러 개이고 지정하지 않았다면 무엇을 키링으로 만들지 먼저 물어봐줘. 사진이 없으면 사진을 요청해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-f7304e2c-735b-4050-b013-13365e12d363.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-1d6ab1cb-34fa-4cac-a571-33837b5e229a.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/rubber-keychain.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/rubber-keychain.png",
+      "toolArguments": {
+        "prompt": "첨부 사진의 주요 대상을 말랑한 고무 키링 제품 사진으로 만들어줘. 얼굴이나 형태, 헤어스타일·털 무늬·대표 색처럼 대상을 알아볼 수 있는 특징을 살리되 굵은 외곽선과 단순한 색면으로 정리해줘. 가장자리에 고무 두께가 보이고 위쪽에는 은색 연결 고리와 열쇠 링이 달려 있어. 크기를 가늠할 수 있도록 손가락으로 키링 고리만 잡고, 디자인을 가리지 않게 해줘. 밝은 무채색 배경, 부드러운 스튜디오 조명, 4:5 세로 구도. 글자와 로고는 넣지 마. 대상이 여러 개이고 지정하지 않았다면 무엇을 키링으로 만들지 먼저 물어봐줘. 사진이 없으면 사진을 요청해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-f7304e2c-735b-4050-b013-13365e12d363.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 1,
+        "status": "충족",
+        "label": "PASS",
+        "observations": "빨간 둥근 안경, 검은 단발, 노란 티셔츠와 데님 멜빵바지를 유지했다. 고무의 두께·검은 가장자리·은색 연결 고리가 보이고 손가락은 고리만 잡는다. 글자 없음.",
+        "limits": "원본에서 보이지 않던 무릎 아래와 신발은 새로 생성됐다. 얼굴은 캐릭터로 단순화돼 생체적 동일성을 보장하지 않는다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/rubber-keychain.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2019976,
+          "sha256": "e9c393fed47696a865b88457a0032b900fc9a4aa3dd5613c0a23aa5d50373035"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/rubber-keychain.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 1793428,
+          "sha256": "4586f61c8da27acee0e9a312618a2364f9a9fbf7dc28d90305e783ac51f34dec"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "id": "polaroid-breakout",
+      "title": "사진 밖으로 걸어나오는 나 — O2",
+      "sourcePrompt": "테스트용 가상 인물의 자연스러운 실사 사진 한 장. 30대 성인 남성 한 명, 짧고 곱슬거리는 짙은 갈색 머리, 둥근 검정 안경, 옅은 수염, 올리브색 재킷과 크림색 바지, 흰 운동화, 주황색 크로스백. 작은 서점 안에서 서 있는 정면 전신 스냅. 머리부터 신발과 두 손까지 모두 프레임 안에 보인다. 책장과 나무 바닥 배경, 부드러운 자연광, 현실적인 인체와 피부·옷감 질감. 4:5 세로 구도. 다른 사람, 읽을 수 있는 글자와 로고 없음.",
+      "transformPrompt": "첨부 사진 속 인물을 알아볼 수 있는 3D 캐릭터로 만들고, 손에 들린 흰색 즉석사진 안에 배치해줘. 사진 속 배경은 프레임 안에 남아 있고, 인물의 상체와 한쪽 발이 프레임 바깥으로 나와 현실의 책상 위로 걸어나오는 순간이야. 얼굴 생김새, 머리 모양, 의상의 주요 색과 특징을 유지해줘. 프레임 안과 밖에 걸친 몸이 자연스럽게 이어지고, 인물과 사진 테두리가 서로 가리는 관계와 접촉 그림자가 분명해야 해. 인물은 한 명만 등장하고 사진 안에 복제된 얼굴을 남기지 마. 따뜻한 조명, 4:5 세로 구도, 글자 없음. 사진에 사람이 없거나 여러 명이고 대상이 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-0ba42c8c-2a67-4b1f-972e-5e336d29730f.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-2bcd627a-ced7-48f2-877f-567c3e605b22.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/polaroid-breakout.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/polaroid-breakout.png",
+      "toolArguments": {
+        "prompt": "첨부 사진 속 인물을 알아볼 수 있는 3D 캐릭터로 만들고, 손에 들린 흰색 즉석사진 안에 배치해줘. 사진 속 배경은 프레임 안에 남아 있고, 인물의 상체와 한쪽 발이 프레임 바깥으로 나와 현실의 책상 위로 걸어나오는 순간이야. 얼굴 생김새, 머리 모양, 의상의 주요 색과 특징을 유지해줘. 프레임 안과 밖에 걸친 몸이 자연스럽게 이어지고, 인물과 사진 테두리가 서로 가리는 관계와 접촉 그림자가 분명해야 해. 인물은 한 명만 등장하고 사진 안에 복제된 얼굴을 남기지 마. 따뜻한 조명, 4:5 세로 구도, 글자 없음. 사진에 사람이 없거나 여러 명이고 대상이 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-0ba42c8c-2a67-4b1f-972e-5e336d29730f.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 2,
+        "status": "보완 권장",
+        "label": "REVISE",
+        "observations": "안경·곱슬머리·수염·올리브 재킷·주황 가방·흰 운동화와 서점 배경을 유지했다. 상체와 한쪽 발이 사진 밖으로 이어지고 접촉 그림자도 보인다. 인물 중복 없음.",
+        "limits": "별도의 손이 사진을 들고 있지 않다. 프레임이 책상에 세워져 있고 인물 자신이 프레임을 잡는다. 캐릭터 표현도 요청한 3D 캐릭터보다 실사에 가깝다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/polaroid-breakout.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2211468,
+          "sha256": "ee5a6001d08a610804b000a3ed5e99eb50093f44fdd4ae1ef946a4f030168d94"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/polaroid-breakout.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2078465,
+          "sha256": "5d845828dbbf2b467b569a55a0e38069c5810fb062164c4d1a381204ec27dcec"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "id": "icing-cookie",
+      "title": "우리 집 반려동물 아이싱 쿠키 — O9",
+      "sourcePrompt": "테스트용 반려동물 실사 사진 한 장. 삼색 고양이 한 마리가 크림색 소파에 앉아 정면을 본다. 귀는 검은색, 얼굴 왼쪽은 주황색 반점, 오른쪽 눈 주변은 검은 반점, 코에서 턱까지 흰색, 분홍색 코와 황록색 눈. 가슴과 앞발은 흰색. 얼굴과 상반신이 선명하고 귀가 잘리지 않는 구도. 창문 자연광, 자연스러운 털 질감, 4:5 세로 사진. 고양이는 한 마리만, 글자와 소품 없음.",
+      "transformPrompt": "첨부 사진의 반려동물을 모티프로 한 수제 아이싱 쿠키 한 개를 만들어줘. 귀의 형태, 눈 주변 무늬, 이마의 털 무늬와 대표 색이 누구의 반려동물인지 알아볼 수 있게 남아 있어야 해. 노릇한 쿠키 테두리 안을 도톰한 로열 아이싱으로 채우고, 털을 한 올씩 그리는 대신 실제 짤주머니로 만들 수 있을 법한 굵고 매끈한 선과 색 덩어리로 단순화해줘. 얼굴 사진을 표면에 인쇄한 느낌은 피하고, 접시 위에서 쿠키의 두께와 아이싱의 작은 굴곡이 보이게 해줘. 크림색 테이블, 부드러운 자연광, 1:1 정사각형, 글자 없음. 반려동물이 없거나 대상이 여러 마리이고 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-efbb184b-e906-4f8b-9a6e-09bfcd7e8274.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-b4c64759-28f6-4ee3-bb8f-2c461ee2800b.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/icing-cookie.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/icing-cookie.png",
+      "toolArguments": {
+        "prompt": "첨부 사진의 반려동물을 모티프로 한 수제 아이싱 쿠키 한 개를 만들어줘. 귀의 형태, 눈 주변 무늬, 이마의 털 무늬와 대표 색이 누구의 반려동물인지 알아볼 수 있게 남아 있어야 해. 노릇한 쿠키 테두리 안을 도톰한 로열 아이싱으로 채우고, 털을 한 올씩 그리는 대신 실제 짤주머니로 만들 수 있을 법한 굵고 매끈한 선과 색 덩어리로 단순화해줘. 얼굴 사진을 표면에 인쇄한 느낌은 피하고, 접시 위에서 쿠키의 두께와 아이싱의 작은 굴곡이 보이게 해줘. 크림색 테이블, 부드러운 자연광, 1:1 정사각형, 글자 없음. 반려동물이 없거나 대상이 여러 마리이고 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-efbb184b-e906-4f8b-9a6e-09bfcd7e8274.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 3,
+        "status": "대체로 충족",
+        "label": "MOSTLY",
+        "observations": "주황·검정 얼굴 반점의 좌우 배치, 황록색 눈과 분홍 코를 유지했다. 한 개의 쿠키에 두께·노릇한 테두리·도톰한 아이싱이 보이며 사진을 인쇄한 표면처럼 보이지 않는다.",
+        "limits": "귀 안쪽·가슴·눈에 세밀한 결과 입체 표현이 남았다. 요청한 굵은 선과 단순한 색 덩어리보다 복잡하며 실제 베이킹 제작 가능성을 검증한 결과는 아니다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/icing-cookie.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2289388,
+          "sha256": "ab64650cc6234952f6df458cf3562f676d3ebb3412c39960e9a47f619b5254f3"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/icing-cookie.png",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 2025213,
+          "sha256": "704fa5ccbbf4b8ac969990a2439ca8185d9a1c994f11748e392c8c87e25c02d8"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "id": "pet-minhwa",
+      "title": "우리 집 반려동물 민화 — K4",
+      "sourcePrompt": "테스트용 반려동물의 자연스러운 실사 사진 한 장. 황갈색과 크림색 시바견 한 마리가 정원의 낮은 나무 데크 위에 앉아 정면을 본다. 뾰족한 삼각 귀, 짙은 갈색 눈, 검은 코, 양쪽 눈썹 위 작고 밝은 점무늬, 흰 볼과 가슴, 흰 앞발 끝, 등에 말린 꼬리. 개의 귀부터 앞발과 꼬리까지 전체 형태가 선명하게 보인다. 흐릿한 초록 정원 배경, 부드러운 자연광, 현실적인 털 질감. 4:5 세로 구도. 다른 동물과 사람·글자 없음.",
+      "transformPrompt": "첨부 사진의 반려동물을 한국 전통 민화에서 영감을 받은 그림으로 그려줘. 얼굴 형태, 귀 모양, 눈 색과 특징적인 털 무늬는 알아볼 수 있게 유지하고, 작은 꽃나무 옆에 앉아 있는 구도로 배치해줘. 한지의 섬유질, 먹으로 그린 윤곽, 은은한 광물 안료의 색, 평면적인 원근과 장식적인 식물을 사용해줘. 원본에 없는 다른 동물이나 사람은 추가하지 말고, 인장과 글씨도 넣지 마. 여백이 있는 4:5 세로 그림 한 장. 반려동물이 없거나 대상이 여러 마리이고 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-e4a86b48-e811-4771-86a4-f40d80e7d570.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-c3856641-5246-464c-b3a8-824a0f6e5a80.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/pet-minhwa.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/pet-minhwa.png",
+      "toolArguments": {
+        "prompt": "첨부 사진의 반려동물을 한국 전통 민화에서 영감을 받은 그림으로 그려줘. 얼굴 형태, 귀 모양, 눈 색과 특징적인 털 무늬는 알아볼 수 있게 유지하고, 작은 꽃나무 옆에 앉아 있는 구도로 배치해줘. 한지의 섬유질, 먹으로 그린 윤곽, 은은한 광물 안료의 색, 평면적인 원근과 장식적인 식물을 사용해줘. 원본에 없는 다른 동물이나 사람은 추가하지 말고, 인장과 글씨도 넣지 마. 여백이 있는 4:5 세로 그림 한 장. 반려동물이 없거나 대상이 여러 마리이고 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-e4a86b48-e811-4771-86a4-f40d80e7d570.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 4,
+        "status": "충족",
+        "label": "PASS",
+        "observations": "시바견의 삼각 귀, 밝은 눈썹·볼·가슴, 짙은 눈과 말린 꼬리를 유지했다. 꽃나무·장식적인 식물·먹선·종이 질감과 여백이 반영됐다. 추가 동물·사람·글자·인장 없음.",
+        "limits": "전통 민화에서 영감을 받은 표현을 확인한 것이며, 특정 시대의 미술사적 정확성을 평가한 것은 아니다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/pet-minhwa.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2396726,
+          "sha256": "1e01691200fbde13ee56f25e0de2329d0bc5a75c9d22bf3d8aaedb68b47112f5"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/pet-minhwa.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 3165551,
+          "sha256": "f1fb3535171d0caa63a3bdf0e847adda45bff4dbfecf4ac77771e4f646278ffc"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "id": "glass-object",
+      "title": "내 물건이 투명 유리 공예품으로 — O5",
+      "sourcePrompt": "실사 제품 사진 한 장. 작은 복고풍 머스터드 노란색 금속 주전자 한 개가 밝은 회색 테이블 위에 놓여 있다. 둥글고 약간 납작한 몸통, 왼쪽 위로 뻗은 짧은 주둥이, 오른쪽의 큰 반원형 검정 손잡이, 중앙 위쪽의 둥근 노란 뚜껑과 검정 꼭지. 주전자 전체가 프레임 안에 보이는 3/4 시점. 무광 금속에 작은 사용 흔적, 부드러운 측면 자연광, 배경은 밝은 무채색. 4:5 세로 구도. 물건은 한 개만, 글자·로고·다른 소품 없음.",
+      "transformPrompt": "첨부 사진의 주요 물건을 유리 공예품으로 바꾼 제품 사진을 만들어줘. 원래 실루엣, 부품의 위치, 비율과 대표 색은 유지하되 표면과 내부 재질을 두께가 있는 반투명 색유리로 바꿔줘. 원래 모양을 비추는 유리 상자를 만드는 대신 물건 자체가 유리로 만들어진 모습이어야 해. 가장자리의 빛 반사, 굴절, 두꺼운 부분의 짙은 색과 작은 기포를 표현해줘. 흰색 받침 위에 단독으로 배치하고 부드러운 측면 조명을 사용해줘. 4:5 세로 구도, 글자 없음. 물건이 없거나 변환 대상이 여러 개이고 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-113d535f-6849-4d11-bc43-8fe1ac1b7c92.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-8ac722a6-686e-4adc-8d1b-04438a5e6704.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/glass-object.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/glass-object.png",
+      "toolArguments": {
+        "prompt": "첨부 사진의 주요 물건을 유리 공예품으로 바꾼 제품 사진을 만들어줘. 원래 실루엣, 부품의 위치, 비율과 대표 색은 유지하되 표면과 내부 재질을 두께가 있는 반투명 색유리로 바꿔줘. 원래 모양을 비추는 유리 상자를 만드는 대신 물건 자체가 유리로 만들어진 모습이어야 해. 가장자리의 빛 반사, 굴절, 두꺼운 부분의 짙은 색과 작은 기포를 표현해줘. 흰색 받침 위에 단독으로 배치하고 부드러운 측면 조명을 사용해줘. 4:5 세로 구도, 글자 없음. 물건이 없거나 변환 대상이 여러 개이고 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-113d535f-6849-4d11-bc43-8fe1ac1b7c92.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 5,
+        "status": "대체로 충족",
+        "label": "MOSTLY",
+        "observations": "노란 몸체, 왼쪽 주둥이, 오른쪽 검은 손잡이와 뚜껑의 배치를 유지했다. 물건 자체가 색유리로 변했고 두꺼운 가장자리·기포·굴절·빛 반사가 보인다. 유리 상자는 생기지 않았다.",
+        "limits": "별도의 흰색 받침은 보이지 않고 흰색 표면 위에 바로 놓였다. 실루엣과 세부 비율은 근사치이며 원본과 픽셀 단위로 일치하지 않는다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/glass-object.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 1921482,
+          "sha256": "f27cf2471bd4344ed21362fd0802ac871467daed2bf550f618ddec8972bc2e2e"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/glass-object.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 1799885,
+          "sha256": "48be53a1305cdd4e26bcdef71e3a95da3b8a6849795d7e8dfe26da89824937b2"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "id": "tiny-sculptors",
+      "title": "작은 조각가들이 내 조각상을 만드는 중 — O3 응용",
+      "sourcePrompt": "테스트용 가상 인물의 자연스러운 실사 사진 한 장. 40대 동아시아 성인 여성 한 명. 짧은 적갈색 픽시 머리, 가는 은색 둥근 안경, 작은 주근깨, 차분한 미소. 파란 작업 재킷 안에 흰색 티셔츠, 진회색 바지. 밝은 벽 앞에 두 팔을 편안하게 내리고 서 있다. 머리부터 무릎까지, 얼굴과 두 손이 잘 보인다. 부드러운 창문 자연광, 자연스러운 피부와 직물 질감. 4:5 세로 사진. 다른 사람, 글자와 로고 없음.",
+      "transformPrompt": "첨부 사진 속 인물을 바탕으로, 작은 조각가들이 거대한 인물 조각상을 완성하는 상상 속 장면을 만들어줘. 조각상은 사진의 얼굴 생김새, 머리 모양과 의상 특징을 살린 부드러운 3D 캐릭터 형태이며, 주변 작업자보다 압도적으로 커. 조각가 세 명이 작은 발판과 사다리에서 서로 다른 부분을 다듬고, 바닥에는 깎아낸 조각과 작업 도구가 조금 놓여 있어. 조각상의 얼굴은 대부분 완성되어 알아볼 수 있게 하고, 어깨와 받침 일부에만 미완성 재질을 남겨줘. 어두운 단색 배경, 부드러운 조명, 장면 전체가 보이는 1:1 구도, 글자 없음. 사람이 없거나 대상이 여러 명이고 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-34dfdfd5-2f78-4deb-99b3-bb340e3d32f7.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-5be7b384-947b-46e5-897a-614c77626b3f.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/tiny-sculptors.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/tiny-sculptors.png",
+      "toolArguments": {
+        "prompt": "첨부 사진 속 인물을 바탕으로, 작은 조각가들이 거대한 인물 조각상을 완성하는 상상 속 장면을 만들어줘. 조각상은 사진의 얼굴 생김새, 머리 모양과 의상 특징을 살린 부드러운 3D 캐릭터 형태이며, 주변 작업자보다 압도적으로 커. 조각가 세 명이 작은 발판과 사다리에서 서로 다른 부분을 다듬고, 바닥에는 깎아낸 조각과 작업 도구가 조금 놓여 있어. 조각상의 얼굴은 대부분 완성되어 알아볼 수 있게 하고, 어깨와 받침 일부에만 미완성 재질을 남겨줘. 어두운 단색 배경, 부드러운 조명, 장면 전체가 보이는 1:1 구도, 글자 없음. 사람이 없거나 대상이 여러 명이고 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-34dfdfd5-2f78-4deb-99b3-bb340e3d32f7.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 6,
+        "status": "보완 권장",
+        "label": "REVISE",
+        "observations": "짧은 적갈색 머리와 둥근 안경, 얼굴의 인상을 살렸다. 작업자 세 명, 발판·사다리·도구와 깎은 조각, 큰 조각상과 작은 작업자의 대비가 반영됐다. 어깨와 받침 일부는 미완성이다.",
+        "limits": "부드러운 3D 캐릭터보다 사실적인 석조 흉상에 가깝고 상반신 위주로 재구성됐다. 원본 파란 재킷은 돌 색으로 바뀌었다. 스타일 조건은 완전 충족으로 볼 수 없다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/tiny-sculptors.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 1862147,
+          "sha256": "e92df9323766571e3654415b5818e63f09584fd0d0bd8e51c7ae3f23a9b36aae"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/tiny-sculptors.png",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 2477887,
+          "sha256": "620b2109bd8f5491c6214c851dc539daa44f66a2ba3400e8f6f036dce1ab2e39"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "id": "streamer-scene",
+      "title": "내 셀카가 스트리머 방송 화면으로 — K1 응용",
+      "sourcePrompt": "테스트용 가상 인물의 자연스러운 실사 사진 한 장. 30대 동아시아 성인 남성 한 명, 이마가 조금 보이는 짧고 검은 머리, 둥근 검정 안경, 입술 옆에 작은 점, 남색 면 셔츠. 밝은 회색 벽 앞에 의자에 앉아 정면을 보는 편안한 상반신 스냅. 두 손을 무릎에 편안하게 둔다. 자연스러운 피부 질감, 과한 미용 보정 없음, 부드러운 낮의 창문 조명, 4:5 세로 구도. 다른 사람, 헤드폰·마이크·글자·로고 없음.",
+      "transformPrompt": "첨부 사진 속 인물이 아늑한 방에서 라이브 방송을 준비하는 실사 장면을 만들어줘. 얼굴형, 눈·코·입의 생김새, 피부색, 머리 모양을 알아볼 수 있게 유지해줘. 책상에 앉은 상반신 구도에 헤드폰과 작은 마이크를 배치하고, 뒤에는 은은한 보라색 조명과 책장이 보여. 화면 오른쪽에는 채팅 패널 모양의 반투명 영역을 좁게 두되 글자 대신 단순한 색 막대만 넣어줘. 얼굴과 손을 가리는 UI는 피하고, 피부는 자연스러운 질감으로 표현해줘. 4:5 세로 구도. 실제 계정명·플랫폼 로고는 넣지 마. 사람이 없거나 대상이 여러 명이고 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-89865f92-53fc-46dc-b8ac-d1bdc045a8e0.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-c45ee610-1f59-405c-98c0-df44acfc5673.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/streamer-scene.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/streamer-scene.png",
+      "toolArguments": {
+        "prompt": "첨부 사진 속 인물이 아늑한 방에서 라이브 방송을 준비하는 실사 장면을 만들어줘. 얼굴형, 눈·코·입의 생김새, 피부색, 머리 모양을 알아볼 수 있게 유지해줘. 책상에 앉은 상반신 구도에 헤드폰과 작은 마이크를 배치하고, 뒤에는 은은한 보라색 조명과 책장이 보여. 화면 오른쪽에는 채팅 패널 모양의 반투명 영역을 좁게 두되 글자 대신 단순한 색 막대만 넣어줘. 얼굴과 손을 가리는 UI는 피하고, 피부는 자연스러운 질감으로 표현해줘. 4:5 세로 구도. 실제 계정명·플랫폼 로고는 넣지 마. 사람이 없거나 대상이 여러 명이고 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-89865f92-53fc-46dc-b8ac-d1bdc045a8e0.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 7,
+        "status": "충족",
+        "label": "PASS",
+        "observations": "원본의 안경·헤어스타일·입가의 점·남색 셔츠가 유지됐다. 헤드폰·마이크·책장·보라색 조명과 글자 없는 오른쪽 반투명 패널이 반영됐다. 얼굴과 보이는 손을 UI가 가리지 않는다.",
+        "limits": "턱을 괴는 자세와 한쪽 손은 새로 구성됐다. 얼굴 보존은 이 한 장의 육안 비교 판단이며 다양한 실사진에서의 재현율은 측정하지 않았다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/streamer-scene.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2014882,
+          "sha256": "b23c66a73449b3a5c1dcaec97cb56299c49ed4a59dad2f50ff2ac4eba2c9d539"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/streamer-scene.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 1929190,
+          "sha256": "b2f8e46aedf57c2b7be4c2c5e551f33bd6a4f091de777dd759ba2824e6316bb4"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "id": "pet-stone",
+      "title": "우리 집 반려동물이 박물관 석상으로 — K5 응용",
+      "sourcePrompt": "테스트용 반려동물의 자연스러운 실사 사진 한 장. 삼색 웰시코기 한 마리가 단순한 연한 베이지색 바닥에 앉아 있다. 몸은 카메라를 기준으로 조금 옆으로 돌리고 얼굴은 카메라를 본다. 큰 직립 귀, 황갈색 눈썹과 볼, 검은 등과 옆구리, 넓은 흰 가슴과 앞발, 이마 중앙의 가느다란 흰 줄무늬, 짧고 튼튼한 다리. 머리부터 발끝까지 전신이 선명하게 보이며 자연스러운 털 질감. 부드러운 자연광, 4:5 세로 구도. 다른 동물·사람·소품·글자 없음.",
+      "transformPrompt": "첨부 사진의 반려동물을 작은 박물관에 전시된 석상처럼 만들어줘. 원래 자세, 귀 모양, 얼굴 비율과 몸의 실루엣을 유지해줘. 털색 무늬는 채색 대신 섬세한 음각과 돌 표면의 명암 차이로 알아볼 수 있게 표현해줘. 몸 전체를 따뜻한 회백색 석회암으로 바꾸고 낮은 사각 돌 받침 위에 올려줘. 조각칼의 작은 흔적, 돌의 입자와 묵직한 질감을 살리고, 뒤에는 흐릿한 전시 벽이 보여. 과장된 근육이나 사람의 몸은 추가하지 마. 4:5 세로 구도, 설명판과 글자 없음. 반려동물이 없거나 여러 마리이고 대상이 지정되지 않았다면 먼저 확인해줘.",
+      "generatedReferencePath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-16039ed9-652a-494f-9255-9cb3a8520f7b.png",
+      "generatedResultPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-e43eeab4-4e37-48b2-8da7-2692d414e131.png",
+      "referencePath": "output/imagegen/research-tests-2026-10-16/pet-stone.reference.png",
+      "resultPath": "output/imagegen/research-tests-2026-10-16/pet-stone.png",
+      "toolArguments": {
+        "prompt": "첨부 사진의 반려동물을 작은 박물관에 전시된 석상처럼 만들어줘. 원래 자세, 귀 모양, 얼굴 비율과 몸의 실루엣을 유지해줘. 털색 무늬는 채색 대신 섬세한 음각과 돌 표면의 명암 차이로 알아볼 수 있게 표현해줘. 몸 전체를 따뜻한 회백색 석회암으로 바꾸고 낮은 사각 돌 받침 위에 올려줘. 조각칼의 작은 흔적, 돌의 입자와 묵직한 질감을 살리고, 뒤에는 흐릿한 전시 벽이 보여. 과장된 근육이나 사람의 몸은 추가하지 마. 4:5 세로 구도, 설명판과 글자 없음. 반려동물이 없거나 여러 마리이고 대상이 지정되지 않았다면 먼저 확인해줘.",
+        "referenced_image_paths": [
+          "C:\\Users\\kgh07\\.codex\\generated_images\\01a140bc-c581-7220-9150-924a6800f836\\exec-16039ed9-652a-494f-9255-9cb3a8520f7b.png"
+        ],
+        "transparent_background": false
+      },
+      "review": {
+        "number": 8,
+        "status": "대체로 충족",
+        "label": "MOSTLY",
+        "observations": "코기의 큰 귀, 짧은 다리, 앉은 몸 방향과 정면을 향한 얼굴, 열린 입과 혀를 유지했다. 돌 받침과 거친 조각결·전시장 배경이 보인다. 글자 없음.",
+        "limits": "원본의 어두운 등과 얼굴 반점이 짙은 음영·색차로 남아 음각만으로 무늬를 전달했다고 단정하기 어렵다. 따뜻한 조명이 더해져 회백색보다 베이지색에 가깝다."
+      },
+      "files": {
+        "reference": {
+          "path": "output/imagegen/research-tests-2026-10-16/pet-stone.reference.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2239319,
+          "sha256": "44553b22e421a3269f1bb2dc7eaa9177cddd5893cae129a1ab8e067ae4d097eb"
+        },
+        "result": {
+          "path": "output/imagegen/research-tests-2026-10-16/pet-stone.png",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 2607456,
+          "sha256": "a271deeb173edf7f05b779fe22865e0dde6ae09574d9192d1f6352c2fe013195"
+        }
+      }
+    }
+  ]
+}
