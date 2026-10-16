@@ -1,0 +1,76 @@
+{
+  "generatedOn": "2026-10-17",
+  "method": "Generate two distinct synthetic source photographs with built-in image_gen: one front-facing adult portrait and one coastal landscape. Apply each final public Korean prompt verbatim to its own source only. No style-reference images, follow-up instructions, or transformation retries. Convert complete images to WebP without cropping; resize thumbnails proportionally.",
+  "discardedReference": {
+    "artifact": "exec-18c2de93-fc90-41bc-970e-9bc27f178cca.png",
+    "sha256": "06459c2ccad124e5e2b5cafbe979d1751b5e3065ac68c4ba03b7747f173cf3df",
+    "generationPrompt": "Create one photorealistic studio profile photograph of one fictional adult Korean woman aged 32. Strict left-facing side profile, head and shoulders, clearly readable uninterrupted forehead-nose-lips-chin outline, short straight dark chestnut bob tucked behind the visible ear, one tiny plain gold stud earring, wearing a simple warm ivory knit top. Relaxed neutral expression with eyes softly open, natural realistic skin texture and proportions. Plain pale warm gray background, soft diffuse window daylight from the upper left. The whole head, hair and shoulders fit comfortably inside the frame with generous breathing room to the left of the face. Vertical 2:3 composition. Authentic natural portrait photograph, not illustration, no double exposure, no landscape, no text, no logos, no watermark. Only one person.",
+    "reason": "사용자가 정면 사진을 입력하는 사용 흐름을 요청하여 측면 원본을 공개 예시와 변환 테스트에서 제외했다. 이 이미지에는 변환 프롬프트를 적용하지 않았다."
+  },
+  "records": [
+    {
+      "id": "forest-double-exposure",
+      "generatedOn": "2026-10-17",
+      "tool": "built-in image_gen.imagegen",
+      "referenceOrigin": "AI-generated synthetic photograph, unique to this prompt",
+      "referenceGenerationPrompt": "Create one photorealistic studio portrait photograph of one fictional adult Korean woman aged 32. Direct front-facing view, looking directly into the camera with both eyes, both cheeks and both ears symmetrically visible; head upright, absolutely not a side profile or three-quarter angle. Head and shoulders portrait of an everyday person, short straight dark chestnut bob tucked behind her ears, one tiny plain gold stud earring in each ear, wearing a simple warm ivory knit top. Relaxed natural neutral expression, authentic realistic skin texture and proportions. Plain pale warm gray background, soft diffuse frontal window daylight. The whole head, hair and shoulders fit comfortably inside the frame with generous breathing room around the face. Vertical 2:3 composition. Authentic natural portrait photograph, not illustration, no double exposure, no landscape, no text, no logos, no watermark. Only one adult person.",
+      "referenceArtifact": "exec-299cf76b-6179-40b4-b1c5-6b43c436e95b.png",
+      "referenceArtifactSha256": "a526e5914e455427fe467b126fc75a314d64966f037ad7ce1c28294fb9392926",
+      "generatedArtifact": "exec-4486161d-193d-422b-a530-2848162947c3.png",
+      "generatedArtifactSha256": "ff240d742891e7bb3c63f42a6ffe629c626f1d88c389a39b567993b3ebc4c26e",
+      "prompt": "첨부한 인물 사진을 바탕으로, 옆모습 실루엣 안에 안개 낀 숲과 새벽 풍경이 펼쳐지는 서정적인 이중노출 일러스트를 만들어줘. 이마·코·입술·턱의 외곽선과 머리 모양으로 같은 인물을 알아볼 수 있게 해줘.\n머리와 어깨 안에서 나무와 능선이 겹치고, 가장자리에서는 가지가 밝은 바탕으로 부드럽게 흩어지게 해줘. 옅은 새벽 파랑·이끼 초록과 한 줄의 따뜻한 호박빛을 사용하고 넓은 흰 여백을 남겨줘.\n원본 얼굴 사진을 그대로 잘라 붙이지 말고 전체를 같은 섬세한 일러스트로 표현해줘. 글자·로고·워터마크 없이 2:3 세로 화면으로 만들어줘.\n\n사진이 없거나 인물이 보이지 않으면 얼굴 윤곽이 선명한 인물 사진을 요청해줘. 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 주인공으로 만들지 먼저 물어봐줘. 정면 사진을 입력으로 사용할 수 있게, 사진 속 얼굴의 고유한 특징을 바탕으로 자연스러운 옆모습 실루엣으로 재해석해줘. 측면 사진을 따로 요구하지 마.",
+      "toolPrompt": "첨부한 인물 사진을 바탕으로, 옆모습 실루엣 안에 안개 낀 숲과 새벽 풍경이 펼쳐지는 서정적인 이중노출 일러스트를 만들어줘. 이마·코·입술·턱의 외곽선과 머리 모양으로 같은 인물을 알아볼 수 있게 해줘.\n머리와 어깨 안에서 나무와 능선이 겹치고, 가장자리에서는 가지가 밝은 바탕으로 부드럽게 흩어지게 해줘. 옅은 새벽 파랑·이끼 초록과 한 줄의 따뜻한 호박빛을 사용하고 넓은 흰 여백을 남겨줘.\n원본 얼굴 사진을 그대로 잘라 붙이지 말고 전체를 같은 섬세한 일러스트로 표현해줘. 글자·로고·워터마크 없이 2:3 세로 화면으로 만들어줘.\n\n사진이 없거나 인물이 보이지 않으면 얼굴 윤곽이 선명한 인물 사진을 요청해줘. 인물이 여러 명이고 대상이 지정되지 않았다면 누구를 주인공으로 만들지 먼저 물어봐줘. 정면 사진을 입력으로 사용할 수 있게, 사진 속 얼굴의 고유한 특징을 바탕으로 자연스러운 옆모습 실루엣으로 재해석해줘. 측면 사진을 따로 요구하지 마.",
+      "additionalInstructions": "",
+      "toolTransparentBackground": false,
+      "reference": "assets/images/forest-double-exposure.reference.webp",
+      "referenceSha256": "de8799c323d219ce4a6d82932c4de6ab8fb602f40ba2780b684e072254e63d97",
+      "result": "assets/images/forest-double-exposure.webp",
+      "resultSha256": "66cc67614b85aa5a8d9e5ae176559505bf42d8d01331c60bd23892af3a1c1295",
+      "thumbnail": "assets/images/forest-double-exposure.thumb.webp",
+      "thumbnailSha256": "4a434afc6bf9e16a695cdd8aaf30bf0d773a6d0c34576ddf51725457b157bc8f",
+      "width": 1024,
+      "height": 1536,
+      "referenceDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "thumbnailDimensions": {
+        "width": 560,
+        "height": 840
+      },
+      "reviewNote": "AI 생성 정면 원본·결과 · 표시된 공개 프롬프트만 적용했습니다. 단발머리·작은 귀걸이를 반영해 옆모습과 숲·산·새벽빛으로 재해석했습니다. 보이지 않던 옆얼굴은 생성된 모습이며, 얼굴 일부에 사실적인 피부·눈 질감이 남아 전체가 균일한 일러스트로 표현되지는 않았습니다."
+    },
+    {
+      "id": "ukiyo-e-landscape",
+      "generatedOn": "2026-10-17",
+      "tool": "built-in image_gen.imagegen",
+      "referenceOrigin": "AI-generated synthetic photograph, unique to this prompt",
+      "referenceGenerationPrompt": "Create one photorealistic travel photograph of a fictional quiet Korean east-coast fishing village on a clear mild afternoon. Wide 3:2 landscape composition. An S-shaped turquoise inlet leads from the lower center toward a slim white lighthouse with a small red cap on a low breakwater at the right. Low stone seawalls and a few modest cream plaster houses with blue-gray tiled roofs line the left bank; a dark green pine-covered low ridge rises behind them at upper left. Pale blue sky with two soft wispy clouds, natural calm water reflections, visible stones and grasses in the foreground, realistic geographic scale and perspective, restrained natural colors. No people, no animals, no boats, no signs, no writing, no logos, no watermark. This is a natural camera photograph of a fictional place, not a drawing, not a woodblock print, no Japanese pagodas or Mount Fuji.",
+      "referenceArtifact": "exec-d6117c0c-9495-474f-b3cd-ff031e539d9b.png",
+      "referenceArtifactSha256": "46de252d7b31f377b3d6bb3ea5dd8a14b15bb358840de95fd644a3ceb6c48539",
+      "generatedArtifact": "exec-62e83634-bf91-48ce-9558-170b0f127c50.png",
+      "generatedArtifactSha256": "855c8d07c602d251e1f02d6bfab8e4a111bc33d24f57e63167633920e27eaf50",
+      "prompt": "첨부한 풍경이나 건물 사진을 전통 일본 목판화에서 영감을 받은 세련된 풍경 판화로 바꿔줘. 건물·산·물길·나무의 주요 배치와 특징, 원근과 원본 화면 비율을 알아볼 수 있게 유지해줘.\n가는 짙은 윤곽선, 단순하고 넓은 색면, 쪽빛·흙빛·이끼 초록과 종이 미색의 절제된 팔레트, 나뭇결과 잉크가 종이에 스민 미세한 질감을 사용해줘. 사진에 물이나 구름이 있으면 리듬감 있는 선과 평평한 형태로 정리해줘.\n원본에 없는 산·탑·파도·인물·일본식 건물을 추가하지 마. 장소의 고유한 모습을 유지하고 글자·인장·서명·로고 없이 작품 한 장으로 완성해줘.\n\n사진이 없거나 풍경·건물을 알아보기 어려우면 풍경이나 건물이 잘 보이는 사진을 요청해줘. 사진에 사람이 함께 있으면 사람의 수와 위치, 의상 형태도 알아볼 수 있게 유지해줘.",
+      "toolPrompt": "첨부한 풍경이나 건물 사진을 전통 일본 목판화에서 영감을 받은 세련된 풍경 판화로 바꿔줘. 건물·산·물길·나무의 주요 배치와 특징, 원근과 원본 화면 비율을 알아볼 수 있게 유지해줘.\n가는 짙은 윤곽선, 단순하고 넓은 색면, 쪽빛·흙빛·이끼 초록과 종이 미색의 절제된 팔레트, 나뭇결과 잉크가 종이에 스민 미세한 질감을 사용해줘. 사진에 물이나 구름이 있으면 리듬감 있는 선과 평평한 형태로 정리해줘.\n원본에 없는 산·탑·파도·인물·일본식 건물을 추가하지 마. 장소의 고유한 모습을 유지하고 글자·인장·서명·로고 없이 작품 한 장으로 완성해줘.\n\n사진이 없거나 풍경·건물을 알아보기 어려우면 풍경이나 건물이 잘 보이는 사진을 요청해줘. 사진에 사람이 함께 있으면 사람의 수와 위치, 의상 형태도 알아볼 수 있게 유지해줘.",
+      "additionalInstructions": "",
+      "toolTransparentBackground": false,
+      "reference": "assets/images/ukiyo-e-landscape.reference.webp",
+      "referenceSha256": "7929297e0b471fc930eecc35434e79c946eefead70155361bd4a68c474522b94",
+      "result": "assets/images/ukiyo-e-landscape.webp",
+      "resultSha256": "518e49d07b75c913bd6ac26b9538e7a6ac7c3c8f5273fcf000d3282e3cbdf2bd",
+      "thumbnail": "assets/images/ukiyo-e-landscape.thumb.webp",
+      "thumbnailSha256": "8794f964099ea0e6d6c3c6f0812bc8872b117432ccbfb3b19db2d7463823cf6f",
+      "width": 1536,
+      "height": 1024,
+      "referenceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "thumbnailDimensions": {
+        "width": 560,
+        "height": 373
+      },
+      "reviewNote": "AI 생성 원본·결과 · 표시된 공개 프롬프트만 적용했습니다. 왼쪽 마을과 소나무 능선·가운데 물길·오른쪽 등대의 주요 배치와 가로 비율을 유지했습니다. 지붕·바위·물결·구름의 세부와 등대의 붉은색은 판화 표현으로 단순화됐습니다. 사람이 있는 풍경은 별도로 테스트하지 않았습니다."
+    }
+  ]
+}
