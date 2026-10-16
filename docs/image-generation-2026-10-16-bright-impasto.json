@@ -1,0 +1,62 @@
+{
+  "generatedOn": "2026-10-16",
+  "method": "Publish the user-approved bright impasto image unchanged apart from uncropped WebP encoding and proportional thumbnail resizing. Disclose the three-image editing workflow and the difference from the generalized single-photo public prompt.",
+  "records": [
+    {
+      "id": "bright-impasto-portrait",
+      "generatedOn": "2026-10-16",
+      "tool": "built-in image_gen.imagegen",
+      "referenceOrigin": "AI-generated fictional adult portrait",
+      "referenceGenerationPrompt": "Create one realistic natural photographic portrait of a fictional Korean woman aged 38, with a chin-length dark brown bob haircut tucked behind one ear, natural skin texture and a few faint freckles, a gentle closed-mouth smile, looking at the camera. She wears a muted olive knitted cardigan over a cream crew-neck shirt and small round gold stud earrings. Chest-up composition, body turned slightly three-quarter while face looks toward camera, both shoulders fully visible with comfortable headroom. She sits in a simple home near a window, with a softly out-of-focus beige wall and a leafy houseplant in the background. Soft neutral daylight, authentic skin and knitted fabric detail, balanced photographic color, ordinary candid portrait photograph rather than a polished beauty advertisement. Vertical 2:3 image. One adult person only. No text, logos, watermark, frame, painting, illustration, or CGI.",
+      "referenceArtifact": "exec-16da7b0c-3aaa-4402-ba79-949408003f11.png",
+      "referenceArtifactSha256": "253f9e93200600a87556472f9350cb45ab579cf7149f86608cee28a93281db26",
+      "generatedArtifact": "exec-b118739c-19df-4a30-a67e-21df026ce21e.png",
+      "generatedArtifactSha256": "3877e220e9b973b1121a97ef07b99a09e3399b0608d238ed74c69e2281de7046",
+      "prompt": "첨부한 인물 사진을 밝고 화사한 임파스토 유화 한 점으로 바꿔줘.\n\n인물의 얼굴형, 눈매, 헤어스타일, 표정, 나이, 자세, 의상과 액세서리의 형태, 전체 구도를 알아볼 수 있게 유지해줘. 인물을 임의로 미화하거나 다른 사람으로 바꾸지 마.\n\n전체적으로 자연광이 가득한 크림 화이트·웜 아이보리 중심의 밝은 색감을 사용해줘. 배경은 아이보리 바탕에 아주 옅은 세이지·피치색 물감을 넓게 올린 추상적인 회화 배경으로 정리해줘. 피부는 크림·살구·피치빛의 밝은 중간톤으로, 그림자는 연한 로즈 베이지와 옅은 웜그레이로 부드럽게 표현해줘. 의상은 원래 색 계열을 알아볼 수 있게 유지하되 크림색을 섞은 듯 밝고 부드럽게 표현해줘. 머리카락과 눈의 자연스러운 대비는 살리고 얼굴의 특징이 하얗게 날아가지 않게 해줘.\n\n크림 같은 유화 물감을 팔레트 나이프로 도톰하게 떠올린 임파스토 질감을 표현해줘. 얼굴에는 작고 섬세한 나이프 터치, 옷과 배경에는 조금 더 넓은 물감 덩어리와 부드러운 융기를 사용해줘. 물감 표면에 자연광이 닿아 얕고 섬세한 그림자가 생기게 하고, 흰색 영역에도 아이보리·크림·옅은 웜그레이의 미묘한 차이와 캔버스 결이 보이게 해줘. 인물과 배경 전체가 같은 유화 매체로 그려진 한 점의 그림이어야 해.\n\n짙은 갈색 배경, 강한 명암, 노란 세피아 필터, 검은 균열과 낡은 표면은 피하고 신선한 물감의 맑고 부드러운 분위기로 완성해줘. 꽃, 금박 장식, 액자, 글자, 로고, 서명과 워터마크는 추가하지 마. 사진 필터, 수채화, 만화, 매끈한 3D 렌더로 표현하지 마.\n\n인물 사진이 없으면 사진을 요청하고, 여러 명이 나온 사진에서 대상이 지정되지 않았다면 누구를 그릴지 먼저 물어봐줘.",
+      "toolPrompt": "첨부 이미지의 역할을 구분해줘. 이미지 1은 밝은 버전으로 수정할 기존 유화 인물화다. 이미지 2는 동일한 인물의 원본 사진이며 얼굴과 외형 보존을 위한 참고다. 이미지 3은 실내에 걸린 흰 꽃 그림 사진이며, 액자 안 작품의 밝은 색감과 두툼한 물감 표면만 참고해줘.\n\n이미지 1의 인물화를 이미지 3 속 그림처럼 환하고 부드러운 아이보리 중심의 임파스토 유화로 다시 그려줘. 이미지 1의 짙은 갈색·검정·회청색 배경과 어두운 고전 초상화 분위기를 밝은 크림 화이트·웜 아이보리·아주 옅은 세이지색의 회화 배경으로 바꿔줘. 캔버스 전체가 자연광을 가득 받은 것처럼 화사하고 편안하게 보여야 해. 단순한 노출 증가나 흰색 필터가 아니라, 원래부터 밝은 물감을 풍부하게 섞어 그린 작품으로 만들어줘.\n\n주인공: 이미지 1과 2의 같은 성인 여성을 유지해줘. 얼굴형·눈매·코와 입·부드러운 미소·단발머리·작은 금색 귀걸이·몸과 얼굴의 방향·올리브색 카디건과 크림색 상의의 형태·전체 구도와 프레이밍을 유지해줘. 나이와 얼굴 생김새를 바꾸거나 다른 인물로 미화하지 마. 카디건은 원래 녹색 계열이 알아보이되 크림을 섞은 밝고 부드러운 세이지 올리브로 표현해줘. 피부는 옅은 피치·크림·살구빛의 밝은 중간톤으로 표현하고, 음영도 연한 로즈 베이지와 옅은 세이지 회색으로 부드럽게 연결해줘. 머리카락은 자연스러운 짙은 갈색을 유지하되 빛받는 부분에 부드러운 크림빛 브라운 하이라이트를 넣어 배경과 조화롭게 해줘. 밝아져도 눈·코·입과 얼굴의 입체감이 하얗게 날아가면 안 돼.\n\n물감 질감: 이미지 3의 흰 꽃잎처럼 크림 같은 물감을 팔레트 나이프로 도톰하게 떠올린 자국, 넓고 부드러운 나이프 면, 물감 가장자리의 낮은 굴곡, 얕은 그림자가 보이게 해줘. 얼굴·옷·배경이 모두 같은 유화 매체로 그려져야 해. 볼과 이마는 섬세한 작은 나이프 터치로, 카디건과 배경은 조금 더 넓은 물감 덩어리로 표현해줘. 햇빛이 물감 융기에 부드럽게 닿는 촉감은 살리되, 검게 파인 균열·거친 오래된 표면·강한 명암은 피하고 신선하고 맑은 물감 표면으로 표현해줘. 흰색 영역에도 크림·아이보리·옅은 웜그레이의 미세한 색 차이와 물감 결이 보여야 해.\n\n전체 색과 빛: 주조색은 크림 화이트와 아이보리, 보조색은 연한 세이지와 피치, 금빛 오커는 귀걸이와 극히 소량의 따뜻한 붓 터치에만 제한적으로 사용해줘. 강한 주황색이나 노란 세피아를 덮지 마. 부드러운 확산 자연광, 밝은 중간톤, 약하고 섬세한 그림자, 산뜻하고 차분한 분위기.\n\n참고 사진의 꽃·액자·벽·가구·실내 공간·검정 여백은 결과에 넣지 마. 결과는 인물 유화 한 장이 화면을 가득 채운 세로 2:3 이미지다. 인물·물체·꽃·금박 장식·글자·로고·서명·워터마크를 새로 추가하지 마. 매끈한 사진 필터, 수채화, 만화, 플라스틱 3D 렌더로 바꾸지 마.",
+      "additionalInstructions": "Approved result was edited using three inputs: the earlier dark oil painting, the original portrait photograph, and the user-provided framed flower painting as a style reference. The public prompt was subsequently generalized for one portrait photo. It has not independently been tested with only one photo.",
+      "actualInputImages": [
+        {
+          "role": "edit target: earlier oil painting",
+          "artifact": "exec-9b30a286-a164-4b9b-a6d7-d1067b0d0b7a.png",
+          "sha256": "b981e681b4e881766b72dabd7a1698116ee3c99c423745c820644c4eb6b5f24e"
+        },
+        {
+          "role": "identity reference: original portrait photograph",
+          "artifact": "exec-16da7b0c-3aaa-4402-ba79-949408003f11.png",
+          "sha256": "253f9e93200600a87556472f9350cb45ab579cf7149f86608cee28a93281db26"
+        },
+        {
+          "role": "style reference: bright ivory flower painting, artwork only",
+          "artifact": "codex-clipboard-f39b712f-9bc7-4367-a38c-7d134b63293e.png",
+          "sha256": "5a7f7ef7cabbe998336cc1e376943b525cc2cffd74676472a03b5775ba25095a",
+          "published": false
+        }
+      ],
+      "previousOilStage": {
+        "sourceUrl": "https://arts-ai.app/reference/oil-impasto",
+        "toolPrompt": "Transform the uploaded photograph into a thick oil painting built with a palette knife, in the manner of alla prima portrait painting on coarse linen canvas.\n\nIdentity lock: Preserve the subject's identity, facial features, hairstyle, clothing, pose, composition and framing exactly. Do not redesign, slim, age or restyle the subject and do not move anything in the frame - only change the medium the picture is made of.\nStyle: Heavy impasto oil paint. Every form is built from short loaded strokes of wet pigment laid edge to edge, with ridges of paint standing up off the surface and catching light along their crests. Knife-scraped planes on the cheekbones, forehead and jaw; softer loaded-brush blending in the shadow side. Woven linen tooth shows through in the thinnest passages.\nLighting: Warm low side light raking across the face from one side, so the raised paint ridges cast their own tiny shadows across the canvas surface. Luminous half-tones, deep transparent shadows, one small bright highlight in each eye left as a single unblended dab.\nRendering: Visible directional brush and knife marks that follow the anatomy - strokes wrap around the cheek, run along the bridge of the nose, break into blocky facets at the collar. Hair rendered as broad ribbons of pigment, not individual strands. Edges lost and found: sharp where the light hits, dissolving into the background where it does not. Slight physical relief and craquelure in the thickest paint.\nColor palette: Restrained earth palette - raw umber, burnt sienna, yellow ochre, lead white, a single chilled accent of ultramarine in the shadows. Warm skin built from ochre and white with green-grey turning tones at the edges of the form.\n\nBackground: Loosely scraped tonal ground, darker than the subject, worked with a wide knife into a soft warm-to-slate gradient. No detail, no added objects.\n\nMood: Quiet studio portrait, painted from life in one sitting.\nNegatives: no smooth digital airbrushing, no anime, no watercolor, no cartoon linework, no HDR gloss, no added text or signature, no frame.",
+        "artifact": "exec-9b30a286-a164-4b9b-a6d7-d1067b0d0b7a.png",
+        "sha256": "b981e681b4e881766b72dabd7a1698116ee3c99c423745c820644c4eb6b5f24e"
+      },
+      "toolTransparentBackground": false,
+      "reference": "assets/images/bright-impasto-portrait.reference.webp",
+      "referenceSha256": "d93b35333801e9a27ebaec8f196209f22a9efd57c9e1e18750515bc8ed3b2ad1",
+      "result": "assets/images/bright-impasto-portrait.webp",
+      "resultSha256": "1dfcb7a869920fe995a4a38170058d3d9d90bfdbc36da328cc9a1d0f7790b955",
+      "thumbnail": "assets/images/bright-impasto-portrait.thumb.webp",
+      "thumbnailSha256": "e95269b7366b970d37625ceb0c34c6396ac9d2d4e5e6b20c95d50abb4aa70e50",
+      "width": 1024,
+      "height": 1536,
+      "referenceDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "thumbnailDimensions": {
+        "width": 560,
+        "height": 840
+      },
+      "reviewNote": "AI 생성 원본·결과 · 예시는 원본 사진, 기존 유화 결과와 밝은 꽃 그림을 함께 참고해 만들었습니다. 공개 프롬프트는 사진 1장용으로 정리한 버전입니다. 얼굴·의상은 회화적으로 재해석됐고 배경은 밝은 아이보리색으로 바뀌었습니다."
+    }
+  ]
+}
