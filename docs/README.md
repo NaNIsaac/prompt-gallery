@@ -10,6 +10,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [카트라이더 인게임 레이서 2차 결과 등록 검토](kartrider-review-2026-10-17.md)
+- [카트라이더 두 차례 실제 입력과 파일 해시](image-generation-2026-10-17-kartrider.json)
 - [메이플스토리 인게임 캐릭터 2차 결과 등록 검토](maplestory-review-2026-10-17.md)
 - [메이플스토리 두 차례 실제 입력과 파일 해시](image-generation-2026-10-17-maplestory.json)
 - [마인크래프트 인게임 캐릭터 등록 검토](minecraft-review-2026-10-17.md)
