@@ -1,0 +1,205 @@
+{
+  "id": "minecraft-ingame-character",
+  "date": "2026-10-17",
+  "tool": "image_gen.imagegen (built-in)",
+  "prompt": "첨부한 사진 전체를 마인크래프트 게임 안에 구현된 장면으로 바꿔 주세요. 인물, 반려동물, 풍경, 건물, 음식, 사물 등 사진에 실제로 보이는 대상을 기준으로 변환하세요. 별도 지정이 없으면 주요 대상과 배경을 함께 변환하고, 사진 속 대상의 수, 상대적인 크기와 위치, 자세, 대표 색, 주요 구도와 화면 비율을 알아볼 수 있게 유지해 주세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 정육면체 머리와 각진 직육면체 몸통·팔다리의 기본 플레이어 모델 비율을 사용하고 얼굴도 픽셀로 단순화하세요. 원본에 보이는 신체 범위와 자세를 존중하고, 여러 사람이 있으면 지정된 대상이 없는 한 모두 각자의 특징을 살려 변환하세요. 인물이 없는 사진에는 플레이어 캐릭터를 추가하지 마세요.\n\n반려동물이나 다른 동물이 있으면 같은 종의 특징을 살린 마인크래프트 스타일의 블록 동물로 만들어 주세요. 귀·주둥이·꼬리·몸의 형태, 털·깃털의 색과 무늬, 자세와 목줄 등 원본에서 보이는 특징을 각진 형태와 픽셀 텍스처로 옮기세요. 종을 알아볼 수 있게 유지하고 원본의 신체 구조와 다리 수를 존중하세요. 동물을 사람처럼 두 발로 세우거나 플레이어 몸에 동물 얼굴을 붙이지 마세요. 게임에 없는 종도 원본의 특징을 살린 블록 동물로 재해석하고, 다른 종의 기존 몹으로 바꾸지 마세요.\n\n풍경·건물이 중심이면 사진의 지형, 산·바다·강·하늘, 나무와 길, 건축물의 실루엣과 배치를 마인크래프트의 흙·잔디·돌·목재·물 등 어울리는 블록으로 재구성하세요. 사진 속 장소의 구도와 원근감, 주요 구조와 시간대·날씨를 유지하세요. 음식·사물은 고유한 형태·대표 색·배치를 블록과 픽셀 질감으로 옮기세요. 원본에 없는 인물·동물·집·랜드마크·도구를 임의로 추가하지 마세요. 배경 정보가 거의 없는 인물·동물·사물 단독 사진에만 단순한 잔디 블록 바닥과 최소한의 게임 배경을 사용하세요.\n\n결과는 실제 바닐라 마인크래프트 인게임 스크린샷을 연상시키는 화면으로 완성해 주세요. 인물이나 동물이 주인공이면 사진의 시선 방향과 구도를 살려 게임 속 대상을 바라보는 3인칭 장면으로, 풍경만 있으면 원본 촬영 위치에서 월드를 바라보는 장면으로 표현하세요. 화면 하단에 작은 하트·허기·핫바 HUD를 넣되 주요 대상을 가리지 마세요. 풍경에 플레이어의 몸이나 손을 억지로 넣지 말고, 원본에 없는 무기·곡괭이·갑옷을 추가하지 마세요.\n\n모든 대상과 배경을 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 얼굴·털·사물의 합성, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.\n\n사진이 없으면 변환할 사진 1장을 요청하세요. 인물 사진을 별도로 요구하지 마세요.",
+  "method": "현재 범용 문구로 생성한 인물·코기·해안 풍경 테스트를 공개 예시로 연결했다. 각 변환은 원본 한 장과 같은 프롬프트만 사용했으며 추가 지시·후속 편집은 없다. 이번 배포 단계에서 이미지를 새로 생성하지 않았다.",
+  "tests": [
+    {
+      "role": "person",
+      "label": "인물",
+      "prompt": "첨부한 사진 전체를 마인크래프트 게임 안에 구현된 장면으로 바꿔 주세요. 인물, 반려동물, 풍경, 건물, 음식, 사물 등 사진에 실제로 보이는 대상을 기준으로 변환하세요. 별도 지정이 없으면 주요 대상과 배경을 함께 변환하고, 사진 속 대상의 수, 상대적인 크기와 위치, 자세, 대표 색, 주요 구도와 화면 비율을 알아볼 수 있게 유지해 주세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 정육면체 머리와 각진 직육면체 몸통·팔다리의 기본 플레이어 모델 비율을 사용하고 얼굴도 픽셀로 단순화하세요. 원본에 보이는 신체 범위와 자세를 존중하고, 여러 사람이 있으면 지정된 대상이 없는 한 모두 각자의 특징을 살려 변환하세요. 인물이 없는 사진에는 플레이어 캐릭터를 추가하지 마세요.\n\n반려동물이나 다른 동물이 있으면 같은 종의 특징을 살린 마인크래프트 스타일의 블록 동물로 만들어 주세요. 귀·주둥이·꼬리·몸의 형태, 털·깃털의 색과 무늬, 자세와 목줄 등 원본에서 보이는 특징을 각진 형태와 픽셀 텍스처로 옮기세요. 종을 알아볼 수 있게 유지하고 원본의 신체 구조와 다리 수를 존중하세요. 동물을 사람처럼 두 발로 세우거나 플레이어 몸에 동물 얼굴을 붙이지 마세요. 게임에 없는 종도 원본의 특징을 살린 블록 동물로 재해석하고, 다른 종의 기존 몹으로 바꾸지 마세요.\n\n풍경·건물이 중심이면 사진의 지형, 산·바다·강·하늘, 나무와 길, 건축물의 실루엣과 배치를 마인크래프트의 흙·잔디·돌·목재·물 등 어울리는 블록으로 재구성하세요. 사진 속 장소의 구도와 원근감, 주요 구조와 시간대·날씨를 유지하세요. 음식·사물은 고유한 형태·대표 색·배치를 블록과 픽셀 질감으로 옮기세요. 원본에 없는 인물·동물·집·랜드마크·도구를 임의로 추가하지 마세요. 배경 정보가 거의 없는 인물·동물·사물 단독 사진에만 단순한 잔디 블록 바닥과 최소한의 게임 배경을 사용하세요.\n\n결과는 실제 바닐라 마인크래프트 인게임 스크린샷을 연상시키는 화면으로 완성해 주세요. 인물이나 동물이 주인공이면 사진의 시선 방향과 구도를 살려 게임 속 대상을 바라보는 3인칭 장면으로, 풍경만 있으면 원본 촬영 위치에서 월드를 바라보는 장면으로 표현하세요. 화면 하단에 작은 하트·허기·핫바 HUD를 넣되 주요 대상을 가리지 마세요. 풍경에 플레이어의 몸이나 손을 억지로 넣지 말고, 원본에 없는 무기·곡괭이·갑옷을 추가하지 마세요.\n\n모든 대상과 배경을 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 얼굴·털·사물의 합성, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.\n\n사진이 없으면 변환할 사진 1장을 요청하세요. 인물 사진을 별도로 요구하지 마세요.",
+      "files": [
+        {
+          "path": "output/imagegen/minecraft-universal-portrait-test-2026-10-17/reference.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "64a4b1a0d5de74590ee3b696cdd3ee1a59b7d85afa7ee10e49497fb289a1c249"
+        },
+        {
+          "path": "output/imagegen/minecraft-universal-portrait-test-2026-10-17/result.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "04254c173e9561fefb4dc4946c913aa0ff4f257d98e97c85e5639134256a29ef"
+        }
+      ],
+      "referenceGenerationPrompt": "Use case: photorealistic-natural\nAsset type: fictional reference photo for a photo-to-Minecraft-character prompt test.\nCreate one realistic full-body casual photograph of a fictional Korean adult man in his late twenties, standing facing the camera on a simple park path, arms resting naturally by his sides, both hands and shoes visible. Short black hair parted to one side, round black eyeglasses, mustard-yellow zip jacket worn open over a plain white T-shirt, charcoal straight trousers, white low-top sneakers. Friendly neutral expression. Natural everyday proportions, unretouched skin, soft daylight, understated park greenery in the background, smartphone snapshot aesthetic. The entire person is clearly visible and fills most of a portrait composition. No text, no logos, no other people. This is an invented person, not a portrait of the actual user.\n",
+      "generatedArtifact": "exec-c9ed2017-f938-45dd-b0e7-672bec3b6dcb.png",
+      "additionalInstructions": null,
+      "additionalReferenceImages": [],
+      "publishedFiles": [
+        {
+          "path": "assets/images/minecraft-ingame-character.reference.webp",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "0b52fc0c905e1b6bc69cd4489e42e9e03fb4b597568da884738253af808e73cc"
+        },
+        {
+          "path": "assets/images/minecraft-ingame-character.webp",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "ec194fbf1c28b0f3c93dcea03341c76efee1db0e9bb1422befa295e6a9c74332"
+        }
+      ]
+    },
+    {
+      "role": "pet",
+      "label": "반려동물",
+      "prompt": "첨부한 사진 전체를 마인크래프트 게임 안에 구현된 장면으로 바꿔 주세요. 인물, 반려동물, 풍경, 건물, 음식, 사물 등 사진에 실제로 보이는 대상을 기준으로 변환하세요. 별도 지정이 없으면 주요 대상과 배경을 함께 변환하고, 사진 속 대상의 수, 상대적인 크기와 위치, 자세, 대표 색, 주요 구도와 화면 비율을 알아볼 수 있게 유지해 주세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 정육면체 머리와 각진 직육면체 몸통·팔다리의 기본 플레이어 모델 비율을 사용하고 얼굴도 픽셀로 단순화하세요. 원본에 보이는 신체 범위와 자세를 존중하고, 여러 사람이 있으면 지정된 대상이 없는 한 모두 각자의 특징을 살려 변환하세요. 인물이 없는 사진에는 플레이어 캐릭터를 추가하지 마세요.\n\n반려동물이나 다른 동물이 있으면 같은 종의 특징을 살린 마인크래프트 스타일의 블록 동물로 만들어 주세요. 귀·주둥이·꼬리·몸의 형태, 털·깃털의 색과 무늬, 자세와 목줄 등 원본에서 보이는 특징을 각진 형태와 픽셀 텍스처로 옮기세요. 종을 알아볼 수 있게 유지하고 원본의 신체 구조와 다리 수를 존중하세요. 동물을 사람처럼 두 발로 세우거나 플레이어 몸에 동물 얼굴을 붙이지 마세요. 게임에 없는 종도 원본의 특징을 살린 블록 동물로 재해석하고, 다른 종의 기존 몹으로 바꾸지 마세요.\n\n풍경·건물이 중심이면 사진의 지형, 산·바다·강·하늘, 나무와 길, 건축물의 실루엣과 배치를 마인크래프트의 흙·잔디·돌·목재·물 등 어울리는 블록으로 재구성하세요. 사진 속 장소의 구도와 원근감, 주요 구조와 시간대·날씨를 유지하세요. 음식·사물은 고유한 형태·대표 색·배치를 블록과 픽셀 질감으로 옮기세요. 원본에 없는 인물·동물·집·랜드마크·도구를 임의로 추가하지 마세요. 배경 정보가 거의 없는 인물·동물·사물 단독 사진에만 단순한 잔디 블록 바닥과 최소한의 게임 배경을 사용하세요.\n\n결과는 실제 바닐라 마인크래프트 인게임 스크린샷을 연상시키는 화면으로 완성해 주세요. 인물이나 동물이 주인공이면 사진의 시선 방향과 구도를 살려 게임 속 대상을 바라보는 3인칭 장면으로, 풍경만 있으면 원본 촬영 위치에서 월드를 바라보는 장면으로 표현하세요. 화면 하단에 작은 하트·허기·핫바 HUD를 넣되 주요 대상을 가리지 마세요. 풍경에 플레이어의 몸이나 손을 억지로 넣지 말고, 원본에 없는 무기·곡괭이·갑옷을 추가하지 마세요.\n\n모든 대상과 배경을 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 얼굴·털·사물의 합성, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.\n\n사진이 없으면 변환할 사진 1장을 요청하세요. 인물 사진을 별도로 요구하지 마세요.",
+      "files": [
+        {
+          "role": "reference",
+          "path": "output/imagegen/minecraft-universal-test-2026-10-17/pet.reference.png",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "298303bac5860e44f92bf004bc93ae57f83d00d43093909622d9f952bba08cf9",
+          "generatedArtifact": "exec-a7942df6-7035-4a77-8d94-aa87e1e290a8.png"
+        },
+        {
+          "role": "result",
+          "path": "output/imagegen/minecraft-universal-test-2026-10-17/pet.result.png",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "75e60ecedb895985442901df945624ce2119f7b8eccd0e9306664936160c0e3c",
+          "generatedArtifact": "exec-6b8ffd26-1e16-4cf8-a5ca-e03038f1be68.png"
+        }
+      ],
+      "referenceGenerationPrompt": "Use case: photorealistic-natural\nCreate a single everyday smartphone photo of one real-looking pet Pembroke Welsh corgi standing naturally on all four paws on a gray paved park path beside a low wooden bench and grass. The dog's entire body is visible, in a side-on three-quarter view, facing toward the left side of the frame with its head turned slightly toward the camera. Short sturdy legs, long low body, large upright pointed ears, reddish tan coat, clear white chest and muzzle, white socks, dark nose, teal fabric collar with no lettering. Natural proportions and individual coat markings. Soft overcast daylight, ordinary green shrubs in the background, realistic unretouched fur, deep enough focus to see the path and bench. Landscape 4:3 framing, casual pet snapshot, no other animals, no people, no hands, no readable text, no logos, no watermark. This is a fictional pet photograph, not a portrait of the user's actual pet.\n",
+      "generatedArtifact": "exec-6b8ffd26-1e16-4cf8-a5ca-e03038f1be68.png",
+      "additionalInstructions": null,
+      "additionalReferenceImages": [],
+      "publishedFiles": [
+        {
+          "path": "assets/images/minecraft-ingame-character.pet.reference.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "9730a0f0817b521d47dadb346e881ce5cc274998ad6772ef11ac508e14f9fece"
+        },
+        {
+          "path": "assets/images/minecraft-ingame-character.pet.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "e749d2dcff2a9d4b259aead539e181c2982f7733a65a276e321e96470565824e"
+        }
+      ]
+    },
+    {
+      "role": "landscape",
+      "label": "풍경",
+      "prompt": "첨부한 사진 전체를 마인크래프트 게임 안에 구현된 장면으로 바꿔 주세요. 인물, 반려동물, 풍경, 건물, 음식, 사물 등 사진에 실제로 보이는 대상을 기준으로 변환하세요. 별도 지정이 없으면 주요 대상과 배경을 함께 변환하고, 사진 속 대상의 수, 상대적인 크기와 위치, 자세, 대표 색, 주요 구도와 화면 비율을 알아볼 수 있게 유지해 주세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 정육면체 머리와 각진 직육면체 몸통·팔다리의 기본 플레이어 모델 비율을 사용하고 얼굴도 픽셀로 단순화하세요. 원본에 보이는 신체 범위와 자세를 존중하고, 여러 사람이 있으면 지정된 대상이 없는 한 모두 각자의 특징을 살려 변환하세요. 인물이 없는 사진에는 플레이어 캐릭터를 추가하지 마세요.\n\n반려동물이나 다른 동물이 있으면 같은 종의 특징을 살린 마인크래프트 스타일의 블록 동물로 만들어 주세요. 귀·주둥이·꼬리·몸의 형태, 털·깃털의 색과 무늬, 자세와 목줄 등 원본에서 보이는 특징을 각진 형태와 픽셀 텍스처로 옮기세요. 종을 알아볼 수 있게 유지하고 원본의 신체 구조와 다리 수를 존중하세요. 동물을 사람처럼 두 발로 세우거나 플레이어 몸에 동물 얼굴을 붙이지 마세요. 게임에 없는 종도 원본의 특징을 살린 블록 동물로 재해석하고, 다른 종의 기존 몹으로 바꾸지 마세요.\n\n풍경·건물이 중심이면 사진의 지형, 산·바다·강·하늘, 나무와 길, 건축물의 실루엣과 배치를 마인크래프트의 흙·잔디·돌·목재·물 등 어울리는 블록으로 재구성하세요. 사진 속 장소의 구도와 원근감, 주요 구조와 시간대·날씨를 유지하세요. 음식·사물은 고유한 형태·대표 색·배치를 블록과 픽셀 질감으로 옮기세요. 원본에 없는 인물·동물·집·랜드마크·도구를 임의로 추가하지 마세요. 배경 정보가 거의 없는 인물·동물·사물 단독 사진에만 단순한 잔디 블록 바닥과 최소한의 게임 배경을 사용하세요.\n\n결과는 실제 바닐라 마인크래프트 인게임 스크린샷을 연상시키는 화면으로 완성해 주세요. 인물이나 동물이 주인공이면 사진의 시선 방향과 구도를 살려 게임 속 대상을 바라보는 3인칭 장면으로, 풍경만 있으면 원본 촬영 위치에서 월드를 바라보는 장면으로 표현하세요. 화면 하단에 작은 하트·허기·핫바 HUD를 넣되 주요 대상을 가리지 마세요. 풍경에 플레이어의 몸이나 손을 억지로 넣지 말고, 원본에 없는 무기·곡괭이·갑옷을 추가하지 마세요.\n\n모든 대상과 배경을 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 얼굴·털·사물의 합성, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.\n\n사진이 없으면 변환할 사진 1장을 요청하세요. 인물 사진을 별도로 요구하지 마세요.",
+      "files": [
+        {
+          "role": "reference",
+          "path": "output/imagegen/minecraft-universal-test-2026-10-17/landscape.reference.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "795b308d78280a117599b637aee3864400c1151d7d3238d9e01560d5ba306c4e",
+          "generatedArtifact": "exec-7e682934-b790-4e5a-856f-d1032af30e81.png"
+        },
+        {
+          "role": "result",
+          "path": "output/imagegen/minecraft-universal-test-2026-10-17/landscape.result.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "4e3c902691873a7d01aac672bde6008f837528c6a78d289ee6891b6b32baf7af",
+          "generatedArtifact": "exec-0448bb83-1959-47a0-bf2b-0d1e472d636f.png"
+        }
+      ],
+      "referenceGenerationPrompt": "Use case: photorealistic-natural\nCreate one realistic casual smartphone photograph of a fictional quiet Korean seaside village viewed from an elevated footpath on an overcast afternoon. Landscape 3:2 composition. The left foreground contains one small single-story white plaster house with a muted blue pitched roof and a low dark stone wall. A narrow concrete footpath starts near the lower center and curves gently toward a tiny cluster of two low houses in the middle distance. On the right, a rocky shore borders calm blue-gray sea extending toward the horizon. A low green wooded hill rises behind the houses on the left. Pale gray clouded sky fills the upper quarter. The layout should be simple and clearly readable, like a normal holiday snapshot; natural flat daylight, realistic architecture and vegetation, deep focus. No people, animals, boats, towers, signboards, text, logos, watermarks, dramatic sunbeams, postcard color grading, or fantasy elements. A fictional place, not a specific real destination.\n",
+      "generatedArtifact": "exec-0448bb83-1959-47a0-bf2b-0d1e472d636f.png",
+      "additionalInstructions": null,
+      "additionalReferenceImages": [],
+      "publishedFiles": [
+        {
+          "path": "assets/images/minecraft-ingame-character.landscape.reference.webp",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "d1aea0034762afe735cce57a6c4abe0c0b76d9957ac0760280628793bacd936b"
+        },
+        {
+          "path": "assets/images/minecraft-ingame-character.landscape.webp",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "419f2b77afa9d150ff161c95852b7bb1d9049898ebb0daf333949362857f1ca6"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/minecraft-ingame-character.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ec194fbf1c28b0f3c93dcea03341c76efee1db0e9bb1422befa295e6a9c74332"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.thumb.webp",
+      "width": 560,
+      "height": 840,
+      "sha256": "c6259b39a7778619f57dcd662becbacb75aeeb031fe440b0120f63cacb331a7d"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0b52fc0c905e1b6bc69cd4489e42e9e03fb4b597568da884738253af808e73cc"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.pet.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "e749d2dcff2a9d4b259aead539e181c2982f7733a65a276e321e96470565824e"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.pet.reference.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "9730a0f0817b521d47dadb346e881ce5cc274998ad6772ef11ac508e14f9fece"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.landscape.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "419f2b77afa9d150ff161c95852b7bb1d9049898ebb0daf333949362857f1ca6"
+    },
+    {
+      "path": "assets/images/minecraft-ingame-character.landscape.reference.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d1aea0034762afe735cce57a6c4abe0c0b76d9957ac0760280628793bacd936b"
+    }
+  ],
+  "previousExample": {
+    "id": "minecraft-ingame-character",
+    "title": "내 사진을 마인크래프트 세상으로",
+    "category": "캐릭터",
+    "tags": [
+      "마인크래프트",
+      "인게임",
+      "픽셀",
+      "반려동물",
+      "풍경",
+      "블록 월드"
+    ],
+    "image": "assets/images/minecraft-ingame-character.webp",
+    "thumbnail": "assets/images/minecraft-ingame-character.thumb.webp",
+    "width": 1672,
+    "height": 941,
+    "color": "#677862",
+    "prompt": "첨부한 사진 전체를 마인크래프트 게임 안에 구현된 장면으로 바꿔 주세요. 인물, 반려동물, 풍경, 건물, 음식, 사물 등 사진에 실제로 보이는 대상을 기준으로 변환하세요. 별도 지정이 없으면 주요 대상과 배경을 함께 변환하고, 사진 속 대상의 수, 상대적인 크기와 위치, 자세, 대표 색, 주요 구도와 화면 비율을 알아볼 수 있게 유지해 주세요.\n\n인물이 있으면 헤어스타일·머리색·안경·피부색·의상·신발 등 핵심 특징을 마인크래프트 플레이어 스킨의 픽셀 텍스처로 옮겨 주세요. 정육면체 머리와 각진 직육면체 몸통·팔다리의 기본 플레이어 모델 비율을 사용하고 얼굴도 픽셀로 단순화하세요. 원본에 보이는 신체 범위와 자세를 존중하고, 여러 사람이 있으면 지정된 대상이 없는 한 모두 각자의 특징을 살려 변환하세요. 인물이 없는 사진에는 플레이어 캐릭터를 추가하지 마세요.\n\n반려동물이나 다른 동물이 있으면 같은 종의 특징을 살린 마인크래프트 스타일의 블록 동물로 만들어 주세요. 귀·주둥이·꼬리·몸의 형태, 털·깃털의 색과 무늬, 자세와 목줄 등 원본에서 보이는 특징을 각진 형태와 픽셀 텍스처로 옮기세요. 종을 알아볼 수 있게 유지하고 원본의 신체 구조와 다리 수를 존중하세요. 동물을 사람처럼 두 발로 세우거나 플레이어 몸에 동물 얼굴을 붙이지 마세요. 게임에 없는 종도 원본의 특징을 살린 블록 동물로 재해석하고, 다른 종의 기존 몹으로 바꾸지 마세요.\n\n풍경·건물이 중심이면 사진의 지형, 산·바다·강·하늘, 나무와 길, 건축물의 실루엣과 배치를 마인크래프트의 흙·잔디·돌·목재·물 등 어울리는 블록으로 재구성하세요. 사진 속 장소의 구도와 원근감, 주요 구조와 시간대·날씨를 유지하세요. 음식·사물은 고유한 형태·대표 색·배치를 블록과 픽셀 질감으로 옮기세요. 원본에 없는 인물·동물·집·랜드마크·도구를 임의로 추가하지 마세요. 배경 정보가 거의 없는 인물·동물·사물 단독 사진에만 단순한 잔디 블록 바닥과 최소한의 게임 배경을 사용하세요.\n\n결과는 실제 바닐라 마인크래프트 인게임 스크린샷을 연상시키는 화면으로 완성해 주세요. 인물이나 동물이 주인공이면 사진의 시선 방향과 구도를 살려 게임 속 대상을 바라보는 3인칭 장면으로, 풍경만 있으면 원본 촬영 위치에서 월드를 바라보는 장면으로 표현하세요. 화면 하단에 작은 하트·허기·핫바 HUD를 넣되 주요 대상을 가리지 마세요. 풍경에 플레이어의 몸이나 손을 억지로 넣지 말고, 원본에 없는 무기·곡괭이·갑옷을 추가하지 마세요.\n\n모든 대상과 배경을 게임 특유의 큐브 형태와 선명한 저해상도 픽셀 텍스처로 통일하세요. 실사 얼굴·털·사물의 합성, 둥근 팔다리, 피규어·레고 스타일, 영화 포스터 같은 조명, 고급 셰이더, 과도한 심도 흐림은 피하세요. 설명 문구, 로고, 워터마크는 넣지 마세요.\n\n사진이 없으면 변환할 사진 1장을 요청하세요. 인물 사진을 별도로 요구하지 마세요.",
+    "inputRequirement": "image",
+    "inputLabel": "인물·반려동물·풍경·사물 사진 1장 필요",
+    "usage": "마인크래프트 세상으로 바꿀 사진 1장을 첨부하고 프롬프트를 보내세요. 인물은 플레이어 캐릭터로, 반려동물은 종과 무늬를 살린 블록 동물로, 풍경·건물·사물은 장면 전체를 블록 월드로 바꿉니다. 사람이 없는 사진도 사용할 수 있으며 별도 지정이 없으면 사진의 주요 대상을 함께 변환합니다. 인물 예시의 원본은 AI로 만든 가상의 성인 사진입니다.",
+    "exampleNote": "AI 생성 원본·결과 · 현재 예시는 범용 문구로 확장하기 전의 인물용 프롬프트로 만들었습니다. 검은 머리·안경·노란 재킷 등 인물 특징과 철 곡괭이, 하트·허기·핫바가 있는 3인칭 장면을 표현했습니다. 현재 문구는 원본에 없는 도구를 추가하지 않도록 변경했으며, 이 문구로 이미지를 다시 생성하지 않았습니다. 반려동물·풍경·사물 사진의 생성 테스트는 아직 진행하지 않았습니다. 실제 게임 캡처가 아닌 생성 이미지이며, 머리 비율과 머리카락·안경의 입체감, 표면 질감은 바닐라 모델과 차이가 있습니다.",
+    "referenceImages": [
+      "assets/images/minecraft-ingame-character.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -18
+  },
+  "originalPortraitGenerationRecord": "image-generation-2026-10-17-minecraft.json",
+  "promptRevisionRecord": "minecraft-prompt-revision-2026-10-17.json",
+  "conversion": "Results encoded as lossless WebP and decoded pixels verified equal. Existing portrait reference retained. Pet and landscape references encoded as quality-92 WebP. Thumbnail scaled proportionally."
+}
