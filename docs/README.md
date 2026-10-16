@@ -10,6 +10,9 @@
 
 ## 생성 이력과 참고 자료
 
+- [발로란트 신규 요원 2차 결과 등록 검토](valorant-review-2026-10-17.md)
+- [발로란트 세 단계 실제 입력과 파일 해시](image-generation-2026-10-17-valorant.json)
+
 - [메이플스토리 인게임 캐릭터 2차 결과 등록 검토](maplestory-review-2026-10-17.md)
 - [메이플스토리 두 차례 실제 입력과 파일 해시](image-generation-2026-10-17-maplestory.json)
 - [마인크래프트 인게임 캐릭터 등록 검토](minecraft-review-2026-10-17.md)
