@@ -10,6 +10,9 @@
 
 ## 생성 이력과 참고 자료
 
+- [개구리 왕눈이 주인공 등록 검토](demetan-review-2026-10-18.md)
+- [개구리 왕눈이 실제 입력·공개 문구·파일 해시](image-generation-2026-10-18-demetan.json)
+
 - [어드벤처 타임 주인공 등록 검토](adventure-time-review-2026-10-18.md)
 - [어드벤처 타임 실제 입력·공개 문구·파일 해시](image-generation-2026-10-18-adventure-time.json)
 
