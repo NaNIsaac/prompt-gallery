@@ -1,0 +1,136 @@
+{
+  "id": "rose-of-versailles-protagonist",
+  "revisedOn": "2026-10-18",
+  "tool": "built-in image_gen.imagegen",
+  "problem": "The previous public prompt unconditionally assigned every subject an Oscar-like royal guard uniform.",
+  "before": {
+    "prompt": "첨부한 인물 사진 속 내가 『베르사유의 장미』의 주인공이 된 고전 순정만화 컬러 원화를 그려 주세요.\n\n사진 속 인물의 머리색, 가르마, 얼굴의 구별되는 인상, 점과 안경 같은 고유한 특징을 살리면서 얼굴과 몸 전체를 고전 순정만화의 과장되고 우아한 비례로 바꿔 주세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요. 눈을 사진처럼 작게 유지하기보다 고전 순정만화의 그림체를 충분히 적용하되 같은 인물의 특징이 남게 해 주세요.\n\n눈은 얼굴에 비해 크고 길며 큼직한 홍채 안에 흰 별빛과 여러 반사광이 있고, 위아래 속눈썹은 길고 선명하게 뻗습니다. 콧대는 가늘고 길고 코끝은 작은 펜선으로, 입술은 작고 섬세한 장밋빛으로, 턱은 길고 날렵하며 목과 손가락도 우아하게 길게 그립니다. 피부는 종이의 흰빛을 살리고 눈 주변에는 담청색과 옅은 분홍색 그림자를 얇게 사용하세요. 머리카락은 원래 색과 가르마를 살린 풍성한 웨이브와 장식적인 소용돌이 컬, 넓은 리본 모양의 하이라이트로 표현합니다.\n\n종이 위에 손으로 그린 가늘고 날카로운 펜선, 유려한 장식 곡선, 투명한 수채화와 컬러 잉크의 선명한 색 번짐을 사용하세요. 윤곽선과 펜 해칭이 보이고 안료의 농담과 붓자국으로 색이 겹쳐지며, 넓은 하이라이트는 종이 흰색으로 남깁니다. 빨강·파랑·금색·초록을 맑고 밝게 채색하고 작은 흰 별 모양 반짝임을 더하세요. 크고 반짝이는 눈, 긴 속눈썹, 장식적인 모발 곡선이 분명한 고전 순정만화 컬러 페이지로 완성합니다.\n\n인물은 오스칼을 연상시키는 왕실 근위대 장교입니다. 진홍색·아이보리 군복, 금색 견장과 장식 끈, 흰 러플과 망토를 입고 한 손에 붉은 장미 한 송이를 가볍게 듭니다. 몸은 약간 비스듬히 선 채 관객을 바라보며 우아하고 결연한 주인공의 모습을 표현하세요.\n\n세로 3:4 구도, 머리 전체부터 허벅지 위까지 인물 한 명이 크게 보이는 컬러 원화 한 장입니다. 넓은 순백색 종이 여백에 가느다란 궁전 기둥, 발코니 난간, 담쟁이덩굴로 베르사유의 공간을 암시하고, 가장자리에는 크게 핀 붉은색·분홍색 장미와 초록 잎으로 장식 프레임을 만드세요. 장미와 머리카락이 얼굴을 가리지 않게 합니다.\n\n사진 얼굴 합성, 실사 피부와 모공, 반실사 디지털 페인팅, 3D 명암, 피부의 에어브러시, 현대 웹툰, 애니메이션 셀 채색, 영화적 노을 조명, 갈색 빈티지 필터는 피하세요. 추가 인물, 분할 비교 화면, 만화 칸, 제목·자막·말풍선·로고·워터마크는 넣지 마세요. 사진에 여러 명이 있으면 변환할 한 명을 지정하도록 요청하고, 사진이 없으면 인물 사진 한 장을 요청하세요.",
+    "usage": "얼굴과 머리 모양이 선명한 본인 사진 1장을 첨부하고 프롬프트를 보내세요. 여러 명이면 변환할 한 명을 지정하세요. 사진의 인상을 살린 고전 순정만화 컬러 원화로, 근위대 군복과 장미를 표현합니다. 공개 예시는 AI로 만든 가상 성인 사진과 별도의 그림체 참고를 함께 사용한 결과입니다. 사진 한 장용 공개 문구는 별도로 생성 테스트하지 않았습니다.",
+    "exampleNote": "AI 생성 원본·결과 · 가상의 성인 사진과 사용자가 제공한 그림체 참고 두 장에 3차 프롬프트를 적용한 승인 예시입니다. 공개 문구는 본인 사진 한 장에 쓰도록 정리했으며 이 문구만으로 재생성한 결과는 아닙니다. 짙은 머리색·가르마·눈 아래 점을 살리고 큰 별빛 눈동자, 긴 속눈썹, 근위대 군복과 장미를 표현했습니다. 얼굴 비례와 머리 길이는 순정만화식으로 달라졌으며 원작보다 모발·군복 묘사가 조밀합니다.",
+    "files": [
+      {
+        "path": "assets/images/rose-of-versailles-protagonist.reference.webp",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "93bdded29889c42526e6fdc15784a0c4065f71342f57784ae131de4c8332a48d"
+      },
+      {
+        "path": "assets/images/rose-of-versailles-protagonist.webp",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "775dee9395d6f1177910bcb9f45dabf0eab57bc3201b676a9269279e3918f36a"
+      },
+      {
+        "path": "assets/images/rose-of-versailles-protagonist.thumb.webp",
+        "width": 560,
+        "height": 747,
+        "sha256": "bfbbe6f84346a2d71dd499a5d47ca3df229dcd414b19982294a5904819c083c6"
+      }
+    ]
+  },
+  "after": {
+    "prompt": "첨부한 인물 사진 속 내가 『베르사유의 장미』의 주인공이 된 고전 순정만화 컬러 원화를 그려 주세요.\n\n사진 속 인물의 머리색, 가르마, 얼굴의 구별되는 인상, 점과 안경 같은 고유한 특징을 살리면서 얼굴과 몸 전체를 고전 순정만화의 과장되고 우아한 비례로 바꿔 주세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요. 눈을 사진처럼 작게 유지하기보다 고전 순정만화의 그림체를 충분히 적용하되 같은 인물의 특징이 남게 해 주세요.\n\n눈은 얼굴에 비해 크고 길며 큼직한 홍채 안에 흰 별빛과 여러 반사광이 있고, 위아래 속눈썹은 길고 선명하게 뻗습니다. 콧대는 가늘고 길고 코끝은 작은 펜선으로, 입술은 작고 섬세한 장밋빛으로, 턱은 길고 날렵하며 목과 손가락도 우아하게 길게 그립니다. 피부는 종이의 흰빛을 살리고 눈 주변에는 담청색과 옅은 분홍색 그림자를 얇게 사용하세요. 머리카락은 원래 색과 가르마를 살린 풍성한 웨이브와 장식적인 소용돌이 컬, 넓은 리본 모양의 하이라이트로 표현합니다.\n\n종이 위에 손으로 그린 가늘고 날카로운 펜선, 유려한 장식 곡선, 투명한 수채화와 컬러 잉크의 선명한 색 번짐을 사용하세요. 윤곽선과 펜 해칭이 보이고 안료의 농담과 붓자국으로 색이 겹쳐지며, 넓은 하이라이트는 종이 흰색으로 남깁니다. 빨강·파랑·금색·초록을 맑고 밝게 채색하고 작은 흰 별 모양 반짝임을 더하세요. 크고 반짝이는 눈, 긴 속눈썹, 장식적인 모발 곡선이 분명한 고전 순정만화 컬러 페이지로 완성합니다.\n\n복장은 모두 같은 군복으로 고정하지 말고 다음 우선순위로 정하세요. 사용자가 '드레스', '왕자·귀족 예복', '오스칼식 근위대 군복' 중 원하는 복장이나 역할을 지정했다면 사진의 외적 스타일과 관계없이 그 선택을 최우선으로 따릅니다. 별도 지정이 없으면 사진에서 보이는 외적 스타일을 참고해 여성적인 표현에는 마리 앙투아네트를 연상시키는 로코코 궁정 드레스, 남성적인 표현에는 왕자·귀족의 궁정 예복을 기본으로 적용하세요. 이는 그림 속 의상을 고르기 위한 기준이며 사진만으로 실제 성별 정체성을 단정하지 마세요. 외적 스타일이 모호하고 복장 요청도 없으면 생성 전에 드레스와 궁정 예복 중 선호를 한 번만 물어보세요.\n\n드레스는 장밋빛·하늘색·샴페인색 중 인물에게 어울리는 색의 실크, 레이스와 리본, 퍼프 소매, 허리선과 넓게 퍼지는 스커트, 작은 진주 장식을 사용합니다. 머리카락의 원래 길이와 색을 살리며 작은 헤어 장식을 더할 수 있습니다. 드레스에 군복 견장·훈장·칼·군용 망토를 섞지 마세요. 왕자·귀족 예복은 남색·버건디·크림색의 자수 궁정 코트와 조끼, 흰 레이스 크라바트, 단정한 바지로 표현하며 군복 견장·훈장·칼·군용 망토를 넣지 마세요. 금색 견장과 장식 검이 있는 근위대 군복은 사용자가 명시적으로 요청했을 때만 그립니다. 어떤 복장이든 장미 한 송이를 자연스럽게 들고 몸은 살짝 비스듬히 선 채 관객을 바라보는 우아한 주인공으로 표현하세요.\n\n세로 3:4 구도, 머리 전체부터 허벅지 위까지 인물 한 명이 크게 보이는 컬러 원화 한 장입니다. 넓은 순백색 종이 여백에 가느다란 궁전 기둥, 발코니 난간, 담쟁이덩굴로 베르사유의 공간을 암시하고, 가장자리에는 크게 핀 붉은색·분홍색 장미와 초록 잎으로 장식 프레임을 만드세요. 장미와 머리카락이 얼굴을 가리지 않게 합니다.\n\n사진 얼굴 합성, 실사 피부와 모공, 반실사 디지털 페인팅, 3D 명암, 피부의 에어브러시, 현대 웹툰, 애니메이션 셀 채색, 영화적 노을 조명, 갈색 빈티지 필터는 피하세요. 추가 인물, 분할 비교 화면, 만화 칸, 제목·자막·말풍선·로고·워터마크는 넣지 마세요. 사진에 여러 명이 있으면 변환할 한 명을 지정하도록 요청하고, 사진이 없으면 인물 사진 한 장을 요청하세요.",
+    "usage": "얼굴과 머리 모양이 선명한 본인 사진 1장을 첨부하고 프롬프트를 보내세요. 별도 지정이 없으면 사진의 외적 스타일에 맞춰 여성적인 표현은 로코코 드레스, 남성적인 표현은 왕자·귀족의 궁정 예복으로 그립니다. 원하는 복장이 있으면 사진 스타일과 관계없이 “드레스로”, “궁정 예복으로”, “오스칼식 군복으로”를 덧붙이세요. 군복은 직접 요청할 때만 적용합니다. 여러 명이면 변환할 한 명을 지정하세요. 두 예시는 AI 가상 성인 사진 한 장씩에 같은 공개 문구만 적용했습니다.",
+    "exampleNote": "AI 생성 원본·결과 · 모두 근위대 군복이 되던 문제를 수정했습니다. 현재 공개 프롬프트와 각 인물 사진 한 장만으로 드레스·궁정 예복을 각각 생성했고 별도 그림체 참고나 복장 추가 지시는 사용하지 않았습니다. 예시를 선택하면 해당 결과·원본·검토 설명이 함께 바뀝니다. 복장 직접 지정과 외적 스타일이 모호한 사진의 질문 동작은 별도로 생성 테스트하지 않았습니다."
+  },
+  "publicPromptTestedAlone": true,
+  "method": "Replaced only the mandatory costume paragraph; all illustration instructions remain unchanged. Each portrait was independently transformed using exactly the same current public prompt, without costume overrides, style references or previous outputs.",
+  "referenceOrigin": "Both inputs are AI-generated fictional adults. Female portrait reused from the prior test; male portrait newly generated.",
+  "referenceGenerationPrompts": {
+    "female": "Use case: photorealistic-natural.\nCreate one realistic reference portrait photograph of a completely fictional Korean adult woman, age 28, for a face-preserving illustration transformation test. She has an oval face with a slightly defined jaw, dark brown almond-shaped eyes, natural straight brows, a small beauty mark just below her left eye, and shoulder-length dark brown wavy hair with an off-center part. Keep her face distinctive and natural, with minimal makeup. She wears a plain ivory crew-neck knit top, no jewelry or glasses. Chest-up portrait with full hair visible, her shoulders slightly turned but her face looking directly at the camera, calm confident expression. Plain warm light-gray wall, soft window daylight, realistic skin texture, sharp readable eyes, neutral photographic colors. Single adult subject only. Portrait 3:4 composition. No text, logos, watermark, collage, illustration, celebrity resemblance or other people.",
+    "male": "Use case: photorealistic-natural.\nCreate one natural reference portrait photograph of a completely fictional adult Korean man, age 30, for an illustration transformation test. Short dark slightly wavy hair with a side part, thin rectangular charcoal eyeglasses, softly angular oval face, dark brown eyes and straight brows, natural small smile, clean shaven. Casual navy cotton blazer over a plain white crewneck shirt. Chest-up portrait with full hair visible and shoulders slightly turned while looking at the camera. Soft window daylight, plain warm light gray wall, realistic unretouched skin texture, even neutral colors. Single adult person, no costume, no medals, no accessories besides glasses, no text or logos, no watermark, no celebrity likeness, portrait 3:4."
+  },
+  "generationSteps": [
+    {
+      "version": "male-reference",
+      "inputs": [],
+      "actualToolPrompt": "Use case: photorealistic-natural.\nCreate one natural reference portrait photograph of a completely fictional adult Korean man, age 30, for an illustration transformation test. Short dark slightly wavy hair with a side part, thin rectangular charcoal eyeglasses, softly angular oval face, dark brown eyes and straight brows, natural small smile, clean shaven. Casual navy cotton blazer over a plain white crewneck shirt. Chest-up portrait with full hair visible and shoulders slightly turned while looking at the camera. Soft window daylight, plain warm light gray wall, realistic unretouched skin texture, even neutral colors. Single adult person, no costume, no medals, no accessories besides glasses, no text or logos, no watermark, no celebrity likeness, portrait 3:4.",
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/male-reference.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "2099f4e4dbdaf765df6d32283b74a141f29c1b7dbe520dcd396dcfe85229fb0a"
+      }
+    },
+    {
+      "version": "female-dress",
+      "inputs": [
+        "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/female-reference.png"
+      ],
+      "actualToolPrompt": "첨부한 인물 사진 속 내가 『베르사유의 장미』의 주인공이 된 고전 순정만화 컬러 원화를 그려 주세요.\n\n사진 속 인물의 머리색, 가르마, 얼굴의 구별되는 인상, 점과 안경 같은 고유한 특징을 살리면서 얼굴과 몸 전체를 고전 순정만화의 과장되고 우아한 비례로 바꿔 주세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요. 눈을 사진처럼 작게 유지하기보다 고전 순정만화의 그림체를 충분히 적용하되 같은 인물의 특징이 남게 해 주세요.\n\n눈은 얼굴에 비해 크고 길며 큼직한 홍채 안에 흰 별빛과 여러 반사광이 있고, 위아래 속눈썹은 길고 선명하게 뻗습니다. 콧대는 가늘고 길고 코끝은 작은 펜선으로, 입술은 작고 섬세한 장밋빛으로, 턱은 길고 날렵하며 목과 손가락도 우아하게 길게 그립니다. 피부는 종이의 흰빛을 살리고 눈 주변에는 담청색과 옅은 분홍색 그림자를 얇게 사용하세요. 머리카락은 원래 색과 가르마를 살린 풍성한 웨이브와 장식적인 소용돌이 컬, 넓은 리본 모양의 하이라이트로 표현합니다.\n\n종이 위에 손으로 그린 가늘고 날카로운 펜선, 유려한 장식 곡선, 투명한 수채화와 컬러 잉크의 선명한 색 번짐을 사용하세요. 윤곽선과 펜 해칭이 보이고 안료의 농담과 붓자국으로 색이 겹쳐지며, 넓은 하이라이트는 종이 흰색으로 남깁니다. 빨강·파랑·금색·초록을 맑고 밝게 채색하고 작은 흰 별 모양 반짝임을 더하세요. 크고 반짝이는 눈, 긴 속눈썹, 장식적인 모발 곡선이 분명한 고전 순정만화 컬러 페이지로 완성합니다.\n\n복장은 모두 같은 군복으로 고정하지 말고 다음 우선순위로 정하세요. 사용자가 '드레스', '왕자·귀족 예복', '오스칼식 근위대 군복' 중 원하는 복장이나 역할을 지정했다면 사진의 외적 스타일과 관계없이 그 선택을 최우선으로 따릅니다. 별도 지정이 없으면 사진에서 보이는 외적 스타일을 참고해 여성적인 표현에는 마리 앙투아네트를 연상시키는 로코코 궁정 드레스, 남성적인 표현에는 왕자·귀족의 궁정 예복을 기본으로 적용하세요. 이는 그림 속 의상을 고르기 위한 기준이며 사진만으로 실제 성별 정체성을 단정하지 마세요. 외적 스타일이 모호하고 복장 요청도 없으면 생성 전에 드레스와 궁정 예복 중 선호를 한 번만 물어보세요.\n\n드레스는 장밋빛·하늘색·샴페인색 중 인물에게 어울리는 색의 실크, 레이스와 리본, 퍼프 소매, 허리선과 넓게 퍼지는 스커트, 작은 진주 장식을 사용합니다. 머리카락의 원래 길이와 색을 살리며 작은 헤어 장식을 더할 수 있습니다. 드레스에 군복 견장·훈장·칼·군용 망토를 섞지 마세요. 왕자·귀족 예복은 남색·버건디·크림색의 자수 궁정 코트와 조끼, 흰 레이스 크라바트, 단정한 바지로 표현하며 군복 견장·훈장·칼·군용 망토를 넣지 마세요. 금색 견장과 장식 검이 있는 근위대 군복은 사용자가 명시적으로 요청했을 때만 그립니다. 어떤 복장이든 장미 한 송이를 자연스럽게 들고 몸은 살짝 비스듬히 선 채 관객을 바라보는 우아한 주인공으로 표현하세요.\n\n세로 3:4 구도, 머리 전체부터 허벅지 위까지 인물 한 명이 크게 보이는 컬러 원화 한 장입니다. 넓은 순백색 종이 여백에 가느다란 궁전 기둥, 발코니 난간, 담쟁이덩굴로 베르사유의 공간을 암시하고, 가장자리에는 크게 핀 붉은색·분홍색 장미와 초록 잎으로 장식 프레임을 만드세요. 장미와 머리카락이 얼굴을 가리지 않게 합니다.\n\n사진 얼굴 합성, 실사 피부와 모공, 반실사 디지털 페인팅, 3D 명암, 피부의 에어브러시, 현대 웹툰, 애니메이션 셀 채색, 영화적 노을 조명, 갈색 빈티지 필터는 피하세요. 추가 인물, 분할 비교 화면, 만화 칸, 제목·자막·말풍선·로고·워터마크는 넣지 마세요. 사진에 여러 명이 있으면 변환할 한 명을 지정하도록 요청하고, 사진이 없으면 인물 사진 한 장을 요청하세요.",
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/female-dress.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "f95eec994ae13c5de06877c5a5c82336dccb9d00384392f1bb409657630ad3ab"
+      },
+      "note": "AI 생성 원본·결과 · 기존 가상 성인 사진 한 장에 현재 공개 프롬프트만 적용한 드레스 예시입니다. 별도 복장 지정 없이 분홍색 실크·레이스·리본의 로코코 궁정 드레스로 표현됐고 군복 견장·훈장·칼·군용 망토는 없습니다. 짙은 머리색·가르마·눈 아래 점을 살렸으며 얼굴 비례와 머리 길이, 장신구와 궁전 배경은 재해석됐습니다."
+    },
+    {
+      "version": "male-court",
+      "inputs": [
+        "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/male-reference.png"
+      ],
+      "actualToolPrompt": "첨부한 인물 사진 속 내가 『베르사유의 장미』의 주인공이 된 고전 순정만화 컬러 원화를 그려 주세요.\n\n사진 속 인물의 머리색, 가르마, 얼굴의 구별되는 인상, 점과 안경 같은 고유한 특징을 살리면서 얼굴과 몸 전체를 고전 순정만화의 과장되고 우아한 비례로 바꿔 주세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요. 눈을 사진처럼 작게 유지하기보다 고전 순정만화의 그림체를 충분히 적용하되 같은 인물의 특징이 남게 해 주세요.\n\n눈은 얼굴에 비해 크고 길며 큼직한 홍채 안에 흰 별빛과 여러 반사광이 있고, 위아래 속눈썹은 길고 선명하게 뻗습니다. 콧대는 가늘고 길고 코끝은 작은 펜선으로, 입술은 작고 섬세한 장밋빛으로, 턱은 길고 날렵하며 목과 손가락도 우아하게 길게 그립니다. 피부는 종이의 흰빛을 살리고 눈 주변에는 담청색과 옅은 분홍색 그림자를 얇게 사용하세요. 머리카락은 원래 색과 가르마를 살린 풍성한 웨이브와 장식적인 소용돌이 컬, 넓은 리본 모양의 하이라이트로 표현합니다.\n\n종이 위에 손으로 그린 가늘고 날카로운 펜선, 유려한 장식 곡선, 투명한 수채화와 컬러 잉크의 선명한 색 번짐을 사용하세요. 윤곽선과 펜 해칭이 보이고 안료의 농담과 붓자국으로 색이 겹쳐지며, 넓은 하이라이트는 종이 흰색으로 남깁니다. 빨강·파랑·금색·초록을 맑고 밝게 채색하고 작은 흰 별 모양 반짝임을 더하세요. 크고 반짝이는 눈, 긴 속눈썹, 장식적인 모발 곡선이 분명한 고전 순정만화 컬러 페이지로 완성합니다.\n\n복장은 모두 같은 군복으로 고정하지 말고 다음 우선순위로 정하세요. 사용자가 '드레스', '왕자·귀족 예복', '오스칼식 근위대 군복' 중 원하는 복장이나 역할을 지정했다면 사진의 외적 스타일과 관계없이 그 선택을 최우선으로 따릅니다. 별도 지정이 없으면 사진에서 보이는 외적 스타일을 참고해 여성적인 표현에는 마리 앙투아네트를 연상시키는 로코코 궁정 드레스, 남성적인 표현에는 왕자·귀족의 궁정 예복을 기본으로 적용하세요. 이는 그림 속 의상을 고르기 위한 기준이며 사진만으로 실제 성별 정체성을 단정하지 마세요. 외적 스타일이 모호하고 복장 요청도 없으면 생성 전에 드레스와 궁정 예복 중 선호를 한 번만 물어보세요.\n\n드레스는 장밋빛·하늘색·샴페인색 중 인물에게 어울리는 색의 실크, 레이스와 리본, 퍼프 소매, 허리선과 넓게 퍼지는 스커트, 작은 진주 장식을 사용합니다. 머리카락의 원래 길이와 색을 살리며 작은 헤어 장식을 더할 수 있습니다. 드레스에 군복 견장·훈장·칼·군용 망토를 섞지 마세요. 왕자·귀족 예복은 남색·버건디·크림색의 자수 궁정 코트와 조끼, 흰 레이스 크라바트, 단정한 바지로 표현하며 군복 견장·훈장·칼·군용 망토를 넣지 마세요. 금색 견장과 장식 검이 있는 근위대 군복은 사용자가 명시적으로 요청했을 때만 그립니다. 어떤 복장이든 장미 한 송이를 자연스럽게 들고 몸은 살짝 비스듬히 선 채 관객을 바라보는 우아한 주인공으로 표현하세요.\n\n세로 3:4 구도, 머리 전체부터 허벅지 위까지 인물 한 명이 크게 보이는 컬러 원화 한 장입니다. 넓은 순백색 종이 여백에 가느다란 궁전 기둥, 발코니 난간, 담쟁이덩굴로 베르사유의 공간을 암시하고, 가장자리에는 크게 핀 붉은색·분홍색 장미와 초록 잎으로 장식 프레임을 만드세요. 장미와 머리카락이 얼굴을 가리지 않게 합니다.\n\n사진 얼굴 합성, 실사 피부와 모공, 반실사 디지털 페인팅, 3D 명암, 피부의 에어브러시, 현대 웹툰, 애니메이션 셀 채색, 영화적 노을 조명, 갈색 빈티지 필터는 피하세요. 추가 인물, 분할 비교 화면, 만화 칸, 제목·자막·말풍선·로고·워터마크는 넣지 마세요. 사진에 여러 명이 있으면 변환할 한 명을 지정하도록 요청하고, 사진이 없으면 인물 사진 한 장을 요청하세요.",
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/male-court.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "d584f3182c7e156fc6707bf35dd56ce41572702b9b3408139831f03dea17e854"
+      },
+      "note": "AI 생성 원본·결과 · 새 가상 성인 사진 한 장에 드레스 예시와 동일한 현재 공개 프롬프트만 적용했습니다. 별도 복장 지정 없이 남색 자수 코트·크림색 조끼·흰 레이스 크라바트의 궁정 예복으로 표현됐고 군복 견장·훈장·칼·군용 망토는 없습니다. 짧은 검은 머리·사각 안경·얼굴 인상을 반영했으며 머리 볼륨·얼굴 비례·궁전 배경은 재해석됐습니다."
+    }
+  ],
+  "inputFiles": [
+    {
+      "path": "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/female-reference.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "572130ec98deb9560f09b65eb0e133ec06c6e698e70cbc5a2ebc9fc1326e7f28"
+    },
+    {
+      "path": "output/imagegen/rose-of-versailles-costume-fix-2026-10-18/male-reference.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "2099f4e4dbdaf765df6d32283b74a141f29c1b7dbe520dcd396dcfe85229fb0a"
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "32354c7f65df890199d4a83f462bbc0a6bbc0826767e2a8f3f60d8843fe3ac25"
+    },
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.court.reference.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "72290cde4033b22cc2cb293e1527d9d1e7bc5a4a5c09f391d2cb957fb48d61b1"
+    },
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.court.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "0ee4c5fba8fc045c6de6006fb68ed26ffef6af66ea07895cc5cfe33321b3174d"
+    },
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.reference.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "93bdded29889c42526e6fdc15784a0c4065f71342f57784ae131de4c8332a48d"
+    },
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.thumb.webp",
+      "width": 560,
+      "height": 747,
+      "sha256": "e734a306a601c4614e424a71deaa568019658d55148e4e6a6ec8b65dffd17c9a"
+    }
+  ],
+  "validationScope": "Two one-photo default costume tests. Direct role overrides and ambiguous-presentation clarification have not been generation-tested. User feedback images are not used as generation inputs or published.",
+  "preservedIdentity": {
+    "id": "rose-of-versailles-protagonist",
+    "title": "베르사유의 장미 속 주인공이 된 나",
+    "order": -23
+  }
+}

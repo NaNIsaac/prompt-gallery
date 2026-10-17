@@ -4,6 +4,8 @@
 
 2026-10-17 사용자가 승인한 ‘베르사유의 장미 속 주인공이 된 나’를 최상단에 추가해 총 29개입니다. 가상 성인 인물 사진과 사용자 제공 그림체 참고 두 장으로 생성한 3차 결과를 게시합니다. 공개 프롬프트는 사진 한 장용으로 정리했으며 실제 예시의 생성 조건과 차이는 상세에 표시했습니다. [등록 검토](docs/rose-of-versailles-review-2026-10-17.md)와 [실제 입력·공개 문구·파일 해시](docs/image-generation-2026-10-17-rose-of-versailles.json)를 보관합니다.
 
+2026-10-18 베르사유의 장미에서 모두 같은 군복이 되던 문제를 수정했습니다. 복장 직접 지정을 우선하고, 별도 지정이 없으면 사진의 외적 스타일에 맞춰 로코코 드레스나 왕자·귀족 궁정 예복으로 나눕니다. 군복은 직접 요청할 때만 적용합니다. 같은 공개 문구와 각 사진 한 장만으로 만든 드레스·궁정 예복 두 예시를 상세에서 선택할 수 있습니다. [수정 검토](docs/rose-of-versailles-costume-review-2026-10-18.md)와 [전후 문구·실제 입력·파일 해시](docs/rose-of-versailles-costume-revision-2026-10-18.json)를 보관합니다.
+
 HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 런타임 서버, API 키, 데이터베이스, 외부 이미지 호스팅이 필요하지 않습니다.
 
 개발 절차는 [개발 문서 목차](docs/README.md)와 [기여 안내](CONTRIBUTING.md)를 참고하세요. [개발 흐름](docs/development.md), [테스트·CI·배포](docs/testing-and-deployment.md), [프롬프트 등록 원칙](docs/prompt-publishing.md)을 나누어 관리합니다.
