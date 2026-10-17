@@ -12,6 +12,9 @@
 
 - [베르사유의 장미 복장 고정 수정·두 복장 생성 검토](rose-of-versailles-costume-review-2026-10-18.md)
 - [베르사유의 장미 복장 수정 전후·실제 입력·파일 해시](rose-of-versailles-costume-revision-2026-10-18.json)
+- [종이 팝업북 신규 원본 3종 등록 검토](paper-popup-book-review-2026-10-18.md)
+- [종이 팝업북 실제 입력과 원본·결과 파일 해시](image-generation-2026-10-18-paper-popup-book.json)
+
 - [베르사유의 장미 주인공 3차 승인 결과 등록 검토](rose-of-versailles-review-2026-10-17.md)
 - [베르사유의 장미 실제 입력·공개 문구·파일 해시](image-generation-2026-10-17-rose-of-versailles.json)
 - [마인크래프트 범용 프롬프트 3종 예시 검토](minecraft-three-examples-review-2026-10-17.md)
