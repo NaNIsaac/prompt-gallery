@@ -1,0 +1,119 @@
+{
+  "id": "paper-popup-book",
+  "generatedOn": "2026-10-17",
+  "publishedOn": "2026-10-18",
+  "tool": "built-in image_gen.imagegen",
+  "method": "Three new AI reference photographs, each transformed once with exactly the approved paper-texture v2 prompt and that source photograph only. No supplemental style reference, extra prompt instruction, or follow-up edit. Full source and result images converted losslessly to WebP without cropping; thumbnail resized proportionally.",
+  "validation": {
+    "approvedPromptUnchanged": true,
+    "actualPromptsMatchPublished": true,
+    "sourceAndResultPixelsPreserved": true
+  },
+  "records": [
+    {
+      "label": "인물",
+      "referenceOrigin": "New AI-generated synthetic photograph created for this test",
+      "referenceGenerationPrompt": "Create one natural photorealistic photograph of a fictional Korean adult man aged 36, with short slightly wavy dark hair, thin round dark-rimmed glasses, and a relaxed small smile. He is sitting on a pale blue painted garden bench, wearing a mustard yellow cotton overshirt open over a plain ivory T-shirt, dark navy straight trousers, and plain white sneakers. His hands rest loosely on his knees, both hands clearly visible. Show his entire body and both shoes with comfortable space around him. Behind the bench is a low reddish brick garden wall, with green ferns at the left and a single terracotta pot with a leafy shrub at the right. Soft natural morning daylight, realistic skin and fabric texture, candid everyday camera photograph, eye-level three-quarter view, landscape 4:3 composition. Exactly one adult man, no other people, no animals, no text, no lettering, no logos, no watermark. The scene must look like a real photograph, not an illustration, not a miniature, not paper craft, and no book.",
+      "prompt": "첨부한 사진을 색종이와 두꺼운 미술용 종이를 직접 오리고 접어 만든 수제 팝업북으로 바꿔줘. 펼친 책 위에서 사진 속 장면이 여러 겹의 종이로 솟아오르게 해줘. 인물·동물·풍경 중 사진에 실제로 있는 대상을 중심으로 만들고, 여러 대상이 함께 있으면 주요 대상의 수와 함께 있는 관계를 유지해줘.\n\n인물은 얼굴의 고유한 특징·헤어스타일·표정·의상·자세를, 동물은 종류·귀 모양·털색과 무늬·표정·자세를 알아볼 수 있게 유지해줘. 풍경과 건물은 주요 지형·건축물·나무·물길의 상대적인 배치와 대표 색을 유지해줘. 사진에 보이지 않는 신체 부위를 억지로 완성하거나 원본에 없는 인물·동물·건물·소품·무늬를 추가하지 마.\n\n종이 재질이 한눈에 느껴지는 것이 가장 중요해. 모든 인물·동물·사물·배경을 얇고 평평한 무광 색지 조각으로 만들고, 큰 형태를 단순하게 오린 다음 작은 색지 조각을 겹쳐 세부를 표현해줘. 색지마다 잔잔한 펄프 섬유와 불균일한 종이 결, 가위로 자른 약간 투박한 가장자리, 밝은 종이 단면과 미세하게 들뜬 모서리가 보이게 해줘. 겹친 종이의 경계에는 얇고 또렷한 접촉 그림자를 넣어줘. 표면에 거친 필터만 덮지 말고, 종이 조각의 두께·겹침·접힘 자체로 재질을 보여줘.\n\n얼굴의 이목구비와 동물의 무늬는 종이 색면과 소량의 색연필·불투명 과슈 선으로 단순하게 표현해줘. 피부의 모공·윤기, 실제 털 한 올·니트 실·나뭇결·돌 표면을 사실적으로 묘사하지 마. 머리카락과 털은 몇 겹의 색지 덩어리와 오린 윤곽으로, 옷과 건물은 넓은 종이 면과 최소한의 선으로 표현해줘. 물도 반짝이는 액체가 아니라 청록색과 미색 종이를 겹친 평평한 물결로 만들어줘. 얼굴까지 같은 종이 일러스트 재질로 통일해줘.\n\n미색 종이책의 펼친 두 페이지를 바닥으로 삼고, 앞·중간·뒤의 종이 층을 서로 떨어뜨려 세워줘. 중앙 접힘에 연결된 V자 접지, 종이 받침과 연결 탭, 선명한 접힌 자국이 자연스럽게 드러나게 해줘. 각 조각은 속이 꽉 찬 입체 조각이 아니라 얇은 종이를 오려 세운 구조여야 해. 원본의 배치와 분위기를 책 안에 옮기고, 배경이 단순하면 빈 공간을 유지해줘. 주인공을 다른 종이 조각으로 가리지 마.\n\n앞쪽의 약간 높은 사선 시점에서 책 한 권 전체를 보여줘. 표지 모서리·책등·페이지를 자르지 말고 책 둘레에 충분한 배경 여백을 남겨줘. 차분한 밝은 배경, 부드러운 옆빛, 따뜻한 원본 색감을 사용해줘. 실제 종이 공예품을 촬영한 느낌으로 만들되 사진을 오려 붙인 표면, 매끈한 3D 렌더, 점토·플라스틱·도자기·천 재질은 피하고, 글자·책 제목·로고·워터마크 없이 4:3 가로 이미지 한 장으로 완성해줘.\n\n사진이 첨부되지 않았거나 대상을 알아보기 어려우면 사진 한 장을 요청해줘.",
+      "tool": "built-in image_gen.imagegen",
+      "additionalInstructions": "",
+      "referenceGenerationAttempts": 1,
+      "transformationAttempts": 1,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/paper-popup-book.reference.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "b2aa3d00c5ba340ecca9540651ce97837bc40ac0f83a46e9a0acfef1516d8b0b",
+          "sourceArtifact": "exec-46f22952-2d82-4c1b-ba3a-bb5aa9db015f.png",
+          "sourceSha256": "f80c754d7c4181f2b472b32f9de44d873d49edae6057a943afedc463e4eb8456",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/paper-popup-book.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "1c0e717d4e479e22996ed75459958ad793f95dddb9578cc7829db30ddf1f9f8d",
+          "sourceArtifact": "exec-0e9f9da0-5448-4e34-bd39-1735c796e5f5.png",
+          "sourceSha256": "8ac271ff14ad8a9c11fcd5cc5b426c64f19ca8250b8cd8f325b55a3f5b8225c3",
+          "pixelsMatchSource": true
+        }
+      ],
+      "reviewNote": "AI 생성 원본·결과 · 새 가상 성인 사진 한 장에 공개 프롬프트만 적용했습니다. 안경·노란 셔츠·남색 바지·흰 신발·앉은 자세와 파란 벤치·벽돌 담·화분의 배치를 반영했습니다. 얼굴은 종이 일러스트로 단순화됐고 옷 주름과 벤치 일부는 두꺼운 입체 모형처럼 표현됐습니다."
+    },
+    {
+      "label": "반려동물",
+      "referenceOrigin": "New AI-generated synthetic photograph created for this test",
+      "referenceGenerationPrompt": "Create one natural photorealistic photograph of a single orange-and-white domestic short-haired cat sitting upright on a wide light gray painted windowsill in a quiet apartment. The cat has orange tabby patches over its head and back, a white muzzle, chest and front paws, amber eyes, and a plain muted red collar without a tag. Its whole body, both front paws and its orange tail curled along the right side are fully visible. The cat looks toward the camera with upright ears. Behind it, a simple tall window has a light gray vertical frame, a softly blurred green garden outside, and an ivory linen curtain pulled aside on the left. A small plain cobalt blue ceramic pot with a green succulent sits on the sill on the right, separated clearly from the cat. Soft diffuse daylight, lifelike fur and whiskers, realistic camera photograph, slightly low eye-level view, landscape 4:3 composition. Exactly one cat, no people, no other animals, no cushions, no text, no lettering, no logos, no watermark. Do not make an illustration, paper craft, toy, miniature, or book.",
+      "prompt": "첨부한 사진을 색종이와 두꺼운 미술용 종이를 직접 오리고 접어 만든 수제 팝업북으로 바꿔줘. 펼친 책 위에서 사진 속 장면이 여러 겹의 종이로 솟아오르게 해줘. 인물·동물·풍경 중 사진에 실제로 있는 대상을 중심으로 만들고, 여러 대상이 함께 있으면 주요 대상의 수와 함께 있는 관계를 유지해줘.\n\n인물은 얼굴의 고유한 특징·헤어스타일·표정·의상·자세를, 동물은 종류·귀 모양·털색과 무늬·표정·자세를 알아볼 수 있게 유지해줘. 풍경과 건물은 주요 지형·건축물·나무·물길의 상대적인 배치와 대표 색을 유지해줘. 사진에 보이지 않는 신체 부위를 억지로 완성하거나 원본에 없는 인물·동물·건물·소품·무늬를 추가하지 마.\n\n종이 재질이 한눈에 느껴지는 것이 가장 중요해. 모든 인물·동물·사물·배경을 얇고 평평한 무광 색지 조각으로 만들고, 큰 형태를 단순하게 오린 다음 작은 색지 조각을 겹쳐 세부를 표현해줘. 색지마다 잔잔한 펄프 섬유와 불균일한 종이 결, 가위로 자른 약간 투박한 가장자리, 밝은 종이 단면과 미세하게 들뜬 모서리가 보이게 해줘. 겹친 종이의 경계에는 얇고 또렷한 접촉 그림자를 넣어줘. 표면에 거친 필터만 덮지 말고, 종이 조각의 두께·겹침·접힘 자체로 재질을 보여줘.\n\n얼굴의 이목구비와 동물의 무늬는 종이 색면과 소량의 색연필·불투명 과슈 선으로 단순하게 표현해줘. 피부의 모공·윤기, 실제 털 한 올·니트 실·나뭇결·돌 표면을 사실적으로 묘사하지 마. 머리카락과 털은 몇 겹의 색지 덩어리와 오린 윤곽으로, 옷과 건물은 넓은 종이 면과 최소한의 선으로 표현해줘. 물도 반짝이는 액체가 아니라 청록색과 미색 종이를 겹친 평평한 물결로 만들어줘. 얼굴까지 같은 종이 일러스트 재질로 통일해줘.\n\n미색 종이책의 펼친 두 페이지를 바닥으로 삼고, 앞·중간·뒤의 종이 층을 서로 떨어뜨려 세워줘. 중앙 접힘에 연결된 V자 접지, 종이 받침과 연결 탭, 선명한 접힌 자국이 자연스럽게 드러나게 해줘. 각 조각은 속이 꽉 찬 입체 조각이 아니라 얇은 종이를 오려 세운 구조여야 해. 원본의 배치와 분위기를 책 안에 옮기고, 배경이 단순하면 빈 공간을 유지해줘. 주인공을 다른 종이 조각으로 가리지 마.\n\n앞쪽의 약간 높은 사선 시점에서 책 한 권 전체를 보여줘. 표지 모서리·책등·페이지를 자르지 말고 책 둘레에 충분한 배경 여백을 남겨줘. 차분한 밝은 배경, 부드러운 옆빛, 따뜻한 원본 색감을 사용해줘. 실제 종이 공예품을 촬영한 느낌으로 만들되 사진을 오려 붙인 표면, 매끈한 3D 렌더, 점토·플라스틱·도자기·천 재질은 피하고, 글자·책 제목·로고·워터마크 없이 4:3 가로 이미지 한 장으로 완성해줘.\n\n사진이 첨부되지 않았거나 대상을 알아보기 어려우면 사진 한 장을 요청해줘.",
+      "tool": "built-in image_gen.imagegen",
+      "additionalInstructions": "",
+      "referenceGenerationAttempts": 1,
+      "transformationAttempts": 1,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/paper-popup-book.pet.reference.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "605cff8dbec55139fc67a139915c803b1127c6ec46fdc6af38e74cbf0ada8ac0",
+          "sourceArtifact": "exec-c28de896-c43b-4443-984d-dab22d02e101.png",
+          "sourceSha256": "2740bf81ec043c3518bb9aff833eb1fb00b5ce7fee57e4835ea42d181c3fc4c4",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/paper-popup-book.pet.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "4218ac7a7fa4c8436651abf37deb08a44d0eed21b8828e4dee6ea9a86251c27c",
+          "sourceArtifact": "exec-335c859a-9d5e-4203-8f82-24fb9d66ad70.png",
+          "sourceSha256": "500d7fa93a93f456e3daa35538d2e37d88ccb08d0fb37f7378a23bf5a68f25cf",
+          "pixelsMatchSource": true
+        }
+      ],
+      "reviewNote": "AI 생성 원본·결과 · 새 가상 고양이 사진 한 장에 같은 공개 프롬프트만 적용했습니다. 주황·흰 털 무늬·붉은 목줄·앉은 자세·오른쪽 꼬리와 창가를 겹친 색지로 표현했습니다. 눈이 더 둥글어지고 화분 식물의 잎 모양이 달라졌으며 창밖 꽃 모양이 늘었습니다. 원본에서 일부 잘린 화분은 전체 형태로 재해석됐습니다."
+    },
+    {
+      "label": "풍경",
+      "referenceOrigin": "New AI-generated synthetic photograph created for this test",
+      "referenceGenerationPrompt": "Create one photorealistic travel photograph of a fictional peaceful lakeside landscape, landscape 4:3 composition. At the left stands one small weathered pale blue timber boathouse with a simple muted red gabled roof and one cream-colored door. A narrow wooden jetty extends from the left shore diagonally toward the lower center of the calm blue-green lake. At the right shore a single large willow tree leans gently over the water, with a grassy bank and a few light gray rocks. Low forest-covered green hills stretch across the distant background beneath a pale blue sky with a few soft clouds. Natural late-afternoon daylight, realistic scale, believable reflections, moderate depth of field and natural muted colors. Keep all major elements within the frame with space around the boathouse and willow. No people, no animals, no boats, no additional buildings, no fences, no signage, no text, no logos, no watermark. Authentic outdoor camera photograph, not illustration, miniature, paper craft, or a book.",
+      "prompt": "첨부한 사진을 색종이와 두꺼운 미술용 종이를 직접 오리고 접어 만든 수제 팝업북으로 바꿔줘. 펼친 책 위에서 사진 속 장면이 여러 겹의 종이로 솟아오르게 해줘. 인물·동물·풍경 중 사진에 실제로 있는 대상을 중심으로 만들고, 여러 대상이 함께 있으면 주요 대상의 수와 함께 있는 관계를 유지해줘.\n\n인물은 얼굴의 고유한 특징·헤어스타일·표정·의상·자세를, 동물은 종류·귀 모양·털색과 무늬·표정·자세를 알아볼 수 있게 유지해줘. 풍경과 건물은 주요 지형·건축물·나무·물길의 상대적인 배치와 대표 색을 유지해줘. 사진에 보이지 않는 신체 부위를 억지로 완성하거나 원본에 없는 인물·동물·건물·소품·무늬를 추가하지 마.\n\n종이 재질이 한눈에 느껴지는 것이 가장 중요해. 모든 인물·동물·사물·배경을 얇고 평평한 무광 색지 조각으로 만들고, 큰 형태를 단순하게 오린 다음 작은 색지 조각을 겹쳐 세부를 표현해줘. 색지마다 잔잔한 펄프 섬유와 불균일한 종이 결, 가위로 자른 약간 투박한 가장자리, 밝은 종이 단면과 미세하게 들뜬 모서리가 보이게 해줘. 겹친 종이의 경계에는 얇고 또렷한 접촉 그림자를 넣어줘. 표면에 거친 필터만 덮지 말고, 종이 조각의 두께·겹침·접힘 자체로 재질을 보여줘.\n\n얼굴의 이목구비와 동물의 무늬는 종이 색면과 소량의 색연필·불투명 과슈 선으로 단순하게 표현해줘. 피부의 모공·윤기, 실제 털 한 올·니트 실·나뭇결·돌 표면을 사실적으로 묘사하지 마. 머리카락과 털은 몇 겹의 색지 덩어리와 오린 윤곽으로, 옷과 건물은 넓은 종이 면과 최소한의 선으로 표현해줘. 물도 반짝이는 액체가 아니라 청록색과 미색 종이를 겹친 평평한 물결로 만들어줘. 얼굴까지 같은 종이 일러스트 재질로 통일해줘.\n\n미색 종이책의 펼친 두 페이지를 바닥으로 삼고, 앞·중간·뒤의 종이 층을 서로 떨어뜨려 세워줘. 중앙 접힘에 연결된 V자 접지, 종이 받침과 연결 탭, 선명한 접힌 자국이 자연스럽게 드러나게 해줘. 각 조각은 속이 꽉 찬 입체 조각이 아니라 얇은 종이를 오려 세운 구조여야 해. 원본의 배치와 분위기를 책 안에 옮기고, 배경이 단순하면 빈 공간을 유지해줘. 주인공을 다른 종이 조각으로 가리지 마.\n\n앞쪽의 약간 높은 사선 시점에서 책 한 권 전체를 보여줘. 표지 모서리·책등·페이지를 자르지 말고 책 둘레에 충분한 배경 여백을 남겨줘. 차분한 밝은 배경, 부드러운 옆빛, 따뜻한 원본 색감을 사용해줘. 실제 종이 공예품을 촬영한 느낌으로 만들되 사진을 오려 붙인 표면, 매끈한 3D 렌더, 점토·플라스틱·도자기·천 재질은 피하고, 글자·책 제목·로고·워터마크 없이 4:3 가로 이미지 한 장으로 완성해줘.\n\n사진이 첨부되지 않았거나 대상을 알아보기 어려우면 사진 한 장을 요청해줘.",
+      "tool": "built-in image_gen.imagegen",
+      "additionalInstructions": "",
+      "referenceGenerationAttempts": 1,
+      "transformationAttempts": 1,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/paper-popup-book.landscape.reference.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "c4150ed64a65ad3a4576ea45306330102f0a60c7b5b442db409b38d6e1aa948f",
+          "sourceArtifact": "exec-20767336-82b4-41b6-94b9-b8397e8d8144.png",
+          "sourceSha256": "341d8ec1c85b12e19f91a136abe5f67cc878849fea1bd9ba78e5918461a062f9",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/paper-popup-book.landscape.webp",
+          "width": 1448,
+          "height": 1086,
+          "sha256": "06f2034a110b432ddc55fdad8b7d856f81dfc6799229463582695660eb35de8a",
+          "sourceArtifact": "exec-8a062b39-ec10-4d83-8415-7799e504df7f.png",
+          "sourceSha256": "e6871cf36afd4267c59521696ac311a08d0eb2a131b7304fc4bde7c707886a51",
+          "pixelsMatchSource": true
+        }
+      ],
+      "reviewNote": "AI 생성 원본·결과 · 새 가상 호숫가 사진 한 장에 같은 공개 프롬프트만 적용했습니다. 왼쪽 파란 건물·붉은 지붕·부두·오른쪽 버드나무·뒤쪽 숲 능선을 유지하고 물결을 겹친 종이로 표현했습니다. 반사에 사실적인 느낌이 일부 남고 바위·잎·구름 세부는 재해석됐습니다. 책 좌우 끝이 화면에 닿아 충분한 여백 조건은 충족하지 못했습니다."
+    }
+  ],
+  "thumbnail": {
+    "path": "assets/images/paper-popup-book.thumb.webp",
+    "width": 560,
+    "height": 420,
+    "sha256": "bb5bdba88284dfb637896edf597f64e854188d32a6274108bcfeff978a8825b5"
+  }
+}
