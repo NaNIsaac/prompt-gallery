@@ -1,0 +1,102 @@
+{
+  "id": "rose-of-versailles-protagonist",
+  "generatedOn": "2026-10-17",
+  "tool": "built-in image_gen.imagegen",
+  "method": "AI 가상 성인 사진으로 1·2차를 각각 독립 생성했다. 이후 사용자 제공 그림체 참고와 같은 인물 사진 두 장에 3차 문구를 적용한 승인 결과를 그대로 게시한다. 공개 문구는 사진 한 장용으로 정리했으며 단독 생성 테스트하지 않았다.",
+  "publicPrompt": "첨부한 인물 사진 속 내가 『베르사유의 장미』의 주인공이 된 고전 순정만화 컬러 원화를 그려 주세요.\n\n사진 속 인물의 머리색, 가르마, 얼굴의 구별되는 인상, 점과 안경 같은 고유한 특징을 살리면서 얼굴과 몸 전체를 고전 순정만화의 과장되고 우아한 비례로 바꿔 주세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요. 눈을 사진처럼 작게 유지하기보다 고전 순정만화의 그림체를 충분히 적용하되 같은 인물의 특징이 남게 해 주세요.\n\n눈은 얼굴에 비해 크고 길며 큼직한 홍채 안에 흰 별빛과 여러 반사광이 있고, 위아래 속눈썹은 길고 선명하게 뻗습니다. 콧대는 가늘고 길고 코끝은 작은 펜선으로, 입술은 작고 섬세한 장밋빛으로, 턱은 길고 날렵하며 목과 손가락도 우아하게 길게 그립니다. 피부는 종이의 흰빛을 살리고 눈 주변에는 담청색과 옅은 분홍색 그림자를 얇게 사용하세요. 머리카락은 원래 색과 가르마를 살린 풍성한 웨이브와 장식적인 소용돌이 컬, 넓은 리본 모양의 하이라이트로 표현합니다.\n\n종이 위에 손으로 그린 가늘고 날카로운 펜선, 유려한 장식 곡선, 투명한 수채화와 컬러 잉크의 선명한 색 번짐을 사용하세요. 윤곽선과 펜 해칭이 보이고 안료의 농담과 붓자국으로 색이 겹쳐지며, 넓은 하이라이트는 종이 흰색으로 남깁니다. 빨강·파랑·금색·초록을 맑고 밝게 채색하고 작은 흰 별 모양 반짝임을 더하세요. 크고 반짝이는 눈, 긴 속눈썹, 장식적인 모발 곡선이 분명한 고전 순정만화 컬러 페이지로 완성합니다.\n\n인물은 오스칼을 연상시키는 왕실 근위대 장교입니다. 진홍색·아이보리 군복, 금색 견장과 장식 끈, 흰 러플과 망토를 입고 한 손에 붉은 장미 한 송이를 가볍게 듭니다. 몸은 약간 비스듬히 선 채 관객을 바라보며 우아하고 결연한 주인공의 모습을 표현하세요.\n\n세로 3:4 구도, 머리 전체부터 허벅지 위까지 인물 한 명이 크게 보이는 컬러 원화 한 장입니다. 넓은 순백색 종이 여백에 가느다란 궁전 기둥, 발코니 난간, 담쟁이덩굴로 베르사유의 공간을 암시하고, 가장자리에는 크게 핀 붉은색·분홍색 장미와 초록 잎으로 장식 프레임을 만드세요. 장미와 머리카락이 얼굴을 가리지 않게 합니다.\n\n사진 얼굴 합성, 실사 피부와 모공, 반실사 디지털 페인팅, 3D 명암, 피부의 에어브러시, 현대 웹툰, 애니메이션 셀 채색, 영화적 노을 조명, 갈색 빈티지 필터는 피하세요. 추가 인물, 분할 비교 화면, 만화 칸, 제목·자막·말풍선·로고·워터마크는 넣지 마세요. 사진에 여러 명이 있으면 변환할 한 명을 지정하도록 요청하고, 사진이 없으면 인물 사진 한 장을 요청하세요.",
+  "publicPromptTestedAlone": false,
+  "selectedVersion": "v3",
+  "toolTransparentBackground": false,
+  "referenceOrigin": "AI-generated fictional adult; not the actual user",
+  "styleReference": {
+    "path": "output/imagegen/rose-of-versailles-test-2026-10-17/style-reference.png",
+    "width": 750,
+    "height": 1086,
+    "sha256": "4b89f597f4cd26e16cdda49d3a01d27539c100e47684cf8b9a71c5c62d7e8c89",
+    "role": "User-provided style reference, input 2 for v3 only",
+    "availability": "Retained locally for provenance; user-provided reference art is not published as a site asset."
+  },
+  "generationSteps": [
+    {
+      "version": "reference",
+      "inputs": [],
+      "actualToolPrompt": "Use case: photorealistic-natural.\nCreate one realistic reference portrait photograph of a completely fictional Korean adult woman, age 28, for a face-preserving illustration transformation test. She has an oval face with a slightly defined jaw, dark brown almond-shaped eyes, natural straight brows, a small beauty mark just below her left eye, and shoulder-length dark brown wavy hair with an off-center part. Keep her face distinctive and natural, with minimal makeup. She wears a plain ivory crew-neck knit top, no jewelry or glasses. Chest-up portrait with full hair visible, her shoulders slightly turned but her face looking directly at the camera, calm confident expression. Plain warm light-gray wall, soft window daylight, realistic skin texture, sharp readable eyes, neutral photographic colors. Single adult subject only. Portrait 3:4 composition. No text, logos, watermark, collage, illustration, celebrity resemblance or other people.",
+      "selected": false,
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-test-2026-10-17/reference.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "572130ec98deb9560f09b65eb0e133ec06c6e698e70cbc5a2ebc9fc1326e7f28",
+        "availability": "Local test PNG; not published as a site asset."
+      }
+    },
+    {
+      "version": "v1",
+      "inputs": [
+        "reference.png"
+      ],
+      "actualToolPrompt": "첨부한 인물 사진을 참고해, 내가 애니메이션 『베르사유의 장미』 속 주인공이 되어 베르사유 궁전에 서 있는 장면을 만들어 주세요.\n\n사진 속 인물의 얼굴형, 눈매, 눈썹, 코와 입의 형태, 피부색, 점 같은 고유한 특징, 헤어스타일과 머리색을 알아볼 수 있게 유지하면서, 얼굴과 몸 전체를 고전 순정만화풍의 손그림 애니메이션 캐릭터로 재해석해 주세요. 눈은 반짝이고 섬세하게 그리되 인물의 인상이 사라질 만큼 과장하지 마세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요.\n\n인물은 오스칼을 연상시키는 기품 있는 왕실 근위대 장교입니다. 진홍색과 아이보리의 18세기풍 정장 군복, 금색 견장과 장식 끈, 높은 깃과 흰 러플, 허리의 장식용 검을 착용합니다. 바람에 머리카락과 어깨의 망토가 가볍게 흩날리고, 몸은 살짝 비스듬히 서되 얼굴은 카메라를 향합니다. 차분하면서도 결연하고 낭만적인 주인공의 표정을 표현해 주세요.\n\n배경은 베르사유 궁전의 장미 정원과 금빛 난간이 있는 테라스입니다. 뒤로 우아한 궁전 창문과 잘 정돈된 정원, 멀리 분수대가 보이고, 저녁 햇빛과 흩날리는 장미 꽃잎이 장면에 낭만적인 분위기를 더합니다. 인물이 실제로 그 공간에 서 있도록 같은 원근과 조명으로 자연스럽게 연결해 주세요.\n\n1970년대 말 고전 순정 애니메이션의 한 장면처럼 완성해 주세요. 가늘고 우아한 잉크 선, 길고 섬세한 속눈썹, 윤곽이 분명한 머리카락 덩어리, 2~3단계로 나뉘는 평면 셀 채색, 손으로 그린 수채화풍 궁전 배경, 은은한 필름 입자를 사용합니다. 인물과 배경의 화풍을 통일하고 실사 피부나 현대적인 3D 광택은 없애 주세요. 장미와 빛 표현은 화면 가장자리에 절제해서 배치해 얼굴을 가리지 않게 합니다.\n\n가로 4:3 화면, 머리 전체부터 허리 아래까지 보이는 중간 거리 구도. 인물은 한 명만 등장하며 얼굴이 선명하게 보여야 합니다. 사진을 그대로 붙인 얼굴, 실사 코스프레, 3D 렌더, 현대 웹툰 채색, 과한 보석 장식, 만화 칸 분할, 제목, 자막, 로고, 워터마크 없이, 내가 『베르사유의 장미』의 새로운 주인공이 된 애니메이션 장면 한 장으로 만들어 주세요.",
+      "selected": false,
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-test-2026-10-17/result-v1.png",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "8adf0077649468e86d66713db85124b922b059f1d1f9350c871ea2a8396bff41",
+        "availability": "Local test PNG; not published as a site asset."
+      }
+    },
+    {
+      "version": "v2",
+      "inputs": [
+        "reference.png"
+      ],
+      "actualToolPrompt": "첨부한 인물 사진을 참고해, 내가 애니메이션 『베르사유의 장미』 속 주인공이 되어 베르사유 궁전에 서 있는 장면을 만들어 주세요.\n\n사진 속 인물의 얼굴형, 눈매, 눈썹, 코와 입의 형태, 피부색, 점 같은 고유한 특징, 헤어스타일과 머리색을 알아볼 수 있게 유지하면서, 얼굴과 몸 전체를 고전 순정만화풍의 손그림 애니메이션 캐릭터로 재해석해 주세요. 눈은 반짝이고 섬세하게 그리되 인물의 인상이 사라질 만큼 과장하지 마세요. 기존 오스칼이나 마리 앙투아네트의 얼굴로 바꾸거나 머리를 무조건 금발로 바꾸지 마세요.\n\n인물은 오스칼을 연상시키는 기품 있는 왕실 근위대 장교입니다. 진홍색과 아이보리의 18세기풍 정장 군복, 금색 견장과 장식 끈, 높은 깃과 흰 러플, 허리의 장식용 검을 착용합니다. 바람에 머리카락과 어깨의 망토가 가볍게 흩날리고, 몸은 살짝 비스듬히 서되 얼굴은 카메라를 향합니다. 차분하면서도 결연하고 낭만적인 주인공의 표정을 표현해 주세요.\n\n배경은 베르사유 궁전의 장미 정원과 금빛 난간이 있는 테라스입니다. 뒤로 우아한 궁전 창문과 잘 정돈된 정원, 멀리 분수대가 보이고, 저녁 햇빛과 흩날리는 장미 꽃잎이 장면에 낭만적인 분위기를 더합니다. 인물이 실제로 그 공간에 서 있도록 같은 원근과 조명으로 자연스럽게 연결해 주세요.\n\n1970년대 말 고전 순정 애니메이션의 한 장면처럼 완성해 주세요. 가늘고 우아한 잉크 선, 길고 섬세한 속눈썹, 윤곽이 분명한 머리카락 덩어리, 2~3단계로 나뉘는 평면 셀 채색, 손으로 그린 수채화풍 궁전 배경, 은은한 필름 입자를 사용합니다. 인물과 배경의 화풍을 통일하고 실사 피부나 현대적인 3D 광택은 없애 주세요. 장미와 빛 표현은 화면 가장자리에 절제해서 배치해 얼굴을 가리지 않게 합니다.\n\n가로 4:3 화면, 머리 전체부터 허리 아래까지 보이는 중간 거리 구도. 인물은 한 명만 등장하며 얼굴이 선명하게 보여야 합니다. 사진을 그대로 붙인 얼굴, 실사 코스프레, 3D 렌더, 현대 웹툰 채색, 과한 보석 장식, 만화 칸 분할, 제목, 자막, 로고, 워터마크 없이, 내가 『베르사유의 장미』의 새로운 주인공이 된 애니메이션 장면 한 장으로 만들어 주세요.\n\n화풍 보정: 최종 화면은 1979년 TV 애니메이션 『베르사유의 장미』의 복원된 셀 원화 스틸처럼 보여야 합니다. 인물은 배경과 다른 셀 레이어로 그린 느낌의 또렷하고 간결한 잉크 윤곽선, 균일한 불투명 색, 피부와 군복에 각각 기본색과 그림자색 두 단계만 사용합니다. 얼굴에 종이 질감, 수채화 번짐, 피부 그라데이션을 넣지 마세요. 눈은 고전 순정만화의 길게 올라간 아몬드형 윤곽, 굵고 긴 윗속눈썹, 별처럼 맑은 홍채 반사광으로 표현하되 원본 눈매와 눈 아래 점을 살려 주세요. 머리카락은 가는 실선 수백 가닥 대신 넓고 유려한 곡선 덩어리와 간결한 하이라이트로 정리합니다. 군복의 금색 장식은 작은 무늬나 사실적인 금속 광택 없이 간략한 선과 색으로 표현합니다. 궁전 배경만 손으로 칠한 과슈 미술로 남기고 건축 장식의 세부 밀도를 줄입니다. 현대 디지털 로맨스 일러스트의 부드러운 렌더링을 피하고, 얼굴 특징과 구도·복장·배경 설정은 앞선 지시를 유지해 주세요.",
+      "selected": false,
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-test-2026-10-17/result-v2.png",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "6fbd219f15a061db8a47b5dca1d3d02bc2e9f4b1858d2b0d5640bfbf40b0d33d",
+        "availability": "Local test PNG; not published as a site asset."
+      }
+    },
+    {
+      "version": "v3",
+      "inputs": [
+        "reference.png",
+        "style-reference.png"
+      ],
+      "actualToolPrompt": "첨부 이미지 1의 인물을 첨부 이미지 2처럼 『베르사유의 장미』 고전 순정만화 컬러 원화의 주인공으로 다시 그려 주세요.\n\n[입력의 역할]\n이미지 1: 주인공 얼굴과 머리색을 정하는 인물 사진. 이미지 2: 그림체·눈과 얼굴의 데포르메·펜선·채색·장미 장식을 맞추는 최우선 화풍 기준. 이미지 2의 두 인물이나 기존 캐릭터의 얼굴을 복사하지 말고, 이미지 1 속 인물 한 명만 새롭게 그리세요. 이전에 생성한 결과물은 참고하지 않습니다.\n\n[가장 중요한 그림체]\n이미지 2에서 보이는 고전 순정만화의 과장된 조형을 적극적으로 적용하세요. 눈은 얼굴에 비해 크고 길며 큼직한 홍채 안에 흰 별빛과 여러 반사광이 있고, 위아래 속눈썹은 길고 선명하게 뻗습니다. 콧대는 가늘고 길고 코끝은 작은 펜선으로, 입술은 작고 섬세한 장밋빛으로, 턱은 길고 날렵하며 목과 손가락도 우아하게 길게 그립니다. 얼굴 피부는 종이의 흰빛을 살리고 눈 주변에 담청색·옅은 분홍색 그림자를 얇게 사용합니다. 원본의 눈 모양을 사진처럼 작게 유지하려 하지 말고, 인물의 구별되는 인상과 점·가르마를 남긴 채 이 순정만화의 얼굴 비례로 완전히 변환합니다. 얼굴만 실사처럼 남기는 것은 금지합니다.\n\n종이 위 손으로 그린 가늘고 날카로운 펜선, 유려한 장식 곡선, 투명한 수채화와 컬러 잉크의 선명한 색 번짐을 사용하세요. 윤곽선과 펜 해칭이 보이고, 안료의 농담과 붓자국으로 색이 겹쳐지며 넓은 하이라이트는 종이 흰색으로 남깁니다. 머리카락은 길게 굽이치는 풍성한 웨이브와 장식적인 소용돌이 컬, 넓은 리본 모양의 빛으로 그립니다. 의상은 이미지 2처럼 선명한 빨강·파랑·금색 장식과 작은 흰 별 모양 반짝임을 가진 채색입니다. 색은 맑고 밝으며 황갈색 필터를 씌우지 않습니다. 평범한 현대 로맨스 삽화보다 훨씬 극적인 고전 순정만화의 눈·속눈썹·모발 곡선이 핵심입니다.\n\n[인물]\n이미지 1 속 성인 인물의 짙은 갈색 머리, 비대칭 가르마, 눈 아래 작은 점, 얼굴의 구별되는 인상을 유지하세요. 머리를 무조건 금발로 바꾸지 마세요. 오스칼을 연상시키는 왕실 근위대 장교로, 진홍색·아이보리 군복, 금색 견장과 장식 끈, 흰 러플과 망토를 입고 있습니다. 한 손에 붉은 장미 한 송이를 가볍게 들고, 몸은 약간 비스듬히 선 채 눈빛은 관객을 향합니다. 우아하고 결연한 주인공의 모습입니다.\n\n[구도]\n세로 3:4 컬러 원화 한 장. 머리 전체부터 허벅지 위까지 인물 한 명이 크게 보이도록 합니다. 바탕은 넓은 순백색 종이 여백이고, 뒤쪽의 좁고 긴 궁전 기둥·발코니 난간과 담쟁이덩굴로 베르사유의 공간을 암시합니다. 가장자리에 크게 핀 붉은색·분홍색 장미와 초록 잎을 이미지 2처럼 장식적인 프레임으로 배치합니다. 장미는 장식이지만 얼굴을 가리지 않습니다. 장면 전체를 가득 채운 정밀한 궁전 풍경 대신 흰 여백과 인물·장미·가느다란 건축선이 어우러지는 고전 만화 컬러 페이지로 완성하세요.\n\n사진 얼굴 합성, 실사 피부·모공, 반실사 디지털 페인팅, 입체적인 3D 명암, 피부의 부드러운 에어브러시, 현대 웹툰, 애니메이션 셀 채색, 영화적 노을 조명, 갈색 빈티지 필터는 피하세요. 두 번째 인물, 분할 비교 화면, 만화 칸, 제목·자막·말풍선·로고·워터마크를 넣지 마세요.",
+      "selected": true,
+      "output": {
+        "path": "output/imagegen/rose-of-versailles-test-2026-10-17/result-v3.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "41f7b66e3b657183a25fe36ba1adc05f893d9786f251324a97124f25ffc71873",
+        "availability": "Local test PNG; not published as a site asset."
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.reference.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "93bdded29889c42526e6fdc15784a0c4065f71342f57784ae131de4c8332a48d"
+    },
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "775dee9395d6f1177910bcb9f45dabf0eab57bc3201b676a9269279e3918f36a"
+    },
+    {
+      "path": "assets/images/rose-of-versailles-protagonist.thumb.webp",
+      "width": 560,
+      "height": 747,
+      "sha256": "bfbbe6f84346a2d71dd499a5d47ca3df229dcd414b19982294a5904819c083c6"
+    }
+  ],
+  "reviewNote": "AI 생성 원본·결과 · 가상의 성인 사진과 사용자가 제공한 그림체 참고 두 장에 3차 프롬프트를 적용한 승인 예시입니다. 공개 문구는 본인 사진 한 장에 쓰도록 정리했으며 이 문구만으로 재생성한 결과는 아닙니다. 짙은 머리색·가르마·눈 아래 점을 살리고 큰 별빛 눈동자, 긴 속눈썹, 근위대 군복과 장미를 표현했습니다. 얼굴 비례와 머리 길이는 순정만화식으로 달라졌으며 원작보다 모발·군복 묘사가 조밀합니다.",
+  "validationScope": "One fictional adult, three tests; v3 uses both portrait and user style reference. Public one-photo prompt and other people not generation-tested."
+}
