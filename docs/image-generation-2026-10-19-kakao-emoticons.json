@@ -1,0 +1,124 @@
+{
+  "id": "kakao-emoticons",
+  "date": "2026-10-19",
+  "tool": "built-in image_gen.imagegen",
+  "selectedVersion": "v2",
+  "approvedByUser": true,
+  "approval": "사용자가 채팅 선택지에서 결과 확정·PR 제출을 선택했습니다.",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/kakao-emoticons",
+  "baseCommit": "e1a728d958e435dbee5410ab8d80fed1199c8575",
+  "referenceOrigin": "AI-generated fictional adult portrait; not a real user photo",
+  "publicPrompt": "첨부한 사진 속 주인공을 카카오톡 대화에서 쓰기 좋은 귀여운 오리지널 이모티콘 캐릭터로 바꿔 주세요. 사진은 캐릭터의 외형을 정하는 참조 이미지입니다. 사진에서 보이는 헤어스타일과 머리색, 안경 유무와 모양, 얼굴의 인상, 옷의 주요 색과 형태를 단순화해 유지하고, 모든 칸에서 같은 인물로 알아볼 수 있게 그려 주세요. 사진 속 포즈와 배경은 따라 할 필요가 없습니다.\n\n하나의 정사각형 이미지 안에 3행 3열로 총 9개의 서로 다른 이모티콘을 배치해 주세요. 각 칸에 같은 캐릭터 한 명과 아래의 한국어 문구 하나만 넣고, 왼쪽 위부터 행 순서대로 구성해 주세요.\n1. 손을 흔들며 밝게 인사 — \"안녕\"\n2. 눈을 찡긋 감고 배를 잡으며 크게 웃기 — \"ㅋㅋㅋ\"\n3. 두 손을 모으고 고개를 살짝 숙여 감사 — \"고마워\"\n4. 엄지를 치켜들며 신나게 동의 — \"좋아!\"\n5. 눈과 입을 동그랗게 벌리고 두 손을 볼에 대며 놀라기 — \"헉!\"\n6. 눈물이 고인 눈과 축 처진 어깨로 서운해하기 — \"힝...\"\n7. 두 손바닥을 모아 미안한 표정으로 사과 — \"미안\"\n8. 입을 가리고 하품하며 꾸벅꾸벅 졸기 — \"졸려\"\n9. 볼을 부풀리고 두 주먹을 쥐며 귀엽게 화내기 — \"화남\"\n\n큰 머리와 작은 몸의 2등신에 가까운 비율, 둥글고 간결한 실루엣, 일정하고 두꺼운 진한 갈색 외곽선, 깔끔한 평면 채색, 최소한의 음영, 분홍빛 볼로 표현해 주세요. 작은 크기에서도 감정과 동작이 명확하게 읽혀야 합니다. 손과 팔이 자연스럽게 연결되게 하고 캐릭터의 옷과 외형을 칸마다 일관되게 유지해 주세요. 문구는 굵고 둥근 손글씨로 정확하게 쓰고 얼굴이나 손과 겹치지 않게 배치해 주세요. 캐릭터와 문구 둘레에는 얇은 흰색 테두리를 둘러 주세요. 각 이모티콘은 칸 안에서 충분한 여백을 두고 잘리지 않게 하며, 이웃 칸과 겹치지 않게 해 주세요. 배경은 실제 투명으로 만들고 격자선, 칸 테두리, 제목, 앱 UI, 로고, 워터마크는 넣지 마세요. 기존 카카오프렌즈 캐릭터나 다른 상용 캐릭터는 추가하지 마세요.\n\n특히 안경을 쓴 원본이라면 눈을 감거나 졸거나 고개를 숙이는 칸에서도 안경테와 다리를 반드시 유지해 주세요. 눈썹·눈과 안경을 구분하고 9개 칸 모두 안경 유무가 같아야 합니다. 머리카락과 옷의 잔무늬·질감은 줄이고 간결한 색면으로 표현해 주세요. 캐릭터·문구·가까이 붙은 감정 기호 외에는 완전히 빈 투명 여백으로 남겨 주세요. 여백에는 흩어진 흰 점, 먼지, 거친 테두리, 노이즈, 바둑판 무늬를 그리지 마세요. 흰색 외곽 테두리는 매끈하고 연속적인 얇은 띠로 그려 주세요.",
+  "publicPromptTestedAlone": true,
+  "generationSteps": [
+    {
+      "version": "reference",
+      "actualToolArguments": {},
+      "generatedFile": "exec-22b065c7-1c5e-4e94-89df-3665206809a7.png"
+    },
+    {
+      "version": "v1",
+      "actualToolArguments": {
+        "prompt": "첨부한 사진 속 주인공을 카카오톡 대화에서 쓰기 좋은 귀여운 오리지널 이모티콘 캐릭터로 바꿔 주세요. 사진은 캐릭터의 외형을 정하는 참조 이미지입니다. 사진에서 보이는 헤어스타일과 머리색, 안경 유무와 모양, 얼굴의 인상, 옷의 주요 색과 형태를 단순화해 유지하고, 모든 칸에서 같은 인물로 알아볼 수 있게 그려 주세요. 사진 속 포즈와 배경은 따라 할 필요가 없습니다.\n\n하나의 정사각형 이미지 안에 3행 3열로 총 9개의 서로 다른 이모티콘을 배치해 주세요. 각 칸에 같은 캐릭터 한 명과 아래의 한국어 문구 하나만 넣고, 왼쪽 위부터 행 순서대로 구성해 주세요.\n1. 손을 흔들며 밝게 인사 — \"안녕\"\n2. 눈을 찡긋 감고 배를 잡으며 크게 웃기 — \"ㅋㅋㅋ\"\n3. 두 손을 모으고 고개를 살짝 숙여 감사 — \"고마워\"\n4. 엄지를 치켜들며 신나게 동의 — \"좋아!\"\n5. 눈과 입을 동그랗게 벌리고 두 손을 볼에 대며 놀라기 — \"헉!\"\n6. 눈물이 고인 눈과 축 처진 어깨로 서운해하기 — \"힝...\"\n7. 두 손바닥을 모아 미안한 표정으로 사과 — \"미안\"\n8. 입을 가리고 하품하며 꾸벅꾸벅 졸기 — \"졸려\"\n9. 볼을 부풀리고 두 주먹을 쥐며 귀엽게 화내기 — \"화남\"\n\n큰 머리와 작은 몸의 2등신에 가까운 비율, 둥글고 간결한 실루엣, 일정하고 두꺼운 진한 갈색 외곽선, 깔끔한 평면 채색, 최소한의 음영, 분홍빛 볼로 표현해 주세요. 작은 크기에서도 감정과 동작이 명확하게 읽혀야 합니다. 손과 팔이 자연스럽게 연결되게 하고 캐릭터의 옷과 외형을 칸마다 일관되게 유지해 주세요. 문구는 굵고 둥근 손글씨로 정확하게 쓰고 얼굴이나 손과 겹치지 않게 배치해 주세요. 캐릭터와 문구 둘레에는 얇은 흰색 테두리를 둘러 주세요. 각 이모티콘은 칸 안에서 충분한 여백을 두고 잘리지 않게 하며, 이웃 칸과 겹치지 않게 해 주세요. 배경은 실제 투명으로 만들고 격자선, 칸 테두리, 제목, 앱 UI, 로고, 워터마크는 넣지 마세요. 기존 카카오프렌즈 캐릭터나 다른 상용 캐릭터는 추가하지 마세요.",
+        "referenced_image_paths": [
+          "exec-22b065c7-1c5e-4e94-89df-3665206809a7.png"
+        ],
+        "transparent_background": true
+      },
+      "generatedFile": "exec-cf8afcd7-30da-4199-9d83-89e3225e12d8.png",
+      "review": {
+        "preserved": [
+          "bob haircut",
+          "round glasses in eight of nine cells",
+          "teal cardigan",
+          "ivory shirt"
+        ],
+        "passed": [
+          "nine expressions in 3x3",
+          "nine Korean phrases legible",
+          "distinct poses"
+        ],
+        "issues": [
+          "sleepy cell omits glasses",
+          "scattered pale flecks around transparent margins"
+        ],
+        "decision": "retain original output; re-test revised prompt v2 on original photograph"
+      },
+      "publiclySelected": false
+    },
+    {
+      "version": "v2",
+      "actualToolArguments": {
+        "prompt": "첨부한 사진 속 주인공을 카카오톡 대화에서 쓰기 좋은 귀여운 오리지널 이모티콘 캐릭터로 바꿔 주세요. 사진은 캐릭터의 외형을 정하는 참조 이미지입니다. 사진에서 보이는 헤어스타일과 머리색, 안경 유무와 모양, 얼굴의 인상, 옷의 주요 색과 형태를 단순화해 유지하고, 모든 칸에서 같은 인물로 알아볼 수 있게 그려 주세요. 사진 속 포즈와 배경은 따라 할 필요가 없습니다.\n\n하나의 정사각형 이미지 안에 3행 3열로 총 9개의 서로 다른 이모티콘을 배치해 주세요. 각 칸에 같은 캐릭터 한 명과 아래의 한국어 문구 하나만 넣고, 왼쪽 위부터 행 순서대로 구성해 주세요.\n1. 손을 흔들며 밝게 인사 — \"안녕\"\n2. 눈을 찡긋 감고 배를 잡으며 크게 웃기 — \"ㅋㅋㅋ\"\n3. 두 손을 모으고 고개를 살짝 숙여 감사 — \"고마워\"\n4. 엄지를 치켜들며 신나게 동의 — \"좋아!\"\n5. 눈과 입을 동그랗게 벌리고 두 손을 볼에 대며 놀라기 — \"헉!\"\n6. 눈물이 고인 눈과 축 처진 어깨로 서운해하기 — \"힝...\"\n7. 두 손바닥을 모아 미안한 표정으로 사과 — \"미안\"\n8. 입을 가리고 하품하며 꾸벅꾸벅 졸기 — \"졸려\"\n9. 볼을 부풀리고 두 주먹을 쥐며 귀엽게 화내기 — \"화남\"\n\n큰 머리와 작은 몸의 2등신에 가까운 비율, 둥글고 간결한 실루엣, 일정하고 두꺼운 진한 갈색 외곽선, 깔끔한 평면 채색, 최소한의 음영, 분홍빛 볼로 표현해 주세요. 작은 크기에서도 감정과 동작이 명확하게 읽혀야 합니다. 손과 팔이 자연스럽게 연결되게 하고 캐릭터의 옷과 외형을 칸마다 일관되게 유지해 주세요. 문구는 굵고 둥근 손글씨로 정확하게 쓰고 얼굴이나 손과 겹치지 않게 배치해 주세요. 캐릭터와 문구 둘레에는 얇은 흰색 테두리를 둘러 주세요. 각 이모티콘은 칸 안에서 충분한 여백을 두고 잘리지 않게 하며, 이웃 칸과 겹치지 않게 해 주세요. 배경은 실제 투명으로 만들고 격자선, 칸 테두리, 제목, 앱 UI, 로고, 워터마크는 넣지 마세요. 기존 카카오프렌즈 캐릭터나 다른 상용 캐릭터는 추가하지 마세요.\n\n특히 안경을 쓴 원본이라면 눈을 감거나 졸거나 고개를 숙이는 칸에서도 안경테와 다리를 반드시 유지해 주세요. 눈썹·눈과 안경을 구분하고 9개 칸 모두 안경 유무가 같아야 합니다. 머리카락과 옷의 잔무늬·질감은 줄이고 간결한 색면으로 표현해 주세요. 캐릭터·문구·가까이 붙은 감정 기호 외에는 완전히 빈 투명 여백으로 남겨 주세요. 여백에는 흩어진 흰 점, 먼지, 거친 테두리, 노이즈, 바둑판 무늬를 그리지 마세요. 흰색 외곽 테두리는 매끈하고 연속적인 얇은 띠로 그려 주세요.",
+        "referenced_image_paths": [
+          "exec-22b065c7-1c5e-4e94-89df-3665206809a7.png"
+        ],
+        "transparent_background": true
+      },
+      "generatedFile": "exec-a82166f8-c1ff-44a8-b343-5972f4f636c5.png",
+      "review": {
+        "preserved": [
+          "bob haircut",
+          "round glasses in all nine cells",
+          "teal cardigan",
+          "ivory shirt"
+        ],
+        "passed": [
+          "nine expressions in 3x3",
+          "nine Korean phrases legible",
+          "distinct gestures",
+          "no app UI or branded characters"
+        ],
+        "limitations": [
+          "scattered pale alpha flecks remain in transparent margins",
+          "mostly bust-length rather than full body chibi proportions",
+          "only one fictional adult portrait tested",
+          "one preview sheet, not nine separately prepared platform submission assets"
+        ],
+        "decision": "present v2 for user review; no post-editing performed"
+      },
+      "publiclySelected": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/images/kakao-emoticons.reference.webp",
+      "width": 1145,
+      "height": 1374,
+      "sha256": "6ea08a2de2b1e0762406a8c23bf926249729e76d69e60ca25a7b6a6592d7590f",
+      "conversion": "lossless WebP; alpha and visible decoded RGB identical",
+      "decodedRgbaIdentical": true,
+      "differingChannels": 0,
+      "hiddenRgbDifferences": 0,
+      "sourceFilename": "source.png",
+      "sourceSha256": "d10033aaeb25c8b533bd7550a65555ac3e01cb4af91cf6a69050348ea19066a1"
+    },
+    {
+      "path": "assets/images/kakao-emoticons.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6154c27b5ed70d2ab361537cb76fe2bbb5f57abe48f93f70d4e86462829d0fb6",
+      "conversion": "lossless WebP; alpha and visible decoded RGB identical",
+      "decodedRgbaIdentical": false,
+      "differingChannels": 1355499,
+      "hiddenRgbDifferences": 1355499,
+      "sourceFilename": "result-v2.png",
+      "sourceSha256": "feb9ea4006dc00aa4fde252bddabd92e9d79e0f27c1ba4b4f15a11c00e7df447"
+    },
+    {
+      "path": "assets/images/kakao-emoticons.thumb.webp",
+      "width": 640,
+      "height": 640,
+      "sha256": "77e3d5032a98c1dafbba445a8038b0e80f142157b7e0f222ee331fd24ecdc5cd",
+      "conversion": "aspect-preserving thumbnail, 640 pixels wide"
+    }
+  ],
+  "postEditing": "none; published full-size assets only converted to lossless WebP; thumbnail resized",
+  "visualReview": "AI 생성 원본·결과 · 가상 성인 인물 사진 한 장에 공개 v2 문구만 적용했습니다. 단발머리·둥근 안경·청록색 카디건·아이보리 상의를 살려 한국어 문구가 있는 9개 감정 이모티콘으로 바꿨으며 모든 칸에서 안경을 유지합니다. 투명 여백에 흰 잔점과 고르지 않은 경계가 남고, 몸은 주로 상반신으로 표현됐습니다. 한 장만 시험했으며 카카오 제출 규격이나 9개 개별 파일은 검증·준비하지 않았습니다.",
+  "validation": {
+    "existingCatalogEntriesUnchanged": true,
+    "promptExactlyMatchesV2ToolInput": true
+  }
+}
