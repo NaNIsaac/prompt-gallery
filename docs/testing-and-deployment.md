@@ -49,6 +49,8 @@ npm run check
 
 `main`의 필수 검사 이름은 **`CI`**다. 작업 이름을 바꾸면 GitHub 보호 규칙도 함께 수정해야 한다. 문서 전용 PR을 포함한 모든 PR에 CI를 실행한다. 필수 워크플로 전체를 경로 필터로 건너뛰게 만들어 검사가 영원히 대기하는 상황을 만들지 않는다.
 
+외부 fork의 PR은 저장소 설정에 따라 담당자의 workflow 실행 승인이 필요할 수 있다. 이때 기여자는 PR과 승인 대기 상태를 보존하고, 담당자는 변경을 검토한 뒤 [GitHub의 승인 절차](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks)에 따라 검사를 실행한다. PR 검사 실행 승인과 병합·Pages 배포는 서로 다른 단계다.
+
 ## main 보호 규칙
 
 GitHub **Settings → Rules → Rulesets**의 `main-ci` 규칙으로 관리한다.
