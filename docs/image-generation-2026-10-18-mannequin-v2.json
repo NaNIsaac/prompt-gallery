@@ -1,0 +1,130 @@
+{
+  "id": "mannequin",
+  "version": "v2",
+  "date": "2026-10-18",
+  "tool": "built-in image_gen.imagegen",
+  "cause": "The v1 prompt explicitly instructed hair to become the same ivory material color, causing dark and colored hair to be whitened.",
+  "previousVersion": {
+    "record": "docs/image-generation-2026-10-18-mannequin.json",
+    "prompt": "첨부 사진 속 인물을 고급 의류 매장의 아이보리색 전신 디스플레이 마네킹으로 바꿔 주세요. 인물의 수, 체형과 신체 비율, 자세, 손발의 위치, 시선 방향에 해당하는 머리 각도, 카메라 시점과 구도는 원본을 유지하세요. 얼굴은 눈·눈썹·코·입이 없는 매끈한 타원형 조형으로 만들고, 노출된 피부는 모두 은은한 광택이 도는 단단한 아이보리색 레진으로 바꾸세요. 머리카락은 원래 헤어스타일의 길이와 전체 윤곽을 살린 같은 아이보리색 일체형 조형으로 단순화하세요. 목·손목과 노출된 관절에는 조립식 마네킹의 정교하고 가는 연결선을 자연스럽게 표현하되, 옷 위에는 관절선을 만들지 마세요. 옷과 신발의 디자인·색·무늬·주름, 안경과 액세서리 및 원래 들고 있던 물건은 그대로 유지하세요. 손가락은 원래 동작과 물건 접촉을 유지하는 마네킹 손으로 표현하세요. 원래 배경·장소·조명·그림자·화면 비율을 유지하고, 새로운 쇼윈도나 진열대·받침대·다른 인물을 추가하지 마세요. 실제 장소에서 촬영한 고급 제품 사진처럼 사실적인 재질과 자연스러운 반사광으로 완성하세요. 살아 있는 피부·실제 머리카락·인형 메이크업·공포 표현·추가 문자나 로고는 넣지 마세요.",
+    "retainedResult": "docs/assets/mannequin-v1.webp",
+    "retainedThumbnail": "docs/assets/mannequin-v1.thumb.webp",
+    "note": "Original v1 generation records are unchanged. Their original asset paths identify files at generation time; this revision retains the v1 result and thumbnail at the paths above."
+  },
+  "publicPrompt": "첨부 사진 속 인물을 고급 의류 매장의 아이보리색 전신 디스플레이 마네킹으로 바꿔 주세요. 인물의 수, 체형과 신체 비율, 자세, 손발의 위치, 시선 방향에 해당하는 머리 각도, 카메라 시점과 구도는 원본을 유지하세요. 얼굴은 눈·눈썹·코·입이 없는 매끈한 타원형 조형으로 만들고, 노출된 피부는 모두 은은한 광택이 도는 단단한 아이보리색 레진으로 바꾸세요. 아이보리색은 피부에 해당하는 부위에만 적용하고 머리카락·옷·액세서리의 원래 색에 번지지 않게 하세요. 머리카락은 원래 헤어스타일의 길이·가르마·곱슬 정도·전체 윤곽을 살린 도색된 일체형 조형으로 단순화하세요. 머리색과 색 분포는 원본 그대로 유지하고, 검정·갈색·금발·염색·새치 등 사진에서 실제 보이는 색을 조형 표면의 안료로 재현하세요. 머리를 피부와 같은 아이보리색이나 흰색으로 바꾸지 마세요. 원본에 실제 흰머리가 있는 부분만 그 색을 남기세요. 목·손목과 노출된 관절에는 조립식 마네킹의 정교하고 가는 연결선을 자연스럽게 표현하되, 옷 위에는 관절선을 만들지 마세요. 옷과 신발의 디자인·색·무늬·주름, 안경과 액세서리 및 원래 들고 있던 물건은 그대로 유지하세요. 손가락은 원래 동작과 물건 접촉을 유지하는 마네킹 손으로 표현하세요. 원래 배경·장소·조명·그림자·화면 비율을 유지하고, 새로운 쇼윈도나 진열대·받침대·다른 인물을 추가하지 마세요. 실제 장소에서 촬영한 고급 제품 사진처럼 사실적인 재질과 자연스러운 반사광으로 완성하세요. 살아 있는 피부·사진처럼 한 올씩 사실적인 머리카락·인형 메이크업·공포 표현·추가 문자나 로고는 넣지 마세요.",
+  "actualPromptsMatchPublished": true,
+  "changes": [
+    "Restrict ivory to skin, excluding hair, clothing and accessories.",
+    "Keep source hair color and color distribution in painted sculpted hair, preserving white only where present in the source.",
+    "Clarify that the avoid instruction concerns photorealistic individual hair strands, not removal of hair color."
+  ],
+  "syntheticReferences": true,
+  "additionalInstructions": null,
+  "postEditing": "none",
+  "tests": [
+    {
+      "label": "짙은 머리",
+      "referenceGenerationPrompt": "Use case: photorealistic-natural\nAsset type: fictional input photograph for a photo transformation test, not a real user photo.\nCreate a single realistic full-body photograph of one fictional Korean adult woman in her late twenties standing on a quiet modern outdoor pedestrian terrace. She has a chin-length straight dark bob with a side part and wears thin round dark-framed eyeglasses, a deep forest-green cardigan over an ivory crew-neck T-shirt, beige straight-leg trousers, and clean white low-top sneakers. She faces the camera in a relaxed natural standing pose, feet slightly apart, her left hand resting loosely on a waist-high gray metal railing and her right arm relaxed by her side, all fingers naturally formed. Show her entire head and both shoes with comfortable margins. Background: pale concrete wall, simple gray railing and a little distant greenery, softly out of focus. Soft overcast daylight, believable skin texture and casual smartphone photo realism, vertical 2:3 composition. No other people, no mannequin, no illustration, no collage, no visible text, logos or watermark.",
+      "sourceOrigin": "Reused the same fictional source PNG as v1; no regeneration.",
+      "toolArguments": {
+        "prompt": "첨부 사진 속 인물을 고급 의류 매장의 아이보리색 전신 디스플레이 마네킹으로 바꿔 주세요. 인물의 수, 체형과 신체 비율, 자세, 손발의 위치, 시선 방향에 해당하는 머리 각도, 카메라 시점과 구도는 원본을 유지하세요. 얼굴은 눈·눈썹·코·입이 없는 매끈한 타원형 조형으로 만들고, 노출된 피부는 모두 은은한 광택이 도는 단단한 아이보리색 레진으로 바꾸세요. 아이보리색은 피부에 해당하는 부위에만 적용하고 머리카락·옷·액세서리의 원래 색에 번지지 않게 하세요. 머리카락은 원래 헤어스타일의 길이·가르마·곱슬 정도·전체 윤곽을 살린 도색된 일체형 조형으로 단순화하세요. 머리색과 색 분포는 원본 그대로 유지하고, 검정·갈색·금발·염색·새치 등 사진에서 실제 보이는 색을 조형 표면의 안료로 재현하세요. 머리를 피부와 같은 아이보리색이나 흰색으로 바꾸지 마세요. 원본에 실제 흰머리가 있는 부분만 그 색을 남기세요. 목·손목과 노출된 관절에는 조립식 마네킹의 정교하고 가는 연결선을 자연스럽게 표현하되, 옷 위에는 관절선을 만들지 마세요. 옷과 신발의 디자인·색·무늬·주름, 안경과 액세서리 및 원래 들고 있던 물건은 그대로 유지하세요. 손가락은 원래 동작과 물건 접촉을 유지하는 마네킹 손으로 표현하세요. 원래 배경·장소·조명·그림자·화면 비율을 유지하고, 새로운 쇼윈도나 진열대·받침대·다른 인물을 추가하지 마세요. 실제 장소에서 촬영한 고급 제품 사진처럼 사실적인 재질과 자연스러운 반사광으로 완성하세요. 살아 있는 피부·사진처럼 한 올씩 사실적인 머리카락·인형 메이크업·공포 표현·추가 문자나 로고는 넣지 마세요.",
+        "transparent_background": false,
+        "referencedImageArtifacts": [
+          "exec-6137f333-1b6f-4f5b-8c0b-961fd856198c.png"
+        ]
+      },
+      "transformationAttempts": 1,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/mannequin.reference.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 1324324,
+          "sha256": "f863764ea6e9f3d8ce77f329d8a1e5f36aa17a0db23ae7403cf120536f9ad70f",
+          "sourceArtifact": "exec-6137f333-1b6f-4f5b-8c0b-961fd856198c.png",
+          "sourceSha256": "8abf974f8c86f3e892154a008273dca1bcae0ad005f862e3d76f268c648e6a42",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/mannequin.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 1283102,
+          "sha256": "4eb6f031d0e40d858159a8075c791940715265c2aab6cdbc3c42e40e1716e0d4",
+          "sourceArtifact": "exec-30d15032-de88-458a-9dea-c45a0ee7c86e.png",
+          "sourceSha256": "720c70befe994caeaddb6e4b5eb1b4b43ebdd95981d176336d9fcd9de02339b7",
+          "pixelsMatchSource": true
+        }
+      ],
+      "reviewNote": "AI 생성 원본·결과 · 기존 가상 성인 사진 한 장에 머리색 보존 v2 공개 문구만 적용했습니다. 짙은 갈색 단발과 안경·녹색 카디건·베이지 바지·흰 운동화, 난간을 짚은 자세와 배경을 유지했습니다. 피부는 아이보리색 레진으로 바뀌고 얼굴 식별성은 의도적으로 사라집니다. 머리카락·손가락 세부와 옷 주름은 재해석됐습니다."
+    },
+    {
+      "label": "갈색 곱슬머리",
+      "referenceGenerationPrompt": "Use case: photorealistic-natural\nAsset type: fictional source photograph for a mannequin hair-color preservation test; not a real user photograph.\nCreate one realistic full-body casual photograph of one fictional adult man, about 32, with short voluminous naturally curly warm chestnut-auburn hair. The hair is distinctly reddish brown, with darker brown roots and warm copper highlights, never black, white or gray. He has a clean-shaven face, no glasses, and a friendly neutral expression. He wears a plain muted blue crew-neck sweater, charcoal gray straight-leg trousers, and brown casual shoes. He stands naturally beside a simple pale stone wall in a quiet courtyard, arms relaxed by his sides with both hands visible, feet comfortably apart. Include his entire head and both shoes with margins. Soft overcast daylight, natural skin and fabric texture, realistic adult proportions, eye-level candid smartphone photography, vertical 2:3 composition. Exactly one person, no other people, no text, logos, watermark or mannequin elements.",
+      "referenceGenerationArguments": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: fictional source photograph for a mannequin hair-color preservation test; not a real user photograph.\nCreate one realistic full-body casual photograph of one fictional adult man, about 32, with short voluminous naturally curly warm chestnut-auburn hair. The hair is distinctly reddish brown, with darker brown roots and warm copper highlights, never black, white or gray. He has a clean-shaven face, no glasses, and a friendly neutral expression. He wears a plain muted blue crew-neck sweater, charcoal gray straight-leg trousers, and brown casual shoes. He stands naturally beside a simple pale stone wall in a quiet courtyard, arms relaxed by his sides with both hands visible, feet comfortably apart. Include his entire head and both shoes with margins. Soft overcast daylight, natural skin and fabric texture, realistic adult proportions, eye-level candid smartphone photography, vertical 2:3 composition. Exactly one person, no other people, no text, logos, watermark or mannequin elements.",
+        "transparent_background": false
+      },
+      "sourceOrigin": "New fictional adult photograph generated once.",
+      "toolArguments": {
+        "prompt": "첨부 사진 속 인물을 고급 의류 매장의 아이보리색 전신 디스플레이 마네킹으로 바꿔 주세요. 인물의 수, 체형과 신체 비율, 자세, 손발의 위치, 시선 방향에 해당하는 머리 각도, 카메라 시점과 구도는 원본을 유지하세요. 얼굴은 눈·눈썹·코·입이 없는 매끈한 타원형 조형으로 만들고, 노출된 피부는 모두 은은한 광택이 도는 단단한 아이보리색 레진으로 바꾸세요. 아이보리색은 피부에 해당하는 부위에만 적용하고 머리카락·옷·액세서리의 원래 색에 번지지 않게 하세요. 머리카락은 원래 헤어스타일의 길이·가르마·곱슬 정도·전체 윤곽을 살린 도색된 일체형 조형으로 단순화하세요. 머리색과 색 분포는 원본 그대로 유지하고, 검정·갈색·금발·염색·새치 등 사진에서 실제 보이는 색을 조형 표면의 안료로 재현하세요. 머리를 피부와 같은 아이보리색이나 흰색으로 바꾸지 마세요. 원본에 실제 흰머리가 있는 부분만 그 색을 남기세요. 목·손목과 노출된 관절에는 조립식 마네킹의 정교하고 가는 연결선을 자연스럽게 표현하되, 옷 위에는 관절선을 만들지 마세요. 옷과 신발의 디자인·색·무늬·주름, 안경과 액세서리 및 원래 들고 있던 물건은 그대로 유지하세요. 손가락은 원래 동작과 물건 접촉을 유지하는 마네킹 손으로 표현하세요. 원래 배경·장소·조명·그림자·화면 비율을 유지하고, 새로운 쇼윈도나 진열대·받침대·다른 인물을 추가하지 마세요. 실제 장소에서 촬영한 고급 제품 사진처럼 사실적인 재질과 자연스러운 반사광으로 완성하세요. 살아 있는 피부·사진처럼 한 올씩 사실적인 머리카락·인형 메이크업·공포 표현·추가 문자나 로고는 넣지 마세요.",
+        "transparent_background": false,
+        "referencedImageArtifacts": [
+          "exec-dd7df55f-1dc0-4457-87f8-939241c3ed8c.png"
+        ]
+      },
+      "transformationAttempts": 1,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/mannequin.brown.reference.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 1797464,
+          "sha256": "c55e8da5cceb1744300c44e88d3dfdcb18be50a33338a8dc783fad0967fa3652",
+          "sourceArtifact": "exec-dd7df55f-1dc0-4457-87f8-939241c3ed8c.png",
+          "sourceSha256": "85691d05c97a2300c5a259e1a8b2244099752e814b39915fdc8674186ba2ae50",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/mannequin.brown.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 1697156,
+          "sha256": "36b798ea5f9a4f8416939ee38af89e105b75977ae0a2683fc245d7526c17e907",
+          "sourceArtifact": "exec-4d53a1e2-459d-4751-9c4e-906dc69f0c0d.png",
+          "sourceSha256": "2cc613d8dbd517e02d03ff2822508985e306a9fc5d75d756e238d3f3fe2d9662",
+          "pixelsMatchSource": true
+        }
+      ],
+      "reviewNote": "AI 생성 원본·결과 · 새 가상 성인 사진 한 장에 같은 v2 공개 문구만 적용했습니다. 구릿빛이 섞인 갈색 곱슬머리, 파란 스웨터·짙은 회색 바지·갈색 신발과 석벽 배경을 유지했습니다. 얼굴·목 윤곽과 손가락 세부는 달라졌습니다. 흰머리·금발·여러 색 염색이나 단체 사진까지 시험한 결과는 아닙니다."
+    }
+  ],
+  "thumbnail": {
+    "role": "thumbnail",
+    "path": "assets/images/mannequin.thumb.webp",
+    "width": 560,
+    "height": 840,
+    "bytes": 43576,
+    "sha256": "1bf7a0155d1c961dd5d0a9d97c2bf54f8e1d8a53b9f48546d2faeba1fa1fca4b",
+    "cropped": false
+  },
+  "argumentPathNote": "Local absolute paths are omitted; input images are identified by original generated artifact filenames and SHA-256.",
+  "limitations": "Two fictional adult portraits only. White, blond, mixed gray and vivid dyed hair, groups, other ages and held objects remain untested. No post-editing.",
+  "validation": {
+    "sameV2PromptForBothTests": true,
+    "sourceAndResultDecodedPixelsPreserved": true,
+    "otherCatalogEntriesUnchanged": true,
+    "allIdsAndOrderUnchanged": true,
+    "localChecks": {
+      "command": "npm run check",
+      "passed": true,
+      "unitTests": 14,
+      "sharingPages": 35,
+      "browserTests": 26
+    }
+  }
+}
