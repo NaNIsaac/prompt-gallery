@@ -1,0 +1,90 @@
+{
+  "id": "tamagotchi",
+  "date": "2026-10-19",
+  "tool": "built-in image_gen.imagegen",
+  "selectedVersion": "v1",
+  "approvedByUser": true,
+  "approval": "사용자가 채팅 선택지에서 결과 확정·PR 제출을 선택했습니다.",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/tamagotchi",
+  "baseCommit": "cd583d3eda13fd0d052aac0c85bf5f82720f6d9a",
+  "referenceOrigin": "AI-generated fictional Korean adult woman; not the actual user",
+  "publicPrompt": "첨부한 사진의 주인공을 다마고치 속 작은 픽셀 캐릭터로 바꿔 주세요. 사진을 기기 화면에 그대로 넣지 말고, 주인공의 머리 모양·안경·표정·옷 색과 대표 소품을 알아볼 수 있는 귀여운 2등신 픽셀 캐릭터로 새로 그려 주세요. 화면에 등장하는 주인공 수는 원본과 같게 유지해 주세요.\n\n완성 이미지는 손바닥 크기의 달걀 모양 전자 펫 기기를 촬영한 정사각형 제품 사진으로 만들어 주세요. 기기는 연한 살구빛 분홍색의 반투명 플라스틱 몸체, 둥근 화면 테두리, 화면 아래 나란히 놓인 하늘색 버튼 3개, 위쪽의 작은 고리와 짧은 볼 체인을 갖추게 해 주세요. 기기 전체가 잘 보이도록 밝은 크림색 바닥 위에 세우고, 살짝 비스듬한 정면 시점과 부드러운 자연광, 은은한 접지 그림자로 실제 미니 장난감 같은 재질감을 표현해 주세요.\n\n작은 컬러 LCD 화면 안에는 사진의 장소와 행동에서 단서를 얻은 단순한 픽셀 공간을 만들고, 주인공이 그 안에서 사진과 연결되는 행동을 하게 해 주세요. 캐릭터와 배경, 소품은 모두 또렷한 사각 픽셀로 통일하고 화면 안에만 배치해 주세요. 화면 위쪽에는 작은 하트 3개와 음식·놀이·잠을 나타내는 간단한 픽셀 아이콘을 두되 주인공을 가리지 않게 해 주세요. 화면은 번쩍이는 네온 디스플레이보다 작은 장난감 LCD처럼 은은하고 약간 차분하게 표현해 주세요.\n\n원본의 식별 특징을 귀엽게 단순화하되 무관한 마스코트로 바꾸지 말아 주세요. 실제 사람이나 동물을 기기 밖에 추가하지 말고, 화면 밖으로 캐릭터가 튀어나오지 않게 해 주세요. 읽을 수 있는 글자·숫자·브랜드 로고·워터마크는 넣지 말아 주세요.",
+  "publicPromptTestedAlone": true,
+  "generationSteps": [
+    {
+      "version": "reference",
+      "actualToolArguments": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: fictional reference photo for a photo-transformation prompt test\nCreate one natural photographic portrait of a fictional Korean adult woman in her late twenties, alone at a quiet outdoor cafe. She has a chin-length straight dark brown bob with blunt bangs, round thin dark-rimmed glasses, and a mustard yellow knitted cardigan over a plain white shirt. She is seated, smiling gently toward the camera, holding a small plain white ceramic mug with both hands at chest height. Include her head, torso, hands and mug clearly. A small round cafe table and soft out-of-focus green foliage are visible. Soft overcast daylight, realistic facial anatomy, candid editorial photography, square composition. No other people, no writing, no logos, no watermark. This is an invented test subject, not a real user photo.",
+        "transparent_background": false
+      },
+      "output": {
+        "path": "output/imagegen/tamagotchi-2026-10-19/source-fictional.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "bc0c8e3d2ec2044b2d5985d679d280e529eff53a0926441ec7c1ecb2126df8e7",
+        "toolFileName": "exec-6454f7ec-029d-440e-9834-a4d618c3dfe6.png"
+      }
+    },
+    {
+      "version": "v1",
+      "actualToolArguments": {
+        "prompt": "첨부한 사진의 주인공을 다마고치 속 작은 픽셀 캐릭터로 바꿔 주세요. 사진을 기기 화면에 그대로 넣지 말고, 주인공의 머리 모양·안경·표정·옷 색과 대표 소품을 알아볼 수 있는 귀여운 2등신 픽셀 캐릭터로 새로 그려 주세요. 화면에 등장하는 주인공 수는 원본과 같게 유지해 주세요.\n\n완성 이미지는 손바닥 크기의 달걀 모양 전자 펫 기기를 촬영한 정사각형 제품 사진으로 만들어 주세요. 기기는 연한 살구빛 분홍색의 반투명 플라스틱 몸체, 둥근 화면 테두리, 화면 아래 나란히 놓인 하늘색 버튼 3개, 위쪽의 작은 고리와 짧은 볼 체인을 갖추게 해 주세요. 기기 전체가 잘 보이도록 밝은 크림색 바닥 위에 세우고, 살짝 비스듬한 정면 시점과 부드러운 자연광, 은은한 접지 그림자로 실제 미니 장난감 같은 재질감을 표현해 주세요.\n\n작은 컬러 LCD 화면 안에는 사진의 장소와 행동에서 단서를 얻은 단순한 픽셀 공간을 만들고, 주인공이 그 안에서 사진과 연결되는 행동을 하게 해 주세요. 캐릭터와 배경, 소품은 모두 또렷한 사각 픽셀로 통일하고 화면 안에만 배치해 주세요. 화면 위쪽에는 작은 하트 3개와 음식·놀이·잠을 나타내는 간단한 픽셀 아이콘을 두되 주인공을 가리지 않게 해 주세요. 화면은 번쩍이는 네온 디스플레이보다 작은 장난감 LCD처럼 은은하고 약간 차분하게 표현해 주세요.\n\n원본의 식별 특징을 귀엽게 단순화하되 무관한 마스코트로 바꾸지 말아 주세요. 실제 사람이나 동물을 기기 밖에 추가하지 말고, 화면 밖으로 캐릭터가 튀어나오지 않게 해 주세요. 읽을 수 있는 글자·숫자·브랜드 로고·워터마크는 넣지 말아 주세요.",
+        "referenced_image_paths": [
+          "output/imagegen/tamagotchi-2026-10-19/source-fictional.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": true,
+      "postEdited": false,
+      "output": {
+        "path": "output/imagegen/tamagotchi-2026-10-19/result-v1.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "b1c6adc7102abd730da059024576d1cc82898e372279a2d00419a93eea9cf027",
+        "toolFileName": "exec-8c345816-1099-4854-a25d-24db75e43b81.png"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/tamagotchi.reference.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ca79ef80b931fd2c2a1ce268a48c649849ff5311d543ab252ad46ac763ce682d"
+    },
+    {
+      "path": "assets/images/tamagotchi.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b19e4f85876b5342f30b3553d0c5cd963873c1a894228d2ab1d6467ad78a9e14"
+    },
+    {
+      "path": "assets/images/tamagotchi.thumb.webp",
+      "width": 560,
+      "height": 560,
+      "sha256": "d9fa61eb47ecc338a031bdbb3c9e60069ef6585c3d0df3bd50207d9ee7d7d9f1"
+    }
+  ],
+  "conversions": [
+    {
+      "input": "source-fictional.png",
+      "output": "assets/images/tamagotchi.reference.webp",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "input": "result-v1.png",
+      "output": "assets/images/tamagotchi.webp",
+      "decodedPixelsIdentical": true
+    }
+  ],
+  "reviewNote": "AI 생성 원본·결과 · 가상 성인 사진 한 장에 공개 v1 문구만 적용했습니다. 단발머리·둥근 안경·노란 가디건·흰 머그컵과 카페 장면을 살려 반투명 분홍색 기기의 픽셀 캐릭터로 바꿨습니다. 표정은 원본의 잔잔한 미소에서 눈을 감고 활짝 웃는 모습으로 달라졌고, 실제 얼굴의 세부 유사성은 낮아집니다. 인물 한 장만 시험했습니다.",
+  "validationScope": "One fictional adult portrait only; animals, landscapes and group photos not tested.",
+  "pathNormalization": "Published file references are workspace-relative. The built-in tool received the absolute local path of the same SHA-256-identical source. No image content was changed before testing.",
+  "contributor": {
+    "displayName": "gyuhyeong",
+    "githubLogin": "Q07K"
+  }
+}

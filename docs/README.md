@@ -12,6 +12,10 @@
 
 ## 생성 이력과 참고 자료
 
+- [다마고치 v1 등록 검토](tamagotchi-review-2026-10-19.md)
+- [다마고치 실제 입력과 파일 해시](image-generation-2026-10-19-tamagotchi.json)
+- [다마고치 실제 적용 문구 v1](tamagotchi-prompt-v1.txt)
+
 - [짱구 범용 프롬프트 인물·풍경·반려동물 등록 검토](shinchan-review-2026-10-18.md)
 - [짱구 3종 실제 입력과 원본·결과 파일 해시](image-generation-2026-10-18-shinchan.json)
 
