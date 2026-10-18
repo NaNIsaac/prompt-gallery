@@ -1,0 +1,96 @@
+{
+  "id": "mannequin",
+  "generatedOn": "2026-10-18",
+  "publicationPreparedOn": "2026-10-18",
+  "tool": "built-in image_gen.imagegen",
+  "method": "One fictional adult source photograph generated once, then transformed once with exactly the public v1 prompt and that photograph only. No supplemental reference, extra instructions, follow-up edit or publication-time regeneration.",
+  "syntheticReference": true,
+  "publicPrompt": "첨부 사진 속 인물을 고급 의류 매장의 아이보리색 전신 디스플레이 마네킹으로 바꿔 주세요. 인물의 수, 체형과 신체 비율, 자세, 손발의 위치, 시선 방향에 해당하는 머리 각도, 카메라 시점과 구도는 원본을 유지하세요. 얼굴은 눈·눈썹·코·입이 없는 매끈한 타원형 조형으로 만들고, 노출된 피부는 모두 은은한 광택이 도는 단단한 아이보리색 레진으로 바꾸세요. 머리카락은 원래 헤어스타일의 길이와 전체 윤곽을 살린 같은 아이보리색 일체형 조형으로 단순화하세요. 목·손목과 노출된 관절에는 조립식 마네킹의 정교하고 가는 연결선을 자연스럽게 표현하되, 옷 위에는 관절선을 만들지 마세요. 옷과 신발의 디자인·색·무늬·주름, 안경과 액세서리 및 원래 들고 있던 물건은 그대로 유지하세요. 손가락은 원래 동작과 물건 접촉을 유지하는 마네킹 손으로 표현하세요. 원래 배경·장소·조명·그림자·화면 비율을 유지하고, 새로운 쇼윈도나 진열대·받침대·다른 인물을 추가하지 마세요. 실제 장소에서 촬영한 고급 제품 사진처럼 사실적인 재질과 자연스러운 반사광으로 완성하세요. 살아 있는 피부·실제 머리카락·인형 메이크업·공포 표현·추가 문자나 로고는 넣지 마세요.",
+  "publicPromptMatchesActualToolInput": true,
+  "referenceGenerationPrompt": "Use case: photorealistic-natural\nAsset type: fictional input photograph for a photo transformation test, not a real user photo.\nCreate a single realistic full-body photograph of one fictional Korean adult woman in her late twenties standing on a quiet modern outdoor pedestrian terrace. She has a chin-length straight dark bob with a side part and wears thin round dark-framed eyeglasses, a deep forest-green cardigan over an ivory crew-neck T-shirt, beige straight-leg trousers, and clean white low-top sneakers. She faces the camera in a relaxed natural standing pose, feet slightly apart, her left hand resting loosely on a waist-high gray metal railing and her right arm relaxed by her side, all fingers naturally formed. Show her entire head and both shoes with comfortable margins. Background: pale concrete wall, simple gray railing and a little distant greenery, softly out of focus. Soft overcast daylight, believable skin texture and casual smartphone photo realism, vertical 2:3 composition. No other people, no mannequin, no illustration, no collage, no visible text, logos or watermark.",
+  "referenceGenerationArguments": {
+    "prompt": "Use case: photorealistic-natural\nAsset type: fictional input photograph for a photo transformation test, not a real user photo.\nCreate a single realistic full-body photograph of one fictional Korean adult woman in her late twenties standing on a quiet modern outdoor pedestrian terrace. She has a chin-length straight dark bob with a side part and wears thin round dark-framed eyeglasses, a deep forest-green cardigan over an ivory crew-neck T-shirt, beige straight-leg trousers, and clean white low-top sneakers. She faces the camera in a relaxed natural standing pose, feet slightly apart, her left hand resting loosely on a waist-high gray metal railing and her right arm relaxed by her side, all fingers naturally formed. Show her entire head and both shoes with comfortable margins. Background: pale concrete wall, simple gray railing and a little distant greenery, softly out of focus. Soft overcast daylight, believable skin texture and casual smartphone photo realism, vertical 2:3 composition. No other people, no mannequin, no illustration, no collage, no visible text, logos or watermark.",
+    "transparent_background": false
+  },
+  "transformationArguments": {
+    "prompt": "첨부 사진 속 인물을 고급 의류 매장의 아이보리색 전신 디스플레이 마네킹으로 바꿔 주세요. 인물의 수, 체형과 신체 비율, 자세, 손발의 위치, 시선 방향에 해당하는 머리 각도, 카메라 시점과 구도는 원본을 유지하세요. 얼굴은 눈·눈썹·코·입이 없는 매끈한 타원형 조형으로 만들고, 노출된 피부는 모두 은은한 광택이 도는 단단한 아이보리색 레진으로 바꾸세요. 머리카락은 원래 헤어스타일의 길이와 전체 윤곽을 살린 같은 아이보리색 일체형 조형으로 단순화하세요. 목·손목과 노출된 관절에는 조립식 마네킹의 정교하고 가는 연결선을 자연스럽게 표현하되, 옷 위에는 관절선을 만들지 마세요. 옷과 신발의 디자인·색·무늬·주름, 안경과 액세서리 및 원래 들고 있던 물건은 그대로 유지하세요. 손가락은 원래 동작과 물건 접촉을 유지하는 마네킹 손으로 표현하세요. 원래 배경·장소·조명·그림자·화면 비율을 유지하고, 새로운 쇼윈도나 진열대·받침대·다른 인물을 추가하지 마세요. 실제 장소에서 촬영한 고급 제품 사진처럼 사실적인 재질과 자연스러운 반사광으로 완성하세요. 살아 있는 피부·실제 머리카락·인형 메이크업·공포 표현·추가 문자나 로고는 넣지 마세요.",
+    "transparent_background": false,
+    "referencedImageArtifacts": [
+      "exec-6137f333-1b6f-4f5b-8c0b-961fd856198c.png"
+    ]
+  },
+  "argumentPathNote": "Local absolute paths are omitted from this public record. The original tool call referenced the saved source.png, whose SHA-256 and original generated artifact are linked below.",
+  "referenceGenerationAttempts": 1,
+  "transformationAttempts": 1,
+  "additionalInstructions": null,
+  "validation": {
+    "publicPromptUnchanged": true,
+    "fullSizeDecodedPixelsMatchPng": true,
+    "existingCatalogEntriesUnchanged": true,
+    "thumbnailAspectRatioPreserved": true,
+    "localChecks": {
+      "command": "npm run check",
+      "passed": true,
+      "unitTests": 14,
+      "sharingPages": 35,
+      "browserTests": 24
+    }
+  },
+  "files": [
+    {
+      "role": "reference",
+      "path": "assets/images/mannequin.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1324324,
+      "sha256": "f863764ea6e9f3d8ce77f329d8a1e5f36aa17a0db23ae7403cf120536f9ad70f",
+      "sourceArtifact": "exec-6137f333-1b6f-4f5b-8c0b-961fd856198c.png",
+      "sourceSha256": "8abf974f8c86f3e892154a008273dca1bcae0ad005f862e3d76f268c648e6a42",
+      "pixelsMatchSource": true
+    },
+    {
+      "role": "result",
+      "path": "assets/images/mannequin.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1282384,
+      "sha256": "544f8acab02c431d60813de4de843b4be600c901d6ac0723a676240c9aa61771",
+      "sourceArtifact": "exec-2a51bad7-9084-432c-90c6-e2c970617fd0.png",
+      "sourceSha256": "9c201c4286fab504fc8da4f13b72e5c6d9341fb246b6cab046827f9272723ad3",
+      "pixelsMatchSource": true
+    },
+    {
+      "role": "thumbnail",
+      "path": "assets/images/mannequin.thumb.webp",
+      "width": 560,
+      "height": 840,
+      "bytes": 45084,
+      "sha256": "54c600084f89acc50db20aa166aa1e41a5a98999d88528e5d86e415dedd89ab3",
+      "resizedFrom": "assets/images/mannequin.webp",
+      "cropped": false
+    }
+  ],
+  "review": {
+    "method": "visual comparison of displayed source and generated result",
+    "result": "pass with minor variation",
+    "preserved": [
+      "single subject, full-body framing, pose and terrace background",
+      "round glasses, dark green cardigan, ivory T-shirt, beige trousers, white sneakers",
+      "hand-to-railing contact and approximate finger pose"
+    ],
+    "achieved": [
+      "smooth featureless face with no eyes, brows, nose or mouth",
+      "ivory molded bob silhouette and resin skin",
+      "subtle neck and wrist seams, no seams over clothing",
+      "natural scene lighting and product-like specular highlights"
+    ],
+    "limitations": [
+      "Fine finger shapes and clothing wrinkles vary slightly; this is not a pixel-identical edit.",
+      "Facial identity is intentionally removed by the mannequin concept.",
+      "Tested on one fictional adult portrait only; other ages, groups, pets, landscapes and handheld props are untested."
+    ],
+    "postEditing": "none",
+    "extraPromptInstructions": "none"
+  },
+  "reviewNote": "AI 생성 원본·결과 · 가상의 성인 인물 사진 한 장에 공개 프롬프트만 적용했습니다. 안경·녹색 카디건·베이지 바지·흰 운동화와 자세·난간·배경을 유지하고, 얼굴과 노출 피부·머리카락을 아이보리색 레진 마네킹으로 바꿨습니다. 얼굴의 식별 특징은 의도적으로 없어지며 손가락 세부와 옷 주름은 조금 달라졌습니다. 단체 사진이나 손에 물건을 든 사진은 시험하지 않았습니다."
+}
