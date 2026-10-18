@@ -4,6 +4,7 @@
 
 | 문서 | 다루는 내용 |
 |---|---|
+| [프롬프트 작업 스킬](../.agents/skills/prompt-gallery-workflow/SKILL.md) | 제작·테스트·등록·배포와 작업 브랜치 정리 |
 | [개발 흐름](development.md) | 브랜치, 로컬 실행, 변경 범위, PR, 병합, 복구 |
 | [테스트와 배포](testing-and-deployment.md) | 로컬 검사, CI 필수 검사, 브라우저 테스트, Pages 배포, 실패 대응 |
 | [프롬프트 등록 원칙](prompt-publishing.md) | 원문 보존, 이미지 생성·검토, 등록 순서, 생성 기록 |
