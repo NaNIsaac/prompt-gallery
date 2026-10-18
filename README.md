@@ -20,6 +20,8 @@ HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 런타임 서�
 
 개발 절차는 [개발 문서 목차](docs/README.md)와 [기여 안내](CONTRIBUTING.md)를 참고하세요. [개발 흐름](docs/development.md), [테스트·CI·배포](docs/testing-and-deployment.md), [프롬프트 등록 원칙](docs/prompt-publishing.md)을 나누어 관리합니다.
 
+프롬프트 제작·테스트·게시 작업은 저장소 전용 [prompt-gallery-workflow 스킬](.agents/skills/prompt-gallery-workflow/SKILL.md)에 정리했습니다. 전용 브랜치와 작업 공간 준비, 실제 입력 검토, PR·CI·Pages 확인, 성공 후 해당 작업 브랜치 정리까지 포함합니다. 테스트 요청은 결과 검토까지 진행하고 배포 요청이 있을 때 게시합니다.
+
 ## 로컬 실행
 
 Node.js 22 이상에서 다음 명령을 사용합니다. 빌드 시 결과 이미지를 공유용 JPEG로 변환하기 위해 Sharp를 사용합니다.
