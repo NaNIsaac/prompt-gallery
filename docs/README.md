@@ -10,6 +10,9 @@
 
 ## 생성 이력과 참고 자료
 
+- [소닉 주인공 두 사진 등록 검토](sonic-review-2026-10-18.md)
+- [소닉 실제 입력과 원본·결과 파일 해시](image-generation-2026-10-18-sonic.json)
+
 - [개구리 왕눈이 주인공 등록 검토](demetan-review-2026-10-18.md)
 - [개구리 왕눈이 실제 입력·공개 문구·파일 해시](image-generation-2026-10-18-demetan.json)
 
