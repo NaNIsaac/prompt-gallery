@@ -2,6 +2,8 @@
 
 [개발 문서 목차](docs/README.md)와 [프롬프트 작업 스킬](.agents/skills/prompt-gallery-workflow/SKILL.md)을 시작점으로 사용하세요. 이 스킬은 저장소에 포함되어 clone 또는 fork로 함께 받습니다. 최신 기준은 원본 저장소의 기본 브랜치입니다.
 
+처음 사용하는 경우 [스킬 사용 가이드](docs/prompt-gallery-workflow-guide.md)에서 호출 예시·중간 검토 선택지·단계별 완료 범위를 확인하세요.
+
 ## Codex에서 같은 스킬 사용하기
 
 저장소 폴더를 Codex에서 열고 다음처럼 요청할 수 있습니다.
