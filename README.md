@@ -20,7 +20,9 @@ HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 런타임 서�
 
 개발 절차는 [개발 문서 목차](docs/README.md)와 [기여 안내](CONTRIBUTING.md)를 참고하세요. [개발 흐름](docs/development.md), [테스트·CI·배포](docs/testing-and-deployment.md), [프롬프트 등록 원칙](docs/prompt-publishing.md)을 나누어 관리합니다.
 
-프롬프트 제작·테스트·게시 작업은 저장소 전용 [prompt-gallery-workflow 스킬](.agents/skills/prompt-gallery-workflow/SKILL.md)에 정리했습니다. 전용 브랜치와 작업 공간 준비, 실제 입력 검토, PR·CI·Pages 확인, 성공 후 해당 작업 브랜치 정리까지 포함합니다. 테스트 요청은 결과 검토까지, 일반 기여자는 fork에서 원본 프로젝트에 PR 제출까지, 권한이 확인된 담당자는 요청에 따라 병합·배포·정리까지 진행합니다. 다른 기여자도 [기여 안내](CONTRIBUTING.md)에 따라 같은 스킬을 사용할 수 있습니다.
+실제 호출과 중간 검토 방법은 [스킬 사용 가이드](docs/prompt-gallery-workflow-guide.md)를 참고하세요.
+
+프롬프트 제작·테스트·게시 작업은 저장소 전용 [prompt-gallery-workflow 스킬](.agents/skills/prompt-gallery-workflow/SKILL.md)에 정리했습니다. 전용 브랜치와 작업 공간 준비, 실제 입력 검토, PR·CI·Pages 확인, 성공 후 해당 작업 브랜치 정리까지 포함합니다. 새 주제는 테스트 후 채팅에서 **결과 확정·PR 제출 / 수정 / 다른 사진으로 테스트**를 선택하며 중간 결과를 검토합니다. 현재 단계·브랜치·PR 미생성 이유와 다음 행동을 안내하고, 결과 확정과 제출 요청 뒤 검증·Draft PR로 이어갑니다. "테스트만" 등 명시적 제한과 이미 확정한 결과의 게시 요청을 존중합니다. 일반 기여자는 fork에서 원본 프로젝트에 PR 제출까지, 권한이 확인된 담당자는 요청에 따라 병합·배포·정리까지 진행합니다. 다른 기여자도 [기여 안내](CONTRIBUTING.md)에 따라 같은 스킬을 사용할 수 있습니다.
 
 ## 로컬 실행
 
