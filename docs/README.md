@@ -12,6 +12,10 @@
 
 ## 생성 이력과 참고 자료
 
+- [띠부띠부씰 v1 등록 검토](ttibu-sticker-review-2026-10-19.md)
+- [띠부띠부씰 실제 문구 v1](ttibu-sticker-prompt-v1.txt)
+- [띠부띠부씰 실제 입력·치수·파일 해시](image-generation-2026-10-19-ttibu-sticker.json)
+
 - [다마고치 v1 등록 검토](tamagotchi-review-2026-10-19.md)
 - [다마고치 실제 입력과 파일 해시](image-generation-2026-10-19-tamagotchi.json)
 - [다마고치 실제 적용 문구 v1](tamagotchi-prompt-v1.txt)
