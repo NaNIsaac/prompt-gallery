@@ -2,44 +2,21 @@
   "id": "teenieping",
   "date": "2026-10-19",
   "tool": "built-in image_gen.imagegen",
-  "selectedVersion": "v12",
-  "approvedByUser": true,
-  "approval": "사용자가 v12 성인·남자아이 결과를 검토한 뒤 결과 확정·PR 제출을 선택했습니다.",
+  "selectedVersion": "v14",
+  "publicationAuthorized": true,
+  "authorization": "사용자가 PR의 사진 한 장 원칙 관련 보류 코멘트를 확인한 뒤 해결을 요청했습니다. 승인된 v12와 달리 v14 결과는 해당 수정 요청에 따라 재생성했으며, v14 이미지 개별 승인을 별도로 받았다고 주장하지 않습니다.",
   "baseRepository": "Q07K/prompt-gallery",
   "headRepository": "Q07K/prompt-gallery",
   "branch": "codex/teenieping",
   "baseCommit": "46860a5460db270fa62c1370541b19e70d3519e4",
-  "publicPrompt": "Create a NEW ORIGINAL Catch! Teenieping who belongs convincingly in the supplied cast. The source photo is a character-design seed, not a real person to miniaturize.\n\nIMAGE 1: blue Teenieping — reference for the head/face, tiny body and smooth render finish ONLY. Discard its tail, cap, side hair shape and any other character-specific appendages.\nIMAGE 2: simple magenta Teenieping — reference for colored creature body, tiny anatomy, sculpted fantasy hair.\nIMAGE 3: red dress Teenieping — reference for a symbolic costume and recognizable theme on the same tiny creature.\nIMAGE 4: source photograph — read its hairstyle SHAPE, eyewear, clothing category, main garment colors, pose/action, meaningful objects and setting.\n\nMANDATORY SOURCE FACTS — THESE OVERRIDE FANTASY RECOLORING:\nFantasy recoloring applies ONLY to hair, irises and pale creature body tint. It does NOT authorize recoloring the source clothes, glasses or held objects.\nBefore designing, read and lock each person's actual upper garment hue, lower garment hue, eyewear frame shape/color, hairstyle SHAPE, seated/standing pose and held object. Preserve these as separate source facts, not inferred from gender, background or activity.\nKeep each garment's original hue category even in a magical costume. You may simplify materials and vary lightness slightly, but blue clothes remain blue, beige remain beige, green remain green, yellow remain yellow. Do not replace a garment with the theme color, skin color, prop color or a reference character's costume color. Tiny motif/trim accents cannot replace the dominant garment area.\nA skirt/dress is ONE smooth continuous shell with ONE unbroken hem and original dominant hue. No crotch split or separate leg tubes. A trouser/shorts source has TWO distinctly CLOTHED little leg openings in its original garment hue, with a visible waistband/hem boundary and split between them. Do not replace trousers with bare white creature body or add an over-skirt. Keep original sleeve coverage. Glasses require both full frames and bridge, matching source shape/color, in front of the eyes.\nUse only a head, torso, two arms and two legs for each human source. Absolutely NO TAIL, wings, animal ears, side fins, back spikes, extra limbs or reference-creature appendages. In Image 1, the tail is NOT transferable. Preserve short hair as a compact short hair cap; do not copy reference side pigtails/long lobes onto a short-haired source.\nPreserve posture and support: a seated source stays seated with the body resting on its source seat, not standing or floating. A standing source remains standing. Adapt scale and tiny limb angles, not the meaningful pose.\n\nDESIGN PRINCIPLE:\nTranslate the person into a small magical BEING with an activity-based power/personality, like the real Teenieping cast. Do not reproduce realistic human hair colors, skin materials or miniature everyday clothes. Identity comes from recognizable hair silhouette, glasses/accessories, major clothing colors and the source action. Unlike previous literal photo transforms, HAIR COLOR MAY CHANGE to a saturated thematic fantasy hue.\n\nCHOOSE A COHERENT NEW DESIGN FROM THE SOURCE:\nInfer ONE main motif from the meaningful activity/object. Build a compact vivid fantasy palette from that motif and the source props, while keeping the source upper/lower clothing colors recognizable. Use a saturated theme color for the smooth hair and a harmonious iris color; a much paler contrasting tint for the face/body. Plant-care may suggest mint/emerald, drawing may suggest a vivid crayon color, reading may suggest ink blue or a bright book-cover color. These are conditional options, not a global green character rule. Do not make every subject pink, or turn every input into the same princess.\nKeep short/long hairstyle shape, bangs and ponytail count from the photo, but turn them into a few oversized bold curved candy-like shapes. Invent one small simple motif jewel integrated into the hair design and repeat that motif once as a small chest emblem. No unrelated crowns, ribbons, hearts, wings or giant accessories.\nIf the source wears glasses, visibly include BOTH complete matching-shape/color frames and bridge in front of the eyes with clear lenses. If no glasses, add none. Source skirt/dress MUST stay one smooth continuous skirt shell; source trousers/shorts MUST stay two distinct small leg openings. No skirt on trouser inputs. Retain source presentation; boys must not automatically become princesses.\n\nEXACT TEENIEPING ANATOMY AND FINISH:\nUse Image 1's ACTUAL wide rounded-square face plate, eye spacing, low short chin, tiny flat dot nose and almost invisible neck. The head is not a spherical human baby's head. Eyes are clean ovals, very dark pupils, luminous colored lower iris rim and one large white circular highlight plus one tiny dot each. Tiny simple mouth with a little visible red tongue when smiling. Minimal source-appropriate lashes.\nHead/hair is roughly two thirds of height. Body is a tiny smooth teardrop, very short stub/flipper arms with mitten tips, tiny pointed feet continuous with body. No human ears, wrists, articulated fingers, muscular calves or realistic separate shoes.\nHAIR IS ONE SMOOTH OPAQUE SCULPTURE with a few broad lobes, saturated color, broad soft highlights. Absolutely no strand lines, fur, fiber, grooves, grain, realistic hair reflection or clay texture.\nCLOTHING IS A TINY MAGIC COSTUME, not tiny retail clothes. Translate source cardigan/hoodie/shirt silhouette into one or two simple smooth color shapes with a plain edge. Keep source sleeve coverage and top/bottom color distinction. A skirt becomes one small smooth bell/A-line shell; trousers become two small smooth leg openings. No knit, denim, stitching, belt loops, zipper, laces, fabric folds or oversized clothes. Use only a simple color tip for footwear.\nThe finish must match the supplied original CGI character art: smooth polished opaque colored surfaces, broad clean shading, soft even studio-like animation illumination. No product-photography doll lighting, golden cinematic backlight, photographic materials or human-portrait aesthetic.\n\nSCENE:\nStage the source's meaningful action with adapted tiny limbs, source gaze direction and recognizable main prop relationships. Keep EACH hand's separate role and original object-contact count: two-handed holding stays two-handed; a drawing hand draws while the other supports paper. Scale props for visible contact.\nUse a clear, boldly simplified 3D TV-cartoon version of the source setting, with broad smooth shapes and flat material colors, NOT the photographic background. All props/foliage/furniture use the same clean character-world geometry. Show a large readable protagonist with full body and feet where possible, medium composition, limited blur. Source people count only, no added characters, words, grid, logo, labels, watermark, border or comparison panels.\n\nFINAL CHECK AGAINST THE SOURCE PHOTO:\nVerify both glasses frames/bridge; each upper and lower garment's original hue; continuous skirt versus TWO visibly clothed trouser legs; compact/long/tied hair silhouette; original seated/standing support; each hand-object contact; and ABSOLUTELY NO TAIL or extra anatomy. Remove any reference-only tail or other copied feature. Keep the saturated fantasy hair and activity insignia while preserving all these source facts.",
+  "revisionOfCommit": "b4660f1af64642c0145b0b71aee92e4a6e818177",
+  "resolvesComment": "https://github.com/Q07K/prompt-gallery/pull/39#issuecomment-6260213803",
+  "publicPrompt": "Create an original magical creature in the authentic 3D CGI character-design language of Catch! Teenieping, inspired by the ONE attached source photo. Use only this photo as input. Do not request or depend on any extra reference image.\n\nSTYLE AND COLOR ARE ESSENTIAL:\nThe result is a brightly colored nonhuman fairy spirit, not a human baby, chibi person, realistic miniature doll or plush toy. Give it a distinctly nonhuman, very pale fantasy-colored face/body, vivid sculpted fantasy hair and jewel-colored eyes. Choose an activity-based theme from the meaningful source action/prop. Hair MUST change to a saturated fantasy hue such as emerald, mint, turquoise, cobalt, violet or coral; do not keep natural black/brown hair or render human hair fibers. Plant-care can inspire fresh green/mint and reading can inspire ink blue, but choose a coherent palette from each actual photo rather than making everyone the same pink princess.\nKeep the source hairstyle SHAPE: short/long, fringe, tied/loose, number and placement of ponytails. Translate it into just a few large swollen curved lobes of smooth opaque colored material, with broad highlights. Absolutely no individual hair strands, fine parallel lines, grooves, fuzzy fibers or realistic hair reflections.\n\nTHE TEENIEPING CREATURE MODEL:\nUse a broad, flat-front rounded-square/soft-pear head with wide cheeks, a low short chin and almost invisible neck. Head/hair takes about TWO THIRDS of total height. The tiny body below is a simple smooth teardrop. Arms are very short soft flippers with rounded mitten tips; feet are short tapered tips continuous with the body. No human ears, nose bridge, protruding nose, lips, pores, wrists, articulated fingers, long calves or realistic separate sneakers. Only head, torso, two arms and two legs — absolutely no tail, wings, animal ears, fins, back spikes or extra anatomy.\nEyes are large clean upright ovals, very dark pupils, saturated luminous lower iris rims, exactly one large white circular reflection plus one tiny white dot each. Place them low and wide on the face with simple restrained lashes. Nose is one tiny flat dot. Mouth is a small open wedge smile with a simple little red tongue, or the source's subdued expression adapted to that face model. Match clean preschool CGI mascot geometry, not a human portrait's facial anatomy.\n\nSOURCE IDENTITY LOCKS:\nKeep the source people count, hairstyle silhouette, eyewear and actual garment categories and original major colors. Preserve source presentation; do not feminize boys or automatically add princess dresses or long lashes.\nIf the person wears glasses, BOTH complete frames and bridge MUST be clearly visible over the eyes, matching source frame shape/color; lenses remain clear. Do not remove glasses to enlarge the eyes, and do not add glasses when absent.\nRead actual source garment construction, not gender: a skirt/dress remains ONE continuous skirt shell with an unbroken hem spanning both little legs. Trousers/shorts remain TWO separate clothed leg openings with a visible split. No skirt, apron, petals or peplum over trouser inputs; do not turn a skirt into shorts.\nKeep upper and lower garment hues SEPARATELY: blue stays blue, beige stays beige, green stays green, yellow stays yellow. Fantasy recoloring is ONLY for hair/eyes/pale body tint, never a reason to replace source garment, eyewear or prop colors.\n\nCOSTUME — NO PHOTOGRAPHIC CLOTH:\nRepresent the source garment silhouette and sleeve coverage as tiny smooth magic-costume color shells, not a miniature retail wardrobe. A jacket is a simple open colored shape over the shirt; a hood is one rounded shape; a skirt is one smooth small bell shell; trousers are two smooth short tubes. A few plain edge/button shapes are enough. NO knit stitches, fabric grain, denim weave, seam stitching, belt loops, zippers, laces, drapery, realistic cuffs or cloth folds. Footwear becomes only the source color at the small integrated foot tips.\nFrom the activity, invent ONE simple small insignia (plant sprout, book, drawing tool, etc.) and put it on a compact hair jewel OR chest badge. Avoid unrelated tiaras, flowers, bows, hearts, golden crown logos and oversized ornaments.\n\nMEANINGFUL SCENE:\nPreserve original seated/standing posture and the actual seat/floor support. A seated subject stays seated on its bench/chair, not standing; a standing subject stands on the original support plane rather than relocating onto furniture. Preserve gaze toward the activity and each hand's separate object-contact role. Two-hand holding stays two-hand holding at visible support points; a drawing hand draws while the other supports paper. Adapt tiny arm angles and prop scale so contacts are legible.\nRebuild the source setting as a boldly simplified CGI TV-animation set, not the source photograph or a product-photography backdrop. Use broad round leaves, smooth solid-color furniture and simple clear forms. All character hair, skin, costume, props and background use clean smooth opaque surfaces, soft even animation lighting and broad simple shading. No golden cinematic backlight, photographic bokeh, realistic textures, clay grain or plush.\nMake one finished scene, protagonist(s) large and full-body where possible, little feet visible, main action readable. No extra people or existing cast friends, no words, logo, label, watermark, border, grid or comparison panels.\nBefore finishing check the source glasses, original upper/lower garment hues, one skirt hem versus two clothed trouser legs, hairstyle silhouette, correct hand contacts/posture, and absence of tails/extra anatomy.",
   "publicPromptMatchesActualToolPrompt": true,
-  "publicPromptTestedAlone": false,
-  "referenceAssisted": true,
-  "actualInputOrder": "Blue style reference, magenta style reference, red costume style reference, selected fictional source photo",
-  "styleReferences": [
-    {
-      "path": "docs/references/teenieping/style-blue.png",
-      "width": 1000,
-      "height": 1000,
-      "sha256": "d001a92b242357755541f59551f80aff23f92e059c07f5bae11916a96bcb2e39",
-      "role": "Image 1: blue simple-body Teenieping; face/body/material only, exclude tail and character-specific appendages",
-      "origin": "User-provided reference image, byte-identical copy; original external URL not supplied."
-    },
-    {
-      "path": "docs/references/teenieping/style-magenta.png",
-      "width": 1000,
-      "height": 1000,
-      "sha256": "ed588344f380ac15e077099a4483964c3407fb0d19049edfa3c8826aa054f0a1",
-      "role": "Image 2: magenta simple-body Teenieping; anatomy and sculpted hair",
-      "origin": "User-provided reference image, byte-identical copy; original external URL not supplied."
-    },
-    {
-      "path": "docs/references/teenieping/style-red.png",
-      "width": 700,
-      "height": 700,
-      "sha256": "dd07b0da38ec9e6427bf13f044e02d8f75f1c1e5913fcce7825a43b9de88f06b",
-      "role": "Image 3: red costume-on-mascot Teenieping; not a fixed palette or outfit",
-      "origin": "User-provided reference image, byte-identical copy; original external URL not supplied."
-    }
-  ],
+  "publicPromptTestedAlone": true,
+  "publicPromptTestedAloneMeaning": "Exact public prompt plus only the corresponding single original photo. No style references or extra instructions.",
+  "referenceAssisted": false,
+  "styleReferences": [],
   "sourceGeneration": [
     {
       "label": "adult-gardening",
@@ -98,161 +75,115 @@
   ],
   "transformations": [
     {
-      "version": "v12",
-      "testId": "v12-adult-gardening",
+      "version": "v14",
+      "testId": "v14-adult-gardening",
       "actualToolArguments": {
-        "prompt": "Create a NEW ORIGINAL Catch! Teenieping who belongs convincingly in the supplied cast. The source photo is a character-design seed, not a real person to miniaturize.\n\nIMAGE 1: blue Teenieping — reference for the head/face, tiny body and smooth render finish ONLY. Discard its tail, cap, side hair shape and any other character-specific appendages.\nIMAGE 2: simple magenta Teenieping — reference for colored creature body, tiny anatomy, sculpted fantasy hair.\nIMAGE 3: red dress Teenieping — reference for a symbolic costume and recognizable theme on the same tiny creature.\nIMAGE 4: source photograph — read its hairstyle SHAPE, eyewear, clothing category, main garment colors, pose/action, meaningful objects and setting.\n\nMANDATORY SOURCE FACTS — THESE OVERRIDE FANTASY RECOLORING:\nFantasy recoloring applies ONLY to hair, irises and pale creature body tint. It does NOT authorize recoloring the source clothes, glasses or held objects.\nBefore designing, read and lock each person's actual upper garment hue, lower garment hue, eyewear frame shape/color, hairstyle SHAPE, seated/standing pose and held object. Preserve these as separate source facts, not inferred from gender, background or activity.\nKeep each garment's original hue category even in a magical costume. You may simplify materials and vary lightness slightly, but blue clothes remain blue, beige remain beige, green remain green, yellow remain yellow. Do not replace a garment with the theme color, skin color, prop color or a reference character's costume color. Tiny motif/trim accents cannot replace the dominant garment area.\nA skirt/dress is ONE smooth continuous shell with ONE unbroken hem and original dominant hue. No crotch split or separate leg tubes. A trouser/shorts source has TWO distinctly CLOTHED little leg openings in its original garment hue, with a visible waistband/hem boundary and split between them. Do not replace trousers with bare white creature body or add an over-skirt. Keep original sleeve coverage. Glasses require both full frames and bridge, matching source shape/color, in front of the eyes.\nUse only a head, torso, two arms and two legs for each human source. Absolutely NO TAIL, wings, animal ears, side fins, back spikes, extra limbs or reference-creature appendages. In Image 1, the tail is NOT transferable. Preserve short hair as a compact short hair cap; do not copy reference side pigtails/long lobes onto a short-haired source.\nPreserve posture and support: a seated source stays seated with the body resting on its source seat, not standing or floating. A standing source remains standing. Adapt scale and tiny limb angles, not the meaningful pose.\n\nDESIGN PRINCIPLE:\nTranslate the person into a small magical BEING with an activity-based power/personality, like the real Teenieping cast. Do not reproduce realistic human hair colors, skin materials or miniature everyday clothes. Identity comes from recognizable hair silhouette, glasses/accessories, major clothing colors and the source action. Unlike previous literal photo transforms, HAIR COLOR MAY CHANGE to a saturated thematic fantasy hue.\n\nCHOOSE A COHERENT NEW DESIGN FROM THE SOURCE:\nInfer ONE main motif from the meaningful activity/object. Build a compact vivid fantasy palette from that motif and the source props, while keeping the source upper/lower clothing colors recognizable. Use a saturated theme color for the smooth hair and a harmonious iris color; a much paler contrasting tint for the face/body. Plant-care may suggest mint/emerald, drawing may suggest a vivid crayon color, reading may suggest ink blue or a bright book-cover color. These are conditional options, not a global green character rule. Do not make every subject pink, or turn every input into the same princess.\nKeep short/long hairstyle shape, bangs and ponytail count from the photo, but turn them into a few oversized bold curved candy-like shapes. Invent one small simple motif jewel integrated into the hair design and repeat that motif once as a small chest emblem. No unrelated crowns, ribbons, hearts, wings or giant accessories.\nIf the source wears glasses, visibly include BOTH complete matching-shape/color frames and bridge in front of the eyes with clear lenses. If no glasses, add none. Source skirt/dress MUST stay one smooth continuous skirt shell; source trousers/shorts MUST stay two distinct small leg openings. No skirt on trouser inputs. Retain source presentation; boys must not automatically become princesses.\n\nEXACT TEENIEPING ANATOMY AND FINISH:\nUse Image 1's ACTUAL wide rounded-square face plate, eye spacing, low short chin, tiny flat dot nose and almost invisible neck. The head is not a spherical human baby's head. Eyes are clean ovals, very dark pupils, luminous colored lower iris rim and one large white circular highlight plus one tiny dot each. Tiny simple mouth with a little visible red tongue when smiling. Minimal source-appropriate lashes.\nHead/hair is roughly two thirds of height. Body is a tiny smooth teardrop, very short stub/flipper arms with mitten tips, tiny pointed feet continuous with body. No human ears, wrists, articulated fingers, muscular calves or realistic separate shoes.\nHAIR IS ONE SMOOTH OPAQUE SCULPTURE with a few broad lobes, saturated color, broad soft highlights. Absolutely no strand lines, fur, fiber, grooves, grain, realistic hair reflection or clay texture.\nCLOTHING IS A TINY MAGIC COSTUME, not tiny retail clothes. Translate source cardigan/hoodie/shirt silhouette into one or two simple smooth color shapes with a plain edge. Keep source sleeve coverage and top/bottom color distinction. A skirt becomes one small smooth bell/A-line shell; trousers become two small smooth leg openings. No knit, denim, stitching, belt loops, zipper, laces, fabric folds or oversized clothes. Use only a simple color tip for footwear.\nThe finish must match the supplied original CGI character art: smooth polished opaque colored surfaces, broad clean shading, soft even studio-like animation illumination. No product-photography doll lighting, golden cinematic backlight, photographic materials or human-portrait aesthetic.\n\nSCENE:\nStage the source's meaningful action with adapted tiny limbs, source gaze direction and recognizable main prop relationships. Keep EACH hand's separate role and original object-contact count: two-handed holding stays two-handed; a drawing hand draws while the other supports paper. Scale props for visible contact.\nUse a clear, boldly simplified 3D TV-cartoon version of the source setting, with broad smooth shapes and flat material colors, NOT the photographic background. All props/foliage/furniture use the same clean character-world geometry. Show a large readable protagonist with full body and feet where possible, medium composition, limited blur. Source people count only, no added characters, words, grid, logo, labels, watermark, border or comparison panels.\n\nFINAL CHECK AGAINST THE SOURCE PHOTO:\nVerify both glasses frames/bridge; each upper and lower garment's original hue; continuous skirt versus TWO visibly clothed trouser legs; compact/long/tied hair silhouette; original seated/standing support; each hand-object contact; and ABSOLUTELY NO TAIL or extra anatomy. Remove any reference-only tail or other copied feature. Keep the saturated fantasy hair and activity insignia while preserving all these source facts.",
+        "prompt": "Create an original magical creature in the authentic 3D CGI character-design language of Catch! Teenieping, inspired by the ONE attached source photo. Use only this photo as input. Do not request or depend on any extra reference image.\n\nSTYLE AND COLOR ARE ESSENTIAL:\nThe result is a brightly colored nonhuman fairy spirit, not a human baby, chibi person, realistic miniature doll or plush toy. Give it a distinctly nonhuman, very pale fantasy-colored face/body, vivid sculpted fantasy hair and jewel-colored eyes. Choose an activity-based theme from the meaningful source action/prop. Hair MUST change to a saturated fantasy hue such as emerald, mint, turquoise, cobalt, violet or coral; do not keep natural black/brown hair or render human hair fibers. Plant-care can inspire fresh green/mint and reading can inspire ink blue, but choose a coherent palette from each actual photo rather than making everyone the same pink princess.\nKeep the source hairstyle SHAPE: short/long, fringe, tied/loose, number and placement of ponytails. Translate it into just a few large swollen curved lobes of smooth opaque colored material, with broad highlights. Absolutely no individual hair strands, fine parallel lines, grooves, fuzzy fibers or realistic hair reflections.\n\nTHE TEENIEPING CREATURE MODEL:\nUse a broad, flat-front rounded-square/soft-pear head with wide cheeks, a low short chin and almost invisible neck. Head/hair takes about TWO THIRDS of total height. The tiny body below is a simple smooth teardrop. Arms are very short soft flippers with rounded mitten tips; feet are short tapered tips continuous with the body. No human ears, nose bridge, protruding nose, lips, pores, wrists, articulated fingers, long calves or realistic separate sneakers. Only head, torso, two arms and two legs — absolutely no tail, wings, animal ears, fins, back spikes or extra anatomy.\nEyes are large clean upright ovals, very dark pupils, saturated luminous lower iris rims, exactly one large white circular reflection plus one tiny white dot each. Place them low and wide on the face with simple restrained lashes. Nose is one tiny flat dot. Mouth is a small open wedge smile with a simple little red tongue, or the source's subdued expression adapted to that face model. Match clean preschool CGI mascot geometry, not a human portrait's facial anatomy.\n\nSOURCE IDENTITY LOCKS:\nKeep the source people count, hairstyle silhouette, eyewear and actual garment categories and original major colors. Preserve source presentation; do not feminize boys or automatically add princess dresses or long lashes.\nIf the person wears glasses, BOTH complete frames and bridge MUST be clearly visible over the eyes, matching source frame shape/color; lenses remain clear. Do not remove glasses to enlarge the eyes, and do not add glasses when absent.\nRead actual source garment construction, not gender: a skirt/dress remains ONE continuous skirt shell with an unbroken hem spanning both little legs. Trousers/shorts remain TWO separate clothed leg openings with a visible split. No skirt, apron, petals or peplum over trouser inputs; do not turn a skirt into shorts.\nKeep upper and lower garment hues SEPARATELY: blue stays blue, beige stays beige, green stays green, yellow stays yellow. Fantasy recoloring is ONLY for hair/eyes/pale body tint, never a reason to replace source garment, eyewear or prop colors.\n\nCOSTUME — NO PHOTOGRAPHIC CLOTH:\nRepresent the source garment silhouette and sleeve coverage as tiny smooth magic-costume color shells, not a miniature retail wardrobe. A jacket is a simple open colored shape over the shirt; a hood is one rounded shape; a skirt is one smooth small bell shell; trousers are two smooth short tubes. A few plain edge/button shapes are enough. NO knit stitches, fabric grain, denim weave, seam stitching, belt loops, zippers, laces, drapery, realistic cuffs or cloth folds. Footwear becomes only the source color at the small integrated foot tips.\nFrom the activity, invent ONE simple small insignia (plant sprout, book, drawing tool, etc.) and put it on a compact hair jewel OR chest badge. Avoid unrelated tiaras, flowers, bows, hearts, golden crown logos and oversized ornaments.\n\nMEANINGFUL SCENE:\nPreserve original seated/standing posture and the actual seat/floor support. A seated subject stays seated on its bench/chair, not standing; a standing subject stands on the original support plane rather than relocating onto furniture. Preserve gaze toward the activity and each hand's separate object-contact role. Two-hand holding stays two-hand holding at visible support points; a drawing hand draws while the other supports paper. Adapt tiny arm angles and prop scale so contacts are legible.\nRebuild the source setting as a boldly simplified CGI TV-animation set, not the source photograph or a product-photography backdrop. Use broad round leaves, smooth solid-color furniture and simple clear forms. All character hair, skin, costume, props and background use clean smooth opaque surfaces, soft even animation lighting and broad simple shading. No golden cinematic backlight, photographic bokeh, realistic textures, clay grain or plush.\nMake one finished scene, protagonist(s) large and full-body where possible, little feet visible, main action readable. No extra people or existing cast friends, no words, logo, label, watermark, border, grid or comparison panels.\nBefore finishing check the source glasses, original upper/lower garment hues, one skirt hem versus two clothed trouser legs, hairstyle silhouette, correct hand contacts/posture, and absence of tails/extra anatomy.",
         "referenced_image_paths": [
-          "output/imagegen/teenieping-2026-10-19/style-reference-v9-06-simple-blue.png",
-          "output/imagegen/teenieping-2026-10-19/style-reference-v9-03-simple-magenta.png",
-          "output/imagegen/teenieping-2026-10-19/style-reference-v9-07-red-dress.png",
           "output/imagegen/teenieping-2026-10-19/source-v1.png"
         ],
         "transparent_background": false
       },
+      "inputImageCount": 1,
       "inputFiles": [
         {
-          "path": "docs/references/teenieping/style-blue.png",
-          "role": "Image 1: blue simple-body Teenieping; face/body/material only, exclude tail and character-specific appendages",
-          "sha256": "d001a92b242357755541f59551f80aff23f92e059c07f5bae11916a96bcb2e39"
-        },
-        {
-          "path": "docs/references/teenieping/style-magenta.png",
-          "role": "Image 2: magenta simple-body Teenieping; anatomy and sculpted hair",
-          "sha256": "ed588344f380ac15e077099a4483964c3407fb0d19049edfa3c8826aa054f0a1"
-        },
-        {
-          "path": "docs/references/teenieping/style-red.png",
-          "role": "Image 3: red costume-on-mascot Teenieping; not a fixed palette or outfit",
-          "sha256": "dd07b0da38ec9e6427bf13f044e02d8f75f1c1e5913fcce7825a43b9de88f06b"
-        },
-        {
           "path": "assets/images/teenieping.reference.webp",
-          "role": "Image 4: fictional photo; lossless public copy",
-          "sourcePng": {
-            "path": "output/imagegen/teenieping-2026-10-19/source-v1.png",
-            "width": 1024,
-            "height": 1536,
-            "sha256": "e570759c01269c57d214e97fa33cf7c1c98ea301480550f3b092288f86ec526e"
-          }
+          "role": "Sole input, original AI fictional photo; lossless public version",
+          "sha256": "64ee69825d77e9656e813789ec652a7fe5f06d72c004655deebae534b9a77441"
         }
       ],
       "additionalInstructions": [],
-      "selected": true,
+      "recentConversationImagesIncluded": false,
       "postEdited": false,
+      "selected": true,
       "outputPng": {
-        "path": "output/imagegen/teenieping-2026-10-19/result-v12-adult-gardening.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "4288a5348155e5288b76c419dfce46e986d244827640d4e7ca4034c6a15e066f",
-        "toolFileName": "exec-faae2b75-aa69-474a-a8c3-33407406fc58.png"
+        "path": "output/imagegen/teenieping-2026-10-19/result-v14-adult-gardening.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "b0de9e68dff8d96b2161ea8af7d65ed43c2d5b7f9bd81af844147930a40a04dd",
+        "toolFileName": "exec-35dd64d9-aa28-4048-a65b-5f0529b601db.png"
       },
       "publicAsset": {
         "path": "assets/images/teenieping.webp",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "26f957a17a06b21784039d66eedef6e76af5230dea3ef0071a623eb43ce1b313",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "24f263a79d3482ffe526ee5107f97029e3f8af54a9b1023283bb2858179ccfda",
         "decodedPixelsEqualToSource": true,
         "source": {
-          "path": "output/imagegen/teenieping-2026-10-19/result-v12-adult-gardening.png",
-          "width": 1254,
-          "height": 1254,
-          "sha256": "4288a5348155e5288b76c419dfce46e986d244827640d4e7ca4034c6a15e066f"
+          "path": "output/imagegen/teenieping-2026-10-19/result-v14-adult-gardening.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "b0de9e68dff8d96b2161ea8af7d65ed43c2d5b7f9bd81af844147930a40a04dd"
         }
       },
       "review": {
-        "passedRequestedCorrections": [
-          "Blue continuous skirt restored; no longer green.",
-          "Yellow upper/white shirt colors and round gold glasses retained.",
-          "No tail or extra limbs visible.",
-          "Two hands holding mint watering can and standing watering action preserved."
+        "passed": [
+          "Exactly one original photo input; no style references or recent-image input.",
+          "Round gold glasses and yellow/white upper garments with continuous blue skirt.",
+          "Two hands holding mint watering can, plant-watering action.",
+          "Fantasy green hair and plant insignia."
         ],
-        "symbolicDirection": "Yellow sculpted fantasy bob and gold eyes, plant/flower/leaf motif. Original brown hair is intentionally changed under user-approved direction.",
         "limitations": [
-          "Cloth/denim textures and skirt stitching return despite smooth-costume constraints.",
-          "Bob tips curl more than source.",
-          "Hair motif contains flower plus leaves rather than one simple jewel.",
-          "Background retains photographic depth blur and textures."
+          "Fine hair/knit/denim textures remain; not fully smooth original-franchise CGI.",
+          "Tiny finger contours and actual shoe structure remain.",
+          "Face shape/eye design is an interpretation, not exact original cast geometry."
         ]
       }
     },
     {
-      "version": "v12",
-      "testId": "v12-boy-reading",
+      "version": "v14",
+      "testId": "v14-boy-reading",
       "actualToolArguments": {
-        "prompt": "Create a NEW ORIGINAL Catch! Teenieping who belongs convincingly in the supplied cast. The source photo is a character-design seed, not a real person to miniaturize.\n\nIMAGE 1: blue Teenieping — reference for the head/face, tiny body and smooth render finish ONLY. Discard its tail, cap, side hair shape and any other character-specific appendages.\nIMAGE 2: simple magenta Teenieping — reference for colored creature body, tiny anatomy, sculpted fantasy hair.\nIMAGE 3: red dress Teenieping — reference for a symbolic costume and recognizable theme on the same tiny creature.\nIMAGE 4: source photograph — read its hairstyle SHAPE, eyewear, clothing category, main garment colors, pose/action, meaningful objects and setting.\n\nMANDATORY SOURCE FACTS — THESE OVERRIDE FANTASY RECOLORING:\nFantasy recoloring applies ONLY to hair, irises and pale creature body tint. It does NOT authorize recoloring the source clothes, glasses or held objects.\nBefore designing, read and lock each person's actual upper garment hue, lower garment hue, eyewear frame shape/color, hairstyle SHAPE, seated/standing pose and held object. Preserve these as separate source facts, not inferred from gender, background or activity.\nKeep each garment's original hue category even in a magical costume. You may simplify materials and vary lightness slightly, but blue clothes remain blue, beige remain beige, green remain green, yellow remain yellow. Do not replace a garment with the theme color, skin color, prop color or a reference character's costume color. Tiny motif/trim accents cannot replace the dominant garment area.\nA skirt/dress is ONE smooth continuous shell with ONE unbroken hem and original dominant hue. No crotch split or separate leg tubes. A trouser/shorts source has TWO distinctly CLOTHED little leg openings in its original garment hue, with a visible waistband/hem boundary and split between them. Do not replace trousers with bare white creature body or add an over-skirt. Keep original sleeve coverage. Glasses require both full frames and bridge, matching source shape/color, in front of the eyes.\nUse only a head, torso, two arms and two legs for each human source. Absolutely NO TAIL, wings, animal ears, side fins, back spikes, extra limbs or reference-creature appendages. In Image 1, the tail is NOT transferable. Preserve short hair as a compact short hair cap; do not copy reference side pigtails/long lobes onto a short-haired source.\nPreserve posture and support: a seated source stays seated with the body resting on its source seat, not standing or floating. A standing source remains standing. Adapt scale and tiny limb angles, not the meaningful pose.\n\nDESIGN PRINCIPLE:\nTranslate the person into a small magical BEING with an activity-based power/personality, like the real Teenieping cast. Do not reproduce realistic human hair colors, skin materials or miniature everyday clothes. Identity comes from recognizable hair silhouette, glasses/accessories, major clothing colors and the source action. Unlike previous literal photo transforms, HAIR COLOR MAY CHANGE to a saturated thematic fantasy hue.\n\nCHOOSE A COHERENT NEW DESIGN FROM THE SOURCE:\nInfer ONE main motif from the meaningful activity/object. Build a compact vivid fantasy palette from that motif and the source props, while keeping the source upper/lower clothing colors recognizable. Use a saturated theme color for the smooth hair and a harmonious iris color; a much paler contrasting tint for the face/body. Plant-care may suggest mint/emerald, drawing may suggest a vivid crayon color, reading may suggest ink blue or a bright book-cover color. These are conditional options, not a global green character rule. Do not make every subject pink, or turn every input into the same princess.\nKeep short/long hairstyle shape, bangs and ponytail count from the photo, but turn them into a few oversized bold curved candy-like shapes. Invent one small simple motif jewel integrated into the hair design and repeat that motif once as a small chest emblem. No unrelated crowns, ribbons, hearts, wings or giant accessories.\nIf the source wears glasses, visibly include BOTH complete matching-shape/color frames and bridge in front of the eyes with clear lenses. If no glasses, add none. Source skirt/dress MUST stay one smooth continuous skirt shell; source trousers/shorts MUST stay two distinct small leg openings. No skirt on trouser inputs. Retain source presentation; boys must not automatically become princesses.\n\nEXACT TEENIEPING ANATOMY AND FINISH:\nUse Image 1's ACTUAL wide rounded-square face plate, eye spacing, low short chin, tiny flat dot nose and almost invisible neck. The head is not a spherical human baby's head. Eyes are clean ovals, very dark pupils, luminous colored lower iris rim and one large white circular highlight plus one tiny dot each. Tiny simple mouth with a little visible red tongue when smiling. Minimal source-appropriate lashes.\nHead/hair is roughly two thirds of height. Body is a tiny smooth teardrop, very short stub/flipper arms with mitten tips, tiny pointed feet continuous with body. No human ears, wrists, articulated fingers, muscular calves or realistic separate shoes.\nHAIR IS ONE SMOOTH OPAQUE SCULPTURE with a few broad lobes, saturated color, broad soft highlights. Absolutely no strand lines, fur, fiber, grooves, grain, realistic hair reflection or clay texture.\nCLOTHING IS A TINY MAGIC COSTUME, not tiny retail clothes. Translate source cardigan/hoodie/shirt silhouette into one or two simple smooth color shapes with a plain edge. Keep source sleeve coverage and top/bottom color distinction. A skirt becomes one small smooth bell/A-line shell; trousers become two small smooth leg openings. No knit, denim, stitching, belt loops, zipper, laces, fabric folds or oversized clothes. Use only a simple color tip for footwear.\nThe finish must match the supplied original CGI character art: smooth polished opaque colored surfaces, broad clean shading, soft even studio-like animation illumination. No product-photography doll lighting, golden cinematic backlight, photographic materials or human-portrait aesthetic.\n\nSCENE:\nStage the source's meaningful action with adapted tiny limbs, source gaze direction and recognizable main prop relationships. Keep EACH hand's separate role and original object-contact count: two-handed holding stays two-handed; a drawing hand draws while the other supports paper. Scale props for visible contact.\nUse a clear, boldly simplified 3D TV-cartoon version of the source setting, with broad smooth shapes and flat material colors, NOT the photographic background. All props/foliage/furniture use the same clean character-world geometry. Show a large readable protagonist with full body and feet where possible, medium composition, limited blur. Source people count only, no added characters, words, grid, logo, labels, watermark, border or comparison panels.\n\nFINAL CHECK AGAINST THE SOURCE PHOTO:\nVerify both glasses frames/bridge; each upper and lower garment's original hue; continuous skirt versus TWO visibly clothed trouser legs; compact/long/tied hair silhouette; original seated/standing support; each hand-object contact; and ABSOLUTELY NO TAIL or extra anatomy. Remove any reference-only tail or other copied feature. Keep the saturated fantasy hair and activity insignia while preserving all these source facts.",
+        "prompt": "Create an original magical creature in the authentic 3D CGI character-design language of Catch! Teenieping, inspired by the ONE attached source photo. Use only this photo as input. Do not request or depend on any extra reference image.\n\nSTYLE AND COLOR ARE ESSENTIAL:\nThe result is a brightly colored nonhuman fairy spirit, not a human baby, chibi person, realistic miniature doll or plush toy. Give it a distinctly nonhuman, very pale fantasy-colored face/body, vivid sculpted fantasy hair and jewel-colored eyes. Choose an activity-based theme from the meaningful source action/prop. Hair MUST change to a saturated fantasy hue such as emerald, mint, turquoise, cobalt, violet or coral; do not keep natural black/brown hair or render human hair fibers. Plant-care can inspire fresh green/mint and reading can inspire ink blue, but choose a coherent palette from each actual photo rather than making everyone the same pink princess.\nKeep the source hairstyle SHAPE: short/long, fringe, tied/loose, number and placement of ponytails. Translate it into just a few large swollen curved lobes of smooth opaque colored material, with broad highlights. Absolutely no individual hair strands, fine parallel lines, grooves, fuzzy fibers or realistic hair reflections.\n\nTHE TEENIEPING CREATURE MODEL:\nUse a broad, flat-front rounded-square/soft-pear head with wide cheeks, a low short chin and almost invisible neck. Head/hair takes about TWO THIRDS of total height. The tiny body below is a simple smooth teardrop. Arms are very short soft flippers with rounded mitten tips; feet are short tapered tips continuous with the body. No human ears, nose bridge, protruding nose, lips, pores, wrists, articulated fingers, long calves or realistic separate sneakers. Only head, torso, two arms and two legs — absolutely no tail, wings, animal ears, fins, back spikes or extra anatomy.\nEyes are large clean upright ovals, very dark pupils, saturated luminous lower iris rims, exactly one large white circular reflection plus one tiny white dot each. Place them low and wide on the face with simple restrained lashes. Nose is one tiny flat dot. Mouth is a small open wedge smile with a simple little red tongue, or the source's subdued expression adapted to that face model. Match clean preschool CGI mascot geometry, not a human portrait's facial anatomy.\n\nSOURCE IDENTITY LOCKS:\nKeep the source people count, hairstyle silhouette, eyewear and actual garment categories and original major colors. Preserve source presentation; do not feminize boys or automatically add princess dresses or long lashes.\nIf the person wears glasses, BOTH complete frames and bridge MUST be clearly visible over the eyes, matching source frame shape/color; lenses remain clear. Do not remove glasses to enlarge the eyes, and do not add glasses when absent.\nRead actual source garment construction, not gender: a skirt/dress remains ONE continuous skirt shell with an unbroken hem spanning both little legs. Trousers/shorts remain TWO separate clothed leg openings with a visible split. No skirt, apron, petals or peplum over trouser inputs; do not turn a skirt into shorts.\nKeep upper and lower garment hues SEPARATELY: blue stays blue, beige stays beige, green stays green, yellow stays yellow. Fantasy recoloring is ONLY for hair/eyes/pale body tint, never a reason to replace source garment, eyewear or prop colors.\n\nCOSTUME — NO PHOTOGRAPHIC CLOTH:\nRepresent the source garment silhouette and sleeve coverage as tiny smooth magic-costume color shells, not a miniature retail wardrobe. A jacket is a simple open colored shape over the shirt; a hood is one rounded shape; a skirt is one smooth small bell shell; trousers are two smooth short tubes. A few plain edge/button shapes are enough. NO knit stitches, fabric grain, denim weave, seam stitching, belt loops, zippers, laces, drapery, realistic cuffs or cloth folds. Footwear becomes only the source color at the small integrated foot tips.\nFrom the activity, invent ONE simple small insignia (plant sprout, book, drawing tool, etc.) and put it on a compact hair jewel OR chest badge. Avoid unrelated tiaras, flowers, bows, hearts, golden crown logos and oversized ornaments.\n\nMEANINGFUL SCENE:\nPreserve original seated/standing posture and the actual seat/floor support. A seated subject stays seated on its bench/chair, not standing; a standing subject stands on the original support plane rather than relocating onto furniture. Preserve gaze toward the activity and each hand's separate object-contact role. Two-hand holding stays two-hand holding at visible support points; a drawing hand draws while the other supports paper. Adapt tiny arm angles and prop scale so contacts are legible.\nRebuild the source setting as a boldly simplified CGI TV-animation set, not the source photograph or a product-photography backdrop. Use broad round leaves, smooth solid-color furniture and simple clear forms. All character hair, skin, costume, props and background use clean smooth opaque surfaces, soft even animation lighting and broad simple shading. No golden cinematic backlight, photographic bokeh, realistic textures, clay grain or plush.\nMake one finished scene, protagonist(s) large and full-body where possible, little feet visible, main action readable. No extra people or existing cast friends, no words, logo, label, watermark, border, grid or comparison panels.\nBefore finishing check the source glasses, original upper/lower garment hues, one skirt hem versus two clothed trouser legs, hairstyle silhouette, correct hand contacts/posture, and absence of tails/extra anatomy.",
         "referenced_image_paths": [
-          "output/imagegen/teenieping-2026-10-19/style-reference-v9-06-simple-blue.png",
-          "output/imagegen/teenieping-2026-10-19/style-reference-v9-03-simple-magenta.png",
-          "output/imagegen/teenieping-2026-10-19/style-reference-v9-07-red-dress.png",
           "output/imagegen/teenieping-2026-10-19/source-child-reading-v1.png"
         ],
         "transparent_background": false
       },
+      "inputImageCount": 1,
       "inputFiles": [
         {
-          "path": "docs/references/teenieping/style-blue.png",
-          "role": "Image 1: blue simple-body Teenieping; face/body/material only, exclude tail and character-specific appendages",
-          "sha256": "d001a92b242357755541f59551f80aff23f92e059c07f5bae11916a96bcb2e39"
-        },
-        {
-          "path": "docs/references/teenieping/style-magenta.png",
-          "role": "Image 2: magenta simple-body Teenieping; anatomy and sculpted hair",
-          "sha256": "ed588344f380ac15e077099a4483964c3407fb0d19049edfa3c8826aa054f0a1"
-        },
-        {
-          "path": "docs/references/teenieping/style-red.png",
-          "role": "Image 3: red costume-on-mascot Teenieping; not a fixed palette or outfit",
-          "sha256": "dd07b0da38ec9e6427bf13f044e02d8f75f1c1e5913fcce7825a43b9de88f06b"
-        },
-        {
           "path": "assets/images/teenieping.boy.reference.webp",
-          "role": "Image 4: fictional photo; lossless public copy",
-          "sourcePng": {
-            "path": "output/imagegen/teenieping-2026-10-19/source-child-reading-v1.png",
-            "width": 1024,
-            "height": 1536,
-            "sha256": "ce5212f91e9992a8913a1959f2e8d786a04a339418b1d93865ac11bfd6880c83"
-          }
+          "role": "Sole input, original AI fictional photo; lossless public version",
+          "sha256": "6f8e8d8d0a8e10d137745f5e46b9aa86f2e078646c864643baa783f894d57f55"
         }
       ],
       "additionalInstructions": [],
-      "selected": true,
+      "recentConversationImagesIncluded": false,
       "postEdited": false,
+      "selected": true,
       "outputPng": {
-        "path": "output/imagegen/teenieping-2026-10-19/result-v12-boy-reading.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "5f7cf1d14547ba81d429eaad2e9af7a98bda90302b2825e1e6728a586cef1a10",
-        "toolFileName": "exec-db74eb2a-2337-4655-b176-87f321a720e1.png"
+        "path": "output/imagegen/teenieping-2026-10-19/result-v14-boy-reading.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "4d44c7eb9a71d5fd6ea64967293c8bf8090c00e7ca056271bc3476e06387bfff",
+        "toolFileName": "exec-6f769034-3c49-4479-b466-63b2aa61ae9e.png"
       },
       "publicAsset": {
         "path": "assets/images/teenieping.boy.webp",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "e03fcfd0ff69a7a2dadd07741bc4d69c6983adf9dbb2550729b8a5346074c0c8",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "a96084953c752420254975f1ff91311aa5ab6e3e7a8bc907ef1e34b4cb2b529c",
         "decodedPixelsEqualToSource": true,
         "source": {
-          "path": "output/imagegen/teenieping-2026-10-19/result-v12-boy-reading.png",
-          "width": 1254,
-          "height": 1254,
-          "sha256": "5f7cf1d14547ba81d429eaad2e9af7a98bda90302b2825e1e6728a586cef1a10"
+          "path": "output/imagegen/teenieping-2026-10-19/result-v14-boy-reading.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "4d44c7eb9a71d5fd6ea64967293c8bf8090c00e7ca056271bc3476e06387bfff"
         }
       },
       "review": {
-        "passedRequestedCorrections": [
-          "No tail visible.",
-          "Beige two-leg lower garment clearly present, not bare white creature body.",
-          "Source seated posture restored with body visibly supported by bench.",
-          "Navy rectangular glasses, green hooded top, yellow book and both-hand support preserved."
+        "passed": [
+          "Exactly one original photo input; no style references or recent-image input.",
+          "Navy rectangular glasses, green hoodie and beige two-leg bottoms.",
+          "Seated on bench, both hands supporting yellow book; no tail visible.",
+          "Short fantasy teal-green hairstyle rather than princess dress."
         ],
-        "symbolicDirection": "Green/teal fantasy short hair, emerald eyes and pale mint face; distinct from adult yellow/gold design.",
         "limitations": [
-          "Human-like ear shapes visible despite no-extra/animal-ear and earlier no-human-ear conditions.",
-          "Fine texture/grain remains on hair and clothing.",
-          "Small hairstyle tuft added beyond source silhouette.",
-          "Activity insignia on head not shown and chest obscured by book.",
-          "Source downward reading gaze is not precisely preserved."
+          "Human-like ears and fine hair/cloth texture remain.",
+          "Eyes/gaze and hairstyle tuft differ from source.",
+          "Activity insignia is not visible.",
+          "Both adult and boy outputs use green-family hair colors; distinct colors for every activity are not established."
         ]
       }
     }
@@ -260,19 +191,18 @@
   "thumbnail": {
     "path": "assets/images/teenieping.thumb.webp",
     "width": 560,
-    "height": 560,
-    "sha256": "60037f38cbb9c11bf32024afabf5915d873a198a1028382f2a399ad8b2449263"
+    "height": 840,
+    "sha256": "6bfd05deb223a2f954ed685843531b77bccbfc6ca936175a431515579ae57965"
   },
-  "preservation": {
-    "uncompressedDecodedPixelsEqual": true,
-    "styleReferencesCopiedByteForByte": true,
-    "thumbnailOnlyResized": true
+  "priorVersion": {
+    "version": "v12",
+    "method": "Three style references plus one fictional photo; superseded because the service requires one user photo only.",
+    "commit": "b4660f1af64642c0145b0b71aee92e4a6e818177",
+    "generationRecord": "https://github.com/Q07K/prompt-gallery/blob/b4660f1af64642c0145b0b71aee92e4a6e818177/docs/image-generation-2026-10-19-teenieping.json",
+    "prompt": "https://github.com/Q07K/prompt-gallery/blob/b4660f1af64642c0145b0b71aee92e4a6e818177/docs/teenieping-prompt-v12.txt",
+    "review": "https://github.com/Q07K/prompt-gallery/blob/b4660f1af64642c0145b0b71aee92e4a6e818177/docs/teenieping-review-2026-10-19.md",
+    "preservation": "Original v12 outputs, style inputs and approval facts remain in that commit; do not describe them as single-photo v14 outputs."
   },
-  "limitations": [
-    "AI 생성 원본·결과 · 같은 티니핑 참고 3장과 가상 성인 사진에 공개 v12 문구를 그대로 적용했습니다. 머리색은 활동을 상징하는 노란색으로 바뀝니다. 금테 안경·노란 상의·파란 치마와 두 손 물뿌리개를 유지했습니다. 머리 끝과 꽃·잎 장식은 재해석됐으며 옷의 세밀한 질감·봉제선과 배경 흐림이 남습니다.",
-    "AI 생성 원본·결과 · 같은 티니핑 참고 3장과 가상 남자아이 사진에 동일한 공개 v12 문구를 적용했습니다. 청록색 머리·초록 눈으로 바뀌며 남색 네모 안경·초록 후드·베이지 바지·두 손 책과 앉은 자세를 유지했습니다. 꼬리는 보이지 않습니다. 사람 귀 같은 형태와 세밀한 재질이 남고 머리 모양·시선이 원본과 다릅니다. 머리의 활동 상징은 나타나지 않았습니다."
-  ],
-  "versionHistorySummary": "v1–v8 explored literal-source character conversion and fixed eyewear/garment category. New references informed v9–v10 material/body studies. User chose v11 fantasy-symbolic hair direction; v12 restores original garment colors, prohibits tails and retains seated pose. Earlier local development outputs are not presented as v12 results.",
   "validation": {
     "status": "passed",
     "command": "npm run check",
@@ -283,12 +213,13 @@
       "desktop-chromium",
       "mobile-chromium"
     ],
-    "exactPublicPromptMatchesBothRequests": true,
-    "publicDocumentationRelativeLinksExist": true,
-    "allFourFullSizeImagesDecodedPixelsEqual": true,
-    "threeStylePngFilesByteIdentical": true,
-    "existing40CatalogEntriesUnchanged": true,
-    "latestBaseCommit": "46860a5460db270fa62c1370541b19e70d3519e4",
-    "remoteCI": "Not yet created at commit time; inspect PR checks."
+    "actualInputCountPerExample": 1,
+    "extraReferenceImagesUsed": 0,
+    "publicTextMatchesBothToolRequests": true,
+    "fullSizeNewResultsDecodedPixelsEqual": true,
+    "originalSourceAssetsUnchanged": true,
+    "allOther40CatalogEntriesUnchanged": true,
+    "documentationRelativeLinksValid": true,
+    "remoteCI": "Inspect updated PR head checks after push."
   }
 }
