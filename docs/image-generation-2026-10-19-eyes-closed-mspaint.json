@@ -1,0 +1,232 @@
+{
+  "id": "eyes-closed-mspaint",
+  "date": "2026-10-19",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in style-transfer",
+  "finalPromptVersion": "v4",
+  "transformationPrompt": "이 사진을 눈 감고 마우스로 2초 만에 찍 그린 그림판 낙서로 바꿔줘. 진짜 못 그려야 해.\n\n흰 바탕에 굵은 검정 선. 전체 그림을 겨우 6~8번의 성급한 마우스 움직임으로 끝내. 대상의 큰 덩어리와 자세만 삐뚤한 고리와 꺾인 막대 몇 개로 뭉개. 원본을 떠올릴 단서 딱 한두 개만 남기고 나머지는 버려.\n\n제대로 된 윤곽선 대신 덜 닫힌 고리, 엉뚱하게 겹친 선, 빗나간 연결을 써. 얼굴과 몸도 모양이 무너져야 해. 풍경이면 덩어리 위치만 남겨. 화면 대부분은 빈 흰색. 주변 배경은 주제가 아니면 지워.\n\n디테일을 그리면 실패야. 표정, 머리카락, 옷, 손발, 털, 장식, 질감을 묘사하지 마. 귀엽거나 깔끔하거나 잘 그린 그림은 실패야. 색칠·글자 없이, 대체 뭘 그린 건지 잠깐 헷갈릴 만큼 엉망인 낙서만 보여줘.",
+  "approval": "2026-10-19 사용자가 v4 결과에 대해 결과 확정·PR 제출을 선택했습니다.",
+  "workflow": {
+    "branch": "codex/eyes-closed-mspaint",
+    "baseRepository": "Q07K/prompt-gallery",
+    "headRepository": "Q07K/prompt-gallery",
+    "baseRemote": "origin",
+    "headRemote": "origin",
+    "startingCommit": "b35806e1ed71bed1ea735bb411f9730f71908c01"
+  },
+  "inputPolicy": "각 예시는 AI 가상 원본 한 장과 공개 문구만 전달했습니다. 추가 스타일 참고·예시별 지시·후편집은 없습니다. 최초 가상 원본 세 장을 변경하지 않고 재시험했습니다.",
+  "sourceGeneration": [
+    {
+      "id": "person",
+      "sourceType": "AI-generated fictional photograph",
+      "tool": "image_gen.imagegen",
+      "prompt": "Create one photorealistic candid full-body photograph of a completely fictional adult woman with short curly hair and round glasses, wearing a yellow raincoat and dark trousers, standing on a quiet damp sidewalk while holding a closed red umbrella in one hand and waving with the other. Body angled slightly left, feet apart, natural unposed cheerful expression. Ordinary neighborhood, soft overcast daylight, authentic phone-camera textures and proportions. Entire person and umbrella visible with margins. One person only. No text, logos or watermarks. Portrait orientation.",
+      "transparent_background": false,
+      "referencedImages": [],
+      "sourceArtifact": "exec-4f600bbb-0792-4506-8fcb-4d037b0b1150.png"
+    },
+    {
+      "id": "landscape",
+      "sourceType": "AI-generated fictional photograph",
+      "tool": "image_gen.imagegen",
+      "prompt": "Create one photorealistic travel photograph of a peaceful alpine lake landscape. Two distinct triangular mountain peaks across the lake, a small wooden cabin on the left shore, a tall lone pine tree at the right edge, and a curved footpath leading from the foreground toward the cabin. Clear spatial arrangement, natural late afternoon light, realistic water and vegetation, ordinary travel snapshot rather than fantasy or illustration. No people, animals, text, logos or watermarks. Landscape orientation.",
+      "transparent_background": false,
+      "referencedImages": [],
+      "sourceArtifact": "exec-13e9eff1-a828-45e9-908e-a03f1fac9575.png"
+    },
+    {
+      "id": "pet",
+      "sourceType": "AI-generated fictional photograph",
+      "tool": "image_gen.imagegen",
+      "prompt": "Create one photorealistic casual home photograph of a single fictional pet Welsh corgi sitting on a plain light gray rug, head tilted noticeably to its left, very large upright triangular ears, short legs and a long body, tan fur with a broad white chest and white blaze on muzzle, wearing a simple bandana. Entire dog visible including feet, mild three-quarter view, plain cozy living room softly out of focus, natural window light and phone-camera realism. No people or other animals, no text, logos or watermarks. Square composition.",
+      "transparent_background": false,
+      "referencedImages": [],
+      "sourceArtifact": "exec-4c597a87-353a-4eed-a7e3-bc32073ee74a.png"
+    }
+  ],
+  "examples": [
+    {
+      "label": "인물 · 우산과 손 인사",
+      "toolInput": {
+        "prompt": "이 사진을 눈 감고 마우스로 2초 만에 찍 그린 그림판 낙서로 바꿔줘. 진짜 못 그려야 해.\n\n흰 바탕에 굵은 검정 선. 전체 그림을 겨우 6~8번의 성급한 마우스 움직임으로 끝내. 대상의 큰 덩어리와 자세만 삐뚤한 고리와 꺾인 막대 몇 개로 뭉개. 원본을 떠올릴 단서 딱 한두 개만 남기고 나머지는 버려.\n\n제대로 된 윤곽선 대신 덜 닫힌 고리, 엉뚱하게 겹친 선, 빗나간 연결을 써. 얼굴과 몸도 모양이 무너져야 해. 풍경이면 덩어리 위치만 남겨. 화면 대부분은 빈 흰색. 주변 배경은 주제가 아니면 지워.\n\n디테일을 그리면 실패야. 표정, 머리카락, 옷, 손발, 털, 장식, 질감을 묘사하지 마. 귀엽거나 깔끔하거나 잘 그린 그림은 실패야. 색칠·글자 없이, 대체 뭘 그린 건지 잠깐 헷갈릴 만큼 엉망인 낙서만 보여줘.",
+        "referenced_image_artifacts": [
+          "exec-4f600bbb-0792-4506-8fcb-4d037b0b1150.png"
+        ],
+        "transparent_background": false
+      },
+      "toolInputPathPolicy": "실제 로컬 경로는 공개하지 않고 동일 입력 파일의 도구 반환 식별자로 기록합니다.",
+      "additionalInstructions": "",
+      "postEditing": false,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/eyes-closed-mspaint.reference.webp",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "e1c2fdee04b0f1c5de9b5ad31e97d00ffe94455aea836c3f2e51c04e72a4ea64",
+          "sourceArtifact": "exec-4f600bbb-0792-4506-8fcb-4d037b0b1150.png",
+          "sourceSha256": "0645e7def1d461225da36fc11b6265d77c51beb29dbd9d39eabf77ba74114780",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/eyes-closed-mspaint.webp",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "3daf95389c60b59e1a5c0939ea77c114f722f52dfc741a7a03afa75c50b090ee",
+          "sourceArtifact": "exec-52b6979d-b7bb-4917-8ad9-a1179601a148.png",
+          "sourceSha256": "a7581794d56d11ba77cfb0622eb5d266ccd4a29873308fd95811c022ca0a57c4",
+          "pixelsMatchSource": true
+        }
+      ],
+      "review": "AI 생성 원본·결과 · 가상 성인 사진 한 장에 공개 v4 문구만 적용했습니다. 손을 든 자세와 반대편 우산을 남기고 얼굴·안경을 생략했습니다. 몸과 발의 연결이 어긋난 검정 낙서이며, 원본의 식별 특징은 크게 줄었습니다. 지시한 6~8번의 마우스 움직임을 정확히 재현한 결과는 아닙니다."
+    },
+    {
+      "label": "풍경 · 산과 호수",
+      "toolInput": {
+        "prompt": "이 사진을 눈 감고 마우스로 2초 만에 찍 그린 그림판 낙서로 바꿔줘. 진짜 못 그려야 해.\n\n흰 바탕에 굵은 검정 선. 전체 그림을 겨우 6~8번의 성급한 마우스 움직임으로 끝내. 대상의 큰 덩어리와 자세만 삐뚤한 고리와 꺾인 막대 몇 개로 뭉개. 원본을 떠올릴 단서 딱 한두 개만 남기고 나머지는 버려.\n\n제대로 된 윤곽선 대신 덜 닫힌 고리, 엉뚱하게 겹친 선, 빗나간 연결을 써. 얼굴과 몸도 모양이 무너져야 해. 풍경이면 덩어리 위치만 남겨. 화면 대부분은 빈 흰색. 주변 배경은 주제가 아니면 지워.\n\n디테일을 그리면 실패야. 표정, 머리카락, 옷, 손발, 털, 장식, 질감을 묘사하지 마. 귀엽거나 깔끔하거나 잘 그린 그림은 실패야. 색칠·글자 없이, 대체 뭘 그린 건지 잠깐 헷갈릴 만큼 엉망인 낙서만 보여줘.",
+        "referenced_image_artifacts": [
+          "exec-13e9eff1-a828-45e9-908e-a03f1fac9575.png"
+        ],
+        "transparent_background": false
+      },
+      "toolInputPathPolicy": "실제 로컬 경로는 공개하지 않고 동일 입력 파일의 도구 반환 식별자로 기록합니다.",
+      "additionalInstructions": "",
+      "postEditing": false,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/eyes-closed-mspaint.landscape.reference.webp",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "5f612cb6786f7e16653b2432c640eb31cd095ca996a0606767f2eeb70dc69082",
+          "sourceArtifact": "exec-13e9eff1-a828-45e9-908e-a03f1fac9575.png",
+          "sourceSha256": "7a0cf0b77d54d3d49f9787c0e8f08b7c2116d14d74703f48207ebcc53746c4a9",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/eyes-closed-mspaint.landscape.webp",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "056cd85cd4b4d45dae3805bbb1a4828dcfde76428ec72d48eb4ad1555cb93f1a",
+          "sourceArtifact": "exec-2c287a82-c928-4cca-ab2a-23ebab7bebc9.png",
+          "sourceSha256": "4f15999cfbc6a3e8a619cf1a260bea6bd1a0924466bddd95c2eba70b750745ce",
+          "pixelsMatchSource": true
+        }
+      ],
+      "review": "AI 생성 원본·결과 · 가상 풍경 사진 한 장에 인물·반려동물과 같은 공개 v4 문구만 적용했습니다. 두 봉우리·왼쪽 집·오른쪽 나무의 배치를 남기고 돌·잔물결·산 내부 묘사를 생략했습니다. 길과 호숫가의 구분이 흐려지고 나무와 집은 원본보다 단순해졌습니다. 지시보다 많은 선이 남습니다."
+    },
+    {
+      "label": "반려동물 · 갸웃한 코기",
+      "toolInput": {
+        "prompt": "이 사진을 눈 감고 마우스로 2초 만에 찍 그린 그림판 낙서로 바꿔줘. 진짜 못 그려야 해.\n\n흰 바탕에 굵은 검정 선. 전체 그림을 겨우 6~8번의 성급한 마우스 움직임으로 끝내. 대상의 큰 덩어리와 자세만 삐뚤한 고리와 꺾인 막대 몇 개로 뭉개. 원본을 떠올릴 단서 딱 한두 개만 남기고 나머지는 버려.\n\n제대로 된 윤곽선 대신 덜 닫힌 고리, 엉뚱하게 겹친 선, 빗나간 연결을 써. 얼굴과 몸도 모양이 무너져야 해. 풍경이면 덩어리 위치만 남겨. 화면 대부분은 빈 흰색. 주변 배경은 주제가 아니면 지워.\n\n디테일을 그리면 실패야. 표정, 머리카락, 옷, 손발, 털, 장식, 질감을 묘사하지 마. 귀엽거나 깔끔하거나 잘 그린 그림은 실패야. 색칠·글자 없이, 대체 뭘 그린 건지 잠깐 헷갈릴 만큼 엉망인 낙서만 보여줘.",
+        "referenced_image_artifacts": [
+          "exec-4c597a87-353a-4eed-a7e3-bc32073ee74a.png"
+        ],
+        "transparent_background": false
+      },
+      "toolInputPathPolicy": "실제 로컬 경로는 공개하지 않고 동일 입력 파일의 도구 반환 식별자로 기록합니다.",
+      "additionalInstructions": "",
+      "postEditing": false,
+      "files": [
+        {
+          "role": "reference",
+          "path": "assets/images/eyes-closed-mspaint.pet.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "f54ead861cdb5e7c8e1e638b920491bd536db92914c3b85e982fe692150347b6",
+          "sourceArtifact": "exec-4c597a87-353a-4eed-a7e3-bc32073ee74a.png",
+          "sourceSha256": "9d04406ffe7a577e7b96c0d425047402bb8f869496628a79314875e79ed4bce4",
+          "pixelsMatchSource": true
+        },
+        {
+          "role": "result",
+          "path": "assets/images/eyes-closed-mspaint.pet.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "d8b086c3a9b027c8715847b428a18ba1ce55f204c7bb1111a090b007f2bbd906",
+          "sourceArtifact": "exec-a0915caf-1fd2-4ead-bcdf-301ee426c88a.png",
+          "sourceSha256": "f79e436280e5f635f0b34c7881f99fddb8d9d3f00fec53c0271bce4863b581c0",
+          "pixelsMatchSource": true
+        }
+      ],
+      "review": "AI 생성 원본·결과 · 가상 코기 사진 한 장에 인물·풍경과 같은 공개 v4 문구만 적용했습니다. 큰 귀·기울어진 고개·목수건과 앉은 자세는 남고, 눈과 털 무늬는 생략됐습니다. 얼굴 윤곽과 발의 연결이 어긋나며 품종의 세부 유사성은 낮아집니다. 코에는 검은 낙서 덩어리가 남습니다."
+    }
+  ],
+  "thumbnail": {
+    "path": "assets/images/eyes-closed-mspaint.thumb.webp",
+    "width": 560,
+    "height": 840,
+    "sha256": "5e5f467ffa7d777cc78d89f0b8c38f942bfd2c028290b51a5f8e5f51dbce517b"
+  },
+  "attempts": [
+    {
+      "version": "v2",
+      "inputArtifact": "exec-4f600bbb-0792-4506-8fcb-4d037b0b1150.png",
+      "prompt": "첨부한 사진을 “이건 나도 눈 감고 그림판으로 그리겠다” 싶은 검정 마우스 낙서로 바꿔줘.\n\n흰 바탕에 굵은 검정 기본 브러시 하나로, 사진을 잠깐 보고 5초 만에 기억으로 대충 그린 느낌. 주인공의 자세와 방향, 가장 눈에 띄는 특징 두세 개만 겨우 알아볼 수 있으면 돼. 배경은 전부 생략해줘.\n\n전체를 몇 개의 삐뚤빼뚤한 선과 찌그러진 고리로 끝내줘. 얼굴은 찌그러진 고리 하나, 몸통은 막대 하나. 팔과 다리는 한 줄씩 꺾거나 길쭉한 고리 하나로 뭉개고, 서로 겹치거나 어디에 붙는지 조금 헷갈려도 좋아. 의자가 꼭 필요하면 받침선과 다리 선 두어 개만. 손에 든 물건은 작은 삐뚤한 네모 하나로, 손가락은 생략해줘. 안경·마스크처럼 중요한 특징도 엉성한 도형으로만 표시해줘.\n\n머리카락, 옷, 신발의 형태를 따로 묘사하지 마. 팔다리를 해부학적으로 정리하지 마. 원본의 모든 부분을 윤곽선으로 따라 그리지 마. 선의 끝이 어긋나고, 도형이 덜 닫히고, 비례가 엉망인 성의 없는 낙서여야 해. 잘 그린 졸라맨이나 귀여운 캐릭터처럼 다듬지 마. 채색·검정 면 채우기·명암·글자·서명 없이 낙서 한 장만 보여줘.",
+      "additionalInstructions": "",
+      "outputArtifact": "exec-8a2414bd-757c-4cf4-a096-60518ba13e2b.png",
+      "outputSha256": "a61a232e6de5263ece774cddd257659363fb4b67425064ac8d1597ae61904068",
+      "selectedForCatalog": false,
+      "status": "success",
+      "review": "각 유형의 특징과 구도는 남았으나 사용자가 더 대충 그리도록 수정을 요청했습니다."
+    },
+    {
+      "version": "v2",
+      "inputArtifact": "exec-13e9eff1-a828-45e9-908e-a03f1fac9575.png",
+      "prompt": "첨부한 사진을 “이건 나도 눈 감고 그림판으로 그리겠다” 싶은 검정 마우스 낙서로 바꿔줘.\n\n흰 바탕에 굵은 검정 기본 브러시 하나로, 사진을 잠깐 보고 5초 만에 기억으로 대충 그린 느낌. 주인공의 자세와 방향, 가장 눈에 띄는 특징 두세 개만 겨우 알아볼 수 있으면 돼. 배경은 전부 생략해줘.\n\n전체를 몇 개의 삐뚤빼뚤한 선과 찌그러진 고리로 끝내줘. 얼굴은 찌그러진 고리 하나, 몸통은 막대 하나. 팔과 다리는 한 줄씩 꺾거나 길쭉한 고리 하나로 뭉개고, 서로 겹치거나 어디에 붙는지 조금 헷갈려도 좋아. 의자가 꼭 필요하면 받침선과 다리 선 두어 개만. 손에 든 물건은 작은 삐뚤한 네모 하나로, 손가락은 생략해줘. 안경·마스크처럼 중요한 특징도 엉성한 도형으로만 표시해줘.\n\n머리카락, 옷, 신발의 형태를 따로 묘사하지 마. 팔다리를 해부학적으로 정리하지 마. 원본의 모든 부분을 윤곽선으로 따라 그리지 마. 선의 끝이 어긋나고, 도형이 덜 닫히고, 비례가 엉망인 성의 없는 낙서여야 해. 잘 그린 졸라맨이나 귀여운 캐릭터처럼 다듬지 마. 채색·검정 면 채우기·명암·글자·서명 없이 낙서 한 장만 보여줘.",
+      "additionalInstructions": "",
+      "outputArtifact": "exec-4a2240f1-533c-4980-b45a-12dcc70bb112.png",
+      "outputSha256": "25d99ffd799deb878dc5bc0394e30f036bb9ca3cab49148da10d31813e3d8d2d",
+      "selectedForCatalog": false,
+      "status": "success",
+      "review": "각 유형의 특징과 구도는 남았으나 사용자가 더 대충 그리도록 수정을 요청했습니다."
+    },
+    {
+      "version": "v2",
+      "inputArtifact": "exec-4c597a87-353a-4eed-a7e3-bc32073ee74a.png",
+      "prompt": "첨부한 사진을 “이건 나도 눈 감고 그림판으로 그리겠다” 싶은 검정 마우스 낙서로 바꿔줘.\n\n흰 바탕에 굵은 검정 기본 브러시 하나로, 사진을 잠깐 보고 5초 만에 기억으로 대충 그린 느낌. 주인공의 자세와 방향, 가장 눈에 띄는 특징 두세 개만 겨우 알아볼 수 있으면 돼. 배경은 전부 생략해줘.\n\n전체를 몇 개의 삐뚤빼뚤한 선과 찌그러진 고리로 끝내줘. 얼굴은 찌그러진 고리 하나, 몸통은 막대 하나. 팔과 다리는 한 줄씩 꺾거나 길쭉한 고리 하나로 뭉개고, 서로 겹치거나 어디에 붙는지 조금 헷갈려도 좋아. 의자가 꼭 필요하면 받침선과 다리 선 두어 개만. 손에 든 물건은 작은 삐뚤한 네모 하나로, 손가락은 생략해줘. 안경·마스크처럼 중요한 특징도 엉성한 도형으로만 표시해줘.\n\n머리카락, 옷, 신발의 형태를 따로 묘사하지 마. 팔다리를 해부학적으로 정리하지 마. 원본의 모든 부분을 윤곽선으로 따라 그리지 마. 선의 끝이 어긋나고, 도형이 덜 닫히고, 비례가 엉망인 성의 없는 낙서여야 해. 잘 그린 졸라맨이나 귀여운 캐릭터처럼 다듬지 마. 채색·검정 면 채우기·명암·글자·서명 없이 낙서 한 장만 보여줘.",
+      "additionalInstructions": "",
+      "outputArtifact": "exec-81e6f6f3-079d-4ef3-8948-baa26b6830e9.png",
+      "outputSha256": "b9bb6c1bb961b257be2df7298730fc2817974de477c8af29aeefbb9bdc0cae15",
+      "selectedForCatalog": false,
+      "status": "success",
+      "review": "각 유형의 특징과 구도는 남았으나 사용자가 더 대충 그리도록 수정을 요청했습니다."
+    },
+    {
+      "version": "v3",
+      "inputArtifact": "exec-4f600bbb-0792-4506-8fcb-4d037b0b1150.png",
+      "prompt": "첨부한 사진을 보고 “야 이건 나도 눈 감고 그림판으로 그리겠다ㅋㅋ” 하고 마우스로 휘갈긴, 정말 대충 그린 낙서 한 장으로 바꿔줘.\n\n사진을 1초 보고 기억으로 3초 만에 그렸다고 생각해줘. 흰 바탕에 굵기가 일정한 검정 기본 브러시 하나만 쓰고, 화면 전체를 대략 10획 안팎의 큼직한 선으로 끝내줘. 최대한 많이 생략해. 사진의 윤곽을 따라 그리는 게 아니라, 제일 눈에 띄는 특징 두세 개와 전체 자세 또는 배치만 어렴풋이 닮으면 돼.\n\n선은 마우스가 미끄러진 듯 꺾이고 삐뚤어져야 해. 동그라미는 찌그러지고 덜 닫히고, 붙어야 할 선은 빗나가고, 팔다리나 물건은 잘못된 곳에 붙어도 좋아. 비례도 원근도 틀리게, 몸통과 팔다리는 막대나 길쭉한 고리 몇 개로 뭉개줘. 사람이나 동물의 머리는 엉성한 고리 하나, 눈과 코는 작은 점 정도로 끝내고, 사진에 없는 사람이나 동물은 만들지 마. 풍경도 주요 덩어리의 위치만 삐뚤한 선 몇 개로 남겨줘.\n\n머리카락과 털, 무늬, 옷, 손가락, 발가락, 신발, 나뭇가지, 잔물결, 돌, 장식은 전부 생략해줘. 중요한 소품이나 특징도 선 하나나 찌그러진 도형 하나로만 표시해. 안 중요한 배경은 지워줘.\n\n잘 그린 졸라맨, 귀여운 캐릭터, 깔끔한 아이콘, 정돈된 어린이 그림처럼 완성하지 마. 선을 예쁘게 다듬거나 세부를 추가해서 빈 곳을 채우지 마. “뭘 그린 건지는 알겠는데 진짜 못 그렸다” 싶은 허술함이 핵심이야. 색칠·명암·질감·글자·서명 없이 낙서만 보여줘.",
+      "additionalInstructions": "",
+      "outputArtifact": "exec-7ccad6ce-6752-45fa-8697-7edc805a0b32.png",
+      "outputSha256": "c831952b1c07913634e67183aa7fe331eb92bc419999f1cea8fd935faa5d354b",
+      "selectedForCatalog": false,
+      "status": "success",
+      "review": "인물에 옷·손·배경 묘사가 늘고 다른 예시도 충분히 거칠지 않아 미선택했습니다."
+    },
+    {
+      "version": "v3",
+      "inputArtifact": "exec-13e9eff1-a828-45e9-908e-a03f1fac9575.png",
+      "prompt": "첨부한 사진을 보고 “야 이건 나도 눈 감고 그림판으로 그리겠다ㅋㅋ” 하고 마우스로 휘갈긴, 정말 대충 그린 낙서 한 장으로 바꿔줘.\n\n사진을 1초 보고 기억으로 3초 만에 그렸다고 생각해줘. 흰 바탕에 굵기가 일정한 검정 기본 브러시 하나만 쓰고, 화면 전체를 대략 10획 안팎의 큼직한 선으로 끝내줘. 최대한 많이 생략해. 사진의 윤곽을 따라 그리는 게 아니라, 제일 눈에 띄는 특징 두세 개와 전체 자세 또는 배치만 어렴풋이 닮으면 돼.\n\n선은 마우스가 미끄러진 듯 꺾이고 삐뚤어져야 해. 동그라미는 찌그러지고 덜 닫히고, 붙어야 할 선은 빗나가고, 팔다리나 물건은 잘못된 곳에 붙어도 좋아. 비례도 원근도 틀리게, 몸통과 팔다리는 막대나 길쭉한 고리 몇 개로 뭉개줘. 사람이나 동물의 머리는 엉성한 고리 하나, 눈과 코는 작은 점 정도로 끝내고, 사진에 없는 사람이나 동물은 만들지 마. 풍경도 주요 덩어리의 위치만 삐뚤한 선 몇 개로 남겨줘.\n\n머리카락과 털, 무늬, 옷, 손가락, 발가락, 신발, 나뭇가지, 잔물결, 돌, 장식은 전부 생략해줘. 중요한 소품이나 특징도 선 하나나 찌그러진 도형 하나로만 표시해. 안 중요한 배경은 지워줘.\n\n잘 그린 졸라맨, 귀여운 캐릭터, 깔끔한 아이콘, 정돈된 어린이 그림처럼 완성하지 마. 선을 예쁘게 다듬거나 세부를 추가해서 빈 곳을 채우지 마. “뭘 그린 건지는 알겠는데 진짜 못 그렸다” 싶은 허술함이 핵심이야. 색칠·명암·질감·글자·서명 없이 낙서만 보여줘.",
+      "additionalInstructions": "",
+      "outputArtifact": "exec-74c4616c-3648-427e-9e74-f8bf4e978498.png",
+      "outputSha256": "0cbb6b5e359dc4fba2a025d7bab6e5f74b5f1f7fbb9ecfe700125472e2155915",
+      "selectedForCatalog": false,
+      "status": "success",
+      "review": "인물에 옷·손·배경 묘사가 늘고 다른 예시도 충분히 거칠지 않아 미선택했습니다."
+    },
+    {
+      "version": "v3",
+      "inputArtifact": "exec-4c597a87-353a-4eed-a7e3-bc32073ee74a.png",
+      "prompt": "첨부한 사진을 보고 “야 이건 나도 눈 감고 그림판으로 그리겠다ㅋㅋ” 하고 마우스로 휘갈긴, 정말 대충 그린 낙서 한 장으로 바꿔줘.\n\n사진을 1초 보고 기억으로 3초 만에 그렸다고 생각해줘. 흰 바탕에 굵기가 일정한 검정 기본 브러시 하나만 쓰고, 화면 전체를 대략 10획 안팎의 큼직한 선으로 끝내줘. 최대한 많이 생략해. 사진의 윤곽을 따라 그리는 게 아니라, 제일 눈에 띄는 특징 두세 개와 전체 자세 또는 배치만 어렴풋이 닮으면 돼.\n\n선은 마우스가 미끄러진 듯 꺾이고 삐뚤어져야 해. 동그라미는 찌그러지고 덜 닫히고, 붙어야 할 선은 빗나가고, 팔다리나 물건은 잘못된 곳에 붙어도 좋아. 비례도 원근도 틀리게, 몸통과 팔다리는 막대나 길쭉한 고리 몇 개로 뭉개줘. 사람이나 동물의 머리는 엉성한 고리 하나, 눈과 코는 작은 점 정도로 끝내고, 사진에 없는 사람이나 동물은 만들지 마. 풍경도 주요 덩어리의 위치만 삐뚤한 선 몇 개로 남겨줘.\n\n머리카락과 털, 무늬, 옷, 손가락, 발가락, 신발, 나뭇가지, 잔물결, 돌, 장식은 전부 생략해줘. 중요한 소품이나 특징도 선 하나나 찌그러진 도형 하나로만 표시해. 안 중요한 배경은 지워줘.\n\n잘 그린 졸라맨, 귀여운 캐릭터, 깔끔한 아이콘, 정돈된 어린이 그림처럼 완성하지 마. 선을 예쁘게 다듬거나 세부를 추가해서 빈 곳을 채우지 마. “뭘 그린 건지는 알겠는데 진짜 못 그렸다” 싶은 허술함이 핵심이야. 색칠·명암·질감·글자·서명 없이 낙서만 보여줘.",
+      "additionalInstructions": "",
+      "outputArtifact": "exec-d10002dc-1c5d-4fa0-bd7e-96679379a8bd.png",
+      "outputSha256": "edb64c8c41c5eebd5d4f33f5b27a6b7d561235662a705d2ff4f77880e9ad5882",
+      "selectedForCatalog": false,
+      "status": "success",
+      "review": "인물에 옷·손·배경 묘사가 늘고 다른 예시도 충분히 거칠지 않아 미선택했습니다."
+    }
+  ],
+  "coverage": "AI 가상 인물·풍경·반려동물 각 한 장의 v4 결과입니다. 6~8획 준수나 모든 입력에서 동일한 생략 수준을 보장하지 않습니다."
+}
