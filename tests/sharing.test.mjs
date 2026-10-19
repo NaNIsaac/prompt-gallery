@@ -51,6 +51,10 @@ test('built pages expose each actual result to crawlers without running JavaScri
     assert.ok(image.length < 500_000);
   }
   const home = await readFile(resolve(projectRoot, 'dist/index.html'), 'utf8');
+  const source = await readFile(resolve(projectRoot, 'index.html'), 'utf8');
+  const verification = source.match(/<meta name="google-site-verification"[^>]+>/)?.[0];
+  assert.ok(verification, 'Search Console verification tag must be configured');
+  assert.ok(home.includes(verification), 'build must preserve the verification tag');
   assert.equal((home.match(/property="og:image" /g) || []).length, 1);
   assert.ok(home.includes(`property="og:url" content="${siteRoot}"`));
   const catalog = await readCatalog();
