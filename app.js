@@ -2,6 +2,10 @@ import { categories, filterPrompts, parseSavedIds } from './src/catalog.mjs';
 import { promptUrl, readPromptLocation } from './src/sharing.mjs';
 import { createViewState, resetActiveFilters, navigationState, writeClipboard } from './src/ui-state.mjs';
 
+import { createAnalytics } from './src/analytics.mjs';
+import { analyticsConfig } from './src/analytics-config.mjs';
+
+const analytics = createAnalytics(analyticsConfig);
 const $ = selector => document.querySelector(selector);
 const gallery = $('#gallery');
 const dialog = $('#prompt-dialog');
@@ -145,11 +149,14 @@ function focusCard(id, fallbackIndex = 0) {
 }
 
 function setSaved(id, saved, allowUndo = true) {
+  const changed = savedIds.has(id) !== saved;
+  const prompt = prompts.find(p => p.id === id);
   const index = visiblePrompts.findIndex(p => p.id === id);
   const restoreFocus = !dialog.open && document.activeElement.closest?.('.prompt-card')?.dataset.id === id;
   if (saved) savedIds.add(id); else savedIds.delete(id);
   let persisted = true;
   try { localStorage.setItem(storageKey, JSON.stringify([...savedIds])); } catch { persisted = false; }
+  if (changed) analytics.track(saved ? 'prompt_save' : 'prompt_unsave', prompt, { surface: dialog.open ? 'detail' : 'card', galleryView: view.active, position: index + 1 });
   if (view.active === 'saved') {
     renderGallery();
     if (restoreFocus) focusCard(id, Math.max(0, index));
@@ -190,11 +197,14 @@ function legacyCopy(text) {
 
 async function copyText(text, trigger, recoveryPrompt = null, isLink = false) {
   if (trigger?.dataset.copying === 'true') return;
+  const copiedPrompt = recoveryPrompt || currentPrompt;
+  const copyContext = { surface: dialog.open ? 'detail' : 'card', galleryView: view.active, position: visiblePrompts.findIndex(p => p.id === copiedPrompt?.id) + 1 };
   setCopyButton(trigger, 'busy');
   try {
     const primary = navigator.clipboard?.writeText && window.isSecureContext ? value => navigator.clipboard.writeText(value) : null;
     await writeClipboard(text, primary, legacyCopy);
     setCopyButton(trigger, 'success');
+    analytics.track(isLink ? 'prompt_link_copy' : 'prompt_copy', copiedPrompt, copyContext);
     notify(isLink ? '프롬프트 링크를 복사했어요.' : '프롬프트를 복사했어요. ChatGPT에 사진과 함께 보내세요.');
   } catch {
     setCopyButton(trigger, 'default');
@@ -297,6 +307,7 @@ function syncControls() {
 function renderGallery() {
   visiblePrompts = filterPrompts(prompts, { ...filters(), savedOnly: view.active === 'saved', savedIds });
   gallery.replaceChildren(...visiblePrompts.map(createCard));
+  analytics.observeCards([...gallery.querySelectorAll('.image-preview')].map((target, index) => ({ target, prompt: visiblePrompts[index], context: { surface: 'card', galleryView: view.active, position: index + 1 } })));
   gallery.hidden = visiblePrompts.length === 0;
   $('#empty-state').hidden = visiblePrompts.length !== 0;
   const savedEmpty = view.active === 'saved' && savedIds.size === 0;
@@ -401,6 +412,7 @@ function closeImageViewer(restoreFocus = true) {
 function openPrompt(prompt, trigger = null, writeHistory = true) {
   closeImageViewer(false);
   const wasOpen = dialog.open;
+  const changedPrompt = !wasOpen || currentPrompt?.id !== prompt.id;
   if (!wasOpen) {
     modalIds = (visiblePrompts.some(p => p.id === prompt.id) ? visiblePrompts : prompts).map(p => p.id);
     openerId = prompt.id;
@@ -444,12 +456,15 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
     else history.pushState({ ...history.state, promptGallery: true }, '', url);
   }
   document.title = `${prompt.title} — Prompt Gallery`;
+  analytics.setCovered(true);
+  if (changedPrompt) analytics.track('prompt_open', prompt, { surface: trigger ? 'card' : wasOpen ? 'navigation' : 'direct', galleryView: view.active, position: visiblePrompts.findIndex(p => p.id === prompt.id) + 1 });
 }
 
 function closePrompt(writeHistory = true) {
   closeImageViewer(false);
   const returnIndex = Math.max(0, modalIds.indexOf(openerId));
   if (dialog.open) dialog.close();
+  analytics.setCovered(aboutDialog.open);
   currentPrompt = null;
   currentExample = null;
   resetFeedback();
@@ -592,7 +607,8 @@ function backdropClick(event, target, close) {
   if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) close();
 }
 dialog.addEventListener('click', event => backdropClick(event, dialog, closePrompt));
-$('#about-button').addEventListener('click', () => { dismissToast(); aboutDialog.showModal(); $('#close-about').focus(); });
+$('#about-button').addEventListener('click', () => { dismissToast(); aboutDialog.showModal(); analytics.setCovered(true); $('#close-about').focus(); });
+aboutDialog.addEventListener('close', () => analytics.setCovered(dialog.open));
 $('#close-about').addEventListener('click', () => aboutDialog.close());
 aboutDialog.addEventListener('click', event => backdropClick(event, aboutDialog, () => aboutDialog.close()));
 $('#retry-load').addEventListener('click', loadCatalog);
