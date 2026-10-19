@@ -9,7 +9,6 @@
 | [개발 흐름](development.md) | 브랜치, 로컬 실행, 변경 범위, PR, 병합, 복구 |
 | [테스트와 배포](testing-and-deployment.md) | 로컬 검사, CI 필수 검사, 브라우저 테스트, Pages 배포, 실패 대응 |
 | [프롬프트 등록 원칙](prompt-publishing.md) | 원문 보존, 이미지 생성·검토, 등록 순서, 생성 기록 |
-
 | [GA4 이용 통계](analytics.md) | 측정 ID, 수집 이벤트, 맞춤 정의, 지표 해석과 검증 |
 
 ## 생성 이력과 참고 자료
