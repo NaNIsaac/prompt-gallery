@@ -1,5 +1,57 @@
 [
   {
+    "id": "teenieping",
+    "title": "내 사진을 나만의 티니핑으로",
+    "category": "캐릭터",
+    "tags": [
+      "티니핑",
+      "캐치 티니핑",
+      "요정",
+      "상징색",
+      "3D 캐릭터",
+      "가족 사진"
+    ],
+    "image": "assets/images/teenieping.webp",
+    "thumbnail": "assets/images/teenieping.thumb.webp",
+    "width": 1024,
+    "height": 1536,
+    "color": "#57bc91",
+    "prompt": "Create an original magical creature in the authentic 3D CGI character-design language of Catch! Teenieping, inspired by the ONE attached source photo. Use only this photo as input. Do not request or depend on any extra reference image.\n\nSTYLE AND COLOR ARE ESSENTIAL:\nThe result is a brightly colored nonhuman fairy spirit, not a human baby, chibi person, realistic miniature doll or plush toy. Give it a distinctly nonhuman, very pale fantasy-colored face/body, vivid sculpted fantasy hair and jewel-colored eyes. Choose an activity-based theme from the meaningful source action/prop. Hair MUST change to a saturated fantasy hue such as emerald, mint, turquoise, cobalt, violet or coral; do not keep natural black/brown hair or render human hair fibers. Plant-care can inspire fresh green/mint and reading can inspire ink blue, but choose a coherent palette from each actual photo rather than making everyone the same pink princess.\nKeep the source hairstyle SHAPE: short/long, fringe, tied/loose, number and placement of ponytails. Translate it into just a few large swollen curved lobes of smooth opaque colored material, with broad highlights. Absolutely no individual hair strands, fine parallel lines, grooves, fuzzy fibers or realistic hair reflections.\n\nTHE TEENIEPING CREATURE MODEL:\nUse a broad, flat-front rounded-square/soft-pear head with wide cheeks, a low short chin and almost invisible neck. Head/hair takes about TWO THIRDS of total height. The tiny body below is a simple smooth teardrop. Arms are very short soft flippers with rounded mitten tips; feet are short tapered tips continuous with the body. No human ears, nose bridge, protruding nose, lips, pores, wrists, articulated fingers, long calves or realistic separate sneakers. Only head, torso, two arms and two legs — absolutely no tail, wings, animal ears, fins, back spikes or extra anatomy.\nEyes are large clean upright ovals, very dark pupils, saturated luminous lower iris rims, exactly one large white circular reflection plus one tiny white dot each. Place them low and wide on the face with simple restrained lashes. Nose is one tiny flat dot. Mouth is a small open wedge smile with a simple little red tongue, or the source's subdued expression adapted to that face model. Match clean preschool CGI mascot geometry, not a human portrait's facial anatomy.\n\nSOURCE IDENTITY LOCKS:\nKeep the source people count, hairstyle silhouette, eyewear and actual garment categories and original major colors. Preserve source presentation; do not feminize boys or automatically add princess dresses or long lashes.\nIf the person wears glasses, BOTH complete frames and bridge MUST be clearly visible over the eyes, matching source frame shape/color; lenses remain clear. Do not remove glasses to enlarge the eyes, and do not add glasses when absent.\nRead actual source garment construction, not gender: a skirt/dress remains ONE continuous skirt shell with an unbroken hem spanning both little legs. Trousers/shorts remain TWO separate clothed leg openings with a visible split. No skirt, apron, petals or peplum over trouser inputs; do not turn a skirt into shorts.\nKeep upper and lower garment hues SEPARATELY: blue stays blue, beige stays beige, green stays green, yellow stays yellow. Fantasy recoloring is ONLY for hair/eyes/pale body tint, never a reason to replace source garment, eyewear or prop colors.\n\nCOSTUME — NO PHOTOGRAPHIC CLOTH:\nRepresent the source garment silhouette and sleeve coverage as tiny smooth magic-costume color shells, not a miniature retail wardrobe. A jacket is a simple open colored shape over the shirt; a hood is one rounded shape; a skirt is one smooth small bell shell; trousers are two smooth short tubes. A few plain edge/button shapes are enough. NO knit stitches, fabric grain, denim weave, seam stitching, belt loops, zippers, laces, drapery, realistic cuffs or cloth folds. Footwear becomes only the source color at the small integrated foot tips.\nFrom the activity, invent ONE simple small insignia (plant sprout, book, drawing tool, etc.) and put it on a compact hair jewel OR chest badge. Avoid unrelated tiaras, flowers, bows, hearts, golden crown logos and oversized ornaments.\n\nMEANINGFUL SCENE:\nPreserve original seated/standing posture and the actual seat/floor support. A seated subject stays seated on its bench/chair, not standing; a standing subject stands on the original support plane rather than relocating onto furniture. Preserve gaze toward the activity and each hand's separate object-contact role. Two-hand holding stays two-hand holding at visible support points; a drawing hand draws while the other supports paper. Adapt tiny arm angles and prop scale so contacts are legible.\nRebuild the source setting as a boldly simplified CGI TV-animation set, not the source photograph or a product-photography backdrop. Use broad round leaves, smooth solid-color furniture and simple clear forms. All character hair, skin, costume, props and background use clean smooth opaque surfaces, soft even animation lighting and broad simple shading. No golden cinematic backlight, photographic bokeh, realistic textures, clay grain or plush.\nMake one finished scene, protagonist(s) large and full-body where possible, little feet visible, main action readable. No extra people or existing cast friends, no words, logo, label, watermark, border, grid or comparison panels.\nBefore finishing check the source glasses, original upper/lower garment hues, one skirt hem versus two clothed trouser legs, hairstyle silhouette, correct hand contacts/posture, and absence of tails/extra anatomy.",
+    "inputRequirement": "portrait",
+    "inputLabel": "인물 사진 1장 필요",
+    "usage": "머리 모양·안경·옷과 행동이 잘 보이는 인물 사진 한 장을 첨부하고 프롬프트를 보내세요. 별도 캐릭터 참고 파일이나 추가 첨부는 필요하지 않습니다. 원본의 안경·상의와 하의 색·치마와 바지 구분·행동을 살리고 머리·눈·몸은 활동을 상징하는 판타지 색으로 바꿉니다. 예시는 같은 문구로 사진 한 장씩만 입력한 AI 가상 성인·남자아이이며, 원작과의 조형 차이는 남습니다.",
+    "exampleNote": "AI 생성 원본·결과 · 가상 성인 사진 한 장과 공개 v14 문구만 사용했습니다. 추가 참고 이미지는 전달하지 않았습니다. 초록 상징색 머리와 식물 배지로 바꾸고 금테 안경·노란 상의·파란 치마·두 손 물뿌리개를 유지했습니다. 머리·옷·배경에 세밀한 질감과 흐림이 남으며 원작 조형과 완전히 같지는 않습니다.",
+    "referenceImages": [
+      "assets/images/teenieping.reference.webp"
+    ],
+    "examples": [
+      {
+        "label": "성인 · 식물 돌봄",
+        "image": "assets/images/teenieping.webp",
+        "width": 1024,
+        "height": 1536,
+        "referenceImages": [
+          "assets/images/teenieping.reference.webp"
+        ],
+        "note": "AI 생성 원본·결과 · 가상 성인 사진 한 장과 공개 v14 문구만 사용했습니다. 추가 참고 이미지는 전달하지 않았습니다. 초록 상징색 머리와 식물 배지로 바꾸고 금테 안경·노란 상의·파란 치마·두 손 물뿌리개를 유지했습니다. 머리·옷·배경에 세밀한 질감과 흐림이 남으며 원작 조형과 완전히 같지는 않습니다."
+      },
+      {
+        "label": "남자아이 · 독서",
+        "image": "assets/images/teenieping.boy.webp",
+        "width": 1024,
+        "height": 1536,
+        "referenceImages": [
+          "assets/images/teenieping.boy.reference.webp"
+        ],
+        "note": "AI 생성 원본·결과 · 가상 남자아이 사진 한 장과 성인 예시와 동일한 공개 v14 문구만 사용했습니다. 추가 참고 이미지 없이 청록 상징색 머리, 남색 네모 안경·초록 후드·베이지 바지·앉은 독서와 두 손 책을 표현했습니다. 꼬리는 보이지 않습니다. 사람 귀 같은 형태와 머리·옷의 세밀한 질감이 남고 머리 모양·시선이 원본과 다릅니다. 활동 배지는 보이지 않으며 두 예시의 머리색은 모두 녹색 계열입니다."
+      }
+    ],
+    "author": "gyuhyeong",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery/blob/main/docs/teenieping-input-guide.md",
+    "sample": false,
+    "order": -35
+  },
+  {
     "id": "kpop-idol",
     "title": "내 사진을 K-pop 아이돌 화보로",
     "category": "인물",
