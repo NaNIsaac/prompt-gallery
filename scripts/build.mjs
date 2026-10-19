@@ -27,12 +27,12 @@ const tagsFor = (prompt, url, title, description) => socialTags({
 });
 const homeTitle = /<title>(.*?)<\/title>/.exec(template)[1];
 const homeDescription = /<meta name="description" content="(.*?)">/.exec(template)[1];
-await writeFile(resolve(output, 'index.html'), template.replace('<!-- static-content -->', renderStaticCatalog(prompts)).replace('</head>', `  ${tagsFor(featured, siteUrl.href, homeTitle, homeDescription)}\n</head>`));
+await writeFile(resolve(output, 'index.html'), template.replace('<!-- static-content -->', () => renderStaticCatalog(prompts)).replace('</head>', `  ${tagsFor(featured, siteUrl.href, homeTitle, homeDescription)}\n</head>`));
 for (const prompt of prompts) {
   const title = `${prompt.title} — Prompt Gallery`;
   const description = `${prompt.inputLabel || '사진 1장 필요'}. ${prompt.usage}`;
   const page = template
-    .replace('<!-- static-content -->', renderStaticPrompt(prompt, prompts))
+    .replace('<!-- static-content -->', () => renderStaticPrompt(prompt, prompts))
     .replace(/(<h1 id="page-title">)[\s\S]*?(<\/h1>)/, (_, start, end) => start + escapeHtml(prompt.title) + end)
     .replace(/(href|src)="\.\//g, '$1="../../')
     .replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
