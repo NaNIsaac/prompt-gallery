@@ -1,0 +1,221 @@
+{
+  "id": "kpop-idol",
+  "date": "2026-10-19",
+  "tool": "built-in image_gen.imagegen",
+  "selectedVersion": "v4",
+  "approvedByUser": true,
+  "approval": "사용자가 두 번째 사진의 동일 v4 시험과 머리 길이 변경 한계를 확인한 뒤 \"좋다 PR\"이라고 확정·제출을 요청했습니다.",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/kpop-idol",
+  "baseCommit": "e1a728d958e435dbee5410ab8d80fed1199c8575",
+  "updatedBaseCommit": "e613dbf156015162fe3fd9ee4933b826a66d2b5b",
+  "publicPrompt": "첨부 사진 속 성인 인물(가상 27세)의 사진을 전문 헤어·메이크업·의상 팀이 완성한 K-pop 아이돌의 컴백 콘셉트 포토로 변환해 주세요. 한눈에 풀 메이크업과 스타일링의 변화가 드러나는 완성도 높은 화보로 만들어 주세요.\n\n동일 인물의 얼굴형, 눈·코·입의 기본 형태와 간격, 나이대, 피부색, 고유한 인상은 유지해 주세요. 성형처럼 턱을 깎거나 눈을 키우지 말고, 다른 사람이나 특정 실존 아이돌의 얼굴로 바꾸지 마세요. 얼굴 정체성은 보존하면서 메이크업·헤어·의상은 확실하게 변신시켜 주세요.\n\n메이크업: 촬영용 베이스로 피부 톤을 고르게 정돈하고 광대·콧대에 은은한 새틴 하이라이트와 부드러운 윤곽 음영을 넣어 주세요. 피부 결은 남기고 주근깨는 파운데이션 아래로 은은하게 비치게 해 주세요. 눈썹은 결을 살려 정교하게 다듬고, 눈두덩에 로즈 모브와 토프 색 음영을 층층이 표현해 주세요. 길게 뺀 선명한 블랙 윙 아이라인, 또렷한 속눈썹 라인과 가닥가닥 컬링한 아이돌 속눈썹, 눈 앞머리와 애교살의 샴페인 미세 글리터가 실제로 잘 보이게 해 주세요. 눈 아래에는 가벼운 음영을 넣고, 볼에는 쿨 핑크 블러셔, 입술에는 선명한 로즈 베리 그라데이션과 촉촉한 글로스를 표현해 주세요. 눈화장·볼·입술의 색과 광택이 조명 아래에서도 분명하게 보이게 해 주세요.\n\n헤어와 액세서리: 원본의 짧은 단발 길이를 살려 뿌리 볼륨, 매끈한 윤기, 정교한 사이드 가르마와 C컬 끝선을 만들고 한쪽 귀 뒤로 넘겨 주세요. 눈화장이 잘 보이도록 안경은 벗긴 상태로 연출해 주세요. 크리스털 이어커프와 귀걸이, 가는 실버 초커로 스타일링해 주세요.\n\n의상과 촬영: 목과 상체를 충분히 덮는 블랙 하이넥 블라우스와 단추를 여민 긴 테일러드 재킷, 절제된 크리스털 포인트로 세련된 아이돌 무대 스타일을 완성해 주세요. 눈·메이크업 디테일을 읽을 수 있는 선명한 상반신 화보, 자신감 있는 표정과 자연스러운 어깨 자세로 연출해 주세요. 인물 수는 원본대로 유지해 주세요. 배경은 깔끔한 딥 플럼 그라데이션 스튜디오, 얼굴에는 부드럽고 밝은 뷰티 조명, 머리와 어깨에는 시원한 림라이트를 사용해 주세요. 고급 앨범 티저의 사진 질감, 정확한 얼굴 구조와 자연스러운 해부학을 유지해 주세요. 글자·로고·워터마크·비교 분할 화면 없이 사진 한 장으로 완성해 주세요.",
+  "publicPromptTestedAlone": true,
+  "referenceOrigin": "Two entirely AI-generated fictional 27-year-old adult women; neither is an actual user photograph.",
+  "generationSteps": [
+    {
+      "version": "reference-01",
+      "actualToolArguments": {
+        "prompt": "Use case: photorealistic-natural\nCreate one realistic fictional input photograph for a before/after photo transformation test. A fictional 27-year-old Korean woman, short dark brown bob ending at the jaw with a slight side part, thin oval silver eyeglasses, a few faint freckles across her nose, warm medium-light skin with visible natural texture. She wears an ordinary plain muted sage crew-neck T-shirt. Relaxed closed-mouth smile, looking directly at the camera, shoulders and upper torso visible, both arms resting naturally outside the bottom crop. Ordinary softly lit apartment with a softly blurred cream wall and green plant. Unretouched candid smartphone portrait, natural window daylight, realistic proportions, unglamorous everyday appearance. One person only. Portrait orientation, waist-up framing, ample headroom. No celebrities, no text, no logos, no watermark. This is an entirely AI-generated fictional adult, not an actual user's photograph.",
+        "transparent_background": false
+      },
+      "output": {
+        "path": "output/imagegen/kpop-idol-2026-10-19/source-01.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "5188fec7b25289c26731305a96d9d4ce22ebb7d3ff2a462a1d8d101ac5acfb77",
+        "toolFileName": "exec-881c9c04-c612-4308-822c-b572628fe5ee.png"
+      }
+    },
+    {
+      "version": "reference-02",
+      "actualToolArguments": {
+        "prompt": "Use case: photorealistic-natural\nCreate a realistic everyday smartphone portrait of one entirely fictional 27-year-old adult Black woman with deep warm brown skin, dark brown eyes, an oval face with broad cheekbones, a softly rounded nose and full lips. Her own natural dark brown hair has loose defined curls and reaches well below her shoulders to mid chest. No glasses. Bare-faced with no visible makeup, natural skin texture and a relaxed closed-mouth smile. A plain opaque cobalt blue crew-neck cotton T-shirt, shoulders and upper torso visible, ordinary home interior with a blurred neutral wall, soft window daylight. Straight-on waist-up composition, eyes sharp, normal proportions. Her hair length and natural curl texture must be clearly visible on both sides of the shoulders. No text, logos, watermark, glamour styling or other people. Fictional adult input photo for a before/after makeover test, not a real user's photograph.",
+        "transparent_background": false
+      },
+      "output": {
+        "path": "output/imagegen/kpop-idol-2026-10-19/source-02.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "fb22f76f663d9e444d65a83a32f230c4ed3632e77dbd4aecc3bb14949f1df77d",
+        "toolFileName": "exec-45dea10d-deed-4c6c-b841-d1f2bc683a5d.png"
+      }
+    },
+    {
+      "version": "v1",
+      "testId": "source-01-v1",
+      "actualToolArguments": {
+        "prompt": "첨부 사진 속 인물을 본인만의 개성이 살아 있는 K-pop 아이돌 콘셉트 화보로 변환해 주세요.\n\n얼굴형, 눈·코·입의 형태와 간격, 피부색, 나이대, 체형과 식별 특징을 유지해 같은 사람임이 분명히 드러나게 해 주세요. 안경이나 고유한 점·주근깨가 있으면 그대로 남기고, 머리 길이와 기본 실루엣은 유지하면서 전문적으로 손질해 주세요. 인종이나 성별 표현을 바꾸거나 특정 실존 아이돌의 얼굴로 대체하지 마세요.\n\n사진 속 인물에게 어울리는 세련된 무대 의상과 절제된 액세서리, 자연스러운 아이돌 메이크업을 적용해 주세요. 의상은 원래 색감이나 분위기에서 힌트를 얻어 새롭게 스타일링하되 나이에 맞게 표현해 주세요. 피부는 결이 보이는 사실적인 질감을 유지하고 과도한 미백·성형 같은 보정은 피해주세요. 원본 인물 수, 시선, 표정, 자세와 촬영 범위는 유지해 주세요.\n\n배경은 은은한 컬러 그라데이션과 깊이감이 있는 K-pop 콘셉트 촬영 세트로 바꾸고, 부드러운 키라이트와 선명한 림라이트로 고급 음악 매거진 화보처럼 연출해 주세요. 인물의 얼굴은 또렷하게, 배경은 정돈된 상태로 표현해 주세요. 주변에 새로운 인물을 추가하지 말고, 손·얼굴·안경의 구조를 자연스럽게 유지해 주세요. 글자, 로고, 워터마크, 비교 분할 화면 없이 완성된 화보 사진 한 장으로 만들어 주세요.",
+        "referenced_image_paths": [
+          "output/imagegen/kpop-idol-2026-10-19/source-01.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": false,
+      "postEdited": false,
+      "status": "success",
+      "observations": "Face, glasses, bob and freckles recognizable; outfit and ornate background read as cozy editorial rather than clear K-pop. Shoulders/arms changed somewhat. Superseded for review by v2.",
+      "output": {
+        "path": "output/imagegen/kpop-idol-2026-10-19/result-01-v1.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "9846c0c7199b702679e07cc4045ac1d464b9072372636bbd66a97ce3b1ce901e",
+        "toolFileName": "exec-d5e2f9c8-9929-47b2-a622-7dc44bbe293e.png"
+      }
+    },
+    {
+      "version": "v2",
+      "testId": "source-01-v2",
+      "actualToolArguments": {
+        "prompt": "첨부 사진 속 인물을 본인만의 개성이 살아 있는 K-pop 아이돌 콘셉트 화보로 변환해 주세요.\n\n얼굴형, 눈·코·입의 형태와 간격, 피부색, 나이대, 체형과 식별 특징을 유지해 같은 사람임이 분명히 드러나게 해 주세요. 안경이나 고유한 점·주근깨가 있으면 그대로 남기고, 머리 길이와 기본 실루엣은 유지하면서 전문적으로 손질해 주세요. 인종이나 성별 표현을 바꾸거나 특정 실존 아이돌의 얼굴로 대체하지 마세요.\n\n컴백 앨범 티저에서 볼 수 있는 선명하고 세련된 K-pop 스타일로 연출해 주세요. 의상은 원래 색감을 포인트로 삼은 구조적인 테일러드 무대 재킷과 단정한 이너로 바꾸고, 실버 파이핑·작은 크리스털 장식·절제된 금속 액세서리를 조화롭게 사용해 주세요. 헤어는 윤기 있게 정돈하고 눈매를 살린 섬세한 메이크업과 은은한 립 광택을 더하되, 나이에 맞게 표현해 주세요. 니트 카디건이나 일상복보다는 전문 무대 의상의 완성도가 드러나게 해 주세요. 피부는 결이 보이는 사실적인 질감을 유지하고 과도한 미백·성형 같은 보정은 피해주세요. 원본 인물 수, 시선, 표정, 자세와 촬영 범위는 유지해 주세요.\n\n배경은 소품 없는 라일락·쿨 그레이 그라데이션의 K-pop 스튜디오 세트로 바꾸고, 부드러운 키라이트와 선명한 림라이트로 고급 음악 매거진 화보처럼 연출해 주세요. 집 안 가구·식물·전구 장식은 남기지 마세요. 인물의 얼굴은 또렷하게, 배경은 정돈된 상태로 표현해 주세요. 주변에 새로운 인물을 추가하지 말고, 손·얼굴·안경의 구조를 자연스럽게 유지해 주세요. 글자, 로고, 워터마크, 비교 분할 화면 없이 완성된 화보 사진 한 장으로 만들어 주세요.",
+        "referenced_image_paths": [
+          "output/imagegen/kpop-idol-2026-10-19/source-01.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": false,
+      "postEdited": false,
+      "status": "success",
+      "observations": "Recognizable face, age, skin tone, glasses, short bob and freckles; sage palette echoed in silver/crystal stage jacket, lilac studio gradient, visible skin texture. Shoulders/arm pose and head tilt shift slightly; freckles/skin rendering not pixel-exact. Hands not visible, so hand anatomy not evaluated. One fictional adult tested only.",
+      "output": {
+        "path": "output/imagegen/kpop-idol-2026-10-19/result-01-v2.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "ca75058c3062f1b27597ee212b7fb5b2b8d7617f848857a4ed6639dceca551d7",
+        "toolFileName": "exec-549a2f44-df57-4b28-bed4-c5908d40cf43.png"
+      }
+    },
+    {
+      "version": "v3",
+      "testId": "source-01-v3",
+      "actualToolArguments": {
+        "prompt": "첨부 인물 사진을 전문 헤어·메이크업·의상 팀이 완성한 K-pop 아이돌의 컴백 콘셉트 포토로 변환해 주세요. 한눈에 풀 메이크업과 스타일링의 변화가 드러나는 완성도 높은 화보로 만들어 주세요.\n\n동일 인물의 얼굴형, 눈·코·입의 기본 형태와 간격, 나이대, 피부색, 고유한 인상은 유지해 주세요. 성형처럼 턱을 깎거나 눈을 키우지 말고, 다른 사람이나 특정 실존 아이돌의 얼굴로 바꾸지 마세요. 얼굴 정체성은 보존하면서 메이크업·헤어·의상은 확실하게 변신시켜 주세요.\n\n메이크업: 촬영용 베이스로 피부 톤을 고르게 정돈하고 광대·콧대에 은은한 새틴 하이라이트와 부드러운 윤곽 음영을 넣어 주세요. 피부 결은 남기고 주근깨는 파운데이션 아래로 은은하게 비치게 해 주세요. 눈썹은 결을 살려 정교하게 다듬고, 눈두덩에 로즈 모브와 토프 색 음영을 층층이 표현해 주세요. 길게 뺀 선명한 블랙 윙 아이라인, 또렷한 속눈썹 라인과 가닥가닥 컬링한 아이돌 속눈썹, 눈 앞머리와 애교살의 샴페인 미세 글리터가 실제로 잘 보이게 해 주세요. 눈 아래에는 가벼운 음영을 넣고, 볼에는 쿨 핑크 블러셔, 입술에는 선명한 로즈 베리 그라데이션과 촉촉한 글로스를 표현해 주세요. 눈화장·볼·입술의 색과 광택이 조명 아래에서도 분명하게 보이게 해 주세요.\n\n헤어와 액세서리: 원본의 짧은 단발 길이를 살려 뿌리 볼륨, 매끈한 윤기, 정교한 사이드 가르마와 C컬 끝선을 만들고 한쪽 귀 뒤로 넘겨 주세요. 눈화장이 잘 보이도록 안경은 벗긴 상태로 연출해 주세요. 크리스털 이어커프와 귀걸이, 가는 실버 초커로 스타일링해 주세요.\n\n의상과 촬영: 블랙 크롭 테일러드 무대 재킷, 단정한 새틴 이너와 절제된 크리스털 포인트로 세련된 아이돌 무대 스타일을 완성해 주세요. 눈·메이크업 디테일을 읽을 수 있는 선명한 상반신 화보, 자신감 있는 표정과 자연스러운 어깨 자세로 연출해 주세요. 인물 수는 원본대로 유지해 주세요. 배경은 깔끔한 딥 플럼 그라데이션 스튜디오, 얼굴에는 부드럽고 밝은 뷰티 조명, 머리와 어깨에는 시원한 림라이트를 사용해 주세요. 고급 앨범 티저의 사진 질감, 정확한 얼굴 구조와 자연스러운 해부학을 유지해 주세요. 글자·로고·워터마크·비교 분할 화면 없이 사진 한 장으로 완성해 주세요.",
+        "referenced_image_paths": [
+          "output/imagegen/kpop-idol-2026-10-19/source-01.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": false,
+      "postEdited": false,
+      "status": "failed",
+      "observations": null,
+      "error": "http 400 moderation_blocked at output stage, category sexual",
+      "requestId": "c80261f6-99a9-471b-a342-10ca3578ef8a",
+      "output": null
+    },
+    {
+      "version": "v4",
+      "testId": "source-01-v4",
+      "actualToolArguments": {
+        "prompt": "첨부 사진 속 성인 인물(가상 27세)의 사진을 전문 헤어·메이크업·의상 팀이 완성한 K-pop 아이돌의 컴백 콘셉트 포토로 변환해 주세요. 한눈에 풀 메이크업과 스타일링의 변화가 드러나는 완성도 높은 화보로 만들어 주세요.\n\n동일 인물의 얼굴형, 눈·코·입의 기본 형태와 간격, 나이대, 피부색, 고유한 인상은 유지해 주세요. 성형처럼 턱을 깎거나 눈을 키우지 말고, 다른 사람이나 특정 실존 아이돌의 얼굴로 바꾸지 마세요. 얼굴 정체성은 보존하면서 메이크업·헤어·의상은 확실하게 변신시켜 주세요.\n\n메이크업: 촬영용 베이스로 피부 톤을 고르게 정돈하고 광대·콧대에 은은한 새틴 하이라이트와 부드러운 윤곽 음영을 넣어 주세요. 피부 결은 남기고 주근깨는 파운데이션 아래로 은은하게 비치게 해 주세요. 눈썹은 결을 살려 정교하게 다듬고, 눈두덩에 로즈 모브와 토프 색 음영을 층층이 표현해 주세요. 길게 뺀 선명한 블랙 윙 아이라인, 또렷한 속눈썹 라인과 가닥가닥 컬링한 아이돌 속눈썹, 눈 앞머리와 애교살의 샴페인 미세 글리터가 실제로 잘 보이게 해 주세요. 눈 아래에는 가벼운 음영을 넣고, 볼에는 쿨 핑크 블러셔, 입술에는 선명한 로즈 베리 그라데이션과 촉촉한 글로스를 표현해 주세요. 눈화장·볼·입술의 색과 광택이 조명 아래에서도 분명하게 보이게 해 주세요.\n\n헤어와 액세서리: 원본의 짧은 단발 길이를 살려 뿌리 볼륨, 매끈한 윤기, 정교한 사이드 가르마와 C컬 끝선을 만들고 한쪽 귀 뒤로 넘겨 주세요. 눈화장이 잘 보이도록 안경은 벗긴 상태로 연출해 주세요. 크리스털 이어커프와 귀걸이, 가는 실버 초커로 스타일링해 주세요.\n\n의상과 촬영: 목과 상체를 충분히 덮는 블랙 하이넥 블라우스와 단추를 여민 긴 테일러드 재킷, 절제된 크리스털 포인트로 세련된 아이돌 무대 스타일을 완성해 주세요. 눈·메이크업 디테일을 읽을 수 있는 선명한 상반신 화보, 자신감 있는 표정과 자연스러운 어깨 자세로 연출해 주세요. 인물 수는 원본대로 유지해 주세요. 배경은 깔끔한 딥 플럼 그라데이션 스튜디오, 얼굴에는 부드럽고 밝은 뷰티 조명, 머리와 어깨에는 시원한 림라이트를 사용해 주세요. 고급 앨범 티저의 사진 질감, 정확한 얼굴 구조와 자연스러운 해부학을 유지해 주세요. 글자·로고·워터마크·비교 분할 화면 없이 사진 한 장으로 완성해 주세요.",
+        "referenced_image_paths": [
+          "output/imagegen/kpop-idol-2026-10-19/source-01.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": true,
+      "postEdited": false,
+      "status": "success",
+      "observations": "Wing eyeliner, separated curled lashes, pink/mauve eyeshadow, under-eye shimmer, blush, glossy rose lips clearly visible. Glasses removed intentionally for makeup. Short bob restyled with volume, crystal ear jewelry/choker, black high-neck blouse and jacket. Face recognizable but makeup and removal of glasses alter perceived impression. New hand-to-cheek pose and tighter crop intentionally allowed by v4. Visible hand/wrist appears plausible; fingers partly occluded by pose. Hair is fuller/longer at one side, not exact source silhouette. Only one fictional adult tested.",
+      "output": {
+        "path": "output/imagegen/kpop-idol-2026-10-19/result-01-v4.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "7a35ca480d8e5fff38203bc3b29c94bde4acfd52194d2dbdb145fd6414969e8e",
+        "toolFileName": "exec-1130ee78-eeda-4a96-ab7a-038ba37998ba.png"
+      }
+    },
+    {
+      "version": "v4",
+      "testId": "source-02-v4",
+      "actualToolArguments": {
+        "prompt": "첨부 사진 속 성인 인물(가상 27세)의 사진을 전문 헤어·메이크업·의상 팀이 완성한 K-pop 아이돌의 컴백 콘셉트 포토로 변환해 주세요. 한눈에 풀 메이크업과 스타일링의 변화가 드러나는 완성도 높은 화보로 만들어 주세요.\n\n동일 인물의 얼굴형, 눈·코·입의 기본 형태와 간격, 나이대, 피부색, 고유한 인상은 유지해 주세요. 성형처럼 턱을 깎거나 눈을 키우지 말고, 다른 사람이나 특정 실존 아이돌의 얼굴로 바꾸지 마세요. 얼굴 정체성은 보존하면서 메이크업·헤어·의상은 확실하게 변신시켜 주세요.\n\n메이크업: 촬영용 베이스로 피부 톤을 고르게 정돈하고 광대·콧대에 은은한 새틴 하이라이트와 부드러운 윤곽 음영을 넣어 주세요. 피부 결은 남기고 주근깨는 파운데이션 아래로 은은하게 비치게 해 주세요. 눈썹은 결을 살려 정교하게 다듬고, 눈두덩에 로즈 모브와 토프 색 음영을 층층이 표현해 주세요. 길게 뺀 선명한 블랙 윙 아이라인, 또렷한 속눈썹 라인과 가닥가닥 컬링한 아이돌 속눈썹, 눈 앞머리와 애교살의 샴페인 미세 글리터가 실제로 잘 보이게 해 주세요. 눈 아래에는 가벼운 음영을 넣고, 볼에는 쿨 핑크 블러셔, 입술에는 선명한 로즈 베리 그라데이션과 촉촉한 글로스를 표현해 주세요. 눈화장·볼·입술의 색과 광택이 조명 아래에서도 분명하게 보이게 해 주세요.\n\n헤어와 액세서리: 원본의 짧은 단발 길이를 살려 뿌리 볼륨, 매끈한 윤기, 정교한 사이드 가르마와 C컬 끝선을 만들고 한쪽 귀 뒤로 넘겨 주세요. 눈화장이 잘 보이도록 안경은 벗긴 상태로 연출해 주세요. 크리스털 이어커프와 귀걸이, 가는 실버 초커로 스타일링해 주세요.\n\n의상과 촬영: 목과 상체를 충분히 덮는 블랙 하이넥 블라우스와 단추를 여민 긴 테일러드 재킷, 절제된 크리스털 포인트로 세련된 아이돌 무대 스타일을 완성해 주세요. 눈·메이크업 디테일을 읽을 수 있는 선명한 상반신 화보, 자신감 있는 표정과 자연스러운 어깨 자세로 연출해 주세요. 인물 수는 원본대로 유지해 주세요. 배경은 깔끔한 딥 플럼 그라데이션 스튜디오, 얼굴에는 부드럽고 밝은 뷰티 조명, 머리와 어깨에는 시원한 림라이트를 사용해 주세요. 고급 앨범 티저의 사진 질감, 정확한 얼굴 구조와 자연스러운 해부학을 유지해 주세요. 글자·로고·워터마크·비교 분할 화면 없이 사진 한 장으로 완성해 주세요.",
+        "referenced_image_paths": [
+          "output/imagegen/kpop-idol-2026-10-19/source-02.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": true,
+      "postEdited": false,
+      "status": "success-with-limitation",
+      "observations": "Recognizable face and brown skin tone; marked wing eyeliner, curled lashes, mauve shadow, shimmer, pink blush, glossy berry rose lip and crystal accessories. Long curls shortened to shoulder-length bob due to v4 source-specific short-bob directive; texture broadly retained, length preservation fails. Tightened crop and changed shoulder/head pose. No extra people/text/logos. Single exact v4 input, no post-editing.",
+      "output": {
+        "path": "output/imagegen/kpop-idol-2026-10-19/result-02-v4.png",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "a609bdd5c9f55137bf54e2b607fe63a2e453137ad594f397e8a6fa79cccf24e8",
+        "toolFileName": "exec-d2d64153-a5b5-419e-9ec1-21089b6f0b32.png"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/kpop-idol.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "2cf6a8e0ab6cc02e4aedac498a81af3a67be6c73d93915d5a55978db4f069164"
+    },
+    {
+      "path": "assets/images/kpop-idol.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "2b3a3785b21b94a26ec56bcc2b2adb0349944712f302bfd6b925608edee8a04c"
+    },
+    {
+      "path": "assets/images/kpop-idol.curly.reference.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "80eadb4f8bf726616e3f4b66b692e509b235db2c96e9eaa4221d9e5e686f956d"
+    },
+    {
+      "path": "assets/images/kpop-idol.curly.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "59c9290d27f6b80bfc1ccc773f971e2e3f7fa4394889962da6b9209636d383c3"
+    },
+    {
+      "path": "assets/images/kpop-idol.thumb.webp",
+      "width": 560,
+      "height": 840,
+      "sha256": "e15cf684ff79daffce2b21b275dea121e8f992f417ad67c95b970b29e2922a82"
+    }
+  ],
+  "conversions": [
+    {
+      "input": "output/imagegen/kpop-idol-2026-10-19/source-01.png",
+      "output": "assets/images/kpop-idol.reference.webp",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "input": "output/imagegen/kpop-idol-2026-10-19/result-01-v4.png",
+      "output": "assets/images/kpop-idol.webp",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "input": "output/imagegen/kpop-idol-2026-10-19/source-02.png",
+      "output": "assets/images/kpop-idol.curly.reference.webp",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "input": "output/imagegen/kpop-idol-2026-10-19/result-02-v4.png",
+      "output": "assets/images/kpop-idol.curly.webp",
+      "decodedPixelsIdentical": true
+    }
+  ],
+  "reviewNotes": [
+    "AI 생성 원본·결과 · 가상 27세 성인 사진에 공개 v4 문구만 적용했습니다. 얼굴 인상과 피부색을 살리고 윙 아이라인·속눈썹·블러셔·글로시 립, 단발 볼륨과 크리스털 장식으로 스타일링했습니다. 문구에 따라 안경을 벗겼으며 헤어 실루엣·손 포즈·촬영 범위가 달라졌습니다.",
+    "AI 생성 원본·결과 · 긴 곱슬머리의 다른 가상 27세 성인 사진에 같은 v4 문구만 적용했습니다. 얼굴 인상과 짙은 피부색을 살리고 눈화장·블러셔·립을 적용했습니다. 문구의 단발 지시 때문에 긴 머리가 어깨 길이로 짧아졌습니다. 머리 길이 보존에는 실패했으며 자세와 촬영 범위도 바뀌었습니다."
+  ],
+  "validationScope": "Two fictional adult portraits only. Long hair was shortened by the source-specific short-bob directive; do not claim hair-length preservation or generality across ages.",
+  "pathNormalization": "Absolute local reference paths have been normalized to workspace-relative paths. Input PNG identities are recorded by SHA-256. Published full-size WebP conversions preserve decoded pixels. No extra instructions or post-editing were used.",
+  "contributor": {
+    "displayName": "gyuhyeong",
+    "githubLogin": "Q07K"
+  }
+}
