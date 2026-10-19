@@ -541,6 +541,8 @@ async function loadCatalog() {
   }
   if (!$('#error-state').hidden) return;
   syncHash();
+  const staticContent = document.querySelector('#static-content');
+  if (staticContent) staticContent.open = false;
 }
 
 search.addEventListener('input', () => { filters().query = search.value; renderGallery(); });

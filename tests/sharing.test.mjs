@@ -36,6 +36,9 @@ test('built pages expose each actual result to crawlers without running JavaScri
     assert.ok(page.includes(`property="og:url" content="${promptUrl(prompt.id, siteRoot)}"`));
     assert.ok(page.includes(`property="og:title" content="${prompt.title} — Prompt Gallery"`));
     assert.equal((page.match(/property="og:image" /g) || []).length, 1);
+    assert.ok(page.includes(`<h1 id="page-title">${prompt.title}</h1>`));
+    assert.ok(page.includes('id="static-content"'));
+    assert.ok(page.includes('class="static-prompt"'));
     assert.ok(page.includes('src="../../app.js"'));
     assert.ok(page.includes('href="../../styles.css"'));
     const imageUrl = /property="og:image" content="([^"]+)"/.exec(page)[1];
@@ -50,4 +53,9 @@ test('built pages expose each actual result to crawlers without running JavaScri
   const home = await readFile(resolve(projectRoot, 'dist/index.html'), 'utf8');
   assert.equal((home.match(/property="og:image" /g) || []).length, 1);
   assert.ok(home.includes(`property="og:url" content="${siteRoot}"`));
+  const catalog = await readCatalog();
+  for (const prompt of catalog) assert.ok(home.includes(`href="./prompts/${prompt.id}/"`));
+  const sitemap = await readFile(resolve(projectRoot, 'dist/sitemap.xml'), 'utf8');
+  assert.equal((sitemap.match(/<loc>/g) || []).length, catalog.length + 1);
+  for (const prompt of catalog) assert.ok(sitemap.includes(`<loc>${promptUrl(prompt.id, siteRoot)}</loc>`));
 });
