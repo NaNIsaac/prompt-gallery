@@ -1,0 +1,101 @@
+{
+  "id": "ttibu-sticker",
+  "date": "2026-10-19",
+  "tool": "built-in image_gen.imagegen",
+  "selectedVersion": "v1",
+  "approvedByUser": true,
+  "approval": "사용자가 채팅 선택지에서 결과 확정·PR 제출을 선택했습니다.",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/ttibu-sticker",
+  "baseCommit": "cd583d3eda13fd0d052aac0c85bf5f82720f6d9a",
+  "updatedBaseCommit": "e1a728d958e435dbee5410ab8d80fed1199c8575",
+  "referenceOrigin": "AI-generated fictional Korean adult woman; not the actual user",
+  "publicPrompt": "첨부 사진의 주인공을 추억의 빵 봉지 속 수집용 ‘띠부띠부씰’ 한 장으로 바꿔 주세요.\n\n사진에서 대상의 수와 알아볼 수 있는 특징을 유지해 주세요. 인물이라면 머리 모양과 색, 안경, 표정, 옷의 색과 조합, 주요 소지품을 살려 주세요. 원본의 포즈를 바탕으로 머리가 크고 몸이 작은 약 2.5등신 캐릭터로 단순화하고, 대상 전체가 잘리지 않게 표현해 주세요.\n\n캐릭터는 또렷한 검은 외곽선, 단순한 면 채색, 2~3단계의 셀 음영을 사용한 아날로그 수집 스티커 일러스트로 그려 주세요. 표면은 얇고 매끈한 반광택 인쇄 필름이며, 윤곽을 따라 아주 얇은 반투명 칼선 테두리가 보이게 해 주세요.\n\n작은 정사각형의 연한 버터색 이형지 한 장 가운데 캐릭터 씰 하나를 배치해 주세요. 캐릭터는 이형지 면적의 약 70%를 차지하고, 주변에는 여백을 남겨 주세요. 한쪽 가장자리만 아주 살짝 들려 씰과 이형지의 얇은 층이 구분되게 해 주세요. 이형지 아래쪽 여백에는 작은 수집 번호 ‘No. 001’만 인쇄해 주세요.\n\n완성된 씰과 이형지를 밝은 아이보리 책상 위에 놓고 거의 정면의 탑뷰로 촬영한 실물 제품 사진처럼 보여 주세요. 부드러운 자연광과 섬세한 접촉 그림자로 작은 크기와 종이·필름의 재질을 표현해 주세요. 사진 속 배경은 가져오지 말고, 추가 인물이나 캐릭터, 장식용 스티커, 포장지, 손, 로고, 워터마크, 번호 외의 문자는 넣지 마세요.",
+  "publicPromptTestedAlone": true,
+  "generationSteps": [
+    {
+      "version": "reference",
+      "actualToolArguments": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: synthetic reference photo for a photo-to-sticker prompt test, not a real user's photo.\nCreate one natural full-body photograph of a fictional Korean adult woman in her late twenties standing relaxed in a small sunlit city park. She has a chin-length straight dark bob with blunt bangs, round dark-frame glasses, a friendly closed-mouth smile, a mustard-yellow cardigan over a plain ivory T-shirt, blue straight-leg jeans and white canvas sneakers. A small mint-green crossbody bag hangs at her hip, its strap clearly visible across her torso. Both hands relaxed and visible. Eye-level camera, whole figure visible including feet, realistic ordinary proportions and skin texture, soft daylight, lightly blurred trees and a path. Single person only. No text, no brands, no watermark. Portrait 4:5 composition.",
+        "transparent_background": false
+      },
+      "output": {
+        "path": "output/imagegen/ttibu-sticker-2026-10-19/source-person.png",
+        "width": 1122,
+        "height": 1402,
+        "sha256": "4a2f0fee6edfecaf250dceec4ebb19489956444ba42763779ca61821cf48a5ce",
+        "toolFileName": "exec-257736a9-7722-4eef-8d0b-bce98742c214.png"
+      }
+    },
+    {
+      "version": "v1",
+      "actualToolArguments": {
+        "prompt": "첨부 사진의 주인공을 추억의 빵 봉지 속 수집용 ‘띠부띠부씰’ 한 장으로 바꿔 주세요.\n\n사진에서 대상의 수와 알아볼 수 있는 특징을 유지해 주세요. 인물이라면 머리 모양과 색, 안경, 표정, 옷의 색과 조합, 주요 소지품을 살려 주세요. 원본의 포즈를 바탕으로 머리가 크고 몸이 작은 약 2.5등신 캐릭터로 단순화하고, 대상 전체가 잘리지 않게 표현해 주세요.\n\n캐릭터는 또렷한 검은 외곽선, 단순한 면 채색, 2~3단계의 셀 음영을 사용한 아날로그 수집 스티커 일러스트로 그려 주세요. 표면은 얇고 매끈한 반광택 인쇄 필름이며, 윤곽을 따라 아주 얇은 반투명 칼선 테두리가 보이게 해 주세요.\n\n작은 정사각형의 연한 버터색 이형지 한 장 가운데 캐릭터 씰 하나를 배치해 주세요. 캐릭터는 이형지 면적의 약 70%를 차지하고, 주변에는 여백을 남겨 주세요. 한쪽 가장자리만 아주 살짝 들려 씰과 이형지의 얇은 층이 구분되게 해 주세요. 이형지 아래쪽 여백에는 작은 수집 번호 ‘No. 001’만 인쇄해 주세요.\n\n완성된 씰과 이형지를 밝은 아이보리 책상 위에 놓고 거의 정면의 탑뷰로 촬영한 실물 제품 사진처럼 보여 주세요. 부드러운 자연광과 섬세한 접촉 그림자로 작은 크기와 종이·필름의 재질을 표현해 주세요. 사진 속 배경은 가져오지 말고, 추가 인물이나 캐릭터, 장식용 스티커, 포장지, 손, 로고, 워터마크, 번호 외의 문자는 넣지 마세요.",
+        "referenced_image_paths": [
+          "output/imagegen/ttibu-sticker-2026-10-19/source-person.png"
+        ],
+        "transparent_background": false
+      },
+      "additionalInstructions": [],
+      "selected": true,
+      "postEdited": false,
+      "output": {
+        "path": "output/imagegen/ttibu-sticker-2026-10-19/result-person-v1.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "93f27d65cb04d2e132aeb349e0a52c33ac927ffbf15315d184bb9999db3e1dc2",
+        "toolFileName": "exec-ad2c8f68-2c6d-4954-87b9-9177cfa39f83.png"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/ttibu-sticker.reference.webp",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "0aed7d09ac96cf782fb2c0104f9f023d9d916dd21b800b699f1442a38cb75918",
+      "losslessPixelMatch": true
+    },
+    {
+      "path": "assets/images/ttibu-sticker.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "139d0ec3967cbd4153640eadb3e94ede9483aef6f19b9931e6e2d849618232aa",
+      "losslessPixelMatch": true
+    },
+    {
+      "path": "assets/images/ttibu-sticker.thumb.webp",
+      "width": 560,
+      "height": 560,
+      "sha256": "34c39355ea58cd95be16814d715f147b9f5a5492b8434005db7d98d7399683b1"
+    }
+  ],
+  "review": {
+    "preserved": [
+      "one adult subject",
+      "dark bob haircut and bangs",
+      "round dark glasses",
+      "mustard cardigan and ivory shirt",
+      "blue jeans and white shoes",
+      "mint crossbody bag and strap",
+      "relaxed standing pose"
+    ],
+    "style": [
+      "large-head small-body character",
+      "black outlines and cel-like shading",
+      "butter-yellow square release paper",
+      "thin translucent die-cut edge",
+      "No. 001"
+    ],
+    "limitations": [
+      "Face and clothing shading more detailed than a vintage flat printed sticker.",
+      "Most obvious curled corner belongs to release paper rather than peeled sticker film.",
+      "No physical size reference; small real-world scale cannot be verified.",
+      "One synthetic adult portrait tested; other photo types untested."
+    ],
+    "postprocessing": "none",
+    "extraPerPhotoInstructions": "none",
+    "approval": "결과 확정·PR 제출"
+  }
+}
