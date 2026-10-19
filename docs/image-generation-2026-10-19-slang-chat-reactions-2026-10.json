@@ -1,0 +1,224 @@
+{
+  "id": "slang-chat-reactions-2026-10",
+  "date": "2026-10-19",
+  "tool": "built-in image_gen.imagegen",
+  "selectedVersion": "approved v2 plus spacing edit; public prompt v3",
+  "approvedByUser": true,
+  "approval": "사용자가 여백 확대 시안에 결과 확정·PR 제출을 선택했다. 승인 시안은 교체하지 않고 공개 v3 직접 시험을 구분해 함께 등록한다.",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "headRemote": "origin",
+  "branch": "codex/dopamine-chat-emoticons",
+  "baseCommit": "23186efd6960e61b34748ee488c289beb9257766",
+  "publicPrompt": "첨부 사진 속 인물 한 명을 모델로, 카카오톡 대화에 어울리는 밈 리액션 이모티콘 시트 한 장을 만들어 줘.\n\n사진에서 보이는 얼굴형, 피부톤, 머리 모양과 색, 안경, 점 같은 식별 특징, 옷의 대표 색을 살려 같은 사람임을 알아볼 수 있게 해 줘. 모든 칸에서 동일한 캐릭터 디자인을 유지해 줘. 머리가 크고 몸이 작은 2.5등신, 둥글고 단순한 실루엣, 두꺼운 짙은 갈색 외곽선, 평면 채색과 최소한의 그림자, 과장된 표정과 약간 하찮고 능청스러운 몸짓으로 그려 줘. 사진 배경은 옮기지 마.\n\n세로형 캔버스를 2열 × 3행으로 나누어 정확히 여섯 개의 이모티콘을 배치해 줘. 각 칸은 같은 크기이고 여백은 넉넉하게, 배경은 순백색으로 해 줘. 칸 테두리, 번호, 시트 제목은 넣지 마. 각 칸에는 캐릭터 한 명과 아래 문구 하나만 넣어 줘. 글씨는 캐릭터 머리 위에 크고 두꺼운 손글씨로, 작은 채팅 화면에서도 잘 읽히게 써 줘. 문구는 아래 순서대로 한 글자도 바꾸지 말고, 자연스러운 줄바꿈만 허용해 줘.\n\n왼쪽 위 — \"야르\": 작지만 요란하게 양팔을 들고 신나는 승리의 춤, 눈을 질끈 감고 입이 크게 벌어진 기쁜 표정.\n오른쪽 위 — \"아자스\": 가벼운 감사 인사. 한 손을 이마 옆에 붙여 능청스럽게 까딱 인사하며 입꼬리를 올리는 표정. 응원하는 기합 동작으로 그리지 마.\n왼쪽 가운데 — \"샤갈\": 어이없고 짜증 나는 순간. 눈이 반쯤 풀리고 동공이 작아지며 한 손으로 이마를 짚는 모습. 작은 지그재그 효과, 화가의 그림이나 미술 소품은 넣지 마.\n오른쪽 가운데 — \"밤티\": 내 꼴이 웃기고 어설프다는 자기풍자. 앞머리 한 가닥만 삐죽하고 카디건 단추를 하나 어긋나게 잠근 채 거울을 들여다보며 어색하게 굳은 표정. 본래의 머리 모양과 옷 색은 유지하고 다른 사람을 가리키거나 놀리는 장면은 그리지 마.\n왼쪽 아래 — \"포기하겠습니다…\": 바닥에 축 늘어져 납작하게 주저앉은 자세, 시무룩하고 지친 표정, 한 손이 힘없이 아래로 처진 모습.\n오른쪽 아래 — \"진행하겠습니다!\": 바로 옆 칸에서 마음을 뒤집은 것처럼, 땀방울 하나를 흘리면서도 벌떡 일어나 한쪽 주먹을 드는 모습. 결연하지만 조금 불안한 미소. 마지막 두 칸은 포기했다가 다시 하겠다고 번복하는 하나의 밈을 주고받는 짝으로 보이게 해 줘. 칸을 연결하는 화살표나 추가 글씨는 넣지 마.\n\n기분·감사·짜증·자기풍자·포기·번복이 표정만 봐도 구분되게 해 줘. 한 칸 안에서 손과 팔의 연결이 자연스럽고 소품을 제대로 쥐도록 그려 줘. 안경이 있는 인물은 모든 칸에서 안경을 유지해 줘. 이웃 칸으로 캐릭터나 글씨가 넘어가지 않게 해 줘. 기존 카카오프렌즈 등 알려진 캐릭터, 카카오톡 로고, 앱 화면, 워터마크, 다른 문자는 넣지 마. 결과는 이모티콘 여섯 종의 정적 미리보기 시트야.\n\n잘라 쓰기 위한 배치 조건: 세로 2:3 비율의 시트를 보이지 않는 같은 크기의 2열 × 3행 칸으로 나눠 줘. 문구·캐릭터·소품·효과선을 하나의 이모티콘 그룹으로 묶어 각 칸의 중앙에 배치하고, 그룹 전체가 각 칸 너비와 높이의 중앙 72% 안에 들어오도록 축소해 줘. 각 칸의 상하좌우에 최소 14%씩 순백색의 빈 여백을 남겨 줘. 긴 하단 문구도 이 범위를 벗어나지 않게 두 줄로 자연스럽게 줄바꿈해도 돼. 글씨와 해당 캐릭터 사이는 가까이 유지하되 이웃 이모티콘 그룹 사이는 확실히 떨어뜨려 줘. 시트의 세로 절반과 가로 3분의 1·3분의 2 위치를 곧게 잘라도 글씨·인물·손발·소품·효과선이 잘리지 않게 해 줘. 이 자르기 경계와 시트 바깥 가장자리는 완전히 빈 흰 공간이어야 해. 실제 칸 테두리·가위 표시·절취선은 그리지 마.",
+  "publicPromptTestedAlone": true,
+  "publicPromptDirectExample": "assets/images/slang-chat-reactions-2026-10.direct.webp",
+  "approvedMainExample": "assets/images/slang-chat-reactions-2026-10.webp",
+  "referenceOrigin": "Two AI-generated fictional adults; not real user photos",
+  "sourceGeneration": [
+    {
+      "reference": "assets/images/slang-chat-reactions-2026-10.reference.webp",
+      "actualToolArguments": {
+        "prompt": "Use case: photorealistic-natural\nCreate a realistic reference portrait photo of a wholly fictional Korean man in his early fifties. He has a broad round face, short naturally curly salt-and-pepper hair, thick eyebrows, no glasses, a neat short salt-and-pepper moustache and light beard stubble. He wears a plain forest-green short-sleeved polo shirt with two small buttons and beige chinos. No cardigan or jacket. Sitting relaxed on a simple stool, waist-up to upper thighs composition with both hands resting naturally on his lap, facing the camera with a friendly slight smile. Soft neutral gray background, diffuse daylight, realistic skin texture and age lines, ordinary natural photo rather than glamorous fashion, square image. Exactly one adult person. No text, logos, brands or watermark.",
+        "transparent_background": false
+      },
+      "generatedFilename": "exec-9f866cac-d99c-46ca-9ee8-3ab462d64f5b.png"
+    },
+    {
+      "reference": "assets/images/slang-chat-reactions-2026-10.direct.reference.webp",
+      "actualToolArguments": {
+        "prompt": "Use case: photorealistic-natural\nCreate a realistic fictional reference photo for a photo-to-character test. One Korean adult woman in her late twenties, chin-length straight dark-brown bob with full bangs, round thin amber-brown glasses, small beauty mark below her left eye, wearing a mustard-yellow cardigan over a plain ivory T-shirt and blue jeans. Waist-up portrait, both hands visible relaxed in front, looking at camera with a gentle smile. Plain warm light-gray home wall, soft window daylight, realistic natural skin texture, ordinary candid portrait, square composition, no text, no logo, no other people. This is a wholly fictional adult, not a real person.",
+        "transparent_background": false
+      },
+      "generatedFilename": "exec-321655c7-470a-432b-ba3a-66d04b7d979f.png"
+    }
+  ],
+  "generationSteps": [
+    {
+      "version": "v2-test-02",
+      "actualToolArguments": {
+        "prompt": "첨부 사진 속 인물 한 명을 모델로, 카카오톡 대화에 어울리는 밈 리액션 이모티콘 시트 한 장을 만들어 줘.\n\n사진에서 보이는 얼굴형, 피부톤, 머리 모양과 색, 안경, 점 같은 식별 특징, 옷의 대표 색을 살려 같은 사람임을 알아볼 수 있게 해 줘. 모든 칸에서 동일한 캐릭터 디자인을 유지해 줘. 머리가 크고 몸이 작은 2.5등신, 둥글고 단순한 실루엣, 두꺼운 짙은 갈색 외곽선, 평면 채색과 최소한의 그림자, 과장된 표정과 약간 하찮고 능청스러운 몸짓으로 그려 줘. 사진 배경은 옮기지 마.\n\n세로형 캔버스를 2열 × 3행으로 나누어 정확히 여섯 개의 이모티콘을 배치해 줘. 각 칸은 같은 크기이고 여백은 넉넉하게, 배경은 순백색으로 해 줘. 칸 테두리, 번호, 시트 제목은 넣지 마. 각 칸에는 캐릭터 한 명과 아래 문구 하나만 넣어 줘. 글씨는 캐릭터 머리 위에 크고 두꺼운 손글씨로, 작은 채팅 화면에서도 잘 읽히게 써 줘. 문구는 아래 순서대로 한 글자도 바꾸지 말고, 자연스러운 줄바꿈만 허용해 줘.\n\n왼쪽 위 — \"야르\": 작지만 요란하게 양팔을 들고 신나는 승리의 춤, 눈을 질끈 감고 입이 크게 벌어진 기쁜 표정.\n오른쪽 위 — \"아자스\": 가벼운 감사 인사. 한 손을 이마 옆에 붙여 능청스럽게 까딱 인사하며 입꼬리를 올리는 표정. 응원하는 기합 동작으로 그리지 마.\n왼쪽 가운데 — \"샤갈\": 어이없고 짜증 나는 순간. 눈이 반쯤 풀리고 동공이 작아지며 한 손으로 이마를 짚는 모습. 작은 지그재그 효과, 화가의 그림이나 미술 소품은 넣지 마.\n오른쪽 가운데 — \"밤티\": 내 꼴이 웃기고 어설프다는 자기풍자. 앞머리 한 가닥만 삐죽하고 카디건 단추를 하나 어긋나게 잠근 채 거울을 들여다보며 어색하게 굳은 표정. 본래의 머리 모양과 옷 색은 유지하고 다른 사람을 가리키거나 놀리는 장면은 그리지 마.\n왼쪽 아래 — \"포기하겠습니다…\": 바닥에 축 늘어져 납작하게 주저앉은 자세, 시무룩하고 지친 표정, 한 손이 힘없이 아래로 처진 모습.\n오른쪽 아래 — \"진행하겠습니다!\": 바로 옆 칸에서 마음을 뒤집은 것처럼, 땀방울 하나를 흘리면서도 벌떡 일어나 한쪽 주먹을 드는 모습. 결연하지만 조금 불안한 미소. 마지막 두 칸은 포기했다가 다시 하겠다고 번복하는 하나의 밈을 주고받는 짝으로 보이게 해 줘. 칸을 연결하는 화살표나 추가 글씨는 넣지 마.\n\n기분·감사·짜증·자기풍자·포기·번복이 표정만 봐도 구분되게 해 줘. 한 칸 안에서 손과 팔의 연결이 자연스럽고 소품을 제대로 쥐도록 그려 줘. 안경이 있는 인물은 모든 칸에서 안경을 유지해 줘. 이웃 칸으로 캐릭터나 글씨가 넘어가지 않게 해 줘. 기존 카카오프렌즈 등 알려진 캐릭터, 카카오톡 로고, 앱 화면, 워터마크, 다른 문자는 넣지 마. 결과는 이모티콘 여섯 종의 정적 미리보기 시트야.",
+        "referenced_image_paths": [
+          "assets/images/slang-chat-reactions-2026-10.reference.webp"
+        ],
+        "transparent_background": false
+      },
+      "generatedFilename": "exec-3d383888-f3c4-4dd7-b5f6-343d0c6fec69.png",
+      "output": "docs/review-assets/slang-chat-reactions-2026-10.intermediate.webp",
+      "review": "Original photo lacks glasses; all six generated stickers add glasses. Green polo, hair and beard preserved."
+    },
+    {
+      "version": "spacing-edit-v1",
+      "actualToolArguments": {
+        "prompt": "Edit the attached six-sticker sheet. Change only the spacing, scale and placement of the existing six sticker groups so a person can easily crop each sticker with a simple rectangular crop.\n\nKeep all six existing Korean captions verbatim, the same male character with curly salt-and-pepper hair, moustache, glasses, dark-green polo and beige trousers, the same poses, emotions, props and drawing style. Keep glasses as shown in this sheet; this edit is only about layout. Do not introduce extra stickers, new captions, dividers, cell outlines, cut marks, titles, logos or watermark.\n\nCreate a high-resolution portrait sheet, ideally 1600 x 2400 pixels or the same 2:3 aspect ratio. Pure white background. Exactly two equal columns by three equal rows, in the same reading order:\ntop-left \"야르\"; top-right \"아자스\"; middle-left \"샤갈\"; middle-right \"밤티\"; bottom-left \"포기하겠습니다…\"; bottom-right \"진행하겠습니다!\".\n\nUse six invisible, equally sized crop cells arranged as a regular 2 x 3 grid. Inside EACH cell, keep the COMPLETE caption, character, prop and every motion line together within the central 72% of cell width and central 72% of cell height. Leave at least 14% of cell width blank on both left and right, and at least 14% of cell height blank on both top and bottom. This must produce a continuous completely empty WHITE gutter between columns and between rows, including around the long bottom captions. Keep a generous white margin at all four outside edges too.\n\nTreat each caption + character + effects as one sticker group. Scale the WHOLE group down as needed to fit the safe area, maintaining its proportions. Center each complete group in its cell. The longest bottom captions may wrap naturally to two lines if necessary to remain legible, but do not change, drop, duplicate or misspell any Hangul. Keep each caption directly associated with its own character, clearly separated from every neighboring sticker. All artwork including hands, shoes, mirror and motion lines must fit inside the safe area without touching any crop-cell boundary. The six cells must be separable at the exact halfway vertical line and one-third and two-thirds horizontal lines without cutting any text, character or effects. The invisible crop-cell boundaries should remain blank white, not drawn.",
+        "referenced_image_paths": [
+          "docs/review-assets/slang-chat-reactions-2026-10.intermediate.webp"
+        ],
+        "transparent_background": false
+      },
+      "generatedFilename": "exec-7ef5f4c0-ed75-47d2-bf33-39b53d10b323.png",
+      "output": "assets/images/slang-chat-reactions-2026-10.webp",
+      "review": "User approved. Spacing-only generative edit of prior sheet; added glasses remain. This is not public v3 alone."
+    },
+    {
+      "version": "v3-public",
+      "actualToolArguments": {
+        "prompt": "첨부 사진 속 인물 한 명을 모델로, 카카오톡 대화에 어울리는 밈 리액션 이모티콘 시트 한 장을 만들어 줘.\n\n사진에서 보이는 얼굴형, 피부톤, 머리 모양과 색, 안경, 점 같은 식별 특징, 옷의 대표 색을 살려 같은 사람임을 알아볼 수 있게 해 줘. 모든 칸에서 동일한 캐릭터 디자인을 유지해 줘. 머리가 크고 몸이 작은 2.5등신, 둥글고 단순한 실루엣, 두꺼운 짙은 갈색 외곽선, 평면 채색과 최소한의 그림자, 과장된 표정과 약간 하찮고 능청스러운 몸짓으로 그려 줘. 사진 배경은 옮기지 마.\n\n세로형 캔버스를 2열 × 3행으로 나누어 정확히 여섯 개의 이모티콘을 배치해 줘. 각 칸은 같은 크기이고 여백은 넉넉하게, 배경은 순백색으로 해 줘. 칸 테두리, 번호, 시트 제목은 넣지 마. 각 칸에는 캐릭터 한 명과 아래 문구 하나만 넣어 줘. 글씨는 캐릭터 머리 위에 크고 두꺼운 손글씨로, 작은 채팅 화면에서도 잘 읽히게 써 줘. 문구는 아래 순서대로 한 글자도 바꾸지 말고, 자연스러운 줄바꿈만 허용해 줘.\n\n왼쪽 위 — \"야르\": 작지만 요란하게 양팔을 들고 신나는 승리의 춤, 눈을 질끈 감고 입이 크게 벌어진 기쁜 표정.\n오른쪽 위 — \"아자스\": 가벼운 감사 인사. 한 손을 이마 옆에 붙여 능청스럽게 까딱 인사하며 입꼬리를 올리는 표정. 응원하는 기합 동작으로 그리지 마.\n왼쪽 가운데 — \"샤갈\": 어이없고 짜증 나는 순간. 눈이 반쯤 풀리고 동공이 작아지며 한 손으로 이마를 짚는 모습. 작은 지그재그 효과, 화가의 그림이나 미술 소품은 넣지 마.\n오른쪽 가운데 — \"밤티\": 내 꼴이 웃기고 어설프다는 자기풍자. 앞머리 한 가닥만 삐죽하고 카디건 단추를 하나 어긋나게 잠근 채 거울을 들여다보며 어색하게 굳은 표정. 본래의 머리 모양과 옷 색은 유지하고 다른 사람을 가리키거나 놀리는 장면은 그리지 마.\n왼쪽 아래 — \"포기하겠습니다…\": 바닥에 축 늘어져 납작하게 주저앉은 자세, 시무룩하고 지친 표정, 한 손이 힘없이 아래로 처진 모습.\n오른쪽 아래 — \"진행하겠습니다!\": 바로 옆 칸에서 마음을 뒤집은 것처럼, 땀방울 하나를 흘리면서도 벌떡 일어나 한쪽 주먹을 드는 모습. 결연하지만 조금 불안한 미소. 마지막 두 칸은 포기했다가 다시 하겠다고 번복하는 하나의 밈을 주고받는 짝으로 보이게 해 줘. 칸을 연결하는 화살표나 추가 글씨는 넣지 마.\n\n기분·감사·짜증·자기풍자·포기·번복이 표정만 봐도 구분되게 해 줘. 한 칸 안에서 손과 팔의 연결이 자연스럽고 소품을 제대로 쥐도록 그려 줘. 안경이 있는 인물은 모든 칸에서 안경을 유지해 줘. 이웃 칸으로 캐릭터나 글씨가 넘어가지 않게 해 줘. 기존 카카오프렌즈 등 알려진 캐릭터, 카카오톡 로고, 앱 화면, 워터마크, 다른 문자는 넣지 마. 결과는 이모티콘 여섯 종의 정적 미리보기 시트야.\n\n잘라 쓰기 위한 배치 조건: 세로 2:3 비율의 시트를 보이지 않는 같은 크기의 2열 × 3행 칸으로 나눠 줘. 문구·캐릭터·소품·효과선을 하나의 이모티콘 그룹으로 묶어 각 칸의 중앙에 배치하고, 그룹 전체가 각 칸 너비와 높이의 중앙 72% 안에 들어오도록 축소해 줘. 각 칸의 상하좌우에 최소 14%씩 순백색의 빈 여백을 남겨 줘. 긴 하단 문구도 이 범위를 벗어나지 않게 두 줄로 자연스럽게 줄바꿈해도 돼. 글씨와 해당 캐릭터 사이는 가까이 유지하되 이웃 이모티콘 그룹 사이는 확실히 떨어뜨려 줘. 시트의 세로 절반과 가로 3분의 1·3분의 2 위치를 곧게 잘라도 글씨·인물·손발·소품·효과선이 잘리지 않게 해 줘. 이 자르기 경계와 시트 바깥 가장자리는 완전히 빈 흰 공간이어야 해. 실제 칸 테두리·가위 표시·절취선은 그리지 마.",
+        "referenced_image_paths": [
+          "assets/images/slang-chat-reactions-2026-10.direct.reference.webp"
+        ],
+        "transparent_background": false
+      },
+      "generatedFilename": "exec-fd3e7b95-e818-43d1-aa8b-4dc29937b719.png",
+      "output": "assets/images/slang-chat-reactions-2026-10.direct.webp",
+      "review": "AI 가상 원본·결과 · 단발·안경 인물 사진 한 장과 공개 v3 문구만으로 생성했습니다. 단발머리·안경·노란 카디건과 6개 문구가 유지됐습니다. 여백은 승인한 별도 편집 시안보다 좁고, 지정한 각 칸 14% 여백이 정확히 지켜지지는 않았습니다. 잘라 쓰기 전 글씨와 효과선을 확인하세요."
+    }
+  ],
+  "phraseResearch": {
+    "checkedAt": "2026-10-19 Asia/Seoul",
+    "userCorrection": "v1 expressions were not contemporary youth slang; search first.",
+    "method": "Search recent dated reporting and examples; distinguish original coinage, resurgence, and current use. No representative teen survey or live popularity ranking.",
+    "selected": [
+      {
+        "phrase": "야르",
+        "meaning": "신날 때 감탄",
+        "evidenceDate": "2026-10-15",
+        "url": "https://m.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&pageIndex=1&qna_seq=337248&searchCondition=&searchKeyword=",
+        "note": "Contemporary user question on government Q&A; the agency answer explicitly does not establish the slang meaning. Meaning corroborated by Aug 25 column."
+      },
+      {
+        "phrase": "아자스",
+        "meaning": "가볍고 능청스러운 감사; 비꼬는 용법도 있으나 시안은 감사",
+        "evidenceDate": "2026-06-14 and 2026-10 recent community listing",
+        "url": "https://www.instablank.com/meme/16"
+      },
+      {
+        "phrase": "샤갈",
+        "meaning": "어이없음·짜증의 감탄",
+        "evidenceDate": "2026-08-25",
+        "url": "https://v.daum.net/v/20260825004241745"
+      },
+      {
+        "phrase": "밤티",
+        "meaning": "촌스럽고 어설픈 모습; 시안은 자기풍자",
+        "evidenceDate": "2026-08-25",
+        "url": "https://v.daum.net/v/20260825004241745"
+      },
+      {
+        "phrase": "포기하겠습니다… / 진행하겠습니다!",
+        "meaning": "포기와 진행을 번복하는 두 장의 짝",
+        "evidenceDate": "2026-09 monthly article",
+        "url": "https://www.ad.co.kr/journal/column/show.do?ukey=596026",
+        "note": "Old screenshot resurfacing in 2026; sticker captions adapted and split into a pair, not a verbatim full original quote."
+      }
+    ],
+    "excluded": [
+      {
+        "phrase": "고맙투우사",
+        "reason": "Wepick full article marks this entry '유행 종료'; do not promote as current October hit.",
+        "url": "https://letter.wepick.kr/post/23942"
+      },
+      {
+        "phrase": "난리자베스",
+        "reason": "January and July uses found; prioritize more recent and chat-suitable selections."
+      }
+    ],
+    "rejectedV1": [
+      "도파민 폭발",
+      "럭키비키",
+      "폼 미쳤다",
+      "가보자고",
+      "오히려 좋아",
+      "알잘딱깔센"
+    ],
+    "additionalCorroboration": "https://cafe.daangn.com/geongangmanse/posts/2026%EB%85%84-%EC%8B%A0%EC%A1%B0%EC%96%B4-TOP-10-%EB%AA%A8%EB%A5%B4%EB%8A%94%EA%B2%8C-%EB%A7%8E%EB%84%A4%EC%9A%94%F0%9F%A4%94-PmValkXd",
+    "confidenceLimit": "Sources substantiate reported recent usage, not that all teens use them or these are the top October 19 trends."
+  },
+  "assets": [
+    {
+      "path": "assets/images/slang-chat-reactions-2026-10.reference.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "108a95143b3f05af629afc36e12a14f20ef6fe877ea1c9c21c7357bb8e658f53",
+      "sourceFilename": "source-02.png",
+      "sourceSha256": "608e4356e3df5e6532edb6d7deabfaeef1503a2d268160c080ec0f5be7aabe9f",
+      "conversion": "lossless WebP; decoded RGBA identical",
+      "decodedRgbaIdentical": true
+    },
+    {
+      "path": "assets/images/slang-chat-reactions-2026-10.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "7f9585a4edc7a8c8c1c4acccfc453f650d44e98179cbf3026c4b66b9a71947a5",
+      "sourceFilename": "result-v2-test-02-spacing-v1.png",
+      "sourceSha256": "9aa83c610be46b44539d320e08cad500e260b5e0d1c30630e39f8a70a7c1dca6",
+      "conversion": "lossless WebP; decoded RGBA identical",
+      "decodedRgbaIdentical": true
+    },
+    {
+      "path": "assets/images/slang-chat-reactions-2026-10.direct.reference.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "38ffdffaee529ca505f5b89b49fd40ca3ab0465ee486cef422c989ff67f1fbd5",
+      "sourceFilename": "source.png",
+      "sourceSha256": "493f5343a6973bdd947463bf817cf5a4ce52c0a06d91b7c66cc98dc45c8d39b8",
+      "conversion": "lossless WebP; decoded RGBA identical",
+      "decodedRgbaIdentical": true
+    },
+    {
+      "path": "assets/images/slang-chat-reactions-2026-10.direct.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e80f3fc06dd153a80888e2db88398d1ace2232ac18a6e5f0312e9f2e439e35b1",
+      "sourceFilename": "result-v3-public.png",
+      "sourceSha256": "77642063f8f3a2e78129a091950daed8ddb5bde4905de948df430e8a57f49e75",
+      "conversion": "lossless WebP; decoded RGBA identical",
+      "decodedRgbaIdentical": true
+    },
+    {
+      "path": "docs/review-assets/slang-chat-reactions-2026-10.intermediate.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "218af87ce5f080bf9cb32ad921c8c27a663267d82fd27d37927ddee10586188a",
+      "sourceFilename": "result-v2-test-02.png",
+      "sourceSha256": "398a741cca3e75329d54fccf0b52a8758a90a90b4c4385009b0ef87dabcd1bd8",
+      "conversion": "lossless WebP; decoded RGBA identical",
+      "decodedRgbaIdentical": true
+    },
+    {
+      "path": "assets/images/slang-chat-reactions-2026-10.thumb.webp",
+      "width": 640,
+      "height": 960,
+      "sha256": "71ae301714c2b279a273947cdb95bc486a9a611318fd62874bab6e8b22cba287",
+      "conversion": "aspect-preserving thumbnail; width 640"
+    }
+  ],
+  "postEditing": "Approved main: built-in image_gen edit expands gutters. Direct v3 example: no post-editing. WebP full-size conversions preserve decoded RGBA.",
+  "validation": {
+    "existingCatalogEntriesUnchanged": true,
+    "publicPromptExactlyMatchesDirectToolInput": true,
+    "approvedCropBoundaries": {
+      "width": 1024,
+      "height": 1536,
+      "x": 512,
+      "y": [
+        512,
+        1024
+      ],
+      "darkPixelThreshold": 225,
+      "darkPixels": [
+        0,
+        0,
+        0
+      ]
+    },
+    "localChecks": {
+      "command": "npm run check",
+      "result": "passed",
+      "unitTests": 19,
+      "browserTests": 34,
+      "build": "43 prompts",
+      "diffCheck": "passed"
+    }
+  }
+}
