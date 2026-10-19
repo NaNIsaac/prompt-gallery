@@ -1,0 +1,24 @@
+{
+  "version": "v2",
+  "reason": "v1 fixed a coastal village; generalized for different travel photos",
+  "originalVersion": "output/imagegen/seven-photo-ideas-2026-10-19/07-travel-nightlight.prompt.txt",
+  "samePromptForAll": true,
+  "sourceType": "AI-generated fictional photos",
+  "sources": [
+    {
+      "id": "hanok",
+      "label": "한옥 골목",
+      "prompt": "Generate one photorealistic travel snapshot of an imaginary Korean hanok village lane at late afternoon, wide 4:3 landscape. Look down a gently curving pale stone lane toward center background. Left: two low Korean timber-and-white-plaster courtyard houses with dark charcoal curved tiled roofs, brown wooden double gate and stone wall. Right: one long matching tiled-roof house behind a rough stone wall, a small red maple overhanging the wall. Low green hill in the distance. Coherent Korean hanok architecture, realistic travel photography, natural warm light. No people, cars, signs, lettering, logos, collage. A fictional natural photo, not a model or illustration."
+    },
+    {
+      "id": "alpine-lake",
+      "label": "산과 호수",
+      "prompt": "Generate one photorealistic travel photograph of a fictional alpine lake landscape, wide 4:3. Snow-covered sharp summit slightly left of center, lower dark rocky peak to the right, dark green pine forest along the far shoreline, still turquoise lake taking the lower half with mountain reflections. In the foreground left a pale rounded boulder and small cluster of pines. Bright morning natural light, believable geology, crisp hiking vacation photo. No buildings, cabins, bridges, roads, people, boats, lettering, logos, collage. A realistic landscape photograph, not a diorama or product shot."
+    },
+    {
+      "id": "city-river",
+      "label": "도심 강변",
+      "prompt": "Generate one photorealistic travel photo of a fictional European riverside city at blue hour, wide 4:3. A single low stone bridge with exactly three arches crosses the calm river diagonally from lower left to middle right. Far bank: warm beige and muted red four-story masonry buildings, one tall narrow square bell tower with a copper green pointed roof toward the right. Warm windows reflect in the deep blue river. Dark blue dusk sky. Coherent realistic architecture, natural travel snapshot from the near riverbank. No people, cars, boats, signage, lettering, logos, collage. An invented realistic photograph, not a model."
+    }
+  ]
+}

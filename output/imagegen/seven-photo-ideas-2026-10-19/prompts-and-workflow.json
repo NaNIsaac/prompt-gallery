@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-19",
+  "stage": "Travel nightlight selected; six other ideas discarded at user request; v2 follow-up tests in sibling folder",
+  "branch": "codex/seven-photo-ideas",
+  "workspace": ".",
+  "baseCommit": "41a6f31278223fd689cbba7042b711a785f83573",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "remote": "origin",
+  "tool": "built-in image_gen",
+  "sources": [
+    {
+      "id": "travel",
+      "prompt": "Create a photorealistic travel photograph of an imaginary small coastal village on a hillside at blue hour. A curved stone stairway climbs between three cream stucco houses with terracotta tiled roofs; a small blue door on the front left house, warmly glowing windows, green shrubs; deep blue sea visible to the right and a slim crescent moon above. Clear memorable layout, calm vacation snapshot, natural realism, wide 4:3 frame. No people, no readable signs, no logos, no collage."
+    }
+  ],
+  "ideas": [
+    {
+      "id": "07-travel-nightlight",
+      "source": "travel",
+      "title": "내 여행 사진을 밤에 켜는 무드등으로",
+      "prompt": "첨부한 여행 사진의 장소를 반투명 도자기로 만든 작은 무드등 한 개로 바꿔줘. 사진 속 해안 언덕 마을의 집 세 채·테라코타 지붕·왼쪽 앞집의 파란 문·집 사이로 굽이치는 돌계단·오른쪽 바다의 상대적인 배치와 대표 형태를 유지해줘. 반원형 낮은 받침 위에 마을 전체가 하나의 이어진 도자기 조형물로 만들어져 있고, 크림색 자기 벽 안에서 따뜻한 호박빛 LED가 은은하게 비치며 창문과 작은 구멍을 통해 빛이 새어 나와. 지붕과 파란 문은 무광 유약, 바다는 낮은 청록 유약 곡면, 집과 계단은 손으로 빚은 작은 흔적과 소박한 두께가 보여야 해. 실제 마을 사진을 표면에 인쇄하거나 화면처럼 붙이지 마. 밤의 침실 나무 협탁 위에 올려 둔 실물 조명 제품 사진, 어두운 배경 속 부드럽고 따뜻한 빛, 도자기 표면 디테일과 형태가 충분히 보이는 노출. 카메라는 앞쪽의 약간 높은 사선 시점, 조명 전체가 잘리지 않게 여백, 4:3 가로. 사람·글자·로고·워터마크·분할 화면 없이."
+    }
+  ],
+  "results": [
+    {
+      "id": "source-travel",
+      "path": "output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png",
+      "target": "output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png"
+    },
+    {
+      "id": "07-travel-nightlight",
+      "path": "output/imagegen/seven-photo-ideas-2026-10-19/07-travel-nightlight.png",
+      "target": "output/imagegen/seven-photo-ideas-2026-10-19/07-travel-nightlight.png",
+      "source": "output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png",
+      "review": "파란 문·계단·지붕·해안 배치가 조명에 이어진다. 창은 발광하지만 몸체는 반투명 자기보다 불투명 미니어처에 가깝다. 가상 원본 자체의 집 수가 생성 문구의 세 채와 정확히 맞지 않아 건물 수 보존 성공으로 보고하지 않는다."
+    }
+  ],
+  "failedAttempts": [],
+  "publication": {
+    "commit": null,
+    "pullRequest": null,
+    "ci": "not run; previews only",
+    "reason": "User requested examples, no publication request."
+  }
+}
