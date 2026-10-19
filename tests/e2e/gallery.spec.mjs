@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { searchMetadata } from '../../src/search-guides.mjs';
 import { readCatalog } from '../../scripts/validate.mjs';
 
 const catalog = (await readCatalog()).toSorted((a, b) => a.order - b.order);
@@ -106,7 +107,7 @@ test('bookmarks survive a reload and can be removed from the saved view', async 
 test('a direct sharing URL loads its assets and copies the Pages subpath URL', async ({ page, baseURL }) => {
   await page.goto(`prompts/${featured.id}/`);
   await ready(page);
-  await expect(page).toHaveTitle(`${featured.title} — Prompt Gallery`);
+  await expect(page).toHaveTitle(searchMetadata(featured).title);
   await expect(page.locator('#detail-title')).toHaveText(featured.title);
   await loaded(page.locator('#detail-image'));
   await page.locator('#share-prompt').click();

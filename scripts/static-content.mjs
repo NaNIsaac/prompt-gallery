@@ -1,6 +1,8 @@
 import { escapeHtml } from './social.mjs';
 import { promptUrl } from '../src/sharing.mjs';
 
+import { searchGuides } from '../src/search-guides.mjs';
+
 const e = escapeHtml;
 const ordered = prompts => [...prompts].sort((a, b) => a.order - b.order);
 
@@ -22,11 +24,18 @@ export function renderStaticPrompt(prompt, prompts) {
     <ol><li>안내에 맞는 사진 한 장을 준비하세요.</li><li>사진과 아래 프롬프트 원문을 ChatGPT에 함께 보내세요.</li></ol>
     <h2>원본 사진과 AI 변환 결과</h2>
     ${examples.map(example => `<article class="static-example"><h3>${e(example.label)}</h3><div class="static-image-pair">${example.referenceImages.map((path, index) => `<figure><img src="../../${e(path)}" alt="${e(prompt.title)} — ${e(example.label)}의 입력 사진 ${index + 1}" loading="lazy"><figcaption>입력 사진 ${index + 1}</figcaption></figure>`).join('')}<figure><img src="../../${e(example.image)}" alt="${e(prompt.title)} — ${e(example.label)}의 AI 변환 결과" width="${example.width}" height="${example.height}" loading="lazy"><figcaption>AI 변환 결과</figcaption></figure></div>${example.note ? `<p>${e(example.note)}</p>` : ''}</article>`).join('\n')}
+    ${renderSearchGuide(prompt)}
     <h2>프롬프트 원문</h2><pre class="static-prompt">${e(prompt.prompt)}</pre>
     <p>작성: ${e(prompt.author)} · <a href="${e(prompt.sourceUrl)}" rel="noopener noreferrer">원본 출처</a></p>
     <h2>같은 카테고리의 프롬프트</h2>
     <ul>${ordered(prompts).filter(item => item.id !== prompt.id && item.category === prompt.category).slice(0, 6).map(item => `<li><a href="../${encodeURIComponent(item.id)}/">${e(item.title)}</a></li>`).join('')}</ul>
   </details>`;
+}
+
+export function renderSearchGuide(prompt) {
+  const guide = searchGuides[prompt.id];
+  if (!guide) return '';
+  return '<section class="prompt-guide" aria-label="사진 준비와 결과 안내"><h2>' + e(guide.title) + '</h2><p>' + e(guide.intro) + '</p>' + guide.sections.map(section => '<h3>' + e(section.heading) + '</h3><p>' + e(section.body) + '</p>').join('') + '</section>';
 }
 
 export function renderSitemap(prompts, siteRoot) {

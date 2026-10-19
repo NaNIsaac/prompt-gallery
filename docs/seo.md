@@ -13,3 +13,7 @@
 등록 대상은 URL 접두어 속성 https://q07k.github.io/prompt-gallery/ 이다. 소유권 확인은 index.html의 google-site-verification 메타태그로 하며, 인증 후에도 태그를 유지한다. 이것은 사이트에 공개되는 소유권 확인 표식으로 API 비밀 키가 아니다.
 
 배포 후 https://q07k.github.io/prompt-gallery/sitemap.xml 을 제출한다. 제출 및 소유권 확인 성공과 실제 색인 생성은 서로 다르다. Search Console의 사이트맵·페이지 색인·검색 실적에서 처리 결과를 확인한다. 새 프롬프트는 이후 빌드 때 같은 사이트맵에 자동으로 포함된다.
+
+## 검색 유입용 제목과 사용 가이드
+
+대표 5개 항목의 검색 제목·설명·사진 준비·확인된 결과·한계는 `src/search-guides.mjs`에서 관리한다. 빌드된 정적 본문과 상세 모달은 같은 내용을 사용한다. 홈페이지의 HTML 제목·설명과 이 모듈의 `homeSearch`를 함께 갱신한다. 공개할 글의 초안과 후속 측정 기준은 [검색 유입과 소개글](search-distribution.md)을 참고한다.

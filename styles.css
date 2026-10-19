@@ -344,4 +344,9 @@ body:has(dialog[open]) { overflow: hidden; }
 .static-image-pair figcaption { color: var(--muted); }
 .static-prompt { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 
+.prompt-guide { margin: 20px 0; padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); overflow-wrap: anywhere; }
+.prompt-guide summary { cursor: pointer; font-weight: 600; }
+.prompt-guide h3 { margin: 18px 0 6px; font-size: 15px; }
+.prompt-guide p { margin: 10px 0; line-height: 1.75; }
+
 .static-content summary { cursor: pointer; padding: 14px 0; color: var(--muted); }
