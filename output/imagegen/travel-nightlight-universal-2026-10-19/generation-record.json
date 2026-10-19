@@ -2,7 +2,7 @@
   "date": "2026-10-19",
   "stage": "review pending",
   "branch": "codex/seven-photo-ideas",
-  "workspace": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery",
+  "workspace": ".",
   "baseCommit": "41a6f31278223fd689cbba7042b711a785f83573",
   "tool": "built-in image_gen",
   "version": "v2",
@@ -15,28 +15,28 @@
     {
       "id": "hanok",
       "label": "한옥 골목",
-      "source": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-universal-2026-10-19/hanok.reference.png",
-      "result": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-universal-2026-10-19/hanok.png",
-      "sourceGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-3ce19456-c7b1-40f9-b838-d1b2a142320a.png",
-      "resultGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-1f08d892-00a8-4a22-93df-b2ee1539b809.png",
+      "source": "output/imagegen/travel-nightlight-universal-2026-10-19/hanok.reference.png",
+      "result": "output/imagegen/travel-nightlight-universal-2026-10-19/hanok.png",
+      "sourceGeneratedPath": "output/imagegen/travel-nightlight-universal-2026-10-19/hanok.reference.png",
+      "resultGeneratedPath": "output/imagegen/travel-nightlight-universal-2026-10-19/hanok.png",
       "observations": "왼쪽 대문·회색 기와·돌담·굽은 골목·오른쪽 붉은 단풍·뒤 언덕의 상대 배치를 유지했다. 담장과 벽, 지형 경계에 빛이 나고 원본에 없던 해안 마을을 추가하지 않았다. 세부 잎·기와가 조밀하고 담장이 실제 도자기보다 미니어처 석재처럼 보이는 부분이 있다."
     },
     {
       "id": "alpine-lake",
       "label": "산과 호수",
-      "source": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-universal-2026-10-19/alpine-lake.reference.png",
-      "result": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-universal-2026-10-19/alpine-lake.png",
-      "sourceGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-c88e93ca-7d99-409f-bed0-5c7a859b272e.png",
-      "resultGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-bcdff3f3-a206-48bf-a9e8-546b75a09b50.png",
+      "source": "output/imagegen/travel-nightlight-universal-2026-10-19/alpine-lake.reference.png",
+      "result": "output/imagegen/travel-nightlight-universal-2026-10-19/alpine-lake.png",
+      "sourceGeneratedPath": "output/imagegen/travel-nightlight-universal-2026-10-19/alpine-lake.reference.png",
+      "resultGeneratedPath": "output/imagegen/travel-nightlight-universal-2026-10-19/alpine-lake.png",
       "observations": "왼쪽 높은 설산과 오른쪽 낮은 봉우리·짙은 숲·청록 호수·왼쪽 앞 바위를 유지했다. 집·창문·다리를 추가하지 않고 산과 물가의 경계에서 빛이 나온다. 능선·바위 형태와 나무 수는 단순화·재해석됐고, 수면은 도자기 유약보다 실제 물이나 레진처럼 보인다."
     },
     {
       "id": "city-river",
       "label": "도심 강변",
-      "source": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-universal-2026-10-19/city-river.reference.png",
-      "result": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-universal-2026-10-19/city-river.png",
-      "sourceGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-dcd6581a-c235-454c-ab93-a41d3893c97e.png",
-      "resultGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-cb9fc25a-13cd-4f76-b639-53968f9977b9.png",
+      "source": "output/imagegen/travel-nightlight-universal-2026-10-19/city-river.reference.png",
+      "result": "output/imagegen/travel-nightlight-universal-2026-10-19/city-river.png",
+      "sourceGeneratedPath": "output/imagegen/travel-nightlight-universal-2026-10-19/city-river.reference.png",
+      "resultGeneratedPath": "output/imagegen/travel-nightlight-universal-2026-10-19/city-river.png",
       "observations": "세 아치 다리·강·연속된 건물·오른쪽 초록 지붕 종탑의 배치가 잘 이어진다. 창과 다리 아래의 따뜻한 조명이 무드등으로 읽힌다. 창문 수·강변 수목·벽돌 세부는 달라졌고, 물 표면은 실제 물처럼 사실적인 표현이 남는다."
     }
   ],
@@ -44,7 +44,7 @@
     "discardedIdeas": 6,
     "deletedFiles": 36,
     "verification": "0 discarded files remain in recorded paths",
-    "log": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/seven-photo-ideas-2026-10-19/cleanup-log.json"
+    "log": "output/imagegen/seven-photo-ideas-2026-10-19/cleanup-log.json"
   },
   "publication": {
     "commit": null,

@@ -2,7 +2,7 @@
   "date": "2026-10-19",
   "stage": "review pending",
   "branch": "codex/seven-photo-ideas",
-  "workspace": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery",
+  "workspace": ".",
   "baseCommit": "41a6f31278223fd689cbba7042b711a785f83573",
   "tool": "built-in image_gen",
   "promptVersion": "v3",
@@ -16,19 +16,19 @@
     {
       "id": "coast-one-person",
       "label": "해안 풍경 + 인물 1명",
-      "sourceGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-ba39cb89-1452-431f-844c-72e0bdcc3354.png",
-      "resultGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-68013b56-f489-4663-a65f-0591db5d146b.png",
-      "source": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-people-2026-10-19/coast-one-person.reference.png",
-      "result": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-people-2026-10-19/coast-one-person.png",
+      "sourceGeneratedPath": "output/imagegen/travel-nightlight-people-2026-10-19/coast-one-person.reference.png",
+      "resultGeneratedPath": "output/imagegen/travel-nightlight-people-2026-10-19/coast-one-person.png",
+      "source": "output/imagegen/travel-nightlight-people-2026-10-19/coast-one-person.reference.png",
+      "result": "output/imagegen/travel-nightlight-people-2026-10-19/coast-one-person.png",
       "observations": "인물 1명을 유지했다. 노란 재킷·남색 바지·흰 신발·안경·묶은 머리·내린 양팔과 왼쪽 위치, 오른쪽 빨간 지붕 등대·바다·검은 해안 바위가 이어진다. 인물이 원본보다 배경 대비 작아졌으며 얼굴과 몸은 큰 머리·짧은 몸의 귀여운 도자기 인형 비례로 재해석됐다. 인상 단서는 있지만 정밀한 얼굴 동일성까지 충족했다고 판단하지 않는다. 바다는 유광 유약·레진 또는 실제 물처럼 보이는 표현이 혼재한다."
     },
     {
       "id": "bridge-two-people",
       "label": "강변 풍경 + 인물 2명",
-      "sourceGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-570e4bce-60db-4134-80cf-04fe0c230770.png",
-      "resultGeneratedPath": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-c1b2f06f-6835-411b-a53d-9a83cd99e8d1.png",
-      "source": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-people-2026-10-19/bridge-two-people.reference.png",
-      "result": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/travel-nightlight-people-2026-10-19/bridge-two-people.png",
+      "sourceGeneratedPath": "output/imagegen/travel-nightlight-people-2026-10-19/bridge-two-people.reference.png",
+      "resultGeneratedPath": "output/imagegen/travel-nightlight-people-2026-10-19/bridge-two-people.png",
+      "source": "output/imagegen/travel-nightlight-people-2026-10-19/bridge-two-people.reference.png",
+      "result": "output/imagegen/travel-nightlight-people-2026-10-19/bridge-two-people.png",
       "observations": "인물 2명과 좌우 순서·나란히 선 관계·뒷모습·옷 색·서 있는 위치를 유지했다. 왼쪽의 두 아치 다리와 중앙 큰 측백나무·언덕 마을·오른쪽 위 교회가 이어진다. 사람은 도자기 인형으로 통일됐고 바닥에 연결된다. 원본 대비 인물이 조금 작아지고 의복·손발·건물·창문 세부가 단순화됐다. 수면의 사실적인 반사 표현은 남는다."
     }
   ],

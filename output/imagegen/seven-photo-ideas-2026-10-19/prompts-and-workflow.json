@@ -2,7 +2,7 @@
   "date": "2026-10-19",
   "stage": "Travel nightlight selected; six other ideas discarded at user request; v2 follow-up tests in sibling folder",
   "branch": "codex/seven-photo-ideas",
-  "workspace": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery",
+  "workspace": ".",
   "baseCommit": "41a6f31278223fd689cbba7042b711a785f83573",
   "baseRepository": "Q07K/prompt-gallery",
   "headRepository": "Q07K/prompt-gallery",
@@ -25,14 +25,14 @@
   "results": [
     {
       "id": "source-travel",
-      "path": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-09064341-5cca-497e-a875-ec1edeff27aa.png",
-      "target": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png"
+      "path": "output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png",
+      "target": "output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png"
     },
     {
       "id": "07-travel-nightlight",
-      "path": "C:\\Users\\kgh07\\.codex\\generated_images\\01a153c7-8f00-7eb0-8e1f-96e94a4ea33a\\exec-b16e5366-5592-47f0-8f91-f3efbbeb6691.png",
-      "target": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/seven-photo-ideas-2026-10-19/07-travel-nightlight.png",
-      "source": "C:/Users/kgh07/.codex/worktrees/seven-photo-ideas/prompt-gallery/output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png",
+      "path": "output/imagegen/seven-photo-ideas-2026-10-19/07-travel-nightlight.png",
+      "target": "output/imagegen/seven-photo-ideas-2026-10-19/07-travel-nightlight.png",
+      "source": "output/imagegen/seven-photo-ideas-2026-10-19/source-travel.png",
       "review": "파란 문·계단·지붕·해안 배치가 조명에 이어진다. 창은 발광하지만 몸체는 반투명 자기보다 불투명 미니어처에 가깝다. 가상 원본 자체의 집 수가 생성 문구의 세 채와 정확히 맞지 않아 건물 수 보존 성공으로 보고하지 않는다."
     }
   ],
