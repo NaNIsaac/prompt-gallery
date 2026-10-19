@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { searchGuides, searchMetadata, homeSearch } from '../src/search-guides.mjs';
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -34,7 +35,13 @@ test('built pages expose each actual result to crawlers without running JavaScri
   for (const prompt of await readCatalog()) {
     const page = await readFile(resolve(projectRoot, 'dist/prompts', prompt.id, 'index.html'), 'utf8');
     assert.ok(page.includes(`property="og:url" content="${promptUrl(prompt.id, siteRoot)}"`));
-    assert.ok(page.includes(`property="og:title" content="${prompt.title} — Prompt Gallery"`));
+    assert.ok(page.includes(`property="og:title" content="${searchMetadata(prompt).title}"`));
+    const guide = searchGuides[prompt.id];
+    if (guide) {
+      assert.ok(page.includes(guide.description));
+      assert.ok(page.includes(guide.intro));
+      for (const section of guide.sections) assert.ok(page.includes(section.body));
+    } else assert.ok(!page.includes('<section class="prompt-guide"'));
     assert.equal((page.match(/property="og:image" /g) || []).length, 1);
     assert.ok(page.includes(`<h1 id="page-title">${prompt.title}</h1>`));
     assert.ok(page.includes('id="static-content"'));
@@ -52,6 +59,7 @@ test('built pages expose each actual result to crawlers without running JavaScri
   }
   const home = await readFile(resolve(projectRoot, 'dist/index.html'), 'utf8');
   const source = await readFile(resolve(projectRoot, 'index.html'), 'utf8');
+  assert.ok(home.includes(`<title>${homeSearch.title}</title>`));
   const verification = source.match(/<meta name="google-site-verification"[^>]+>/)?.[0];
   assert.ok(verification, 'Search Console verification tag must be configured');
   assert.ok(home.includes(verification), 'build must preserve the verification tag');

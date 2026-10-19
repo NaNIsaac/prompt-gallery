@@ -3,9 +3,11 @@ import { resolve, relative } from 'node:path';
 import { readCatalog, projectRoot } from './validate.mjs';
 import { createSocialImage, socialTags, escapeHtml } from './social.mjs';
 import { promptUrl } from '../src/sharing.mjs';
+import { searchGuides, searchMetadata } from '../src/search-guides.mjs';
 import { renderStaticCatalog, renderStaticPrompt, renderSitemap } from './static-content.mjs';
 
 const prompts = await readCatalog();
+for (const id of Object.keys(searchGuides)) if (!prompts.some(prompt => prompt.id === id)) throw new Error(`Unknown search guide: ${id}`);
 const output = resolve(projectRoot, 'dist');
 if (relative(projectRoot, output) !== 'dist') throw new Error('Build output must be the project dist directory.');
 await rm(output, { recursive: true, force: true });
@@ -29,8 +31,7 @@ const homeTitle = /<title>(.*?)<\/title>/.exec(template)[1];
 const homeDescription = /<meta name="description" content="(.*?)">/.exec(template)[1];
 await writeFile(resolve(output, 'index.html'), template.replace('<!-- static-content -->', () => renderStaticCatalog(prompts)).replace('</head>', `  ${tagsFor(featured, siteUrl.href, homeTitle, homeDescription)}\n</head>`));
 for (const prompt of prompts) {
-  const title = `${prompt.title} — Prompt Gallery`;
-  const description = `${prompt.inputLabel || '사진 1장 필요'}. ${prompt.usage}`;
+  const { title, description } = searchMetadata(prompt);
   const page = template
     .replace('<!-- static-content -->', () => renderStaticPrompt(prompt, prompts))
     .replace(/(<h1 id="page-title">)[\s\S]*?(<\/h1>)/, (_, start, end) => start + escapeHtml(prompt.title) + end)

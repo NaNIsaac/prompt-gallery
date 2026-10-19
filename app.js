@@ -2,6 +2,7 @@ import { categories, filterPrompts, parseSavedIds } from './src/catalog.mjs';
 import { promptUrl, readPromptLocation } from './src/sharing.mjs';
 import { createViewState, resetActiveFilters, navigationState, writeClipboard } from './src/ui-state.mjs';
 
+import { homeSearch, searchGuides, searchMetadata } from './src/search-guides.mjs';
 import { createAnalytics } from './src/analytics.mjs';
 import { analyticsConfig } from './src/analytics-config.mjs';
 
@@ -15,7 +16,7 @@ const search = $('#search');
 const view = createViewState();
 const filters = () => view.filters[view.active];
 const storageKey = 'prompt-gallery:saved:v1';
-const defaultTitle = 'Prompt Gallery — 내 사진으로 만드는 새로운 이미지';
+const defaultTitle = homeSearch.title;
 const siteRoot = new URL('./', import.meta.url);
 document.querySelectorAll('.wordmark, .footer-brand').forEach(link => { link.href = siteRoot.href; });
 const defaultFeedback = 'ChatGPT에 사진 1장과 복사한 프롬프트를 함께 보내세요.';
@@ -300,8 +301,8 @@ function syncControls() {
     $(`#${id}`).classList.toggle('is-active', selected);
     $(`#${id}`).setAttribute('aria-pressed', String(selected));
   }
-  $('#page-title').replaceChildren(document.createTextNode(saved ? '저장한 프롬프트' : '사진 한 장, 새로운 모습으로'), element('span', 'accent-dot', '.'));
-  $('#page-subtitle').textContent = saved ? '이 브라우저에 저장한 프롬프트를 다시 찾아 복사하세요.' : '원본과 결과를 보고, 내 사진에 써볼 프롬프트를 골라보세요.';
+  $('#page-title').replaceChildren(document.createTextNode(saved ? '저장한 프롬프트' : homeSearch.heading), element('span', 'accent-dot', '.'));
+  $('#page-subtitle').textContent = saved ? '이 브라우저에 저장한 프롬프트를 다시 찾아 복사하세요.' : homeSearch.subtitle;
 }
 
 function renderGallery() {
@@ -423,6 +424,13 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
   $('#detail-category').textContent = prompt.category;
   $('#detail-tags').replaceChildren(...prompt.tags.map(tag => element('span', 'detail-tag', tag)));
   $('#detail-usage').textContent = prompt.usage;
+  const guide = searchGuides[prompt.id];
+  $('#detail-guide').hidden = !guide;
+  $('#detail-guide').open = false;
+  $('#detail-guide-content').replaceChildren(...(guide ? [
+    element('p', '', guide.intro),
+    ...guide.sections.flatMap(section => [element('h3', '', section.heading), element('p', '', section.body)]),
+  ] : []));
   $('#example-note').textContent = prompt.exampleNote || 'AI로 만든 첨부 예시와 변환 결과입니다.';
   $('#input-guide').classList.toggle('is-text', !prompt.inputRequirement);
   $('#input-guide use').setAttribute('href', `#i-${prompt.inputRequirement ? 'photo' : 'spark'}`);
@@ -455,7 +463,7 @@ function openPrompt(prompt, trigger = null, writeHistory = true) {
     if (wasOpen) history.replaceState(history.state, '', url);
     else history.pushState({ ...history.state, promptGallery: true }, '', url);
   }
-  document.title = `${prompt.title} — Prompt Gallery`;
+  document.title = searchMetadata(prompt).title;
   analytics.setCovered(true);
   if (changedPrompt) analytics.track('prompt_open', prompt, { surface: trigger ? 'card' : wasOpen ? 'navigation' : 'direct', galleryView: view.active, position: visiblePrompts.findIndex(p => p.id === prompt.id) + 1 });
 }
