@@ -12,6 +12,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [티니핑 v12 입력 자료·참고 파일](teenieping-input-guide.md), [실제 문구](teenieping-prompt-v12.txt), [등록 검토](teenieping-review-2026-10-19.md), [생성 기록](image-generation-2026-10-19-teenieping.json)
+
 - [K-pop 아이돌 v4 등록 검토](kpop-idol-review-2026-10-19.md), [적용 문구](kpop-idol-prompt-v4.txt), [생성 기록](image-generation-2026-10-19-kpop-idol.json)
 
 - [띠부띠부씰 v1 등록 검토](ttibu-sticker-review-2026-10-19.md)
