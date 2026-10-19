@@ -1,0 +1,11 @@
+{
+  "workspace": "C:\\Users\\kgh07\\.codex\\worktrees\\seven-photo-ideas\\prompt-gallery",
+  "branch": "codex/seven-photo-ideas",
+  "head": "41a6f31278223fd689cbba7042b711a785f83573",
+  "baseRef": "41a6f31278223fd689cbba7042b711a785f83573",
+  "baseCommit": "41a6f31278223fd689cbba7042b711a785f83573",
+  "baseIsAncestor": true,
+  "changes": [
+    "?? output/"
+  ]
+}
