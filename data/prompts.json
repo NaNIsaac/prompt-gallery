@@ -1,5 +1,67 @@
 [
   {
+    "id": "eyes-closed-mspaint",
+    "title": "눈 감고 그림판으로 그린 내 사진",
+    "category": "아트·밈",
+    "tags": [
+      "그림판",
+      "낙서",
+      "눈 감고 그리기",
+      "검정 선",
+      "대충 그리기",
+      "인물·풍경·반려동물"
+    ],
+    "image": "assets/images/eyes-closed-mspaint.webp",
+    "thumbnail": "assets/images/eyes-closed-mspaint.thumb.webp",
+    "width": 1024,
+    "height": 1536,
+    "color": "#262626",
+    "prompt": "이 사진을 눈 감고 마우스로 2초 만에 찍 그린 그림판 낙서로 바꿔줘. 진짜 못 그려야 해.\n\n흰 바탕에 굵은 검정 선. 전체 그림을 겨우 6~8번의 성급한 마우스 움직임으로 끝내. 대상의 큰 덩어리와 자세만 삐뚤한 고리와 꺾인 막대 몇 개로 뭉개. 원본을 떠올릴 단서 딱 한두 개만 남기고 나머지는 버려.\n\n제대로 된 윤곽선 대신 덜 닫힌 고리, 엉뚱하게 겹친 선, 빗나간 연결을 써. 얼굴과 몸도 모양이 무너져야 해. 풍경이면 덩어리 위치만 남겨. 화면 대부분은 빈 흰색. 주변 배경은 주제가 아니면 지워.\n\n디테일을 그리면 실패야. 표정, 머리카락, 옷, 손발, 털, 장식, 질감을 묘사하지 마. 귀엽거나 깔끔하거나 잘 그린 그림은 실패야. 색칠·글자 없이, 대체 뭘 그린 건지 잠깐 헷갈릴 만큼 엉망인 낙서만 보여줘.",
+    "inputRequirement": "image",
+    "inputLabel": "변환할 사진 1장 필요",
+    "usage": "사진 한 장을 첨부하고 프롬프트를 보내세요. 특징 한두 개와 자세·배치만 남겨 눈 감고 마우스로 그린 듯한 검정 낙서로 바꿉니다. 얼굴·안경·무늬 같은 특징도 생략될 수 있습니다. 예시는 동일한 v4 문구로 시험한 AI 가상 인물·풍경·반려동물이며, 별도 스타일 참고 이미지는 필요하지 않습니다.",
+    "exampleNote": "AI 생성 원본·결과 · 가상 성인 사진 한 장에 공개 v4 문구만 적용했습니다. 손을 든 자세와 반대편 우산을 남기고 얼굴·안경을 생략했습니다. 몸과 발의 연결이 어긋난 검정 낙서이며, 원본의 식별 특징은 크게 줄었습니다. 지시한 6~8번의 마우스 움직임을 정확히 재현한 결과는 아닙니다.",
+    "referenceImages": [
+      "assets/images/eyes-closed-mspaint.reference.webp"
+    ],
+    "examples": [
+      {
+        "label": "인물 · 우산과 손 인사",
+        "image": "assets/images/eyes-closed-mspaint.webp",
+        "width": 1024,
+        "height": 1536,
+        "referenceImages": [
+          "assets/images/eyes-closed-mspaint.reference.webp"
+        ],
+        "note": "AI 생성 원본·결과 · 가상 성인 사진 한 장에 공개 v4 문구만 적용했습니다. 손을 든 자세와 반대편 우산을 남기고 얼굴·안경을 생략했습니다. 몸과 발의 연결이 어긋난 검정 낙서이며, 원본의 식별 특징은 크게 줄었습니다. 지시한 6~8번의 마우스 움직임을 정확히 재현한 결과는 아닙니다."
+      },
+      {
+        "label": "풍경 · 산과 호수",
+        "image": "assets/images/eyes-closed-mspaint.landscape.webp",
+        "width": 1536,
+        "height": 1024,
+        "referenceImages": [
+          "assets/images/eyes-closed-mspaint.landscape.reference.webp"
+        ],
+        "note": "AI 생성 원본·결과 · 가상 풍경 사진 한 장에 인물·반려동물과 같은 공개 v4 문구만 적용했습니다. 두 봉우리·왼쪽 집·오른쪽 나무의 배치를 남기고 돌·잔물결·산 내부 묘사를 생략했습니다. 길과 호숫가의 구분이 흐려지고 나무와 집은 원본보다 단순해졌습니다. 지시보다 많은 선이 남습니다."
+      },
+      {
+        "label": "반려동물 · 갸웃한 코기",
+        "image": "assets/images/eyes-closed-mspaint.pet.webp",
+        "width": 1254,
+        "height": 1254,
+        "referenceImages": [
+          "assets/images/eyes-closed-mspaint.pet.reference.webp"
+        ],
+        "note": "AI 생성 원본·결과 · 가상 코기 사진 한 장에 인물·풍경과 같은 공개 v4 문구만 적용했습니다. 큰 귀·기울어진 고개·목수건과 앉은 자세는 남고, 눈과 털 무늬는 생략됐습니다. 얼굴 윤곽과 발의 연결이 어긋나며 품종의 세부 유사성은 낮아집니다. 코에는 검은 낙서 덩어리가 남습니다."
+      }
+    ],
+    "author": "gyuhyeong",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -36
+  },
+  {
     "id": "teenieping",
     "title": "내 사진을 나만의 티니핑으로",
     "category": "캐릭터",
