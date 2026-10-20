@@ -36,11 +36,11 @@ npm run check
 
 ## GitHub Actions의 CI와 Cloudflare CD
 
-`.github/workflows/pages.yml`의 표시 이름은 CI이고 필수 작업 이름도 CI이다. PR·main 푸시·수동 실행에서 npm ci → npm test → 빌드 → Chromium 설치 → 브라우저 검사를 실행한다. PR에 배포 권한이나 비밀 값을 제공하지 않는다.
+`.github/workflows/ci.yml`의 표시 이름은 CI이고 필수 작업 이름도 CI이다. PR·main 푸시·수동 실행에서 npm ci → npm test → 빌드 → Chromium 설치 → 브라우저 검사를 실행한다. PR에 배포 권한이나 비밀 값을 제공하지 않는다.
 
 앱 CD는 Cloudflare Pages GitHub 연동이 담당한다. 보호된 main에 PR을 병합하면 Cloudflare가 `npm test && npm run build` 후 dist를 배포한다. 운영 브랜치 main과 환경 변수는 [Cloudflare 운영 문서](cloudflare-pages.md)를 따른다. GitHub Actions에서 CI가 성공했다고 Cloudflare 배포까지 성공한 것으로 보지 않는다.
 
-기존 GitHub 주소는 `.github/workflows/legacy-redirects.yml`을 main에서 한 번 수동 실행해 이동 안내로 교체한다. 이 워크플로만 GitHub Pages 쓰기 권한이 있으며 이후 앱 콘텐츠 CD에는 사용하지 않는다.
+GitHub Pages 게시 및 이전 주소용 리다이렉트는 운영하지 않는다. GitHub Actions에는 CI만 두고 사이트 배포는 Cloudflare Pages가 담당한다.
 
 ## main 보호 규칙
 

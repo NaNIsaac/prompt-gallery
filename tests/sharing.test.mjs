@@ -1,5 +1,4 @@
 import test from 'node:test';
-import { runInNewContext } from 'node:vm';
 import { searchGuides, searchMetadata, homeSearch } from '../src/search-guides.mjs';
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
@@ -9,7 +8,6 @@ import { resolve } from 'node:path';
 import sharp from 'sharp';
 import { projectRoot, readCatalog } from '../scripts/validate.mjs';
 import { promptUrl, readPromptLocation } from '../src/sharing.mjs';
-import { redirectPage } from '../scripts/build-redirects.mjs';
 import { socialTags } from '../scripts/social.mjs';
 
 test('sharing routes support Pages subpaths, legacy hashes, history navigation and index.html', () => {
@@ -78,28 +76,6 @@ test('built pages expose each actual result to crawlers without running JavaScri
   const sitemap = await readFile(resolve(projectRoot, 'dist/sitemap.xml'), 'utf8');
   assert.equal((sitemap.match(/<loc>/g) || []).length, catalog.length + 1);
   for (const prompt of catalog) assert.ok(sitemap.includes(`<loc>${promptUrl(prompt.id, siteRoot)}</loc>`));
-});
-
-test('legacy redirects preserve detail destinations, queries and old prompt hashes without analytics', () => {
-  const target = 'https://example.pages.dev/prompts/example/';
-  const page = redirectPage(target);
-  assert.ok(page.includes('rel="canonical" href="' + target + '"'));
-  assert.ok(page.includes('http-equiv="refresh" content="0;url=' + target));
-  assert.ok(page.includes('target.search = location.search; target.hash = location.hash;'));
-  assert.ok(!page.includes('gtag'));
-  assert.ok(page.includes('content="4wKKUukii7RAtcVjzkOVLx2ZSWK0a1Y34Rjy1J2HJ_I"'), 'keep ownership verification on the old host');
-  for (const [html, pathname, expected] of [
-    [page, '/prompt-gallery/prompts/example/', target + '?source=chat#prompt=example'],
-    [redirectPage('https://example.pages.dev/'), '/prompt-gallery/', 'https://example.pages.dev/?source=chat#prompt=example'],
-    [redirectPage('https://example.pages.dev/', true), '/prompt-gallery/prompts/future/', 'https://example.pages.dev/prompts/future/?source=chat#prompt=example'],
-  ]) {
-    let destination;
-    const location = { pathname, search: '?source=chat', hash: '#prompt=example', replace(value) { destination = value; } };
-    runInNewContext(/<script>([\s\S]*?)<\/script>/.exec(html)[1], { URL, location });
-    assert.equal(destination, expected);
-  }
-  assert.throws(() => redirectPage('javascript:alert(1)'));
-  assert.throws(() => redirectPage('https://example.com/?injected=yes'));
 });
 
 test('Cloudflare branch previews cannot collect production analytics or be indexed', async () => {

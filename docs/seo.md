@@ -18,4 +18,4 @@
 
 대표 5개 항목의 검색 제목·설명·사진 준비·확인된 결과·한계는 `src/search-guides.mjs`에서 관리한다. 빌드된 정적 본문과 상세 모달은 같은 내용을 사용한다. 홈페이지의 HTML 제목·설명과 이 모듈의 `homeSearch`를 함께 갱신한다. 공개할 글의 초안과 후속 측정 기준은 [검색 유입과 소개글](search-distribution.md)을 참고한다.
 
-기존 GitHub Pages 속성은 보존하고 새 URL 접두어 속성을 인증한다. 기존 주소는 수동 legacy-redirects 워크플로로 프롬프트별 canonical·즉시 meta refresh·JavaScript 이동을 게시한다. GitHub Pages에서 HTTP 301을 설정한 것으로 해석하지 않는다. 기존 사이트맵 오류가 새 사이트에서도 해결된 것으로 추정하지 말고 수집 결과를 직접 확인한다.
+Cloudflare URL 접두어 속성의 인증 태그만 사이트에 유지한다. 기존 GitHub Pages 속성은 과거 조회용으로 보존하며 이전 주소의 호환·배포는 운영하지 않는다. 사이트맵 제출 후 수집 결과와 실제 색인 상태를 각각 확인한다.

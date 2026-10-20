@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "An image-first, copy-ready prompt gallery for GitHub Pages.",
+  "description": "An image-first, copy-ready prompt gallery on Cloudflare Pages.",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",

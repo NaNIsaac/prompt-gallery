@@ -13,10 +13,11 @@ GitHub Actions의 필수 CI는 단위 검사·빌드·데스크톱/모바일 브
 기존 GA4 속성 559520260, 스트림 16158654707, 측정 ID G-FJ0FKHBV1X를 유지한다. 웹 스트림 주소를 새 주소로 변경한다. 기존 이벤트와 맞춤 정의를 그대로 사용하고 다른 태그를 중복 설치하지 않는다.
 Search Console은 새 URL 접두어 속성을 HTML 태그로 인증하고 sitemap.xml을 제출한다. 기존 속성과 데이터는 보존한다. 사이트맵 제출과 수집 성공, 페이지 색인과 검색 유입은 각각 확인한다.
 
-## 이전 주소
+## 운영 주소 기준
 
-새 운영 사이트를 검증한 다음에만 Actions의 Publish legacy GitHub Pages redirects를 main에서 수동 실행한다. 기존 루트와 상세별 HTML을 가벼운 이동 안내로 바꾸며 canonical·즉시 meta refresh·JavaScript replace를 사용한다. 기존 #prompt= 링크와 query/hash를 보존한다. 이는 HTTP 301이 아니다. 기존 사이트용 이미지·GA4 태그는 이동 안내에 배포하지 않는다. 이후 콘텐츠 CD는 Cloudflare가 담당한다.
-기존 브라우저 북마크는 origin별 localStorage라 새 도메인으로 자동 이전되지 않는다.
+공개 주소와 공유 링크, GA4 웹 스트림, canonical, robots.txt와 sitemap.xml은 https://q07k-prompt-gallery.pages.dev/ 를 기준으로 관리한다. GitHub Pages는 게시를 중지하며 이전 GitHub 주소용 리다이렉트·인증 태그·배포 워크플로를 운영하지 않는다. Search Console의 과거 속성 및 GA4의 기존 기록은 보존한다.
+
+브라우저 북마크는 origin별 localStorage에 저장된다.
 
 ## 비용과 확장
 
