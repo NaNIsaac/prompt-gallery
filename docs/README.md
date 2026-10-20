@@ -91,3 +91,5 @@
 과거 생성 기록은 당시의 사실을 보존한다. 현재 개발 절차는 위 운영 문서를 따른다. 기록에 있는 카탈로그 개수나 최초 프롬프트가 현재 상태와 다를 수 있다.
 
 - [검색 유입과 소개글 초안](search-distribution.md) — 대표 5개 가이드, GPT/ChatGPT 표현, 배포 후 성과 확인
+
+- [Cloudflare Pages 배포·GA4·SEO 이관 운영](cloudflare-pages.md)

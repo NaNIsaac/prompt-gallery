@@ -16,7 +16,7 @@
 
 결과는 한 장의 이모티콘 스타일 시안입니다. 카카오 제출 규격에 맞춘 9개 개별 파일 패키지는 아니며, 투명 여백의 잔점과 경계는 추가 정리가 필요할 수 있습니다.
 
-원본·결과 이미지와 전체 프롬프트: https://q07k.github.io/prompt-gallery/prompts/kakao-emoticons/
+원본·결과 이미지와 전체 프롬프트: https://q07k-prompt-gallery.pages.dev/prompts/kakao-emoticons/
 
 게시할 때는 위 페이지의 공개 원본·결과를 짝지어 보여주고 'AI 가상 사진·AI 생성 결과' 표시를 유지한다. 이미지 생성 완료나 카카오 등록 승인을 보장하는 표현은 사용하지 않는다.
 
@@ -24,14 +24,14 @@
 
 사진 한 장으로 카톡 이모티콘 느낌의 감정 9종을 만들어봤어요. ChatGPT에 넣을 문구와 원본·결과 비교를 함께 정리했습니다. AI 가상 성인으로 시험한 시안이며 카카오 등록용 개별 파일은 별도 준비가 필요해요.
 
-https://q07k.github.io/prompt-gallery/prompts/kakao-emoticons/
+https://q07k-prompt-gallery.pages.dev/prompts/kakao-emoticons/
 
 ## 다른 대표 페이지를 소개할 때
 
-- 티니핑풍 캐릭터: https://q07k.github.io/prompt-gallery/prompts/teenieping/ — 원작 조형과 차이가 남는다는 점을 함께 설명한다.
-- 그림판 낙서: https://q07k.github.io/prompt-gallery/prompts/eyes-closed-mspaint/ — 사진 특징을 줄이는 이미지 생성이며 실제 그림판 조작이 아님을 밝힌다.
-- 아이돌 화보: https://q07k.github.io/prompt-gallery/prompts/kpop-idol/ — 공개 문구의 성인·27세·단발 기준과 안경 제거 조건을 알린다.
-- 여행 무드등: https://q07k.github.io/prompt-gallery/prompts/travel-ceramic-nightlight/ — 실물 제품이 아닌 AI 이미지임을 밝힌다.
+- 티니핑풍 캐릭터: https://q07k-prompt-gallery.pages.dev/prompts/teenieping/ — 원작 조형과 차이가 남는다는 점을 함께 설명한다.
+- 그림판 낙서: https://q07k-prompt-gallery.pages.dev/prompts/eyes-closed-mspaint/ — 사진 특징을 줄이는 이미지 생성이며 실제 그림판 조작이 아님을 밝힌다.
+- 아이돌 화보: https://q07k-prompt-gallery.pages.dev/prompts/kpop-idol/ — 공개 문구의 성인·27세·단발 기준과 안경 제거 조건을 알린다.
+- 여행 무드등: https://q07k-prompt-gallery.pages.dev/prompts/travel-ceramic-nightlight/ — 실물 제품이 아닌 AI 이미지임을 밝힌다.
 
 이 문서는 검토용 초안이며 블로그·SNS·톡방에 자동 게시하지 않는다. 공개할 서비스·계정과 게시 요청이 지정되면 해당 범위에서 진행한다.
 

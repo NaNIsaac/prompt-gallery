@@ -2,6 +2,7 @@ import { cp, mkdir, writeFile, rm, readFile } from 'node:fs/promises';
 import { resolve, relative } from 'node:path';
 import { readCatalog, projectRoot } from './validate.mjs';
 import { createSocialImage, socialTags, escapeHtml } from './social.mjs';
+import { analyticsConfig } from '../src/analytics-config.mjs';
 import { promptUrl } from '../src/sharing.mjs';
 import { searchGuides, searchMetadata } from '../src/search-guides.mjs';
 import { renderStaticCatalog, renderStaticPrompt, renderSitemap } from './static-content.mjs';
@@ -16,10 +17,16 @@ for (const file of ['index.html', 'styles.css', 'app.js', 'src', 'data', 'assets
   await cp(resolve(projectRoot, file), resolve(output, file), { recursive: true });
 }
 await writeFile(resolve(output, '.nojekyll'), '');
-const siteUrl = new URL(process.env.SITE_URL || 'https://q07k.github.io/prompt-gallery/');
+const siteUrl = new URL(process.env.SITE_URL || analyticsConfig.siteUrl);
 if (siteUrl.protocol !== 'https:' || siteUrl.search || siteUrl.hash) throw new Error('SITE_URL must be an HTTPS site root without a query or hash.');
 if (!siteUrl.pathname.endsWith('/')) siteUrl.pathname += '/';
-const template = await readFile(resolve(projectRoot, 'index.html'), 'utf8');
+const isPreview = process.env.CF_PAGES === '1' && process.env.CF_PAGES_BRANCH !== 'main';
+const template = (await readFile(resolve(projectRoot, 'index.html'), 'utf8'))
+  .replace('</head>', isPreview ? '  <meta name="robots" content="noindex, nofollow">\n</head>' : '</head>');
+await writeFile(resolve(output, 'src/analytics-config.mjs'), 'export const analyticsConfig = ' + JSON.stringify({ ...analyticsConfig, siteUrl: siteUrl.href, ...(isPreview ? { measurementId: '' } : {}) }, null, 2) + ';\n');
+await writeFile(resolve(output, 'robots.txt'), isPreview ? 'User-agent: *\nDisallow: /\n' : 'User-agent: *\nAllow: /\nSitemap: ' + new URL('sitemap.xml', siteUrl).href + '\n');
+await writeFile(resolve(output, '_headers'), '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n' + (isPreview ? '  X-Robots-Tag: noindex, nofollow\n' : ''));
+await writeFile(resolve(output, '404.html'), '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>페이지를 찾을 수 없습니다 — Prompt Gallery</title></head><body><h1>페이지를 찾을 수 없습니다</h1><p><a href="' + escapeHtml(siteUrl.href) + '">전체 프롬프트 둘러보기</a></p></body></html>');
 const images = new Map();
 for (const prompt of prompts) images.set(prompt.id, await createSocialImage(prompt, projectRoot, output));
 const featured = [...prompts].sort((a, b) => a.order - b.order)[0];

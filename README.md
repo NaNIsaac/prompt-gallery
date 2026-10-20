@@ -54,7 +54,7 @@ npx playwright install chromium
 npm run check
 ```
 
-`check`는 단위·데이터 검사, 빌드, 데스크톱·모바일 Chromium 브라우저 테스트를 실행합니다. 브라우저 테스트는 전용 4180번 포트의 `/prompt-gallery/` 경로에서 빌드 결과를 검사합니다.
+`check`는 단위·데이터 검사, 빌드, 데스크톱·모바일 Chromium 브라우저 테스트를 실행합니다. 브라우저 테스트는 전용 4180번 포트의 루트 `/` 경로에서 빌드 결과를 검사합니다.
 
 GitHub Pages와 같은 하위 경로에서도 확인할 수 있습니다.
 
@@ -62,16 +62,16 @@ GitHub Pages와 같은 하위 경로에서도 확인할 수 있습니다.
 node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4174
 ```
 
-## GitHub Pages 배포
+## Cloudflare Pages 배포
 
-1. GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다.
-2. 작업 브랜치에서 `main` 대상 PR을 만듭니다. `.github/workflows/pages.yml`의 필수 `CI` 검사(테스트·빌드·브라우저 검증)가 성공한 뒤 병합합니다.
-3. `main`에 병합되면 같은 CI를 다시 실행하고, 성공한 빌드 결과를 Pages에 배포합니다. PR과 다른 브랜치의 수동 실행에서는 배포하지 않습니다.
-4. Actions의 배포 작업에 표시된 URL에서 확인합니다. 이 저장소의 기본 주소는 `https://q07k.github.io/prompt-gallery/`입니다.
+1. Cloudflare Pages에서 GitHub 저장소 Q07K/prompt-gallery를 연결합니다.
+2. 운영 브랜치는 main, 빌드 명령은 `npm test && npm run build`, 출력은 `dist`, NODE_VERSION은 22, SITE_URL은 `https://q07k-prompt-gallery.pages.dev/`입니다.
+3. PR의 GitHub Actions 필수 `CI`가 성공한 뒤 병합하면 Cloudflare가 자동 빌드·배포합니다. GitHub Actions에서는 앱을 배포하지 않습니다.
+4. Cloudflare의 커밋·배포 성공과 [공개 사이트](https://q07k-prompt-gallery.pages.dev/)를 확인합니다. [이관·운영 문서](docs/cloudflare-pages.md)를 참고하세요.
 
 상세 공유 링크는 `prompts/handcrafted-diorama/`처럼 프롬프트별 정적 페이지를 사용합니다. 빌드가 각 페이지의 Open Graph 메타태그와 실제 결과 이미지로 만든 1200×600 JPEG를 생성하므로, 카카오톡에서도 제목과 결과 이미지를 읽을 수 있습니다. 세로 이미지는 잘리지 않도록 여백을 넣습니다. 이미지 파일명에 원본 해시를 넣어 결과 교체 시 이미지 캐시도 갱신됩니다. 기존 `#prompt=...` 링크도 계속 열리며, 상세의 링크 복사 버튼은 새 공유 주소를 복사합니다. PR에서는 테스트와 빌드만 실행합니다.
 
-기본 공유 도메인은 `https://q07k.github.io/prompt-gallery/`이며, 다른 도메인에 배포한다면 `SITE_URL` 환경변수에 사이트 루트 주소를 지정하고 빌드하세요. 카카오톡에 예전 미리보기가 남아 있다면 [카카오 공유 디버거](https://developers.kakao.com/tool/debugger/sharing)에서 해당 URL의 캐시를 초기화한 뒤 새 메시지로 보내세요. 이미 보낸 메시지의 카드는 갱신되지 않을 수 있습니다.
+기본 공유 도메인은 `https://q07k-prompt-gallery.pages.dev/`이며, 다른 도메인에 배포한다면 `SITE_URL` 환경변수에 사이트 루트 주소를 지정하고 빌드하세요. 카카오톡에 예전 미리보기가 남아 있다면 [카카오 공유 디버거](https://developers.kakao.com/tool/debugger/sharing)에서 해당 URL의 캐시를 초기화한 뒤 새 메시지로 보내세요. 이미 보낸 메시지의 카드는 갱신되지 않을 수 있습니다.
 
 워크플로는 [GitHub의 공식 Pages 배포 안내](https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically)를 따릅니다.
 
