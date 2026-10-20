@@ -33,7 +33,7 @@ test('untrusted catalog text cannot inject markup into sharing metadata', () => 
 
 test('built pages expose each actual result to crawlers without running JavaScript', async () => {
   const siteRoot = 'https://example.com/gallery/';
-  await promisify(execFile)(process.execPath, ['scripts/build.mjs'], { cwd: projectRoot, env: { ...process.env, SITE_URL: siteRoot } });
+  await promisify(execFile)(process.execPath, ['scripts/build.mjs'], { cwd: projectRoot, env: { ...process.env, SITE_URL: siteRoot, CF_PAGES_BRANCH: 'main' } });
   for (const prompt of await readCatalog()) {
     const page = await readFile(resolve(projectRoot, 'dist/prompts', prompt.id, 'index.html'), 'utf8');
     assert.ok(page.includes(`property="og:url" content="${promptUrl(prompt.id, siteRoot)}"`));
