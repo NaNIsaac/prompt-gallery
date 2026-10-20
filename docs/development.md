@@ -9,7 +9,7 @@ flowchart LR
   C --> D[필수 CI 통과]
   D --> E[main 병합]
   E --> F[main CI 재검증]
-  F --> G[GitHub Pages 배포]
+  F --> G[Cloudflare Pages 배포]
 ```
 
 로컬 검증은 빠르게 오류를 찾기 위한 단계다. PR의 GitHub Actions 검증은 병합 판단에 사용한다. `main`에 병합된 커밋도 다시 검증하고, 성공한 실행의 산출물을 배포한다.
@@ -72,7 +72,7 @@ git push -u origin codex/describe-the-change
 
 `main` 보호 규칙은 PR과 필수 상태 검사 `CI`를 요구하고 최신 `main` 반영을 요구한다. 단독 개발도 가능하도록 다른 사람의 승인 개수는 0으로 둔다. 이는 CI 통과 조건을 없애는 설정이 아니다. 강제 푸시와 `main` 삭제를 차단하고 별도 우회 대상을 두지 않는다.
 
-담당자는 현재 PR head의 CI 통과 후 PR을 병합한다. 병합 후에는 Actions의 `deploy` 성공과 공개 URL을 확인한다. 배포 실패와 CI 실패는 구분해서 보고하며, 실행을 시작했다는 이유만으로 배포 완료라고 기록하지 않는다.
+담당자는 현재 PR head의 CI 통과 후 PR을 병합한다. 병합 후에는 Cloudflare Pages의 해당 병합 커밋 배포 성공과 공개 URL을 확인한다. 배포 실패와 CI 실패는 구분해서 보고하며, 실행을 시작했다는 이유만으로 배포 완료라고 기록하지 않는다.
 
 ## 수정과 복구
 
