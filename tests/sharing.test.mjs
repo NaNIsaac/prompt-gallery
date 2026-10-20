@@ -87,6 +87,7 @@ test('legacy redirects preserve detail destinations, queries and old prompt hash
   assert.ok(page.includes('http-equiv="refresh" content="0;url=' + target));
   assert.ok(page.includes('target.search = location.search; target.hash = location.hash;'));
   assert.ok(!page.includes('gtag'));
+  assert.ok(page.includes('content="4wKKUukii7RAtcVjzkOVLx2ZSWK0a1Y34Rjy1J2HJ_I"'), 'keep ownership verification on the old host');
   for (const [html, pathname, expected] of [
     [page, '/prompt-gallery/prompts/example/', target + '?source=chat#prompt=example'],
     [redirectPage('https://example.pages.dev/'), '/prompt-gallery/', 'https://example.pages.dev/?source=chat#prompt=example'],

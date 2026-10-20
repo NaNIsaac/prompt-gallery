@@ -9,7 +9,7 @@ export function redirectPage(targetUrl, legacyFallback = false) {
   const target = new URL(targetUrl);
   if (target.protocol !== 'https:' || target.username || target.password || target.search || target.hash) throw new Error('Redirect destination must be a clean HTTPS URL.');
   const destination = escapeHtml(target.href);
-  return '<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>Prompt Gallery 주소 변경</title><link rel="canonical" href="' + destination + '"><meta http-equiv="refresh" content="0;url=' + destination + '"></head><body><p>Prompt Gallery의 주소가 바뀌었습니다. <a href="' + destination + '">새 갤러리로 이동</a></p><script>const target = new URL(' + JSON.stringify(target.href) + ');' + (legacyFallback ? 'if (location.pathname.startsWith("/prompt-gallery/")) target.pathname += location.pathname.slice("/prompt-gallery/".length);' : '') + 'target.search = location.search; target.hash = location.hash; location.replace(target.href);</script></body></html>';
+  return '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="google-site-verification" content="4wKKUukii7RAtcVjzkOVLx2ZSWK0a1Y34Rjy1J2HJ_I"><title>Prompt Gallery 주소 변경</title><link rel="canonical" href="' + destination + '"><meta http-equiv="refresh" content="0;url=' + destination + '"></head><body><p>Prompt Gallery의 주소가 바뀌었습니다. <a href="' + destination + '">새 갤러리로 이동</a></p><script>const target = new URL(' + JSON.stringify(target.href) + ');' + (legacyFallback ? 'if (location.pathname.startsWith("/prompt-gallery/")) target.pathname += location.pathname.slice("/prompt-gallery/".length);' : '') + 'target.search = location.search; target.hash = location.hash; location.replace(target.href);</script></body></html>';
 }
 
 export async function buildRedirects() {
