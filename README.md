@@ -1,5 +1,7 @@
 # Prompt Gallery
 
+운영 환경·주소·자동 배포의 기준 문서는 [Cloudflare Pages 운영](docs/cloudflare-pages.md)입니다. 오래된 작업 브랜치의 설정과 현재 운영 상태를 구분하는 절차는 [AGENTS.md](AGENTS.md)를 따릅니다.
+
 내 사진을 첨부해 변환하는 프롬프트 갤러리입니다. 첨부 예시와 결과를 보고, 프롬프트를 복사해 ChatGPT에 사진과 함께 보내면 됩니다. 카드에서 즉시 복사, 이미지 확대, 검색과 카테고리, 정렬, 브라우저 북마크를 지원합니다. 제작 과정과 버전 이력은 Git으로 관리합니다.
 
 2026-10-19 ‘내 사진을 나만의 티니핑으로’를 최상단에 추가해 총 41개입니다. PR 검토의 사진 한 장 원칙을 반영해 추가 참고 없이 공개 v14 문구와 가상 성인·남자아이 사진 한 장씩으로 재시험했습니다. [사진 한 장 사용법](docs/teenieping-input-guide.md), [수정 검토](docs/teenieping-review-2026-10-19.md), [실제 입력·파일 해시](docs/image-generation-2026-10-19-teenieping.json)를 보관합니다.
