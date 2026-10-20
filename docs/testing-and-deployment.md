@@ -18,7 +18,7 @@ npm run check
 | `npm run build` | 공개 파일과 각 프롬프트의 정적 상세 HTML, 공유용 JPEG 생성 |
 | `npm run test:e2e` | 빌드 결과에 실제 Chromium으로 접속해 주요 사용자 동작 검증 |
 
-브라우저 테스트만 실행하려면 먼저 `npm run build`를 실행한다. 테스트는 `playwright.config.mjs`가 전용 서버를 시작·종료하며, 이미 실행 중인 서버를 재사용하지 않는다. 접속 경로는 `/prompt-gallery/`여서 Pages 하위 경로의 자산·공유 링크 문제도 검사한다.
+브라우저 테스트만 실행하려면 먼저 `npm run build`를 실행한다. 테스트는 `playwright.config.mjs`가 전용 서버를 시작·종료하며, 이미 실행 중인 서버를 재사용하지 않는다. 접속 경로는 `/`여서 Cloudflare 운영 루트의 자산·공유 링크를 검사한다. 하위 경로 파싱은 공유 링크 단위 검사에서도 확인한다.
 
 ## 브라우저 검증
 
@@ -34,22 +34,13 @@ npm run check
 
 클립보드 검사는 운영체제의 CRLF/LF 차이만 통일해 비교하고, 나머지 문자와 빈 줄은 원문과 일치해야 한다. OS 클립보드 경합을 피하도록 브라우저 시나리오는 단일 worker로 실행한다.
 
-## GitHub Actions의 CI와 CD
+## GitHub Actions의 CI와 Cloudflare CD
 
-워크플로: `.github/workflows/pages.yml` / 표시 이름: `CI and GitHub Pages`.
+`.github/workflows/pages.yml`의 표시 이름은 CI이고 필수 작업 이름도 CI이다. PR·main 푸시·수동 실행에서 npm ci → npm test → 빌드 → Chromium 설치 → 브라우저 검사를 실행한다. PR에 배포 권한이나 비밀 값을 제공하지 않는다.
 
-| 이벤트 | 필수 `CI` 작업 | Pages `deploy` 작업 |
-|---|---|---|
-| `main` 대상 PR 생성·업데이트 | 실행 | 실행하지 않음 |
-| `main` 푸시·PR 병합 | 실행 | CI 성공 후 실행 |
-| 수동 실행, `main` 선택 | 실행 | CI 성공 후 실행 |
-| 수동 실행, 다른 브랜치 선택 | 실행 | 실행하지 않음 |
+앱 CD는 Cloudflare Pages GitHub 연동이 담당한다. 보호된 main에 PR을 병합하면 Cloudflare가 `npm test && npm run build` 후 dist를 배포한다. 운영 브랜치 main과 환경 변수는 [Cloudflare 운영 문서](cloudflare-pages.md)를 따른다. GitHub Actions에서 CI가 성공했다고 Cloudflare 배포까지 성공한 것으로 보지 않는다.
 
-`CI`는 체크아웃 → Node/npm 캐시 → `npm ci` → `npm test` → 빌드 → Chromium과 Linux 의존성 설치 → 브라우저 테스트 순서다. 실패하면 Pages 산출물을 올리지 않으며 `deploy`도 실행하지 않는다. PR에는 배포 권한을 주지 않는다. 배포 작업에만 `pages: write`, `id-token: write` 권한을 부여한다.
-
-`main`의 필수 검사 이름은 **`CI`**다. 작업 이름을 바꾸면 GitHub 보호 규칙도 함께 수정해야 한다. 문서 전용 PR을 포함한 모든 PR에 CI를 실행한다. 필수 워크플로 전체를 경로 필터로 건너뛰게 만들어 검사가 영원히 대기하는 상황을 만들지 않는다.
-
-외부 fork의 PR은 저장소 설정에 따라 담당자의 workflow 실행 승인이 필요할 수 있다. 이때 기여자는 PR과 승인 대기 상태를 보존하고, 담당자는 변경을 검토한 뒤 [GitHub의 승인 절차](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks)에 따라 검사를 실행한다. PR 검사 실행 승인과 병합·Pages 배포는 서로 다른 단계다.
+기존 GitHub 주소는 `.github/workflows/legacy-redirects.yml`을 main에서 한 번 수동 실행해 이동 안내로 교체한다. 이 워크플로만 GitHub Pages 쓰기 권한이 있으며 이후 앱 콘텐츠 CD에는 사용하지 않는다.
 
 ## main 보호 규칙
 
@@ -78,7 +69,7 @@ CI 실패 시 Actions 실행의 Artifacts에서 `playwright-failure-report`를 �
 
 ## 배포 확인과 자동 검증의 한계
 
-Actions에서 해당 커밋의 `CI`와 `deploy` 성공을 확인한 뒤 [공개 갤러리](https://q07k.github.io/prompt-gallery/)의 새 항목과 상세 링크를 확인한다. CI가 검사하는 것은 로컬 빌드 산출물이다. 공개 CDN, 브라우저 캐시, 카카오톡의 미리보기 캐시까지 검증했다고 해석하지 않는다.
+GitHub Actions에서 해당 커밋의 CI와 Cloudflare의 동일 커밋 배포 성공을 확인한 뒤 [공개 갤러리](https://q07k-prompt-gallery.pages.dev/)의 새 항목과 상세 링크를 확인한다. CI가 검사하는 것은 로컬 빌드 산출물이다. 공개 CDN, 브라우저 캐시, 카카오톡의 미리보기 캐시까지 검증했다고 해석하지 않는다.
 
 이미지 생성 결과의 인물 보존, 그림 스타일, 실제 문구 품질은 수동 검토한다. 자동 테스트는 이미지 로딩이나 링크가 정상임을 확인하며 미적 품질이나 프롬프트 준수를 판정하지 않는다. 카카오톡 캐시 대응은 루트 README의 공유 안내를 따른다.
 

@@ -10,7 +10,7 @@ export default defineConfig({
   globalTimeout: 5 * 60 * 1000,
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
-    baseURL: 'http://127.0.0.1:4180/prompt-gallery/',
+    baseURL: 'http://127.0.0.1:4180/',
     permissions: ['clipboard-read', 'clipboard-write'],
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
@@ -20,8 +20,8 @@ export default defineConfig({
     { name: 'mobile-chromium', use: { ...devices['Pixel 7'], defaultBrowserType: 'chromium' } },
   ],
   webServer: {
-    command: 'node scripts/serve.mjs --dist --base /prompt-gallery/ --port 4180',
-    url: 'http://127.0.0.1:4180/prompt-gallery/',
+    command: 'node scripts/serve.mjs --dist --port 4180',
+    url: 'http://127.0.0.1:4180/',
     reuseExistingServer: false,
     timeout: 30_000,
   },

@@ -1,6 +1,6 @@
 # GA4 이용 통계
 
-GitHub Pages는 그대로 유지하고 브라우저에서 Google Analytics 4 표준 속성으로 이벤트를 보낸다. 별도 API 서버, DB, BigQuery 연결은 사용하지 않는다.
+Cloudflare Pages 정적 사이트에서 브라우저를 통해 Google Analytics 4 표준 속성으로 이벤트를 보낸다. 별도 API 서버, DB, BigQuery 연결은 사용하지 않는다.
 
 ## 연결 정보
 
@@ -9,11 +9,11 @@ GitHub Pages는 그대로 유지하고 브라우저에서 Google Analytics 4 표
 - 측정 ID: `G-FJ0FKHBV1X`
 - 시간대: 대한민국 (GMT+09:00), 통화: KRW
 - [맞춤 정의 관리](https://analytics.google.com/analytics/web/#/a248557085p559520260/admin/customdefinitions/hub)
-- 이벤트 범위 맞춤 측정기준 5개 등록 완료. 수집은 코드의 Pages 배포 후 시작하며 실제 유입 확인은 별도 단계다.
+- 이벤트 범위 맞춤 측정기준 5개 등록 완료. Cloudflare 이관 시에도 기존 속성·스트림·맞춤 정의·주요 이벤트를 유지한다. 웹 스트림 기본 URL을 새 운영 주소로 갱신하고 실제 유입을 별도로 확인한다.
 
 ## 연결
 
-`src/analytics-config.mjs`에 웹 스트림의 공개 측정 ID(`G-…`)와 실제 사이트 루트를 설정한다. 측정 ID는 비밀 키가 아니다. `siteUrl`의 origin과 경로 안에서만 태그를 실행하므로 로컬 개발·테스트·다른 도메인의 fork는 수집하지 않는다. ID를 빈 문자열로 바꾸면 수집을 끌 수 있다. 도메인이나 Pages 경로를 바꿀 때 이 설정도 함께 변경한다.
+`src/analytics-config.mjs`에 웹 스트림의 공개 측정 ID(`G-…`)와 실제 사이트 루트를 설정한다. 측정 ID는 비밀 키가 아니다. `siteUrl`의 origin과 경로 안에서만 태그를 실행하므로 로컬 개발·테스트·다른 도메인의 fork는 수집하지 않는다. ID를 빈 문자열로 바꾸면 수집을 끌 수 있다. 도메인이나 Pages 경로를 바꿀 때 이 설정도 함께 변경한다. 운영 주소는 https://q07k-prompt-gallery.pages.dev/ 이다. 빌드는 SITE_URL을 산출물의 GA4 설정에도 적용한다. Cloudflare의 main 이외 브랜치 프리뷰는 측정 ID를 비워 수집하지 않는다.
 
 GA4 웹 스트림의 **향상된 측정은 끈다.** 문서 로드당 `page_view` 한 번과 아래 앱 이벤트를 직접 전송한다. 상세 모달의 history 변경은 추가 페이지 조회로 세지 않고 `prompt_open`으로 센다. 다른 태그나 GTM에서 같은 ID를 중복 설치하지 않는다.
 

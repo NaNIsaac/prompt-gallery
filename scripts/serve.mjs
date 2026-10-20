@@ -9,7 +9,7 @@ const portIndex = process.argv.indexOf('--port');
 const port = Number(portIndex >= 0 ? process.argv[portIndex + 1] : process.env.PORT || 4173);
 const baseIndex = process.argv.indexOf('--base');
 const base = baseIndex >= 0 ? '/' + process.argv[baseIndex + 1].replace(/^\/+|\/+$/g, '') + '/' : '/';
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.txt': 'text/plain; charset=utf-8' };
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8' };
 
 const server = createServer(async (request, response) => {
   try {
@@ -24,7 +24,7 @@ const server = createServer(async (request, response) => {
     }
     const promptPage = /^prompts\/[a-z0-9]+(?:-[a-z0-9]+)*\/(?:index\.html)?$/.test(local);
     if (promptPage) local = root === project ? 'index.html' : local.replace(/\/$/, '/index.html');
-    if (!/^(index\.html|prompts\/[a-z0-9-]+\/index\.html|styles\.css|app\.js|src\/[a-z-]+\.mjs|data\/prompts\.json|assets\/.+|licenses\/.+)$/.test(local)) throw new Error('Not found');
+    if (!/^(index\.html|robots\.txt|sitemap\.xml|404\.html|prompts\/[a-z0-9-]+\/index\.html|styles\.css|app\.js|src\/[a-z-]+\.mjs|data\/prompts\.json|assets\/.+|licenses\/.+)$/.test(local)) throw new Error('Not found');
     const absolute = resolve(root, local);
     const rel = relative(root, absolute);
     if (rel.startsWith('..') || isAbsolute(rel) || !(await stat(absolute)).isFile()) throw new Error('Not found');

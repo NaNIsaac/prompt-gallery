@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { runInNewContext } from 'node:vm';
 import { searchGuides, searchMetadata, homeSearch } from '../src/search-guides.mjs';
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
@@ -8,6 +9,7 @@ import { resolve } from 'node:path';
 import sharp from 'sharp';
 import { projectRoot, readCatalog } from '../scripts/validate.mjs';
 import { promptUrl, readPromptLocation } from '../src/sharing.mjs';
+import { redirectPage } from '../scripts/build-redirects.mjs';
 import { socialTags } from '../scripts/social.mjs';
 
 test('sharing routes support Pages subpaths, legacy hashes, history navigation and index.html', () => {
@@ -31,7 +33,7 @@ test('untrusted catalog text cannot inject markup into sharing metadata', () => 
 
 test('built pages expose each actual result to crawlers without running JavaScript', async () => {
   const siteRoot = 'https://example.com/gallery/';
-  await promisify(execFile)(process.execPath, ['scripts/build.mjs'], { cwd: projectRoot, env: { ...process.env, SITE_URL: siteRoot } });
+  await promisify(execFile)(process.execPath, ['scripts/build.mjs'], { cwd: projectRoot, env: { ...process.env, SITE_URL: siteRoot, CF_PAGES_BRANCH: 'main' } });
   for (const prompt of await readCatalog()) {
     const page = await readFile(resolve(projectRoot, 'dist/prompts', prompt.id, 'index.html'), 'utf8');
     assert.ok(page.includes(`property="og:url" content="${promptUrl(prompt.id, siteRoot)}"`));
@@ -67,7 +69,45 @@ test('built pages expose each actual result to crawlers without running JavaScri
   assert.ok(home.includes(`property="og:url" content="${siteRoot}"`));
   const catalog = await readCatalog();
   for (const prompt of catalog) assert.ok(home.includes(`href="./prompts/${prompt.id}/"`));
+  const config = await readFile(resolve(projectRoot, 'dist/src/analytics-config.mjs'), 'utf8');
+  assert.ok(config.includes(siteRoot), 'analytics and canonical must use the same build root');
+  const robots = await readFile(resolve(projectRoot, 'dist/robots.txt'), 'utf8');
+  assert.ok(robots.includes('Sitemap: ' + siteRoot + 'sitemap.xml'));
+  const notFound = await readFile(resolve(projectRoot, 'dist/404.html'), 'utf8');
+  assert.ok(notFound.includes('content="noindex"'));
   const sitemap = await readFile(resolve(projectRoot, 'dist/sitemap.xml'), 'utf8');
   assert.equal((sitemap.match(/<loc>/g) || []).length, catalog.length + 1);
   for (const prompt of catalog) assert.ok(sitemap.includes(`<loc>${promptUrl(prompt.id, siteRoot)}</loc>`));
+});
+
+test('legacy redirects preserve detail destinations, queries and old prompt hashes without analytics', () => {
+  const target = 'https://example.pages.dev/prompts/example/';
+  const page = redirectPage(target);
+  assert.ok(page.includes('rel="canonical" href="' + target + '"'));
+  assert.ok(page.includes('http-equiv="refresh" content="0;url=' + target));
+  assert.ok(page.includes('target.search = location.search; target.hash = location.hash;'));
+  assert.ok(!page.includes('gtag'));
+  for (const [html, pathname, expected] of [
+    [page, '/prompt-gallery/prompts/example/', target + '?source=chat#prompt=example'],
+    [redirectPage('https://example.pages.dev/'), '/prompt-gallery/', 'https://example.pages.dev/?source=chat#prompt=example'],
+    [redirectPage('https://example.pages.dev/', true), '/prompt-gallery/prompts/future/', 'https://example.pages.dev/prompts/future/?source=chat#prompt=example'],
+  ]) {
+    let destination;
+    const location = { pathname, search: '?source=chat', hash: '#prompt=example', replace(value) { destination = value; } };
+    runInNewContext(/<script>([\s\S]*?)<\/script>/.exec(html)[1], { URL, location });
+    assert.equal(destination, expected);
+  }
+  assert.throws(() => redirectPage('javascript:alert(1)'));
+  assert.throws(() => redirectPage('https://example.com/?injected=yes'));
+});
+
+test('Cloudflare branch previews cannot collect production analytics or be indexed', async () => {
+  await promisify(execFile)(process.execPath, ['scripts/build.mjs'], { cwd: projectRoot, env: { ...process.env, SITE_URL: 'https://example.pages.dev/', CF_PAGES: '1', CF_PAGES_BRANCH: 'test-preview' } });
+  const page = await readFile(resolve(projectRoot, 'dist/index.html'), 'utf8');
+  assert.ok(page.includes('<meta name="robots" content="noindex, nofollow">'));
+  assert.ok(page.includes('rel="canonical" href="https://example.pages.dev/"'));
+  const config = await readFile(resolve(projectRoot, 'dist/src/analytics-config.mjs'), 'utf8');
+  assert.ok(config.includes('"measurementId": ""'));
+  assert.ok((await readFile(resolve(projectRoot, 'dist/robots.txt'), 'utf8')).includes('Disallow: /'));
+  assert.ok((await readFile(resolve(projectRoot, 'dist/_headers'), 'utf8')).includes('X-Robots-Tag: noindex, nofollow'));
 });
