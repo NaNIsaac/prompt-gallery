@@ -3,6 +3,12 @@
 운영 주소: https://q07k-prompt-gallery.pages.dev/
 코드 저장소: https://github.com/Q07K/prompt-gallery
 
+## 새 세션과 운영 현황 확인
+
+현재 로컬 브랜치의 README나 과거 Actions 성공 기록만으로 운영 환경을 판단하지 않는다. [저장소 시작 지침](../AGENTS.md)에 따라 원본 저장소의 최신 기본 브랜치를 fetch하고 그 ref의 이 문서와 CI 구성을 읽는다. 오래된 콘텐츠 브랜치는 그대로 보존한다. 설정 확인과 실제 배포 성공은 구분하고, 배포 성공은 Cloudflare에서 운영 브랜치 main의 커밋 SHA와 상태를 확인한다.
+
+이관 후에는 새 세션이 여는 기본 프로젝트 폴더에도 이 운영 문서와 시작 지침을 반영한다. 사이트맵 오류나 색인 상태는 별도로 실제 Search Console 결과를 확인하며 이 문서를 성공 증빙으로 사용하지 않는다.
+
 ## 자동 배포
 
 Cloudflare Pages의 GitHub 연동에서 main을 운영 브랜치로 설정한다. 빌드 명령은 `npm test && npm run build`, 출력 디렉터리는 `dist`, 환경 변수는 NODE_VERSION=22, SITE_URL=https://q07k-prompt-gallery.pages.dev/ 이다.

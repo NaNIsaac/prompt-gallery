@@ -6,6 +6,7 @@
 |---|---|
 | [스킬 사용 가이드](prompt-gallery-workflow-guide.md) | 시작 방법, 채팅 선택지, 호출 예시, 역할과 단계별 완료 범위 |
 | [프롬프트 작업 스킬](../.agents/skills/prompt-gallery-workflow/SKILL.md) | 제작·테스트·등록·배포와 작업 브랜치 정리 |
+| [Cloudflare Pages 운영](cloudflare-pages.md) | 현재 운영 주소, GitHub CI와 Cloudflare CD, 오래된 checkout에서의 확인 절차 |
 | [개발 흐름](development.md) | 브랜치, 로컬 실행, 변경 범위, PR, 병합, 복구 |
 | [테스트와 배포](testing-and-deployment.md) | 로컬 검사, CI 필수 검사, 브라우저 테스트, Pages 배포, 실패 대응 |
 | [프롬프트 등록 원칙](prompt-publishing.md) | 원문 보존, 이미지 생성·검토, 등록 순서, 생성 기록 |
