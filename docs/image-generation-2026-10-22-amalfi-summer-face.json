@@ -1,0 +1,223 @@
+{
+  "id": "amalfi-summer",
+  "date": "2026-10-22",
+  "version": "v2",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "baseCommit": "05a4821f483b194908938308f884bcd267e0ad3c",
+  "approval": {
+    "date": "2026-10-22",
+    "response": "결과 확정·PR 제출",
+    "scope": "Register approved v2 and examples, run checks, submit Draft PR; no merge/deployment authorization."
+  },
+  "before": {
+    "catalog": {
+      "id": "amalfi-summer",
+      "title": "내 여행 사진을 빈티지 포스터로",
+      "category": "포스터",
+      "tags": [
+        "여행",
+        "빈티지",
+        "풍경 변환"
+      ],
+      "image": "assets/images/amalfi-summer.webp",
+      "thumbnail": "assets/images/amalfi-summer.thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "color": "#f8e8b8",
+      "prompt": "첨부한 사진에 보이는 풍경이나 건물의 특징과 주요 구도를 살려 빈티지 여행 포스터로 바꿔줘. 사람이 함께 보이면 외모와 위치도 유지하고, 선명한 색면과 종이에 인쇄한 듯한 질감을 사용해줘. 사진이 없거나 배경을 알아보기 어려우면 풍경이나 건물이 잘 보이는 사진을 요청해줘. 장소 이름은 사용자가 알려준 경우에만 넣어줘.",
+      "inputRequirement": "image",
+      "inputLabel": "풍경·건물 사진 1장 필요",
+      "usage": "풍경이나 건물이 잘 드러나는 사진 1장을 첨부하세요. 사람이 함께 나와도 됩니다. 장소 이름을 넣고 싶다면 이름도 함께 알려주세요.",
+      "exampleNote": "AI 생성 예시 · 표시된 프롬프트를 기존 원본에 적용한 결과입니다.",
+      "referenceImages": [
+        "assets/images/amalfi-summer.reference.webp"
+      ],
+      "author": "@Q07K",
+      "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+      "inspirationUrl": "https://x.com/WolfRiccardo/status/2044562722491121718",
+      "sample": false,
+      "order": 4
+    },
+    "result": {
+      "path": "assets/images/amalfi-summer.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4b2935c7a1bfdfa192cc0c71d72ff111b20c39ae2abba112c3fd60d0af3191d9"
+    },
+    "thumbnail": {
+      "path": "assets/images/amalfi-summer.thumb.webp",
+      "width": 533,
+      "height": 800,
+      "sha256": "f08b758dd972bbd0d1924ac0102607b10470c8f080c17bf57247334643eb88a1"
+    },
+    "history": "image-generation-2026-10-15.json"
+  },
+  "finalPrompt": "첨부한 사진을 바탕으로, 사진 속 장소와 사람을 알아볼 수 있는 빈티지 여행 포스터로 바꿔 주세요. 새 여행 장면을 만들지 말고 원본 사진을 편집해 주세요.\n\n풍경·건물의 특징, 촬영 시점, 주요 구도와 사물의 위치 관계를 유지하세요. 사람이 있으면 인물 수, 화면 속 위치와 크기, 자세, 시선, 표정, 옷과 소품을 유지하세요. 사람이 없는 사진에는 사람을 추가하지 마세요.\n\n인물은 같은 사람으로 알아볼 수 있는 것을 최우선으로 하세요. 얼굴 윤곽과 턱선, 눈 모양과 간격, 눈썹, 코와 입의 모양·상대적 비례, 피부색, 나이대, 머리색·헤어라인·가르마, 안경·점·주름 등 원본에서 보이는 식별 특징을 보존하세요. 미화하거나 어려 보이게 만들지 말고, 전형적인 포스터 모델이나 다른 사람의 얼굴로 재해석하지 마세요. 작거나 가려져 판별되지 않는 얼굴의 세부를 임의로 만들어 넣지 마세요.\n\n선명한 색면, 제한된 복고풍 색상, 종이에 인쇄한 듯한 잉크 입자와 가벼운 바랜 질감으로 빈티지 분위기를 내세요. 얼굴에도 같은 인쇄 질감을 적용하되 이목구비를 몇 개의 도형으로 뭉개거나 얼굴 비례를 과장하지 마세요. 얼굴의 닮은 정도와 강한 단순화가 충돌하면 얼굴의 원래 형태와 명암 단서를 더 남기세요. 얼굴만 사진처럼 붙인 합성 느낌은 피하세요.\n\n장소 이름은 사용자가 알려준 경우에만 그 이름 그대로 넣고, 알려주지 않았다면 제목·문구·로고·워터마크를 추가하지 마세요. 사진이 없거나 풍경·건물을 알아보기 어려우면 해당 배경이 잘 보이는 사진을 요청하세요.",
+  "referenceGenerationPrompt": "Create a photorealistic fictional travel snapshot, vertical 2:3 composition. This is a synthetic adult and not a real person. One ordinary Korean woman around 45 years old stands waist-up at the left foreground of a sunny European canal promenade. Her full head and face are clearly visible, face about one fifth of frame height, looking toward the camera with a natural closed-mouth slight smile. Distinct oval face with a slightly broad jaw, small almond-shaped eyes with gentle natural asymmetry, straight medium-width nose, thin upper lip and fuller lower lip, subtle fine lines around eyes, small mole beneath her left eye, short dark bob with a side part, thin oval dark eyeglasses. Must look like an ordinary individual, no beauty retouching. Wearing a muted teal cardigan over a cream T-shirt, holding the strap of a small brown crossbody bag with one hand. Right half and background clearly show a canal, stone bridge and old terracotta-roof buildings with pastel facades, blue sky. Realistic daylight and natural skin texture. Exactly one person, no other people, no text, no signs, no logos or watermark. Casual smartphone travel photo, not a poster or illustration.",
+  "steps": [
+    {
+      "id": "synthetic-reference",
+      "actualToolPrompt": "Create a photorealistic fictional travel snapshot, vertical 2:3 composition. This is a synthetic adult and not a real person. One ordinary Korean woman around 45 years old stands waist-up at the left foreground of a sunny European canal promenade. Her full head and face are clearly visible, face about one fifth of frame height, looking toward the camera with a natural closed-mouth slight smile. Distinct oval face with a slightly broad jaw, small almond-shaped eyes with gentle natural asymmetry, straight medium-width nose, thin upper lip and fuller lower lip, subtle fine lines around eyes, small mole beneath her left eye, short dark bob with a side part, thin oval dark eyeglasses. Must look like an ordinary individual, no beauty retouching. Wearing a muted teal cardigan over a cream T-shirt, holding the strap of a small brown crossbody bag with one hand. Right half and background clearly show a canal, stone bridge and old terracotta-roof buildings with pastel facades, blue sky. Realistic daylight and natural skin texture. Exactly one person, no other people, no text, no signs, no logos or watermark. Casual smartphone travel photo, not a poster or illustration.",
+      "transparent_background": false,
+      "inputImages": [],
+      "inputAtGeneration": [],
+      "output": "assets/images/amalfi-summer.portrait.reference.webp",
+      "generatedFile": "exec-1573dc99-2f08-4aad-93a8-6e154cef7fdd.png",
+      "status": "success",
+      "extraInstructions": [],
+      "retouched": false
+    },
+    {
+      "id": "portrait-v1",
+      "actualToolPrompt": "첨부한 사진에 보이는 풍경이나 건물의 특징과 주요 구도를 살려 빈티지 여행 포스터로 바꿔줘. 사람이 함께 보이면 외모와 위치도 유지하고, 선명한 색면과 종이에 인쇄한 듯한 질감을 사용해줘. 사진이 없거나 배경을 알아보기 어려우면 풍경이나 건물이 잘 보이는 사진을 요청해줘. 장소 이름은 사용자가 알려준 경우에만 넣어줘.",
+      "transparent_background": false,
+      "inputImages": [
+        "assets/images/amalfi-summer.portrait.reference.webp"
+      ],
+      "inputAtGeneration": [
+        "output/imagegen/vintage-face-2026-10-22/portrait-reference.png"
+      ],
+      "output": "docs/review-assets/amalfi-summer-portrait-v1-2026-10-22.webp",
+      "generatedFile": "exec-d555443e-e2de-4ca3-8e7a-a3e27b4306a8.png",
+      "status": "success",
+      "extraInstructions": [],
+      "retouched": false
+    },
+    {
+      "id": "portrait-v2",
+      "actualToolPrompt": "첨부한 사진을 바탕으로, 사진 속 장소와 사람을 알아볼 수 있는 빈티지 여행 포스터로 바꿔 주세요. 새 여행 장면을 만들지 말고 원본 사진을 편집해 주세요.\n\n풍경·건물의 특징, 촬영 시점, 주요 구도와 사물의 위치 관계를 유지하세요. 사람이 있으면 인물 수, 화면 속 위치와 크기, 자세, 시선, 표정, 옷과 소품을 유지하세요. 사람이 없는 사진에는 사람을 추가하지 마세요.\n\n인물은 같은 사람으로 알아볼 수 있는 것을 최우선으로 하세요. 얼굴 윤곽과 턱선, 눈 모양과 간격, 눈썹, 코와 입의 모양·상대적 비례, 피부색, 나이대, 머리색·헤어라인·가르마, 안경·점·주름 등 원본에서 보이는 식별 특징을 보존하세요. 미화하거나 어려 보이게 만들지 말고, 전형적인 포스터 모델이나 다른 사람의 얼굴로 재해석하지 마세요. 작거나 가려져 판별되지 않는 얼굴의 세부를 임의로 만들어 넣지 마세요.\n\n선명한 색면, 제한된 복고풍 색상, 종이에 인쇄한 듯한 잉크 입자와 가벼운 바랜 질감으로 빈티지 분위기를 내세요. 얼굴에도 같은 인쇄 질감을 적용하되 이목구비를 몇 개의 도형으로 뭉개거나 얼굴 비례를 과장하지 마세요. 얼굴의 닮은 정도와 강한 단순화가 충돌하면 얼굴의 원래 형태와 명암 단서를 더 남기세요. 얼굴만 사진처럼 붙인 합성 느낌은 피하세요.\n\n장소 이름은 사용자가 알려준 경우에만 그 이름 그대로 넣고, 알려주지 않았다면 제목·문구·로고·워터마크를 추가하지 마세요. 사진이 없거나 풍경·건물을 알아보기 어려우면 해당 배경이 잘 보이는 사진을 요청하세요.",
+      "transparent_background": false,
+      "inputImages": [
+        "assets/images/amalfi-summer.portrait.reference.webp"
+      ],
+      "inputAtGeneration": [
+        "output/imagegen/vintage-face-2026-10-22/portrait-reference.png"
+      ],
+      "output": "assets/images/amalfi-summer.portrait.webp",
+      "generatedFile": "exec-e0842525-9321-4a02-bb10-c62ad73bae35.png",
+      "status": "success",
+      "extraInstructions": [],
+      "retouched": false
+    },
+    {
+      "id": "landscape-v2",
+      "actualToolPrompt": "첨부한 사진을 바탕으로, 사진 속 장소와 사람을 알아볼 수 있는 빈티지 여행 포스터로 바꿔 주세요. 새 여행 장면을 만들지 말고 원본 사진을 편집해 주세요.\n\n풍경·건물의 특징, 촬영 시점, 주요 구도와 사물의 위치 관계를 유지하세요. 사람이 있으면 인물 수, 화면 속 위치와 크기, 자세, 시선, 표정, 옷과 소품을 유지하세요. 사람이 없는 사진에는 사람을 추가하지 마세요.\n\n인물은 같은 사람으로 알아볼 수 있는 것을 최우선으로 하세요. 얼굴 윤곽과 턱선, 눈 모양과 간격, 눈썹, 코와 입의 모양·상대적 비례, 피부색, 나이대, 머리색·헤어라인·가르마, 안경·점·주름 등 원본에서 보이는 식별 특징을 보존하세요. 미화하거나 어려 보이게 만들지 말고, 전형적인 포스터 모델이나 다른 사람의 얼굴로 재해석하지 마세요. 작거나 가려져 판별되지 않는 얼굴의 세부를 임의로 만들어 넣지 마세요.\n\n선명한 색면, 제한된 복고풍 색상, 종이에 인쇄한 듯한 잉크 입자와 가벼운 바랜 질감으로 빈티지 분위기를 내세요. 얼굴에도 같은 인쇄 질감을 적용하되 이목구비를 몇 개의 도형으로 뭉개거나 얼굴 비례를 과장하지 마세요. 얼굴의 닮은 정도와 강한 단순화가 충돌하면 얼굴의 원래 형태와 명암 단서를 더 남기세요. 얼굴만 사진처럼 붙인 합성 느낌은 피하세요.\n\n장소 이름은 사용자가 알려준 경우에만 그 이름 그대로 넣고, 알려주지 않았다면 제목·문구·로고·워터마크를 추가하지 마세요. 사진이 없거나 풍경·건물을 알아보기 어려우면 해당 배경이 잘 보이는 사진을 요청하세요.",
+      "transparent_background": false,
+      "inputImages": [
+        "assets/images/amalfi-summer.reference.webp"
+      ],
+      "inputAtGeneration": [
+        "assets/images/amalfi-summer.reference.webp"
+      ],
+      "output": "assets/images/amalfi-summer.webp",
+      "generatedFile": "exec-fc597095-d631-428a-8c79-acc8c4f3b2c6.png",
+      "status": "success",
+      "extraInstructions": [],
+      "retouched": false
+    }
+  ],
+  "conversion": [
+    {
+      "path": "assets/images/amalfi-summer.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c4d3fed0b892ad0e8cb21623c8d42e545dc1d23377fa08711191f965aa6c795c",
+      "source": {
+        "path": "output/imagegen/vintage-face-2026-10-22/landscape-v2.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "feeff4481bcab37040522c9af8a269a7c3861452bff90f051cc9f4efd65eafd7"
+      },
+      "decodedPixelsIdentical": true
+    },
+    {
+      "path": "assets/images/amalfi-summer.portrait.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "53befb55e89a62e94614e03e3f2bc0a90ca24a662bebd7e77a58b1bfe036a58c",
+      "source": {
+        "path": "output/imagegen/vintage-face-2026-10-22/portrait-reference.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "1778994ae34521ae641c16317b1458b2d85b0e3e0d93dcab0cb0eae630091af2"
+      },
+      "decodedPixelsIdentical": true
+    },
+    {
+      "path": "assets/images/amalfi-summer.portrait.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "764c952125ef5dc7d676768aea8de01ffefedc61447111541ff51bb7f6a756ee",
+      "source": {
+        "path": "output/imagegen/vintage-face-2026-10-22/portrait-v2.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "0bc7933e0467770d536fac0c5cf65a907df20a626271113f89ad993836e353d8"
+      },
+      "decodedPixelsIdentical": true
+    },
+    {
+      "path": "docs/review-assets/amalfi-summer-portrait-v1-2026-10-22.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e35f1ccfc598d05fccc32bcafa53c015958361c69b7ceab0fe4804ce0bdfa512",
+      "source": {
+        "path": "output/imagegen/vintage-face-2026-10-22/portrait-v1.png",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "6aa1fba17d82ae78cb11dcfd3f47aec6dc8e726ffae2897f0fbf146aef45c424"
+      },
+      "decodedPixelsIdentical": true
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/images/amalfi-summer.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "066786f16d410ef62f6e3369efeede0f91743a8a999fb11faa0e1100cee929f2"
+    },
+    {
+      "path": "assets/images/amalfi-summer.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c4d3fed0b892ad0e8cb21623c8d42e545dc1d23377fa08711191f965aa6c795c"
+    },
+    {
+      "path": "assets/images/amalfi-summer.thumb.webp",
+      "width": 480,
+      "height": 720,
+      "sha256": "a1c0e29283444dc6b023bf7f4ca7283adef681f838ffdc076fab5e7b9ee6f9f2"
+    },
+    {
+      "path": "assets/images/amalfi-summer.portrait.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "53befb55e89a62e94614e03e3f2bc0a90ca24a662bebd7e77a58b1bfe036a58c"
+    },
+    {
+      "path": "assets/images/amalfi-summer.portrait.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "764c952125ef5dc7d676768aea8de01ffefedc61447111541ff51bb7f6a756ee"
+    },
+    {
+      "path": "docs/review-assets/amalfi-summer-portrait-v1-2026-10-22.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e35f1ccfc598d05fccc32bcafa53c015958361c69b7ceab0fe4804ce0bdfa512"
+    }
+  ],
+  "limitations": [
+    "Reporter source photo, output, generation tool and settings were not provided.",
+    "Single paired comparison; not a repeated quantitative identity evaluation.",
+    "No major identity substitution was reproduced with v1 on this synthetic source.",
+    "Landscape's small faces and tram lettering are not pixel-exact."
+  ],
+  "review": "amalfi-summer-face-review-2026-10-22.md",
+  "referenceOrigins": {
+    "portrait": "Newly generated fictional adult travel photo; not the reporter photo.",
+    "landscape": "Existing AI-generated reference; provenance described in docs/photo-transform-prompts.md."
+  }
+}
