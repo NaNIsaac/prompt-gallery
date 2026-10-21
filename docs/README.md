@@ -15,6 +15,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [빈티지 여행 포스터 v2 얼굴 보존 개선 검토](amalfi-summer-face-review-2026-10-22.md), [실제 문구](amalfi-summer-prompt-v2.txt), [전후 문구·입력·파일 해시](image-generation-2026-10-22-amalfi-summer-face.json)
+
 - [여행 사진 도자기 무드등 v3 등록 검토](travel-ceramic-nightlight-review-2026-10-19.md), [실제 문구](travel-ceramic-nightlight-prompt-v3.txt), [원본·결과·해시 기록](image-generation-2026-10-19-travel-ceramic-nightlight.json)
 
 - [티니핑 v14 사진 한 장 사용법](teenieping-input-guide.md), [실제 문구](teenieping-prompt-v14.txt), [수정 검토](teenieping-review-2026-10-19.md), [생성 기록](image-generation-2026-10-19-teenieping.json)
