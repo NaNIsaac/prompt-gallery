@@ -17,6 +17,8 @@ for (const file of ['index.html', 'styles.css', 'app.js', 'src', 'data', 'assets
   await cp(resolve(projectRoot, file), resolve(output, file), { recursive: true });
 }
 await writeFile(resolve(output, '.nojekyll'), '');
+// Keep diagnostics off gallery pages and all other static assets.
+await writeFile(resolve(output, '_routes.json'), JSON.stringify({ version: 1, include: ['/sitemap.xml'], exclude: [] }, null, 2) + '\n');
 const siteUrl = new URL(process.env.SITE_URL || analyticsConfig.siteUrl);
 if (siteUrl.protocol !== 'https:' || siteUrl.search || siteUrl.hash) throw new Error('SITE_URL must be an HTTPS site root without a query or hash.');
 if (!siteUrl.pathname.endsWith('/')) siteUrl.pathname += '/';
