@@ -28,3 +28,17 @@ Search Console은 새 URL 접두어 속성을 HTML 태그로 인증하고 sitema
 ## 비용과 확장
 
 초기에는 Pages 무료 플랜과 기존 로컬 WebP 이미지를 사용한다. R2 구독·유료 플랜·도메인 구매는 이 이관에 포함하지 않는다. 큰 이미지의 저장소 분리는 후속 작업이다.
+
+## 임시 사이트맵 수집 진단
+
+`functions/sitemap.xml.js`만 Pages Function으로 실행하며 빌드의 `_routes.json`은 `/sitemap.xml`만 포함한다. 홈페이지·프롬프트·이미지는 정적으로 제공한다. 이 기능은 사이트맵 오류의 수정이 아니라 수집 요청 도달 여부와 응답을 확인할 관측 장치다.
+
+활성화에는 운영 환경의 KV binding `SEO_DIAGNOSTICS`와 UTC ISO 시각의 `SITEMAP_DIAGNOSTICS_UNTIL` 두 항목이 모두 필요하다. 기본은 비활성이다. 사용자 승인 후 무료 KV namespace `prompt-gallery-seo-diagnostics`를 한 개 만들고 binding에 연결한다. Workers Free 플랜을 유지하며 유료 구독을 활성화하지 않는다. 무료 KV의 쓰기 한도를 넘으면 기록이 실패할 수 있지만 사이트맵 응답은 유지한다. 해당 Function 요청 자체가 Free Functions 한도를 넘으면 Cloudflare의 Fail open 설정에 의존하므로 현재 설정도 검증한다.
+
+진단은 활성화 시점부터 최대 48시간만 설정한다. 요청별 시각·메서드·출처 분류·Cloudflare 지역·응답 상태·MIME·길이·SHA256을 KV에 7일 TTL로 저장한다. 원본 IP·전체 User-Agent·쿠키·쿼리·Referer는 저장하지 않는다. IP는 요청 처리 중에만 Google 공개 대역과 비교한다. 고정 스냅샷 출처와 날짜는 `server/google-crawler-networks.json`에 기록한다. 진단을 재사용할 때는 최신 공개 대역으로 갱신한다.
+
+`claimedAgent=inspection`은 URL 검사 도구 주장, `googlebot`은 Googlebot 주장이다. `sourceNetwork`가 common/special/userTriggered인 경우에만 공개 Google 네트워크와 일치한다. 이것도 특정 Google 내부 수집 시스템을 인증하거나 사이트맵 처리 성공을 증명하지 않는다. 일반 수집 후보 요청과 수동 실시간 테스트를 분리해 해석한다.
+
+KV는 공개 조회 엔드포인트를 만들지 않고 계정 대시보드에서 읽는다. 응답의 `X-Sitemap-Diagnostic-Id`로 개별 기록을 대조한다. Function 도달 이후의 응답만 관찰하므로 DNS/TLS/Cloudflare 엣지 단계에서 실패한 요청은 기록되지 않는다. 기록이 없다는 사실만으로 Google이 요청하지 않았다고 단정할 수 없다. 파일 응답 실패가 관측되면 해당 상태와 시각을 조사하고, 확인된 Google 요청에 정상 XML 지문이 남는데 GSC가 실패를 유지하면 Google 처리 단계 문의의 근거로 사용한다.
+
+배포 후 순서: 일반 GET의 XML 지문·45 URL·응답 ID·KV 기록을 확인 → 원본 사이트맵 수동 실시간 테스트 1회로 검사 도구 기록 확인 → 원본 sitemap.xml 1회 제출과 시각 기록 → 추가 제출 없이 일반 수집 기록 대조. 변형 URL 추가·반복 새로고침 자동화를 만들지 않는다. 48시간 진단 종료 후 증거를 읽어 실패 구간 또는 미확정 범위를 보고하고 Function을 제거하는 PR을 만든다. KV namespace 영구 삭제는 별도 사용자 확인 없이 하지 않고 TTL 만료를 사용한다.

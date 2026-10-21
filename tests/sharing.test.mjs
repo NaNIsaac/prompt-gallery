@@ -73,6 +73,8 @@ test('built pages expose each actual result to crawlers without running JavaScri
   assert.ok(robots.includes('Sitemap: ' + siteRoot + 'sitemap.xml'));
   const notFound = await readFile(resolve(projectRoot, 'dist/404.html'), 'utf8');
   assert.ok(notFound.includes('content="noindex"'));
+  const routes = JSON.parse(await readFile(resolve(projectRoot, 'dist/_routes.json'), 'utf8'));
+  assert.deepEqual(routes, { version: 1, include: ['/sitemap.xml'], exclude: [] }, 'only sitemap requests may invoke the diagnostic Function');
   const sitemap = await readFile(resolve(projectRoot, 'dist/sitemap.xml'), 'utf8');
   assert.equal((sitemap.match(/<loc>/g) || []).length, catalog.length + 1);
   for (const prompt of catalog) assert.ok(sitemap.includes(`<loc>${promptUrl(prompt.id, siteRoot)}</loc>`));

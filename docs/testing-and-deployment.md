@@ -74,3 +74,7 @@ GitHub Actions에서 해당 커밋의 CI와 Cloudflare의 동일 커밋 배포 �
 이미지 생성 결과의 인물 보존, 그림 스타일, 실제 문구 품질은 수동 검토한다. 자동 테스트는 이미지 로딩이나 링크가 정상임을 확인하며 미적 품질이나 프롬프트 준수를 판정하지 않는다. 카카오톡 캐시 대응은 루트 README의 공유 안내를 따른다.
 
 설정 참고: [Playwright의 GitHub Actions 안내](https://playwright.dev/docs/ci-intro), [전용 테스트 서버 설정](https://playwright.dev/docs/test-webserver), [GitHub의 브랜치 보호와 필수 검사](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+
+## 사이트맵 진단 검증
+
+`tests/sitemap-diagnostics.test.mjs`는 정상 XML/캐시·상태 보존, Google IPv4·IPv6 확인과 UA 위조 구분, 검사 도구 분리, preview noindex·운영 기록 제외, 비활성/만료/미연결, KV 실패 시 응답 보존, 원본 503/asset 예외 기록, HEAD를 검증한다. 기존 정적 SEO·사용자 여정 검사도 유지한다. 저장소 mock 검사는 Cloudflare KV 연결 성공의 증거가 아니며 활성화 후 실제 응답 ID와 대시보드 KV 값을 대조해야 한다.
