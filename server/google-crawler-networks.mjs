@@ -1,4 +1,4 @@
-{
+export default {
   "retrievedAt": "2026-10-21T02:27:47.9998112Z",
   "sources": {
     "userTriggered": {
@@ -1113,4 +1113,4 @@
       "creationTime": "2026-10-20T14:46:18"
     }
   }
-}
+};

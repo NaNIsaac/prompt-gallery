@@ -1,5 +1,5 @@
 import ipaddr from 'ipaddr.js';
-import networks from './google-crawler-networks.json' with { type: 'json' };
+import networks from './google-crawler-networks.mjs';
 
 const publishedRanges = Object.entries(networks.sources).map(([category, source]) => ({
   category, ranges: source.prefixes.map(prefix => ipaddr.parseCIDR(prefix))

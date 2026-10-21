@@ -35,7 +35,7 @@ Search Console은 새 URL 접두어 속성을 HTML 태그로 인증하고 sitema
 
 활성화에는 운영 환경의 KV binding `SEO_DIAGNOSTICS`와 UTC ISO 시각의 `SITEMAP_DIAGNOSTICS_UNTIL` 두 항목이 모두 필요하다. 기본은 비활성이다. 사용자 승인 후 무료 KV namespace `prompt-gallery-seo-diagnostics`를 한 개 만들고 binding에 연결한다. Workers Free 플랜을 유지하며 유료 구독을 활성화하지 않는다. 무료 KV의 쓰기 한도를 넘으면 기록이 실패할 수 있지만 사이트맵 응답은 유지한다. 해당 Function 요청 자체가 Free Functions 한도를 넘으면 Cloudflare의 Fail open 설정에 의존하므로 현재 설정도 검증한다.
 
-진단은 활성화 시점부터 최대 48시간만 설정한다. 요청별 시각·메서드·출처 분류·Cloudflare 지역·응답 상태·MIME·길이·SHA256을 KV에 7일 TTL로 저장한다. 원본 IP·전체 User-Agent·쿠키·쿼리·Referer는 저장하지 않는다. IP는 요청 처리 중에만 Google 공개 대역과 비교한다. 고정 스냅샷 출처와 날짜는 `server/google-crawler-networks.json`에 기록한다. 진단을 재사용할 때는 최신 공개 대역으로 갱신한다.
+진단은 활성화 시점부터 최대 48시간만 설정한다. 요청별 시각·메서드·출처 분류·Cloudflare 지역·응답 상태·MIME·길이·SHA256을 KV에 7일 TTL로 저장한다. 원본 IP·전체 User-Agent·쿠키·쿼리·Referer는 저장하지 않는다. IP는 요청 처리 중에만 Google 공개 대역과 비교한다. 고정 스냅샷 출처와 날짜는 `server/google-crawler-networks.mjs`에 기록한다. 진단을 재사용할 때는 최신 공개 대역으로 갱신한다.
 
 `claimedAgent=inspection`은 URL 검사 도구 주장, `googlebot`은 Googlebot 주장이다. `sourceNetwork`가 common/special/userTriggered인 경우에만 공개 Google 네트워크와 일치한다. 이것도 특정 Google 내부 수집 시스템을 인증하거나 사이트맵 처리 성공을 증명하지 않는다. 일반 수집 후보 요청과 수동 실시간 테스트를 분리해 해석한다.
 
