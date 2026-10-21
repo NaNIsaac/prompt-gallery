@@ -1,0 +1,23 @@
+name = "q07k-prompt-gallery"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-20"
+
+[vars]
+NODE_VERSION = "22"
+SITE_URL = "https://q07k-prompt-gallery.pages.dev/"
+
+[env.production.vars]
+NODE_VERSION = "22"
+SITE_URL = "https://q07k-prompt-gallery.pages.dev/"
+SITEMAP_DIAGNOSTICS_UNTIL = "2026-10-23T05:07:13Z"
+
+[[env.production.kv_namespaces]]
+binding = "SEO_DIAGNOSTICS"
+id = "a611580b639844e88a477909a6d359d0"
+
+[env.preview]
+kv_namespaces = []
+
+[env.preview.vars]
+NODE_VERSION = "22"
+SITE_URL = "https://q07k-prompt-gallery.pages.dev/"
