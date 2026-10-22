@@ -18,15 +18,15 @@
 
 ## 인기 프롬프트
 
-2026년 10월 갤러리에서 많이 복사하고 열어 본 프롬프트입니다.
+2026년 9월 24일~10월 21일 갤러리에서 프롬프트 복사가 많았던 순서입니다.
 
 | 프롬프트 | 필요한 사진 |
 |---|---|
 | [내 사진으로 카카오톡 이모티콘 9종](https://q07k-prompt-gallery.pages.dev/prompts/kakao-emoticons/) | 인물 사진 1장 |
 | [야르·아자스·샤갈! 카톡 리액션 — 2026.10](https://q07k-prompt-gallery.pages.dev/prompts/slang-chat-reactions-2026-10/) | 인물 사진 1장 |
 | [내 여행 사진을 따뜻한 도자기 무드등으로](https://q07k-prompt-gallery.pages.dev/prompts/travel-ceramic-nightlight/) | 여행 풍경 사진 1장 |
-| [L을 가져가·줴줴이야! 밈 리액션 임티 9종](https://q07k-prompt-gallery.pages.dev/prompts/meme-reaction-emoticons/) | 인물 사진 1장 |
-| [진격의 거인에서 내가 거인이 된다면?](https://q07k-prompt-gallery.pages.dev/prompts/become-a-titan/) | 인물 또는 반려동물 사진 1장 |
+| [내 얼굴로 만드는 일상 스티커 9종](https://q07k-prompt-gallery.pages.dev/prompts/cozy-stickers/) | 인물 사진 1장 |
+| [내 사진으로 완성하는 월간 패션 매거진](https://q07k-prompt-gallery.pages.dev/prompts/monthly-magazine/) | 성인 인물 사진 1장 |
 | [내 사진이 짱구는 못말려 속으로](https://q07k-prompt-gallery.pages.dev/prompts/shinchan-world/) | 인물·동물·풍경 사진 1장 |
 
 전체 목록은 [갤러리](https://q07k-prompt-gallery.pages.dev/)에서 캐릭터, 인물, 일러스트, 제품, 포스터, 아트·밈 카테고리로 볼 수 있습니다.
