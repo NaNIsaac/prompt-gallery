@@ -23,7 +23,40 @@
 
 각 항목은 `assets/images/<id>.reference.webp`, `<id>.webp`, `<id>.thumb.webp`를 사용한다. 원본을 자르거나 보정해 피사체가 달라지지 않도록 한다. 썸네일은 결과의 비율을 유지해 축소한다. 원본 PNG가 생성 도구의 기본 위치에 있어도 공개 사이트가 참조하는 자산은 반드시 저장소 안에 둔다.
 
-`data/prompts.json`의 스키마와 예시는 [루트 README](../README.md#프롬프트-추가)를 따른다.
+`data/prompts.json` 배열에 아래 구조의 항목을 추가한다.
+
+```json
+{
+  "id": "my-first-prompt",
+  "title": "나의 첫 이미지",
+  "category": "캐릭터",
+  "tags": ["3D", "피규어"],
+  "image": "assets/images/my-first-prompt.webp",
+  "thumbnail": "assets/images/my-first-prompt.thumb.webp",
+  "width": 1024,
+  "height": 1536,
+  "color": "#a2b3c4",
+  "prompt": "첨부한 사진의 인물을 3D 피규어로 만들어 주세요...",
+  "inputRequirement": "portrait",
+  "inputLabel": "인물 사진 1장 필요",
+  "usage": "인물 사진 1장을 첨부하고 프롬프트를 붙여넣으세요.",
+  "referenceImages": ["assets/images/my-first-reference.webp"],
+  "author": "@Q07K",
+  "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+  "sample": false,
+  "order": -1
+}
+```
+
+- 카테고리: `인물`, `캐릭터`, `일러스트`, `제품`, `포스터`, `아트·밈`.
+- `inputRequirement`: 인물 사진은 `"portrait"`, 일반 사진은 `"image"`. 모든 항목에 사진 첨부가 필요합니다.
+- `inputLabel`: 카드 복사 버튼 위에 표시할 구체적인 첨부 조건. 예: `음식 사진 1장 필요`, `풍경·건물 사진 1장 필요`.
+- `exampleNote`: 선택 항목. 결과 이미지를 만든 뒤 프롬프트를 수정했다면 이전 프롬프트로 만든 예시임을 표시합니다.
+- `referenceImages`: 공개할 첨부 예시 이미지의 로컬 경로 배열. 최소 1개가 필요합니다.
+- `order`: 작은 숫자가 먼저 보입니다. 신규 항목은 기존 항목 위에 추가하고, 기존 항목의 값과 상대 순서는 유지합니다. 한 번에 N개를 추가하면 현재 최솟값을 m이라 할 때 새 항목에 요청 순서대로 m−N부터 m−1까지 부여합니다. 날짜를 기준으로 자동 정렬하는 방식이 아니라 등록 시 이 값을 지정하는 방식입니다. 기존 항목을 수정하면 Git에 변경 이력이 남습니다.
+- `sample: false`: 직접 작성한 게시물은 상세의 커뮤니티 샘플 표시가 없어집니다.
+
+추가 규칙은 다음과 같다.
 
 - `id`는 고유한 영문 소문자·숫자·하이픈 식별자이며 공개 후 함부로 바꾸지 않는다. 상세 공유 URL에 사용된다.
 - `width`·`height`는 실제 결과 이미지 크기다.

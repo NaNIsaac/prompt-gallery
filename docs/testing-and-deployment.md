@@ -71,7 +71,7 @@ CI 실패 시 Actions 실행의 Artifacts에서 `playwright-failure-report`를 �
 
 GitHub Actions에서 해당 커밋의 CI와 Cloudflare의 동일 커밋 배포 성공을 확인한 뒤 [공개 갤러리](https://q07k-prompt-gallery.pages.dev/)의 새 항목과 상세 링크를 확인한다. CI가 검사하는 것은 로컬 빌드 산출물이다. 공개 CDN, 브라우저 캐시, 카카오톡의 미리보기 캐시까지 검증했다고 해석하지 않는다.
 
-이미지 생성 결과의 인물 보존, 그림 스타일, 실제 문구 품질은 수동 검토한다. 자동 테스트는 이미지 로딩이나 링크가 정상임을 확인하며 미적 품질이나 프롬프트 준수를 판정하지 않는다. 카카오톡 캐시 대응은 루트 README의 공유 안내를 따른다.
+이미지 생성 결과의 인물 보존, 그림 스타일, 실제 문구 품질은 수동 검토한다. 자동 테스트는 이미지 로딩이나 링크가 정상임을 확인하며 미적 품질이나 프롬프트 준수를 판정하지 않는다. 카카오톡 캐시 대응은 [공유 링크와 미리보기](sharing.md)를 따른다.
 
 설정 참고: [Playwright의 GitHub Actions 안내](https://playwright.dev/docs/ci-intro), [전용 테스트 서버 설정](https://playwright.dev/docs/test-webserver), [GitHub의 브랜치 보호와 필수 검사](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
 
