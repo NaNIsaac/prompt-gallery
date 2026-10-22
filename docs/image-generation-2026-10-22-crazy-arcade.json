@@ -1,0 +1,177 @@
+{
+  "id": "crazy-arcade",
+  "date": "2026-10-22",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "selectedVersion": "v4",
+  "approvedByUser": true,
+  "approval": {
+    "response": "깃엑션 다 끝나면 머지하고 브랜치 지워줘",
+    "scope": "Finalize shown v4 Dao/Dizni/Bazzi examples, submit PR, merge after Actions pass, verify production and clean only this task branch.",
+    "previousScope": "확장 결과도 검토한 뒤 같은 PR에 포함"
+  },
+  "branch": "codex/crazy-arcade",
+  "originalBaseCommit": "1c7a1c07801ed69242da4a1676220b42c1b30d27",
+  "updatedBaseCommit": "8cfb6c0474b6080e8bffe83bc7b15d28279a775a",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "promptFile": "docs/crazy-arcade-prompt-v4.txt",
+  "finalPrompt": "첨부 사진 속 사람들을 크레이지아케이드의 다오·배찌·디지니 중 어울리는 플레이어 캐릭터로 재해석하고, 귀여운 물풍선 대전 장면으로 그려 주세요.\n\n배찌로 고정하지 말고 인물마다 별도로 선택하세요. 사용자가 캐릭터를 지정했으면 그 캐릭터를 사용하세요. 지정이 없으면 원본의 의상 색과 머리·표정을 보고 선택하되 파랑·청록 계열은 다오, 빨강 계열과 느긋한 인상은 배찌, 노랑·분홍·보라 계열과 그 밖의 경우는 디지니를 우선 후보로 삼으세요. 여러 사람이 있으면 각 인물의 특징을 반영해 캐릭터를 나누고, 하나의 캐릭터로 모두 통일하지 마세요. 사진 속 인물 수를 유지해 한 사람을 한 캐릭터로 바꾸고 추가 인물은 만들지 마세요.\n\n선택한 캐릭터의 형태를 다음처럼 명확하게 구분하세요.\n- 다오: 매끈하고 둥근 파란 헬멧과 파란 수트, 헬멧 양옆의 낮은 원형 장식, 흰 장갑, 허리의 커다란 원형 버클. 헬멧 위에 곰 귀를 붙이지 말고, 배찌의 둥근 배 패치도 사용하지 마세요. 짧지만 배찌보다 날렵한 몸과 씩씩하고 밝은 표정입니다.\n- 배찌: 머리 위의 작은 둥근 곰 귀 두 개, 빨간 후드와 통통한 빨간 일체형 수트, 크림색 배 패치, 반쯤 감긴 작은 눈과 느긋하고 장난스러운 표정입니다.\n- 디지니: 위쪽 양끝이 뾰족하게 올라간 보라색 후드와 보라색 수트, 빨간 허리띠의 노란 별 모양 버클, 흰 장갑과 작고 날렵한 몸, 수줍고 장난스러운 표정입니다. 둥근 곰 귀·크림색 배 패치·원형 버클을 사용하지 마세요.\n원작의 캐릭터 구조를 유지하고 옷 색만 바꾼 배찌로 표현하지 마세요. 수트의 대표색은 사진의 옷 색과 달라도 위 캐릭터의 색을 사용하세요.\n\n선택 캐릭터의 1.5~2등신 비례와 짧은 팔다리를 적용하면서, 사진 속 머리색·가르마·앞머리·안경·구별되는 얼굴 특징을 간결하게 남겨 '사진 속 이 사람이 해당 크아 캐릭터가 된 모습'으로 읽히게 하세요. 머리는 후드나 헬멧 가장자리에서 조금 드러나게 하고 원래 긴 머리는 아래로 보이게 하세요. 원본에 있는 가방·안경 같은 착용물은 단순화해 유지하고 없는 것은 만들지 마세요.\n\n작고 단순한 눈과 입, 둥근 볼, 굵고 매끈한 짙은 윤곽선, 선명한 원색, 단순한 2~3단 셀 채색, 작은 발밑 그림자로 고전 크레이지아케이드식 2D 게임 아트를 통일하세요. 선택 캐릭터의 표정 차이를 살리고 커다랗게 반짝이는 애니메이션 눈이나 길쭉한 인체는 피하세요.\n\n배경은 위에서 비스듬히 내려다보는 반듯한 사각 격자 대전 맵입니다. 원본 장소의 주요 사물과 색을 고정 블록·나무 상자·화단·문·수로 등으로 재해석하고 이동 통로를 남기세요. 인물들은 중앙 부근에서 얼굴과 전신이 읽히게 크게 배치하세요. 매듭과 맑은 하이라이트가 있는 파란 물풍선을 통로 타일에 놓고 캐릭터가 안전한 옆 칸으로 피하는 순간을 표현하세요. 떨어진 통로에서는 다른 물풍선이 터져 격자에 맞춘 십자 물줄기가 보이게 하세요. 물체와 물줄기의 시점을 맞추고 얼굴을 가리지 마세요.\n\n실사 얼굴 합성이나 3D 피규어 질감 없이 한 장의 완성된 2D 게임 장면으로 그리세요. 글자, 캐릭터 이름표, 닉네임, 점수판, UI, 로고, 워터마크는 넣지 마세요.",
+  "history": [
+    {
+      "version": "v1",
+      "prompt": "첨부 사진을 크레이지아케이드의 물풍선 대전 게임 속 한 장면으로 바꿔 주세요.\n\n사진 속 인물의 수를 유지하고, 각 인물을 커다란 둥근 머리와 작은 몸의 약 2등신 플레이어 캐릭터로 재해석하세요. 머리 모양과 색, 앞머리, 안경, 옷의 주요 색과 형태, 가방 등 알아볼 수 있는 특징을 남겨 원본의 누구인지 구분되게 하세요. 원작의 기존 캐릭터로 얼굴과 옷을 대체하지 마세요.\n\n화면은 위에서 비스듬히 내려다보는 고전 크레이지아케이드식 2D 게임 시점으로 구성하세요. 반듯한 사각 격자 타일, 둥근 모서리의 고정 블록, 부술 수 있는 나무 상자, 캐릭터가 이동할 수 있는 통로가 있는 아담한 대전 맵을 만드세요. 원본 장소의 바닥·건물·식물과 주요 색을 맵 테마로 옮기되 실제 사진 배경은 남기지 마세요. 캐릭터는 맵 중앙 부근에서 얼굴과 전신이 읽힐 만큼 크게 보여 주세요.\n\n물풍선의 매듭과 맑은 하이라이트가 보이는 파란 물풍선을 통로의 타일 위에 놓고, 캐릭터가 물풍선을 놓고 옆의 안전한 칸으로 피하는 순간을 생동감 있게 표현하세요. 떨어진 다른 통로에서는 물풍선 하나가 터져 물줄기가 격자에 맞춰 십자 방향으로 뻗게 하세요. 물풍선·블록·물줄기는 같은 격자와 시점을 따르고 얼굴을 가리지 않게 하세요.\n\n굵고 매끈한 짙은 외곽선, 통통한 실루엣, 단순하고 장난스러운 표정, 선명한 원색, 또렷한 2~3단 셀 채색, 작은 발밑 그림자로 귀여운 2D 게임 스프라이트 느낌을 통일하세요. 실사 질감, 입체 피규어 렌더링, 과도한 광택과 피사계 심도는 피하세요. 추가 인물, 글자, 닉네임, 점수판, UI, 로고, 워터마크 없이 게임 장면만 한 장으로 완성하세요.",
+      "published": false,
+      "summary": "Original generic game character; replaced following Bazzi feedback."
+    },
+    {
+      "version": "v2",
+      "prompt": "첨부 사진 속 인물을 크레이지아케이드의 배찌(Bazzi)가 된 모습으로 바꾸고, 물풍선 대전 맵 안의 귀여운 한 장면으로 그려 주세요.\n\n사진 속 인물 수를 유지하세요. 각 인물에게 배찌의 상징적인 빨간 곰 후드와 빨간 일체형 수트, 머리 위의 작고 둥근 두 귀, 밝은 크림색 배 부분을 적용하세요. 커다랗고 옆으로 둥근 머리, 목이 거의 없는 통통한 몸, 짧은 팔다리, 약 1.5~2등신의 배찌 특유의 실루엣을 분명하게 살리세요. 후드 안 얼굴에는 사진 속 앞머리와 머리색, 안경, 얼굴형의 특징을 간결하게 남겨 '이 사람이 배찌가 된 모습'으로 읽히게 하세요. 긴 머리는 후드 아래에서 조금 보이게 하세요. 사진의 옷은 빨간 수트로 바꾸되 가방이나 안경처럼 특징적인 착용물은 단순화해 유지하세요.\n\n얼굴은 크레이지아케이드의 고전 배찌처럼 작고 단순한 눈, 살짝 내려온 눈꺼풀, 통통한 볼, 작은 입과 느긋하고 장난스러운 미소로 표현하세요. 커다랗게 반짝이는 애니메이션 눈이나 길쭉한 미소녀 치비 비례로 바꾸지 마세요. 굵고 매끈한 짙은 윤곽선, 선명한 빨강과 원색, 단순한 2~3단 셀 채색, 작고 또렷한 발밑 그림자를 사용해 캐릭터와 배경을 고전 2D 게임 아트로 통일하세요.\n\n배경은 위에서 비스듬히 내려다보는 크레이지아케이드식 사각 격자 대전 맵입니다. 원본 장소의 주요 사물과 색을 둥근 고정 블록, 나무 상자, 화단, 문 같은 맵 요소로 재해석하고 이동 통로를 남기세요. 캐릭터는 화면 중앙 부근에서 전체 화면 높이의 약 절반 크기로 얼굴과 전신이 잘 보이게 배치하세요. 매듭과 맑은 하이라이트가 있는 파란 물풍선을 한 칸 옆에 놓고 짧은 다리로 안전한 옆 칸으로 뛰어 피하는 순간을 그리세요. 멀리 떨어진 통로에서는 다른 물풍선이 터져 격자에 맞춘 십자 물줄기가 보이게 하세요. 모든 물체와 물줄기의 시점을 맞추고 얼굴을 가리지 마세요.\n\n실사 얼굴 합성이나 3D 피규어 질감 없이 한 장의 완성된 2D 게임 장면으로 만드세요. 사진에 없던 추가 인물, 글자, 닉네임, 점수판, UI, 로고, 워터마크는 넣지 마세요.",
+      "published": false,
+      "summary": "Bazzi-only version tested on two adults; replaced by v4 for final publication."
+    },
+    {
+      "version": "v3",
+      "prompt": "첨부 사진 속 사람들을 크레이지아케이드의 여러 플레이어 캐릭터로 재해석하고, 물풍선 대전 맵 안의 귀여운 한 장면으로 그려 주세요.\n\n캐릭터를 배찌 하나로 고정하지 마세요. 사진 속 각 인물의 옷의 주요 색, 머리 모양, 표정과 실루엣을 보고 다오·배찌·디지니·우니·케피 등 크레이지아케이드의 캐릭터 중 어울리는 하나를 고르세요. 푸른 계열 옷은 다오, 붉은 계열 옷과 통통한 실루엣은 배찌, 분홍 계열은 디지니, 초록 계열은 케피, 노랑·주황 계열이나 머리 모양을 드러내기 좋은 모습은 우니를 우선 후보로 삼되, 사진의 특징을 종합해 선택하세요. 여러 사람이 있으면 각 인물을 따로 선택하고 비슷한 캐릭터 하나로 모두 통일하지 마세요. 같은 색 수트만 갈아입힌 배찌가 아니라 선택한 캐릭터마다 원작의 머리 장식, 체형, 의상과 표정 차이가 드러나야 합니다.\n\n다오는 파란 둥근 헬멧과 파란 수트, 흰 장갑, 원형 버클이 있는 씩씩한 모습으로, 배찌는 작은 두 곰 귀가 달린 빨간 후드와 크림색 배 부분, 통통한 몸과 느긋한 표정으로 구분하세요. 디지니·우니·케피를 고른 경우에도 각 캐릭터의 원작에서 알아볼 수 있는 대표 실루엣과 색을 살리세요. 사진 속 사람 수는 그대로 유지하고 각 사람을 한 캐릭터에 대응시키세요. 사진에 없던 사람을 추가하지 마세요.\n\n선택한 캐릭터의 1.5~2등신 비례와 짧은 팔다리를 적용하면서 사진 속 머리색과 가르마·앞머리, 안경, 얼굴형의 구별되는 특징을 간결하게 남겨 '이 사람이 크아 캐릭터가 된 모습'으로 읽히게 하세요. 머리 장식이 있어도 앞머리나 긴 머리는 가장자리에서 조금 보이게 하세요. 옷은 선택 캐릭터의 수트로 바꾸되 원본에 있는 가방·안경 등 특징적인 착용물은 단순화해 유지하고 없는 착용물은 만들지 마세요.\n\n작고 단순한 눈과 입, 둥근 볼, 장난스럽고 귀여운 표정, 굵고 매끈한 짙은 윤곽선, 선명한 원색, 단순한 2~3단 셀 채색, 작은 발밑 그림자로 고전 크레이지아케이드식 2D 게임 아트를 통일하세요. 눈과 표정은 선택 캐릭터의 개성을 반영하되 과도하게 반짝이는 큰 애니메이션 눈과 길쭉한 미소녀 치비 비례는 피하세요.\n\n배경은 위에서 비스듬히 내려다보는 사각 격자 대전 맵입니다. 원본 장소의 주요 사물과 색을 고정 블록·나무 상자·화단·문·수로 같은 맵 요소로 재해석하고 이동 통로를 남기세요. 인물들은 중앙 부근에서 얼굴과 전신이 읽히게 크게 배치하세요. 매듭과 맑은 하이라이트가 있는 파란 물풍선을 통로의 타일 위에 놓고, 캐릭터가 물풍선을 놓고 안전한 칸으로 피하는 순간을 생동감 있게 표현하세요. 떨어진 통로에서는 다른 물풍선이 터져 격자에 맞춘 십자 물줄기가 보이게 하세요. 모든 물체와 물줄기의 시점을 맞추고 얼굴을 가리지 마세요.\n\n실사 얼굴 합성이나 3D 피규어 질감 없이 한 장의 완성된 2D 게임 장면으로 만드세요. 글자, 캐릭터 이름표, 닉네임, 점수판, UI, 로고, 워터마크는 넣지 마세요.",
+      "published": false,
+      "summary": "Blue Dao-inspired suit partially worked; yellow bear hood failed to depict Uni. Kept as an unsuccessful intermediate."
+    }
+  ],
+  "examples": [
+    {
+      "label": "다오 · 긴 머리와 강변",
+      "source": {
+        "path": "assets/images/crazy-arcade.reference.webp",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "f7eb7cadb8a93e4aa0df57354d999429a5df038805a5a8fce119830e6bfd8395",
+        "originalPngSha256": "06274b05c7f0f5568faa283b40b5d791dd1c9f6df92f97e3d4f2024f00ba011b",
+        "pixelExact": true,
+        "isAiGenerated": true,
+        "generationPrompt": "Use case: photorealistic-natural\nAsset type: AI fictional source photo for a photo transformation test\nPrimary request: One candid full-body photograph of a fictional Korean adult woman in her early thirties on a riverside walking path. Long dark chestnut hair with a center part and no bangs, hair past her shoulders and visible on both sides, a slightly long oval face, subtle freckles, small gold hoop earrings, no glasses. Wearing an oversized turquoise sweatshirt, black straight-leg joggers, red low-top canvas sneakers. She has no bag, no hat, no items in her hands. She smiles slightly and steps casually with both hands relaxed and separately visible. Entire body and both feet visible. Background: pale wood boardwalk, a simple white metal waterside railing, a muted orange bench, calm blue river, distant skyline, a few slender reeds at the water edge. Bright lightly overcast daylight. Natural realistic skin, hair and fabric, everyday phone photograph with believable human proportions, landscape 4:3 composition. Only one person. No text, logos, watermark, collage, or inset. This is a newly invented adult, not a real user's photo.",
+        "generatedFile": "exec-2cb0d864-1da4-4c42-af79-748d8a753edf.png"
+      },
+      "result": {
+        "path": "assets/images/crazy-arcade.webp",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "4abf53e01709f82dafa1fc60c5b178e1ecfbba86b6223c206898ad97489853ad",
+        "originalPngSha256": "aba9ccb5f94e84aac66ee8f8c4810068b7d4b1e39bc9fb98196fc853d0c02674",
+        "pixelExact": true,
+        "tool": "image_gen.imagegen",
+        "mode": "edit",
+        "version": "v4",
+        "actualToolArguments": {
+          "prompt": "첨부 사진 속 사람들을 크레이지아케이드의 다오·배찌·디지니 중 어울리는 플레이어 캐릭터로 재해석하고, 귀여운 물풍선 대전 장면으로 그려 주세요.\n\n배찌로 고정하지 말고 인물마다 별도로 선택하세요. 사용자가 캐릭터를 지정했으면 그 캐릭터를 사용하세요. 지정이 없으면 원본의 의상 색과 머리·표정을 보고 선택하되 파랑·청록 계열은 다오, 빨강 계열과 느긋한 인상은 배찌, 노랑·분홍·보라 계열과 그 밖의 경우는 디지니를 우선 후보로 삼으세요. 여러 사람이 있으면 각 인물의 특징을 반영해 캐릭터를 나누고, 하나의 캐릭터로 모두 통일하지 마세요. 사진 속 인물 수를 유지해 한 사람을 한 캐릭터로 바꾸고 추가 인물은 만들지 마세요.\n\n선택한 캐릭터의 형태를 다음처럼 명확하게 구분하세요.\n- 다오: 매끈하고 둥근 파란 헬멧과 파란 수트, 헬멧 양옆의 낮은 원형 장식, 흰 장갑, 허리의 커다란 원형 버클. 헬멧 위에 곰 귀를 붙이지 말고, 배찌의 둥근 배 패치도 사용하지 마세요. 짧지만 배찌보다 날렵한 몸과 씩씩하고 밝은 표정입니다.\n- 배찌: 머리 위의 작은 둥근 곰 귀 두 개, 빨간 후드와 통통한 빨간 일체형 수트, 크림색 배 패치, 반쯤 감긴 작은 눈과 느긋하고 장난스러운 표정입니다.\n- 디지니: 위쪽 양끝이 뾰족하게 올라간 보라색 후드와 보라색 수트, 빨간 허리띠의 노란 별 모양 버클, 흰 장갑과 작고 날렵한 몸, 수줍고 장난스러운 표정입니다. 둥근 곰 귀·크림색 배 패치·원형 버클을 사용하지 마세요.\n원작의 캐릭터 구조를 유지하고 옷 색만 바꾼 배찌로 표현하지 마세요. 수트의 대표색은 사진의 옷 색과 달라도 위 캐릭터의 색을 사용하세요.\n\n선택 캐릭터의 1.5~2등신 비례와 짧은 팔다리를 적용하면서, 사진 속 머리색·가르마·앞머리·안경·구별되는 얼굴 특징을 간결하게 남겨 '사진 속 이 사람이 해당 크아 캐릭터가 된 모습'으로 읽히게 하세요. 머리는 후드나 헬멧 가장자리에서 조금 드러나게 하고 원래 긴 머리는 아래로 보이게 하세요. 원본에 있는 가방·안경 같은 착용물은 단순화해 유지하고 없는 것은 만들지 마세요.\n\n작고 단순한 눈과 입, 둥근 볼, 굵고 매끈한 짙은 윤곽선, 선명한 원색, 단순한 2~3단 셀 채색, 작은 발밑 그림자로 고전 크레이지아케이드식 2D 게임 아트를 통일하세요. 선택 캐릭터의 표정 차이를 살리고 커다랗게 반짝이는 애니메이션 눈이나 길쭉한 인체는 피하세요.\n\n배경은 위에서 비스듬히 내려다보는 반듯한 사각 격자 대전 맵입니다. 원본 장소의 주요 사물과 색을 고정 블록·나무 상자·화단·문·수로 등으로 재해석하고 이동 통로를 남기세요. 인물들은 중앙 부근에서 얼굴과 전신이 읽히게 크게 배치하세요. 매듭과 맑은 하이라이트가 있는 파란 물풍선을 통로 타일에 놓고 캐릭터가 안전한 옆 칸으로 피하는 순간을 표현하세요. 떨어진 통로에서는 다른 물풍선이 터져 격자에 맞춘 십자 물줄기가 보이게 하세요. 물체와 물줄기의 시점을 맞추고 얼굴을 가리지 마세요.\n\n실사 얼굴 합성이나 3D 피규어 질감 없이 한 장의 완성된 2D 게임 장면으로 그리세요. 글자, 캐릭터 이름표, 닉네임, 점수판, UI, 로고, 워터마크는 넣지 마세요.",
+          "referenced_image_paths": [
+            "assets/images/crazy-arcade.reference.webp"
+          ],
+          "transparent_background": false
+        },
+        "inputPathMapping": "Generation used the original PNG; published source is a lossless WebP with identical decoded pixels. Source path normalized for public records.",
+        "generatedFile": "exec-b84ee51f-aa1c-4e49-882e-d4e3a61b38f5.png",
+        "styleReferences": [],
+        "additionalInstructions": [],
+        "retouched": false,
+        "status": "success"
+      },
+      "review": "AI 가상 원본·결과 · 강변의 성인 사진 한 장에 공개 v4 문구만 적용했습니다. 긴 갈색 머리·가르마와 안경·가방 없음이 유지되고, 파란 헬멧·흰 장갑·원형 버클의 다오 모습으로 바뀌었습니다. 강·난간·주황 벤치·도시 테마가 남았습니다. 얼굴과 귀걸이는 단순화되고 물풍선을 타일에 놓는 대신 던지는 모습도 생겼습니다."
+    },
+    {
+      "label": "디지니 · 안경과 크로스백",
+      "source": {
+        "path": "assets/images/crazy-arcade.dizni.reference.webp",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "0df0e46b1f1ac534aa01aeecc4c445f809d0e63a6a9793fb38c94494adda402e",
+        "originalPngSha256": "5817f591c50e4a99eb237de1d2b375e87193c5ce5ac6cc039f1e2ea05db17c81",
+        "pixelExact": true,
+        "isAiGenerated": true,
+        "generationPrompt": "Use case: photorealistic-natural\nAsset type: fictional source photograph for a photo transformation prompt test\nPrimary request: Generate one natural, realistic full-body photograph of a fictional Korean adult in their late twenties standing in a small neighborhood courtyard. Short dark bobbed hair with straight bangs, round black-rimmed glasses, mustard-yellow zip-up windbreaker over a white shirt, straight blue jeans, white sneakers, a small cream canvas crossbody bag. Friendly slight smile, both arms relaxed and visible, body facing camera, entire body including feet in frame. Gray square paving stones, low reddish brick planters and green shrubs behind them, a pale blue gate at the side. Daylight, casual phone photograph, believable human proportions and real skin and fabric textures. Landscape 4:3 framing. Only one person. No text, logos, watermark, collage, or inset. This is a newly invented person, not a real user's photo.",
+        "generatedFile": "exec-7a233e0f-259e-4aaf-9286-3fd574734c14.png"
+      },
+      "result": {
+        "path": "assets/images/crazy-arcade.dizni.webp",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "51f5c2c8730459c623409a5f4ec9f100236c17652ab64111dead66a3c0735ecf",
+        "originalPngSha256": "f8b24d8d7f76e2c1096170c9545f75aca3de58a7bfe456f502e8f871ee948f41",
+        "pixelExact": true,
+        "tool": "image_gen.imagegen",
+        "mode": "edit",
+        "version": "v4",
+        "actualToolArguments": {
+          "prompt": "첨부 사진 속 사람들을 크레이지아케이드의 다오·배찌·디지니 중 어울리는 플레이어 캐릭터로 재해석하고, 귀여운 물풍선 대전 장면으로 그려 주세요.\n\n배찌로 고정하지 말고 인물마다 별도로 선택하세요. 사용자가 캐릭터를 지정했으면 그 캐릭터를 사용하세요. 지정이 없으면 원본의 의상 색과 머리·표정을 보고 선택하되 파랑·청록 계열은 다오, 빨강 계열과 느긋한 인상은 배찌, 노랑·분홍·보라 계열과 그 밖의 경우는 디지니를 우선 후보로 삼으세요. 여러 사람이 있으면 각 인물의 특징을 반영해 캐릭터를 나누고, 하나의 캐릭터로 모두 통일하지 마세요. 사진 속 인물 수를 유지해 한 사람을 한 캐릭터로 바꾸고 추가 인물은 만들지 마세요.\n\n선택한 캐릭터의 형태를 다음처럼 명확하게 구분하세요.\n- 다오: 매끈하고 둥근 파란 헬멧과 파란 수트, 헬멧 양옆의 낮은 원형 장식, 흰 장갑, 허리의 커다란 원형 버클. 헬멧 위에 곰 귀를 붙이지 말고, 배찌의 둥근 배 패치도 사용하지 마세요. 짧지만 배찌보다 날렵한 몸과 씩씩하고 밝은 표정입니다.\n- 배찌: 머리 위의 작은 둥근 곰 귀 두 개, 빨간 후드와 통통한 빨간 일체형 수트, 크림색 배 패치, 반쯤 감긴 작은 눈과 느긋하고 장난스러운 표정입니다.\n- 디지니: 위쪽 양끝이 뾰족하게 올라간 보라색 후드와 보라색 수트, 빨간 허리띠의 노란 별 모양 버클, 흰 장갑과 작고 날렵한 몸, 수줍고 장난스러운 표정입니다. 둥근 곰 귀·크림색 배 패치·원형 버클을 사용하지 마세요.\n원작의 캐릭터 구조를 유지하고 옷 색만 바꾼 배찌로 표현하지 마세요. 수트의 대표색은 사진의 옷 색과 달라도 위 캐릭터의 색을 사용하세요.\n\n선택 캐릭터의 1.5~2등신 비례와 짧은 팔다리를 적용하면서, 사진 속 머리색·가르마·앞머리·안경·구별되는 얼굴 특징을 간결하게 남겨 '사진 속 이 사람이 해당 크아 캐릭터가 된 모습'으로 읽히게 하세요. 머리는 후드나 헬멧 가장자리에서 조금 드러나게 하고 원래 긴 머리는 아래로 보이게 하세요. 원본에 있는 가방·안경 같은 착용물은 단순화해 유지하고 없는 것은 만들지 마세요.\n\n작고 단순한 눈과 입, 둥근 볼, 굵고 매끈한 짙은 윤곽선, 선명한 원색, 단순한 2~3단 셀 채색, 작은 발밑 그림자로 고전 크레이지아케이드식 2D 게임 아트를 통일하세요. 선택 캐릭터의 표정 차이를 살리고 커다랗게 반짝이는 애니메이션 눈이나 길쭉한 인체는 피하세요.\n\n배경은 위에서 비스듬히 내려다보는 반듯한 사각 격자 대전 맵입니다. 원본 장소의 주요 사물과 색을 고정 블록·나무 상자·화단·문·수로 등으로 재해석하고 이동 통로를 남기세요. 인물들은 중앙 부근에서 얼굴과 전신이 읽히게 크게 배치하세요. 매듭과 맑은 하이라이트가 있는 파란 물풍선을 통로 타일에 놓고 캐릭터가 안전한 옆 칸으로 피하는 순간을 표현하세요. 떨어진 통로에서는 다른 물풍선이 터져 격자에 맞춘 십자 물줄기가 보이게 하세요. 물체와 물줄기의 시점을 맞추고 얼굴을 가리지 마세요.\n\n실사 얼굴 합성이나 3D 피규어 질감 없이 한 장의 완성된 2D 게임 장면으로 그리세요. 글자, 캐릭터 이름표, 닉네임, 점수판, UI, 로고, 워터마크는 넣지 마세요.",
+          "referenced_image_paths": [
+            "assets/images/crazy-arcade.dizni.reference.webp"
+          ],
+          "transparent_background": false
+        },
+        "inputPathMapping": "Generation used the original PNG; published source is a lossless WebP with identical decoded pixels. Source path normalized for public records.",
+        "generatedFile": "exec-1f3df483-5777-4353-9a9e-d17a9a10404f.png",
+        "styleReferences": [],
+        "additionalInstructions": [],
+        "retouched": false,
+        "status": "success"
+      },
+      "review": "AI 가상 원본·결과 · 마당의 성인 사진 한 장에 같은 공개 v4 문구만 적용했습니다. 단발·앞머리·둥근 안경·크림색 가방이 남고, 보라색 뾰족 후드·빨간 허리띠·노란 별 버클의 디지니 모습으로 바뀌었습니다. 화단·파란 문을 맵 테마로 옮겼습니다. 얼굴은 단순해지고 물풍선을 손에 든 모습도 생겼습니다."
+    },
+    {
+      "label": "배찌 · 곱슬머리와 수염",
+      "source": {
+        "path": "assets/images/crazy-arcade.bazzi.reference.webp",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "3cf0cdbd19d01a5b5abdbb7a9af51e0a9a0f6a494a4776b04dbbc82136fd1c97",
+        "originalPngSha256": "6b34318e11b20c588fae9bbf09f1866393d7c04f3b7b2b3b9da92a3c418ca50f",
+        "pixelExact": true,
+        "isAiGenerated": true,
+        "generationPrompt": "Use case: photorealistic-natural\nAsset type: newly invented adult source photo for a photo transformation test\nPrimary request: One natural full-body photograph of a fictional Korean adult man in his early thirties in a small cafe patio. Short curly black hair, broad round face, a faint mustache and chin stubble, no glasses, no hat, no bag. He wears a bright red casual overshirt over a white T-shirt, charcoal trousers, and black low-top sneakers. Friendly relaxed smile, arms relaxed and separate, entire body and both feet in frame. Background: mint-green metal round cafe table and chair, warm terracotta plant pots, leafy plants, cream plaster cafe wall and dark green door. Natural soft daylight, real skin texture, realistic human proportions and clothing, everyday phone photo, landscape 4:3 framing. One person only. No text, logos, watermark, collage, or inset. This is an AI fictional adult, not a real user's photo.",
+        "generatedFile": "exec-74b1e2a8-4d14-4f4a-91c0-a83126976b8d.png"
+      },
+      "result": {
+        "path": "assets/images/crazy-arcade.bazzi.webp",
+        "width": 1448,
+        "height": 1086,
+        "sha256": "03f70041233b816acbc2440e8a4448828edb87291f6ee1e25d4cf163a8fc27b3",
+        "originalPngSha256": "2d65586ceb13e70a7850b9c3dd49cf1b9b016e4041cded0652ab63395c8675ab",
+        "pixelExact": true,
+        "tool": "image_gen.imagegen",
+        "mode": "edit",
+        "version": "v4",
+        "actualToolArguments": {
+          "prompt": "첨부 사진 속 사람들을 크레이지아케이드의 다오·배찌·디지니 중 어울리는 플레이어 캐릭터로 재해석하고, 귀여운 물풍선 대전 장면으로 그려 주세요.\n\n배찌로 고정하지 말고 인물마다 별도로 선택하세요. 사용자가 캐릭터를 지정했으면 그 캐릭터를 사용하세요. 지정이 없으면 원본의 의상 색과 머리·표정을 보고 선택하되 파랑·청록 계열은 다오, 빨강 계열과 느긋한 인상은 배찌, 노랑·분홍·보라 계열과 그 밖의 경우는 디지니를 우선 후보로 삼으세요. 여러 사람이 있으면 각 인물의 특징을 반영해 캐릭터를 나누고, 하나의 캐릭터로 모두 통일하지 마세요. 사진 속 인물 수를 유지해 한 사람을 한 캐릭터로 바꾸고 추가 인물은 만들지 마세요.\n\n선택한 캐릭터의 형태를 다음처럼 명확하게 구분하세요.\n- 다오: 매끈하고 둥근 파란 헬멧과 파란 수트, 헬멧 양옆의 낮은 원형 장식, 흰 장갑, 허리의 커다란 원형 버클. 헬멧 위에 곰 귀를 붙이지 말고, 배찌의 둥근 배 패치도 사용하지 마세요. 짧지만 배찌보다 날렵한 몸과 씩씩하고 밝은 표정입니다.\n- 배찌: 머리 위의 작은 둥근 곰 귀 두 개, 빨간 후드와 통통한 빨간 일체형 수트, 크림색 배 패치, 반쯤 감긴 작은 눈과 느긋하고 장난스러운 표정입니다.\n- 디지니: 위쪽 양끝이 뾰족하게 올라간 보라색 후드와 보라색 수트, 빨간 허리띠의 노란 별 모양 버클, 흰 장갑과 작고 날렵한 몸, 수줍고 장난스러운 표정입니다. 둥근 곰 귀·크림색 배 패치·원형 버클을 사용하지 마세요.\n원작의 캐릭터 구조를 유지하고 옷 색만 바꾼 배찌로 표현하지 마세요. 수트의 대표색은 사진의 옷 색과 달라도 위 캐릭터의 색을 사용하세요.\n\n선택 캐릭터의 1.5~2등신 비례와 짧은 팔다리를 적용하면서, 사진 속 머리색·가르마·앞머리·안경·구별되는 얼굴 특징을 간결하게 남겨 '사진 속 이 사람이 해당 크아 캐릭터가 된 모습'으로 읽히게 하세요. 머리는 후드나 헬멧 가장자리에서 조금 드러나게 하고 원래 긴 머리는 아래로 보이게 하세요. 원본에 있는 가방·안경 같은 착용물은 단순화해 유지하고 없는 것은 만들지 마세요.\n\n작고 단순한 눈과 입, 둥근 볼, 굵고 매끈한 짙은 윤곽선, 선명한 원색, 단순한 2~3단 셀 채색, 작은 발밑 그림자로 고전 크레이지아케이드식 2D 게임 아트를 통일하세요. 선택 캐릭터의 표정 차이를 살리고 커다랗게 반짝이는 애니메이션 눈이나 길쭉한 인체는 피하세요.\n\n배경은 위에서 비스듬히 내려다보는 반듯한 사각 격자 대전 맵입니다. 원본 장소의 주요 사물과 색을 고정 블록·나무 상자·화단·문·수로 등으로 재해석하고 이동 통로를 남기세요. 인물들은 중앙 부근에서 얼굴과 전신이 읽히게 크게 배치하세요. 매듭과 맑은 하이라이트가 있는 파란 물풍선을 통로 타일에 놓고 캐릭터가 안전한 옆 칸으로 피하는 순간을 표현하세요. 떨어진 통로에서는 다른 물풍선이 터져 격자에 맞춘 십자 물줄기가 보이게 하세요. 물체와 물줄기의 시점을 맞추고 얼굴을 가리지 마세요.\n\n실사 얼굴 합성이나 3D 피규어 질감 없이 한 장의 완성된 2D 게임 장면으로 그리세요. 글자, 캐릭터 이름표, 닉네임, 점수판, UI, 로고, 워터마크는 넣지 마세요.",
+          "referenced_image_paths": [
+            "assets/images/crazy-arcade.bazzi.reference.webp"
+          ],
+          "transparent_background": false
+        },
+        "inputPathMapping": "Generation used the original PNG; published source is a lossless WebP with identical decoded pixels. Source path normalized for public records.",
+        "generatedFile": "exec-39174ce8-ba13-460a-b807-67991248ccbf.png",
+        "styleReferences": [],
+        "additionalInstructions": [],
+        "retouched": false,
+        "status": "success"
+      },
+      "review": "AI 가상 원본·결과 · 카페 앞 성인 사진 한 장에 같은 공개 v4 문구만 적용했습니다. 짧은 검은 곱슬머리·콧수염·턱수염이 남고, 빨간 곰 귀 후드·크림색 배 부분의 통통한 배찌 모습으로 바뀌었습니다. 민트색 가구·화분·초록 문 테마가 남았습니다. 반쯤 감긴 눈 대신 웃으며 감은 눈이며 물풍선을 손에 든 모습도 생겼습니다."
+    }
+  ],
+  "thumbnail": {
+    "path": "assets/images/crazy-arcade.thumb.webp",
+    "width": 800,
+    "height": 600,
+    "sha256": "73cee0ad53f8fd861802e84557b7aa77381b3a4ec70b3ac9df2054fa847c3510",
+    "method": "Aspect-preserving 800px width; WebP quality 86. Sources and results are lossless."
+  },
+  "validation": {
+    "status": "passed",
+    "existingItemsPreserved": 48,
+    "assetConversion": "All six source/result WebP decoded pixels match original PNGs",
+    "promptMatching": "All three actual tool prompts match public v4 text; one input image each; no character-specific override.",
+    "command": "npm run check",
+    "unitTests": "34 passed",
+    "build": "49 prompts",
+    "browserTests": "58 passed (desktop and mobile Chromium)",
+    "diffCheck": "passed"
+  }
+}
