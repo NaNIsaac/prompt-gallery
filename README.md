@@ -1,157 +1,60 @@
 # Prompt Gallery
 
-운영 환경·주소·자동 배포의 기준 문서는 [Cloudflare Pages 운영](docs/cloudflare-pages.md)입니다. 오래된 작업 브랜치의 설정과 현재 운영 상태를 구분하는 절차는 [AGENTS.md](AGENTS.md)를 따릅니다.
+내 사진 한 장으로 카톡 이모티콘, 애니메이션 속 장면, 도자기 무드등, 아이돌 화보를 만드는 ChatGPT 이미지 프롬프트 모음입니다.
 
-내 사진을 첨부해 변환하는 프롬프트 갤러리입니다. 첨부 예시와 결과를 보고, 프롬프트를 복사해 ChatGPT에 사진과 함께 보내면 됩니다. 카드에서 즉시 복사, 이미지 확대, 검색과 카테고리, 정렬, 브라우저 북마크를 지원합니다. 제작 과정과 버전 이력은 Git으로 관리합니다.
+**[갤러리 바로가기 → q07k-prompt-gallery.pages.dev](https://q07k-prompt-gallery.pages.dev/)**
 
-2026-10-19 ‘내 사진을 나만의 티니핑으로’를 최상단에 추가해 총 41개입니다. PR 검토의 사진 한 장 원칙을 반영해 추가 참고 없이 공개 v14 문구와 가상 성인·남자아이 사진 한 장씩으로 재시험했습니다. [사진 한 장 사용법](docs/teenieping-input-guide.md), [수정 검토](docs/teenieping-review-2026-10-19.md), [실제 입력·파일 해시](docs/image-generation-2026-10-19-teenieping.json)를 보관합니다.
+![첨부 사진과 결과 네 쌍. 단발머리 인물 사진이 카톡 이모티콘 9종으로, 강변 여행 사진이 도자기 무드등으로, 중년 남성 사진이 짱구는 못말려 장면으로, 온실 속 인물 사진이 초록 머리 티니핑 캐릭터로 바뀐 모습](docs/images/readme-examples.webp)
 
-2026-10-19 사용자가 승인한 ‘내 사진을 띠부띠부씰로’를 최상단에 추가해 총 38개입니다. 가상 성인 사진과 공개 v1 문구로 만든 수집용 씰 결과를 제공합니다. 원본의 단발·안경·옷·가방을 살렸으며 채색과 가장자리 표현의 한계를 기록했습니다. [등록 검토](docs/ttibu-sticker-review-2026-10-19.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-19-ttibu-sticker.json)를 보관합니다.
+<sub>왼쪽이 첨부한 사진, 오른쪽이 공개 프롬프트만 그대로 적용한 결과입니다. 예시 사진은 모두 AI로 만든 가상 인물과 장소입니다.</sub>
 
-2026-10-19 사용자가 승인한 ‘내 사진을 다마고치로’를 최상단에 추가해 총 37개입니다. 가상 성인 사진 한 장에 공개 v1 문구만 적용해 반투명 분홍색 전자 펫 기기와 픽셀 캐릭터를 만들었습니다. [등록 검토](docs/tamagotchi-review-2026-10-19.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-19-tamagotchi.json)를 보관합니다.
+## 사용법
 
-2026-10-18 사용자가 승인한 ‘내 사진이 짱구는 못말려 속으로’를 최상단에 추가해 총 34개입니다. 같은 범용 프롬프트로 생성한 인물·풍경·반려동물 원본과 결과 3쌍을 상세에서 선택할 수 있습니다. 입력에 따라 주요 인물·장소·동물 주인공으로 바꾸고 고정 과자 장면은 사용하지 않습니다. [등록 검토](docs/shinchan-review-2026-10-18.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-18-shinchan.json)를 보관합니다.
+1. 갤러리에서 마음에 드는 결과를 고르고 **프롬프트 복사**를 누릅니다.
+2. ChatGPT에 내 사진 한 장을 첨부합니다. 카드마다 필요한 사진 종류(인물, 반려동물, 풍경 등)가 적혀 있습니다.
+3. 복사한 프롬프트를 붙여넣고 보냅니다.
 
-2026-10-18 사용자가 승인한 ‘소닉 속 주인공이 된 나’를 최상단에 추가해 총 33개입니다. 같은 프롬프트로 만든 가상 성인 사진과 소닉·테일즈 질주 결과 두 쌍을 상세에서 선택할 수 있습니다. [등록 검토](docs/sonic-review-2026-10-18.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-18-sonic.json)를 보관합니다.
+상세 화면에서 예시를 크게 보고, 검색·카테고리로 찾고, 마음에 드는 프롬프트를 북마크할 수 있습니다. 북마크는 이 브라우저에만 저장되며 다른 기기와 동기화되지 않습니다.
 
-2026-10-18 사용자가 승인한 ‘개구리 왕눈이 속 주인공이 된 나’를 최상단에 추가해 총 32개입니다. 가상 성인 사진과 왕눈이·아로미와 함께 연잎 위에서 음악회를 여는 2차 결과를 게시합니다. 공개 프롬프트는 실제 2차 생성 입력과 같으며 원작과의 그림체 차이를 상세에 표시했습니다. [등록 검토](docs/demetan-review-2026-10-18.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-18-demetan.json)를 보관합니다.
+## 인기 프롬프트
 
-2026-10-18 사용자가 승인한 ‘어드벤처 타임 속 주인공이 된 나’를 최상단에 추가해 총 31개입니다. 한국인 성인 여성으로 설정한 가상 사진과 핀·제이크와 함께 모험하는 결과를 게시합니다. [등록 검토](docs/adventure-time-review-2026-10-18.md)와 [실제 입력·공개 문구·파일 해시](docs/image-generation-2026-10-18-adventure-time.json)를 보관합니다.
+2026년 10월 갤러리에서 많이 복사하고 열어 본 프롬프트입니다.
 
-2026-10-18 사용자가 승인한 ‘내 사진을 종이 팝업북으로’를 최상단에 추가해 총 30개입니다. 종이 질감을 강화한 범용 프롬프트를 그대로 사용한 새 인물·고양이·호숫가 원본과 결과 3쌍을 상세에서 선택할 수 있습니다. [등록 검토](docs/paper-popup-book-review-2026-10-18.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-18-paper-popup-book.json)를 보관합니다.
+| 프롬프트 | 필요한 사진 |
+|---|---|
+| [내 사진으로 카카오톡 이모티콘 9종](https://q07k-prompt-gallery.pages.dev/prompts/kakao-emoticons/) | 인물 사진 1장 |
+| [야르·아자스·샤갈! 카톡 리액션 — 2026.10](https://q07k-prompt-gallery.pages.dev/prompts/slang-chat-reactions-2026-10/) | 인물 사진 1장 |
+| [내 여행 사진을 따뜻한 도자기 무드등으로](https://q07k-prompt-gallery.pages.dev/prompts/travel-ceramic-nightlight/) | 여행 풍경 사진 1장 |
+| [L을 가져가·줴줴이야! 밈 리액션 임티 9종](https://q07k-prompt-gallery.pages.dev/prompts/meme-reaction-emoticons/) | 인물 사진 1장 |
+| [진격의 거인에서 내가 거인이 된다면?](https://q07k-prompt-gallery.pages.dev/prompts/become-a-titan/) | 인물 또는 반려동물 사진 1장 |
+| [내 사진이 짱구는 못말려 속으로](https://q07k-prompt-gallery.pages.dev/prompts/shinchan-world/) | 인물·동물·풍경 사진 1장 |
 
-2026-10-17 사용자가 승인한 ‘베르사유의 장미 속 주인공이 된 나’를 최상단에 추가해 총 29개입니다. 가상 성인 인물 사진과 사용자 제공 그림체 참고 두 장으로 생성한 3차 결과를 게시합니다. 공개 프롬프트는 사진 한 장용으로 정리했으며 실제 예시의 생성 조건과 차이는 상세에 표시했습니다. [등록 검토](docs/rose-of-versailles-review-2026-10-17.md)와 [실제 입력·공개 문구·파일 해시](docs/image-generation-2026-10-17-rose-of-versailles.json)를 보관합니다.
+전체 목록은 [갤러리](https://q07k-prompt-gallery.pages.dev/)에서 캐릭터, 인물, 일러스트, 제품, 포스터, 아트·밈 카테고리로 볼 수 있습니다.
 
-2026-10-18 베르사유의 장미에서 모두 같은 군복이 되던 문제를 수정했습니다. 복장 직접 지정을 우선하고, 별도 지정이 없으면 사진의 외적 스타일에 맞춰 로코코 드레스나 왕자·귀족 궁정 예복으로 나눕니다. 군복은 직접 요청할 때만 적용합니다. 같은 공개 문구와 각 사진 한 장만으로 만든 드레스·궁정 예복 두 예시를 상세에서 선택할 수 있습니다. [수정 검토](docs/rose-of-versailles-costume-review-2026-10-18.md)와 [전후 문구·실제 입력·파일 해시](docs/rose-of-versailles-costume-revision-2026-10-18.json)를 보관합니다.
+## 기여와 개발
 
-HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 런타임 서버, API 키, 데이터베이스, 외부 이미지 호스팅이 필요하지 않습니다.
-
-개발 절차는 [개발 문서 목차](docs/README.md)와 [기여 안내](CONTRIBUTING.md)를 참고하세요. [개발 흐름](docs/development.md), [테스트·CI·배포](docs/testing-and-deployment.md), [프롬프트 등록 원칙](docs/prompt-publishing.md)을 나누어 관리합니다.
-
-실제 호출과 중간 검토 방법은 [스킬 사용 가이드](docs/prompt-gallery-workflow-guide.md)를 참고하세요.
-
-프롬프트 제작·테스트·게시 작업은 저장소 전용 [prompt-gallery-workflow 스킬](.agents/skills/prompt-gallery-workflow/SKILL.md)에 정리했습니다. 전용 브랜치와 작업 공간 준비, 실제 입력 검토, PR·CI·Pages 확인, 성공 후 해당 작업 브랜치 정리까지 포함합니다. 새 주제는 테스트 후 채팅에서 **결과 확정·PR 제출 / 수정 / 다른 사진으로 테스트**를 선택하며 중간 결과를 검토합니다. 현재 단계·브랜치·PR 미생성 이유와 다음 행동을 안내하고, 결과 확정과 제출 요청 뒤 검증·Draft PR로 이어갑니다. "테스트만" 등 명시적 제한과 이미 확정한 결과의 게시 요청을 존중합니다. 일반 기여자는 fork에서 원본 프로젝트에 PR 제출까지, 권한이 확인된 담당자는 요청에 따라 병합·배포·정리까지 진행합니다. 다른 기여자도 [기여 안내](CONTRIBUTING.md)에 따라 같은 스킬을 사용할 수 있습니다.
-
-## 로컬 실행
-
-Node.js 22 이상에서 다음 명령을 사용합니다. 빌드 시 결과 이미지를 공유용 JPEG로 변환하기 위해 Sharp를 사용합니다.
+HTML, CSS, JavaScript만 쓰는 정적 사이트입니다. 런타임 서버, API 키, 데이터베이스가 필요하지 않습니다. Node.js 22 이상에서 실행합니다.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-`http://127.0.0.1:4173/`에서 열립니다. 사이트는 모듈과 JSON을 읽으므로 파일을 더블클릭하는 대신 HTTP로 실행하세요.
-
-```sh
-npm test
-npm run build
-npm run preview
-```
-
-전체 자동 검증은 Chromium을 한 번 설치한 뒤 실행합니다.
+`http://127.0.0.1:4173/`에서 열립니다. PR 전에는 전체 검사를 실행합니다.
 
 ```sh
 npx playwright install chromium
 npm run check
 ```
 
-`check`는 단위·데이터 검사, 빌드, 데스크톱·모바일 Chromium 브라우저 테스트를 실행합니다. 브라우저 테스트는 전용 4180번 포트의 루트 `/` 경로에서 빌드 결과를 검사합니다.
+| 문서 | 내용 |
+|---|---|
+| [기여 안내](CONTRIBUTING.md) | 저장소 스킬로 기여를 시작하는 방법 |
+| [개발 문서 목차](docs/README.md) | 개발 흐름, 테스트, 배포, SEO, GA4 문서 모음 |
+| [프롬프트 등록 원칙](docs/prompt-publishing.md) | 원본·결과 검토, `data/prompts.json` 항목 형식, 정렬 순서 |
+| [스킬 사용 가이드](docs/prompt-gallery-workflow-guide.md) | [prompt-gallery-workflow 스킬](.agents/skills/prompt-gallery-workflow/SKILL.md)로 프롬프트를 만들고 게시하는 방법 |
+| [Cloudflare Pages 운영](docs/cloudflare-pages.md) | 운영 주소, 자동 배포, 환경 변수 |
+| [공유 링크와 미리보기](docs/sharing.md) | 프롬프트별 공유 페이지, 카카오톡 미리보기 캐시 |
+| [카탈로그 등록 기록](docs/catalog-history.md) | 날짜별 등록·수정 기록, 샘플 출처 |
 
-## Cloudflare Pages 배포
-
-1. Cloudflare Pages에서 GitHub 저장소 Q07K/prompt-gallery를 연결합니다.
-2. 운영 브랜치는 main, 빌드 명령은 `npm test && npm run build`, 출력은 `dist`, NODE_VERSION은 22, SITE_URL은 `https://q07k-prompt-gallery.pages.dev/`입니다.
-3. PR의 GitHub Actions 필수 `CI`가 성공한 뒤 병합하면 Cloudflare가 자동 빌드·배포합니다. GitHub Actions에서는 앱을 배포하지 않습니다.
-4. Cloudflare의 커밋·배포 성공과 [공개 사이트](https://q07k-prompt-gallery.pages.dev/)를 확인합니다. [이관·운영 문서](docs/cloudflare-pages.md)를 참고하세요.
-
-상세 공유 링크는 `prompts/handcrafted-diorama/`처럼 프롬프트별 정적 페이지를 사용합니다. 빌드가 각 페이지의 Open Graph 메타태그와 실제 결과 이미지로 만든 1200×600 JPEG를 생성하므로, 카카오톡에서도 제목과 결과 이미지를 읽을 수 있습니다. 세로 이미지는 잘리지 않도록 여백을 넣습니다. 이미지 파일명에 원본 해시를 넣어 결과 교체 시 이미지 캐시도 갱신됩니다. 같은 운영 주소의 `#prompt=...` 링크도 열리며, 상세의 링크 복사 버튼은 새 공유 주소를 복사합니다. PR에서는 테스트와 빌드만 실행합니다.
-
-기본 공유 도메인은 `https://q07k-prompt-gallery.pages.dev/`이며, 다른 도메인에 배포한다면 `SITE_URL` 환경변수에 사이트 루트 주소를 지정하고 빌드하세요. 카카오톡에 예전 미리보기가 남아 있다면 [카카오 공유 디버거](https://developers.kakao.com/tool/debugger/sharing)에서 해당 URL의 캐시를 초기화한 뒤 새 메시지로 보내세요. 이미 보낸 메시지의 카드는 갱신되지 않을 수 있습니다.
-
-자동 배포 설정은 [Cloudflare 운영 문서](docs/cloudflare-pages.md)를 따릅니다. GitHub Pages와 이전 주소 리다이렉트는 운영하지 않습니다.
-
-## 프롬프트 추가
-
-1. `assets/images/`에 첨부 예시, 결과 이미지, 가벼운 썸네일을 넣습니다. WebP 형식을 권장합니다.
-2. `data/prompts.json` 배열에 아래 구조의 항목을 추가합니다.
-3. [등록 원칙](docs/prompt-publishing.md)에 따라 원본과 결과를 검토하고 `npm run check`로 데이터·파일 경로·실제 브라우저 동작을 확인합니다.
-
-```json
-{
-  "id": "my-first-prompt",
-  "title": "나의 첫 이미지",
-  "category": "캐릭터",
-  "tags": ["3D", "피규어"],
-  "image": "assets/images/my-first-prompt.webp",
-  "thumbnail": "assets/images/my-first-prompt.thumb.webp",
-  "width": 1024,
-  "height": 1536,
-  "color": "#a2b3c4",
-  "prompt": "첨부한 사진의 인물을 3D 피규어로 만들어 주세요...",
-  "inputRequirement": "portrait",
-  "inputLabel": "인물 사진 1장 필요",
-  "usage": "인물 사진 1장을 첨부하고 프롬프트를 붙여넣으세요.",
-  "referenceImages": ["assets/images/my-first-reference.webp"],
-  "author": "@Q07K",
-  "sourceUrl": "https://github.com/Q07K/prompt-gallery",
-  "sample": false,
-  "order": -1
-}
-```
-
-- 카테고리: `인물`, `캐릭터`, `일러스트`, `제품`, `포스터`, `아트·밈`.
-- `inputRequirement`: 인물 사진은 `"portrait"`, 일반 사진은 `"image"`. 모든 항목에 사진 첨부가 필요합니다.
-- `inputLabel`: 카드 복사 버튼 위에 표시할 구체적인 첨부 조건. 예: `음식 사진 1장 필요`, `풍경·건물 사진 1장 필요`.
-- `exampleNote`: 선택 항목. 결과 이미지를 만든 뒤 프롬프트를 수정했다면 이전 프롬프트로 만든 예시임을 표시합니다.
-- `referenceImages`: 공개할 첨부 예시 이미지의 로컬 경로 배열. 최소 1개가 필요합니다.
-- `order`: 작은 숫자가 먼저 보입니다. 신규 항목은 기존 항목 위에 추가하고, 기존 항목의 값과 상대 순서는 유지합니다. 한 번에 N개를 추가하면 현재 최솟값을 m이라 할 때 새 항목에 요청 순서대로 m−N부터 m−1까지 부여합니다. 날짜를 기준으로 자동 정렬하는 방식이 아니라 등록 시 이 값을 지정하는 방식입니다. 기존 항목을 수정하면 Git에 변경 이력이 남습니다.
-- `sample: false`: 직접 작성한 게시물은 상세의 커뮤니티 샘플 표시가 없어집니다.
-
-## 샘플과 출처
-
-직접 등록한 `handcrafted-diorama`는 사용자가 제공한 한국어 프롬프트를 원문 그대로 보관합니다. 내장 이미지 생성 도구로 제주 감성의 가상 돌집·귤나무 레퍼런스를 먼저 만들고, 그 이미지를 첨부해 등록된 프롬프트만으로 미니어처 결과를 생성했습니다. 레퍼런스는 실제 장소를 촬영한 사진이 아니며, 결과 속 지명과 표지판도 생성된 표현입니다. 상세 화면에서 예시 레퍼런스를 열어 저장하거나 본인의 풍경·건물·사물 사진으로 바꿔 사용할 수 있습니다.
-
-결과는 `assets/images/handcrafted-diorama.webp`, 레퍼런스는 `assets/images/handcrafted-diorama.reference.webp`, 카드용 썸네일은 `assets/images/handcrafted-diorama.thumb.webp`에 보관합니다.
-
-현재 공개 항목은 마인크래프트 인게임 캐릭터를 포함해 총 24개입니다. 첨부 예시와 결과는 내장 이미지 생성 도구로 직접 생성했습니다. 기존 항목 중 입력 대상의 누락·복수 대상 처리를 보완한 6개 항목은 기존 원본 사진에 현재 공개 프롬프트를 그대로 적용해 결과와 썸네일을 재생성했습니다. 별도의 스타일 지시는 추가하지 않았습니다. [기존 생성 기록](docs/image-generation-2026-10-15.json)에 도구 입력 문구와 원본·결과 파일의 해시를 보관합니다. 디오라마의 사용자 제공 원문은 유지하고 첨부 안내를 보완했습니다.
-
-2026-10-16에 손그림 낙서, 파스텔 라인드로잉, 캔디빛 치비, 크레파스 그림, 월간 매거진 프롬프트를 원문 그대로 추가했습니다. 각각 서로 다른 AI 원본 사진과 결과, 썸네일을 함께 등록했습니다. 1–4번은 원문만 적용했고, 매거진은 첫 시도 차단 후 성인·단정한 의상 조건을 덧붙여 재시도했습니다. 요청과 다르게 표현된 부분도 상세 예시 설명에 표시했습니다. [5종 테스트 검토](docs/user-prompt-tests-2026-10-16.md)와 [실제 도구 입력·파일 해시](docs/image-generation-2026-10-16.json)를 확인할 수 있습니다. 신규 자산은 `assets/images/`의 `scribble-portrait`, `pastel-line-drawing`, `candy-chibi`, `childlike-crayon`, `monthly-magazine` 이름 아래 `.webp`, `.reference.webp`, `.thumb.webp`로 보관합니다.
-
-[전체 프롬프트·예시·스타일 참고 출처](docs/photo-transform-prompts.md)를 확인할 수 있습니다. 이전 커뮤니티 샘플과 사용하지 않는 이미지 파일은 공개 목록에서 제거했습니다. 초기 참고 컬렉션의 CC0 문서는 `licenses/sample-collection-CC0.txt`에 보관합니다.
-
-북마크는 `localStorage`에 저장됩니다. 브라우저와 기기 사이의 동기화는 하지 않습니다.
-
-2026-10-17 사용자가 선택한 숲 이중노출과 풍경 목판화를 상단에 추가했습니다. 숲 이중노출은 정면 인물 사진을 옆모습 실루엣으로 재해석하며 측면 사진을 따로 요구하지 않습니다. 두 항목 모두 서로 다른 새 AI 원본 한 장과 공개 프롬프트만으로 생성했습니다. [2종 등록 검토](docs/aesthetic-prompts-review-2026-10-17.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-17-aesthetic.json)를 확인할 수 있습니다.
-
-같은 날 숲 이중노출의 얼굴을 더 그림처럼 보이게 해 달라는 요청을 반영했습니다. 공개 문구에 피부의 수채화 색면·종이 결과 색연필 선을 명시하고, 같은 정면 원본 한 장으로 새 결과와 썸네일을 생성했습니다. [수정 검토](docs/forest-illustration-review-2026-10-17.md)와 [수정 문구·실제 입력·파일 해시](docs/image-generation-2026-10-17-forest-illustration.json)를 보관합니다.
-
-2026-10-16 사진 중심의 깜찍한 흑백 두들을 상단에 추가했습니다. 큰 머리·작은 몸의 캐릭터와 가벼운 펜선으로 수정한 최종 v3를 게시합니다. 예시는 두들 스타일 참고와 후속 편집을 거친 결과이고, 공개 문구는 인물 사진 한 장용으로 정리했습니다. 이 차이를 상세에 표시했습니다. [게시 검토](docs/doodle-review-2026-10-16.md)와 [세 단계 실제 입력·파일 해시](docs/image-generation-2026-10-16-doodle.json)를 보관합니다.
-
-2026-10-16 사용자 피드백으로 만든 밝은 임파스토 유화를 상단에 추가했습니다. 승인된 결과는 기존 유화, 원본 사진과 밝은 꽃 그림을 함께 참고해 만든 이미지입니다. 후속 요청으로 공개 문구와 첨부 안내를 인물·반려동물·풍경·건물·꽃·음식·사물 사진용으로 확장했습니다. 기존 인물 예시는 유지하고 현재 범용 문구와 생성 조건이 다름을 상세에 표시했습니다. [등록 검토](docs/bright-impasto-review-2026-10-16.md), [실제 입력·중간 단계·파일 해시](docs/image-generation-2026-10-16-bright-impasto.json), [공개 문구 수정 기록](docs/bright-impasto-prompt-revision-2026-10-16.json)을 보관합니다.
-
-2026-10-16 조사 후 고무 키링·반려동물 민화와 6·8번 테스트를 합친 작은 조각가들의 석상을 선택해 상단에 추가했습니다. 통합 문구는 인물·반려동물 원본에 각각 적용해 검토했습니다. [3종 등록 검토](docs/selected-prompts-review-2026-10-16.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-16-selected.json)를 확인할 수 있습니다.
-
-2026-10-16 사용자 제공 블록 토이 월드 프롬프트를 원문 그대로 상단에 추가했습니다. AI로 가상 카페 원본을 만든 뒤 그 한 장과 제공된 문구만으로 장면 전체를 블록으로 변환했습니다. [원본·결과 검토](docs/brick-world-review-2026-10-16.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-16-brick-world.json)를 보관합니다. 공개 자산은 `assets/images/brick-built-toy-world.reference.webp`, `brick-built-toy-world.webp`, `brick-built-toy-world.thumb.webp`입니다.
-
-2026-10-16 비교 테스트에서 선택한 손그림 애니메이션과 픽셀 OOTD를 서로 다른 새 원본으로 상단에 추가했습니다. 손그림은 해안가 책방 앞의 여성, 픽셀은 강변 산책로의 남성 사진으로 각각 생성했습니다. 비교용 여성·고양이 공통 원본은 공개 예시로 재사용하지 않았습니다. 공개 프롬프트만 각 원본에 적용했으며, 픽셀의 투명 배경과 가장자리의 반투명 색 번짐을 함께 검토했습니다. [2종 등록 검토](docs/pixel-animation-review-2026-10-16.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-16-pixel-animation.json)를 보관합니다.
-
-2026-10-17 사용자가 승인한 감성 여행 다이어리를 상단에 추가했습니다. 일상적인 항구 카페 스냅 느낌의 새 AI 원본 한 장에 공개 프롬프트만 적용한 v2 예시입니다. 사진 세부의 재해석과 장식용 압화 추가를 상세에 표시했습니다. [등록 검토](docs/travel-diary-review-2026-10-17.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-17-travel-diary.json)를 보관합니다.
-
-2026-10-17 사용자가 승인한 메이플스토리 인게임 캐릭터 2차 결과를 최상단에 추가해 총 25개가 됐습니다. 가상의 성인 전신 사진 한 장에 화풍 보정을 포함한 2차 프롬프트 전체를 적용한 예시이며, 원본·결과·썸네일과 해당 문구를 함께 제공합니다. 결과의 배경과 UI가 실제 게임 리소스와 다른 생성 표현이라는 점을 상세에 표시했습니다. [등록 검토](docs/maplestory-review-2026-10-17.md)와 [두 차례 실제 입력·파일 해시](docs/image-generation-2026-10-17-maplestory.json)를 보관합니다.
-
-같은 날 메이플스토리 항목을 인물·반려동물·풍경·건물·사물 사진용으로 확장하고 제목을 '내 사진이 메이플스토리 속으로'로 수정했습니다. 동일한 범용 문구를 새 강아지·풍경 원본에 각각 적용해 펫과 게임 맵 변환을 확인했습니다. 승인된 인물 예시는 유지하고 이전 인물용 문구로 만든 결과임을 표시했습니다. [확장 검토](docs/maplestory-universal-review-2026-10-17.md)와 [수정 전후 문구·테스트 입력·파일 해시](docs/maplestory-prompt-revision-2026-10-17.json)를 보관합니다.
-
-후속 요청으로 기존 인물 원본에도 범용 문구를 다시 적용하고, 인물·반려동물·풍경 결과 세 개를 같은 항목 안에서 선택하도록 추가했습니다. 세 예시 모두 현재 공개 프롬프트와 각 원본 한 장으로 생성했습니다. 예시를 바꾸면 결과·첨부 원본·설명·확대 및 다운로드 대상이 함께 바뀌고 프롬프트와 공유 URL은 유지됩니다. [중단 작업 복원·3종 게시 검토](docs/maplestory-three-examples-review-2026-10-17.md)와 [3종 실제 입력·파일 해시](docs/image-generation-2026-10-17-maplestory-three-examples.json)를 보관합니다.
-
-2026-10-17 사용자가 테스트 후 배포를 요청한 마인크래프트 인게임 캐릭터를 상단에 추가했습니다. 새 AI 인물 전신 사진 한 장과 테스트 프롬프트만 적용한 결과이며, 사진의 헤어·안경·옷차림을 픽셀 캐릭터로 옮겼습니다. 기본 게임 모델과의 비율·질감 차이를 예시 설명에 표시했습니다. [등록 검토](docs/minecraft-review-2026-10-17.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-17-minecraft.json)를 보관합니다.
-
-2026-10-17 사용자가 승인한 카트라이더 인게임 레이서 2차 결과를 최상단에 추가했습니다. 새 가상 성인 사진 한 장에 화풍 보정을 포함한 2차 프롬프트 전체를 적용한 예시이며 원본·결과·썸네일을 함께 제공합니다. 원작과 다른 배경·카트·HUD 표현은 상세에 표시했습니다. [등록 검토](docs/kartrider-review-2026-10-17.md)와 [두 차례 실제 입력·파일 해시](docs/image-generation-2026-10-17-kartrider.json)를 보관합니다.
-
-같은 날 후속 요청으로 마인크래프트 문구를 인물·반려동물·풍경·건물·음식·사물 사진용으로 확장하고 제목을 ‘내 사진을 마인크래프트 세상으로’로 바꿨습니다. 인물은 플레이어 스킨, 동물은 같은 종의 특징을 살린 블록 동물, 풍경은 원본 구도를 유지한 블록 월드로 재해석하며 사람이 없는 사진에는 플레이어를 추가하지 않습니다. 기존 인물 예시는 이전 문구로 만든 결과이고, 범용 문구와 반려동물·풍경·사물은 아직 이미지 생성 테스트하지 않았음을 상세에 표시했습니다. [수정 전후 문구와 기록](docs/minecraft-prompt-revision-2026-10-17.json)을 보관합니다.
-
-2026-10-17 사용자가 승인한 발로란트 신규 요원 2차 결과를 최상단에 추가했습니다. 원본 사진과 1차 결과를 함께 참조해 게임 그래픽의 면·재질을 단순화한 편집 결과입니다. 공개 문구는 사진 한 장용 통합본이며 생성 조건의 차이를 상세에 표시했습니다. [등록 검토](docs/valorant-review-2026-10-17.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-17-valorant.json)를 보관합니다.
-
-2026-10-17 외부 기여자 @NaNIsaac이 테스트하고 승인한 병원 X선 필름 변환을 최상단에 추가해 총 27개가 됐습니다. 소지품을 든 가상 인물의 카페 스냅 한 장에 공개 프롬프트만 적용한 결과이며, 얼굴은 두개골로, 안경·휴대폰·열쇠·지퍼는 금속의 밝기 차이로 표현됐습니다. 실제 X선과 다른 머리카락·옷 윤곽과 뼈 배치를 상세에 표시했습니다. [등록 검토](docs/xray-film-review-2026-10-17.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-17-xray-film.json)를 보관합니다.
-
-2026-10-17 범용 마인크래프트 프롬프트로 기존 인물 원본을 다시 시험하고, 같은 문구로 만든 코기·해안 풍경과 함께 웹 예시로 등록했습니다. 기본 이미지는 공원길의 세로 인물 결과이며 상세에서 인물·반려동물·풍경을 선택하면 결과와 해당 원본·설명이 함께 바뀝니다. 날씨와 체형 등 미반영 조건도 예시별로 표시했습니다. [3종 등록 검토](docs/minecraft-three-examples-review-2026-10-17.md)와 [실제 입력·파일 해시](docs/image-generation-2026-10-17-minecraft-three-examples.json)를 보관합니다.
+운영 상태를 확인하거나 오래된 작업 브랜치에서 작업할 때는 [AGENTS.md](AGENTS.md)의 절차를 따릅니다. 상단 예시 이미지는 `node scripts/readme-examples.mjs`로 다시 만들 수 있습니다. 초기 참고 컬렉션의 CC0 문서는 `licenses/sample-collection-CC0.txt`에 보관합니다.
