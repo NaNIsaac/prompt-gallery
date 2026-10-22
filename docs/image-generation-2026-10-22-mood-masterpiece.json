@@ -1,0 +1,193 @@
+{
+  "id": "mood-masterpiece",
+  "date": "2026-10-22",
+  "tool": "built-in image_gen.imagegen",
+  "selectedVersion": "v15",
+  "approvedByUser": true,
+  "approval": "사용자가 v15 2인 결과를 확인한 뒤 결과 확정·PR 제출을 선택했습니다.",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/mood-masterpiece",
+  "initialBaseCommit": "bf4c284ac929ffa6c9d43cb874ae3aba6ab87dbf",
+  "publicationBaseCommit": "e13c78af5af3237a9d8db110f3d0cbcb2e51d25d",
+  "publicPromptFile": "docs/mood-masterpiece-prompt-v15.txt",
+  "publicPrompt": "사진 속 사람들에게 어울리는 실제 명화를 골라, 그 작품의 주인공이 된 그림을 만들어 주세요.\n\n사진의 인원수·연령대·표정·친밀감·활동·빛과 색을 보고 실제 회화 여러 점을 비교해 한 점을 선택하세요. 작가·작품·시대·지역의 고정 목록이나 인원수별 대응 규칙을 만들지 마세요. 사진에 없는 사연·성격·직업은 추측하지 마세요. 선택한 작가·정확한 작품명·시각적 선택 이유를 이미지 밖에서 짧게 알려 주세요.\n\n선택한 원작 이미지를 확인하고 그 그림을 편집의 바탕으로 사용하세요. 입력 역할은 원작 그림이 회화의 기준이고, 인물 사진은 등장인물의 구별 특징 참고입니다. 원작의 실제 이미지를 확인하지 못했으면 먼저 알려 주세요.\n\n최종 그림을 만들기 전에 사진 속 인물의 구별 특징을 단순한 색면과 선으로 옮긴 인물 참고 그림을 먼저 만드세요. 얼굴 윤곽·머리·안경·수염·연령대는 남기되 피부는 소수의 평평한 색면, 눈·코·입은 간결한 획으로 그려 사진적인 세부를 제거하세요. 이 그림은 인물 구별을 위한 중간 자료이며 최종 작품의 화풍을 고정하는 예시가 아닙니다.\n\n최종 그림 생성에는 실제 원작 이미지와 방금 만든 회화적 인물 참고 그림을 사용하세요. 원본 사진을 최종 생성의 직접 참조로 다시 넣지 마세요. 원작 그림의 구도·인물 동작·의상·색채·붓질·물감 표면과 얼굴을 그리는 방식을 유지하면서, 회화적 참고 그림 속 사람들을 그 역할에 대입하세요. 사진의 원래 자세·배경·시선·의상·가로세로 비율은 바꾸어도 됩니다. 원작 얼굴의 회화적인 형태와 단순화 수준을 유지한 채, 사진 속 사람을 구분하는 얼굴 윤곽의 대략적인 비율·연령대·헤어 실루엣·안경·수염만 같은 회화 기법으로 옮기세요.\n\n얼굴을 원작보다 정밀하게 다시 만들지 마세요. 눈·코·입과 피부 명암도 원작의 얼굴처럼 생략하고 뭉개고 재구성해, 얼굴부터 손·몸·배경까지 하나의 그림으로 보이게 하세요. 화풍을 살리기 위해 사진과의 미세한 닮음이 줄어드는 것은 허용합니다. 피부 광택·홍채 반사·모공·섬세한 속눈썹·정교한 입술 윤곽을 사진에서 가져오거나 새로 만들지 마세요. 사진 얼굴을 복사해 붙이거나 사실적인 얼굴 위에 물감 질감만 덮지 마세요.\n\n사진 속 주요 인물을 각각 한 번씩 모두 등장시키고 전경·배경 전체의 사람 수를 원본과 같게 유지하세요. 원작의 보조 인물은 생략하고 사진 속 인원만으로 핵심 구도를 재구성하세요. 인물의 몸통과 하체는 옷으로 가리고, 손·팔의 연결은 자연스럽게 표현하세요.\n\n선택 설명 다음에 작품 설명판이 포함된 완성 이미지 한 장을 만들어 주세요. 회화 부분 아래로 캔버스를 확장해 밝은 아이보리색 여백 띠를 만들고, 그 안에 실제 미술관 작품 설명처럼 읽기 쉬운 활자로 아래 정보를 넣어 주세요. 회화 자체를 자르거나 글자로 가리지 말고, 설명 여백은 전체 높이의 약 15~20%로 균형 있게 배치하세요.\n\n재해석한 원작\n정식 한국어 작품명\n작가 · 제작연도\n원제\n원작 소장: 확인한 미술관·소장처\n\n작품명은 다른 줄보다 조금 크게, 나머지는 단정하고 충분히 읽을 수 있는 크기로 배치하세요. 확인한 실제 작품 정보를 사용하고, 이름이나 연도를 확인하지 못했으면 추측하지 말고 확인하지 못한 항목을 명시하세요. 이 내용은 작품 선택 결과에 따라 매번 채우며 고정 작품 목록을 만들지 마세요. 설명 띠 밖의 회화에는 글자·서명·워터마크를 추가하지 마세요. 원작 정보의 출처 링크는 이미지 밖에 따로 알려 주세요. 별도의 액자·비교 화면·QR 코드는 넣지 마세요.",
+  "publicPromptTestedAlone": false,
+  "referenceOrigin": "AI-generated fictional adults; not actual user photos",
+  "workflow": "Fictional source photo -> artwork selection after viewing source -> painted identity study (v13) -> artwork plus study painting (v13) -> v15 museum-label edit of that existing painting",
+  "selectionTiming": "두 가상 원본을 생성해 본 뒤 작품을 선택. 원본 생성 지시에 작품명이나 원작 포즈 없음.",
+  "selection": {
+    "id": "new-duo",
+    "reference": "new-duo.reference.png",
+    "artist": "Frida Kahlo",
+    "title": "Frieda and Diego Rivera",
+    "year": 1931,
+    "reason": "연령대가 다른 두 사람이 나란히 서서 정면을 보고 부드럽게 웃는 사진의 배치를, 두 인물의 크기·의상 색 대비가 분명한 전신 초상으로 재구성하기 위해 선택했습니다. 가족·연인·부부 관계나 직업은 추정하지 않았습니다.",
+    "comparedWorks": [
+      "Frida Kahlo — Frieda and Diego Rivera",
+      "Grant Wood — American Gothic",
+      "Jan van Eyck — The Arnolfini Portrait"
+    ],
+    "source": "https://www.sfmoma.org/artwork/36.6061/",
+    "composition": "Two people standing full length side by side on a simple floor against a plain warm background: man at left in a dark blue shirt/garment holding a painter's palette and brushes; woman at right in a long green dress with red shawl, hands gently joined at the center. Original's formal double-portrait proportions and restrained folk painting treatment, no original sitter faces. The older source man retains grey short hair and thin rectangular glasses; the woman retains high ponytail with short fringe and her age. Omit the original bird/banner and all lettering to keep no text and no additional subjects. Props are elements of the chosen painting, not claims about the source people's profession or relationship."
+  },
+  "styleReference": {
+    "id": "new-duo",
+    "sourcePage": "https://www.sfmoma.org/artwork/36.6061/",
+    "sourceImage": "https://d1hhug17qm51in.cloudfront.net/www-media/2026/08/12211614/36.6061_01_B02.jpg",
+    "localFile": "style-kahlo-frieda-diego-1931.reference.jpg",
+    "credit": "Collection SFMOMA, Albert M. Bender Collection, gift of Albert M. Bender; © Banco de Mexico Diego Rivera & Frida Kahlo Museums Trust / ARS as listed by SFMOMA",
+    "usage": "local test reference only, not gallery publication asset",
+    "sha256": "bee9a5806abf0956be1b1af4520ee0bd4a16240f2bf4621fd7a4242d12cf981f",
+    "publication": "Original artwork used as test reference only; not copied into public assets."
+  },
+  "generationSteps": [
+    {
+      "phase": "source-new-duo",
+      "version": "fictional-source",
+      "actualToolArguments": {
+        "prompt": "Create an ordinary candid travel snapshot of exactly two fictional Korean adults standing close together near a modern city railway station entrance on a cloudy day. On the left is a man about 70 with short naturally grey hair, a narrow face, thin metal rectangular eyeglasses and no beard, wearing a maroon zip-up windbreaker over a grey shirt and dark trousers. On the right is a woman about 35 with warm medium skin, dark hair in a high ponytail with a short fringe, no glasses, wearing a cream sweatshirt, cobalt-blue backpack and olive trousers. Both look toward the photographer with small natural smiles. They stand casually at slightly different angles, arms relaxed, not holding any special props or making staged gestures. Frame both from head to mid thigh, a little off center, modern glass station doors, grey pavement and a small out-of-focus street map sign with no readable text behind them. Ordinary cloudy daylight, realistic age-appropriate faces, no beauty retouch, no fashion posing. Exactly two adults, no other people or reflections of people. Horizontal 4:3 photo. No writing, logos or watermark. Output one realistic photograph only.",
+        "transparent_background": false
+      },
+      "generatedFile": "exec-a0b76a28-c8de-401c-8f4d-5383aff985d6.png",
+      "savedFile": "new-duo.reference.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "559ac99da26069e2eddd0e82207e8b0521b1267745fedc7860c894cc020d236a",
+      "status": "success"
+    },
+    {
+      "phase": "study-new-duo-v13",
+      "version": "v13",
+      "actualToolArguments": {
+        "prompt": "공통 프롬프트 v13의 중간 단계인 인물 구별용 회화 참고 그림만 만드세요. 첨부는 AI 가상 두 사람의 사진입니다. 사진 속 정확히 두 명의 머리와 어깨를 한 화면에서 구분할 수 있게 보여 주는 단순한 채색 스터디 한 장을 그리세요. 이것은 최종 명화가 아닙니다. 인물의 대략적인 얼굴 윤곽·연령대·머리 모양·안경·수염·액세서리처럼 사진에 실제로 있는 구별 특징을 남기세요.\n\n중간 참고의 얼굴 표현: 각 얼굴은 밝음·중간·어두움 세 가지 정도의 평평한 색 덩어리로 구성합니다. 눈은 각각 작은 검은 획 하나, 코는 간결한 선 하나, 입은 짧은 붉은 획 하나로 표시하세요. 홍채·눈동자 반사·속눈썹·모공·입술 윤곽·사진의 피부 명암은 그리지 마세요. 얼굴은 단순한 손그림으로 재설계하고 세밀한 사진적 닮음은 남기지 마세요. 얼굴과 머리와 옷 모두 같은 굵기의 큰 붓과 불투명한 물감으로 그리세요. 약간의 거친 종이와 붓 흔적은 괜찮지만 사진 위에 텍스처만 덮지 마세요. 평범한 무채색 바탕, 글자·명찰·설명·액자 없음. 정확히 두 명, 한 장의 참고 그림.\n\n[공통 사용자 프롬프트 v13]\n사진 속 사람들에게 어울리는 실제 명화를 골라, 그 작품의 주인공이 된 그림을 만들어 주세요.\n\n사진의 인원수·연령대·표정·친밀감·활동·빛과 색을 보고 실제 회화 여러 점을 비교해 한 점을 선택하세요. 작가·작품·시대·지역의 고정 목록이나 인원수별 대응 규칙을 만들지 마세요. 사진에 없는 사연·성격·직업은 추측하지 마세요. 선택한 작가·정확한 작품명·시각적 선택 이유를 이미지 밖에서 짧게 알려 주세요.\n\n선택한 원작 이미지를 확인하고 그 그림을 편집의 바탕으로 사용하세요. 입력 역할은 원작 그림이 회화의 기준이고, 인물 사진은 등장인물의 구별 특징 참고입니다. 원작의 실제 이미지를 확인하지 못했으면 먼저 알려 주세요.\n\n최종 그림을 만들기 전에 사진 속 인물의 구별 특징을 단순한 색면과 선으로 옮긴 인물 참고 그림을 먼저 만드세요. 얼굴 윤곽·머리·안경·수염·연령대는 남기되 피부는 소수의 평평한 색면, 눈·코·입은 간결한 획으로 그려 사진적인 세부를 제거하세요. 이 그림은 인물 구별을 위한 중간 자료이며 최종 작품의 화풍을 고정하는 예시가 아닙니다.\n\n최종 그림 생성에는 실제 원작 이미지와 방금 만든 회화적 인물 참고 그림을 사용하세요. 원본 사진을 최종 생성의 직접 참조로 다시 넣지 마세요. 원작 그림의 구도·인물 동작·의상·색채·붓질·물감 표면과 얼굴을 그리는 방식을 유지하면서, 회화적 참고 그림 속 사람들을 그 역할에 대입하세요. 사진의 원래 자세·배경·시선·의상·가로세로 비율은 바꾸어도 됩니다. 원작 얼굴의 회화적인 형태와 단순화 수준을 유지한 채, 사진 속 사람을 구분하는 얼굴 윤곽의 대략적인 비율·연령대·헤어 실루엣·안경·수염만 같은 회화 기법으로 옮기세요.\n\n얼굴을 원작보다 정밀하게 다시 만들지 마세요. 눈·코·입과 피부 명암도 원작의 얼굴처럼 생략하고 뭉개고 재구성해, 얼굴부터 손·몸·배경까지 하나의 그림으로 보이게 하세요. 화풍을 살리기 위해 사진과의 미세한 닮음이 줄어드는 것은 허용합니다. 피부 광택·홍채 반사·모공·섬세한 속눈썹·정교한 입술 윤곽을 사진에서 가져오거나 새로 만들지 마세요. 사진 얼굴을 복사해 붙이거나 사실적인 얼굴 위에 물감 질감만 덮지 마세요.\n\n사진 속 주요 인물을 각각 한 번씩 모두 등장시키고 전경·배경 전체의 사람 수를 원본과 같게 유지하세요. 원작의 보조 인물은 생략하고 사진 속 인원만으로 핵심 구도를 재구성하세요. 인물의 몸통과 하체는 옷으로 가리고, 손·팔의 연결은 자연스럽게 표현하세요.\n\n선택 설명 다음에 완성된 회화 한 장을 만들어 주세요. 이미지 안에는 작품명·설명·서명·글자·워터마크·액자·비교 화면을 넣지 마세요.",
+        "referenced_image_paths": [
+          "new-duo.reference.png"
+        ],
+        "transparent_background": false
+      },
+      "generatedFile": "exec-646044a7-5a5e-4fd2-9a1e-99b23ad5a055.png",
+      "savedFile": "new-duo.study-v13.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "4816ad5ab0b8e8e16ebf88b48500b470bf414788c62bb7f498d02c61a44b8870",
+      "status": "success"
+    },
+    {
+      "phase": "final-new-duo-v13",
+      "version": "v13",
+      "actualToolArguments": {
+        "prompt": "공통 프롬프트 v13의 마지막 단계입니다. 작품 선택과 실제 원작 확인, 회화적 인물 참고 제작을 완료했습니다. 완성된 그림 한 장만 출력하세요.\n\n입력 1 = 실제 원작 그림. 구도와 회화 표현, 얼굴의 묘사 방식을 정하는 편집 바탕입니다.\n입력 2 = 사진에서 이미 단순한 색면과 선으로 번역한 인물 참고 그림. 이 그림 속 정확히 두 사람을 원작의 역할에 대입하세요. 머리·안경·연령대·대략적인 얼굴 윤곽으로 구별하고, 얼굴의 생략된 눈·코·입을 사진처럼 정밀하게 복원하지 마세요. 원본 인물 사진은 이번 단계에 제공하지 않습니다. 얼굴도 원작의 물감 색과 묘사 방식으로 그려 전체가 같은 회화로 보이게 하세요.\n\n[공통 사용자 프롬프트 v13]\n사진 속 사람들에게 어울리는 실제 명화를 골라, 그 작품의 주인공이 된 그림을 만들어 주세요.\n\n사진의 인원수·연령대·표정·친밀감·활동·빛과 색을 보고 실제 회화 여러 점을 비교해 한 점을 선택하세요. 작가·작품·시대·지역의 고정 목록이나 인원수별 대응 규칙을 만들지 마세요. 사진에 없는 사연·성격·직업은 추측하지 마세요. 선택한 작가·정확한 작품명·시각적 선택 이유를 이미지 밖에서 짧게 알려 주세요.\n\n선택한 원작 이미지를 확인하고 그 그림을 편집의 바탕으로 사용하세요. 입력 역할은 원작 그림이 회화의 기준이고, 인물 사진은 등장인물의 구별 특징 참고입니다. 원작의 실제 이미지를 확인하지 못했으면 먼저 알려 주세요.\n\n최종 그림을 만들기 전에 사진 속 인물의 구별 특징을 단순한 색면과 선으로 옮긴 인물 참고 그림을 먼저 만드세요. 얼굴 윤곽·머리·안경·수염·연령대는 남기되 피부는 소수의 평평한 색면, 눈·코·입은 간결한 획으로 그려 사진적인 세부를 제거하세요. 이 그림은 인물 구별을 위한 중간 자료이며 최종 작품의 화풍을 고정하는 예시가 아닙니다.\n\n최종 그림 생성에는 실제 원작 이미지와 방금 만든 회화적 인물 참고 그림을 사용하세요. 원본 사진을 최종 생성의 직접 참조로 다시 넣지 마세요. 원작 그림의 구도·인물 동작·의상·색채·붓질·물감 표면과 얼굴을 그리는 방식을 유지하면서, 회화적 참고 그림 속 사람들을 그 역할에 대입하세요. 사진의 원래 자세·배경·시선·의상·가로세로 비율은 바꾸어도 됩니다. 원작 얼굴의 회화적인 형태와 단순화 수준을 유지한 채, 사진 속 사람을 구분하는 얼굴 윤곽의 대략적인 비율·연령대·헤어 실루엣·안경·수염만 같은 회화 기법으로 옮기세요.\n\n얼굴을 원작보다 정밀하게 다시 만들지 마세요. 눈·코·입과 피부 명암도 원작의 얼굴처럼 생략하고 뭉개고 재구성해, 얼굴부터 손·몸·배경까지 하나의 그림으로 보이게 하세요. 화풍을 살리기 위해 사진과의 미세한 닮음이 줄어드는 것은 허용합니다. 피부 광택·홍채 반사·모공·섬세한 속눈썹·정교한 입술 윤곽을 사진에서 가져오거나 새로 만들지 마세요. 사진 얼굴을 복사해 붙이거나 사실적인 얼굴 위에 물감 질감만 덮지 마세요.\n\n사진 속 주요 인물을 각각 한 번씩 모두 등장시키고 전경·배경 전체의 사람 수를 원본과 같게 유지하세요. 원작의 보조 인물은 생략하고 사진 속 인원만으로 핵심 구도를 재구성하세요. 인물의 몸통과 하체는 옷으로 가리고, 손·팔의 연결은 자연스럽게 표현하세요.\n\n선택 설명 다음에 완성된 회화 한 장을 만들어 주세요. 이미지 안에는 작품명·설명·서명·글자·워터마크·액자·비교 화면을 넣지 마세요.\n\n[이번 사진의 작품 선택 기록]\n{\n  \"id\": \"new-duo\",\n  \"reference\": \"new-duo.reference.png\",\n  \"artist\": \"Frida Kahlo\",\n  \"title\": \"Frieda and Diego Rivera\",\n  \"year\": 1931,\n  \"reason\": \"연령대가 다른 두 사람이 나란히 서서 정면을 보고 부드럽게 웃는 사진의 배치를, 두 인물의 크기·의상 색 대비가 분명한 전신 초상으로 재구성하기 위해 선택했습니다. 가족·연인·부부 관계나 직업은 추정하지 않았습니다.\",\n  \"comparedWorks\": [\n    \"Frida Kahlo — Frieda and Diego Rivera\",\n    \"Grant Wood — American Gothic\",\n    \"Jan van Eyck — The Arnolfini Portrait\"\n  ],\n  \"source\": \"https://www.sfmoma.org/artwork/36.6061/\",\n  \"composition\": \"Two people standing full length side by side on a simple floor against a plain warm background: man at left in a dark blue shirt/garment holding a painter's palette and brushes; woman at right in a long green dress with red shawl, hands gently joined at the center. Original's formal double-portrait proportions and restrained folk painting treatment, no original sitter faces. The older source man retains grey short hair and thin rectangular glasses; the woman retains high ponytail with short fringe and her age. Omit the original bird/banner and all lettering to keep no text and no additional subjects. Props are elements of the chosen painting, not claims about the source people's profession or relationship.\"\n}",
+        "referenced_image_paths": [
+          "style-kahlo-frieda-diego-1931.reference.jpg",
+          "exec-646044a7-5a5e-4fd2-9a1e-99b23ad5a055.png"
+        ],
+        "transparent_background": false
+      },
+      "generatedFile": "exec-c722f69e-eadd-4663-bc4d-f07d0edfae9f.png",
+      "savedFile": "new-duo.v13.png",
+      "width": 1115,
+      "height": 1410,
+      "sha256": "2fd6bbf069affe79e35220ec34d65592744f49770d682c3503a53ecf9338da52",
+      "status": "success"
+    },
+    {
+      "phase": "museum-label-edit",
+      "version": "v15",
+      "actualToolArguments": {
+        "prompt": "첨부한 이미 완성된 회화를 편집해 하단에 작품 설명판을 포함한 새 이미지 한 장을 만드세요. 이것은 v15의 마지막 표시 단계 시험입니다. 작품 선택과 회화 제작은 이미 완료했습니다.\n\n기존 회화의 인물·얼굴·붓질·색·구도와 비율을 유지하세요. 회화를 다시 해석하거나 자르지 말고 아래쪽으로 캔버스만 확장해 따뜻한 아이보리색 무광 여백을 붙이세요. 설명 여백은 전체 높이의 약 17%로 하고, 그림 위에 글자를 겹치지 마세요. 얇은 짙은 회색 활자와 넉넉한 여백으로 실제 미술관 작품 설명판처럼 정돈하세요. 작품명은 가장 크고, 다른 정보는 그보다 작되 모바일에서도 읽기 쉽게 배치하세요. 본문은 균형 있게 가운데 정렬하세요. 한국어 글자가 정확하고 선명해야 합니다.\n\n설명 여백에 다음 다섯 줄을 글자 그대로 넣으세요. 이외의 문구는 추가하지 마세요.\n재해석한 원작\n프리다와 디에고 리베라\n프리다 칼로 · 1931\nFrieda and Diego Rivera\n원작 소장: 샌프란시스코 현대미술관\n\n그림 안쪽에는 새 글자·워터마크·서명·액자를 넣지 마세요. 원작 출처 링크는 assistant가 이미지 밖에 별도로 제공하므로 이미지에는 URL을 쓰지 마세요.\n\n[공통 사용자 프롬프트 v15]\n사진 속 사람들에게 어울리는 실제 명화를 골라, 그 작품의 주인공이 된 그림을 만들어 주세요.\n\n사진의 인원수·연령대·표정·친밀감·활동·빛과 색을 보고 실제 회화 여러 점을 비교해 한 점을 선택하세요. 작가·작품·시대·지역의 고정 목록이나 인원수별 대응 규칙을 만들지 마세요. 사진에 없는 사연·성격·직업은 추측하지 마세요. 선택한 작가·정확한 작품명·시각적 선택 이유를 이미지 밖에서 짧게 알려 주세요.\n\n선택한 원작 이미지를 확인하고 그 그림을 편집의 바탕으로 사용하세요. 입력 역할은 원작 그림이 회화의 기준이고, 인물 사진은 등장인물의 구별 특징 참고입니다. 원작의 실제 이미지를 확인하지 못했으면 먼저 알려 주세요.\n\n최종 그림을 만들기 전에 사진 속 인물의 구별 특징을 단순한 색면과 선으로 옮긴 인물 참고 그림을 먼저 만드세요. 얼굴 윤곽·머리·안경·수염·연령대는 남기되 피부는 소수의 평평한 색면, 눈·코·입은 간결한 획으로 그려 사진적인 세부를 제거하세요. 이 그림은 인물 구별을 위한 중간 자료이며 최종 작품의 화풍을 고정하는 예시가 아닙니다.\n\n최종 그림 생성에는 실제 원작 이미지와 방금 만든 회화적 인물 참고 그림을 사용하세요. 원본 사진을 최종 생성의 직접 참조로 다시 넣지 마세요. 원작 그림의 구도·인물 동작·의상·색채·붓질·물감 표면과 얼굴을 그리는 방식을 유지하면서, 회화적 참고 그림 속 사람들을 그 역할에 대입하세요. 사진의 원래 자세·배경·시선·의상·가로세로 비율은 바꾸어도 됩니다. 원작 얼굴의 회화적인 형태와 단순화 수준을 유지한 채, 사진 속 사람을 구분하는 얼굴 윤곽의 대략적인 비율·연령대·헤어 실루엣·안경·수염만 같은 회화 기법으로 옮기세요.\n\n얼굴을 원작보다 정밀하게 다시 만들지 마세요. 눈·코·입과 피부 명암도 원작의 얼굴처럼 생략하고 뭉개고 재구성해, 얼굴부터 손·몸·배경까지 하나의 그림으로 보이게 하세요. 화풍을 살리기 위해 사진과의 미세한 닮음이 줄어드는 것은 허용합니다. 피부 광택·홍채 반사·모공·섬세한 속눈썹·정교한 입술 윤곽을 사진에서 가져오거나 새로 만들지 마세요. 사진 얼굴을 복사해 붙이거나 사실적인 얼굴 위에 물감 질감만 덮지 마세요.\n\n사진 속 주요 인물을 각각 한 번씩 모두 등장시키고 전경·배경 전체의 사람 수를 원본과 같게 유지하세요. 원작의 보조 인물은 생략하고 사진 속 인원만으로 핵심 구도를 재구성하세요. 인물의 몸통과 하체는 옷으로 가리고, 손·팔의 연결은 자연스럽게 표현하세요.\n\n선택 설명 다음에 작품 설명판이 포함된 완성 이미지 한 장을 만들어 주세요. 회화 부분 아래로 캔버스를 확장해 밝은 아이보리색 여백 띠를 만들고, 그 안에 실제 미술관 작품 설명처럼 읽기 쉬운 활자로 아래 정보를 넣어 주세요. 회화 자체를 자르거나 글자로 가리지 말고, 설명 여백은 전체 높이의 약 15~20%로 균형 있게 배치하세요.\n\n재해석한 원작\n정식 한국어 작품명\n작가 · 제작연도\n원제\n원작 소장: 확인한 미술관·소장처\n\n작품명은 다른 줄보다 조금 크게, 나머지는 단정하고 충분히 읽을 수 있는 크기로 배치하세요. 확인한 실제 작품 정보를 사용하고, 이름이나 연도를 확인하지 못했으면 추측하지 말고 확인하지 못한 항목을 명시하세요. 이 내용은 작품 선택 결과에 따라 매번 채우며 고정 작품 목록을 만들지 마세요. 설명 띠 밖의 회화에는 글자·서명·워터마크를 추가하지 마세요. 원작 정보의 출처 링크는 이미지 밖에 따로 알려 주세요. 별도의 액자·비교 화면·QR 코드는 넣지 마세요.",
+        "referenced_image_paths": [
+          "new-duo.v13.png"
+        ],
+        "transparent_background": false
+      },
+      "generatedFile": "exec-877813dc-7add-4594-89dd-8b4d6e8ba36e.png",
+      "savedFile": "new-duo.label-v15.png",
+      "width": 1027,
+      "height": 1531,
+      "sha256": "4cd2465104c5f828871c4a347d155d33f85ebd65b32e02f4cd59cfa2e54b4986",
+      "status": "success"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/images/mood-masterpiece.reference.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "6a27447b55dc3c14d349ea884f23f28776e8dad1017d3b38fb49a9c70e7621be",
+      "sourceFile": "new-duo.reference.png",
+      "sourceSha256": "559ac99da26069e2eddd0e82207e8b0521b1267745fedc7860c894cc020d236a",
+      "lossless": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "path": "assets/images/mood-masterpiece.webp",
+      "width": 1027,
+      "height": 1531,
+      "sha256": "ac464276360623998ce17654eecbc5b8f72550920a26963a4e51263f51ab5e25",
+      "sourceFile": "new-duo.label-v15.png",
+      "sourceSha256": "4cd2465104c5f828871c4a347d155d33f85ebd65b32e02f4cd59cfa2e54b4986",
+      "lossless": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "path": "assets/images/mood-masterpiece.thumb.webp",
+      "width": 480,
+      "height": 716,
+      "sha256": "2ee5b36d2e2f0a99b429d21fdd8a020c6e9abe8e9a3fc5772ccd2e104ab7e1bd",
+      "sourceFile": "new-duo.label-v15.png",
+      "sourceSha256": "4cd2465104c5f828871c4a347d155d33f85ebd65b32e02f4cd59cfa2e54b4986",
+      "lossless": true,
+      "resize": "480px wide, aspect ratio preserved"
+    }
+  ],
+  "exactLabelText": "재해석한 원작\n프리다와 디에고 리베라\n프리다 칼로 · 1931\nFrieda and Diego Rivera\n원작 소장: 샌프란시스코 현대미술관",
+  "exampleNote": "AI 가상 원본·결과 · 두 사람의 사진을 보고 작품을 선택한 뒤 v13 인물 스터디·원작 참조로 회화를 만들고, v15 편집 지시와 확인한 작품 정보를 추가해 하단 설명판을 붙였습니다. 공개 문구만의 단일 생성 결과는 아닙니다. 회색 머리·안경·묶은 머리와 두 인물을 유지했으나 닮음·연령·손 연결이 달라지고 허리 장식에 문자 같은 흔적이 남았습니다. 설명판 편집으로 얼굴·붓질도 조금 변했습니다. 원작: 프리다 칼로, 《프리다와 디에고 리베라》(1931), SFMOMA.",
+  "limitations": [
+    "공개 문구만으로 처음부터 한 번에 만든 결과가 아님. v13 중간 단계와 사진별 작품 선택·구도 지시, v15 설명판 추가 지시를 사용했다.",
+    "v15 재시험은 기존 회화의 설명판 표시 단계만 수행했다.",
+    "회화화를 우선해 미세한 닮음·연령 표현이 줄었고 손 연결과 문자 유사 장식이 남았다.",
+    "설명판 추가 편집은 원본 회화 픽셀을 완전히 유지하지 않았다.",
+    "작품 선택은 이 사진의 시각적 배치에 근거하며 두 사람의 관계·직업을 추정하지 않았다.",
+    "이전의 다른 인물 시험은 로컬 이력으로 보존하고, 이번 PR에는 사용자가 확정한 2인 예시만 등록한다."
+  ],
+  "externalPostProcessing": "No visual editing outside built-in image_gen; published assets encoded to lossless WebP, thumbnail resized proportionally.",
+  "validation": {
+    "catalogExistingRecordsUnchanged": true,
+    "sourceAndResultDecodedPixelsIdentical": true,
+    "npmCheck": {
+      "status": "passed",
+      "unitTests": 34,
+      "buildPromptCount": 47,
+      "browserTests": 54,
+      "browserProjects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ]
+    },
+    "publicPromptMatchesFinalTest": true,
+    "publicationPersonalPathsRemoved": true
+  },
+  "reviewArtifacts": [
+    {
+      "path": "docs/mood-masterpiece/identity-study-v13.webp",
+      "role": "Intermediate painted identity study; input to v13 painting",
+      "sourceFile": "new-duo.study-v13.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "b5fa1bf41162a34499b01c7803dcd4cda1f949b98c3e5ee3e9f75b09e6cc7bd9",
+      "decodedPixelsIdentical": true,
+      "publication": "PR review evidence, not gallery assets"
+    },
+    {
+      "path": "docs/mood-masterpiece/painting-v13.webp",
+      "role": "Completed v13 painting; actual input to v15 label edit",
+      "sourceFile": "new-duo.v13.png",
+      "width": 1115,
+      "height": 1410,
+      "sha256": "66638984bb9f7d7bad01380ff287d6d172ba2d0d3e40dc2b50016bd90e209293",
+      "decodedPixelsIdentical": true,
+      "publication": "PR review evidence, not gallery assets"
+    }
+  ]
+}
