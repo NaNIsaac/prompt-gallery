@@ -1,0 +1,204 @@
+{
+  "id": "pingu-clay",
+  "date": "2026-10-22",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "selectedVersion": "v3",
+  "approvedByUser": true,
+  "approval": {
+    "response": "결과 확정·PR 제출",
+    "scope": "Finalize shown v3 and prompt; register assets and submit a Draft PR. No merge or production deployment requested."
+  },
+  "branch": "codex/pingu",
+  "baseCommit": "a0c14f6eb985bd2bed0e6a1f2e38b55f3f028675",
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "baseRemote": "origin",
+  "headRemote": "origin",
+  "promptFile": "docs/pingu-clay-prompt-v3.txt",
+  "finalPrompt": "입력 이미지 1은 변환할 원본 사진이고, 입력 이미지 2는 「핑구(Pingu)」의 캐릭터 조형과 점토 재질을 맞추기 위한 스타일 참고입니다. 이미지 1의 인물을 이미지 2처럼 생긴 클래식 핑구 세계의 펭귄 점토 캐릭터로 바꿔 주세요. 이미지 2의 손 흔드는 자세나 화면 구도를 복사하지 말고, 이미지 1의 인물 수·위치·시선·자세·행동과 전체 구도 및 종횡비를 유지해 주세요.\n\n가장 중요한 것은 이미지 2의 얼굴 구조입니다. 머리와 얼굴 전체는 검정에 가까운 짙은 남색 점토이고, 흰 부분은 몸의 배에만 있습니다. 검은 얼굴 위에 작은 흰 타원 테두리 두 개를 놓고 그 안을 검정으로 채운 아주 단순한 눈을 만드세요. 사람 같은 흰 얼굴 마스크, 커다란 흰자, 반짝이는 유리 구슬 눈이나 홍채·속눈썹은 만들지 마세요. 부리는 이미지 2처럼 선명한 빨강의 낮고 넓은 타원형 점토 덩어리로, 얼굴 정면에 가로로 납작하게 붙이고 아주 얕은 입선만 표현하세요. 길쭉한 오리 부리나 두툼한 사람 입술처럼 겹친 형태로 바꾸지 마세요. 가로로 넓고 약간 불규칙한 둥근 머리, 짧고 통통한 몸통, 길고 유연한 물갈퀴 모양 날개와 넓적한 발 등 이미지 2의 단순한 수제 비례를 따르세요.\n\n사진 속 인물의 안경·의상·가방·소품은 주요 색과 형태가 식별되도록 단순한 점토로 남겨 주세요. 원본에 안경이 있으면 반드시 그대로 착용시켜 주세요. 핑구의 작은 흰 테두리 눈 바깥에 원본과 같은 모양의 얇은 안경테와 코 연결부, 양옆 다리를 별도 점토 소품으로 만들고 안경을 생략하지 마세요. 원본에 신발이 보이면 발을 그대로 노출시키지 말고 원본 신발의 색·형태·밑창을 반영한 넓적한 점토 신발을 반드시 신겨 주세요. 머리 모양은 검은 머리 덩어리와 자연스럽게 이어지는 최소한의 실루엣으로만 반영하고, 사람 머리카락 가발이나 머리카락 가닥을 붙이지 마세요. 바지와 신발이 보이면 펭귄 체형에 맞게 짧고 넓게 재해석하되 원본의 색과 형태를 유지하세요. 손으로 하는 동작은 검은 날개가 같은 소품을 자연스럽게 잡도록 옮기세요. 배경은 원본의 장소·계절·주요 사물 배치를 읽을 수 있는 단순한 점토 미니어처 세트로 바꾸세요. 원본에 없는 캐릭터를 더하거나 남극·이글루로 장소를 바꾸지 마세요.\n\n표면은 이미지 2처럼 매끈하게 손으로 문지른 플라스티신이며 미세한 눌림·이음새만 남기세요. 과장된 거친 알갱이, 털, 직물 섬유, 가죽 결이나 사실적인 나뭇결 대신 큰 덩어리와 절제된 디테일로 통일하세요. 부드러운 스튜디오 조명과 접촉 그림자, 은은한 점토 반사광, 실제 스톱모션 인형을 촬영한 느낌을 사용하세요. 일반적인 귀여운 3D 마스코트나 봉제인형으로 바꾸지 마세요. 글자·자막·로고·워터마크 없이 완성 이미지 한 장만 만들어 주세요.",
+  "source": {
+    "type": "AI-generated fictional adult photo",
+    "actualToolArguments": {
+      "prompt": "Use case: photorealistic-natural\nAsset type: fictional source photograph for a photo transformation prompt test, one single square image.\nPrimary request: A realistic candid photograph of one fictional adult East Asian woman sitting on a wooden park bench beside a small pond in an autumn city park. She has a chin-length straight black bob with bangs and round dark-rimmed glasses. She wears a mustard-yellow wool coat, a dark teal knitted scarf, blue trousers and white sneakers. A small burgundy crossbody satchel rests at her hip. She holds a plain cream paper cup with both hands in her lap and glances toward the camera with a gentle amused smile. Show her full seated figure, both shoes, bench, pond, a few reeds, a footpath and softly receding golden trees. Eye-level three-quarter view, subject slightly left of center, ordinary overcast daylight, natural skin texture and realistic anatomy. Quiet everyday atmosphere, not a fashion advert.\nConstraints: Exactly one adult person. No other people, no animals, no text, no logos, no watermark. Photographic realism, not clay or animation. This is an invented person, not a real user's photograph.",
+      "transparent_background": false
+    },
+    "generatedFile": "exec-a8ee236e-17ac-4412-af07-0def43277b6a.png",
+    "path": "assets/images/pingu-clay.reference.webp",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "03b82a608789584f1a44f9ce8935c99583be5c43a50c30d407ff2fdbfd6c7ff4",
+    "originalPngFile": "reference.png",
+    "originalPngSha256": "2f00a93b3bd6e2ecd9f748701bf04b70631a4fa9ab72e28628fc13737a30cbc4",
+    "pixelExact": true
+  },
+  "styleReference": {
+    "type": "user-provided Pingu character reference",
+    "source": "User attachment in this task; original external URL was not supplied.",
+    "role": "Style and character construction only, not pose or composition",
+    "path": "assets/images/pingu-clay.style-reference.webp",
+    "width": 563,
+    "height": 482,
+    "sha256": "d0fca8c2b0cffdb280cbcf1a12d5ff02821d230f20c8bbb40da085406831ac10",
+    "originalPngFile": "style-reference-user.png",
+    "originalPngSha256": "14cfe318d6ad6b674e4339f34f92a7c77689c71a25b432924a1dfc2b9cd40fb4",
+    "pixelExact": true
+  },
+  "result": {
+    "path": "assets/images/pingu-clay.webp",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "a7fad88ae735b4b7dd3ce99ed2150d1ce85af2917b377d383473ea3e5a744040",
+    "originalPngFile": "result-v3.png",
+    "originalPngSha256": "05d222cf100065bdfdb3e1cc65b2af49eecf4fc6d5f166982f12807f3320538d",
+    "pixelExact": true,
+    "generatedFile": "exec-a379e16a-9fcc-4987-a88b-6ff84bef2cbb.png",
+    "actualToolArguments": {
+      "prompt": "입력 이미지 1은 변환할 원본 사진이고, 입력 이미지 2는 「핑구(Pingu)」의 캐릭터 조형과 점토 재질을 맞추기 위한 스타일 참고입니다. 이미지 1의 인물을 이미지 2처럼 생긴 클래식 핑구 세계의 펭귄 점토 캐릭터로 바꿔 주세요. 이미지 2의 손 흔드는 자세나 화면 구도를 복사하지 말고, 이미지 1의 인물 수·위치·시선·자세·행동과 전체 구도 및 종횡비를 유지해 주세요.\n\n가장 중요한 것은 이미지 2의 얼굴 구조입니다. 머리와 얼굴 전체는 검정에 가까운 짙은 남색 점토이고, 흰 부분은 몸의 배에만 있습니다. 검은 얼굴 위에 작은 흰 타원 테두리 두 개를 놓고 그 안을 검정으로 채운 아주 단순한 눈을 만드세요. 사람 같은 흰 얼굴 마스크, 커다란 흰자, 반짝이는 유리 구슬 눈이나 홍채·속눈썹은 만들지 마세요. 부리는 이미지 2처럼 선명한 빨강의 낮고 넓은 타원형 점토 덩어리로, 얼굴 정면에 가로로 납작하게 붙이고 아주 얕은 입선만 표현하세요. 길쭉한 오리 부리나 두툼한 사람 입술처럼 겹친 형태로 바꾸지 마세요. 가로로 넓고 약간 불규칙한 둥근 머리, 짧고 통통한 몸통, 길고 유연한 물갈퀴 모양 날개와 넓적한 발 등 이미지 2의 단순한 수제 비례를 따르세요.\n\n사진 속 인물의 안경·의상·가방·소품은 주요 색과 형태가 식별되도록 단순한 점토로 남겨 주세요. 원본에 안경이 있으면 반드시 그대로 착용시켜 주세요. 핑구의 작은 흰 테두리 눈 바깥에 원본과 같은 모양의 얇은 안경테와 코 연결부, 양옆 다리를 별도 점토 소품으로 만들고 안경을 생략하지 마세요. 원본에 신발이 보이면 발을 그대로 노출시키지 말고 원본 신발의 색·형태·밑창을 반영한 넓적한 점토 신발을 반드시 신겨 주세요. 머리 모양은 검은 머리 덩어리와 자연스럽게 이어지는 최소한의 실루엣으로만 반영하고, 사람 머리카락 가발이나 머리카락 가닥을 붙이지 마세요. 바지와 신발이 보이면 펭귄 체형에 맞게 짧고 넓게 재해석하되 원본의 색과 형태를 유지하세요. 손으로 하는 동작은 검은 날개가 같은 소품을 자연스럽게 잡도록 옮기세요. 배경은 원본의 장소·계절·주요 사물 배치를 읽을 수 있는 단순한 점토 미니어처 세트로 바꾸세요. 원본에 없는 캐릭터를 더하거나 남극·이글루로 장소를 바꾸지 마세요.\n\n표면은 이미지 2처럼 매끈하게 손으로 문지른 플라스티신이며 미세한 눌림·이음새만 남기세요. 과장된 거친 알갱이, 털, 직물 섬유, 가죽 결이나 사실적인 나뭇결 대신 큰 덩어리와 절제된 디테일로 통일하세요. 부드러운 스튜디오 조명과 접촉 그림자, 은은한 점토 반사광, 실제 스톱모션 인형을 촬영한 느낌을 사용하세요. 일반적인 귀여운 3D 마스코트나 봉제인형으로 바꾸지 마세요. 글자·자막·로고·워터마크 없이 완성 이미지 한 장만 만들어 주세요.",
+      "referenced_image_paths": [
+        "assets/images/pingu-clay.reference.webp",
+        "assets/images/pingu-clay.style-reference.webp"
+      ],
+      "transparent_background": false
+    },
+    "inputPathMapping": "Generation used two original PNGs in this order: fictional photo, user-provided Pingu style reference. Public WebPs have identical decoded RGBA pixels. Absolute local paths are normalized in this public record.",
+    "postEditing": false
+  },
+  "thumbnail": {
+    "path": "assets/images/pingu-clay.thumb.webp",
+    "width": 800,
+    "height": 800,
+    "sha256": "3958ecd3d60c74298ca5b527c78bb8a5526a10f18f4c4ad79a42d54b377d0f2c",
+    "resized": true,
+    "quality": 85
+  },
+  "history": [
+    {
+      "version": "v1",
+      "selected": false,
+      "actualToolArguments": {
+        "prompt": "첨부한 사진을 「핑구(Pingu)」의 클래식 스톱모션 애니메이션 속 한 장면으로 바꿔 주세요.\n\n사진 속 인물을 각각 그 사람을 알아볼 수 있는 귀여운 펭귄 점토 캐릭터로 재해석해 주세요. 검은 몸과 하얀 얼굴·배, 둥근 머리와 짧은 날개, 작은 검은 눈, 도톰한 주황빛 빨간 부리와 넓적한 발을 가진 핑구 특유의 단순하고 말랑한 비례를 사용하세요. 원본의 인물 수, 상대적인 크기와 위치, 시선, 표정의 감정, 자세와 행동을 유지하세요. 머리 모양과 안경 등 식별 특징은 단순한 점토 디테일로 옮기고, 옷·신발·가방·소품의 주요 색과 형태는 펭귄 체형에 맞춰 남겨 주세요. 손으로 하던 동작은 짧은 날개가 같은 소품을 자연스럽게 잡는 동작으로 표현하세요.\n\n배경도 사진의 장소와 계절, 시점, 주요 사물의 배치가 읽히는 작은 수제 미니어처 세트로 만드세요. 사진 속 장면 자체를 유지하면서 표정과 몸짓에 소박하고 장난스러운 핑구의 분위기를 담아 주세요. 무광 플라스티신의 둥근 모서리, 은근한 손자국과 눌린 자국, 간결한 색면, 부드러운 스튜디오 조명과 접촉 그림자, 미니어처 촬영의 얕은 심도로 실물 점토 인형을 한 프레임씩 촬영한 느낌을 내세요. 얼굴·몸·의상·소품·배경의 재질과 디테일 수준을 통일하세요.\n\n원본에 없는 인물이나 캐릭터를 추가하지 마세요. 장소를 임의로 남극이나 이글루로 바꾸지 마세요. 실사 피부, 털·깃털의 세밀한 묘사, 매끈한 플라스틱 광택, 일반적인 3D 게임 렌더 느낌, 자막·글자·로고·워터마크는 넣지 마세요. 원본 사진의 종횡비와 전체 구도를 유지하고 완성 이미지 한 장만 만들어 주세요.",
+        "transparent_background": false,
+        "referenced_image_paths": [
+          "assets/images/pingu-clay.reference.webp"
+        ]
+      },
+      "generatedFile": "exec-fb99ca7c-8f1c-4fc3-b81f-f692abed982a.png",
+      "originalPngSha256": "a044c985e65eec6eda2d3e8b12ce29ec33f700b2ae26e594b212ce5e3a4ada8f",
+      "published": false,
+      "review": {
+        "preserved": [
+          "one subject",
+          "round glasses and bob hairstyle",
+          "mustard coat, teal scarf and burgundy satchel",
+          "seated bench pose holding cup with two wings",
+          "pond, autumn park, bench and square framing"
+        ],
+        "limitations": [
+          "blue trousers and white sneakers omitted in favor of penguin belly and orange feet despite preservation request",
+          "eyes larger and head rounder than classic Pingu",
+          "penguin proportions shorten the body and alter precise framing",
+          "one fictional adult photo tested; other subjects untested"
+        ]
+      }
+    },
+    {
+      "version": "v2",
+      "selected": false,
+      "actualToolArguments": {
+        "prompt": "입력 이미지 1은 변환할 원본 사진이고, 입력 이미지 2는 「핑구(Pingu)」의 캐릭터 조형과 점토 재질을 맞추기 위한 스타일 참고입니다. 이미지 1의 인물을 이미지 2처럼 생긴 클래식 핑구 세계의 펭귄 점토 캐릭터로 바꿔 주세요. 이미지 2의 손 흔드는 자세나 화면 구도를 복사하지 말고, 이미지 1의 인물 수·위치·시선·자세·행동과 전체 구도 및 종횡비를 유지해 주세요.\n\n가장 중요한 것은 이미지 2의 얼굴 구조입니다. 머리와 얼굴 전체는 검정에 가까운 짙은 남색 점토이고, 흰 부분은 몸의 배에만 있습니다. 검은 얼굴 위에 작은 흰 타원 테두리 두 개를 놓고 그 안을 검정으로 채운 아주 단순한 눈을 만드세요. 사람 같은 흰 얼굴 마스크, 커다란 흰자, 반짝이는 유리 구슬 눈이나 홍채·속눈썹은 만들지 마세요. 부리는 이미지 2처럼 선명한 빨강의 낮고 넓은 타원형 점토 덩어리로, 얼굴 정면에 가로로 납작하게 붙이고 아주 얕은 입선만 표현하세요. 길쭉한 오리 부리나 두툼한 사람 입술처럼 겹친 형태로 바꾸지 마세요. 가로로 넓고 약간 불규칙한 둥근 머리, 짧고 통통한 몸통, 길고 유연한 물갈퀴 모양 날개와 넓적한 발 등 이미지 2의 단순한 수제 비례를 따르세요.\n\n사진 속 인물의 안경·의상·가방·소품은 주요 색과 형태가 식별되도록 단순한 점토로 남겨 주세요. 머리 모양은 검은 머리 덩어리와 자연스럽게 이어지는 최소한의 실루엣으로만 반영하고, 사람 머리카락 가발이나 머리카락 가닥을 붙이지 마세요. 바지와 신발이 보이면 펭귄 체형에 맞게 짧고 넓게 재해석하되 원본의 색과 형태를 유지하세요. 손으로 하는 동작은 검은 날개가 같은 소품을 자연스럽게 잡도록 옮기세요. 배경은 원본의 장소·계절·주요 사물 배치를 읽을 수 있는 단순한 점토 미니어처 세트로 바꾸세요. 원본에 없는 캐릭터를 더하거나 남극·이글루로 장소를 바꾸지 마세요.\n\n표면은 이미지 2처럼 매끈하게 손으로 문지른 플라스티신이며 미세한 눌림·이음새만 남기세요. 과장된 거친 알갱이, 털, 직물 섬유, 가죽 결이나 사실적인 나뭇결 대신 큰 덩어리와 절제된 디테일로 통일하세요. 부드러운 스튜디오 조명과 접촉 그림자, 은은한 점토 반사광, 실제 스톱모션 인형을 촬영한 느낌을 사용하세요. 일반적인 귀여운 3D 마스코트나 봉제인형으로 바꾸지 마세요. 글자·자막·로고·워터마크 없이 완성 이미지 한 장만 만들어 주세요.",
+        "referenced_image_paths": [
+          "assets/images/pingu-clay.reference.webp",
+          "assets/images/pingu-clay.style-reference.webp"
+        ],
+        "transparent_background": false
+      },
+      "generatedFile": "exec-1ed0ae1a-6713-4851-8461-7a8062f005d0.png",
+      "originalPngSha256": "1ec5141af5e3941cd2862c236e5a3984b4da37f828a616130f295e638e45d983",
+      "published": false,
+      "review": {
+        "improved": [
+          "black face",
+          "small white-ring eyes",
+          "red oval beak",
+          "blue trousers restored",
+          "restrained clay hairstyle"
+        ],
+        "limitations": [
+          "round glasses omitted",
+          "white shoes omitted",
+          "rough surface remains more detailed than reference"
+        ]
+      }
+    },
+    {
+      "version": "v3",
+      "selected": true,
+      "actualToolArguments": {
+        "prompt": "입력 이미지 1은 변환할 원본 사진이고, 입력 이미지 2는 「핑구(Pingu)」의 캐릭터 조형과 점토 재질을 맞추기 위한 스타일 참고입니다. 이미지 1의 인물을 이미지 2처럼 생긴 클래식 핑구 세계의 펭귄 점토 캐릭터로 바꿔 주세요. 이미지 2의 손 흔드는 자세나 화면 구도를 복사하지 말고, 이미지 1의 인물 수·위치·시선·자세·행동과 전체 구도 및 종횡비를 유지해 주세요.\n\n가장 중요한 것은 이미지 2의 얼굴 구조입니다. 머리와 얼굴 전체는 검정에 가까운 짙은 남색 점토이고, 흰 부분은 몸의 배에만 있습니다. 검은 얼굴 위에 작은 흰 타원 테두리 두 개를 놓고 그 안을 검정으로 채운 아주 단순한 눈을 만드세요. 사람 같은 흰 얼굴 마스크, 커다란 흰자, 반짝이는 유리 구슬 눈이나 홍채·속눈썹은 만들지 마세요. 부리는 이미지 2처럼 선명한 빨강의 낮고 넓은 타원형 점토 덩어리로, 얼굴 정면에 가로로 납작하게 붙이고 아주 얕은 입선만 표현하세요. 길쭉한 오리 부리나 두툼한 사람 입술처럼 겹친 형태로 바꾸지 마세요. 가로로 넓고 약간 불규칙한 둥근 머리, 짧고 통통한 몸통, 길고 유연한 물갈퀴 모양 날개와 넓적한 발 등 이미지 2의 단순한 수제 비례를 따르세요.\n\n사진 속 인물의 안경·의상·가방·소품은 주요 색과 형태가 식별되도록 단순한 점토로 남겨 주세요. 원본에 안경이 있으면 반드시 그대로 착용시켜 주세요. 핑구의 작은 흰 테두리 눈 바깥에 원본과 같은 모양의 얇은 안경테와 코 연결부, 양옆 다리를 별도 점토 소품으로 만들고 안경을 생략하지 마세요. 원본에 신발이 보이면 발을 그대로 노출시키지 말고 원본 신발의 색·형태·밑창을 반영한 넓적한 점토 신발을 반드시 신겨 주세요. 머리 모양은 검은 머리 덩어리와 자연스럽게 이어지는 최소한의 실루엣으로만 반영하고, 사람 머리카락 가발이나 머리카락 가닥을 붙이지 마세요. 바지와 신발이 보이면 펭귄 체형에 맞게 짧고 넓게 재해석하되 원본의 색과 형태를 유지하세요. 손으로 하는 동작은 검은 날개가 같은 소품을 자연스럽게 잡도록 옮기세요. 배경은 원본의 장소·계절·주요 사물 배치를 읽을 수 있는 단순한 점토 미니어처 세트로 바꾸세요. 원본에 없는 캐릭터를 더하거나 남극·이글루로 장소를 바꾸지 마세요.\n\n표면은 이미지 2처럼 매끈하게 손으로 문지른 플라스티신이며 미세한 눌림·이음새만 남기세요. 과장된 거친 알갱이, 털, 직물 섬유, 가죽 결이나 사실적인 나뭇결 대신 큰 덩어리와 절제된 디테일로 통일하세요. 부드러운 스튜디오 조명과 접촉 그림자, 은은한 점토 반사광, 실제 스톱모션 인형을 촬영한 느낌을 사용하세요. 일반적인 귀여운 3D 마스코트나 봉제인형으로 바꾸지 마세요. 글자·자막·로고·워터마크 없이 완성 이미지 한 장만 만들어 주세요.",
+        "referenced_image_paths": [
+          "assets/images/pingu-clay.reference.webp",
+          "assets/images/pingu-clay.style-reference.webp"
+        ],
+        "transparent_background": false
+      },
+      "generatedFile": "exec-a379e16a-9fcc-4987-a88b-6ff84bef2cbb.png",
+      "originalPngSha256": "05d222cf100065bdfdb3e1cc65b2af49eecf4fc6d5f166982f12807f3320538d",
+      "published": true,
+      "review": {
+        "improved": [
+          "black face with white ring eyes and low red oval beak follow supplied Pingu reference",
+          "original round glasses restored",
+          "yellow coat, teal scarf, burgundy bag, blue trousers and white sneakers retained",
+          "cup held with two black wings; bench and autumn pond retained"
+        ],
+        "limitations": [
+          "original bob hairstyle no longer identifiable; smooth Pingu head prioritized",
+          "eyes still somewhat larger than reference",
+          "clothing and bench surface remain more textured than original Pingu",
+          "style reference used in addition to prompt; text-only reproduction not tested",
+          "one fictional adult source only"
+        ]
+      }
+    }
+  ],
+  "visualReview": {
+    "improved": [
+      "black face with white ring eyes and low red oval beak follow supplied Pingu reference",
+      "original round glasses restored",
+      "yellow coat, teal scarf, burgundy bag, blue trousers and white sneakers retained",
+      "cup held with two black wings; bench and autumn pond retained"
+    ],
+    "limitations": [
+      "original bob hairstyle no longer identifiable; smooth Pingu head prioritized",
+      "eyes still somewhat larger than reference",
+      "clothing and bench surface remain more textured than original Pingu",
+      "style reference used in addition to prompt; text-only reproduction not tested",
+      "one fictional adult source only"
+    ]
+  },
+  "catalogPreservation": {
+    "previousCount": 49,
+    "newCount": 50,
+    "previousMinOrder": -43,
+    "newOrder": -44,
+    "existingEntriesUnchanged": true
+  },
+  "validation": {
+    "losslessDecodedPixels": "all three full-size WebPs match original PNG decoded RGBA buffers",
+    "prompt": "catalog, selected actual tool input and prompt file match (line-ending/trailing file newline normalization only)",
+    "npmRunCheck": {
+      "status": "passed",
+      "unitTests": 34,
+      "builtPrompts": 50,
+      "browserTests": 58,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ]
+    },
+    "gitDiffCheck": "passed",
+    "publicAssetHashes": "all four published files verified",
+    "existingCatalog": "all previous 49 entries and their relative order unchanged; new order -44"
+  }
+}
