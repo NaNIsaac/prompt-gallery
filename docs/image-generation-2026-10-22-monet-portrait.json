@@ -1,0 +1,131 @@
+{
+  "id": "monet-portrait",
+  "date": "2026-10-22",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "selectedVersion": "v5-photo-only",
+  "approvedByUser": true,
+  "approval": {
+    "date": "2026-10-22",
+    "response": "v5로 확정·기존 PR 요청 진행",
+    "scope": "Register v5 photo-only prompt and both approved examples, validate, commit/push and submit Draft PR; no merge/deployment authorization.",
+    "priorVersion": "v4-reference-assisted",
+    "priorResponse": "결과 확정·PR 제출",
+    "publicReplacement": "v5 photo-only examples explicitly accepted"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/monet-painting",
+  "initialBaseCommit": "e13c78af5af3237a9d8db110f3d0cbcb2e51d25d",
+  "publicationBaseCommit": "1c7a1c07801ed69242da4a1676220b42c1b30d27",
+  "publicPromptFile": "docs/monet-portrait-prompt-v5.txt",
+  "publicPrompt": "첨부한 사진을 클로드 모네의 인물화에서 볼 수 있는 유화 표현으로 다시 그려 주세요. 사진의 인물 수, 자세, 머리 모양, 의복 종류, 전체 화면 비율과 주요 배경 배치는 유지해 주세요. 안경이나 수염, 소품은 원본에 있을 때만 남기고, 양산·모자·시대 의상 등 원본에 없는 대상을 추가하지 마세요.\n\n넓고 얇게 이어지는 색의 흐름과 소수의 단단한 명암 덩어리를 중심으로 그려 주세요. 사진의 미세한 묘사를 보존하기보다 과감한 회화적 생략을 우선해 주세요. 얼굴은 피부결·속눈썹·입술 경계 없이 몇 개의 넓은 살구색·탁한 분홍·회보라색 면으로 암시하고, 눈·코·입은 작은 붓 자국 몇 개만 남겨 주세요. 인물은 머리의 실루엣, 얼굴의 방향, 원본에 있는 안경·수염의 간략한 형태, 표정과 자세로 알아볼 수 있게 해 주세요. 옷의 니트 짜임과 촘촘한 주름은 생략하고, 빛과 그늘의 큰 색 덩어리 위에 길고 유연한 붓질을 놓아 주세요. 손도 세부 윤곽을 좇지 말고 밝고 어두운 면으로 단순화해 주세요.\n\n명암과 색의 덩어리가 먼저 보이고 개별 붓 자국은 그 안에 녹아들게 해 주세요. 붓질은 넓거나 가늘고, 길거나 짧으며, 성기거나 겹쳐지는 등 부위에 따라 달라야 합니다. 인물과 주변이 닿는 일부 경계는 색 속에서 사라지게 하고, 필요한 부분만 짧게 남겨 주세요. 원본 빛에 맞춰 밝은 천에는 주변에서 반사된 색이 스미게 하며, 깊은 머리색과 옷의 그늘도 남겨 주세요. 배경은 작은 사물 하나하나를 묘사하기보다 대기의 색 덩어리로 처리해 주세요.\n\n물감을 얇게 문지르고 겹친 듯한 표면과 곳곳에 비치는 캔버스 바탕을 살려 주세요. 두꺼운 나이프 자국, 융기한 물감 조각, 균일한 색종이 모자이크, 반짝이는 피부, 사진적인 안경·이목구비, 또렷한 테두리, 과도한 채도는 피해주세요. 얼굴에 단순 흐림 필터를 씌우지 마세요. 세부를 그리지 않은 회화적 생략으로 표현해 주세요. 글자·서명·워터마크·액자 없이 한 장의 유화로 완성해 주세요.",
+  "publicInputContract": "Exactly one user portrait photo plus public prompt; no external painting references, browsing or extra instructions.",
+  "history": [
+    {
+      "version": "v1-v2",
+      "inputs": "photo only",
+      "status": "internal exploration; not published"
+    },
+    {
+      "version": "v3-v4",
+      "inputs": "photo plus two user-provided painting references",
+      "status": "v4 visually accepted, kept as internal comparison; not presented as a photo-only public example"
+    },
+    {
+      "version": "v5",
+      "changes": "Replace reference numbering with self-contained style descriptions; condition glasses/beard/props on their presence; generalize reflected colors and background for indoor/outdoor photographs.",
+      "inputs": "Each source photo alone with identical public prompt",
+      "status": "success; publicly selected by user"
+    }
+  ],
+  "generationSteps": [
+    {
+      "id": "garden-woman",
+      "source": {
+        "path": "assets/images/monet-portrait.reference.webp",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "615f064de04c5009b390e09241a85387e935940184fb48f1253560349055655b",
+        "originalPngSha256": "642545c75db1ad86d9584bc3427235fcc5c1e7061d2621921aad627e77eb5419",
+        "generatedFile": "exec-b748901e-ef75-4e61-9c8a-83efa256b0bc.png",
+        "pixelExact": true,
+        "prompt": "Generate one photorealistic natural editorial photograph in a vertical 2:3 composition, not a painting. One fictional Korean woman in her early thirties stands on a pale gravel path in a small leafy public garden. Frame her from the top of her head to just below her knees; show both hands naturally resting loosely together at waist level, empty hands. She has a chin-length straight dark brown bob with a side part, thin round dark-rimmed eyeglasses, an oval face, and a small relaxed closed-mouth smile. She wears an open brick-red knitted cardigan over a plain ivory crew-neck shirt and a navy pleated skirt. Her body is turned slightly while her face looks toward the camera. Late afternoon sunlight enters from the upper left, casting patches of warm light and leafy shadows on her cardigan, face, gravel and plants. Behind her, a curving garden path, low green shrubs, a few white daisies, tall trees and a small simple pale stone wall on the far right. Natural skin texture, believable proportions and ordinary camera detail; recognizable environment with moderate depth of field. No other people, no water, bridge, umbrella, hats, bags, jewelry, text, logos, watermark or frame. Full-bleed fictional AI reference photograph for a photo-to-painting test."
+      },
+      "transformation": {
+        "actualToolArguments": {
+          "prompt": "첨부한 사진을 클로드 모네의 인물화에서 볼 수 있는 유화 표현으로 다시 그려 주세요. 사진의 인물 수, 자세, 머리 모양, 의복 종류, 전체 화면 비율과 주요 배경 배치는 유지해 주세요. 안경이나 수염, 소품은 원본에 있을 때만 남기고, 양산·모자·시대 의상 등 원본에 없는 대상을 추가하지 마세요.\n\n넓고 얇게 이어지는 색의 흐름과 소수의 단단한 명암 덩어리를 중심으로 그려 주세요. 사진의 미세한 묘사를 보존하기보다 과감한 회화적 생략을 우선해 주세요. 얼굴은 피부결·속눈썹·입술 경계 없이 몇 개의 넓은 살구색·탁한 분홍·회보라색 면으로 암시하고, 눈·코·입은 작은 붓 자국 몇 개만 남겨 주세요. 인물은 머리의 실루엣, 얼굴의 방향, 원본에 있는 안경·수염의 간략한 형태, 표정과 자세로 알아볼 수 있게 해 주세요. 옷의 니트 짜임과 촘촘한 주름은 생략하고, 빛과 그늘의 큰 색 덩어리 위에 길고 유연한 붓질을 놓아 주세요. 손도 세부 윤곽을 좇지 말고 밝고 어두운 면으로 단순화해 주세요.\n\n명암과 색의 덩어리가 먼저 보이고 개별 붓 자국은 그 안에 녹아들게 해 주세요. 붓질은 넓거나 가늘고, 길거나 짧으며, 성기거나 겹쳐지는 등 부위에 따라 달라야 합니다. 인물과 주변이 닿는 일부 경계는 색 속에서 사라지게 하고, 필요한 부분만 짧게 남겨 주세요. 원본 빛에 맞춰 밝은 천에는 주변에서 반사된 색이 스미게 하며, 깊은 머리색과 옷의 그늘도 남겨 주세요. 배경은 작은 사물 하나하나를 묘사하기보다 대기의 색 덩어리로 처리해 주세요.\n\n물감을 얇게 문지르고 겹친 듯한 표면과 곳곳에 비치는 캔버스 바탕을 살려 주세요. 두꺼운 나이프 자국, 융기한 물감 조각, 균일한 색종이 모자이크, 반짝이는 피부, 사진적인 안경·이목구비, 또렷한 테두리, 과도한 채도는 피해주세요. 얼굴에 단순 흐림 필터를 씌우지 마세요. 세부를 그리지 않은 회화적 생략으로 표현해 주세요. 글자·서명·워터마크·액자 없이 한 장의 유화로 완성해 주세요.",
+          "referenced_image_paths": [
+            "assets/images/monet-portrait.reference.webp"
+          ],
+          "transparent_background": false
+        },
+        "inputPathMapping": "Source path normalized to its published lossless WebP; generation used the identical decoded PNG source.",
+        "styleReferences": [],
+        "additionalInstructions": [],
+        "path": "assets/images/monet-portrait.webp",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "f4e52ff7b0b35f9617511e5040d89f1da5107519edee5cc216bfaba2ba2d3341",
+        "originalPngSha256": "62611095edda5db40503f4f77038d2a767553e9801320edab6afaf88bd8d6f99",
+        "generatedFile": "exec-ae64b882-a7fa-419a-9ea3-7791bbba024a.png",
+        "pixelExact": true,
+        "status": "success",
+        "retouched": false
+      },
+      "review": "AI 가상 원본·결과 · 야외 성인 여성 사진 한 장과 공개 v5 문구만 사용했습니다. 회화 참고 이미지는 첨부하지 않았습니다. 단발·안경·붉은 카디건·남색 치마와 손의 자세, 정원 길을 유지했습니다. 얼굴과 손가락 세부는 단순해지고 색감은 더 선명해졌으며, 안경과 얼굴 윤곽은 비교적 또렷합니다."
+    },
+    {
+      "id": "indoor-man",
+      "source": {
+        "path": "assets/images/monet-portrait.man.reference.webp",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "7cb9ad491efc85156f7d3ffc9d4d74cfdccafea8d4c04de148a2be59e5c90277",
+        "originalPngSha256": "7ce466928ad8d78aaa528fe6b85ecf01ff1ab1dc0b58d654fbe0ffedccd7968d",
+        "generatedFile": "exec-27c06262-d05d-4341-933c-3716b843401f.png",
+        "pixelExact": true,
+        "prompt": "Generate one photorealistic natural editorial portrait photograph, vertical 2:3 full-bleed image, not a painting. A fictional man in his late fifties sits quietly in a simple wooden chair beside a tall window in a modest room. Frame from the top of the head to mid-thigh with both hands visible resting separately on his thighs. He has short receding salt-and-pepper hair, a close-cropped gray beard and mustache, a slightly broad nose and a lined thoughtful face. He wears a plain dark olive wool jacket over a light blue open-collar cotton shirt and charcoal trousers. No eyeglasses, hat, tie or jewelry. His torso is angled a little toward the window on the left, face turned three-quarters toward camera, mouth closed with a calm neutral expression. Warm late-afternoon daylight from the window strikes his left cheek and shirt; the right side of his face and jacket falls into deep but readable cool shadow. Background: a pale gray plaster wall, the wooden window frame on the far left, a brown curtain gathered to the right, and a small wooden side table behind him on the right with a single plain white ceramic cup. Restrained natural colors, believable skin, beard and fabric texture, ordinary realistic camera detail and moderately sharp background. No other people, no paintings, books, text, logos, watermark, garden, flowers, umbrellas or frame. This is a new fictional AI-generated reference photograph, not a photograph of a known person."
+      },
+      "transformation": {
+        "actualToolArguments": {
+          "prompt": "첨부한 사진을 클로드 모네의 인물화에서 볼 수 있는 유화 표현으로 다시 그려 주세요. 사진의 인물 수, 자세, 머리 모양, 의복 종류, 전체 화면 비율과 주요 배경 배치는 유지해 주세요. 안경이나 수염, 소품은 원본에 있을 때만 남기고, 양산·모자·시대 의상 등 원본에 없는 대상을 추가하지 마세요.\n\n넓고 얇게 이어지는 색의 흐름과 소수의 단단한 명암 덩어리를 중심으로 그려 주세요. 사진의 미세한 묘사를 보존하기보다 과감한 회화적 생략을 우선해 주세요. 얼굴은 피부결·속눈썹·입술 경계 없이 몇 개의 넓은 살구색·탁한 분홍·회보라색 면으로 암시하고, 눈·코·입은 작은 붓 자국 몇 개만 남겨 주세요. 인물은 머리의 실루엣, 얼굴의 방향, 원본에 있는 안경·수염의 간략한 형태, 표정과 자세로 알아볼 수 있게 해 주세요. 옷의 니트 짜임과 촘촘한 주름은 생략하고, 빛과 그늘의 큰 색 덩어리 위에 길고 유연한 붓질을 놓아 주세요. 손도 세부 윤곽을 좇지 말고 밝고 어두운 면으로 단순화해 주세요.\n\n명암과 색의 덩어리가 먼저 보이고 개별 붓 자국은 그 안에 녹아들게 해 주세요. 붓질은 넓거나 가늘고, 길거나 짧으며, 성기거나 겹쳐지는 등 부위에 따라 달라야 합니다. 인물과 주변이 닿는 일부 경계는 색 속에서 사라지게 하고, 필요한 부분만 짧게 남겨 주세요. 원본 빛에 맞춰 밝은 천에는 주변에서 반사된 색이 스미게 하며, 깊은 머리색과 옷의 그늘도 남겨 주세요. 배경은 작은 사물 하나하나를 묘사하기보다 대기의 색 덩어리로 처리해 주세요.\n\n물감을 얇게 문지르고 겹친 듯한 표면과 곳곳에 비치는 캔버스 바탕을 살려 주세요. 두꺼운 나이프 자국, 융기한 물감 조각, 균일한 색종이 모자이크, 반짝이는 피부, 사진적인 안경·이목구비, 또렷한 테두리, 과도한 채도는 피해주세요. 얼굴에 단순 흐림 필터를 씌우지 마세요. 세부를 그리지 않은 회화적 생략으로 표현해 주세요. 글자·서명·워터마크·액자 없이 한 장의 유화로 완성해 주세요.",
+          "referenced_image_paths": [
+            "assets/images/monet-portrait.man.reference.webp"
+          ],
+          "transparent_background": false
+        },
+        "inputPathMapping": "Source path normalized to its published lossless WebP; generation used the identical decoded PNG source.",
+        "styleReferences": [],
+        "additionalInstructions": [],
+        "path": "assets/images/monet-portrait.man.webp",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "0a249eebae34bf5c3574063a26388333a6e9bc706d7c93b4c19eec426c261af6",
+        "originalPngSha256": "eccf3ba190fe9101aad0890f0bdf7c9bf20bec180e905af5712039d8b8cf70f6",
+        "generatedFile": "exec-36e634f4-f1a6-48dd-9357-edfc25adeb15.png",
+        "pixelExact": true,
+        "status": "success",
+        "retouched": false
+      },
+      "review": "AI 가상 원본·결과 · 창가의 성인 남성 사진 한 장과 같은 공개 v5 문구만 사용했습니다. 회화 참고 이미지는 첨부하지 않았습니다. 짧은 회색 머리·수염·재킷·앉은 자세·양손 위치와 창가 구도를 유지했습니다. 얼굴·손·컵의 세부가 단순해지고 깊은 그늘이 밝아졌습니다. 정밀한 얼굴 동일성은 보장하지 않습니다."
+    }
+  ],
+  "thumbnail": {
+    "path": "assets/images/monet-portrait.thumb.webp",
+    "width": 533,
+    "height": 800,
+    "sha256": "65d47c661ef6591292afdbe5f4c2682dba96a1dfb9b56297a27f6d6cf762d970",
+    "method": "Aspect-preserving reduction to 800px height, WebP quality 86; source/result WebP files are lossless."
+  },
+  "validation": {
+    "command": "npm run check",
+    "unitTests": "34 passed",
+    "build": "48 prompts",
+    "browserTests": "56 passed (desktop and mobile Chromium)",
+    "assetConversion": "All four source/result WebP decoded pixels match original PNGs",
+    "promptMatching": "Catalog, prompt file and both actual tool prompts match; one source per final example",
+    "existingCatalog": "47 previous items and relative order preserved",
+    "diffCheck": "passed"
+  }
+}
