@@ -200,5 +200,8 @@
     "gitDiffCheck": "passed",
     "publicAssetHashes": "all four published files verified",
     "existingCatalog": "all previous 49 entries and their relative order unchanged; new order -44"
-  }
+  },
+  "assetRevision": "578efa2db1b971c9474575ee88584aa1a6b4f8cf",
+  "supersededBy": "docs/image-generation-2026-10-23-pingu-accessories.json",
+  "historicalAssetNote": "All relative asset paths in this historical record refer to assetRevision, not the current working tree. Resolve them under https://raw.githubusercontent.com/Q07K/prompt-gallery/578efa2db1b971c9474575ee88584aa1a6b4f8cf/ . Actual generation prompts, inputs and hashes are preserved."
 }

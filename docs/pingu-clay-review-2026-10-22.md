@@ -1,12 +1,14 @@
 # 핑구 점토 펭귄 v3 등록 검토
 
+> 이전 v3 생성 기록입니다. 아래 비교 이미지는 당시 커밋에 고정되어 있으며 현재 v6 예시와 다릅니다. [v6 수정 기록](pingu-accessories-review-2026-10-23.md)을 확인하세요.
+
 사용자가 v3 결과에 대해 “결과 확정·PR 제출”을 선택했다. 같은 전용 브랜치에서 승인된 결과와 문구를 등록하고 Draft PR으로 제출한다. 병합·운영 배포 요청은 없다.
 
 [실제 공개 문구 v3](pingu-clay-prompt-v3.txt) · [실제 입력·문구 이력·치수·해시·픽셀 검증](image-generation-2026-10-22-pingu-clay.json)
 
 | 예시 | 입력 1: AI 가상 원본 | 입력 2: 사용자 제공 스타일 참고 | v3 결과 |
 |---|---|---|---|
-| 가을 공원의 성인 인물 | ![AI 가상 인물](../assets/images/pingu-clay.reference.webp) | ![핑구 스타일 참고](../assets/images/pingu-clay.style-reference.webp) | ![v3 결과](../assets/images/pingu-clay.webp) |
+| 가을 공원의 성인 인물 | ![AI 가상 인물](https://raw.githubusercontent.com/Q07K/prompt-gallery/578efa2db1b971c9474575ee88584aa1a6b4f8cf/assets/images/pingu-clay.reference.webp) | ![핑구 스타일 참고](https://raw.githubusercontent.com/Q07K/prompt-gallery/578efa2db1b971c9474575ee88584aa1a6b4f8cf/assets/images/pingu-clay.style-reference.webp) | ![v3 결과](https://raw.githubusercontent.com/Q07K/prompt-gallery/578efa2db1b971c9474575ee88584aa1a6b4f8cf/assets/images/pingu-clay.webp) |
 
 두 원본을 위 순서로 첨부하고 공개 v3 문구 그대로 생성했다. 추가 지시·후편집은 없다. 사용자 제공 참고는 AI 가상 인물 사진과 별개의 입력이며 외부 출처 URL은 제공되지 않았다.
 
