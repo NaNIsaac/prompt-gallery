@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-24",
+  "tool": "built-in image_gen.imagegen",
+  "sourceType": "AI-generated fictional adult reference photo",
+  "approval": {
+    "date": "2026-10-24",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v2",
+    "scope": "catalog registration, validation and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/simpsons",
+  "baseCommit": "9afb32e0b6592a8a89437569b7ab2d7f1d6b4baf",
+  "items": [
+    {
+      "id": "simpsons",
+      "version": "v2",
+      "sourceGeneration": {
+        "prompt": "Create a photorealistic candid editorial photograph of one fictional adult East Asian woman in her early 30s seated at a small outdoor cafe table. This is a synthetic test reference, not a real person's photograph. She has a chin-length straight black bob with a side part, round thin dark eyeglasses, and a friendly closed-mouth smile. She wears a teal cardigan over a plain cream shirt and a short red neck scarf. Three-quarter waist-up view at eye level, face clearly visible; both hands naturally hold one plain white ceramic mug on the tabletop. A small terracotta planter with green leaves is beside the mug. Behind her are a warm peach cafe facade, one large blue-framed window and distant softly blurred street trees. Soft overcast daylight, realistic skin and fabric texture, believable anatomy, casual phone-photo realism, square composition. Exactly one person. No text, signs, logos, watermarks, illustration or cartoon elements.",
+        "transparent_background": false,
+        "generatedFile": "exec-92811fd0-4933-4712-92ef-ba8f443b56db.png",
+        "pngSha256": "ff7ecdd427337c7d173508586c0deea1404f35adbf9cbf8c5c55c32dafc354ff"
+      },
+      "transformation": {
+        "prompt": "첨부 사진을 《심슨 가족》의 고전적인 2D TV 애니메이션에서 바로 캡처한 한 프레임처럼 다시 그려줘. 인물을 기존 캐릭터로 바꾸지 말고, 원작의 캐릭터 디자인 규칙으로 그린 새로운 스프링필드 주민으로 만들어줘.\n\n인물 수, 대략적인 연령대, 헤어스타일과 머리색, 안경, 표정의 분위기, 옷과 액세서리의 색·종류를 유지해줘. 시점, 프레이밍, 자세, 손에 든 물건, 주변 사물의 위치 관계도 유지해줘. 사진의 식별 특징은 살리되 얼굴의 사실적인 비례를 그대로 따라가지 말고 심슨 특유의 과장된 형태로 적극적으로 바꿔줘.\n\n피부는 균일하고 선명한 노란색. 머리와 턱은 넓고 둥글고 투박한 덩어리로, 눈은 서로 가까이 붙은 큰 흰 구체 두 개와 아주 작은 검은 점 동공으로 그려줘. 눈꺼풀·속눈썹은 필요한 몇 개의 선만 써줘. 코는 얼굴 앞으로 튀어나온 짧고 둥근 관 모양으로, 입 주변은 코 아래에서 앞으로 볼록하게 돌출된 심슨 특유의 주둥이형 윗입술과 넓은 입선으로 표현해줘. 입술 화장이나 별도의 붉은 입술 면은 그리지 마. 뾰족한 턱, 갸름한 미형 얼굴, 반짝이는 눈은 피해줘. 안경테와 눈동자는 구분되게 그려줘. 머리카락은 잔가닥과 광택 없이 단순한 실루엣과 몇 개의 내부 선만 사용하고, 손은 둥글고 뭉툭한 네 손가락으로 그려줘.\n\n인물과 배경 모두 일정한 굵기의 검은 외곽선과 완전히 평평한 단색 면으로 통일해줘. 볼·코·머리카락에 하이라이트, 그라데이션, 광택을 넣지 말고, 음영은 물체의 겹침을 읽는 데 필요한 최소한만 써줘. 옷 주름과 무늬, 배경 장식도 방송용 셀 애니메이션 수준으로 단순화해줘. 원본 장소의 큰 구조와 소품을 알아볼 수 있게 유지하고, 사진에 없는 인물이나 사건을 추가하지 마. 손과 소품의 접촉은 자연스럽게 표현하고 글자·로고·워터마크는 넣지 마.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/simpsons.reference.webp",
+            "originalGeneratedFile": "exec-92811fd0-4933-4712-92ef-ba8f443b56db.png",
+            "originalPngSha256": "ff7ecdd427337c7d173508586c0deea1404f35adbf9cbf8c5c55c32dafc354ff"
+          }
+        ],
+        "additionalInstructions": [],
+        "generatedFile": "exec-3e3ec6ac-a7c0-418c-b5a4-59acf91a1a71.png",
+        "pngSha256": "b8dc782ec4af5cf0933f43fca04fb8e45da8991eb75d9628f71e808b67758635",
+        "postEdited": false
+      },
+      "revisionHistory": [
+        {
+          "version": "v1",
+          "prompt": "첨부 사진을 《심슨 가족》 TV 애니메이션의 한 장면처럼 바꿔줘. 사진 속 인물을 기존 등장인물로 대체하지 말고, 그 사람을 알아볼 수 있는 새로운 스프링필드 주민으로 그려줘.\n\n인물 수, 대략적인 연령대, 머리 모양과 색, 안경, 표정, 옷과 액세서리의 색·형태를 유지해줘. 원본의 시점, 프레이밍, 자세, 손에 든 물건과 주변 사물의 위치 관계도 유지해줘. 인물은 노란 피부, 크고 둥근 흰 눈과 작은 검은 동공, 단순한 코와 살짝 돌출된 윗입술, 둥글게 단순화한 비례, 자연스러운 네 손가락 손으로 표현해줘. 안경과 눈이 겹쳐도 안경테와 눈동자를 각각 또렷하게 그려줘.\n\n인물과 배경 전체를 굵고 매끈한 검은 윤곽선, 선명한 단색 면, 최소한의 셀 음영으로 통일해줘. 배경은 원본 장소의 특징을 살려 스프링필드의 일상 공간처럼 재해석하되, 사진에 없는 인물이나 사건을 추가하지 마. 손과 소품이 자연스럽게 연결되게 하고, 실사 질감·3D 렌더링·복잡한 명암·글자·로고·워터마크 없이 완성해줘.",
+          "soleInputPhoto": "assets/images/simpsons.reference.webp",
+          "additionalInstructions": [],
+          "generatedFile": "exec-5fa4ed30-c85d-471c-b111-7e0a7ae2bf7a.png",
+          "pngSha256": "b113ed303e8d3ae7e985f03f231cad2143659e3e5f83948de89766b061d0ec00",
+          "status": "superseded-after-user-feedback",
+          "review": {
+            "strengths": [
+              "한 명의 인물, 단발머리, 둥근 안경, 청록색 카디건, 크림색 상의, 빨간 스카프를 유지함",
+              "머그잔을 두 손으로 잡는 자세, 좌측 화분과 파란 창틀, 테이블·의자 구도가 유지됨",
+              "노란 피부와 큰 흰 눈, 검은 윤곽선, 평면 채색을 인물과 배경에 적용함",
+              "추가 인물·문자·로고·워터마크가 보이지 않음"
+            ],
+            "limitations": [
+              "얼굴이 원본보다 길고 턱이 뾰족해져 동일 인물의 인상은 일부 달라짐",
+              "흐릿했던 거리를 건물과 가로등이 또렷한 공간으로 재해석해 배경 세부는 달라짐",
+              "머그잔과 맞닿아 가려진 손가락의 정확한 개수는 양손 모두 확실히 확인하기 어려움",
+              "가상 인물 사진 1장만 시험했으며 다른 입력 유형은 검증하지 않음"
+            ],
+            "postEditing": false
+          }
+        },
+        {
+          "version": "v2",
+          "prompt": "첨부 사진을 《심슨 가족》의 고전적인 2D TV 애니메이션에서 바로 캡처한 한 프레임처럼 다시 그려줘. 인물을 기존 캐릭터로 바꾸지 말고, 원작의 캐릭터 디자인 규칙으로 그린 새로운 스프링필드 주민으로 만들어줘.\n\n인물 수, 대략적인 연령대, 헤어스타일과 머리색, 안경, 표정의 분위기, 옷과 액세서리의 색·종류를 유지해줘. 시점, 프레이밍, 자세, 손에 든 물건, 주변 사물의 위치 관계도 유지해줘. 사진의 식별 특징은 살리되 얼굴의 사실적인 비례를 그대로 따라가지 말고 심슨 특유의 과장된 형태로 적극적으로 바꿔줘.\n\n피부는 균일하고 선명한 노란색. 머리와 턱은 넓고 둥글고 투박한 덩어리로, 눈은 서로 가까이 붙은 큰 흰 구체 두 개와 아주 작은 검은 점 동공으로 그려줘. 눈꺼풀·속눈썹은 필요한 몇 개의 선만 써줘. 코는 얼굴 앞으로 튀어나온 짧고 둥근 관 모양으로, 입 주변은 코 아래에서 앞으로 볼록하게 돌출된 심슨 특유의 주둥이형 윗입술과 넓은 입선으로 표현해줘. 입술 화장이나 별도의 붉은 입술 면은 그리지 마. 뾰족한 턱, 갸름한 미형 얼굴, 반짝이는 눈은 피해줘. 안경테와 눈동자는 구분되게 그려줘. 머리카락은 잔가닥과 광택 없이 단순한 실루엣과 몇 개의 내부 선만 사용하고, 손은 둥글고 뭉툭한 네 손가락으로 그려줘.\n\n인물과 배경 모두 일정한 굵기의 검은 외곽선과 완전히 평평한 단색 면으로 통일해줘. 볼·코·머리카락에 하이라이트, 그라데이션, 광택을 넣지 말고, 음영은 물체의 겹침을 읽는 데 필요한 최소한만 써줘. 옷 주름과 무늬, 배경 장식도 방송용 셀 애니메이션 수준으로 단순화해줘. 원본 장소의 큰 구조와 소품을 알아볼 수 있게 유지하고, 사진에 없는 인물이나 사건을 추가하지 마. 손과 소품의 접촉은 자연스럽게 표현하고 글자·로고·워터마크는 넣지 마.",
+          "soleInputPhoto": "assets/images/simpsons.reference.webp",
+          "additionalInstructions": [],
+          "generatedFile": "exec-3e3ec6ac-a7c0-418c-b5a4-59acf91a1a71.png",
+          "pngSha256": "b8dc782ec4af5cf0933f43fca04fb8e45da8991eb75d9628f71e808b67758635",
+          "status": "user-approved-with-limitations",
+          "review": {
+            "strengths": [
+              "v1의 붉은 입술 면과 뾰족한 턱이 사라지고, 앞으로 둥글게 돌출된 입 주변과 넓은 입선이 생김",
+              "붙어 있는 큰 흰 눈과 점 동공, 단순한 머리카락 덩어리가 심슨 캐릭터의 인상을 강화함",
+              "원본의 단발머리·둥근 안경·청록색 카디건·빨간 스카프·머그잔을 든 자세를 유지함",
+              "인물 1명이며 원본의 창·화분·테이블·의자 위치 관계가 대체로 유지됨"
+            ],
+            "limitations": [
+              "스타일 과장이 커지면서 원본 인물의 얼굴 닮음은 줄어듦",
+              "머리카락과 일부 넓은 색 면에는 약한 명암이 남아 완전한 무음영 지시는 부분적으로만 충족함",
+              "안경의 아래 테와 눈 외곽선이 겹쳐 각각의 선이 완전히 분리되어 보이지는 않음",
+              "가상 인물 사진 1장에 대한 수정 시험이며 다른 사진은 미검증"
+            ],
+            "postEditing": false
+          }
+        }
+      ],
+      "feedback": "좀 더 심슨 스럽게",
+      "assets": [
+        {
+          "path": "assets/images/simpsons.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1515308,
+          "sha256": "57fb6e019e2fd61bd43d0ecebd67aa468e2fc59b3ddc599a6e3b968a9d006b16"
+        },
+        {
+          "path": "assets/images/simpsons.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1079240,
+          "sha256": "c8f502bf2a32440766a0bb59eb8e6ba9ec500c4422d284be197c01992d02a794"
+        },
+        {
+          "path": "assets/images/simpsons.thumb.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 45976,
+          "sha256": "1870b68e56b0a3720968baa05882c7ee36e9a56223eb57590c7e94da01329915"
+        }
+      ],
+      "conversionChecks": [
+        {
+          "path": "assets/images/simpsons.reference.webp",
+          "losslessDecodedPixelsEqual": true
+        },
+        {
+          "path": "assets/images/simpsons.webp",
+          "losslessDecodedPixelsEqual": true
+        }
+      ],
+      "review": {
+        "status": "user-approved-with-limitations",
+        "strengths": [
+          "v1의 붉은 입술 면과 뾰족한 턱이 사라지고, 앞으로 둥글게 돌출된 입 주변과 넓은 입선이 생김",
+          "붙어 있는 큰 흰 눈과 점 동공, 단순한 머리카락 덩어리가 심슨 캐릭터의 인상을 강화함",
+          "원본의 단발머리·둥근 안경·청록색 카디건·빨간 스카프·머그잔을 든 자세를 유지함",
+          "인물 1명이며 원본의 창·화분·테이블·의자 위치 관계가 대체로 유지됨"
+        ],
+        "limitations": [
+          "스타일 과장이 커지면서 원본 인물의 얼굴 닮음은 줄어듦",
+          "머리카락과 일부 넓은 색 면에는 약한 명암이 남아 완전한 무음영 지시는 부분적으로만 충족함",
+          "안경의 아래 테와 눈 외곽선이 겹쳐 각각의 선이 완전히 분리되어 보이지는 않음",
+          "가상 인물 사진 1장에 대한 수정 시험이며 다른 사진은 미검증"
+        ],
+        "postEditing": false
+      }
+    }
+  ]
+}
