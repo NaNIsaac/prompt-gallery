@@ -1,4 +1,6 @@
-# 치이카와풍 사진 변환 — v2 확정 예시
+# 치이카와풍 사진 변환 — v2 이력
+
+이 문서는 이전 v2의 생성 사실을 보존합니다. 현재 제출본은 [v3 바닷가 예시](chiikawa-v3-review-2026-10-24.md)입니다. 아래 이미지는 v2 커밋에 고정했습니다.
 
 사용자는 2026-10-24에 **결과 확정·PR 제출**을 선택했습니다. 확정한 v2 문구와 결과를 변경 없이 등록합니다.
 
@@ -6,7 +8,7 @@
 
 | 입력: AI 가상 성인 인물 | 출력: 치이카와풍 v2 |
 |---|---|
-| ![AI 가상 원본](../assets/images/chiikawa.reference.webp) | ![v2 변환 결과](../assets/images/chiikawa.webp) |
+| ![AI 가상 원본](https://raw.githubusercontent.com/Q07K/prompt-gallery/b2e8837189b5b7d41a6f5025cee21e65554ca182/assets/images/chiikawa.reference.webp) | ![v2 변환 결과](https://raw.githubusercontent.com/Q07K/prompt-gallery/b2e8837189b5b7d41a6f5025cee21e65554ca182/assets/images/chiikawa.webp) |
 
 [실제 공개·시험 문구 v2](chiikawa-prompt-v2.txt) · [생성·실제 도구 입력·해시·무손실 픽셀 검사 기록](image-generation-2026-10-24-chiikawa.json)
 

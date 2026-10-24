@@ -160,5 +160,8 @@
         ]
       }
     }
-  ]
+  ],
+  "status": "superseded-by-v3",
+  "assetsAtCommit": "b2e8837189b5b7d41a6f5025cee21e65554ca182",
+  "supersededBy": "image-generation-2026-10-24-chiikawa-v3.json"
 }
