@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-24",
+  "tool": "built-in image_gen.imagegen",
+  "sourceType": "AI-generated fictional adult reference photo",
+  "approval": {
+    "date": "2026-10-24",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v1",
+    "scope": "catalog registration, validation and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/photo-to-figurine",
+  "baseCommit": "9a3565bbad4c039c9726f57e89705b4904538399",
+  "items": [
+    {
+      "id": "photo-to-figurine",
+      "version": "v1",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nCreate one realistic, ordinary full-body reference photograph of a fictional Korean woman in her late twenties standing on a park path in soft natural daylight. She has a chin-length straight black bob with a side part, thin round dark glasses, and a relaxed closed-mouth smile. She wears an open mustard-yellow cardigan over a plain ivory T-shirt, straight medium-blue jeans, and simple white low-top sneakers. A small plain brick-red crossbody bag hangs at her left hip; its strap crosses from her right shoulder. Both arms hang naturally, her left hand lightly resting on the bag; both hands and shoes are visible. Eye-level camera, subject facing the camera with a slight natural turn, full head-to-toe framing with comfortable margin. Quiet leafy trees and a park bench in the softly out-of-focus background. Natural facial proportions and skin texture, everyday travel snapshot rather than fashion retouching. Exactly one adult person. No text, no visible brand names, no watermark. Portrait image.",
+        "transparent_background": false,
+        "generatedFile": "exec-f4d91b09-ff47-4bf1-bb3d-474644719d7c.png",
+        "pngSha256": "fb5057f2d66fee1ae3eb7495e47270cff51cb9ced583dfea0e454fc0182a31da"
+      },
+      "transformation": {
+        "prompt": "첨부 사진 속 인물을 알아볼 수 있는 정교한 수집용 피규어로 바꾸고, 완성된 실물 피규어를 촬영한 제품 사진처럼 표현해 주세요.\n\n사진 속 인물 수를 유지하고 각 인물의 얼굴형, 연령대, 피부색, 표정, 머리색과 헤어스타일, 안경, 의상의 형태와 색, 가방 등 착용물, 몸의 방향과 포즈를 최대한 보존하세요. 얼굴은 원본의 인상을 유지한 섬세한 조형으로 재해석하고, 사진의 얼굴을 그대로 붙이지 마세요. 실물 인체보다 조금 단순화된 약 6등신 비례를 사용하되 머리만 과도하게 커진 치비 캐릭터로 만들지 마세요. 사진에서 보이지 않는 부분은 보이는 의상과 자세에 맞춰 자연스럽게 완성하고, 새로운 소품이나 다른 인물은 추가하지 마세요.\n\n전체를 높이 약 22cm의 도색된 PVC·레진 피규어처럼 표현하세요. 매끈한 무광 피부 도색, 덩어리로 조형된 머리카락, 정교하게 칠한 눈과 입, 옷 주름의 입체 조형과 은은한 재질별 광택을 보여 주세요. 피부의 모공이나 실제 머리카락·천의 사진 질감은 남기지 마세요. 손가락, 팔다리, 안경테, 가방끈이 서로 자연스럽게 이어지게 하고, 관절이 드러난 액션 피규어로 바꾸지 마세요.\n\n피규어를 작고 투명한 원형 아크릴 받침대 위에 안정적으로 세우고, 밝은 나무 책상 위에 놓으세요. 사진 배경은 그대로 복제하지 말고, 부드럽게 흐려진 따뜻한 실내 배경으로 바꾸세요. 사진의 인물 포즈를 살리면서 얼굴과 의상, 피규어 전신과 받침대가 잘 보이게 촬영하세요. 은은한 측면 자연광, 부드러운 접촉 그림자, 제품 촬영의 얕은 심도로 작은 입체 조형물의 크기와 재질을 분명하게 보여 주세요. 주요 피규어는 선명하게 유지하세요. 포장 상자, 설명 문구, 로고, 워터마크는 넣지 마세요.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/photo-to-figurine.reference.webp",
+            "originalGeneratedFile": "exec-f4d91b09-ff47-4bf1-bb3d-474644719d7c.png",
+            "originalPngSha256": "fb5057f2d66fee1ae3eb7495e47270cff51cb9ced583dfea0e454fc0182a31da"
+          }
+        ],
+        "additionalInstructions": [],
+        "generatedFile": "exec-0381be63-3a51-4e1c-82e1-9bca17d62f96.png",
+        "pngSha256": "1e17b749b0f06ab99f1dc64453ddf576b7eb7a18161dbb1dd87515df697e81d1",
+        "postEdited": false
+      },
+      "assets": [
+        {
+          "path": "assets/images/photo-to-figurine.reference.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 1862642,
+          "sha256": "cb2313af91af759f128b877440db1d97fd6c11248d46d2d77b7cababf5ef8501"
+        },
+        {
+          "path": "assets/images/photo-to-figurine.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 1248096,
+          "sha256": "3fb6339d8e35d047cac9f7be142da1af2a07317225aaf481c56639b796c5551e"
+        },
+        {
+          "path": "assets/images/photo-to-figurine.thumb.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 40924,
+          "sha256": "971655e4c528d3e0c900ab47c2737df14a01b35caaaee978b03f8186d013c9c5"
+        }
+      ],
+      "conversionChecks": [
+        {
+          "path": "assets/images/photo-to-figurine.reference.webp",
+          "losslessDecodedPixelsEqual": true
+        },
+        {
+          "path": "assets/images/photo-to-figurine.webp",
+          "losslessDecodedPixelsEqual": true
+        }
+      ],
+      "review": {
+        "status": "user-approved-with-limitations",
+        "strengths": [
+          "인물 한 명과 단발·가르마·안경·의상·가방·포즈 유지",
+          "매끈한 도색 얼굴과 조형된 머리카락, 투명 받침대와 책상 위 그림자",
+          "전신과 받침대가 잘리지 않고 실내 제품 사진 구도로 표현"
+        ],
+        "limitations": [
+          "눈이 커지고 얼굴이 부드럽게 미화됨",
+          "요청한 약 6등신보다 길쭉한 비례",
+          "의상에 사실적인 직물 질감이 남음",
+          "실제 22cm 크기는 이미지 한 장으로 검증 불가",
+          "가상 성인 전신 한 장만 시험; 다인·반신·다른 연령대 미검증"
+        ],
+        "postEdited": false
+      }
+    }
+  ]
+}
