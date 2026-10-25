@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-24",
+  "tool": "built-in image_gen.imagegen",
+  "sourceType": "AI-generated fictional adult reference photo",
+  "approval": {
+    "date": "2026-10-24",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v2",
+    "scope": "catalog registration, validation and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "baseRemote": "origin",
+  "headRemote": "origin",
+  "branch": "codex/chiikawa",
+  "baseCommit": "722add0fe01f84a542b02c2ee08245d9bbd233ab",
+  "styleDevelopment": {
+    "userProvidedReference": "Chiikawa illustrated movie poster, supplied in chat",
+    "use": "Visual analysis informed v2 prompt wording only; no poster supplied to final image generation, no poster published",
+    "referenceSha256": "0d2b755cf41376612fa9df8c26b05b6d1527119a7f39d7b90eecf9d37de2d0ad"
+  },
+  "items": [
+    {
+      "id": "chiikawa",
+      "version": "v2",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: fictional source photograph for a photo-to-illustration prompt test\nPrimary request: A natural, photorealistic candid portrait of one fictional adult East Asian woman seated at a small outdoor cafe table beside a leafy park. She has a short straight dark bob with bangs, round thin dark glasses, a sage green cardigan over a cream shirt, and a small mustard yellow crossbody bag resting against her hip. She smiles gently at the camera and holds a clear glass of iced lemon tea in her right hand just above the wooden table; her left hand rests visibly on the table. Three-quarter seated view, both hands fully inside the frame. A simple cafe chair, soft greenery, and a paved path in the background. Soft daylight, natural skin texture, ordinary real-world proportions. Square composition. One person only, no animals, no fictional characters, no signs, no text, no logos, no watermark.",
+        "transparent_background": false,
+        "generatedFile": "exec-85eb2c36-847b-4cc2-9c5d-18fe590defd9.png",
+        "pngSha256": "b7fff5272ece46a7a4841261d57734ae2f337d430f127493316ff11a46a44480"
+      },
+      "transformation": {
+        "prompt": "첨부한 사진을 치이카와 애니메이션의 한 장면 같은 2D 일러스트로 바꿔 주세요.\n\n사진 속 주인공을 치이카와 특유의 작고 납작하고 통통한 동물형 주민으로 재해석하세요. 넓고 둥근 흰색 얼굴과 몸이 짧게 이어지고, 목과 사람 같은 어깨는 드러나지 않으며, 아주 짧은 둥근 손발과 작은 둥근 귀가 달린 실루엣입니다. 얼굴에는 흰색 타원 하이라이트가 하나씩 있는 검은 세로 타원 눈 두 개, 짧고 가는 눈썹, 작은 ω 모양 입, 분홍색 타원 볼과 그 안의 짧은 빗금 세 개를 표현하세요. 표정은 사진의 감정을 이어가세요. 얼굴을 화면 중심으로 과장해 원본의 자세나 주요 소품을 가리지 마세요.\n\n원본의 머리 모양과 색, 안경, 옷의 주요 색과 형태, 가방이나 착용물 등 식별 특징은 간단한 기호처럼 유지하세요. 머리카락은 적은 수의 매끈한 색면과 몇 가닥의 선으로 축약하고, 원래 머리 모양을 알아볼 수 있으면서도 둥근 동물 캐릭터의 윤곽에 자연스럽게 붙게 하세요. 옷도 짧고 통통한 몸에 맞춰 단순화하세요. 주인공 수, 서로의 위치, 고개의 기울기와 시선, 자세, 손에 든 물건과 접촉 관계를 가능한 한 유지하세요. 사진에 없는 인물이나 원작 캐릭터를 더하지 마세요.\n\n캐릭터와 주요 소품은 굵고 매끈하며 굵기가 거의 일정한 짙은 초콜릿색 외곽선, 깨끗한 단색 면, 최소한의 명암으로 그리세요. 캐릭터의 얼굴·몸·머리카락에는 종이 결, 번진 붓질, 연필 해칭, 털 묘사를 넣지 마세요. 배경은 사진의 장소와 시점, 큰 사물의 배치를 알아볼 수 있게 단순화하고, 명랑하고 선명한 색과 부드러운 애니메이션 배경 채색을 사용하세요. 캐릭터의 선명한 윤곽을 유지하고 배경 디테일이 주인공을 압도하지 않게 하세요. 원본의 장면을 그대로 재해석한 완결된 일러스트 한 장으로 만들고, 글자·로고·말풍선·워터마크·만화 칸 나누기는 넣지 마세요.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/chiikawa.reference.webp",
+            "originalGeneratedFile": "exec-85eb2c36-847b-4cc2-9c5d-18fe590defd9.png",
+            "originalPngSha256": "b7fff5272ece46a7a4841261d57734ae2f337d430f127493316ff11a46a44480"
+          }
+        ],
+        "additionalInstructions": [],
+        "generatedFile": "exec-605c6669-640a-4cd4-94d8-4a144db99085.png",
+        "pngSha256": "fdee536462db40fee9b45fed450d574faefd19ff3f01a171b046dec1ddc85489",
+        "postEdited": false
+      },
+      "assets": [
+        {
+          "path": "assets/images/chiikawa.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1734314,
+          "sha256": "7d34e5fd89d9603f9928d66ce7e2383fe9310cc4fe014be706135beaffc258c4"
+        },
+        {
+          "path": "assets/images/chiikawa.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1215922,
+          "sha256": "ca483cc354f81ddff835968fe2dfb8c0539105e328f532e9d203d9b99ce70522"
+        },
+        {
+          "path": "assets/images/chiikawa.thumb.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 51780,
+          "sha256": "a7144f49468590741f9db42f55cb1772247d66876687aa5270ea26e5811d7203"
+        }
+      ],
+      "conversionChecks": [
+        {
+          "path": "assets/images/chiikawa.reference.webp",
+          "losslessDecodedPixelsEqual": true
+        },
+        {
+          "path": "assets/images/chiikawa.webp",
+          "losslessDecodedPixelsEqual": true
+        }
+      ],
+      "review": {
+        "status": "user-approved-with-limitations",
+        "strengths": [
+          "단발·안경·의상·가방·컵을 든 자세 유지",
+          "매끈한 짙은 외곽선, 타원 눈의 흰 하이라이트와 분홍 볼 빗금",
+          "수채화 질감 감소와 원본에 가까운 고개 기울기"
+        ],
+        "limitations": [
+          "머리카락이 윤곽에서 차지하는 비중이 큼",
+          "일부 부드러운 명암이 남아 완전한 평면 채색은 아님",
+          "가상 성인 인물 한 장만 시험; 다인·다른 연령대 미검증"
+        ],
+        "postEdited": false
+      }
+    }
+  ],
+  "history": [
+    {
+      "version": "v1",
+      "toolInput": {
+        "prompt": "첨부한 사진을 치이카와 세계관의 한 장면 같은 2D 일러스트로 바꿔 주세요.\n사진 속 주인공을 원작의 둥글고 조그마한 동물형 주민처럼 재해석해 주세요. 머리가 몸보다 크고, 통통한 흰색 몸통과 짧은 팔다리, 작은 둥근 귀, 검은 점눈, 아주 작은 입, 연한 분홍 볼을 사용하세요. 사람의 사실적인 얼굴이나 신체 비율은 남기지 마세요. 대신 원본에서 주인공을 알아보게 하는 머리 모양과 색, 안경, 옷의 주요 색과 형태, 착용물은 이 단순한 캐릭터 디자인에 어울리게 축약해 유지하세요. 사진에 여러 주인공이 있으면 수와 서로의 위치를 유지하고 각각 구별되게 표현하세요.\n손으로 그린 듯 약간 흔들리는 짙은 갈색 외곽선, 간결한 표정, 넓은 여백, 부드러운 파스텔 단색과 아주 옅은 수채화 질감을 사용하세요. 배경과 소품도 같은 선과 채색으로 단순화하여 캐릭터와 자연스럽게 어울리게 해 주세요.\n원본의 장소를 알아볼 수 있는 요소, 시점, 주인공의 자세와 시선, 들고 있거나 접촉하는 주요 소품 및 그 연결 관계를 유지하세요. 표정은 원본의 감정을 바탕으로 작고 귀엽게 표현하세요. 장면과 관계없는 원작 캐릭터나 새로운 사건을 임의로 더하지 마세요. 글자, 말풍선, 로고, 워터마크, 만화 칸 나누기 없이 완결된 일러스트 한 장으로 만들어 주세요.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/chiikawa.reference.webp"
+          }
+        ]
+      },
+      "generatedFile": "exec-1cae77e3-5865-4fe2-a020-f15a29635d93.png",
+      "pngSha256": "100e69fa555a73d3c0d64987b942e1084080f1d3e16ffced83055ce406d9b1b1",
+      "selected": false,
+      "review": {
+        "preserved": [
+          "one subject",
+          "short dark bob and round glasses",
+          "sage cardigan and mustard bag",
+          "raised right hand holding lemon tea; left hand at table",
+          "park cafe location and chair/table relationship"
+        ],
+        "limitations": [
+          "head tilt is reduced",
+          "lower body reinterpreted as short white animal limbs",
+          "watercolor texture and background detail are stronger than the original work's sparse flat appearance",
+          "only one fictional adult portrait tested; other inputs unverified"
+        ]
+      }
+    },
+    {
+      "version": "v2",
+      "toolInput": {
+        "prompt": "첨부한 사진을 치이카와 애니메이션의 한 장면 같은 2D 일러스트로 바꿔 주세요.\n\n사진 속 주인공을 치이카와 특유의 작고 납작하고 통통한 동물형 주민으로 재해석하세요. 넓고 둥근 흰색 얼굴과 몸이 짧게 이어지고, 목과 사람 같은 어깨는 드러나지 않으며, 아주 짧은 둥근 손발과 작은 둥근 귀가 달린 실루엣입니다. 얼굴에는 흰색 타원 하이라이트가 하나씩 있는 검은 세로 타원 눈 두 개, 짧고 가는 눈썹, 작은 ω 모양 입, 분홍색 타원 볼과 그 안의 짧은 빗금 세 개를 표현하세요. 표정은 사진의 감정을 이어가세요. 얼굴을 화면 중심으로 과장해 원본의 자세나 주요 소품을 가리지 마세요.\n\n원본의 머리 모양과 색, 안경, 옷의 주요 색과 형태, 가방이나 착용물 등 식별 특징은 간단한 기호처럼 유지하세요. 머리카락은 적은 수의 매끈한 색면과 몇 가닥의 선으로 축약하고, 원래 머리 모양을 알아볼 수 있으면서도 둥근 동물 캐릭터의 윤곽에 자연스럽게 붙게 하세요. 옷도 짧고 통통한 몸에 맞춰 단순화하세요. 주인공 수, 서로의 위치, 고개의 기울기와 시선, 자세, 손에 든 물건과 접촉 관계를 가능한 한 유지하세요. 사진에 없는 인물이나 원작 캐릭터를 더하지 마세요.\n\n캐릭터와 주요 소품은 굵고 매끈하며 굵기가 거의 일정한 짙은 초콜릿색 외곽선, 깨끗한 단색 면, 최소한의 명암으로 그리세요. 캐릭터의 얼굴·몸·머리카락에는 종이 결, 번진 붓질, 연필 해칭, 털 묘사를 넣지 마세요. 배경은 사진의 장소와 시점, 큰 사물의 배치를 알아볼 수 있게 단순화하고, 명랑하고 선명한 색과 부드러운 애니메이션 배경 채색을 사용하세요. 캐릭터의 선명한 윤곽을 유지하고 배경 디테일이 주인공을 압도하지 않게 하세요. 원본의 장면을 그대로 재해석한 완결된 일러스트 한 장으로 만들고, 글자·로고·말풍선·워터마크·만화 칸 나누기는 넣지 마세요.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/chiikawa.reference.webp"
+          }
+        ]
+      },
+      "generatedFile": "exec-605c6669-640a-4cd4-94d8-4a144db99085.png",
+      "pngSha256": "fdee536462db40fee9b45fed450d574faefd19ff3f01a171b046dec1ddc85489",
+      "selected": true,
+      "review": {
+        "improvements": [
+          "smooth dark outlines replace grainy brushwork",
+          "cleaner character color surfaces",
+          "oval eyes with white highlights, pink cheeks with three hatch marks",
+          "head tilt is closer to source"
+        ],
+        "preserved": [
+          "short dark bob and round glasses",
+          "green cardigan, yellow shoulder bag, lemon tea",
+          "one subject, cafe table/chair and path relationship"
+        ],
+        "limitations": [
+          "hair remains a large part of silhouette; still reads as a personalized derivative",
+          "some soft shading remains rather than fully flat fill",
+          "only the same fictional adult portrait tested; no broad input validation"
+        ]
+      }
+    }
+  ],
+  "status": "superseded-by-v3",
+  "assetsAtCommit": "b2e8837189b5b7d41a6f5025cee21e65554ca182",
+  "supersededBy": "image-generation-2026-10-24-chiikawa-v3.json"
+}

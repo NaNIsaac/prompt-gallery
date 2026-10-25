@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-24",
+  "tool": "built-in image_gen.imagegen",
+  "sourceType": "AI-generated fictional middle-aged adult reference photo",
+  "approval": {
+    "date": "2026-10-24",
+    "userResponse": "이 결과로 v3 확정·PR 갱신",
+    "version": "v3",
+    "selectedExample": "seaside",
+    "scope": "catalog and public example replacement, validation, existing Draft PR #66 update"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "baseRemote": "origin",
+  "headRemote": "origin",
+  "branch": "codex/chiikawa",
+  "baseCommit": "722add0fe01f84a542b02c2ee08245d9bbd233ab",
+  "previousVersion": {
+    "version": "v2",
+    "commit": "b2e8837189b5b7d41a6f5025cee21e65554ca182",
+    "record": "image-generation-2026-10-24-chiikawa.json",
+    "prompt": "chiikawa-prompt-v2.txt",
+    "note": "Superseded by v3; old prompt, generated file identifiers and asset hashes are retained with the historical commit."
+  },
+  "designChange": "Prioritize the named original Chiikawa character design. Human hair, age, facial likeness and long limbs are deliberately removed; clothing colors, accessories, props and action carry the source identity.",
+  "items": [
+    {
+      "id": "chiikawa",
+      "version": "v3",
+      "label": "seaside",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: new fictional source photo for an unchanged photo-to-character prompt test\nPrimary request: One natural full-body travel photograph of a fictional middle-aged East Asian man standing on a wooden seaside boardwalk. He has short salt-and-pepper hair, no glasses, no face mask, and no hat. He wears an orange hooded windbreaker, navy blue trousers, and plain white sneakers, with a small turquoise crossbody camera bag at his left hip. He holds one small black camera with a visible round lens in both hands at stomach level. His torso is turned a little toward the sea on the right, and his face has a gentle relaxed smile. Place him in the left half of the image; keep his entire head, both hands, and both shoes visible with comfortable space. White boardwalk railing, blue sea on the right, a distant low island on the horizon, and clear daytime sky. Realistic human proportions, natural facial features and outdoor photographic texture. Square photograph. Exactly one person, no other people or animals, no text, brands, signs, watermarks, illustrations, or fictional characters.",
+        "transparent_background": false,
+        "generatedFile": "exec-fdd1bad7-74d2-4158-b99b-6dc8a305749c.png",
+        "pngSha256": "348b1d73029ba5130943a12ac580b1b98f4c4c65eba1ee79f0f20ee5feb97309"
+      },
+      "transformation": {
+        "prompt": "첨부한 사진 속 인물 한 명을 「치이카와 / ちいかわ」의 흰색 주인공 치이카와 캐릭터 본인으로 바꾸고, 치이카와가 사진 속 장소에서 같은 행동을 하는 애니메이션 한 장면으로 그려 주세요.\n\n가장 우선할 것은 원작 치이카와의 캐릭터 디자인입니다. 머리카락 없는 넓고 말랑한 흰색 머리, 위에 붙은 작은 둥근 귀 두 개, 목 없이 이어지는 작고 통통한 흰색 몸통, 손가락이 없는 짧고 둥근 앞발과 매우 짧은 뒷발을 사용하세요. 얼굴에는 서로 떨어진 작은 검은 타원 눈과 각 눈의 흰 하이라이트 하나, 가느다란 짧은 눈썹, 아주 작은 원작 모양 입, 분홍 타원 볼과 짧은 빗금을 배치하세요. 얼굴에 충분한 빈 흰 공간을 남기고 이목구비를 크게 키우지 마세요. 사람의 머리카락·앞머리·가발·피부색·목·어깨·허리·긴 팔과 다리·사람 손발은 가져오지 마세요. 사람 얼굴에 동물 귀만 붙이는 방식으로 그리지 마세요.\n\n원본 인물의 특징은 치이카와가 착용한 안경·옷의 대표 색과 간단한 형태·가방·눈에 띄는 액세서리로만 옮기세요. 사진에 마스크가 있으면 마스크를 유지하고 가려진 입을 새로 드러내지 마세요. 의상은 원작 캐릭터의 짧고 통통한 몸에 맞춘 작은 옷으로 단순화하세요. 옷 때문에 사람의 관절이나 길쭉한 몸이 생기지 않게 하세요. 원본이 다리를 꼬고 있으면 작은 뒷발을 겹치는 정도로 번역하는 등, 자세는 원작 체형이 허용하는 범위에서 재해석하세요.\n\n사진의 주인공 위치와 바라보는 방향, 하던 행동, 손에 든 물건과 사물의 접촉 관계를 살리세요. 사진의 구도, 장소를 알아볼 수 있는 큰 배경 요소와 주요 소품을 유지하되, 캐릭터 주변의 크기와 높이는 짧은 몸이 자연스럽게 행동할 수 있게 조정하세요. 원본과 같은 인물 수를 유지하고 다른 캐릭터나 새로운 사건을 더하지 마세요.\n\n캐릭터는 원작처럼 약간 손맛이 있는 일정한 굵기의 짙은 갈색 선과 깨끗한 흰색·단색 면, 최소한의 명암으로 표현하세요. 머리와 몸에 입체 렌더링·광택·털·종이 결·거친 수채화 질감을 넣지 마세요. 배경은 원래 장소의 배치를 살린 간결한 2D 애니메이션 배경으로 정리해 캐릭터보다 덜 두드러지게 그리세요. 완결된 장면 한 장만 만들고 글자·로고·워터마크·말풍선·만화 칸은 넣지 마세요.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/chiikawa.reference.webp",
+            "originalGeneratedFile": "exec-fdd1bad7-74d2-4158-b99b-6dc8a305749c.png",
+            "originalPngSha256": "348b1d73029ba5130943a12ac580b1b98f4c4c65eba1ee79f0f20ee5feb97309"
+          }
+        ],
+        "additionalInstructions": [],
+        "additionalStyleImages": [],
+        "promptChangedForThisPhoto": false,
+        "generatedFile": "exec-548fb530-b1dd-4f6a-933a-17b94a930dca.png",
+        "pngSha256": "2bea60341844f0938bd71fc963e0223202eb026984f21e10e8b0033ff5b3314b",
+        "postEdited": false
+      },
+      "assets": [
+        {
+          "path": "assets/images/chiikawa.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1570704,
+          "sha256": "9feaeadbe46c76275f7d7fef63a24071e3ca2982a4a4a578e45d9effcfe7bc17"
+        },
+        {
+          "path": "assets/images/chiikawa.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1188702,
+          "sha256": "d3dd848355283d5938d45c9eefd188a0c9253ebb6c0d4e1559acb77785ed823a"
+        },
+        {
+          "path": "assets/images/chiikawa.thumb.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 43228,
+          "sha256": "a9e7db061bb1b78dd65105979b430230dbace88e6746eef6715bd8f72c253d48"
+        }
+      ],
+      "conversionChecks": [
+        {
+          "path": "assets/images/chiikawa.reference.webp",
+          "losslessDecodedPixelsEqual": true
+        },
+        {
+          "path": "assets/images/chiikawa.webp",
+          "losslessDecodedPixelsEqual": true
+        }
+      ],
+      "review": {
+        "status": "user-approved-with-limitations",
+        "strengths": [
+          "머리카락과 사람의 긴 팔다리 없이 흰 캐릭터 실루엣과 짧은 손발 표현",
+          "주황색 바람막이·청록색 가방·카메라와 양손으로 든 행동 유지",
+          "인물 한 명의 왼쪽 배치와 난간·보드워크·바다·섬의 관계 유지",
+          "원본에 없는 안경·마스크를 더하지 않음"
+        ],
+        "limitations": [
+          "남색 바지와 흰 운동화는 흰색 하체와 짧은 발로 대체",
+          "연령과 얼굴 닮음은 v3의 의도대로 사라짐",
+          "눈 하이라이트가 지시한 한 개보다 많음",
+          "배경은 비교적 상세함",
+          "공개 사례는 가상 인물 한 명이며 다인 사진은 미검증"
+        ],
+        "postEdited": false
+      }
+    }
+  ]
+}
