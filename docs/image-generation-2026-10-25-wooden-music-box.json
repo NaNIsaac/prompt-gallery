@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-25",
+  "tool": "built-in image_gen.imagegen",
+  "sourceType": "AI-generated fictional adult reference photo",
+  "approval": {
+    "date": "2026-10-25",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v3",
+    "scope": "catalog registration, validation and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/music-box",
+  "baseCommit": "0ad5fbf2ce348dab47d033c5182d146030bcd36f",
+  "items": [
+    {
+      "id": "wooden-music-box",
+      "version": "v3",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nCreate one realistic fictional reference photograph for testing a photo transformation prompt. A single adult East Asian woman in her late twenties with a chin-length straight dark bob and round thin dark glasses, wearing a mustard yellow cardigan over a white top, a long navy blue skirt and white sneakers. She is seated naturally on a simple wooden garden bench with both hands resting loosely on her lap, looking toward the camera with a gentle smile. Full body visible, three-quarter view, normal realistic human proportions, natural skin texture. Small blue hydrangea bushes beside the bench, softly blurred green garden behind her, late afternoon soft natural daylight. Quiet casual snapshot rather than a fashion ad. Square composition. No other people, no text, no logos, no watermark.",
+        "transparent_background": false,
+        "generatedFile": "exec-e8c37bf2-3bc0-4cf3-92fe-2eba8ce13781.png",
+        "pngSha256": "ceeb36c7b27e4f2403320d87ebfab99992dec50471c519d9607bbe0ab3b19715"
+      },
+      "transformation": {
+        "prompt": "첨부 사진을 장인이 원목을 깎아 만든 아담한 수공예 오르골의 제품 사진으로 바꿔 주세요.\n\n피사체와 배경 소품, 받침대까지 나무가 주재료인 열린 무대형 원목 오르골로 만듭니다. 밝은 단풍나무와 자작나무, 짙은 월넛을 조합하고, 모든 표면에 실제 나뭇결과 부드럽게 깎인 모서리, 섬세한 조각칼 자국, 얇게 오일 마감한 무광 질감이 보이게 합니다. 유리돔이나 투명 덮개, 도자기, 플라스틱, 번쩍이는 유광 코팅은 사용하지 않습니다.\n\n사진 속 주요 피사체를 간결하고 따뜻한 목각 미니어처로 옮깁니다. 인물이라면 인원수, 연령대, 헤어스타일, 안경, 표정과 자세, 의상 실루엣 등 알아볼 수 있는 특징을 유지합니다. 얼굴과 손은 자연스러운 밝은 원목으로, 머리카락은 짙은 목재로 표현하고, 옷의 주요 색은 나뭇결이 비치는 옅은 목재 스테인으로만 살립니다. 눈·코·입과 손가락은 작은 목각 작품에 어울리게 절제된 조각과 미세한 채색으로 단순화하되 유아처럼 만들거나 머리를 과도하게 키우지 않습니다. 동물이나 사물은 고유한 형태와 무늬를 목재 조각과 상감으로 보존합니다. 원본에 없는 인물이나 동물은 추가하지 않습니다.\n\n원본 배경에서 중요한 두세 가지 요소를 골라 작은 목각 소품으로 만들고, 피사체와의 위치 관계를 유지하며 원형 나무 회전판 위에 안정적으로 배치합니다. 꽃과 잎도 얇게 깎은 목재 조각으로 만들며, 전체를 원본 장면이 담긴 소박한 원목 공예품으로 통일합니다. 받침대는 두껍고 단정한 원형 원목 상자로 만들고, 회전판과 받침대 사이의 가는 틈과 옆면의 작은 황동 태엽 열쇠로 오르골임을 드러냅니다. 내부 기계장치는 받침대 안에 숨깁니다. 장식용 금속 테두리나 기계장치를 보여주는 창은 넣지 않습니다.\n\n따뜻한 크림색 배경의 밝은 나무 테이블 위에 오르골 한 개를 놓고, 살짝 위에서 내려다보는 3/4 시점의 사실적인 공예품 제품 사진으로 촬영합니다. 카메라를 충분히 뒤로 빼서 오르골과 무대 위의 모든 목각 소품이 하나의 완전한 실루엣으로 프레임 안에 들어오게 합니다. 가장 높은 나뭇잎 끝부터 받침대 맨 아래, 좌우로 튀어나온 꽃과 태엽 열쇠 끝까지 어느 부분도 자르지 않습니다. 제품 전체가 화면 너비와 높이의 각각 75% 이내를 차지하도록 하고, 가장 바깥 돌출부와 이미지의 네 가장자리 사이에 각각 최소 12%의 빈 배경 여백을 확보합니다. 키가 큰 배경 소품은 무대에 맞는 작은 목각으로 압축해 전체가 여백 안에 들어오게 합니다. 제품을 확대하거나 프레임을 꽉 채우지 않습니다. 부드러운 창가 빛과 은은한 그림자로 나무의 결, 조각의 두께와 접합부를 선명하게 보여 줍니다. 글자, 로고, 워터마크, 콜라주 없이 정사각형 이미지 한 장으로 완성해 주세요.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/wooden-music-box.reference.webp",
+            "generatedFile": "exec-e8c37bf2-3bc0-4cf3-92fe-2eba8ce13781.png",
+            "pngSha256": "ceeb36c7b27e4f2403320d87ebfab99992dec50471c519d9607bbe0ab3b19715"
+          }
+        ],
+        "additionalInstructions": [],
+        "generatedFile": "exec-afd373f6-4f21-46ba-9234-173bbc51e629.png",
+        "pngSha256": "4deb34ba730480ab932b1861487f9ebf605ca0bfe99d63ff415271077b329663",
+        "postEdited": false
+      },
+      "revisionHistory": [
+        {
+          "version": "v1",
+          "prompt": "첨부 사진을 정교한 수공예 유리돔 오르골의 제품 사진으로 바꿔 주세요.\n\n사진 속 주요 피사체를 오르골 중앙의 작은 입체 미니어처로 재현합니다. 인물이라면 인원수, 알아볼 수 있는 얼굴 특징, 연령대, 헤어스타일, 안경, 의상 색과 자세를 유지하고, 매끈하게 유약을 입힌 도자기 인형으로 표현합니다. 동물이나 사물이라면 고유한 형태, 색, 무늬와 특징을 보존합니다. 원본에 없는 인물이나 동물을 추가하지 않습니다.\n\n원본 배경의 핵심 요소 두세 가지를 골라 같은 원형 회전 무대 위에 작은 수공예 소품으로 압축하고, 피사체와의 위치 관계를 유지합니다. 모든 미니어처는 받침대에 안정적으로 연결되어 있어야 합니다. 원형 월넛 목재 받침대, 얇은 황동 테두리, 맑은 유리돔, 옆면의 작은 태엽 열쇠를 갖춘 실제 제작 가능한 오르골로 구성합니다. 받침대 앞쪽의 작은 유리창으로 황동 핀 실린더와 금속 빗살이 보이게 해 오르골 구조를 분명히 드러냅니다.\n\n오르골 전체와 태엽 열쇠가 잘리지 않도록 정면보다 살짝 위인 3/4 시점에서 촬영합니다. 따뜻한 아이보리 배경 위에 한 개만 놓고, 부드러운 스튜디오 조명과 은은한 그림자, 자연스러운 유리 반사, 도자기 유약의 광택, 목재 결, 섬세한 금속 질감을 표현합니다. 유리 반사가 얼굴이나 핵심 특징을 가리지 않게 합니다. 장난감처럼 과장된 큰 머리 비율은 피하고, 소중한 기억을 담은 고급 수집품처럼 아늑하고 섬세하게 완성합니다. 글자, 로고, 워터마크, 콜라주 없이 정사각형 이미지 한 장으로 만들어 주세요.",
+          "soleInputPhoto": "assets/images/wooden-music-box.reference.webp",
+          "additionalInstructions": [],
+          "generatedFile": "exec-62f64f09-0bd8-4793-b4cd-f9822f34662a.png",
+          "pngSha256": "0892d9c25da7812024345aa924e41826e2b53bcdb25fd97d554df97373e581f0",
+          "status": "superseded-after-user-feedback",
+          "feedback": "저런느낌보단 원목 오르골 느낌으로",
+          "review": [
+            "얼굴이 원본보다 둥글고 어려 보이도록 단순화됨",
+            "인물 한 장만 시험했으며 동물·풍경 입력은 미검증",
+            "정지 이미지이므로 실제 회전·음악 및 기계 작동은 검증하지 않음"
+          ]
+        },
+        {
+          "version": "v2",
+          "prompt": "첨부 사진을 장인이 원목을 깎아 만든 아담한 수공예 오르골의 제품 사진으로 바꿔 주세요.\n\n피사체와 배경 소품, 받침대까지 나무가 주재료인 열린 무대형 원목 오르골로 만듭니다. 밝은 단풍나무와 자작나무, 짙은 월넛을 조합하고, 모든 표면에 실제 나뭇결과 부드럽게 깎인 모서리, 섬세한 조각칼 자국, 얇게 오일 마감한 무광 질감이 보이게 합니다. 유리돔이나 투명 덮개, 도자기, 플라스틱, 번쩍이는 유광 코팅은 사용하지 않습니다.\n\n사진 속 주요 피사체를 간결하고 따뜻한 목각 미니어처로 옮깁니다. 인물이라면 인원수, 연령대, 헤어스타일, 안경, 표정과 자세, 의상 실루엣 등 알아볼 수 있는 특징을 유지합니다. 얼굴과 손은 자연스러운 밝은 원목으로, 머리카락은 짙은 목재로 표현하고, 옷의 주요 색은 나뭇결이 비치는 옅은 목재 스테인으로만 살립니다. 눈·코·입과 손가락은 작은 목각 작품에 어울리게 절제된 조각과 미세한 채색으로 단순화하되 유아처럼 만들거나 머리를 과도하게 키우지 않습니다. 동물이나 사물은 고유한 형태와 무늬를 목재 조각과 상감으로 보존합니다. 원본에 없는 인물이나 동물은 추가하지 않습니다.\n\n원본 배경에서 중요한 두세 가지 요소를 골라 작은 목각 소품으로 만들고, 피사체와의 위치 관계를 유지하며 원형 나무 회전판 위에 안정적으로 배치합니다. 꽃과 잎도 얇게 깎은 목재 조각으로 만들며, 전체를 원본 장면이 담긴 소박한 원목 공예품으로 통일합니다. 받침대는 두껍고 단정한 원형 원목 상자로 만들고, 회전판과 받침대 사이의 가는 틈과 옆면의 작은 황동 태엽 열쇠로 오르골임을 드러냅니다. 내부 기계장치는 받침대 안에 숨깁니다. 장식용 금속 테두리나 기계장치를 보여주는 창은 넣지 않습니다.\n\n따뜻한 크림색 배경의 밝은 나무 테이블 위에 오르골 한 개를 놓고, 살짝 위에서 내려다보는 3/4 시점의 사실적인 공예품 제품 사진으로 촬영합니다. 전체 받침대와 태엽 열쇠가 잘리지 않도록 여백을 둡니다. 부드러운 창가 빛과 은은한 그림자로 나무의 결, 조각의 두께와 접합부를 선명하게 보여 줍니다. 글자, 로고, 워터마크, 콜라주 없이 정사각형 이미지 한 장으로 완성해 주세요.",
+          "soleInputPhoto": "assets/images/wooden-music-box.reference.webp",
+          "additionalInstructions": [],
+          "generatedFile": "exec-e75aa251-9a76-4c47-b85b-9a82eb03a15c.png",
+          "pngSha256": "30b427422b7fff3ae1e99123b8dbf7e1e152ac080cf7462a58d7d0d0245d16fc",
+          "status": "superseded-after-user-feedback",
+          "feedback": "좋다 근데 가능하면 안잘리게",
+          "review": [
+            "얼굴이 원본보다 둥글고 젊게 단순화됨",
+            "나무 꼭대기가 이미지 위쪽에서 일부 잘림",
+            "동일한 가상 인물 원본 한 장만 시험"
+          ]
+        },
+        {
+          "version": "v3",
+          "status": "user-approved-with-limitations",
+          "review": [
+            "나무 꼭대기·꽃·받침대·태엽 모두 프레임 내부에 완전히 표시",
+            "원목 조각 질감과 인물의 안경·단발·의상 색·앉은 자세 유지",
+            "재생성으로 나무 위치와 받침대의 목재 배색이 v2와 달라짐"
+          ],
+          "limitations": [
+            "여백은 확보됐으나 요청한 최소 12%와 화면 점유 75% 수치를 엄밀히 충족하지는 않음. 상하 여백은 약 8%이며 시각적 잘림은 없음",
+            "원본 대비 얼굴 단순화",
+            "동일한 AI 가상 원본 한 장만 시험"
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "assets/images/wooden-music-box.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "aefe4217c850badc71267547884f6f77bbb934942c6cfc6a197261ffa00f8841"
+        },
+        {
+          "path": "assets/images/wooden-music-box.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "a861ace2ef160eeaf9668cdb9d6e6719c1f4c68817a99249ab177b3bd91237d9"
+        },
+        {
+          "path": "assets/images/wooden-music-box.thumb.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d772cef39144cef75e911df19360ede4b2ac220a1e1b76a3425736a86243515a"
+        }
+      ],
+      "conversion": {
+        "originalAndResult": "Sharp lossless WebP",
+        "decodedPixelsEqual": true,
+        "thumbnail": "480px width, aspect ratio preserved; WebP quality 86"
+      },
+      "review": {
+        "strengths": [
+          "나무 꼭대기·꽃·받침대·태엽 모두 프레임 내부에 완전히 표시",
+          "원목 조각 질감과 인물의 안경·단발·의상 색·앉은 자세 유지",
+          "재생성으로 나무 위치와 받침대의 목재 배색이 v2와 달라짐"
+        ],
+        "limitations": [
+          "여백은 확보됐으나 요청한 최소 12%와 화면 점유 75% 수치를 엄밀히 충족하지는 않음. 상하 여백은 약 8%이며 시각적 잘림은 없음",
+          "원본 대비 얼굴 단순화",
+          "동일한 AI 가상 원본 한 장만 시험"
+        ],
+        "postEditing": false
+      }
+    }
+  ]
+}
