@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-26",
+  "id": "spot-color-line-art",
+  "version": "v5",
+  "tool": "built-in image_gen.imagegen",
+  "approval": {
+    "date": "2026-10-26",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v5",
+    "scope": "catalog registration, validation, commit, push and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "remote": "origin",
+  "branch": "codex/spot-color-line-art",
+  "baseCommit": "866d2dde5e3ea1cdf07a1f581ef6efa8cec749bc",
+  "source": {
+    "type": "AI-generated fictional adult woman; not a user photograph",
+    "generationPrompt": "Use case: photorealistic-natural\nCreate one realistic square lifestyle photograph to serve as a fictional source for a photo-to-illustration test. A fictional Korean adult woman in her early thirties with shoulder-length gently wavy dark brown hair, thin round glasses and small hoop earrings is sitting in a simple wooden cafe chair outdoors. She wears a muted peach cardigan over an ivory shirt, charcoal wide-leg trousers and plain white sneakers. A small plain tan shoulder bag hangs from the chair. Three-quarter full-body view, both feet visible. One elbow rests on a small round cafe table and that hand lightly supports her cheek; her other hand rests naturally beside a plain ceramic coffee cup and a small plate with a croissant. Relaxed closed-mouth smile, natural gaze slightly downward. Simple quiet cafe terrace, soft greenery and window in the background, soft overcast daylight. Realistic skin, hair and fabric textures, anatomically plausible hands and feet, natural adult proportions. The woman, table and chair are the clear focus; no other people, no readable text, no logos, no watermark. This is a natural photographic source, not an illustration. Square composition.",
+    "transparent_background": false,
+    "generatedFile": "exec-f89683dd-7d3b-4842-9bc4-d757c395d910.png",
+    "pngSha256": "bc89639b1b295d81c97baebfd502cec45146b726bc841cf3667f567a5621dc2c",
+    "publishedFile": "assets/images/spot-color-line-art.reference.webp"
+  },
+  "publicPrompt": "사진 속 사람과 행동을 ‘얇은 펜으로 몇 번 슥 그린 아주 단순한 일상 선화’로 다시 해석해 주세요. 가장 중요한 기준은 선의 수를 과감히 줄이는 것입니다. 큰 실루엣과 핵심 자세만으로 장면이 읽히게 그리세요.\n\n머리는 흰 속을 가진 부드러운 한 덩어리로 그리고 바깥 윤곽 외에는 가르마와 큰 흐름을 나타내는 곡선 2~3개만 남기세요. 얼굴은 짧은 감은 눈 두 개와 작은 입 정도로, 코는 생략해도 됩니다. 안경이 있으면 단순한 테두리만 남기세요. 손은 손가락 하나하나를 그리지 않고 둥근 작은 모양과 엄지 선 하나로, 신발은 장식 없는 둥근 윤곽 하나로 표현하세요. 성인의 편안한 비율을 유지하되 약간 귀여운 캐릭터로 단순화하세요.\n\n옷은 큰 외곽선과 필요한 접힘 한두 개로만 그리세요. 머리카락 가닥, 속눈썹, 손가락 마디, 옷의 잔주름·봉제선·단추·주머니, 신발 끈·밑창은 생략하세요. 가구는 실제 디자인을 복사하지 말고 의자는 단순한 등받이와 좌판·다리, 테이블은 둥근 상판과 가는 다리만 그리세요. 행동에 필요한 소품 한두 개만 남기고 음식·꽃·배경 장식 같은 부차적인 것은 생략하세요. 인물의 수, 머리 길이, 특징적인 안경, 주된 의상 실루엣, 원래 자세와 손이 기대거나 잡은 대상의 관계는 유지하세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선으로 그리세요. 굵은 테두리를 두르지 마세요. 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 적은 선 수와 단순한 큰 형태는 그대로 유지하세요. 상의 한 군데만 사진의 대표 색을 연한 파스텔톤으로 바꾸어 균일하게 채우세요. 볼의 아주 작은 연분홍 포인트 외에 머리·피부·바지·신발·가구·소품은 전부 흰색으로 비워 두세요. 모든 명암·그라데이션·질감은 생략하세요.\n\n정사각형 순백색 배경에 인물과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 새 인물·장식·글자·서명·로고·워터마크는 넣지 마세요.",
+  "promptFile": "docs/spot-color-line-art-prompt-v5.txt",
+  "transformation": {
+    "prompt": "사진 속 사람과 행동을 ‘얇은 펜으로 몇 번 슥 그린 아주 단순한 일상 선화’로 다시 해석해 주세요. 가장 중요한 기준은 선의 수를 과감히 줄이는 것입니다. 큰 실루엣과 핵심 자세만으로 장면이 읽히게 그리세요.\n\n머리는 흰 속을 가진 부드러운 한 덩어리로 그리고 바깥 윤곽 외에는 가르마와 큰 흐름을 나타내는 곡선 2~3개만 남기세요. 얼굴은 짧은 감은 눈 두 개와 작은 입 정도로, 코는 생략해도 됩니다. 안경이 있으면 단순한 테두리만 남기세요. 손은 손가락 하나하나를 그리지 않고 둥근 작은 모양과 엄지 선 하나로, 신발은 장식 없는 둥근 윤곽 하나로 표현하세요. 성인의 편안한 비율을 유지하되 약간 귀여운 캐릭터로 단순화하세요.\n\n옷은 큰 외곽선과 필요한 접힘 한두 개로만 그리세요. 머리카락 가닥, 속눈썹, 손가락 마디, 옷의 잔주름·봉제선·단추·주머니, 신발 끈·밑창은 생략하세요. 가구는 실제 디자인을 복사하지 말고 의자는 단순한 등받이와 좌판·다리, 테이블은 둥근 상판과 가는 다리만 그리세요. 행동에 필요한 소품 한두 개만 남기고 음식·꽃·배경 장식 같은 부차적인 것은 생략하세요. 인물의 수, 머리 길이, 특징적인 안경, 주된 의상 실루엣, 원래 자세와 손이 기대거나 잡은 대상의 관계는 유지하세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선으로 그리세요. 굵은 테두리를 두르지 마세요. 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 적은 선 수와 단순한 큰 형태는 그대로 유지하세요. 상의 한 군데만 사진의 대표 색을 연한 파스텔톤으로 바꾸어 균일하게 채우세요. 볼의 아주 작은 연분홍 포인트 외에 머리·피부·바지·신발·가구·소품은 전부 흰색으로 비워 두세요. 모든 명암·그라데이션·질감은 생략하세요.\n\n정사각형 순백색 배경에 인물과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 새 인물·장식·글자·서명·로고·워터마크는 넣지 마세요.",
+    "referencedImages": [
+      "assets/images/spot-color-line-art.reference.webp"
+    ],
+    "additionalInstructions": "",
+    "styleImagesAttached": 0,
+    "transparent_background": false,
+    "generatedFile": "exec-da4fede6-15e9-43e0-883f-b65142189290.png",
+    "pngSha256": "ec8f549458647dae79173914832080099b1b9a38d1362bc4fbcc206f24ed703b",
+    "postEditing": false
+  },
+  "styleReferences": {
+    "userProvidedImageCount": 2,
+    "role": "Visually inspected only while authoring. Neither image was sent to imagegen for the transformations or included as a public asset."
+  },
+  "versions": [
+    {
+      "version": "v1",
+      "prompt": "첨부한 사진을 흰 여백이 넉넉한 ‘부분 채색 감성 라인드로잉’으로 바꿔 주세요.\n\n사진 속 인물의 수, 헤어스타일과 길이, 안경·액세서리, 의상의 형태, 자세와 시선, 손과 소품의 관계를 알아볼 수 있게 유지하세요. 몸의 비율은 자연스럽고 편안하게, 얼굴은 작은 눈과 짧은 코·입으로 부드럽고 담백하게 단순화하세요. 특정 참고 그림의 인물이나 의상으로 바꾸지 마세요.\n\n가늘고 따뜻한 짙은 회갈색 펜 선으로 주요 윤곽과 꼭 필요한 내부선만 그리세요. 선 끝과 곡선에 자연스러운 손그림 느낌을 주고, 일부 윤곽은 가볍게 끊어도 됩니다. 머리카락은 바깥 실루엣과 큰 흐름 몇 가닥으로, 옷은 큰 주름 몇 개로 표현하세요. 머리카락과 피부는 대부분 종이의 흰색으로 남기세요. 눈동자·속눈썹·머리카락 한 올·니트 짜임·사실적인 얼굴 묘사는 생략하세요.\n\n원본에서 눈에 띄는 옷이나 가방 등 한두 부분에만 저채도의 파스텔 포인트 색을 평평하게 넣으세요. 원본의 대표 색을 차분한 분홍·살구·베이지·세이지 등 어울리는 톤으로 정돈하고, 전체를 골고루 채색하지 마세요. 볼에는 아주 옅은 작은 홍조를 줄 수 있습니다. 짙은 바지나 신발은 형태를 구분하는 데 필요한 경우에만 작은 짙은 갈색 면으로 정리하고, 넓은 머리나 피부를 검게 채우지 마세요. 그라데이션·광택·입체 명암·수채화 번짐·종이 질감은 넣지 마세요.\n\n건물·벽·나무 등 뒤쪽 배경은 지우고 순백색으로 비우세요. 인물이 직접 앉거나 만지거나 들고 있는 의자·테이블·소품은 필요한 윤곽만 간단하게 남겨 원래 행동이 읽히게 하세요. 주인공과 필요한 소품을 화면 중앙에서 약간 아래쪽에 모으고 화면 높이의 약 55~65%에 담아, 특히 위쪽과 양옆에 넓은 흰 여백을 주세요. 인물이나 중요한 소품을 새로 잘라내지 마세요. 새 인물·소품·장식, 글자·서명·로고·워터마크는 추가하지 마세요.",
+      "attachment": "assets/images/spot-color-line-art.reference.webp",
+      "additionalInstructions": "",
+      "styleImagesAttached": 0,
+      "transparent_background": false,
+      "generatedFile": "exec-86b5ec34-0d07-4b8a-9bdf-ed08553e5870.png",
+      "pngSha256": "f0b74c41866987bcf504e782b1d011e545cc2f080c467828d4dcdbf10fbf0361",
+      "width": 1254,
+      "height": 1254,
+      "published": false,
+      "review": "Pose, glasses, cardigan and props recognizable. Hair is filled brown with dense strands; furniture, laces and fabric too detailed; subject occupies most of frame; fails requested white hair, sparse lines and generous whitespace. Preserved as v1.",
+      "userFeedback": null
+    },
+    {
+      "version": "v2",
+      "prompt": "첨부한 사진을 여백이 많은 미니멀 손그림 라인 일러스트로 바꿔 주세요. 완성 그림은 가는 회갈색 윤곽선, 흰 바탕, 소수의 평평한 포인트 색으로만 구성합니다.\n\n사진 속 인물의 수, 머리 길이와 가르마, 안경 등 특징, 옷의 형태, 자세, 손과 소품의 연결을 유지하되 디테일은 과감히 생략하세요. 얼굴은 작은 감은 눈 또는 짧은 눈매 선, 짧은 코와 작은 입으로 담백하게 표현하세요. 성인다운 자연스러운 몸 비율을 유지하세요.\n\n가장 중요한 것은 머리카락을 칠하지 않는 것입니다. 머리는 바깥 윤곽과 큰 물결 몇 줄만 그린 ‘속이 하얀 모양’으로 남기세요. 피부와 흰 옷, 의자와 테이블도 흰색 그대로 두고 윤곽만 그리세요. 머리 한 올, 속눈썹, 니트 짜임, 나뭇결, 신발 끈, 금속 장식, 촘촘한 주름과 잔선은 모두 생략하세요. 선은 가늘고 느슨하며 둥글게, 곳곳을 살짝 끊은 손그림으로 표현하세요.\n\n상의와 가방 같은 한두 부분에만 원본의 대표 색을 저채도 분홍·살구·베이지 등으로 정돈해 단색으로 채우세요. 짙은 바지나 신발이 있다면 장식 없는 짙은 갈색 단색 면으로 간단하게 표현할 수 있습니다. 볼의 작은 옅은 홍조 외에 피부는 채색하지 마세요. 모든 채색은 균일한 평면이며 그라데이션, 빛과 그림자, 반사광, 해칭, 수채화 번짐, 종이·직물 질감은 없습니다.\n\n뒤쪽 풍경과 건물·식물은 없애고 순백색으로 비우세요. 인물이 사용 중인 의자·테이블·가방·소품만 최소한의 윤곽으로 남기세요. 인물과 소품 전체가 정사각형 화면 높이의 약 60%를 차지하도록 줄여 중앙보다 약간 아래에 모으고, 위와 양옆은 넓게 비워 주세요. 원본에서 보이는 머리·발·주요 소품을 자르지 마세요. 새로운 대상이나 장식, 글자·서명·로고·워터마크는 넣지 마세요.",
+      "attachment": "assets/images/spot-color-line-art.reference.webp",
+      "additionalInstructions": "",
+      "styleImagesAttached": 0,
+      "transparent_background": false,
+      "generatedFile": "exec-66598214-70c5-44f6-bac6-0d547b23f2dd.png",
+      "pngSha256": "01c50140f0db900740790cc88939a76f1c402c657617d6510cfd5efbe600825e",
+      "width": 1254,
+      "height": 1254,
+      "published": false,
+      "review": "Hair and skin mostly white and line density substantially reduced; glasses, pose, mug and bag recognizable. Figure still fills about 80 percent of canvas height instead of requested 60 percent. Mild tonal variation remains in trousers and cardigan. Preserved as v2.",
+      "userFeedback": null
+    },
+    {
+      "version": "v3",
+      "prompt": "첨부한 사진을 흰 바탕 위의 작고 담백한 ‘부분 채색 감성 라인드로잉’으로 바꿔 주세요.\n\n구성이 가장 중요합니다. 정사각형 캔버스의 위쪽 35%는 완전히 흰 여백으로 비우세요. 인물과 그가 사용하는 소품 전체를 화면의 가로 20~80%, 세로 35~90% 범위 안에 작게 모으세요. 이 범위 바깥은 순백색이며, 인물의 머리·발과 필요한 소품은 그림 안에 모두 들어가야 합니다. 그림을 화면 가득 확대하지 마세요.\n\n사진 속 인물의 수, 머리 길이와 가르마, 안경·액세서리, 의상의 형태, 자세, 손과 소품의 연결은 유지하세요. 얼굴은 짧고 작은 눈매 선과 작은 코·입으로 단순화하고, 성인의 자연스러운 몸 비율과 부드러운 인상을 살리세요. 가는 짙은 회갈색 펜 선으로 큰 윤곽만 정돈해 그리되 선 끝을 가끔 끊어 편안한 손그림 느낌을 주세요. 두꺼운 테두리나 촘촘한 내부선은 쓰지 마세요.\n\n머리카락과 피부는 반드시 속이 하얀 빈 모양으로 두세요. 머리는 바깥 윤곽과 큰 흐름 몇 줄만, 옷은 큰 주름 몇 개만, 의자·테이블은 구조를 알아보는 윤곽만 남기세요. 머리 한 올, 속눈썹, 니트 짜임, 나뭇결, 신발 끈, 단추, 금속 장식, 잔선은 생략하세요. 뒤쪽 건물·풍경·식물은 지우고, 인물이 직접 사용하거나 들고 있는 물건만 간단하게 남기세요.\n\n상의·가방 등 한두 부분에만 사진의 대표 색을 저채도 파스텔로 정돈해 평평하게 칠하세요. 피부는 흰색으로 두고 볼에만 작고 옅은 분홍 포인트를 줄 수 있습니다. 짙은 바지나 신발은 필요하면 균일한 짙은 갈색 한 색으로 채우세요. 나머지는 흰색으로 남기세요. 각 색면 안에는 밝기 변화가 전혀 없어야 합니다. 명암·음영·그라데이션·광택·해칭·수채화 번짐·종이와 직물 질감은 넣지 마세요. 인물이나 소품을 새로 추가하거나 글자·서명·로고·워터마크를 넣지 마세요.",
+      "attachment": "assets/images/spot-color-line-art.reference.webp",
+      "additionalInstructions": "",
+      "styleImagesAttached": 0,
+      "transparent_background": false,
+      "generatedFile": "exec-fd5e4ee5-4a35-4c04-9714-7a262b419cc1.png",
+      "pngSha256": "e50e9c94b8dce18aa6747df2a7c907f5330c14988bbaa75a8c3d3458f32be2a9",
+      "width": 1254,
+      "height": 1254,
+      "published": false,
+      "review": "Hair and skin mostly white; softer limited colors, props and pose retained, upper whitespace increased. Hair strands remain denser than reference 1, extra pastry color, minor tonal variation, some buttons and altered simplified face/eyes/hands. Exact layout percentages not met. One source only.",
+      "userFeedback": "뭔가 그 특유 심플함이 없는데"
+    },
+    {
+      "version": "v4",
+      "prompt": "사진 속 사람과 행동을 ‘몇 번 슥 그린 아주 단순한 일상 낙서 일러스트’로 다시 해석해 주세요. 가장 중요한 기준은 선의 수를 과감히 줄이는 것입니다. 큰 실루엣과 핵심 자세만으로 장면이 읽히게 그리세요.\n\n머리는 흰 속을 가진 부드러운 한 덩어리로 그리고 바깥 윤곽 외에는 가르마와 큰 흐름을 나타내는 곡선 2~3개만 남기세요. 얼굴은 짧은 감은 눈 두 개와 작은 입 정도로, 코는 생략해도 됩니다. 안경이 있으면 단순한 테두리만 남기세요. 손은 손가락 하나하나를 그리지 않고 둥근 작은 모양과 엄지 선 하나로, 신발은 장식 없는 둥근 윤곽 하나로 표현하세요. 성인의 편안한 비율을 유지하되 약간 귀여운 캐릭터로 단순화하세요.\n\n옷은 큰 외곽선과 필요한 접힘 한두 개로만 그리세요. 머리카락 가닥, 속눈썹, 손가락 마디, 옷의 잔주름·봉제선·단추·주머니, 신발 끈·밑창은 생략하세요. 가구는 실제 디자인을 복사하지 말고 의자는 단순한 등받이와 좌판·다리, 테이블은 둥근 상판과 가는 다리만 그리세요. 행동에 필요한 소품 한두 개만 남기고 음식·꽃·배경 장식 같은 부차적인 것은 생략하세요. 인물의 수, 머리 길이, 특징적인 안경, 주된 의상 실루엣, 원래 자세와 손이 기대거나 잡은 대상의 관계는 유지하세요.\n\n가는 따뜻한 회갈색 펜 선을 사용하고 일부 선은 자연스럽게 끊으세요. 상의 한 군데만 사진의 대표 색을 연한 파스텔톤으로 바꾸어 균일하게 채우세요. 볼의 아주 작은 연분홍 포인트 외에 머리·피부·바지·신발·가구·소품은 전부 흰색으로 비워 두세요. 모든 명암·그라데이션·질감은 생략하세요.\n\n정사각형 순백색 배경에 인물과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 새 인물·장식·글자·서명·로고·워터마크는 넣지 마세요.",
+      "attachment": "assets/images/spot-color-line-art.reference.webp",
+      "additionalInstructions": "",
+      "styleImagesAttached": 0,
+      "transparent_background": false,
+      "generatedFile": "exec-c67ceaa6-a7c5-44d8-a05f-d504d4808603.png",
+      "pngSha256": "fd5f34c7f7fee2c338203acff77e7844343e9ed9b0f40ef2203cc616b484cf7e",
+      "width": 1254,
+      "height": 1254,
+      "published": false,
+      "review": "Much simpler hair, mitten hands, rounded plain shoes, simplified table and chair, single peach cardigan. Bag and pastry omitted. Outline became too thick and rounded compared with the thin pen reference; v5 changes only stroke treatment.",
+      "userFeedback": null
+    },
+    {
+      "version": "v5",
+      "prompt": "사진 속 사람과 행동을 ‘얇은 펜으로 몇 번 슥 그린 아주 단순한 일상 선화’로 다시 해석해 주세요. 가장 중요한 기준은 선의 수를 과감히 줄이는 것입니다. 큰 실루엣과 핵심 자세만으로 장면이 읽히게 그리세요.\n\n머리는 흰 속을 가진 부드러운 한 덩어리로 그리고 바깥 윤곽 외에는 가르마와 큰 흐름을 나타내는 곡선 2~3개만 남기세요. 얼굴은 짧은 감은 눈 두 개와 작은 입 정도로, 코는 생략해도 됩니다. 안경이 있으면 단순한 테두리만 남기세요. 손은 손가락 하나하나를 그리지 않고 둥근 작은 모양과 엄지 선 하나로, 신발은 장식 없는 둥근 윤곽 하나로 표현하세요. 성인의 편안한 비율을 유지하되 약간 귀여운 캐릭터로 단순화하세요.\n\n옷은 큰 외곽선과 필요한 접힘 한두 개로만 그리세요. 머리카락 가닥, 속눈썹, 손가락 마디, 옷의 잔주름·봉제선·단추·주머니, 신발 끈·밑창은 생략하세요. 가구는 실제 디자인을 복사하지 말고 의자는 단순한 등받이와 좌판·다리, 테이블은 둥근 상판과 가는 다리만 그리세요. 행동에 필요한 소품 한두 개만 남기고 음식·꽃·배경 장식 같은 부차적인 것은 생략하세요. 인물의 수, 머리 길이, 특징적인 안경, 주된 의상 실루엣, 원래 자세와 손이 기대거나 잡은 대상의 관계는 유지하세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선으로 그리세요. 굵은 테두리를 두르지 마세요. 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 적은 선 수와 단순한 큰 형태는 그대로 유지하세요. 상의 한 군데만 사진의 대표 색을 연한 파스텔톤으로 바꾸어 균일하게 채우세요. 볼의 아주 작은 연분홍 포인트 외에 머리·피부·바지·신발·가구·소품은 전부 흰색으로 비워 두세요. 모든 명암·그라데이션·질감은 생략하세요.\n\n정사각형 순백색 배경에 인물과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 새 인물·장식·글자·서명·로고·워터마크는 넣지 마세요.",
+      "attachment": "assets/images/spot-color-line-art.reference.webp",
+      "additionalInstructions": "",
+      "styleImagesAttached": 0,
+      "transparent_background": false,
+      "generatedFile": "exec-da4fede6-15e9-43e0-883f-b65142189290.png",
+      "pngSha256": "ec8f549458647dae79173914832080099b1b9a38d1362bc4fbcc206f24ed703b",
+      "width": 1254,
+      "height": 1254,
+      "published": true,
+      "review": "Reduced detail, thin contours, single peach cardigan and blush, white hair/skin/trousers/shoes/furniture. Pose, glasses and mug retained. Bag, pastry, plate, flower vase and background intentionally omitted. Some finger lines, sleeve folds, more than 2-3 internal hair curves and slight tonal variation remain. Exact half-height layout not met. One source only.",
+      "userFeedback": null
+    }
+  ],
+  "assets": [
+    {
+      "role": "reference",
+      "path": "assets/images/spot-color-line-art.reference.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "87d83ef7352ba2b32bfeb5955f3fa2b038766f4e52d8de8d9c1e56d8eba5533b",
+      "losslessDecodedPixelMatch": true
+    },
+    {
+      "role": "result",
+      "path": "assets/images/spot-color-line-art.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5c625af8abec78a4001b99270a55cd4f61c4eb96c12a610abc4abcb3268e0e1d",
+      "losslessDecodedPixelMatch": true
+    },
+    {
+      "role": "thumbnail",
+      "path": "assets/images/spot-color-line-art.thumb.webp",
+      "width": 480,
+      "height": 480,
+      "sha256": "4ddf2190e49eef690aa66b3d3b76261aa441600bbfea8ac712eeb75590bc2638",
+      "aspectRatioPreserved": true
+    }
+  ],
+  "review": "spot-color-line-art-review-2026-10-26.md",
+  "validation": {
+    "status": "passed",
+    "command": "npm run check -- -- --global-timeout=900000",
+    "unitTests": {
+      "passed": 34,
+      "failed": 0
+    },
+    "build": {
+      "prompts": 63,
+      "status": "passed"
+    },
+    "browserTests": {
+      "passed": 64,
+      "failed": 0,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ],
+      "workers": 1,
+      "globalTimeout": 900000,
+      "scope": "Full suite; only overall local execution budget increased, individual tests and checks unchanged"
+    },
+    "observedAt": "2026-10-26T07:37:37.230Z",
+    "existingCatalogItemsPreserved": 62,
+    "newId": "spot-color-line-art",
+    "newOrder": -57,
+    "publicPromptExact": true,
+    "assetHashesMatch": true,
+    "documentLinksExist": true,
+    "privatePathsAbsent": true,
+    "sourceAndResultDecodedPixelsMatch": true,
+    "diffCheck": "passed"
+  }
+}
