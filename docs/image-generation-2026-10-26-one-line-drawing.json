@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-26",
+  "id": "one-line-drawing",
+  "version": "v3",
+  "tool": "built-in image_gen.imagegen",
+  "approval": {
+    "date": "2026-10-26",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v3",
+    "examples": [
+      "test01",
+      "test02"
+    ],
+    "scope": "catalog registration, validation, commit, push and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "baseRemote": "origin",
+  "headRemote": "origin",
+  "branch": "codex/line-drawing",
+  "initialBaseCommit": "f21a684fe89d40ca78ba3a7ac01339fd7ad413b5",
+  "submissionBaseCommit": "74a35c0827ac5e8e662f6fb0f9c07b5c63fe2b4a",
+  "workspace": "dedicated managed worktree reused across tests",
+  "publicPrompt": "첨부한 사진의 주인공을 한 번의 긴 손동작으로 그린 듯한 원라인 드로잉(continuous one-line drawing)으로 바꿔 주세요. 가는 검은 선 한 가닥이 종이에서 펜을 떼지 않은 것처럼 이어져 전체 형상을 만들어야 합니다. 바깥 윤곽을 따라 흐르던 선이 안으로 접혀 들어가 핵심 특징을 만들고 다시 다음 윤곽으로 이어지도록, 유려한 곡선·작은 루프·자연스러운 선의 교차로 구성해 주세요. 각각의 부분을 따로 그려 붙이기보다 그림 전체에서 하나의 선 흐름이 읽히게 하세요.\n사진 속 대상의 수, 알아볼 수 있는 실루엣과 인상, 자세와 시선, 특징적인 액세서리, 주요 소품과의 관계, 전체 구도는 유지하되 세부 묘사는 과감히 생략하세요. 인물이라면 머리 윤곽에서 얼굴과 목·어깨, 팔과 손, 잡고 있는 소품으로 선이 자연스럽게 이어지게 하세요. 머리카락 한 올, 속눈썹, 손톱, 단추, 잔주름을 묘사하지 말고, 눈·코·입도 짧은 굴곡이나 열린 루프로만 암시하세요. 손과 소품은 서로 연결된 큰 형태로 단순화하세요. 원본을 알아볼 수 있는 범위에서 부드러운 추상화와 의도적인 생략을 허용합니다.\n선 굵기는 얇고 일정하게 유지하고 배경은 순백색으로 비워 넓은 여백을 살리세요. 색면, 검은 면 채우기, 명암, 회색, 해칭, 촘촘한 평행선, 종이 질감은 넣지 마세요. 새 대상·소품, 글자·서명·로고·워터마크는 추가하지 마세요.",
+  "promptFile": "docs/one-line-drawing-prompt-v3.txt",
+  "styleReferences": {
+    "userProvidedImageCount": 4,
+    "role": "Visually inspected as style inspiration while authoring v3. Not transformation targets, not sent to imagegen for either published example, and not included as public assets."
+  },
+  "examples": [
+    {
+      "testId": "test01",
+      "label": "안경·단발·컵을 든 인물",
+      "sourceType": "AI-generated fictional adult woman; not a user photograph",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: fictional input photo for a photo-transformation prompt test, not a real user's photograph.\nCreate one natural-looking square color photograph of a fictional Korean adult woman in her early thirties, sitting by a cafe window. She has a chin-length slightly wavy dark bob with a side part, thin round eyeglasses, small hoop earrings, and wears a plain light blue collared shirt with rolled sleeves. Waist-up three-quarter view, looking toward the camera with a relaxed closed-mouth smile. Both hands gently hold a plain ceramic mug at the lower center, fingers naturally visible and anatomically correct. Wooden table edge and soft blurred cafe window and plant behind her. Soft daylight, natural skin texture, realistic proportions, everyday editorial photography. One person, no text, no logos, no watermark.",
+        "transparent_background": false,
+        "generatedFile": "exec-3f07f266-fa51-49d4-8012-b8770a5a39ff.png",
+        "pngSha256": "0bab9f9efd3a273f00e79a45ab231332556edda965752fb8d73898aba650756f"
+      },
+      "transformation": {
+        "prompt": "첨부한 사진의 주인공을 한 번의 긴 손동작으로 그린 듯한 원라인 드로잉(continuous one-line drawing)으로 바꿔 주세요. 가는 검은 선 한 가닥이 종이에서 펜을 떼지 않은 것처럼 이어져 전체 형상을 만들어야 합니다. 바깥 윤곽을 따라 흐르던 선이 안으로 접혀 들어가 핵심 특징을 만들고 다시 다음 윤곽으로 이어지도록, 유려한 곡선·작은 루프·자연스러운 선의 교차로 구성해 주세요. 각각의 부분을 따로 그려 붙이기보다 그림 전체에서 하나의 선 흐름이 읽히게 하세요.\n사진 속 대상의 수, 알아볼 수 있는 실루엣과 인상, 자세와 시선, 특징적인 액세서리, 주요 소품과의 관계, 전체 구도는 유지하되 세부 묘사는 과감히 생략하세요. 인물이라면 머리 윤곽에서 얼굴과 목·어깨, 팔과 손, 잡고 있는 소품으로 선이 자연스럽게 이어지게 하세요. 머리카락 한 올, 속눈썹, 손톱, 단추, 잔주름을 묘사하지 말고, 눈·코·입도 짧은 굴곡이나 열린 루프로만 암시하세요. 손과 소품은 서로 연결된 큰 형태로 단순화하세요. 원본을 알아볼 수 있는 범위에서 부드러운 추상화와 의도적인 생략을 허용합니다.\n선 굵기는 얇고 일정하게 유지하고 배경은 순백색으로 비워 넓은 여백을 살리세요. 색면, 검은 면 채우기, 명암, 회색, 해칭, 촘촘한 평행선, 종이 질감은 넣지 마세요. 새 대상·소품, 글자·서명·로고·워터마크는 추가하지 마세요.",
+        "referenceImages": [
+          "assets/images/one-line-drawing.reference.webp"
+        ],
+        "additionalInstructions": [],
+        "styleReferences": [],
+        "transparent_background": false,
+        "generatedFile": "exec-0e3a385d-09ac-4e25-94f9-3b5f07730711.png",
+        "pngSha256": "c6bb09c0edb70b4993699f5c6a5c9030060154ecc68abd974cbfb6c7d65e7694",
+        "postEditing": null
+      },
+      "review": "AI 가상 원본·AI 변환 결과 · 원본 사진 한 장에 공개 v3 문구만 적용했으며 추가 지시·스타일 이미지·후편집은 없습니다. 단발·안경·귀걸이·셔츠와 두 손으로 컵을 감싼 구도를 유지했고, 긴 곡선과 루프로 연결했습니다. 일부 얼굴 선은 분리되어 있으며 귀 아래·옷깃·소매에 장식적인 루프가 생겼고 얼굴과 손가락은 단순화됐습니다. 엄밀한 한 획을 보장하지 않습니다."
+    },
+    {
+      "testId": "test02",
+      "label": "곱슬머리·수염·팔짱 낀 인물",
+      "sourceType": "AI-generated fictional adult man; not a user photograph",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: AI-generated fictional input photo for testing a photo transformation prompt. This is not a real user's photograph.\nCreate a single square natural color editorial photograph of a fictional Korean man about 55 years old, with short slightly curly salt-and-pepper hair, a neatly trimmed short salt-and-pepper beard and mustache, no glasses, and a calm gentle closed-mouth smile. He is standing in a relaxed three-quarter pose with his body turned slightly to the left of the image and looking toward the camera. His arms are folded loosely across his chest, one hand rests visibly on the opposite upper arm with anatomically natural fingers, the other hand partly tucked under the opposite arm. Frame from the waist upward with room above the head and the whole folded-arm silhouette inside the frame. He wears a plain dark olive crew-neck sweater with no pattern or text. Soft outdoor daylight, subtle wrinkles and realistic skin texture, simple softly blurred garden wall background. One person only, no jewelry, no objects in hands, no text, no logos, no watermark. Everyday photographic realism, not an illustration.",
+        "transparent_background": false,
+        "generatedFile": "exec-298b9faf-2b83-4dce-af89-bbbcbf22b9ac.png",
+        "pngSha256": "0bf9f20d05a8d00350e2e6efb4bc68f216021d3c59bf6fdfd0bbf3f117f057c4"
+      },
+      "transformation": {
+        "prompt": "첨부한 사진의 주인공을 한 번의 긴 손동작으로 그린 듯한 원라인 드로잉(continuous one-line drawing)으로 바꿔 주세요. 가는 검은 선 한 가닥이 종이에서 펜을 떼지 않은 것처럼 이어져 전체 형상을 만들어야 합니다. 바깥 윤곽을 따라 흐르던 선이 안으로 접혀 들어가 핵심 특징을 만들고 다시 다음 윤곽으로 이어지도록, 유려한 곡선·작은 루프·자연스러운 선의 교차로 구성해 주세요. 각각의 부분을 따로 그려 붙이기보다 그림 전체에서 하나의 선 흐름이 읽히게 하세요.\n사진 속 대상의 수, 알아볼 수 있는 실루엣과 인상, 자세와 시선, 특징적인 액세서리, 주요 소품과의 관계, 전체 구도는 유지하되 세부 묘사는 과감히 생략하세요. 인물이라면 머리 윤곽에서 얼굴과 목·어깨, 팔과 손, 잡고 있는 소품으로 선이 자연스럽게 이어지게 하세요. 머리카락 한 올, 속눈썹, 손톱, 단추, 잔주름을 묘사하지 말고, 눈·코·입도 짧은 굴곡이나 열린 루프로만 암시하세요. 손과 소품은 서로 연결된 큰 형태로 단순화하세요. 원본을 알아볼 수 있는 범위에서 부드러운 추상화와 의도적인 생략을 허용합니다.\n선 굵기는 얇고 일정하게 유지하고 배경은 순백색으로 비워 넓은 여백을 살리세요. 색면, 검은 면 채우기, 명암, 회색, 해칭, 촘촘한 평행선, 종이 질감은 넣지 마세요. 새 대상·소품, 글자·서명·로고·워터마크는 추가하지 마세요.",
+        "referenceImages": [
+          "assets/images/one-line-drawing.man.reference.webp"
+        ],
+        "additionalInstructions": [],
+        "styleReferences": [],
+        "transparent_background": false,
+        "generatedFile": "exec-0821a5eb-8be5-4ffa-bc2a-472180752862.png",
+        "pngSha256": "c6768aef0883164b9f22898aa848597861d4c32a49e84f0ff25935f9a3d2c1cf",
+        "postEditing": null
+      },
+      "sameExactPromptVerified": true,
+      "review": "AI 가상 원본·AI 변환 결과 · 원본 사진 한 장에 같은 공개 v3 문구만 적용했으며 추가 지시·스타일 이미지·후편집은 없습니다. 짧은 곱슬머리·수염·크루넥 상의와 팔짱 자세를 유지했습니다. 머리와 수염의 작은 루프는 다소 복잡하며 주름·흰머리 색이 사라져 젊게 느껴질 수 있습니다. 가려진 손의 일부가 드러나고 손가락·손목 형태와 몸통 방향이 재해석됐습니다. 일부 얼굴 선과 작은 검은 눈동자 면이 남으며 엄밀한 한 획을 보장하지 않습니다."
+    }
+  ],
+  "history": [
+    {
+      "version": "v1",
+      "prompt": "첨부한 사진을 흰 종이 위에 검은 잉크로 그린 미니멀 라인 드로잉으로 바꿔 주세요. 사진 속 주인공의 수, 얼굴의 고유한 인상과 연령대, 머리 모양, 안경·액세서리, 옷의 형태, 자세와 시선, 손과 소품의 연결, 원래 구도와 비율을 유지해 주세요. 핵심 특징을 알아볼 수 있도록 윤곽과 필요한 내부선만 간결하게 골라 그리세요. 선은 가늘고 매끄럽되 외곽선에만 약한 굵기 변화를 주고, 넓은 흰 여백을 살려 주세요. 머리카락도 검게 채우지 말고 외곽과 흐름을 나타내는 몇 개의 선으로 표현해 주세요. 배경은 장면을 이해하는 데 필요한 윤곽만 남겨 단순화하세요. 색, 회색 면, 명암 채우기, 해칭, 거친 연필 질감, 과장된 캐리커처, 새 인물·소품, 글자·로고·워터마크는 넣지 마세요. 모든 선을 억지로 한 줄로 연결할 필요는 없습니다.",
+      "referenceImages": [
+        "assets/images/one-line-drawing.reference.webp"
+      ],
+      "additionalInstructions": [],
+      "generatedFile": "exec-52cce56d-156a-40be-982d-4dfeb051d963.png",
+      "pngSha256": "46d411cde99df425a188a379383d9601a5ee16b2271b7d7f9f60de5ec54dfab5",
+      "status": "superseded; not a public example",
+      "review": "Hair and background too dense; faint gray lip fill. v2 reduced density and removed background."
+    },
+    {
+      "version": "v2",
+      "prompt": "첨부한 사진을 적은 수의 검은 윤곽선과 넓은 흰 여백으로 표현한 미니멀 라인 드로잉으로 바꿔 주세요. 인물의 수와 고유한 얼굴 인상, 연령대, 머리 길이와 가르마, 안경과 귀걸이, 옷의 형태, 자세와 시선, 손가락과 소품의 연결, 원래 프레이밍과 비율을 유지하세요. 눈·코·입은 알아보는 데 필요한 짧고 절제된 선만 사용하고 미화하거나 만화처럼 과장하지 마세요. 머리는 바깥 실루엣과 가르마, 큰 머리 흐름을 나타내는 5~8개의 곡선만 남기세요. 잔머리와 머리카락 한 올씩의 묘사는 생략하세요. 옷의 주름은 큰 주름 몇 개만, 소품은 형태를 알아보는 윤곽만 그리세요. 배경 사물과 실내·실외 풍경은 모두 생략하고 순백색으로 비우세요. 선은 가늘고 매끄러운 검은 잉크선으로 통일하되 바깥 윤곽에만 아주 약한 굵기 변화를 주세요. 선의 가장자리 안티앨리어싱을 제외하면 검정 선과 순백색 여백만 사용하세요. 입술·눈·머리·옷을 포함한 어디에도 색면, 회색 명암, 검은 면 채우기, 해칭, 촘촘한 평행선, 종이 질감을 넣지 마세요. 새 인물·소품, 글자·로고·워터마크를 추가하지 마세요. 모든 선을 한 줄로 연결할 필요는 없습니다.",
+      "referenceImages": [
+        "assets/images/one-line-drawing.reference.webp"
+      ],
+      "additionalInstructions": [],
+      "generatedFile": "exec-a0ffde30-b5bd-42e8-bc53-7987a36f159d.png",
+      "pngSha256": "738eef3b1511563b55f7a7d99cd7ba0df54ec883a6fc0cbba92b0e705510cab2",
+      "status": "superseded; not a public example",
+      "review": "Minimal separate contour lines; user requested continuous one-line feeling with four visual examples. v3 prioritizes connecting curves and loops and permits abstraction."
+    }
+  ],
+  "assets": [
+    {
+      "testId": "test01",
+      "role": "reference",
+      "path": "assets/images/one-line-drawing.reference.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "54a710d09809ddc9840c5b2696a2da52346c7053dbef69b52754e7c2eff7e0d7",
+      "sourcePng": "source-v1.png",
+      "pngSha256": "0bab9f9efd3a273f00e79a45ab231332556edda965752fb8d73898aba650756f",
+      "decodedPixelSha256": "fb818dd6665818f73fb8a269e7ba5b7f3e189e9f4e42299cef639385feb432c3",
+      "losslessPixelMatch": true
+    },
+    {
+      "testId": "test01",
+      "role": "result",
+      "path": "assets/images/one-line-drawing.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9283470825309baeab3a8395f5402bd7268d538d4f36619ee9b5e67ec5c27148",
+      "sourcePng": "result-v3.png",
+      "pngSha256": "c6bb09c0edb70b4993699f5c6a5c9030060154ecc68abd974cbfb6c7d65e7694",
+      "decodedPixelSha256": "1a98b44e96fe19a53fd9dfc08c9779d09c974708d53279ede980361fb9ee5847",
+      "losslessPixelMatch": true
+    },
+    {
+      "testId": "test02",
+      "role": "reference",
+      "path": "assets/images/one-line-drawing.man.reference.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "13b1e1e58015b80f5fbed052428d0568ed86102253b3caff0ece4dc7ddad48e5",
+      "sourcePng": "source-test02.png",
+      "pngSha256": "0bf9f20d05a8d00350e2e6efb4bc68f216021d3c59bf6fdfd0bbf3f117f057c4",
+      "decodedPixelSha256": "9e1cc2922d3da802b62449897ebeeb037027a449ff7a05e5ad5585207de18340",
+      "losslessPixelMatch": true
+    },
+    {
+      "testId": "test02",
+      "role": "result",
+      "path": "assets/images/one-line-drawing.man.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "98b6cdfb672f9d7fd4042f274f69ea722b8c4c5d9dfd617f595586b754e7be96",
+      "sourcePng": "result-v3-test02.png",
+      "pngSha256": "c6768aef0883164b9f22898aa848597861d4c32a49e84f0ff25935f9a3d2c1cf",
+      "decodedPixelSha256": "94b49e1daa544e1e3f65437a923071ae25d0637bd70d06ef6f57597336df0aa4",
+      "losslessPixelMatch": true
+    },
+    {
+      "testId": "test01",
+      "role": "thumbnail",
+      "path": "assets/images/one-line-drawing.thumb.webp",
+      "width": 480,
+      "height": 480,
+      "sha256": "6a82e4562b7e03fe0fb4527cec1e80c32c46c34bdd66ed8a930030f886efc4a5"
+    }
+  ],
+  "review": "one-line-drawing-review-2026-10-26.md",
+  "validation": {
+    "unitTests": {
+      "command": "npm test (via npm run check)",
+      "passed": 34,
+      "failed": 0
+    },
+    "build": {
+      "command": "npm run build (via npm run check)",
+      "prompts": 61,
+      "status": "passed"
+    },
+    "initialBrowserRun": {
+      "command": "npm run check",
+      "passed": 48,
+      "didNotRun": 16,
+      "reason": "Local full-suite 300-second global timeout; no test case failed"
+    },
+    "browserTests": {
+      "command": "npm run test:e2e -- --global-timeout=900000",
+      "passed": 64,
+      "failed": 0,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ],
+      "workers": 1,
+      "scope": "Same complete browser suite; only overall execution budget extended for local Windows runtime"
+    },
+    "exactPublicPromptAndBothInputs": true,
+    "allExisting60CatalogItemsPreserved": true,
+    "documentLinksExist": true,
+    "privatePathsAbsent": true,
+    "fourLosslessWebpDecodedPixelMatches": true,
+    "stagedDiffCheck": "passed",
+    "sourceCommitBeforeIntegration": "6003fe01ffc2150521d995913e4e72330c75ff2c"
+  },
+  "integrationAfterMainUpdate": {
+    "baseCommit": "74a35c0827ac5e8e662f6fb0f9c07b5c63fe2b4a",
+    "existingItemsPreserved": 61,
+    "order": -56,
+    "newPromptCount": 62,
+    "status": "passed",
+    "unitTests": {
+      "command": "npm test",
+      "passed": 34,
+      "failed": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "prompts": 62,
+      "status": "passed"
+    },
+    "relevantBrowserTests": {
+      "command": "npm run test:e2e -- --grep 'one-line-drawing:|gallery displays|detail preserves|a direct sharing URL'",
+      "passed": 8,
+      "failed": 0,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ]
+    },
+    "existingCatalogPreservationVerified": true
+  }
+}
