@@ -98,3 +98,6 @@
 - [검색 유입과 소개글 초안](search-distribution.md) — 대표 5개 가이드, GPT/ChatGPT 표현, 배포 후 성과 확인
 
 - [Cloudflare Pages 배포·GA4·SEO 이관 운영](cloudflare-pages.md)
+
+- [원라인 드로잉 v3 두 인물 예시 등록 검토](one-line-drawing-review-2026-10-26.md)
+- [원라인 드로잉 v3 실제 입력과 파일 해시](image-generation-2026-10-26-one-line-drawing.json)
