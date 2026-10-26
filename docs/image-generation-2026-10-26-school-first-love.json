@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-26",
+  "tool": "built-in image_gen.imagegen",
+  "id": "school-first-love",
+  "version": "v2",
+  "approval": {
+    "date": "2026-10-26",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v2",
+    "scope": "catalog registration, validation, commit, push and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "baseRemote": "origin",
+  "headRemote": "origin",
+  "branch": "codex/school-first-love",
+  "baseCommit": "f21a684fe89d40ca78ba3a7ac01339fd7ad413b5",
+  "sourceType": "AI-generated fictional adult woman; not a user photograph",
+  "sourceGeneration": {
+    "prompt": "Use case: photorealistic-natural\nAsset type: fictional source photo for a photo-transformation prompt test, portrait 2:3.\nCreate one realistic ordinary smartphone photograph of a fictional Korean woman age 25, waist-up, standing in a modest contemporary apartment beside a neutral off-white wall. She has a softly oval face, slightly asymmetrical warm brown eyes, a small rounded nose, a few subtle freckles across her cheeks, thin dark round eyeglasses, and straight black hair tied in a low ponytail with loose wisps by her temples. Plain charcoal crewneck sweatshirt. Relaxed closed-mouth smile, facing the camera, both arms naturally relaxed and hands outside the frame. Natural overcast daylight, accurate skin texture, normal everyday appearance, casually composed. This is an invented adult, not a celebrity. One person only. No school setting, no stylized film grade, no glamour retouching, no text, no logos, no watermarks.",
+    "transparent_background": false,
+    "generatedFile": "exec-5543aad5-f585-4446-82b1-c413fe27f2fb.png",
+    "pngSha256": "27e2f20d3e42736e16891e2fd20876ef984ae317854c77cffc5be3868f1507a1"
+  },
+  "transformation": {
+    "prompt": "첨부한 인물 사진을 바탕으로, ‘내가 학창 시절 누군가의 첫사랑이었다면’이라는 상상을 오래된 첫사랑의 기억처럼 표현한 실사 사진 한 장을 만들어 주세요. 시간이 지나면서 그 사람의 모습과 그날의 햇살이 실제보다 조금 더 아름답게 남은, 살짝 이상화된 기억의 시선이 핵심입니다.\n\n사진 속 인물의 고유한 얼굴 인상, 눈·코·입의 특징, 피부색, 헤어스타일, 안경과 식별되는 점·주근깨를 살려 같은 사람으로 알아볼 수 있게 하세요. 학창 시절에 맞는 풋풋한 인상으로 조정하고, 기억 속에서 더 예쁘고 잘생겨 보이듯 눈매와 미소의 매력, 얼굴 윤곽과 피부 표현을 은근하게 정돈해 주세요. 피곤한 그늘과 거친 피부 표현은 부드럽게 덜어내되 고유한 개성은 남겨 주세요. 낯선 연예인 얼굴로 바꾸거나 눈과 턱의 비율을 과장하지 마세요. 의상은 단정하고 자연스러운 교복으로 바꾸세요.\n\n카메라는 그 사람을 좋아하던 같은 반 친구의 눈높이입니다. 수업이 끝난 교실·복도·도서관 중 인물에게 어울리는 한 곳에서, 일상적인 행동을 하다가 이쪽을 돌아보며 눈이 마주친 찰나를 담으세요. 나에게만 잠깐 건넨 듯한 다정하고 살짝 수줍은 미소, 편안한 자세, 상반신과 학교 공간이 함께 보이는 구도로 표현하세요. 인물은 한 명만 등장시키고 시선과 거리감으로 설렘을 전하세요.\n\n큰 창으로 따스한 늦은 오후 햇살이 넉넉하게 내려와 머리카락 가장자리와 볼·어깨를 감싸게 하세요. 빛을 받은 머리카락의 금빛 윤곽, 피부 위의 부드러운 햇살, 창가에 살짝 떠오르는 빛의 공기감이 보여야 합니다. 밝은 부분에는 은은한 할레이션과 부드러운 빛 번짐을, 배경에는 얕은 심도와 크림빛 흐림을 주세요. 눈빛과 미소는 읽히게 유지하면서 전체 대비는 부드럽게 낮추고, 따뜻한 꿀빛 하이라이트·옅은 필름 입자·조금 바랜 색감으로 아련한 청춘 영화의 회상 장면처럼 완성하세요. 온 화면을 누렇게 덮거나 얼굴을 하얗게 날리지 말고, 매끈한 플라스틱 피부나 과한 화보 포즈도 피하세요. 하트·꽃잎 같은 장식 효과, 읽을 수 있는 글자, 로고, 워터마크는 넣지 마세요.",
+    "referenceImages": [
+      "assets/images/school-first-love.reference.webp"
+    ],
+    "additionalInstructions": null,
+    "styleReferences": [],
+    "transparent_background": false,
+    "generatedFile": "exec-78080f61-8154-4d3e-969e-8a46e18df177.png",
+    "pngSha256": "141c07ea78e0fec3f47a3e302288e7305105d58b939b881e3dfd25f760409dc1",
+    "postEditing": null
+  },
+  "history": [
+    {
+      "version": "v1",
+      "prompt": "첨부한 인물 사진을 바탕으로, ‘내가 학창 시절 누군가의 첫사랑이었다면’이라는 상상이 담긴 실사 사진 한 장을 만들어 주세요.\n\n같은 사람임을 알아볼 수 있도록 얼굴형, 눈·코·입의 형태와 간격, 피부색, 고유한 점이나 주근깨, 헤어스타일과 안경을 유지하세요. 학창 시절에 맞게 나이의 인상은 자연스럽게 조정하되, 얼굴을 획일적인 미남·미녀나 다른 사람처럼 바꾸지 마세요. 의상은 단정하고 편안한 교복으로 바꾸세요.\n\n카메라는 그 사람을 좋아하던 같은 반 친구의 눈높이입니다. 수업이 끝난 학교의 교실·복도·도서관 중 사진 속 인물에게 자연스럽게 어울리는 한 곳을 골라, 무언가를 하다 카메라 쪽으로 살짝 돌아보며 눈이 마주친 찰나를 담으세요. 상대를 발견하고 막 번지는 작고 수줍은 미소, 꾸미지 않은 자세, 인물과 주변 공간이 함께 보이는 상반신 중심의 구도로 표현하세요. 다른 인물이나 연인을 추가하지 말고, 첫사랑의 감정은 시선과 거리감으로만 전하세요.\n\n창으로 들어오는 부드러운 늦은 오후 빛, 은은한 역광, 자연스러운 피부 결, 옅은 필름 입자와 살짝 바랜 색감으로 오래 간직한 학창 시절의 기억처럼 표현하세요. 얼굴과 눈은 선명하게 유지하고 배경만 부드럽게 흐리세요. 과한 뽀샤시·미용 보정·화보 포즈·과장된 벚꽃이나 하트 효과 없이 담백하고 설레는 분위기로 완성하세요. 글자, 로고, 워터마크는 넣지 마세요.",
+      "referenceImages": [
+        "assets/images/school-first-love.reference.webp"
+      ],
+      "additionalInstructions": null,
+      "generatedFile": "exec-92898b48-0469-4a5b-afd3-9d753f6cd7d1.png",
+      "pngSha256": "6d36f8bced196cbe62b9bade5b2293eacace0e26b4c0d02a3102913d1051ff3f",
+      "status": "superseded; not the public example",
+      "feedback": "과거의 기억 왜곡처럼 조금 더 예쁘고 잘생겨 보이면서 따스한 햇살이 잘 내려오는 느낌을 요청",
+      "changesToV2": [
+        "은근한 이상화·미용 정돈 허용",
+        "오후 햇살·할레이션·낮은 대비 강화",
+        "읽을 수 있는 글자 금지로 제한 조정"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "role": "reference",
+      "path": "assets/images/school-first-love.reference.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ddc76cd6d33bde2eb71d2cb625903977c82a65e12da03cbe38fbb29f032c8d81",
+      "sourcePng": "source-v1.png",
+      "pngSha256": "27e2f20d3e42736e16891e2fd20876ef984ae317854c77cffc5be3868f1507a1",
+      "decodedPixelSha256": "ccb9c5e616ca08e5d2fb2266178b28082e98f8dc2d6a70140cc92445021d77a4",
+      "losslessPixelMatch": true
+    },
+    {
+      "role": "result",
+      "path": "assets/images/school-first-love.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "515f0be1e5bc4c95197e23625f038e8fbeeb86ce1693c7b12a391b3888769b62",
+      "sourcePng": "result-v2.png",
+      "pngSha256": "141c07ea78e0fec3f47a3e302288e7305105d58b939b881e3dfd25f760409dc1",
+      "decodedPixelSha256": "6b7f2a4596e2e6fcbcfc44932e563f47049e32400cddcf853fbf56124936c7cf",
+      "losslessPixelMatch": true
+    },
+    {
+      "role": "thumbnail",
+      "path": "assets/images/school-first-love.thumb.webp",
+      "width": 480,
+      "height": 720,
+      "sha256": "5581704811472e91a6b31d815ee0e40904319a70fc9f18b4aae85f8eba5bf162"
+    }
+  ],
+  "review": "school-first-love-review-2026-10-26.md"
+}
