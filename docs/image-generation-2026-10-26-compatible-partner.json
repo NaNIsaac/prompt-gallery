@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-26",
+  "tool": "built-in image_gen.imagegen",
+  "sourceType": "AI-generated fictional adult reference photo",
+  "approval": {
+    "date": "2026-10-26",
+    "userResponse": "결과 확정·PR 제출",
+    "version": "v1",
+    "scope": "catalog registration, validation and Draft PR submission"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "branch": "codex/compatible-partner",
+  "baseCommit": "f21a684fe89d40ca78ba3a7ac01339fd7ad413b5",
+  "items": [
+    {
+      "id": "compatible-partner",
+      "version": "v1",
+      "sourceGeneration": {
+        "prompt": "Use case: photorealistic-natural\nAsset type: fictional reference photo for a photo transformation prompt test\nCreate one realistic casual photograph of a fictional 29-year-old Korean adult woman alone at an outdoor cafe. She has a chin-length straight dark bob tucked behind one ear, thin round dark glasses, a small mole under her left eye, a cream knit cardigan over a dark green top, and small silver stud earrings. She is seated at a small wooden cafe table with a simple white coffee cup, facing the camera with a gentle closed-mouth smile, hands naturally resting on the table. Ordinary attractive adult with natural skin texture, no glamour retouching. Soft afternoon daylight, leafy street and cafe window softly blurred behind her. Eye-level waist-up square photograph taken by a friend, subject centered, believable everyday smartphone photo. Exactly one person. No writing, logos, collage or watermark.",
+        "transparent_background": false,
+        "generatedFile": "exec-a94d618f-5c5b-456d-b215-9b03cc94399c.png",
+        "pngSha256": "de937c50f0ce60cca0081f11ae83e066cc12dc128c7097e88b44c333a53b5be3",
+        "status": "success"
+      },
+      "transformation": {
+        "prompt": "첨부 사진 속 성인 인물의 얼굴과 고유한 인상을 그대로 유지하면서, 그 사람과 자연스럽게 어울리는 가상의 성인 애인 한 명을 추가해 둘이 함께 찍은 실사 커플 사진으로 만들어 줘.\n\n원래 인물의 얼굴형, 눈·코·입, 피부색, 나이대, 헤어스타일, 안경·점·액세서리 같은 식별 특징과 옷차림을 유지해 줘. 과한 미화나 얼굴 교체 없이 같은 사람으로 알아볼 수 있게 해 줘.\n\n애인은 원래 인물과 비슷한 성인 나이대로, 사진의 옷차림과 색감, 편안한 분위기에 시각적으로 조화롭게 창작해 줘. 원래 인물과 닮은 복제 얼굴이나 유명인의 얼굴은 피하고 서로 다른 매력이 느껴지게 해 줘. 애인의 성별이나 스타일을 별도로 요청했다면 그 요청을 따르고, 지정이 없다면 자유롭게 창작해 줘.\n\n원본의 장소와 시간대, 조명을 살려 자연스러운 데이트 스냅으로 구성해 줘. 두 사람이 가까이 앉거나 서서 어깨를 가볍게 맞대고, 편안한 미소를 지으며 함께 카메라를 바라보게 해 줘. 필요한 만큼만 화면을 넓히고 자세를 조정하되 원래 인물이 중심으로 남게 해 줘. 같은 카메라로 한 번에 찍은 듯 원근, 피부 질감, 초점, 빛과 그림자를 일치시켜 줘.\n\n사진 속 주인공과 새로 만든 애인, 정확히 두 사람만 보여 줘. 손과 팔, 신체의 연결은 자연스럽게 표현하고, 과장된 스킨십이나 웨딩 화보 연출, 문자·로고·워터마크·콜라주는 넣지 마.",
+        "transparent_background": false,
+        "referencedImages": [
+          {
+            "role": "sole input photo",
+            "publicAsset": "assets/images/compatible-partner.reference.webp",
+            "generatedFile": "exec-a94d618f-5c5b-456d-b215-9b03cc94399c.png",
+            "pngSha256": "de937c50f0ce60cca0081f11ae83e066cc12dc128c7097e88b44c333a53b5be3"
+          }
+        ],
+        "additionalInstructions": [],
+        "generatedFile": "exec-95f81d85-d82b-4787-a9a5-5f87364208a2.png",
+        "pngSha256": "62e8f7e6c93589967cdc3ffb6c1805fbfcbc50d81f060efa9409e19863771d8a",
+        "postEdited": false,
+        "status": "success"
+      },
+      "attempts": {
+        "source": 1,
+        "edit": 1
+      },
+      "assets": [
+        {
+          "path": "assets/images/compatible-partner.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "509e2fcbf74bb05b4f2b8bd3e454e8add074d22803a8840bebdce6c621e16e1d"
+        },
+        {
+          "path": "assets/images/compatible-partner.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "88f8d21c59358578e6bb71cfb65a188379d4884c0c641f86fe7cce90f99c162f"
+        },
+        {
+          "path": "assets/images/compatible-partner.thumb.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "c7b476faed9ac71f63784fad66bd3374b041837a73540c1750709f0edce32d24"
+        }
+      ],
+      "losslessPixelVerification": [
+        {
+          "sourceFile": "source.png",
+          "asset": "assets/images/compatible-partner.reference.webp",
+          "decodedPixelsEqual": true
+        },
+        {
+          "sourceFile": "result-v1.png",
+          "asset": "assets/images/compatible-partner.webp",
+          "decodedPixelsEqual": true
+        }
+      ],
+      "thumbnail": {
+        "width": 640,
+        "preserveAspectRatio": true,
+        "quality": 85
+      },
+      "review": {
+        "preserved": [
+          "얼굴의 전체 인상, 둥근 안경, 단발, 눈 아래 점, 귀걸이, 크림 카디건과 녹색 상의",
+          "카페 배경, 커피잔, 자연광"
+        ],
+        "observed": [
+          "정확히 두 명의 성인 인물",
+          "서로 기대고 팔을 가볍게 잡은 포즈",
+          "유사한 조명과 피부 질감, 새 인물과 구별되는 얼굴"
+        ],
+        "limitations": [
+          "구도가 셀카처럼 가까워지고 원래 인물이 오른쪽으로 이동함",
+          "애인 성별을 지정하지 않아 이번 결과는 남성으로 생성됨. 매번 같은 성별을 보장하지 않음",
+          "가상 성인 여성 원본 한 장으로만 시험함",
+          "시각적 조화를 창작한 예시이며 실제 성격이나 궁합 판단은 아님"
+        ]
+      }
+    }
+  ],
+  "submissionBaseCommit": "6003fe01ffc2150521d995913e4e72330c75ff2c"
+}
